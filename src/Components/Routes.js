@@ -4,7 +4,7 @@ import Main from "../Routes/Main"
 
 const LoggedInRoutes = () => (
   <Switch>
-    <Route exact path="/" component={Main} />
+    <Route path="/" component={Main} />
     <Redirect from="*" to="/" />
   </Switch>
 );

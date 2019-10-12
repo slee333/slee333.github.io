@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Box = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   min-height: 600px;
   background-color: ${props => (props.bgColor ? props.bgColor : "#959595")};
   display: flex;
@@ -30,7 +30,7 @@ const CenterText = styled.span`
 export default () => {
   return (
     <>
-      <Box bgColor={"#4287f5"}>
+      <Box bgColor={"#4287f5"} id="title">
         <SubBox basis={60}>
           <CenterText>이승욱의</CenterText>
           <CenterText>포트폴리오</CenterText>
@@ -38,10 +38,12 @@ export default () => {
         </SubBox>
         <SubBox basis={40}></SubBox>
       </Box>
-      <Box>Who I am</Box>
-      <Box bgColor={"#6212d2"}>Resume, 이력. 고등학교 대학교 랩 의전 인턴 등등</Box>
-      <Box>Previous Works</Box>
-      <Box bgColor={"#f0ff8c"}>
+      <Box id="intro">Who I am</Box>
+      <Box id="resume" bgColor={"#6212d2"}>
+        Resume, 이력. 고등학교 대학교 랩 의전 인턴 등등
+      </Box>
+      <Box id="history">Previous Works</Box>
+      <Box id="hobby" bgColor={"#f0ff8c"}>
         <SubBox basis={30} bgColor="white">
           <CenterText>코딩</CenterText>
         </SubBox>

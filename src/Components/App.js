@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height:100vh;
+  min-height: 100vh;
 `;
 
 function App() {
@@ -25,13 +25,14 @@ function App() {
       <>
         <GlobalStyles />
         <Router>
-          <>
-            <Header />
-            <Wrapper>
-              <Routes />
-              <Footer />
-            </Wrapper>
-          </>
+        <>
+          <Header />
+          <Wrapper>
+            <Routes />
+            {/* <Main /> */}
+            <Footer />
+          </Wrapper>
+        </>
         </Router>
       </>
     </ThemeProvider>
