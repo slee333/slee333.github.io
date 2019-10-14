@@ -29,7 +29,6 @@ function App() {
           <Header />
           <Wrapper>
             <Routes />
-            {/* <Main /> */}
             <Footer />
           </Wrapper>
         </>

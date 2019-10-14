@@ -4,12 +4,17 @@ import styled from "styled-components";
 
 const Box = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   min-height: 600px;
-  background-color: ${props => (props.bgColor ? props.bgColor : "#959595")};;
+  background-color: ${props => (props.bgColor ? props.bgColor : "#959595")};
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 `;
 
-const FlexBox = ({ bgColor, bgUrl }) => <Box bgColor={bgColor} bgUrl={bgUrl}></Box>;
+const FlexBox = ({ bgColor, bgUrl }) => <Box bgColor={bgColor} bgUrl={bgUrl}/>;
 
 FlexBox.propTypes = {
   bgColor: PropTypes.string,

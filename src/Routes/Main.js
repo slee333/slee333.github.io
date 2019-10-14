@@ -32,9 +32,9 @@ export default () => {
     <>
       <Box bgColor={"#4287f5"} id="title">
         <SubBox basis={60}>
-          <CenterText>이승욱의</CenterText>
-          <CenterText>포트폴리오</CenterText>
-          <CenterText>시작은 구리나 끝은 창대하리라</CenterText>
+          <CenterText>타이틀</CenterText>
+          <CenterText>페이지</CenterText>
+          <CenterText>서식과 길이</CenterText>
         </SubBox>
         <SubBox basis={40}></SubBox>
       </Box>

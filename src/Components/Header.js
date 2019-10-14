@@ -3,21 +3,21 @@ import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 
-// 스타일링 하는 부분입니다.
+// 헤더 스타일링
 const Header = styled.header`
   width: 100%;
   border: 0;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: rgba(240,240,240,0.8);
   border-bottom: ${props => props.theme.boxBorder};
   border-radius: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0px;
-  z-index: 2;
+  padding: 10px 0px;
+  z-index: 10;
 `;
 
 const HeaderWrapper = styled.div`
@@ -38,29 +38,30 @@ const HeaderLink = styled(Link)`
   &:not(:last-child) {
     margin-right: 30px;
   }
+  color: #222;
+  font-weight: 300;
 `;
 
-// withRouter: when we want to access a router that we do not have an access, we use withRouter, which grants access to all stuffs the router does
 export default withRouter(({ history }) => {
   return (
     <Header>
       <HeaderWrapper>
         <HeaderColumn>
-          <Link smooth to="/#title">
-            <span>로고</span>
-          </Link>
+          <HeaderLink smooth to="/#title">
+            로고
+          </HeaderLink>
         </HeaderColumn>
         <HeaderColumn>
         </HeaderColumn>
         <HeaderColumn>
           <HeaderLink smooth to="/#intro">
-            <div>compa</div>
+            Section1
           </HeaderLink>
           <HeaderLink smooth to="/#resume">
-            <div>life</div>
+            Section2
           </HeaderLink>
           <HeaderLink smooth to="/#hobby">
-            <div>ss</div>
+            Section3
           </HeaderLink>
         </HeaderColumn>
       </HeaderWrapper>
