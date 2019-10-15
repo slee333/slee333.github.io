@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 	width: 100%;
-	height: 100vh;
-	min-height: 600px;
+	height: 60vh;
+	min-height: 700px;
 	background-color: ${(props) => (props.bgColor ? props.bgColor : '#fff')};
 	display: flex;
 	justify-content: space-around;
