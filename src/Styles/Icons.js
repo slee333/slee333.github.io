@@ -4,7 +4,7 @@ export const Hermes = ({ size = '24', color = 'black' }) => (
 	<svg
 		width={String(size)}
 		height={String(size)}
-		viewBox={'0 0 '+ String(size) + ' ' + String(size)}
+		viewBox={'0 0 ' + String(size) + ' ' + String(size)}
 		xmlns="http://www.w3.org/2000/svg"
 		fill-rule="evenodd"
 		clip-rule="evenodd"
@@ -20,7 +20,7 @@ export const Syringe = ({ size = '24', color = 'black' }) => (
 	<svg
 		width={String(size)}
 		height={String(size)}
-		viewBox={'0 0 '+ String(size) + ' ' + String(size)}
+		viewBox={'0 0 ' + String(size) + ' ' + String(size)}
 		xmlns="http://www.w3.org/2000/svg"
 		fill-rule="evenodd"
 		clip-rule="evenodd"
@@ -35,8 +35,8 @@ export const Syringe = ({ size = '24', color = 'black' }) => (
 export const Stethoscope = ({ size = '24', color = 'black' }) => (
 	<svg
 		width={String(size)}
-        height={String(size)}
-        viewBox={'0 0 '+ String(size) + ' ' + String(size)}
+		height={String(size)}
+		viewBox={'0 0 ' + String(size) + ' ' + String(size)}
 		xmlns="http://www.w3.org/2000/svg"
 		fill-rule="evenodd"
 		clip-rule="evenodd"
@@ -47,3 +47,29 @@ export const Stethoscope = ({ size = '24', color = 'black' }) => (
 		</g>
 	</svg>
 );
+export const Scarpel = ({ size = '24', color = 'black' }) => (
+	<svg
+		width={String(size)}
+		height={String(size)}
+		viewBox={'0 0 ' + String(size) + ' ' + String(size)}
+		xmlns="http://www.w3.org/2000/svg"
+		fill-rule="evenodd"
+		clip-rule="evenodd"
+		fill={color}
+	>
+		<g transform={'scale(' + String(Number(size) / 24) + ')'}>
+			<path d="m121.136 111.643-76.936-72.043-36.5-34.373a1.749 1.749 0 0 0 -2.95 1.226c-.027 1.029-.481 25.265 16.55 29.792 4.882 1.13 12.919 8.129 15.617 10.742l74.773 74.3a6.736 6.736 0 0 0 4.788 1.972h.088a6.765 6.765 0 0 0 4.844-2.1 6.7 6.7 0 0 0 -.272-9.513zm-112.681-100.898 32.033 30.173-.707.707-1.681 1.681c-2.969-2.706-10.51-9.197-15.96-10.457-10.44-2.777-13.04-15.406-13.685-22.104zm110.418 108a3.293 3.293 0 0 1 -2.355 1.019 3.217 3.217 0 0 1 -2.365-.953l-73.534-73.075 1.232-1.236 1.189-1.189 75.7 70.88a3.2 3.2 0 0 1 .132 4.549z" />
+		</g>
+	</svg>
+);
+{/* <div>
+	Icons made by
+	<a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">
+		Good Ware
+	</a>
+	from
+	<a href="https://www.flaticon.com/" title="Flaticon">
+		www.flaticon.com
+	</a>
+</div>; */}
+
