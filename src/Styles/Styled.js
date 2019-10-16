@@ -1,24 +1,26 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-	width: 100%;
-	height: 60vh;
+	width: ${(props) => (props.width ? props.width : '100%')};
+	height: 100%;
 	min-height: 700px;
 	background-color: ${(props) => (props.bgColor ? props.bgColor : '#fff')};
 	display: flex;
-	justify-content: space-around;
+	justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'space-around;')};
 	align-items: center;
 	padding-left: ${(props) => (props.paddingLeft ? props.paddingLeft : '0px')};
 	padding-left: ${(props) => (props.paddingRight ? props.paddingRight : '0px')};
+	float:right;
 `;
 
 export const SubBox = styled.div`
 	flex-basis: ${(props) => String(props.basis) + '%'};
 	background-color: ${(props) => (props.bgColor ? props.bgColor : 'transparent')};
 	width: 100%;
-	height: ${(props) => (props.height ? props.height : '80%')};
+	height: ${(props) => (props.height ? props.height : '100%')};
 	display: flex;
 	flex-direction: column;
+	min-height: 700px;
 `;
 
 export const CenterText = styled.span`
@@ -37,7 +39,7 @@ export const FatText = styled.span`
 `;
 
 export const Text = styled.span`
-	font-size: ${(props) => (props.fontSize ? props.fontSize : '24px')};;
+	font-size: ${(props) => (props.fontSize ? props.fontSize : '24px')};
 	font-family: 할아버지의나눔;
 	color: ${(props) => (props.color ? props.color : 'black')};
 `;
