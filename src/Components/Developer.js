@@ -14,12 +14,13 @@ import {
 	TensorFlow,
 	Expo,
 	D3Logo,
-  MongoDB,
-  Django,
-  Heroku,
-  Netlify
+	MongoDB,
+	Django,
+	Heroku,
+	Netlify
 } from '../Styles/Icons';
 import styled from 'styled-components';
+import SvgCard from './Card';
 
 const SubBox = styled.div`
 	flex-basis: ${(props) => String(props.basis) + '%'};
@@ -57,260 +58,72 @@ const BoxCaption = styled.div`
 	align-items: center;
 `;
 
-const Card = styled.div`
-	border-radius: 25px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 30px;
-	:hover {
-		transition: all 0.8s ease;
-	}
-`;
-
-const CardCaption = styled.span`
-	margin-top: ${(props) => (props.marginTop ? props.marginTop : '30px')};
-	font-family: 할아버지의나눔;
-	color: ${(props) => (props.color ? props.color : 'black')};
-	font-size: ${(props) => (props.size ? props.size : '30px')};
-	${Card}:hover & {
-		color: #f5b042;
-	}
-	transition: all 0.5s ease;
-`;
-
-const SvgIcon = styled.svg`
-	${Card}:hover & {
-		fill: #f5b042;
-	}
-	transition: all 0.5s ease;
-	width: 120px;
-	height: 120px;
-	viewbox: 0 0 100 100;
-	xmlns: "http://www.w3.org/2000/svg";
-	fill-rule: evenodd;
-	clip-rule: evenodd;
-	fill: ${(props) => (props.color ? props.color : 'white')};
-`;
-
 export default () => (
 	<Box id="Developer" width="80%" bgColor={'#f55742'}>
-    <SubBox basis={100}>
+		<SubBox basis={100}>
 			<BoxTitle>
 				<TitleText size={'80px'} color="white">
 					취미로 개발도 하고 있어요
 				</TitleText>
 			</BoxTitle>
 
-			<Text style={{ marginTop: '20px' }} fontSize={'40px'} color="white">
-				{' '}
-				1. 프로그래밍 언어{' '}
+			<Text style={{ marginTop: '60px' }} fontSize={'40px'} color="white">
+				1. 프로그래밍 언어
 			</Text>
 			<BoxContent>
-				<Card>
-					<SvgIcon>
-						<HTML size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						HTML
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<CSS size={'120'} />
-					</SvgIcon>
-
-					<CardCaption color="white" size={'30px'}>
-						CSS
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<Python size={'120'} color="white" />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Python
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<JavaScript size={'120'} color="white" />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						JavaScript
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<MATLAB size={'120'} color="white" />
-					</SvgIcon>
-
-					<CardCaption color="white" size={'30px'}>
-						MATLAB
-					</CardCaption>
-				</Card>
+				<SvgCard text="HTML" svgElement={<HTML size={'120'} />} />
+				<SvgCard text="CSS" svgElement={<CSS size={'120'} />} />
+				<SvgCard text="파이썬" svgElement={<Python size={'120'} color="white" />} />
+				<SvgCard text="자바스크립트" svgElement={<JavaScript size={'120'} color="white" />} />
+				<SvgCard text="매트랩" svgElement={<MATLAB size={'120'} color="white" />} />
 			</BoxContent>
 
 			<Text fontSize={'20px'} color="white">
-				{' '}
-				네? 메트랩은 프로그래밍 언어가 아니라구요? 우리 맽랩한테 왜그래요{' '}
+				네? 메트랩은 프로그래밍 언어가 아니라구요? 우리 맽랩한테 왜그래요..
 			</Text>
 
-			<Text style={{ marginTop: '20px' }} fontSize={'40px'} color="white">
-				{' '}
-				2. 백엔드 기술{' '}
+			<Text style={{ marginTop: '60px' }} fontSize={'40px'} color="white">
+				2. 백엔드 기술
 			</Text>
 
 			<BoxContent>
-				<Card>
-					<SvgIcon>
-						<NodeJS size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Node js
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<GraphQL size={'120'} />
-					</SvgIcon>
-
-					<CardCaption color="white" size={'30px'}>
-						GraphQL
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<MongoDB size={'120'} color="white" />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						MongoDB
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<Prisma size={'120'} color="white" />{' '}
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Prisma
-					</CardCaption>
-				</Card>
+				<SvgCard text="노드 JS" svgElement={<NodeJS size={'120'} />} />
+				<SvgCard text="그래프큐엘" svgElement={<GraphQL size={'120'} />} />
+				<SvgCard text="몽고디비" svgElement={<MongoDB size={'120'} color="white" />} />
+				<SvgCard text="프리즈마" svgElement={<Prisma size={'120'} color="white" />} />
 			</BoxContent>
 
-      <Text fontSize={'20px'} color="white">
-				{' '}
+			<Text fontSize={'20px'} color="white">
 				백엔드 만지는데 MySQL은 안했네요. 시간 되면 배워보려구요.
 			</Text>
 
-      <Text style={{ marginTop: '20px' }} fontSize={'40px'} color="white">
-				{' '}
-				3. 프론트엔드 개발{' '}
+			<Text style={{ marginTop: '60px' }} fontSize={'40px'} color="white">
+				3. 프론트엔드 개발
 			</Text>
 
 			<BoxContent>
-				<Card>
-					<SvgIcon>
-						<ReactLogo size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						React/React Native
-					</CardCaption>
-				</Card>
-				<Card>
-					<SvgIcon>
-						<Apollo size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Apollo
-					</CardCaption>
-
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<Expo size={'120'} color="white" />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Expo
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<D3Logo size={'120'} color="white" />{' '}
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						D3
-					</CardCaption>
-				</Card>
+				<SvgCard text="리액트/리액트 네이티브" fontSize="25" svgElement={<ReactLogo size={'120'} />} />
+				<SvgCard text="아폴로" svgElement={<Apollo size={'120'} />} />
+				<SvgCard text="엑스포" svgElement={<Expo size={'120'} color="white" />} />
+				<SvgCard text="장고" svgElement={<Django size={'120'} color="white" />} />
+				<SvgCard text="D3 JS" svgElement={<D3Logo size={'120'} color="white" />} />
 			</BoxContent>
 
-      <Text fontSize={'20px'} color="white">
-				{' '}
-				리액트로 웹 앱도 개발해보고, D3로 데이터 시각화도 해보고. <br/>
-        리액트 네이티브는 깊게 못 써보고 Expo만 써봤어요. <br/>
-        아폴로는 손에 잘 맞아서 좋네요.<br/>
-        Django, Flask도 한번 배워보려구요.
+			<Text fontSize={'20px'} color="white">
+				웹 어플도 만들어보고, 모바일 어플도 손대보고. 이것저것 합니다.
 			</Text>
 
-      <Text style={{ marginTop: '20px' }} fontSize={'40px'} color="white">
-				{' '}
-				4. 그 외
+			<Text style={{ marginTop: '60px' }} fontSize={'40px'} color="white">
+				4. 배포
 			</Text>
 
 			<BoxContent>
-				<Card>
-					<SvgIcon>
-						<Heroku size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						React/React Native
-					</CardCaption>
-				</Card>
-				<Card>
-					<SvgIcon>
-						<Netlify size={'120'} />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Apollo
-					</CardCaption>
-
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<Django size={'120'} color="white" />
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						Expo
-					</CardCaption>
-				</Card>
-
-				<Card>
-					<SvgIcon>
-						<D3Logo size={'120'} color="white" />{' '}
-					</SvgIcon>
-					<CardCaption color="white" size={'30px'}>
-						D3
-					</CardCaption>
-				</Card>
+				<SvgCard text="히로쿠" svgElement={<Heroku size={'120'} />} />
+				<SvgCard text="넷리파이" svgElement={<Netlify size={'120'} />} />
 			</BoxContent>
 
-      <Text fontSize={'20px'} color="white">
-				{' '}
-				리액트로 웹 앱도 개발해보고, D3로 데이터 시각화도 해보고. 
-        리액트 네이티브는 깊게 못 써보고 Expo만 써봤어요.
-        아폴로는 손에 잘 맞아서 좋네요.
+			<Text fontSize={'20px'} color="white">
+				음 그냥 적어봤음
 			</Text>
 
 			<BoxCaption>
@@ -325,27 +138,5 @@ export default () => (
 				</Text>
 			</BoxCaption>
 		</SubBox>
-
-		{/* <SvgIcon>
-      <GraphQL size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <Prisma size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <TensorFlow size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <NodeJS size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <Expo size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <ReactLogo size={"120"} color="white" />
-    </SvgIcon>
-    <SvgIcon>
-      <Apollo size={"120"} color="white" />
-    </SvgIcon> */}
 	</Box>
 );
