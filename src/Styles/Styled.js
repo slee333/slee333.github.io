@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Box = styled.div`
 	width: ${(props) => (props.width ? props.width : '100%')};
 	height: 100%;
-	min-height: 700px;
+	min-height: 100vh;
 	background-color: ${(props) => (props.bgColor ? props.bgColor : '#fff')};
 	display: flex;
 	justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'space-around;')};
@@ -48,6 +48,7 @@ export const Divider = styled.div`
 	background-color: transparent;
 	display: flex;
 	height: 0px;
+	width: 95%;
 	justify-content: flex-end;
 	margin-right: 15%;
 	align-items: center;

@@ -26,7 +26,6 @@ function App() {
         <GlobalStyles />
         <Router>
         <>
-          <Header />
           <Wrapper>
             <Routes />
             <Footer />
