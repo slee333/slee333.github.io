@@ -16,10 +16,10 @@ export default {
              background-color:white;
 			`,
 			xxsmall: '20px',
-			xsmall: '30px',
-	small: '40px',
-	medSmall: '60px',
-	medium: '80px',
+			xsmall: '250px',
+	small: '30px',
+	medSmall: '50px',
+	medium: '70px',
 	large: '120px',
 	xlarge: '160px'
 };

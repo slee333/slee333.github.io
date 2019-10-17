@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Box = styled.div`
   width: ${props => (props.width ? props.width : "100%")};
   height: 100%;
-  min-height: 100vh;
+  min-height: 780px;
+  position: relative;
   background-color: ${props => (props.bgColor ? props.bgColor : "#fff")};
   display: flex;
   justify-content: ${props =>

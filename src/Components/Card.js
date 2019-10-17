@@ -7,10 +7,10 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-left: ${props => (props.padding ? "15px" : "0px" )};
+  padding-right: ${props => (props.padding ? "15px" : "0px" )};
+  padding-top: ${props => (props.padding ? "15px" : "0px" )};
+  padding-bottom: ${props => (props.padding ? "15px" : "30px" )};
   :hover {
     transition: all 0.8s ease;
   }
@@ -32,8 +32,8 @@ const SvgIcon = styled.svg`
     fill: #f5b042;
   }
   transition: all 0.5s ease;
-  width: 120px;
-  height: 120px;
+  width: ${props => (props.cardSize ? props.cardSize + "px" : "120px")};
+  height: ${props => (props.cardSize ? props.cardSize + "px" : "120px")};
   viewbox: 0 0 100 100;
   xmlns: "http://www.w3.org/2000/svg";
   fill-rule: evenodd;
@@ -51,21 +51,30 @@ export default ({
   scrollAnimation = "bounce",
   duration = 2,
   delay = 0,
-  animateOnce = false
+  animateOnce = false,
+  cardSize = "120",
+  initiallyVisible = true,
+  padding = true
 }) => {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
 
   return (
-    <Card onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+    <Card padding = {padding} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
       <ScrollAnimation
-        animateIn= {scrollAnimation}
-        initiallyVisible={true}
-		animateOnce={animateOnce}
-		delay={delay}
-		duration={duration}
+        animateIn={scrollAnimation}
+        initiallyVisible={initiallyVisible}
+        animateOnce={animateOnce}
+        delay={delay}
+        duration={duration}
       >
-        <SvgIcon color={color} className={hovered ? classOnHover : ""}>{svgElement}</SvgIcon>
+        <SvgIcon
+          cardSize={cardSize}
+          color={color}
+          className={hovered ? classOnHover : ""}
+        >
+          {svgElement}
+        </SvgIcon>
       </ScrollAnimation>
       <CardCaption color={fontColor} size={String(fontSize) + "px"}>
         {text}

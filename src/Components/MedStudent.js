@@ -11,6 +11,8 @@ import {
 import styled from "styled-components";
 import SvgCard from "./Card";
 import ScrollAnimation from "react-animate-on-scroll";
+import { ArrowDown, ArrowUp } from "../Styles/Icons";
+import { HashLink as Link } from "react-router-hash-link";
 
 const SubBox = styled.div`
   flex-basis: ${props => String(props.basis) + "%"};
@@ -85,13 +87,14 @@ const SvgIcon = styled.svg`
 `;
 
 export default () => (
-  <Box id="intro" width="100%" bgColor={"#4287f5"}>
+  <Box id="intro" style={{marginTop: "30px"}} width="100%" bgColor={"#4287f5"}>
     <SubBox basis={80}>
       <BoxTitle>
-		  <ScrollAnimation animateIn="bounceInRight" animateOnce={true}>
-        <TitleText size={"80px"} color="white">
-          의과대학생입니다.
-        </TitleText></ScrollAnimation>
+        <ScrollAnimation animateIn="bounceInRight" animateOnce={true}>
+          <TitleText size={"80px"} color="white">
+            의과대학생입니다.
+          </TitleText>
+        </ScrollAnimation>
       </BoxTitle>
 
       <BoxContent>
@@ -140,7 +143,6 @@ export default () => (
           text="일단 열심히 해야죠"
           svgElement={<Study size={"120"} />}
         />
-
       </BoxContent>
 
       <BoxCaption>
@@ -149,5 +151,43 @@ export default () => (
         </Text>
       </BoxCaption>
     </SubBox>
+    <ScrollAnimation
+      style={{ position: "absolute", bottom: "0" }}
+      animateIn={"fadeIn"}
+      duration={1}
+      animateOnce={true}
+    >
+      <Link style={{ marginTop: "30px" }} smooth to="/#developer">
+        <SvgCard
+          scrollAnimation="heartBeat infinite"
+          cardSize="60"
+          color="white"
+          text={""}
+          fontColor="white"
+          padding={false}
+          initiallyVisible={true}
+          svgElement={<ArrowDown size="60" />}
+        />
+      </Link>
+    </ScrollAnimation>
+    <ScrollAnimation
+      style={{ position: "absolute", top: "0" }}
+      animateIn={"fadeIn"}
+      duration={1}
+      animateOnce={true}
+    >
+      <Link style={{ marginTop: "30px" }} smooth to="/#title">
+        <SvgCard
+          scrollAnimation="heartBeat infinite"
+          cardSize="60"
+          color="white"
+          text={""}
+          fontColor="white"
+          padding={false}
+          initiallyVisible={true}
+          svgElement={<ArrowUp size="60" />}
+        />
+      </Link>
+    </ScrollAnimation>
   </Box>
 );
