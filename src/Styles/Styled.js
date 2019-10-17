@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import Paper from './PaperBG.png'
 
 export const Box = styled.div`
+	background-image: url(${Paper});
 	width: ${(props) => (props.width ? props.width : '100%')};
 	height: 100%;
 	min-height: 100vh;
