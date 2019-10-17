@@ -62,7 +62,7 @@ const BoxCaption = styled.div`
 `;
 
 export default () => (
-  <Box id="Developer" width="80%" bgColor={"#f55742"}>
+  <Box id="developer" width="80%" bgColor={"#f55742"}>
     <SubBox basis={100} style={{paddingTop:"100px"}}>
       <ScrollAnimation
         animateIn="bounceInRight"

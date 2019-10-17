@@ -7,9 +7,7 @@ import { HashRouter as Router } from "react-router-dom";
 
 import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
-
 import Footer from "./Footer";
-import Header from "./Header";
 import Routes from "./Routes";
 
 const Wrapper = styled.div`
