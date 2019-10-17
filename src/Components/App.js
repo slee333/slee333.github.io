@@ -9,10 +9,13 @@ import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
 import Footer from "./Footer";
 import Routes from "./Routes";
+import Header from "./Header";
+import ScrollToTop from "./ScrollToTop";
 
 const Wrapper = styled.div`
   margin: 0 auto;
   width: 100%;
+  min-width: 1280px;
   height: 100%;
   min-height: 100vh;
 `;
@@ -23,12 +26,14 @@ function App() {
       <>
         <GlobalStyles />
         <Router>
-        <>
-          <Wrapper>
-            <Routes />
-            <Footer />
-          </Wrapper>
-        </>
+          <>
+            <ScrollToTop />
+            <Header />
+            <Wrapper>
+              <Routes />
+              <Footer />
+            </Wrapper>
+          </>
         </Router>
       </>
     </ThemeProvider>

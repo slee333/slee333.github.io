@@ -85,8 +85,8 @@ const SvgIcon = styled.svg`
 `;
 
 export default () => (
-  <Box id="intro" width="80%" bgColor={"#4287f5"}>
-    <SubBox basis={100}>
+  <Box id="intro" width="100%" bgColor={"#4287f5"}>
+    <SubBox basis={80}>
       <BoxTitle>
 		  <ScrollAnimation animateIn="bounceInRight" animateOnce={true}>
         <TitleText size={"80px"} color="white">

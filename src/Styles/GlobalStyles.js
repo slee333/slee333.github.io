@@ -5,6 +5,8 @@ import 미생체 from './Fonts/미생체.ttf';
 import 전소민체 from './Fonts/전소민체.ttf';
 import 성실체 from './Fonts/나눔손글씨성실체.ttf';
 import 딸에게엄마가 from './Fonts/나눔손글씨딸에게엄마가.ttf';
+import NanumGothic from './Fonts/NanumGothic.ttf';
+import DoHyeon from './Fonts/DoHyeon.ttf';
 
 export default createGlobalStyle` 
     ${reset};
@@ -38,6 +40,18 @@ export default createGlobalStyle`
         font-style: normal;
         font-weight: normal;
         src: url(${딸에게엄마가}) format('truetype');
+    }
+    @font-face {
+        font-family: 'NanumGothic';
+        font-style: normal;
+        font-weight: normal;
+        src: url(${NanumGothic}) format('truetype');
+    }
+    @font-face {
+        font-family: 'DoHyeon';
+        font-style: normal;
+        font-weight: normal;
+        src: url(${DoHyeon}) format('truetype');
     }
     * {
         box-sizing:border-box;

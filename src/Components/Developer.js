@@ -62,8 +62,8 @@ const BoxCaption = styled.div`
 `;
 
 export default () => (
-  <Box id="developer" width="80%" bgColor={"#f55742"}>
-    <SubBox basis={100} style={{paddingTop:"100px"}}>
+  <Box id="developer" width="100%" bgColor={"#ab2b25"}>
+    <SubBox basis={80} style={{paddingTop:"100px"}}>
       <ScrollAnimation
         animateIn="bounceInRight"
         initiallyVisible={false}
@@ -93,7 +93,7 @@ export default () => (
           svgElement={<JavaScript size={"120"} />}
         />
         <SvgCard
-          delay={2000}
+          delay={1600}
           text="매트랩"
           svgElement={<MATLAB size={"120"} />}
         />
@@ -124,7 +124,7 @@ export default () => (
           svgElement={<MongoDB size={"120"} />}
         />
         <SvgCard
-          delay={1600}
+          delay={1200}
           text="프리즈마"
           svgElement={<Prisma size={"120"} />}
         />

@@ -11,8 +11,8 @@ const Sidebar = styled.div`
 `;
 
 const CatTitle = styled.div`
-	font-size: 35px;
-	margin-bottom: 15px;
+	font-size: ${props => props.theme.xsmall };
+	margin-bottom: ${props => props.theme.xxsmall };
 	font-family: 성실체;
 	font-weight: bold;
 	padding-top: 5px;
@@ -21,7 +21,7 @@ const CatTitle = styled.div`
 `;
 
 const SubCategory = styled.li`
-	font-size: 25px;
+	font-size: ${props => props.theme.xxsmall };
 	font-family: 할아버지의나눔;
 	padding-left: 20px;
 	padding-top: 5px;

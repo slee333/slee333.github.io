@@ -14,8 +14,12 @@ export default {
 	whiteBox: `border:${BOX_BORDER};
              border-radius:${BORDER_RADIUS};
              background-color:white;
-            `,
-	small: '5vmin',
-	medium: '10vmin',
-	large: '15vmin'
+			`,
+			xxsmall: '20px',
+			xsmall: '30px',
+	small: '40px',
+	medSmall: '60px',
+	medium: '80px',
+	large: '120px',
+	xlarge: '160px'
 };

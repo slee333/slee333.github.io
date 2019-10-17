@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.2",
+    "animejs": "^3.1.0",
     "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
@@ -44,5 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage" : "http://slee333.github.io/slee333.github.io"
+  "homepage": "http://slee333.github.io/slee333.github.io"
 }

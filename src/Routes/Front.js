@@ -4,16 +4,16 @@ import { Box, SubBox, CenterText } from "../Styles/Styled";
 import Title from "../Components/Title";
 import Division from "../Components/Division";
 import AboutMe from "../Components/AboutMe";
-import SideBar from "../Components/SideBar";
+import Header from "../Components/Header";
 
 export default () => {
   return (
     <div>
       <Title />
 
-      <Division fontSize={100} text={"소개"} />
+      {/* <Division fontSize={100} text={"소개"} /> */}
 
-      <SideBar />
+      
       <AboutMe />
 
       <Box id="resume" bgColor={"#6212d2"}>
