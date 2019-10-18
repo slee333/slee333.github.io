@@ -15,7 +15,7 @@ export default {
              border-radius:${BORDER_RADIUS};
              background-color:white;
 			`,
-	xxsmall: `${20 / 1280 * 100}vw`,
+	xxsmall: `${15 / 1280 * 100}vw`,
 	xsmall: `${25 / 1280 * 100}vw`,
 	small: `${30 / 1280 * 100}vw`,
 	medSmall: `${50 / 1280 * 100}vw`,
