@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
+import Theme from "../Styles/Theme";
 
 const Card = styled.div`
-  border-radius: 25px;
+  border-radius: ${Theme.small};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,8 +33,8 @@ const SvgIcon = styled.svg`
     fill: #f5b042;
   }
   transition: all 0.5s ease;
-  width: ${props => (props.cardSize ? props.cardSize + "px" : "120px")};
-  height: ${props => (props.cardSize ? props.cardSize + "px" : "120px")};
+  width: ${props => (props.cardSize ? props.cardSize  : "120px")};
+  height: ${props => (props.cardSize ? props.cardSize : "120px")};
   viewbox: 0 0 100 100;
   xmlns: "http://www.w3.org/2000/svg";
   fill-rule: evenodd;
@@ -52,7 +53,7 @@ export default ({
   duration = 2,
   delay = 0,
   animateOnce = false,
-  cardSize = "120",
+  cardSize = Theme.large,
   initiallyVisible = true,
   padding = true
 }) => {

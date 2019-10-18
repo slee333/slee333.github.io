@@ -13,6 +13,7 @@ import SvgCard from "./Card";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ArrowDown, ArrowUp } from "../Styles/Icons";
 import { HashLink as Link } from "react-router-hash-link";
+import Theme from "../Styles/Theme";
 
 const SubBox = styled.div`
   flex-basis: ${props => String(props.basis) + "%"};
@@ -87,11 +88,11 @@ const SvgIcon = styled.svg`
 `;
 
 export default () => (
-  <Box id="intro" style={{marginTop: "30px"}} width="100%" bgColor={"#4287f5"}>
+  <Box id="intro" width="100%" bgColor={"#4287f5"}>
     <SubBox basis={80}>
       <BoxTitle>
         <ScrollAnimation animateIn="bounceInRight" animateOnce={true}>
-          <TitleText size={"80px"} color="white">
+          <TitleText size={ Theme.medium } color="white">
             의과대학생입니다.
           </TitleText>
         </ScrollAnimation>
@@ -176,7 +177,7 @@ export default () => (
       duration={1}
       animateOnce={true}
     >
-      <Link style={{ marginTop: "30px" }} smooth to="/#title">
+      <Link style={{ marginTop: Theme.small }} smooth to="/#title">
         <SvgCard
           scrollAnimation="heartBeat infinite"
           cardSize="60"
@@ -185,7 +186,7 @@ export default () => (
           fontColor="white"
           padding={false}
           initiallyVisible={true}
-          svgElement={<ArrowUp size="60" />}
+          svgElement={<ArrowUp size= {Theme.medSmall.slice(0,-2)}/>}
         />
       </Link>
     </ScrollAnimation>

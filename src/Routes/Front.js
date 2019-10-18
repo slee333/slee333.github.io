@@ -14,7 +14,7 @@ export default () => {
       {/* <Division fontSize={100} text={"소개"} /> */}
 
       
-      <AboutMe />
+      {/* <AboutMe /> */}
 
       <Box id="resume" bgColor={"#6212d2"}>
         Resume, 이력. 고등학교 대학교 랩 의전 인턴 등등
