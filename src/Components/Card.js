@@ -5,36 +5,36 @@ import Theme from "../Styles/Theme";
 
 const Card = styled.div`
   border-radius: ${Theme.small};
-  display: flex;
+  display: ${props => (props.display ? props.display : "flex")};
   flex-direction: column;
   align-items: center;
-  padding-left: ${props => (props.padding ? "15px" : "0px" )};
-  padding-right: ${props => (props.padding ? "15px" : "0px" )};
-  padding-top: ${props => (props.padding ? "15px" : "0px" )};
-  padding-bottom: ${props => (props.padding ? "15px" : "30px" )};
+  padding-left: ${props => (props.padding ? Theme.xxsmall : "0px")};
+  padding-right: ${props => (props.padding ? Theme.xxsmall : "0px")};
+  padding-top: ${props => (props.padding ? Theme.xxsmall : "0px")};
+  padding-bottom: ${props => (props.padding ? Theme.xxsmall : "0px")};
   :hover {
-    transition: all 0.8s ease;
+    transition: fill 0.5s ease;
   }
 `;
 
 const CardCaption = styled.span`
-  margin-top: ${props => (props.marginTop ? props.marginTop : "30px")};
-  font-family: 할아버지의나눔;
+  margin-top: ${props => (props.marginTop ? props.marginTop : Theme.small)};
+  font-family: NanumGothic;
   color: ${props => (props.color ? props.color : "black")};
-  font-size: ${props => (props.size ? props.size : "30px")};
+  font-size: ${props => (props.size ? props.size : Theme.xxsmall)};
   ${Card}:hover & {
     color: #f5b042;
   }
-  transition: all 0.5s ease;
+  transition: fill 0.5s ease;
 `;
 
 const SvgIcon = styled.svg`
   ${Card}:hover & {
     fill: #f5b042;
   }
-  transition: all 0.5s ease;
-  width: ${props => (props.cardSize ? props.cardSize  : "120px")};
-  height: ${props => (props.cardSize ? props.cardSize : "120px")};
+  transition: fill 0.5s ease;
+  width: ${props => (props.cardSize ? props.cardSize : Theme.large)};
+  height: ${props => (props.cardSize ? props.cardSize : Theme.large)};
   viewbox: 0 0 100 100;
   xmlns: "http://www.w3.org/2000/svg";
   fill-rule: evenodd;
@@ -44,7 +44,7 @@ const SvgIcon = styled.svg`
 
 export default ({
   svgElement,
-  fontSize = "30",
+  fontSize = Theme.xxsmall,
   color = "white",
   fontColor = "white",
   text,
@@ -55,13 +55,19 @@ export default ({
   animateOnce = false,
   cardSize = Theme.large,
   initiallyVisible = true,
-  padding = true
+  padding = true,
+  display = "flex"
 }) => {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
 
   return (
-    <Card padding = {padding} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+    <Card
+      display={display}
+      padding={padding}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
       <ScrollAnimation
         animateIn={scrollAnimation}
         initiallyVisible={initiallyVisible}
@@ -77,7 +83,7 @@ export default ({
           {svgElement}
         </SvgIcon>
       </ScrollAnimation>
-      <CardCaption color={fontColor} size={String(fontSize) + "px"}>
+      <CardCaption color={fontColor} size={fontSize}>
         {text}
       </CardCaption>
     </Card>

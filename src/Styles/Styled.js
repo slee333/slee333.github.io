@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import Theme from "./Theme";
 
 export const Box = styled.div`
   width: ${props => (props.width ? props.width : "100%")};
   height: 100%;
-  min-height: 500px;
+  min-height: 640px;
   position: relative;
   background-color: ${props => (props.bgColor ? props.bgColor : "#fff")};
   display: flex;
@@ -45,7 +46,8 @@ export const FatText = styled.span`
 
 export const Text = styled.span`
   font-size: ${props => (props.fontSize ? props.fontSize : "24px")};
-  font-family: ${props => (props.fontFamily ? props.fontFamily : "NanumGothic")};
+  font-family: ${props =>
+    props.fontFamily ? props.fontFamily : "NanumGothic"};
   color: ${props => (props.color ? props.color : "black")};
 `;
 
@@ -57,4 +59,18 @@ export const Divider = styled.div`
   justify-content: flex-end;
   margin-right: 15%;
   align-items: center;
+`;
+
+export const TitleText = styled.span`
+  font-size: ${props => (props.size ? props.size : props.theme.medium)};
+  flex-basis: 50%;
+  display: inline-block;
+  font-family: DoHyeon;
+  color: ${props => (props.color ? props.color : "black")};
+`;
+
+export const Speak = styled(Text)`
+  margin-top: ${Theme.xxsmall};
+  font-family: 미생체;
+  font-size: ${Theme.small};
 `;
