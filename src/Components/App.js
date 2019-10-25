@@ -27,7 +27,7 @@ function App() {
         <Router>
           <>
             <ScrollToTop />
-            <Header />
+            {/* <Header /> */}
             <Wrapper>
               <Routes />
               <Footer />

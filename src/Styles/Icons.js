@@ -1,6 +1,13 @@
 import React from "react";
 
-const VwToPx = vw => (Number(vw) * window.innerWidth) / 100;
+const VwToPx = vw => { 
+  const px = (Number(vw) * window.innerWidth) / 100;
+  return (
+    px > 100 ? px : 100
+  );
+}
+
+// Minimum Width: 100px
 
 export const ArrowLeft = ({ size = "24" }) => (
   <g transform={`scale(${VwToPx(size) / 24})`}>

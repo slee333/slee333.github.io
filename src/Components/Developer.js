@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Speak, SubBox, TitleText } from "../Styles/Styled";
+import { Box, Speak, SubBox, TitleText, BoxTitle, BoxContent, BoxCaption, Text } from '../Styles/Styled';
 import {
   Python,
   JavaScript,
@@ -25,25 +25,6 @@ import SvgCard from "./Card";
 import { HashLink as Link } from "react-router-hash-link";
 import ScrollAnimation from "react-animate-on-scroll";
 import Theme from "../Styles/Theme";
-
-const BoxTitle = styled.div`
-  margin-top: ${Theme.small};
-`;
-const BoxContent = styled.div`
-  margin-top: ${Theme.medium};
-  justify-content: space-around;
-  display: flex;
-  width: 80%;
-`;
-
-const BoxCaption = styled.div`
-  margin-top: ${Theme.small};
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 
 export default () => (
   <Box id="developer" width="100%" bgColor={"#ab2b25"}>
@@ -214,45 +195,6 @@ export default () => (
         <Speak color="white">다만 모바일 디자인은 할 줄만 아는 정도에요.</Speak>
       </BoxCaption>
     </SubBox>
-    <ScrollAnimation
-      style={{ position: "absolute", bottom: "0" }}
-      animateIn={"fadeIn"}
-      duration={1}
-      animateOnce={true}
-    >
-      <Link style={{ marginTop: Theme.small }} smooth to="/#engineer">
-        <SvgCard
-          display="inline"
-          scrollAnimation="pulse infinite"
-          cardSize={Theme.medSmall}
-          color="white"
-          text={""}
-          fontColor="black"
-          initiallyVisible={false}
-          padding={false}
-          svgElement={<ArrowDown size={Theme.medSmall.slice(0, -2)} />}
-        />
-      </Link>
-    </ScrollAnimation>
-    <ScrollAnimation
-      style={{ position: "absolute", top: "0" }}
-      animateIn={"fadeIn"}
-      duration={1}
-      animateOnce={true}
-    >
-      <Link style={{ marginTop: Theme.small }} smooth to="/#medStudent">
-        <SvgCard
-          display="inline"
-          scrollAnimation="pulse infinite"
-          cardSize={Theme.medSmall}
-          color="white"
-          text={""}
-          fontColor="black"
-          initiallyVisible={false}
-          padding={false}
-          svgElement={<ArrowUp size={Theme.medSmall.slice(0, -2)} />}
-        />
-      </Link>
-    </ScrollAnimation>
+    
   </Box>
 );

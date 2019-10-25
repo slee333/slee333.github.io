@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Speak, SubBox, TitleText } from "../Styles/Styled";
+import { Box, Speak, SubBox, TitleText, BoxTitle, BoxContent, BoxCaption } from '../Styles/Styled';
 import {
   Blood,
   Hermes,
@@ -13,20 +13,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { ArrowDown, ArrowUp } from "../Styles/Icons";
 import { HashLink as Link } from "react-router-hash-link";
 import Theme from "../Styles/Theme";
-
-const BoxTitle = styled.div`
-  margin-top: ${ Theme.xsmall };
-`;
-const BoxContent = styled.div`
-  margin-top: ${ Theme.medium };
-  justify-content: space-around;
-  display: flex;
-  width: 80%;
-`;
-
-const BoxCaption = styled.div`
-  margin-top: ${ Theme.medium };
-`;
 
 export default () => {
   return (
@@ -88,46 +74,6 @@ export default () => {
           </Speak>
         </BoxCaption>
       </SubBox>
-      <ScrollAnimation
-        style={{ position: "absolute", bottom: "0" }}
-        animateIn={"fadeIn"}
-        duration={1}
-        animateOnce={true}
-      >
-        <Link style={{ marginTop: Theme.small }} smooth to="/#developer">
-          <SvgCard
-            display="inline"
-            scrollAnimation="pulse infinite"
-            cardSize={Theme.medSmall}
-            color="white"
-            text={""}
-            fontColor="white"
-            padding={false}
-            initiallyVisible={true}
-            svgElement={<ArrowDown size={Theme.medSmall.slice(0, -2)} />}
-          />
-        </Link>
-      </ScrollAnimation>
-      <ScrollAnimation
-        style={{ position: "absolute", top: "0" }}
-        animateIn={"fadeIn"}
-        duration={1}
-        animateOnce={true}
-      >
-        <Link style={{ marginTop: Theme.small }} smooth to="/#intro">
-          <SvgCard
-            display="inline"
-            scrollAnimation="pulse infinite"
-            cardSize={Theme.medSmall}
-            color="white"
-            text={""}
-            fontColor="white"
-            padding={false}
-            initiallyVisible={true}
-            svgElement={<ArrowUp size={Theme.medSmall.slice(0, -2)} />}
-          />
-        </Link>
-      </ScrollAnimation>
     </Box>
   );
 };

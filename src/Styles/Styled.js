@@ -74,3 +74,21 @@ export const Speak = styled(Text)`
   font-family: 미생체;
   font-size: ${Theme.small};
 `;
+
+export const BoxTitle = styled.div`margin-top: ${Theme.small};`;
+export const BoxContent = styled.div`
+	margin-top: ${Theme.medium};
+	justify-content: space-around;
+	display: flex;
+	width: 80%;
+	flex-wrap: wrap;
+`;
+
+export const BoxCaption = styled.div`
+  margin-top: ${Theme.small};
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

@@ -34,6 +34,8 @@ const SvgIcon = styled.svg`
   }
   transition: fill 0.5s ease;
   width: ${props => (props.cardSize ? props.cardSize : Theme.large)};
+  min-width: 100px;
+  min-height: 100px;
   height: ${props => (props.cardSize ? props.cardSize : Theme.large)};
   viewbox: 0 0 100 100;
   xmlns: "http://www.w3.org/2000/svg";

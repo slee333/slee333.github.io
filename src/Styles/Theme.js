@@ -15,11 +15,11 @@ export default {
              border-radius:${BORDER_RADIUS};
              background-color:white;
 			`,
-	xxsmall: `${15 / 1280 * 100}vw`,
-	xsmall: `${25 / 1280 * 100}vw`,
-	small: `${30 / 1280 * 100}vw`,
-	medSmall: `${50 / 1280 * 100}vw`,
-	medium: `${70 / 1280 * 100}vw`,
-	large: `${120 / 1280 * 100}vw`,
-	xlarge: `${160 / 1280 * 100}vw`
+	xxsmall: `${15 / 1280 * 100}vmax`,
+	xsmall: `${25 / 1280 * 100}vmax`,
+	small: `${30 / 1280 * 100}vmax`,
+	medSmall: `${50 / 1280 * 100}vmax`,
+	medium: `${70 / 1280 * 100}vmax`,
+	large: `${120 / 1280 * 100}vmax`,
+	xlarge: `${160 / 1280 * 100}vmax`
 };
