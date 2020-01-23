@@ -1,31 +1,36 @@
 import React from "react";
 
-const VwToPx = vw => { 
-  const px = (Number(vw) * window.innerWidth) / 100;
-  return (
-    px > 100 ? px : 100
-  );
-}
+const VwToPx = vw => {
+  // const px = (Number(vw) * window.innerWidth) / 100;
+  const px = (vw.replace(/[^0-9.]/g, "") * window.innerWidth) / 100;
+  return px > 100 ? px : 100;
+};
+
+const VwToPx_arrow = vw => {
+  // const px = (Number(vw) * window.innerWidth) / 100;
+  const px = (vw.replace(/[^0-9.]/g, "") * window.innerWidth) / 100;
+  return px > 50 ? px : 50;
+};
 
 // Minimum Width: 100px
 
 export const ArrowLeft = ({ size = "24" }) => (
-  <g transform={`scale(${VwToPx(size) / 24})`}>
+  <g transform={`scale(${VwToPx_arrow(size) / 24})`}>
     <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
   </g>
 );
 export const ArrowUp = ({ size = "24" }) => (
-  <g transform={`scale(${VwToPx(size) / 24})`}>
+  <g transform={`scale(${VwToPx_arrow(size) / 24})`}>
     <path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z" />
   </g>
 );
 export const ArrowDown = ({ size = "24" }) => (
-  <g transform={`scale(${VwToPx(size) / 24})`}>
+  <g transform={`scale(${VwToPx_arrow(size) / 24})`}>
     <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
   </g>
 );
 export const ArrowRight = ({ size = "24" }) => (
-  <g transform={`scale(${VwToPx(size) / 24})`}>
+  <g transform={`scale(${VwToPx_arrow(size) / 24})`}>
     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z" />
   </g>
 );

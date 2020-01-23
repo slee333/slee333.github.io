@@ -8,9 +8,7 @@ import { HashRouter as Router } from "react-router-dom";
 import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
 import Footer from "./Footer";
-import Routes from "./Routes";
-import Header from "./Header";
-import ScrollToTop from "./ScrollToTop";
+import Routes from "./Routes"; 
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -26,8 +24,6 @@ function App() {
         <GlobalStyles />
         <Router>
           <>
-            <ScrollToTop />
-            {/* <Header /> */}
             <Wrapper>
               <Routes />
               <Footer />

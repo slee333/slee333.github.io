@@ -22,9 +22,6 @@ export default () => {
   return (
     <div>
       <Title />
-
-      {/* <Division fontSize={100} text={"소개"} /> */}
-
       
       <AboutMe />
 

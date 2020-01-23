@@ -46,7 +46,7 @@ const SvgIcon = styled.svg`
 
 export default ({
   svgElement,
-  fontSize = Theme.xxsmall,
+  fontSize = Theme.xsmall,
   color = "white",
   fontColor = "white",
   text,
@@ -54,7 +54,7 @@ export default ({
   scrollAnimation = "bounce",
   duration = 2,
   delay = 0,
-  animateOnce = false,
+  animateOnce = true,
   cardSize = Theme.large,
   initiallyVisible = true,
   padding = true,

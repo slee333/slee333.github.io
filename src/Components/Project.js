@@ -19,6 +19,7 @@ const ThumbBox = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30%;
 `;
 
 const Thumbnail = styled.img`
@@ -31,7 +32,7 @@ const Thumbnail = styled.img`
 
 export default ({ setAbout }) => {
   return (
-    <Box id="engineer" width="100%" bgColor={"#ab6f24"}>
+    <Box id="projects" width="100%" bgColor={"#ab6f24"}>
       <ScrollAnimation
         style={{ width: "100%" }}
         animateIn="fadeIn"
@@ -62,7 +63,7 @@ export default ({ setAbout }) => {
           </div>
           <BoxTitle>
             <TitleText size={Theme.medSmall} color="white">
-              블로그
+              프로젝트
             </TitleText>
           </BoxTitle>
 
