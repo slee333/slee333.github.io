@@ -83,46 +83,6 @@ export default () => {
 					<Speak fontSize={Theme.xsmall}>클릭하면 더 많은 내용을 보실 수 있어요.</Speak>
 				</BoxCaption>
 			</SubBox>
-			<ScrollAnimation
-				style={{ position: 'absolute', bottom: '0' }}
-				animateIn={'fadeIn'}
-				duration={1}
-				animateOnce={true}
-			>
-				<Link style={{ marginTop: Theme.small }} smooth to="/#medStudent">
-					<SvgCard
-						display="inline"
-						scrollAnimation="pulse infinite"
-						cardSize={Theme.medSmall}
-						color="black"
-						text={''}
-						fontColor="black"
-						padding={false}
-						initiallyVisible={true}
-						svgElement={<ArrowDown size={Theme.medSmall.slice(0, -2)} />}
-					/>
-				</Link>
-			</ScrollAnimation>
-			<ScrollAnimation
-				style={{ position: 'absolute', top: '0' }}
-				animateIn={'fadeIn'}
-				duration={1}
-				animateOnce={true}
-			>
-				<Link style={{ marginTop: Theme.small }} smooth to="/#title">
-					<SvgCard
-						display="inline"
-						scrollAnimation="pulse infinite"
-						cardSize={Theme.medSmall}
-						color="black"
-						text={''}
-						fontColor="black"
-						padding={false}
-						initiallyVisible={true}
-						svgElement={<ArrowUp size={Theme.medSmall.slice(0, -2)} />}
-					/>
-				</Link>
-			</ScrollAnimation>
 		</Box>
 	);
 };

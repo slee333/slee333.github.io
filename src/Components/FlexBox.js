@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Box = styled.div`
   width: 100%;
   height: 100vh;
-  min-height: 600px;
+  min-height: 800px;
   background-color: ${props => (props.bgColor ? props.bgColor : "#959595")};
   display: flex;
   justify-content: space-around;

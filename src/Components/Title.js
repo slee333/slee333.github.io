@@ -110,7 +110,7 @@ export default () => {
           </ScrollAnimation>
         </SubBox>
       </SubBox>
-      <IScrollAnimation
+      {/* <IScrollAnimation
         style={{ position: "absolute", bottom: "0" }}
         animateIn={"fadeIn"}
         duration={1}
@@ -129,7 +129,7 @@ export default () => {
             svgElement={<ArrowDown size={Theme.medSmall.slice(0, -2)} />}
           />
         </Link>
-      </IScrollAnimation>
+      </IScrollAnimation> */}
     </Box>
   );
 };

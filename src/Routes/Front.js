@@ -2,10 +2,7 @@ import React, { useState, useLayoutEffect } from "react";
 import { Box, SubBox, CenterText } from "../Styles/Styled";
 
 import Title from "../Components/Title";
-import Division from "../Components/Division";
 import AboutMe from "../Components/AboutMe";
-import Header from "../Components/Header";
-
 
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
