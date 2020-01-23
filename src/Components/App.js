@@ -7,8 +7,8 @@ import { HashRouter as Router } from "react-router-dom";
 
 import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
-import Footer from "./Footer";
-import Routes from "./Routes"; 
+// import Footer from "./Footer";
+import Routes from "./Routes";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -26,7 +26,6 @@ function App() {
           <>
             <Wrapper>
               <Routes />
-              <Footer />
             </Wrapper>
           </>
         </Router>

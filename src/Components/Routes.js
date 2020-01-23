@@ -11,8 +11,4 @@ const MainRoutes = () => (
 
 const AppRouter = () => <MainRoutes /> ;
 
-// AppRouter.propTypes = {
-//   isLoggedIn: PropTypes.bool.isRequired
-// };
-
 export default AppRouter;

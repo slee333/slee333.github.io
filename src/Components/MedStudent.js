@@ -54,20 +54,20 @@ export default ({ setAbout }) => {
             <SvgCard
               delay={400}
               scrollAnimation={"heartBeat"}
-              text="외과보다는"
+              text="외과는 안 끌리고"
               svgElement={<Blood size={Theme.large.replace(/[^0-9.]/g,'')} />}
             />
 
             <SvgCard
               delay={800}
               scrollAnimation={"heartBeat infinite"}
-              text="내과가 맘에 들지만"
+              text="내과가 맘에 듦"
               svgElement={<InternalMed size={Theme.large.replace(/[^0-9.]/g,'')} />}
             />
             <SvgCard
               delay={1200}
               scrollAnimation={"heartBeat"}
-              text="아직 잘 모르겠네요"
+              text="아직은 잘 몰라요"
               svgElement={<Confused size={Theme.large.replace(/[^0-9.]/g,'')} />}
             />
             <SvgCard
@@ -80,7 +80,7 @@ export default ({ setAbout }) => {
 
           <BoxCaption>
             <Speak fontSize={Theme.small} color="white">
-              의과대학생입니다. 더 할말은 딱히 없네요..
+              의과대학생입니다. 외과보다는 내과에 더 관심이 있지만 앞으로 어떻게 마음이 바뀔진 알수가 없네요.
             </Speak>
           </BoxCaption>
         </SubBox>

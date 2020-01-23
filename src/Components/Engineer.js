@@ -61,33 +61,33 @@ export default ({ setAbout }) => {
             <SvgCard
               delay={0}
               scrollAnimation={"bounce"}
-              text="의공학과 나왔구요."
-              svgElement={<BiomedicalEng size={Theme.large.slice(0, -2)} />}
+              text="의공학과 졸업"
+              svgElement={<BiomedicalEng size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={400}
               scrollAnimation={"bounce"}
-              text="영상을 주로 공부했죠"
-              svgElement={<MedicalImaging size={Theme.large.slice(0, -2)} />}
+              text="의료영상"
+              svgElement={<MedicalImaging size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
 
             <SvgCard
               delay={800}
               scrollAnimation={"bounce"}
-              text="데이터 분석 많이 했고"
-              svgElement={<DataProcessing size={Theme.large.slice(0, -2)} />}
+              text="데이터 분석"
+              svgElement={<DataProcessing size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={1200}
               scrollAnimation={"bounce"}
-              text="회로설계도 적당히,"
-              svgElement={<CircuitDesign size={Theme.large.slice(0, -2)} />}
+              text="회로설계"
+              svgElement={<CircuitDesign size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={1600}
               scrollAnimation={"bounce"}
-              text="머신러닝도 조금?"
-              svgElement={<TensorFlow size={Theme.large.slice(0, -2)} />}
+              text="머신러닝"
+              svgElement={<TensorFlow size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
           </BoxContent>
 

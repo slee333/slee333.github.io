@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
-import { HashLink as Link } from "react-router-hash-link";
 import Theme from "../Styles/Theme";
 import "../Styles/titleText.css";
-import SvgCard from "./Card";
 import { Box, SubBox, Text } from "../Styles/Styled";
-import { ArrowDown } from "../Styles/Icons";
 
 const IScrollAnimation = styled(ScrollAnimation)`
   margin-bottom: ${Theme.xxsmall};
@@ -20,20 +17,6 @@ const Name = styled(Text)`
     width: 100%;
     height: 2px;
     bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  :after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 0;
     left: 0;
     background-color: #000;
     visibility: hidden;
@@ -58,7 +41,7 @@ export default () => {
   return (
     <Box width="100%" bgColor={"#fff"} id="title">
       <SubBox style={{ minHeight: "48vw", height: "100%" }} basis={80}>
-        <SubBox style={{ width: "80%" }}>
+        <SubBox style={{ width: "80%", paddingTop: Theme.large }}>
           <IScrollAnimation animateOnce={true} animateIn={"fadeIn"}>
             <HighlightText color="#d74c46" fontSize={Theme.small}>
               학생
@@ -104,32 +87,12 @@ export default () => {
               className={underLine ? "myName" : " "}
               fontSize={Theme.medium}
               style={{ width: "60%", fontFamily: "DoHyeon" }}
-            > 
+            >
               이 승 욱
             </Name>
           </ScrollAnimation>
         </SubBox>
       </SubBox>
-      {/* <IScrollAnimation
-        style={{ position: "absolute", bottom: "0" }}
-        animateIn={"fadeIn"}
-        duration={1}
-        animateOnce={true}
-      >
-        <Link style={{ marginTop: Theme.medium }} smooth to="/#intro">
-          <SvgCard
-            display="inline"
-            scrollAnimation="pulse infinite"
-            cardSize={Theme.medSmall}
-            color="black"
-            text={""}
-            fontColor="black"
-            initiallyVisible={false}
-            padding={false}
-            svgElement={<ArrowDown size={Theme.medSmall.slice(0, -2)} />}
-          />
-        </Link>
-      </IScrollAnimation> */}
     </Box>
   );
 };

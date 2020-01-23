@@ -63,47 +63,46 @@ export default ({ setAbout }) => {
               delay={0}
               scrollAnimation={"bounce"}
               text="게임"
-              svgElement={<VideoGame size={Theme.large.slice(0, -2)} />}
+              svgElement={<VideoGame size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={400}
               scrollAnimation={"bounce"}
               text="통기타"
-              svgElement={<Guitar size={Theme.large.slice(0, -2)} />}
+              svgElement={<Guitar size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={800}
               scrollAnimation={"bounce"}
               text="베이스"
-              svgElement={<Bass size={Theme.large.slice(0, -2)} />}
+              svgElement={<Bass size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={1200}
               scrollAnimation={"bounce"}
               text="테니스"
-              svgElement={<Tennis size={Theme.large.slice(0, -2)} />}
+              svgElement={<Tennis size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={1600}
               scrollAnimation={"bounce"}
               text="간헐적 헬스"
-              svgElement={<WorkOut size={Theme.large.slice(0, -2)} />}
+              svgElement={<WorkOut size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
             <SvgCard
               delay={2000}
               scrollAnimation={"bounce"}
               text="'소량의' 음주"
-              svgElement={<Wine size={Theme.large.slice(0, -2)} />}
+              svgElement={<Wine size={Theme.large.replace(/[^0-9.]/g, "")} />}
             />
           </BoxContent>
 
           <BoxCaption>
             <Speak fontSize={Theme.small} color="white">
-              게임도 좋아하고, 기타도 가끔 쳐요. 더 꾸준히 쳐야하는데 그게
-              힘드네요. 운동도 더 해야하는데..
+              게임도 좋아하고, 기타도 가끔 쳐요. 테니스 좋아합니다.
             </Speak>
             <Speak fontSize={Theme.xsmall} color="white">
-              술은 과음은 잘 않는 편이고, 달달한 술 좋아합니다.
+              맛좋은 술은 환영하지만 과음은 싫어합니다.
             </Speak>
           </BoxCaption>
         </SubBox>

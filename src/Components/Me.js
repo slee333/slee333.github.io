@@ -11,7 +11,6 @@ import {
 import { MedStudent, Developer, Engineer, Blog, Dance } from "../Styles/Icons";
 import SvgCard from "./Card";
 import ScrollAnimation from "react-animate-on-scroll";
-import { ArrowDown, ArrowUp } from "../Styles/Icons";
 import { HashLink as Link } from "react-router-hash-link";
 import Theme from "../Styles/Theme";
 

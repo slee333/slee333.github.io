@@ -8,7 +8,7 @@ import Blog from "./Blog";
 
 export default () => {
   const [about, setAbout] = useState(0);
-  if (about == 0) {
+  if (about === 0) {
     return <Me setAbout={setAbout} />;
   } else if (about === 1) {
     return <MedStudent setAbout={setAbout} />;
@@ -21,13 +21,4 @@ export default () => {
   } else if (about === 5) {
     return <Hobby setAbout={setAbout} />;
   }
-  // return (
-  //   <>
-  //     <Me me={me}, setMe = {setMe} />
-  //     <MedStudent />
-  //     <Developer />
-  //     <Engineer />
-  //     <Hobby />
-  //   </>
-  // );
 };

@@ -24,8 +24,6 @@ import {
   D3Logo,
   MongoDB,
   Django,
-  Heroku,
-  Netlify,
   ArrowLeft
 } from "../Styles/Icons";
 import SvgCard from "./Card";
@@ -78,27 +76,27 @@ export default ({ setAbout }) => (
           <SvgCard
             delay={0}
             text="HTML"
-            svgElement={<HTML size={Theme.large.slice(0, -2)} />}
+            svgElement={<HTML size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={400}
             text="CSS"
-            svgElement={<CSS size={Theme.large.slice(0, -2)} />}
+            svgElement={<CSS size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={800}
             text="파이썬"
-            svgElement={<Python size={Theme.large.slice(0, -2)} />}
+            svgElement={<Python size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={1200}
             text="자바스크립트"
-            svgElement={<JavaScript size={Theme.large.slice(0, -2)} />}
+            svgElement={<JavaScript size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={1600}
             text="매트랩"
-            svgElement={<MATLAB size={Theme.large.slice(0, -2)} />}
+            svgElement={<MATLAB size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
         </BoxContent>
 
@@ -118,22 +116,22 @@ export default ({ setAbout }) => (
           <SvgCard
             delay={0}
             text="노드 JS"
-            svgElement={<NodeJS size={Theme.large.slice(0, -2)} />}
+            svgElement={<NodeJS size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={400}
             text="그래프큐엘"
-            svgElement={<GraphQL size={Theme.large.slice(0, -2)} />}
+            svgElement={<GraphQL size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={800}
             text="몽고디비"
-            svgElement={<MongoDB size={Theme.large.slice(0, -2)} />}
+            svgElement={<MongoDB size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={1200}
             text="프리즈마"
-            svgElement={<Prisma size={Theme.large.slice(0, -2)} />}
+            svgElement={<Prisma size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
         </BoxContent>
 
@@ -153,27 +151,27 @@ export default ({ setAbout }) => (
           <SvgCard
             delay={0}
             text="리액트/RN"
-            svgElement={<ReactLogo size={Theme.large.slice(0, -2)} />}
+            svgElement={<ReactLogo size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={400}
             text="아폴로"
-            svgElement={<Apollo size={Theme.large.slice(0, -2)} />}
+            svgElement={<Apollo size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={800}
             text="엑스포"
-            svgElement={<Expo size={Theme.large.slice(0, -2)} />}
+            svgElement={<Expo size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={1200}
             text="장고"
-            svgElement={<Django size={Theme.large.slice(0, -2)} />}
+            svgElement={<Django size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
           <SvgCard
             delay={1600}
             text="D3 JS"
-            svgElement={<D3Logo size={Theme.large.slice(0, -2)} />}
+            svgElement={<D3Logo size={Theme.large.replace(/[^0-9.]/g, "")} />}
           />
         </BoxContent>
 
