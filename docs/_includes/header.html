@@ -5,8 +5,11 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-    <a class="site-title" rel="author" href="{{ " /" | relative_url }}">{{ site.title | escape }}</a>
-
+    {% if page.lang == "kr" %}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% elsif page.lang == "en" %}
+    <a class="site-title" rel="author" href="{{ "/en/" | relative_url }}">{{ site.title | escape }}</a>
+    {% endif %}
 
     {%- if titles_size > 0 -%}
     <nav class="site-nav">
@@ -39,6 +42,7 @@
         <a class="page-link" href="{{ site.baseurl }}/en/research">Research</a> 
 
         <a href="{{ site.baseurl }}/{{ page.url | remove_first: '/en/' }}">KR</a> 
+        
         {% elsif page.lang == "kr" %}
         <a class="page-link" href="{{ site.baseurl }}/about">소개</a> 
         <a class="page-link" href="{{ site.baseurl }}/life">일상</a> 

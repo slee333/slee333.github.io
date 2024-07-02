@@ -5,6 +5,7 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+  
 body {
   font-family: Arial, sans-serif;
   margin: 0;
