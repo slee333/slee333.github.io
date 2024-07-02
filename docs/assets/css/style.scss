@@ -5,25 +5,26 @@
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
 
 @font-face {
-  font-family: 'NanumGothic';
-  src: url('{{ "/assets/fonts/NanumGothic.ttf" | relative_url }}') format('truetype');
+  font-family: "NanumGothic";
+  src: url('{{ "/assets/fonts/NanumGothic.ttf" | relative_url }}') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NanumBarunGothic';
-  src: url('{{ "/assets/fonts/NanumBarunGothic.ttf" | relative_url }}') format('truetype');
+  font-family: "NanumBarunGothic";
+  src: url('{{ "/assets/fonts/NanumBarunGothic.ttf" | relative_url }}') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --theme-color: #4195E0; /* Set your desired theme color here */
+  --theme-color: #4195e0; /* Set your desired theme color here */
 }
 
 /* Apply theme color to bold text */
-b, strong {
+b,
+strong {
   color: var(--theme-color); /* Apply the theme color to bold text */
   font-weight: bolder;
 }
@@ -52,8 +53,7 @@ b, strong {
 .post-category {
   font-weight: bolder;
   font-size: large;
-  color: #4195E0;
-  
+  color: #4195e0;
 }
 
 h1,
@@ -73,10 +73,15 @@ h2 {
 
 .wrapper {
   width: 80%; /* Widen the wrapper */
-  max-width: 1000px; /* Set a maximum width for larger screens */
+  max-width: 1200px; /* Set a maximum width for larger screens */
   margin: 0 auto; /* Center the wrapper */
   padding: 20px; /* Add some padding for better spacing */
-  font-family: 'NanumBarunGothic'; /* Apply the custom font */
+  font-family: "NanumBarunGothic"; /* Apply the custom font */
+}
+
+.post {
+  width: 100%;
+  max-width: 900px;
 }
 
 .featured-post {
@@ -117,7 +122,7 @@ h2 {
 
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   gap: 1em;
 }
 
@@ -148,9 +153,13 @@ h2 {
 }
 
 .grid-post-content h2 {
-  font-size: large;
+  font-size: larger;
   font-weight: 800;
   margin: 0;
+}
+
+.grid-post-content p {
+  font-size: medium;
 }
 
 .post-title a,
