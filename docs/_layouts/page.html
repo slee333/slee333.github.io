@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">{{ content }}</div>
+
+  <ul>
+    <div>Page lang: {{ page.lang }}</div>
+  </ul>
+
+  <h1>Posts in category: {{ page.category }}</h1>
+  <ul>
+    {% for post in site.categories[page.category] %}
+      {% if post.lang == page.lang %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+  </ul>
+</article>

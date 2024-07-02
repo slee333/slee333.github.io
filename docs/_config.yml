@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: SWL BLog
+email: seungwooklee94@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -33,6 +33,32 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+
+# multi language settings
+languages: 
+  kr: 
+    permalink: /:title/
+    default_lang: true
+  en: 
+    permalink: /en/:title/
+
+# collections:
+#   en_posts:
+#     output: true
+#     permalink: /en/:path/
+#   kr_posts:
+#     output: true
+    # permalink: /:path/
+collections:
+  en_posts:
+    output: true
+    permalink: /en/:categories/:title/
+  es_posts:
+    output: true
+    permalink: /es/:categories/:title/
+  kr_posts:
+    output: true
+    permalink: /:categories/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

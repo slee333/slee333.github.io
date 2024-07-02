@@ -1,0 +1,131 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Post Header Styles */
+.post-header {
+  margin-bottom: 2em;
+}
+
+.post-thumbnail {
+  display: block;
+  height: 400px; /* Set the height to 200px to crop the image */
+  overflow: hidden;
+  position: relative; /* Ensure the image fits within this container */
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.post-title {
+  margin-top: 1em;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.post-category {
+  font-weight: bold;
+  color: #555;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.wrapper {
+  width: 80%; /* Widen the wrapper */
+  max-width: 1000px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the wrapper */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.featured-post {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.featured-thumbnail {
+  display: block;
+  height: 100%; /* Set the height to 300px to make it 50% bigger */
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-thumbnail img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the height */
+  object-fit: cover; /* Crop the image to fill the container */
+}
+
+.featured-content {
+  margin-left: 4em;
+  width: 120%;
+}
+
+.featured-content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+  /* Want to add 에스코어 드림 7 */
+  font-family: 'Noto Sans KR', '에스코어 드림 7', 'Times New Roman', Times, serif;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.grid-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-post-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-post-content {
+  margin-top: 0.5em;
+}
+
+.post-title a,
+.featured-content h1 a,
+.grid-post-content h2 a {
+  color: black;
+  text-decoration: none; /* Remove underline */
+}
+
+.post-title a:hover,
+.featured-content h1 a:hover,
+.grid-post-content h2 a:hover {
+  text-decoration: underline; /* Optionally add underline on hover */
+}

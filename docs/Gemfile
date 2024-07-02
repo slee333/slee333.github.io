@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 ################## To run Locally, switch comments between the two lines below ##################
-# gem "jekyll", "~> 4.3.3"
+#gem "jekyll", "~> 4.3.3"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 ################## To run Locally, switch comments between the two lines above ##################
 
