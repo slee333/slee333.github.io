@@ -5,7 +5,7 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
-  
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -129,4 +129,75 @@ h2 {
 .featured-content h1 a:hover,
 .grid-post-content h2 a:hover {
   text-decoration: underline; /* Optionally add underline on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%; /* Make the wrapper more flexible on smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .featured-post {
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 1em; /* Reduce margin bottom */
+  }
+
+  .featured-thumbnail {
+    height: auto; /* Let the image adjust naturally */
+  }
+
+  .featured-content {
+    margin-left: 0; /* Remove left margin */
+    width: 100%;
+    text-align: center; /* Center the content */
+  }
+
+  .featured-content h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .featured-content h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .grid-post {
+    flex-direction: row; /* Stack elements horizontally */
+  }
+
+  .grid-post-thumbnail {
+    width: 30%; /* Reduce the width of the thumbnail */
+    margin-right: 1em; /* Add space between thumbnail and content */
+  }
+
+  .grid-post-thumbnail img {
+    height: auto; /* Let the image adjust naturally */
+  }
+
+  .grid-post-content {
+    width: 70%; /* Adjust the width to align with the thumbnail */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .post-thumbnail {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .post-title {
+    font-size: 1.5em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-content h1 {
+    font-size: 1.5em; /* Further adjust font size for very small screens */
+  }
+
+  .post-title {
+    font-size: 1.2em; /* Further adjust font size */
+  }
 }
