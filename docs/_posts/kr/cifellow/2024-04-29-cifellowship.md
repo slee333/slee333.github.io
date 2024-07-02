@@ -7,7 +7,7 @@ tags: fellowship informatics
 lang: kr
 permalink: /:title/
 ref: cif1
-thumbnail: https://images.unsplash.com/photo-1666886573199-88a2ed65470d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: 의료정보학 펠로우? 그게 뭐죠 먹는 건가요 냠냠
 categorydisplay: 의료정보학
 ---

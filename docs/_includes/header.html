@@ -12,7 +12,7 @@
     {% endif %}
 
     {%- if titles_size > 0 -%}
-    <nav class="site-nav">
+    <nav class="site-nav" >
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
         <span class="menu-icon">
@@ -23,7 +23,7 @@
         </span>
       </label>
 
-      <div class="trigger">
+      <div class="trigger navbar">
 
         <!-- {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
@@ -31,7 +31,7 @@
         <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {%- endif -%}{%- endfor -%} -->
 
-        <nav>
+        
 
 
         {% if page.lang == "en" %}
@@ -41,7 +41,7 @@
         <a class="page-link" href="{{ site.baseurl }}/en/learning">Learnings</a> 
         <a class="page-link" href="{{ site.baseurl }}/en/research">Research</a> 
 
-        <a href="{{ site.baseurl }}/{{ page.url | remove_first: '/en/' }}">KR</a> 
+        <a class="page-link" href="{{ site.baseurl }}/{{ page.url | remove_first: '/en/' }}">KR</a> 
         
         {% elsif page.lang == "kr" %}
         <a class="page-link" href="{{ site.baseurl }}/about">소개</a> 
@@ -49,9 +49,9 @@
         <a class="page-link" href="{{ site.baseurl }}/cifellow">의료정보학</a> 
         <a class="page-link" href="{{ site.baseurl }}/learning">공부일기</a> 
         <a class="page-link" href="{{ site.baseurl }}/research">연구기록</a> 
-        <a href="{{ site.baseurl }}/en/{{ page.url | remove_first: '/' }}">EN</a>
+        <a class="page-link" href="{{ site.baseurl }}/en/{{ page.url | remove_first: '/' }}">EN</a>
         {% endif %}
-        </nav>
+        
 
         
 

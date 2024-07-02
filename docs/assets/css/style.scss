@@ -2,34 +2,42 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('{{ "/assets/fonts/NanumGothic.ttf" | relative_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('{{ "/assets/fonts/NanumBarunGothic.ttf" | relative_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --theme-color: #4195E0; /* Set your desired theme color here */
+}
+
+/* Apply theme color to bold text */
+b, strong {
+  color: var(--theme-color); /* Apply the theme color to bold text */
+  font-weight: bolder;
+}
+
+/* Navbar Styles */
+.site-nav {
+  background-color: white; /* Set a solid background color */
+  z-index: 1000; /* High z-index to ensure it appears above other elements */
+  padding: 0.1em; /* Add padding for spacing */
 }
 
 /* Post Header Styles */
 .post-header {
   margin-bottom: 2em;
-}
-
-.post-thumbnail {
-  display: block;
-  height: 400px; /* Set the height to 200px to crop the image */
-  overflow: hidden;
-  position: relative; /* Ensure the image fits within this container */
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .post-title {
@@ -42,11 +50,14 @@ body {
 }
 
 .post-category {
-  font-weight: bold;
-  color: #555;
+  font-weight: bolder;
+  font-size: large;
+  color: #4195E0;
+  
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -65,6 +76,7 @@ h2 {
   max-width: 1000px; /* Set a maximum width for larger screens */
   margin: 0 auto; /* Center the wrapper */
   padding: 20px; /* Add some padding for better spacing */
+  font-family: 'NanumBarunGothic'; /* Apply the custom font */
 }
 
 .featured-post {
@@ -77,6 +89,7 @@ h2 {
   height: 100%; /* Set the height to 300px to make it 50% bigger */
   overflow: hidden;
   position: relative;
+  z-index: 1; /* Ensure thumbnails have a lower z-index */
 }
 
 .featured-thumbnail img {
@@ -94,8 +107,12 @@ h2 {
   font-size: 3em;
   font-weight: bold;
   color: black;
-  /* Want to add 에스코어 드림 7 */
-  font-family: 'Noto Sans KR', '에스코어 드림 7', 'Times New Roman', Times, serif;
+  font-family: "NanumBarunGothic";
+}
+
+.featured-content p {
+  font-size: medium;
+  font-family: "NanumBarunGothic";
 }
 
 .featured-grid {
@@ -109,13 +126,31 @@ h2 {
   flex-direction: column;
 }
 
+.grid-post-thumbnail {
+  width: 100%; /* Ensure the width is 100% of the container */
+  padding-top: 100%; /* Maintain a square aspect ratio */
+  position: relative; /* Enable positioning of the image within the container */
+  overflow: hidden; /* Hide any overflow */
+}
+
 .grid-post-thumbnail img {
-  max-width: 100%;
-  height: auto;
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the image covers the container width */
+  height: 100%; /* Ensure the image covers the container height */
+  object-fit: cover; /* Crop the image to cover the container */
 }
 
 .grid-post-content {
   margin-top: 0.5em;
+  text-align: left; /* Center align the text */
+}
+
+.grid-post-content h2 {
+  font-size: large;
+  font-weight: 800;
+  margin: 0;
 }
 
 .post-title a,
@@ -131,6 +166,16 @@ h2 {
   text-decoration: underline; /* Optionally add underline on hover */
 }
 
+.post-content p {
+  font-family: "NanumBarunGothic";
+  font-size: large;
+  line-height: 1.7;
+}
+
+.post-content p:lang(en) {
+  font-size: larger; /* Adjust the multiplier as needed */
+  line-height: 1.7;
+}
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .wrapper {
@@ -157,29 +202,36 @@ h2 {
     font-size: 2em; /* Adjust font size for smaller screens */
   }
 
-  .featured-content h1 {
-    font-size: 2em; /* Adjust font size for smaller screens */
-  }
-
   .featured-grid {
     grid-template-columns: 1fr; /* Single column layout */
   }
 
   .grid-post {
     flex-direction: row; /* Stack elements horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 1em; /* Add space between grid posts */
   }
 
   .grid-post-thumbnail {
-    width: 30%; /* Reduce the width of the thumbnail */
+    width: 30%; /* Set a fixed width for the thumbnail */
+    padding-top: 30%; /* Maintain aspect ratio to ensure it is square */
+    position: relative; /* Ensure proper positioning of the image */
     margin-right: 1em; /* Add space between thumbnail and content */
+    overflow: hidden; /* Hide overflow */
+    flex-shrink: 0; /* Prevent the thumbnail from shrinking */
   }
 
   .grid-post-thumbnail img {
-    height: auto; /* Let the image adjust naturally */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to fit the container */
   }
 
   .grid-post-content {
-    width: 70%; /* Adjust the width to align with the thumbnail */
+    flex-grow: 1; /* Allow the content to grow and fill the available space */
     margin-top: 0; /* Remove top margin */
   }
 
@@ -199,5 +251,14 @@ h2 {
 
   .post-title {
     font-size: 1.2em; /* Further adjust font size */
+  }
+
+  .grid-post-thumbnail {
+    width: 35%; /* Set a fixed width for the thumbnail */
+    padding-top: 35%; /* Maintain aspect ratio to ensure it is square */
+  }
+
+  .grid-post-content {
+    flex-grow: 1; /* Allow the content to grow and fill the available space */
   }
 }

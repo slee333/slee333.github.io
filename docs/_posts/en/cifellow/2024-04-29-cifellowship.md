@@ -7,12 +7,12 @@ tags: fellowship informatics
 lang: en
 permalink: /en/:title/
 ref: cif1
-thumbnail: https://images.unsplash.com/photo-1666886573199-88a2ed65470d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
 categorydisplay: Clinical Informatics
 ---
 
-It’s already been a year since I started my residency training in the U.S. There are many paths after completing internal medicine training, but broadly, they can be classified into 1. Working as a Fellow or 2. Working as a Hospitalist. I will discuss option 2 in more detail next time, but for now, I’ll explain more about option 1.
+It’s already been a year since I started my residency training in the U.S. There are many paths after completing internal medicine training, but broadly, they can be classified into **1. Working as a Fellow** or **2. Working as a Hospitalist**. I will discuss option 2 in more detail next time, but for now, I’ll explain more about **option 1**.
 
 ### 1. The Fellowship Application Process
 

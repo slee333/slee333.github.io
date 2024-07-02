@@ -3,9 +3,9 @@ layout: base
 ---
 
 <div class="home">
-  {%- if page.title -%}
+  <!-- {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- endif -%} -->
 
   {% assign posts_by_lang = site.posts | where: "lang", page.lang %}
   {% assign first_post = posts_by_lang | first %}
@@ -35,8 +35,8 @@ layout: base
           <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
         </a>
         <div class="grid-post-content">
-          <span class="post-category">{{ post.categorydisplay }}</span>
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.subtitle }}</p>
         </div>
       </div>
     {% endfor %}
@@ -44,7 +44,7 @@ layout: base
 
   {{ content }} 
   
-  {% if site.paginate %} {%
+  <!-- {% if site.paginate %} {%
   assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %}
   {% endif %} {%- if posts.size > 0 -%} {%- if page.list_title -%}
   <h2 class="post-list-heading">{{ page.list_title }}</h2>
@@ -92,5 +92,5 @@ layout: base
       {%- endif %}
     </ul>
   </div>
-  {%- endif %} {%- endif -%}
+  {%- endif %} {%- endif -%} -->
 </div>

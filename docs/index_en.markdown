@@ -7,7 +7,3 @@ title: Home
 lang: en
 permalink: /en/
 ---
-
-영문 지킬 페이지 홈
-
-ENGLSIH HOMEEEEEE
