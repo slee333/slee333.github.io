@@ -1,4 +1,8 @@
 <header class="site-header">
+  
+  {% if page.layout == "post" %}
+  {%- include progress-bar.html -%}
+  {% endif %}
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
@@ -30,9 +34,6 @@
         {%- if my_page.title -%}
         <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {%- endif -%}{%- endfor -%} -->
-
-        
-
 
         {% if page.lang == "en" %}
         <a class="page-link" href="{{ site.baseurl }}/en/about">About</a> 

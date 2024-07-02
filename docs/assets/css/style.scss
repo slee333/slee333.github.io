@@ -22,6 +22,22 @@
   --theme-color: #4195e0; /* Set your desired theme color here */
 }
 
+/* Progress Bar In Header */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #f3f3f3;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #4195e0;
+  width: 0%;
+}
+
 /* Apply theme color to bold text */
 b,
 strong {
