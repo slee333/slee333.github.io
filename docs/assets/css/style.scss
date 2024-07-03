@@ -22,6 +22,10 @@
   --theme-color: #4195e0; /* Set your desired theme color here */
 }
 
+body {
+  font-family: "Tahoma", "NanumBarunGothic", "나눔 고딕", "Malgun Gothic", "굴림", "Gulim", "sans-serif";
+}
+
 /* Progress Bar In Header */
 .progress-container {
   width: 100%;
@@ -57,7 +61,6 @@ strong {
   max-width: 1200px; /* Set a maximum width for larger screens */
   margin: 0 auto; /* Center the wrapper */
   padding: 20px; /* Add some padding for better spacing */
-  font-family: "NanumBarunGothic"; /* Apply the custom font */
 }
 
 .header-wrapper {
@@ -135,12 +138,10 @@ h2 {
   font-size: 3em;
   font-weight: bold;
   color: black;
-  font-family: "NanumBarunGothic";
 }
 
 .featured-content p {
   font-size: medium;
-  font-family: "NanumBarunGothic";
 }
 
 .featured-grid {
@@ -204,7 +205,6 @@ h2 {
 }
 
 .post-content p {
-  font-family: "NanumBarunGothic";
   font-size: large;
   line-height: 1.7;
 }
