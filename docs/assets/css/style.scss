@@ -52,6 +52,20 @@ strong {
   padding: 0.1em; /* Add padding for spacing */
 }
 
+.wrapper {
+  width: 80%; /* Widen the wrapper */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the wrapper */
+  padding: 20px; /* Add some padding for better spacing */
+  font-family: "NanumBarunGothic"; /* Apply the custom font */
+}
+
+.header-wrapper {
+  border-bottom: 1px solid black; /* Add a border to separate the header */
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
 /* Post Header Styles */
 .post-header {
   margin-bottom: 2em;
@@ -87,14 +101,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-.wrapper {
-  width: 80%; /* Widen the wrapper */
-  max-width: 1200px; /* Set a maximum width for larger screens */
-  margin: 0 auto; /* Center the wrapper */
-  padding: 20px; /* Add some padding for better spacing */
-  font-family: "NanumBarunGothic"; /* Apply the custom font */
-}
-
 .post {
   width: 100%;
   max-width: 900px;
@@ -103,6 +109,7 @@ h2 {
 .featured-post {
   display: flex;
   margin-bottom: 2em;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .featured-thumbnail {
@@ -145,6 +152,7 @@ h2 {
 .grid-post {
   display: flex;
   flex-direction: column;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .grid-post-thumbnail {
@@ -185,10 +193,14 @@ h2 {
   text-decoration: none; /* Remove underline */
 }
 
-.post-title a:hover,
-.featured-content h1 a:hover,
-.grid-post-content h2 a:hover {
-  text-decoration: underline; /* Optionally add underline on hover */
+.featured-post:hover .featured-content h1,
+.featured-post .featured-content h1:hover {
+  text-decoration: underline;
+}
+
+.grid-post:hover .grid-post-content h2,
+.grid-post .grid-post-content h2:hover {
+  text-decoration: underline;
 }
 
 .post-content p {
@@ -198,7 +210,7 @@ h2 {
 }
 
 .post-content p:lang(en) {
-  font-size: larger; /* Adjust the multiplier as needed */
+  font-size: large; /* Adjust the multiplier as needed */
   line-height: 1.7;
 }
 /* Media Queries for Mobile Responsiveness */

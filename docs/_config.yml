@@ -39,7 +39,8 @@ languages:
     default_lang: true
   en: 
     permalink: /en/:title/
-
+  es: 
+    permalink: /es/:title/
 # collections:
 #   en_posts:
 #     output: true

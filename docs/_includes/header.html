@@ -4,7 +4,7 @@
   {%- include progress-bar.html -%}
   {% endif %}
 
-  <div class="wrapper">
+  <div class="wrapper header-wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
@@ -13,6 +13,8 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {% elsif page.lang == "en" %}
     <a class="site-title" rel="author" href="{{ "/en/" | relative_url }}">{{ site.title | escape }}</a>
+    {% elsif page.lang == "es" %}
+    <a class="site-title" rel="author" href="{{ "/es/" | relative_url }}">{{ site.title | escape }}</a>
     {% endif %}
 
     {%- if titles_size > 0 -%}
@@ -43,6 +45,7 @@
         <a class="page-link" href="{{ site.baseurl }}/en/research">Research</a> 
 
         <a class="page-link" href="{{ site.baseurl }}/{{ page.url | remove_first: '/en/' }}">KR</a> 
+        <a class="page-link" href="{{ site.baseurl }}/es/{{ page.url | remove_first: '/en/' }}">ES</a> 
         
         {% elsif page.lang == "kr" %}
         <a class="page-link" href="{{ site.baseurl }}/about">소개</a> 
@@ -51,6 +54,16 @@
         <a class="page-link" href="{{ site.baseurl }}/learning">공부일기</a> 
         <a class="page-link" href="{{ site.baseurl }}/research">연구기록</a> 
         <a class="page-link" href="{{ site.baseurl }}/en/{{ page.url | remove_first: '/' }}">EN</a>
+        <a class="page-link" href="{{ site.baseurl }}/es/{{ page.url | remove_first: '/' }}">ES</a>
+
+        {% elsif page.lang == "es" %}
+        <a class="page-link" href="{{ site.baseurl }}/es/about">Acerca de</a> 
+        <a class="page-link" href="{{ site.baseurl }}/es/life">Vida Diaria</a> 
+        <a class="page-link" href="{{ site.baseurl }}/es/cifellow">Informática Clínica</a> 
+        <a class="page-link" href="{{ site.baseurl }}/es/learning">Aprendizaje</a> 
+        <a class="page-link" href="{{ site.baseurl }}/es/research">Investigación</a> 
+        <a class="page-link" href="{{ site.baseurl }}/{{ page.url | remove_first: '/es/' }}">KR</a> 
+        <a class="page-link" href="{{ site.baseurl }}/en/{{ page.url | remove_first: '/es/' }}">EN</a> 
         {% endif %}
         
 
