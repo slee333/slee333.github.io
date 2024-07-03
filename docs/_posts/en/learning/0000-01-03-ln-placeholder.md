@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "L placeholder"
-date:   0000-01-03 18:00:00 -0400
+date:   2024-01-03 18:00:00 -0400
 categories: learning
 tags: fellowship informatics
 lang: en

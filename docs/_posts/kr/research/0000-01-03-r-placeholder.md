@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "플레이스홀더"
-date:   0000-01-03 18:00:00 -0400
+date:   2024-01-03 18:00:00 -0400
 categories: research
 tags: fellowship informatics
 lang: kr
