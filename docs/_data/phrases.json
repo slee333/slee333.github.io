@@ -1,0 +1,32 @@
+{
+  "en": {
+    "categories": {
+      "cifellowship": "Clinical Informatics",
+      "learning": "Learning",
+      "life": "Life",
+      "research": "Research"
+    },
+    "viewall": "View All",
+    "description": "A cozy place to share my journey and ideas."
+  },
+  "es": {
+    "categories": {
+      "cifellowship": "Informática Clínica",
+      "learning": "Aprendizaje",
+      "life": "Vida Diaria",
+      "research": "Investigación"
+    },
+    "viewall": "Ver Todo",
+    "description": "A cozy place to share my journey and ideas."
+  },
+  "kr": {
+    "categories": {
+      "cifellowship": "의료정보학",
+      "learning": "공부일기",
+      "life": "일상기록",
+      "research": "연구일기"
+    },
+    "viewall": "더보기",
+    "description": "A cozy place to share my journey and ideas."
+  }
+}

@@ -15,84 +15,165 @@ layout: base
       <img src="{{ first_post.thumbnail }}" alt="{{ first_post.title }}">
     </a>
     <div class="featured-content" onclick="window.location.href='{{ first_post.url }}'">
-      <span class="post-category">{{ first_post.categorydisplay  }}</span>
+      <span class="post-category"><div>{{ first_post.categorydisplay }}</div></span>
       <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
       <p>{{ first_post.subtitle }}</p>
       <p class="post-meta">
-        By Seung Wook Lee | 
+        By Seung Wook Lee |
         <time datetime="{{ first_post.date | date_to_xmlschema }}">
           {{ first_post.date | date: "%B %d, %Y" }}
         </time>
       </p>
     </div>
   </div>
-  
+
   <div class="featured-grid">
     {% assign remaining_posts = posts_by_lang | where_exp: "post", "post != first_post" %}
     {% for post in remaining_posts limit:4 %}
-    
+
     <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
       <div class="grid-post-thumbnail">
         <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
       </div>
       <div class="grid-post-content">
+        <div class="featured-grid-posts-categorydisplay">{{post.categorydisplay}}</div>
         <h2>{{ post.title }}</h2>
         <p>{{ post.subtitle }}</p>
       </div>
     </div>
- 
+
     {% endfor %}
+
   </div>
 
-  {{ content }} 
-  
-  <!-- {% if site.paginate %} {%
-  assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %}
-  {% endif %} {%- if posts.size > 0 -%} {%- if page.list_title -%}
-  <h2 class="post-list-heading">{{ page.list_title }}</h2>
-  {%- endif -%}
-  <ul class="post-list">
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {%- for post in posts -%}
-    <li>
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
 
-  {% if site.paginate %}
-  <div class="pager">
-    <ul class="pagination">
-      {%- if paginator.previous_page %}
-      <li>
-        <a
-          href="{{ paginator.previous_page_path | relative_url }}"
-          class="previous-page"
-          >{{ paginator.previous_page }}</a
-        >
-      </li>
-      {%- else %}
-      <li><div class="pager-edge">•</div></li>
-      {%- endif %}
-      <li><div class="current-page">{{ paginator.page }}</div></li>
-      {%- if paginator.next_page %}
-      <li>
-        <a
-          href="{{ paginator.next_page_path | relative_url }}"
-          class="next-page"
-          >{{ paginator.next_page }}</a
-        >
-      </li>
-      {%- else %}
-      <li><div class="pager-edge">•</div></li>
-      {%- endif %}
-    </ul>
+  <!-- Category Strip with highlight -->
+  {% assign category = "learning" %}
+  {% assign highlight = category == "learning" %}
+  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
+  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
+
+  <div class="category-strip {% if highlight %}highlight{% endif %}">
+    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
+    {% assign category_posts = posts_by_lang | where: "categories", category %}
+    <div class="category-strip-inner">
+      <div class="category-strip-header">
+        <h2>{{categorydisplayheader}}</h2>
+        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+      </div>
+
+      <div class="category-strip-posts">
+
+        {% for post in category_posts limit:3 %}
+
+        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+          <div class="grid-post-thumbnail">
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+          </div>
+          <div class="grid-post-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
   </div>
-  {%- endif %} {%- endif -%} -->
+
+  {% assign category = "cifellowship" %}
+  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
+  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
+  <div class="category-strip">
+    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
+    {% assign category_posts = posts_by_lang | where: "categories", category %}
+    <div class="category-strip-inner">
+      <div class="category-strip-header">
+        <h2>{{categorydisplayheader}}</h2>
+        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+      </div>
+
+      <div class="category-strip-posts">
+
+        {% for post in category_posts limit:3 %}
+
+        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+          <div class="grid-post-thumbnail">
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+          </div>
+          <div class="grid-post-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  {% assign category = "life" %}
+  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
+  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
+  <div class="category-strip">
+    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
+    {% assign category_posts = posts_by_lang | where: "categories", category %}
+    <div class="category-strip-inner">
+      <div class="category-strip-header">
+        <h2>{{categorydisplayheader}}</h2>
+        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+      </div>
+
+      <div class="category-strip-posts">
+
+        {% for post in category_posts limit:3 %}
+
+        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+          <div class="grid-post-thumbnail">
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+          </div>
+          <div class="grid-post-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  {% assign category = "research" %}
+  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
+  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
+  <div class="category-strip">
+    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
+    {% assign category_posts = posts_by_lang | where: "categories", category %}
+    <div class="category-strip-inner">
+      <div class="category-strip-header">
+        <h2>{{categorydisplayheader}}</h2>
+        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+      </div>
+
+      <div class="category-strip-posts">
+
+        {% for post in category_posts limit:3 %}
+
+        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+          <div class="grid-post-thumbnail">
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+          </div>
+          <div class="grid-post-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  {{ content }}
+
 </div>
