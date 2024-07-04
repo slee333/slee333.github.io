@@ -6,10 +6,18 @@
       "life": "Life",
       "research": "Research"
     },
+    "navbar": {
+      "about": "About",
+      "cifellowship":"Clinical Informatics",
+      "learning": "Learning",
+      "life": "Life",
+      "research": "Research"
+    },
     "viewall": "View All",
     "postsinthiscategory": "Posts in this category:",
     "minutesread": "min read",
-    "description": "A cozy place to share my journey and ideas."
+    "description": "A cozy place to share my journey and ideas.",
+    "otherpostsinsamecategory": "Other posts in the same category"
   },
   "es": {
     "categories": {
@@ -18,10 +26,18 @@
       "life": "Vida Diaria",
       "research": "Investigación"
     },
+    "navbar":{
+      "about": "Acerca de",
+      "cifellowship":"Informática Clínica",
+      "learning": "Aprendizaje",
+      "life": "Vida Diaria",
+      "research": "Investigación"
+    },
     "viewall": "Ver Todo",
     "postsinthiscategory": "Entradas en esta categoría:",
     "minutesread": "min de lectura",
-    "description": "A cozy place to share my journey and ideas."
+    "description": "A cozy place to share my journey and ideas.",
+    "otherpostsinsamecategory": "Otras entradas en la misma categoría"
   },
   "kr": {
     "categories": {
@@ -30,9 +46,17 @@
       "life": "일상기록",
       "research": "연구일기"
     },
+    "navbar":{
+      "about": "소개",
+      "cifellowship":"의료정보학",
+      "learning": "공부일기",
+      "life": "일상기록",
+      "research": "연구일기"
+    },
     "viewall": "더보기",
     "postsinthiscategory": "해당 카테고리 글 모음:",
     "minutesread": "분 소요",
-    "description": "A cozy place to share my journey and ideas."
+    "description": "A cozy place to share my journey and ideas.",
+    "otherpostsinsamecategory": "해당 카테고리 다른 글 보기"
   }
 }
