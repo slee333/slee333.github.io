@@ -2,7 +2,7 @@
 layout: page
 title: 공부일기
 permalink: /learning/
-category: learning
+categories: learning
 lang: kr
 ---
 

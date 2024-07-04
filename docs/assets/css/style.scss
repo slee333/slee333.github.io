@@ -57,11 +57,16 @@ strong {
   padding: 0.1em; /* Add padding for spacing */
 }
 
+.page-content {
+  padding-top: 10px;
+}
+
 .wrapper {
   width: 80%; /* Widen the wrapper */
   max-width: 1200px; /* Set a maximum width for larger screens */
   margin: 0 auto; /* Center the wrapper */
   padding: 20px; /* Add some padding for better spacing */
+  box-sizing: border-box; /* 패딩을 포함한 너비와 높이 계산 */
 }
 
 .header-wrapper {
@@ -123,33 +128,6 @@ h2 {
   width: 100%;
   max-width: 900px;
 }
-
-// .featured-post {
-//   display: flex;
-//   margin-bottom: 2em;
-//   cursor: pointer; /* Change cursor to pointer on hover */
-//   width: 100%;
-//   height: auto;
-// }
-
-// .featured-thumbnail {
-//   display: block;
-//   height: 100%; /* Set the height to 300px to make it 50% bigger */
-//   overflow: hidden;
-//   position: relative;
-//   z-index: 1; /* Ensure thumbnails have a lower z-index */
-// }
-
-// .featured-thumbnail img {
-//   width: 100%;
-//   height: 100%; /* Ensure the image fills the height */
-//   object-fit: cover; /* Crop the image to fill the container */
-// }
-
-// .featured-content {
-//   margin-left: 4em;
-//   width: 120%;
-// }
 
 .featured-post {
   display: flex;
@@ -383,6 +361,82 @@ h2 {
   font-size: large; /* Adjust the multiplier as needed */
   line-height: 1.7;
 }
+
+.category-page-header {
+  text-align: center; /*Not reallw working lol*/
+}
+
+.category-page-title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  width: fit-content;
+  color: var(--theme-color);
+}
+
+.category-page-title::after {
+  content: ""; /* Create a pseudo-element */
+  display: block; /* Make the pseudo-element a block-level element */
+  width: 100%; /* Set the width of the border */
+  margin: 0 auto; /* Center the border */
+  border-bottom: 3px solid var(--theme-color); /* Use the theme color and set the thickness */
+  margin-top: 5px; /* Add some space between the text and the border */
+}
+
+.category-page-content p {
+  font-size: large;
+  line-height: 1.7;
+}
+
+.category-page-content p:lang(en) {
+  font-size: large; /* Adjust the multiplier as needed */
+  line-height: 1.7;
+}
+
+.category-page-posts {
+  margin-top: 5%;
+}
+
+.category-post {
+  display: flex; /* Use flexbox to align children horizontally */
+  align-items: center; /* Center items vertically */
+  cursor: pointer; /* Change cursor to pointer for clickability */
+  border: 1px solid #ddd; /* Optional: Add border */
+  padding: 10px; /* Optional: Add padding */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add shadow */
+  background-color: #fff; /* Optional: Add background color */
+  margin: 10px 0; /* Optional: Add margin between posts */
+}
+
+.category-post-thumbnail {
+  flex: 0 0 25%; /* Take 40% of the width */
+  max-width: 25%; /* Ensure it doesn't exceed 40% */
+  height: 10em;
+  margin-right: 20px; /* Optional: Add space between thumbnail and content */
+  max-height: 20%;
+  overflow: hidden;
+}
+
+.category-post-thumbnail img {
+  width: 100%; /* Ensure the image fills the thumbnail container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.category-post-content {
+  flex: 1; /* Take the remaining 60% of the width */
+  max-width: 60%; /* Ensure it doesn't exceed 60% */
+}
+
+.category-post-content h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5em; /* Adjust font size */
+}
+
+.category-post-content p {
+  margin: 5px 0 0; /* Adjust margins */
+  color: #666; /* Optional: Adjust text color */
+}
+
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .wrapper {

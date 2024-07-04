@@ -2,7 +2,7 @@
 layout: page
 title: 의료정보학
 permalink: /cifellowship/
-category: cifellowship
+categories: cifellowship
 lang: kr
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Life
 permalink: /en/life/
-category: life
+categories: life
 lang: en
 ---
 

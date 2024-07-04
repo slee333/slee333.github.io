@@ -2,7 +2,7 @@
 layout: page
 title: Clinical Informatics
 permalink: /en/cifellowship/
-category: cifellowship
+categories: cifellowship
 lang: en
 ---
 

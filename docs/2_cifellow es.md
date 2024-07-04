@@ -2,7 +2,7 @@
 layout: page
 title: Informática Clínica
 permalink: /es/cifellowship/
-category: cifellowship
+categories: cifellowship
 lang: es
 ---
 

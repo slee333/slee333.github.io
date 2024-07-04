@@ -2,26 +2,28 @@
 layout: base
 ---
 
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+<article class="category-page">
+  <header class="category-page-header">
+    <h1 class="category-page-title">{{ page.title }}</h1>
   </header>
 
-  <div class="post-content">{{ content }}</div>
+  <div class="category-page-content">{{ content }}</div>
 
-  <ul>
-    <div>Page lang: {{ page.lang }}</div>
-  </ul>
+  <div class="category-page-posts">
+    <h2>{{site.data.phrases[page.lang]["postsinthiscategory"]}}</h2>
 
-  <h1>Posts in category: {{ page.category }}</h1>
-  <ul>
-    {% for post in site.categories[page.category] %}
-      {% if post.lang == page.lang %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
+    {% for post in site.categories[page.categories] %} 
+    {% if post.lang == page.lang %}
 
-  </ul>
+    <div class="category-post" onclick="window.location.href='{{ post.url }}'">
+      <div class="category-post-thumbnail">
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+      </div>
+      <div class="category-post-content">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.subtitle }}</p>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
 </article>

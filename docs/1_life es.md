@@ -2,7 +2,7 @@
 layout: page
 title: Vida Diaria
 permalink: /es/life/
-category: life
+categories: life
 lang: es
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: 일상기록
 permalink: /life/
-category: life
+categories: life
 lang: kr
 ---
 

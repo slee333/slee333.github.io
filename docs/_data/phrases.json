@@ -7,6 +7,7 @@
       "research": "Research"
     },
     "viewall": "View All",
+    "postsinthiscategory": "Posts in this category:",
     "description": "A cozy place to share my journey and ideas."
   },
   "es": {
@@ -17,6 +18,7 @@
       "research": "Investigación"
     },
     "viewall": "Ver Todo",
+    "postsinthiscategory": "Entradas en esta categoría:",
     "description": "A cozy place to share my journey and ideas."
   },
   "kr": {
@@ -27,6 +29,7 @@
       "research": "연구일기"
     },
     "viewall": "더보기",
+    "postsinthiscategory": "해당 카테고리 글 모음:",
     "description": "A cozy place to share my journey and ideas."
   }
 }

@@ -2,7 +2,7 @@
 layout: page
 title: Learnings
 permalink: /en/learning/
-category: learning
+categories: learning
 lang: en
 ---
 

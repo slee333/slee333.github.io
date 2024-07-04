@@ -2,7 +2,7 @@
 layout: page
 title: Aprendizaje
 permalink: /es/learning/
-category: learning
+categories: learning
 lang: es
 ---
 
