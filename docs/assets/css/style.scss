@@ -39,7 +39,7 @@ body {
 
 .progress-bar {
   height: 5px;
-  background: #4195e0;
+  background: var(--theme-color);
   width: 0%;
 }
 
@@ -92,7 +92,7 @@ strong {
 .post-category {
   font-weight: bolder;
   font-size: large;
-  color: #4195e0;
+  color: var(--theme-color);
 }
 
 .post-category div {
@@ -209,7 +209,7 @@ h2 {
 }
 
 .category-strip.highlight {
-  background-color: var(--theme-color);
+  background-color: antiquewhite;
 }
 
 /* Inner container to align content */
@@ -436,6 +436,14 @@ h2 {
   color: #666; /* Optional: Adjust text color */
 }
 
+.post-details-container {
+  display: flex;
+  justify-content: left;
+  margin: 0.5em 0;
+}
+.post-details-container div {
+  margin-right: 20px;
+}
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {

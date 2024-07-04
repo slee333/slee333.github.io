@@ -8,6 +8,7 @@
     },
     "viewall": "View All",
     "postsinthiscategory": "Posts in this category:",
+    "minutesread": "min read",
     "description": "A cozy place to share my journey and ideas."
   },
   "es": {
@@ -19,6 +20,7 @@
     },
     "viewall": "Ver Todo",
     "postsinthiscategory": "Entradas en esta categoría:",
+    "minutesread": "min de lectura",
     "description": "A cozy place to share my journey and ideas."
   },
   "kr": {
@@ -30,6 +32,7 @@
     },
     "viewall": "더보기",
     "postsinthiscategory": "해당 카테고리 글 모음:",
+    "minutesread": "분 소요",
     "description": "A cozy place to share my journey and ideas."
   }
 }

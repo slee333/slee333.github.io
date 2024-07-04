@@ -12,7 +12,8 @@ layout: base
   <div class="category-page-posts">
     <h2>{{site.data.phrases[page.lang]["postsinthiscategory"]}}</h2>
 
-    {% for post in site.categories[page.categories] %} 
+    <!-- 10개 정도로 제한하고, 10개가 넘어가면 더 보기 버튼 표시. 그걸 누르면 더 보이도록  -->
+    {% for post in site.categories[page.categories] limit:10 %} 
     {% if post.lang == page.lang %}
 
     <div class="category-post" onclick="window.location.href='{{ post.url }}'">
@@ -21,9 +22,24 @@ layout: base
       </div>
       <div class="category-post-content">
         <h2>{{ post.title }}</h2>
+        <div class="post-details-container">
+          <div><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%m/%d/%Y" }}</div>
+          {% assign content_length = post.content | size %}
+          {% assign reading_time = content_length | divided_by: 1200 %}
+          {% assign minread_text = site.data.phrases[page.lang]["minutesread"] %}
+          <!-- <p>The estimated reading time is {{ reading_time }} minutes.</p> -->
+          <div><i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}</div>
+          {% assign limited_tags = post.tags | slice: 0, 3 %}
+          <div><i class="fas fa-folder"></i> {{ limited_tags | join: ", " }}</div>
+        </div>
+        
         <p>{{ post.subtitle }}</p>
+        
       </div>
     </div>
     {% endif %} {% endfor %}
   </div>
+
+  <!-- 현 카테고리 글을 제외한 최신 글들 추천하기 grid 이용-->
+  
 </article>
