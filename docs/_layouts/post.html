@@ -1,33 +1,43 @@
 ---
 layout: base
 ---
+
 <div class="post-wrapper">
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
     <header class="post-header">
-      {% assign posts_by_lang = site.posts | where: "lang", page.lang %}
-      {% assign category_key = page.categories | first %} <!-- Ensuring we get the first element if it's an array -->
-      {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category_key] %}
-      {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
+      {% assign posts_by_lang = site.posts | where: "lang", page.lang %} {%
+      assign category_key = page.categories | first %}
+      <!-- Ensuring we get the first element if it's an array -->
+      {% assign categorydisplayheader =
+      site.data.phrases[page.lang]["categories"][category_key] %} {% assign
+      viewall = site.data.phrases[page.lang]["viewall"] %}
 
       <div class="category-strip-header">
         <h2><b>{{categorydisplayheader}}</b></h2>
       </div>
 
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 class="post-title p-name" itemprop="name headline">
+        {{ page.title | escape }}
+      </h1>
       <p>{{page.subtitle}}</p>
       <div class="post-details">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%}
         <p class="post-meta">By <b>Seung Wook Lee</b></p>
         <p class="post-meta">|</p>
-        <div class="post-meta"><i class="fas fa-calendar-alt "></i> {{ page.date | date: date_format }}</div>
-        {% assign content_length = page.content | size %}
-        {% assign reading_time = content_length | divided_by: 1200 %}
-        {% assign minread_text = site.data.phrases[page.lang]["minutesread"] %}
+        <div class="post-meta">
+          <i class="fas fa-calendar-alt"></i> {{ page.date | date: date_format
+          }}
+        </div>
+        {% assign content_length = page.content | size %} {% assign reading_time
+        = content_length | divided_by: 1200 %} {% assign minread_text =
+        site.data.phrases[page.lang]["minutesread"] %}
         <!-- <p>The estimated reading time is {{ reading_time }} minutes.</p> -->
-        <div class="post-meta"><i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}</div>
+        <div class="post-meta">
+          <i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}
+        </div>
       </div>
-      <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+      <img src="{{ page.thumbnail }}" alt="{{ page.title }}" />
 
       <div class="social-icons">
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank">
@@ -50,23 +60,25 @@ layout: base
             {% include social-icons/link-icon.svg %}
           </svg>
         </a>
-        <span id="copy-feedback" style="display:none;">Copied!</span>
+        <span id="copy-feedback" style="display: none">Copied!</span>
       </div>
-
     </header>
 
     <div class="post-content e-content" itemprop="articleBody">
+      
       {{ content }}
     </div>
 
-    {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-    {%- endif -%}
+    {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
+    endif -%}
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
     <div class="post-classifications">
-      <div class="post-meta"><i class="fas fa-folder"></i> {{page.categorydisplay}}</div>
-      <div class="post-meta"><i class="fas fa-tag"></i> {% for tag in page.tags limit:10 %}
+      <div class="post-meta">
+        <i class="fas fa-folder"></i> {{page.categorydisplay}}
+      </div>
+      <div class="post-meta">
+        <i class="fas fa-tag"></i> {% for tag in page.tags limit:10 %}
         <code>{{tag}}</code>{%endfor%}
       </div>
     </div>
@@ -74,26 +86,27 @@ layout: base
     <div class="category-strip highlight">
       {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
       {% assign category_posts = posts_by_lang | where: "categories", category_key %}
+      {% assign current_title = page.title %}
+    
       <div class="category-strip-inner">
         <div class="category-strip-header">
-          <h2>{{site.data.phrases[page.lang]["otherpostsinsamecategory"]}}</h2>
-          <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+          <h2>{{ site.data.phrases[page.lang]["otherpostsinsamecategory"] }}</h2>
+          <a href="{{ site.baseurl }}/{{ category_key }}" class="view-all">{{ viewall }} →</a>
         </div>
-
+    
         <div class="category-strip-posts">
-
-          {% for post in category_posts limit:3 %}
-
-          <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-            <div class="grid-post-thumbnail">
-              <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
-            </div>
-            <div class="grid-post-content">
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.subtitle }}</p>
-            </div>
-          </div>
-
+          {% for post in category_posts %}
+            {% if post.title != current_title %}
+              <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+                <div class="grid-post-thumbnail">
+                  <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+                </div>
+                <div class="grid-post-content">
+                  <h2>{{ post.title }}</h2>
+                  <p>{{ post.subtitle }}</p>
+                </div>
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -101,29 +114,27 @@ layout: base
   </article>
 
   <!-- Utterances 댓글 스니핏 삽입 -->
-  <script src="https://utteranc.es/client.js"
-        repo="slee333/slee333.github.io"
-        issue-term="title"
-        label="gh-pages-comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-  </script>
+  <script src="https://utteranc.es/client.js" repo="slee333/slee333.github.io" issue-term="title"
+    label="gh-pages-comments" theme="github-light" crossorigin="anonymous" async></script>
 
   <script>
-    document.getElementById('copy-link-icon').addEventListener('click', function (event) {
-      event.preventDefault();
-      const url = window.location.href;
-      navigator.clipboard.writeText(url).then(function () {
-        const feedback = document.getElementById('copy-feedback');
-        feedback.style.display = 'inline';
-        setTimeout(() => {
-          feedback.style.display = 'none';
-        }, 2000);
-      }, function (err) {
-        console.error('Could not copy text: ', err);
+    document
+      .getElementById("copy-link-icon")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        const url = window.location.href;
+        navigator.clipboard.writeText(url).then(
+          function () {
+            const feedback = document.getElementById("copy-feedback");
+            feedback.style.display = "inline";
+            setTimeout(() => {
+              feedback.style.display = "none";
+            }, 2000);
+          },
+          function (err) {
+            console.error("Could not copy text: ", err);
+          }
+        );
       });
-    });
   </script>
-
 </div>

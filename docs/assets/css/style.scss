@@ -1,7 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
+--- 
+# Only the main Sass file needs front matter (the dashes are enough) 
+--- 
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
 
 @font-face {
@@ -19,8 +18,10 @@
 }
 
 :root {
-  --theme-color: #4195e0; /* Set your desired theme color here */
-  --theme-color-opp: #EA9F36; /* Set the opposite color for contrast */
+  --theme-color: #4195e0;
+  /* Set your desired theme color here */
+  --theme-color-opp: #ea9f36;
+  /* Set the opposite color for contrast */
 }
 
 body {
@@ -28,13 +29,20 @@ body {
 }
 
 code {
-  background-color: #f5f5f5; /* Light gray background */
-  border: 1px solid #ddd;    /* Light border */
-  border-radius: 3px;        /* Slightly rounded corners */
-  padding: 0 3px;            /* Some padding */
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; /* Monospaced font */
-  font-size: 90%;            /* Slightly smaller font size */
-  color: var(--theme-color);            /* Code text color */
+  background-color: #f5f5f5;
+  /* Light gray background */
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 3px;
+  /* Slightly rounded corners */
+  padding: 0 3px;
+  /* Some padding */
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  /* Monospaced font */
+  font-size: 90%;
+  /* Slightly smaller font size */
+  color: var(--theme-color);
+  /* Code text color */
 }
 
 /* Progress Bar In Header */
@@ -48,15 +56,19 @@ code {
 /* Apply theme color to bold text */
 b,
 strong {
-  color: var(--theme-color); /* Apply the theme color to bold text */
+  color: var(--theme-color);
+  /* Apply the theme color to bold text */
   font-weight: bolder;
 }
 
 /* Navbar Styles */
 .site-nav {
-  background-color: white; /* Set a solid background color */
-  z-index: 1000; /* High z-index to ensure it appears above other elements */
-  padding: 0.1em; /* Add padding for spacing */
+  background-color: white;
+  /* Set a solid background color */
+  z-index: 1000;
+  /* High z-index to ensure it appears above other elements */
+  padding: 0.1em;
+  /* Add padding for spacing */
 }
 
 // Language switcher in navbar
@@ -67,17 +79,21 @@ strong {
 }
 
 .language-switcher select {
-  width: 100px; /* 드롭다운 메뉴의 너비를 넓힘 */
+  width: 100px;
+  /* 드롭다운 메뉴의 너비를 넓힘 */
   padding: 10px 15px;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
-  appearance: none; /* 기본 화살표 제거 */
+  appearance: none;
+  /* 기본 화살표 제거 */
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .language-switcher select:focus {
@@ -87,7 +103,8 @@ strong {
 }
 
 .language-switcher::after {
-  content: '\25BC'; /* 화살표 기호 추가 */
+  content: "\25BC";
+  /* 화살표 기호 추가 */
   position: absolute;
   top: 50%;
   right: 10px;
@@ -100,7 +117,8 @@ strong {
 /* 고정 헤더 스타일 */
 .sticky-header {
   position: fixed;
-  top: -100px; /* 초기 상태는 화면 밖 */
+  top: -100px;
+  /* 초기 상태는 화면 밖 */
   width: 100%;
   background: white;
   z-index: 1000;
@@ -120,17 +138,40 @@ strong {
   justify-content: space-between;
   align-items: center;
   padding-top: 0.8em;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
+}
+
+.sticky-header .current-page-details {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 
 .sticky-header .current-page-title {
   font-size: 1.2em;
   font-weight: bold;
-  margin-left: auto;
+}
+
+.sticky-header .current-page-headings {
+  display: flex;
+  align-items: center;
+  margin-top: 0.1em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.sticky-header .current-page-section {
+  margin-top: 0.2em;
+  font-size: 1em;
+  font-weight: 400;
+  min-height: 1em;
+  margin-right: 0.3em;
 }
 
 .sticky-header .language-switcher {
-  margin-left: auto; /* 오른쪽 끝으로 이동 */
+
   position: relative;
 }
 
@@ -139,15 +180,21 @@ strong {
 }
 
 .wrapper {
-  width: 80%; /* Widen the wrapper */
-  max-width: 1200px; /* Set a maximum width for larger screens */
-  margin: 0 auto; /* Center the wrapper */
-  padding: 20px; /* Add some padding for better spacing */
-  box-sizing: border-box; /* 패딩을 포함한 너비와 높이 계산 */
+  width: 80%;
+  /* Widen the wrapper */
+  max-width: 1200px;
+  /* Set a maximum width for larger screens */
+  margin: 0 auto;
+  /* Center the wrapper */
+  padding: 20px;
+  /* Add some padding for better spacing */
+  box-sizing: border-box;
+  /* 패딩을 포함한 너비와 높이 계산 */
 }
 
 .header-wrapper {
-  border-bottom: 1px solid black; /* Add a border to separate the header */
+  border-bottom: 1px solid black;
+  /* Add a border to separate the header */
   padding: 15px;
   padding-bottom: 0px;
 }
@@ -173,7 +220,6 @@ strong {
   width: 100%;
   height: 20em;
   object-fit: cover;
-
 }
 
 .post-title {
@@ -202,14 +248,19 @@ strong {
 }
 
 .post-category div::after {
-  content: ""; /* Create a pseudo-element */
-  display: block; /* Make the pseudo-element a block-level element */
-  width: 100%; /* Set the width of the border */
-  margin: 0 auto; /* Center the border */
-  border-bottom: 2px solid var(--theme-color); /* Use the theme color and set the thickness */
-  margin-top: 0px; /* Add some space between the text and the border */
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
 }
-
 
 h1,
 h2 {
@@ -236,11 +287,13 @@ h2 {
   width: 100%;
   height: 20em;
   margin-bottom: 2.5%;
-  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+  transition: opacity 0.3s ease;
+  /* Add transition for smooth effect */
 }
 
 .featured-post:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
+  opacity: 0.8;
+  /* Reduce opacity on hover */
 }
 
 .featured-thumbnail {
@@ -254,16 +307,19 @@ h2 {
 .featured-thumbnail img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This will ensure the image covers the entire height */
+  object-fit: cover;
+  /* This will ensure the image covers the entire height */
 }
 
 .featured-content {
   flex: 1;
   width: 47.5%;
-  margin-left: 2.5%; /* Add padding as needed */
+  margin-left: 2.5%;
+  /* Add padding as needed */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the content vertically */
+  justify-content: center;
+  /* Center the content vertically */
 }
 
 .featured-content h1 {
@@ -292,23 +348,34 @@ h2 {
 }
 
 .featured-grid-posts-categorydisplay::after {
-  content: ""; /* Create a pseudo-element */
-  display: block; /* Make the pseudo-element a block-level element */
-  width: 100%; /* Set the width of the border */
-  margin: 0 auto; /* Center the border */
-  border-bottom: 1px solid var(--theme-color); /* Use the theme color and set the thickness */
-  margin-top: 0px; /* Add some space between the text and the border */
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 1px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
 }
 
 /* Category Strip Styles */
 .category-strip {
-  width: 100vw; /* Full viewport width */
-  position: relative; /* Ensure it stays in the flow of the document */
-  left: 50%; /* Move to the center of the viewport */
+  width: 100vw;
+  /* Full viewport width */
+  position: relative;
+  /* Ensure it stays in the flow of the document */
+  left: 50%;
+  /* Move to the center of the viewport */
   right: 50%;
-  margin-left: -50vw; /* Offset by half the viewport width */
+  margin-left: -50vw;
+  /* Offset by half the viewport width */
   margin-right: -50vw;
-  box-sizing: border-box; /* Include padding in the total width and height */
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
 }
 
 .category-strip.highlight {
@@ -317,12 +384,15 @@ h2 {
 
 /* Inner container to align content */
 .category-strip-inner {
-  max-width: 1200px; /* Set a max-width to align with the parent wrapper */
+  max-width: 1200px;
+  /* Set a max-width to align with the parent wrapper */
   width: 80%;
-  margin: 0 auto; /* Center the content */
+  margin: 0 auto;
+  /* Center the content */
   padding-top: 1%;
   padding-bottom: 1%;
-  box-sizing: border-box; /* Include padding in the total width */
+  box-sizing: border-box;
+  /* Include padding in the total width */
 }
 
 .category-strip-header {
@@ -339,36 +409,52 @@ h2 {
 }
 
 .category-strip-header h2::after {
-  content: ""; /* Create a pseudo-element */
-  display: block; /* Make the pseudo-element a block-level element */
-  width: 100%; /* Set the width of the border */
-  margin: 0 auto; /* Center the border */
-  border-bottom: 2px solid black; /* Use the theme color and set the thickness */
-  margin-top: 0px; /* Add some space between the text and the border */
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid black;
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
 }
 
 .post-header .category-strip-header h2::after {
-  content: ""; /* Create a pseudo-element */
-  display: block; /* Make the pseudo-element a block-level element */
-  width: 100%; /* Set the width of the border */
-  margin: 0 auto; /* Center the border */
-  border-bottom: 2px solid var(--theme-color); /* Use the theme color and set the thickness */
-  margin-top: 0px; /* Add some space between the text and the border */
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
 }
 
 .category-strip-header a {
   color: black;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  /* Remove underline */
   font-weight: bold;
-  transition: color 0.3s; /* Add transition for smooth color change */
+  transition: color 0.3s;
+  /* Add transition for smooth color change */
 }
 
 .highlight .category-strip-header a:hover {
-  color: white; /* Change text color to white on hover */
+  color: white;
+  /* Change text color to white on hover */
 }
 
 .category-strip-header a:hover {
-  color: var(--theme-color); /* Change text color to white on hover */
+  color: var(--theme-color);
+  /* Change text color to white on hover */
 }
 
 .category-strip-posts {
@@ -379,16 +465,20 @@ h2 {
 
 /* Add border to grid posts */
 .category-strip-posts .grid-post {
-  box-sizing: border-box; /* Include padding in the total width and height */
-  position: relative; /* For absolute positioning of the image */
-  overflow: hidden; /* Hide overflow to contain the image */
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
+  position: relative;
+  /* For absolute positioning of the image */
+  overflow: hidden;
+  /* Hide overflow to contain the image */
 }
 
 /* Thumbnail container */
 .category-strip-posts .grid-post .grid-post-thumbnail {
   position: relative;
   width: 100%;
-  padding-top: 60%; /* 60% of width for aspect ratio */
+  padding-top: 60%;
+  /* 60% of width for aspect ratio */
   border-radius: 10px;
 }
 
@@ -399,44 +489,58 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the container */
+  object-fit: cover;
+  /* Ensure the image covers the container */
 }
 
 .grid-post-content {
-  box-sizing: border-box; /* Include padding in the total width */
+  box-sizing: border-box;
+  /* Include padding in the total width */
 }
 
 .grid-post {
   display: flex;
   flex-direction: column;
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  transition: opacity 0.3s ease;
+  /* Add transition for smooth effect */
 }
 
 .grid-post:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
+  opacity: 0.8;
+  /* Reduce opacity on hover */
 }
 
 .grid-post-thumbnail {
-  width: 100%; /* Ensure the width is 100% of the container */
-  padding-top: 100%; /* Maintain a square aspect ratio */
-  position: relative; /* Enable positioning of the image within the container */
-  overflow: hidden; /* Hide any overflow */
+  width: 100%;
+  /* Ensure the width is 100% of the container */
+  padding-top: 100%;
+  /* Maintain a square aspect ratio */
+  position: relative;
+  /* Enable positioning of the image within the container */
+  overflow: hidden;
+  /* Hide any overflow */
   border-radius: 10px;
 }
 
 .grid-post-thumbnail img {
-  position: absolute; /* Position the image absolutely within the container */
+  position: absolute;
+  /* Position the image absolutely within the container */
   top: 0;
   left: 0;
-  width: 100%; /* Ensure the image covers the container width */
-  height: 100%; /* Ensure the image covers the container height */
-  object-fit: cover; /* Crop the image to cover the container */
+  width: 100%;
+  /* Ensure the image covers the container width */
+  height: 100%;
+  /* Ensure the image covers the container height */
+  object-fit: cover;
+  /* Crop the image to cover the container */
 }
 
 .grid-post-content {
   margin-top: 0.5em;
-  text-align: left; /* Center align the text */
+  text-align: left;
+  /* Center align the text */
 }
 
 .grid-post-content h2 {
@@ -453,7 +557,8 @@ h2 {
 .featured-content h1 a,
 .grid-post-content h2 a {
   color: black;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .featured-post:hover .featured-content h1,
@@ -478,7 +583,8 @@ h2 {
 }
 
 .post-content p:lang(en) {
-  font-size: medium; /* Adjust the multiplier as needed */
+  font-size: medium;
+  /* Adjust the multiplier as needed */
   line-height: 1.7;
 }
 
@@ -494,7 +600,8 @@ h2 {
 }
 
 .category-page-header {
-  text-align: center; /*Not reallw working lol*/
+  text-align: center;
+  /*Not reallw working lol*/
 }
 
 .category-page-title {
@@ -505,12 +612,18 @@ h2 {
 }
 
 .category-page-title::after {
-  content: ""; /* Create a pseudo-element */
-  display: block; /* Make the pseudo-element a block-level element */
-  width: 100%; /* Set the width of the border */
-  margin: 0 auto; /* Center the border */
-  border-bottom: 3px solid var(--theme-color); /* Use the theme color and set the thickness */
-  margin-top: 5px; /* Add some space between the text and the border */
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 3px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 5px;
+  /* Add some space between the text and the border */
 }
 
 .category-page-content p {
@@ -519,7 +632,8 @@ h2 {
 }
 
 .category-page-content p:lang(en) {
-  font-size: large; /* Adjust the multiplier as needed */
+  font-size: large;
+  /* Adjust the multiplier as needed */
   line-height: 1.7;
 }
 
@@ -528,44 +642,63 @@ h2 {
 }
 
 .category-post {
-  display: flex; /* Use flexbox to align children horizontally */
-  align-items: center; /* Center items vertically */
-  cursor: pointer; /* Change cursor to pointer for clickability */
-  border: 1px solid #ddd; /* Optional: Add border */
-  padding: 10px; /* Optional: Add padding */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add shadow */
-  background-color: #fff; /* Optional: Add background color */
-  margin: 10px 0; /* Optional: Add margin between posts */
+  display: flex;
+  /* Use flexbox to align children horizontally */
+  align-items: center;
+  /* Center items vertically */
+  cursor: pointer;
+  /* Change cursor to pointer for clickability */
+  border: 1px solid #ddd;
+  /* Optional: Add border */
+  padding: 10px;
+  /* Optional: Add padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow */
+  background-color: #fff;
+  /* Optional: Add background color */
+  margin: 10px 0;
+  /* Optional: Add margin between posts */
 }
 
 .category-post-thumbnail {
-  flex: 0 0 25%; /* Take 40% of the width */
-  max-width: 25%; /* Ensure it doesn't exceed 40% */
+  flex: 0 0 25%;
+  /* Take 40% of the width */
+  max-width: 25%;
+  /* Ensure it doesn't exceed 40% */
   height: 10em;
-  margin-right: 20px; /* Optional: Add space between thumbnail and content */
+  margin-right: 20px;
+  /* Optional: Add space between thumbnail and content */
   max-height: 20%;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .category-post-thumbnail img {
-  width: 100%; /* Ensure the image fills the thumbnail container */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100%;
+  /* Ensure the image fills the thumbnail container */
+  height: auto;
+  /* Maintain the aspect ratio */
 }
 
 .category-post-content {
-  flex: 1; /* Take the remaining 60% of the width */
-  max-width: 60%; /* Ensure it doesn't exceed 60% */
+  flex: 1;
+  /* Take the remaining 60% of the width */
+  max-width: 60%;
+  /* Ensure it doesn't exceed 60% */
 }
 
 .category-post-content h2 {
-  margin: 0; /* Remove default margin */
-  font-size: 1.5em; /* Adjust font size */
+  margin: 0;
+  /* Remove default margin */
+  font-size: 1.5em;
+  /* Adjust font size */
 }
 
 .category-post-content p {
-  margin: 5px 0 0; /* Adjust margins */
-  color: #666; /* Optional: Adjust text color */
+  margin: 5px 0 0;
+  /* Adjust margins */
+  color: #666;
+  /* Optional: Adjust text color */
 }
 
 .post-details-container {
@@ -573,6 +706,7 @@ h2 {
   justify-content: left;
   margin: 0.5em 0;
 }
+
 .post-details-container div {
   margin-right: 20px;
 }
@@ -581,19 +715,24 @@ h2 {
 .social-icons {
   margin-top: 1em;
   display: flex;
-  gap: 10px; /* Adjust the gap between icons if you have multiple */
+  gap: 10px;
+  /* Adjust the gap between icons if you have multiple */
   flex-direction: row;
 }
 
 .social-icons svg {
-  width: 1.5em; /* Set the desired width */
-  height: 1.5em; /* Set the desired height */
-  fill: rgb(51, 51, 51); /* Facebook's brand color */
+  width: 1.5em;
+  /* Set the desired width */
+  height: 1.5em;
+  /* Set the desired height */
+  fill: rgb(51, 51, 51);
+  /* Facebook's brand color */
   transition: fill 0.3s;
 }
 
 .social-icons svg:hover {
-  fill: var(--theme-color); /* Lighter shade on hover */
+  fill: var(--theme-color);
+  /* Lighter shade on hover */
 }
 
 .utterances {
@@ -603,47 +742,65 @@ h2 {
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .wrapper {
-    width: 95%; /* Make the wrapper more flexible on smaller screens */
-    padding: 10px; /* Reduce padding */
+    width: 95%;
+    /* Make the wrapper more flexible on smaller screens */
+    padding: 10px;
+    /* Reduce padding */
   }
 
   .featured-post {
-    flex-direction: column; /* Stack elements vertically */
-    margin-bottom: 1em; /* Reduce margin bottom */
+    flex-direction: column;
+    /* Stack elements vertically */
+    margin-bottom: 1em;
+    /* Reduce margin bottom */
   }
 
   .featured-thumbnail {
-    height: auto; /* Let the image adjust naturally */
+    height: auto;
+    /* Let the image adjust naturally */
   }
 
   .featured-content {
-    margin-left: 0; /* Remove left margin */
+    margin-left: 0;
+    /* Remove left margin */
     width: 100%;
-    text-align: center; /* Center the content */
+    text-align: center;
+    /* Center the content */
   }
 
   .featured-content h1 {
-    font-size: 2em; /* Adjust font size for smaller screens */
+    font-size: 2em;
+    /* Adjust font size for smaller screens */
     font-weight: 800;
   }
 
   .featured-grid {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
+    /* Single column layout */
   }
 
   .grid-post {
-    flex-direction: row; /* Stack elements horizontally */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 1em; /* Add space between grid posts */
+    flex-direction: row;
+    /* Stack elements horizontally */
+    align-items: center;
+    /* Center items vertically */
+    margin-bottom: 1em;
+    /* Add space between grid posts */
   }
 
   .grid-post-thumbnail {
-    width: 30%; /* Set a fixed width for the thumbnail */
-    padding-top: 30%; /* Maintain aspect ratio to ensure it is square */
-    position: relative; /* Ensure proper positioning of the image */
-    margin-right: 1em; /* Add space between thumbnail and content */
-    overflow: hidden; /* Hide overflow */
-    flex-shrink: 0; /* Prevent the thumbnail from shrinking */
+    width: 30%;
+    /* Set a fixed width for the thumbnail */
+    padding-top: 30%;
+    /* Maintain aspect ratio to ensure it is square */
+    position: relative;
+    /* Ensure proper positioning of the image */
+    margin-right: 1em;
+    /* Add space between thumbnail and content */
+    overflow: hidden;
+    /* Hide overflow */
+    flex-shrink: 0;
+    /* Prevent the thumbnail from shrinking */
   }
 
   .grid-post-thumbnail img {
@@ -652,38 +809,48 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop the image to fit the container */
+    object-fit: cover;
+    /* Crop the image to fit the container */
   }
 
   .grid-post-content {
-    flex-grow: 1; /* Allow the content to grow and fill the available space */
-    margin-top: 0; /* Remove top margin */
+    flex-grow: 1;
+    /* Allow the content to grow and fill the available space */
+    margin-top: 0;
+    /* Remove top margin */
   }
 
   .post-thumbnail {
-    height: 200px; /* Adjust height for smaller screens */
+    height: 200px;
+    /* Adjust height for smaller screens */
   }
 
   .post-title {
-    font-size: 1.5em; /* Adjust font size */
+    font-size: 1.5em;
+    /* Adjust font size */
   }
 }
 
 @media (max-width: 480px) {
   .featured-content h1 {
-    font-size: 1.5em; /* Further adjust font size for very small screens */
+    font-size: 1.5em;
+    /* Further adjust font size for very small screens */
   }
 
   .post-title {
-    font-size: 1.2em; /* Further adjust font size */
+    font-size: 1.2em;
+    /* Further adjust font size */
   }
 
   .grid-post-thumbnail {
-    width: 35%; /* Set a fixed width for the thumbnail */
-    padding-top: 35%; /* Maintain aspect ratio to ensure it is square */
+    width: 35%;
+    /* Set a fixed width for the thumbnail */
+    padding-top: 35%;
+    /* Maintain aspect ratio to ensure it is square */
   }
 
   .grid-post-content {
-    flex-grow: 1; /* Allow the content to grow and fill the available space */
+    flex-grow: 1;
+    /* Allow the content to grow and fill the available space */
   }
 }

@@ -15,7 +15,9 @@ layout: base
       <img src="{{ first_post.thumbnail }}" alt="{{ first_post.title }}">
     </a>
     <div class="featured-content" onclick="window.location.href='{{ first_post.url }}'">
-      <span class="post-category"><div>{{ first_post.categorydisplay }}</div></span>
+      <span class="post-category">
+        <div>{{ first_post.categorydisplay }}</div>
+      </span>
       <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
       <p>{{ first_post.subtitle }}</p>
       <p class="post-meta">

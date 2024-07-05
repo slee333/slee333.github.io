@@ -54,7 +54,13 @@
     <a class="page-link site-title"
       href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">{{
       site.title }}</a>
-    <div class="current-page-title">{{ page.title }}</div>
+    <div class="current-page-details">
+      <div class="current-page-title">{{ page.title }}</div>
+      <div class="current-page-headings">
+        <div class="current-page-section" id="current-section-h1"></div>
+        <div class="current-page-section" id="current-section-h2"></div>
+      </div>
+    </div>
     <div class="language-switcher">
       <select id="language-select-sticky">
         <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
@@ -86,7 +92,14 @@
     const languageSelect = document.getElementById('language-select');
     const stickyLanguageSelect = document.getElementById('language-select-sticky');
     const stickyHeader = document.querySelector('.sticky-header');
-    const showHeaderAt = 200; // Header visibility scroll distance (px)
+    
+    const currentSection_h1 = document.getElementById('current-section-h1');
+    const currentSection_h2 = document.getElementById('current-section-h2');
+    
+    const headings = document.querySelectorAll('main .post-content h2');
+    const headings1 = document.querySelectorAll('main .post-content h1');
+    
+    const showHeaderAt = 400; // Header visibility scroll distance (px)
 
     // Scroll position handling
     const scrollPositionKey = 'scrollPosition';
@@ -143,6 +156,43 @@
       } else {
         stickyHeader.classList.remove('visible');
       }
+
+      let currentHeading1 = '';
+      let currentHeading2 = '';
+
+      for (let i = 0; i < headings1.length; i++) {
+        const heading = headings1[i];
+        const rect = heading.getBoundingClientRect();
+        const offsetTop = window.scrollY + rect.top;
+        const offsetNextTop = (i === headings1.length - 1) ? document.documentElement.scrollHeight : window.scrollY + headings1[i + 1].getBoundingClientRect().top;
+
+        if (window.scrollY >= offsetTop && window.scrollY < offsetNextTop) {
+          currentHeading1 = heading.textContent;
+          break;
+        }
+      }
+
+      for (let i = 0; i < headings.length; i++) {
+        const heading = headings[i];
+        const rect = heading.getBoundingClientRect();
+        const offsetTop = window.scrollY + rect.top;
+        const offsetNextTop = (i === headings.length - 1) ? document.documentElement.scrollHeight : window.scrollY + headings[i + 1].getBoundingClientRect().top;
+
+        if (window.scrollY >= offsetTop && window.scrollY < offsetNextTop) {
+          currentHeading2 = heading.textContent;
+          break;
+        }
+
+        lastHeading = heading.textContent;
+      }
+      
+      currentSection_h1.textContent = currentHeading1;
+      currentSection_h2.textContent = currentHeading2;
+      
+      if (currentHeading1 !== '' && currentHeading2 !== '') {
+        currentSection_h1.textContent += "   /   ";
+      }
+
     });
   });
 </script>
