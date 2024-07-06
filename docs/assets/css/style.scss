@@ -61,14 +61,24 @@ strong {
   font-weight: bolder;
 }
 
-/* Navbar Styles */
 .site-nav {
   background-color: white;
-  /* Set a solid background color */
   z-index: 1000;
-  /* High z-index to ensure it appears above other elements */
-  padding: 0.1em;
-  /* Add padding for spacing */
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav .navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 1em;
+}
+
+.site-nav .page-link {
+  text-decoration: none;
+  color: #000;
 }
 
 // Language switcher in navbar
@@ -157,21 +167,18 @@ strong {
 .sticky-header .current-page-headings {
   display: flex;
   align-items: center;
-  margin-top: 0.1em;
-  font-size: 0.9em;
   color: #666;
 }
 
 .sticky-header .current-page-section {
-  margin-top: 0.2em;
-  font-size: 1em;
   font-weight: 400;
-  min-height: 1em;
   margin-right: 0.3em;
+  font-size: 0.9em;
+  line-height: 1em; /* Ensure consistent line height */
+  min-height: 1em;
 }
 
 .sticky-header .language-switcher {
-
   position: relative;
 }
 
@@ -596,7 +603,12 @@ h2 {
 }
 
 .post-classifications {
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.post-classifications .post-meta {
+  margin-top: 0.5em;
 }
 
 .category-page-header {
@@ -739,6 +751,12 @@ h2 {
   max-width: 80%;
 }
 
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide the toggle button on desktop */
+  }
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .wrapper {
@@ -748,15 +766,58 @@ h2 {
     /* Reduce padding */
   }
 
+  .site-nav {
+    padding: 0 1em;
+  }
+
+  .site-nav .navbar {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    width: fit-content; /* Set width to 30% */
+    padding-left:1.5em;
+    position: absolute;
+    top: 100%;
+    right: 0; /* Align to the right side of the screen */
+    background-color: white;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    z-index: 999; /* Ensure it is above other content */
+    text-align: right; /* Align all contents to the right */
+  }
+
+  .site-nav.expanded .navbar {
+    display: flex;
+  }
+  .navbar .language-switcher {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  .sticky-header .current-page-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sticky-header .language-switcher {
+    margin-top: 10px;
+  }
+
   .featured-post {
     flex-direction: column;
     /* Stack elements vertically */
     margin-bottom: 1em;
     /* Reduce margin bottom */
+    height: 30em;
   }
 
   .featured-thumbnail {
     height: auto;
+    width: 100%;
     /* Let the image adjust naturally */
   }
 
@@ -764,26 +825,35 @@ h2 {
     margin-left: 0;
     /* Remove left margin */
     width: 100%;
-    text-align: center;
-    /* Center the content */
+    flex: 0.5;
+  }
+
+  .post-category {
+    font-size: medium;
   }
 
   .featured-content h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     /* Adjust font size for smaller screens */
     font-weight: 800;
+    margin-top: .25em;
+    margin-bottom: .25em;
   }
+  .featured-content p {
+    font-size: small;
+    margin-bottom: .2em;
+  }
+
 
   .featured-grid {
     grid-template-columns: 1fr;
+    margin-bottom: 15%;
     /* Single column layout */
   }
 
   .grid-post {
     flex-direction: row;
     /* Stack elements horizontally */
-    align-items: center;
-    /* Center items vertically */
     margin-bottom: 1em;
     /* Add space between grid posts */
   }
@@ -820,6 +890,14 @@ h2 {
     /* Remove top margin */
   }
 
+  .grid-post-content h2 {
+    width: 75%;
+  }
+
+  .grid-post-content p {
+    width: 75%;
+  }
+
   .post-thumbnail {
     height: 200px;
     /* Adjust height for smaller screens */
@@ -828,6 +906,61 @@ h2 {
   .post-title {
     font-size: 1.5em;
     /* Adjust font size */
+  }
+
+  /* Category Strip Styles for Mobile */
+  .highlight {
+    padding-top: 2%;
+  } 
+
+  .category-strip-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    gap: 1em;
+  }
+
+  .category-strip-inner {
+    width: 90%;
+  }
+
+  .category-strip-posts .grid-post {
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
+
+  .category-strip-posts .grid-post-thumbnail {
+    width: 30%;
+    padding-top: 30%;
+    position: relative;
+    margin-right: 1em;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .category-strip-posts .grid-post-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .category-strip-posts .grid-post .grid-post-thumbnail {
+    width: 30%;
+    padding-top: 30%;
+  }
+
+  .category-strip-posts .grid-post-content {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  .category-strip-posts .grid-post-content h2 {
+    margin-top: 0.5em;
+  }
+  .category-strip-posts .grid-post-content p {
+    font-size: small;
+    margin-top: 0.5em;
   }
 }
 
@@ -854,3 +987,5 @@ h2 {
     /* Allow the content to grow and fill the available space */
   }
 }
+
+
