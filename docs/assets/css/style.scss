@@ -22,6 +22,7 @@
   /* Set your desired theme color here */
   --theme-color-opp: #ea9f36;
   /* Set the opposite color for contrast */
+  --theme-color-light: #4195e047;
 }
 
 body {
@@ -93,7 +94,7 @@ strong {
   /* 드롭다운 메뉴의 너비를 넓힘 */
   padding: 10px 15px;
   font-size: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(157, 157, 157);
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
@@ -107,7 +108,7 @@ strong {
 }
 
 .language-switcher select:focus {
-  border-color: #007bff;
+  border-color: var(--theme-color);
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
@@ -386,7 +387,7 @@ h2 {
 }
 
 .category-strip.highlight {
-  background-color: #4195e047;
+  background-color: var(--theme-color-light);
 }
 
 /* Inner container to align content */
@@ -660,10 +661,6 @@ h2 {
   /* Center items vertically */
   cursor: pointer;
   /* Change cursor to pointer for clickability */
-  border: 1px solid #ddd;
-  /* Optional: Add border */
-  padding: 10px;
-  /* Optional: Add padding */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Optional: Add shadow */
   background-color: #fff;
@@ -682,7 +679,6 @@ h2 {
   /* Optional: Add space between thumbnail and content */
   max-height: 20%;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .category-post-thumbnail img {
@@ -762,8 +758,29 @@ h2 {
   .wrapper {
     width: 95%;
     /* Make the wrapper more flexible on smaller screens */
-    padding: 10px;
+    padding: 10px 5px;
     /* Reduce padding */
+  }
+
+  .sticky-header .site-title{
+    font-size: 1.2em;
+  }
+  .sticky-header .current-page-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+  
+  .sticky-header .current-page-section {
+    font-weight: 400;
+    margin-right: 0.3em;
+    font-size: 0.8em;
+    line-height: 1em; /* Ensure consistent line height */
+    min-height: 1em;
+  }
+
+  .sticky-header .language-switcher {
+    font-size: small;
   }
 
   .site-nav {
@@ -786,6 +803,7 @@ h2 {
 
   .site-nav.expanded .navbar {
     display: flex;
+    width: fit-content;
   }
   .navbar .language-switcher {
     margin-left: auto;
@@ -891,11 +909,59 @@ h2 {
   }
 
   .grid-post-content h2 {
-    width: 75%;
+    width: 100%;
   }
 
   .grid-post-content p {
-    width: 75%;
+    width: 100%;
+  }
+
+  .category-page-title {
+    font-size: 1.5em;
+  }
+
+  .category-page-content p {
+    font-size: medium;
+    line-height: 1.7;
+  }
+
+  .category-page-content p:lang(en) {
+    font-size: medium;
+  }
+
+  .category-post-thumbnail img {
+    height:100%;
+    object-fit: cover;
+  }
+
+  .category-post-content {
+    flex: 1;
+    /* Take the remaining 60% of the width */
+    max-width: 60%;
+    /* Ensure it doesn't exceed 60% */
+  }
+  
+  .category-post-content h2 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 1em;
+    /* Adjust font size */
+  }
+
+  .post-details-container {
+    font-size: smaller;
+  }
+  
+  .post-details-container .post-details-tags {
+    display: none;
+  }
+
+  .category-post-content p {
+    font-size: 0.8em;
+    margin: 5px 0 0;
+    /* Adjust margins */
+    color: #666;
+    /* Optional: Adjust text color */
   }
 
   .post-thumbnail {
@@ -961,6 +1027,18 @@ h2 {
   .category-strip-posts .grid-post-content p {
     font-size: small;
     margin-top: 0.5em;
+  }
+
+  .post-content {
+    width: 95%;
+  }
+
+  .post-header h1 {
+    font-size: 1.5em;
+  }
+
+  .category-strip-header {
+    font-size: small
   }
 }
 

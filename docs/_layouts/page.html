@@ -28,7 +28,7 @@ layout: base
           <!-- <p>The estimated reading time is {{ reading_time }} minutes.</p> -->
           <div><i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}</div>
           {% assign limited_tags = post.tags | slice: 0, 3 %}
-          <div><i class="fas fa-folder"></i> {{ limited_tags | join: ", " }}</div>
+          <div class="post-details-tags"><i class="fas fa-tag"></i> {{ limited_tags | join: ", " }}</div>
         </div>
 
         <p>{{ post.subtitle }}</p>
