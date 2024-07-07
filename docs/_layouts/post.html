@@ -87,11 +87,16 @@ layout: base
       {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
       {% assign category_posts = posts_by_lang | where: "categories", category_key %}
       {% assign current_title = page.title %}
-    
+      {%if page.lang != 'kr' %}
+        {% assign langurl = page.lang | append: "/" %}
+      {% else %}
+        {% assign langurl = "" %}
+      {% endif %}
+
       <div class="category-strip-inner">
         <div class="category-strip-header">
           <h2>{{ site.data.phrases[page.lang]["otherpostsinsamecategory"] }}</h2>
-          <a href="{{ site.baseurl }}/{{ category_key }}" class="view-all">{{ viewall }} →</a>
+          <a href="{{ site.baseurl }}/{{langurl}}{{ category_key }}" class="view-all">{{ viewall }} →</a>
         </div>
     
         <div class="category-strip-posts">

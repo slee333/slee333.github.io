@@ -17,6 +17,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url('{{ "/assets/fonts/Helvetica.ttf" | relative_url }}') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --theme-color: #4195e0;
   /* Set your desired theme color here */
@@ -233,6 +240,10 @@ strong {
 
 .post-title {
   margin-top: 0em;
+}
+
+.post-title :lang(en) {
+  font-family: "Helvetica";
 }
 
 .post-meta {
