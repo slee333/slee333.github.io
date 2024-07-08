@@ -100,19 +100,21 @@ layout: base
         </div>
     
         <div class="category-strip-posts">
+          {% assign count = 0 %}
           {% for post in category_posts %}
-            {% if post.title != current_title %}
-              <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-                <div class="grid-post-thumbnail">
-                  <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
-                </div>
-                <div class="grid-post-content">
-                  <h2>{{ post.title }}</h2>
-                  <p>{{ post.subtitle }}</p>
-                </div>
-              </div>
+            {% if post.title != current_title and count < 3 %} 
+          <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
+            <div class="grid-post-thumbnail">
+              <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+            </div>
+            <div class="grid-post-content">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.subtitle }}</p>
+            </div>
+          </div>
+            {% assign count = count | plus: 1 %}
             {% endif %}
-          {% endfor %}
+            {% endfor %}
         </div>
       </div>
     </div>
