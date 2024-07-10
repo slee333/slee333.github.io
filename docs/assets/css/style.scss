@@ -24,6 +24,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Swagger";
+  src: url('{{ "/assets/fonts/SDSwaggerTTF.ttf" | relative_url }}') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --theme-color: #4195e0;
   /* Set your desired theme color here */
@@ -67,6 +74,13 @@ strong {
   font-weight: bolder;
 }
 
+.site-title {
+  font-family: Swagger;
+  font-size: 2em;
+  color:black;
+  padding-top: 1%;
+  
+}
 
 .site-nav {
   background-color: white;

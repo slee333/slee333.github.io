@@ -26,9 +26,9 @@ As a result, I implemented a multi-language support blog with some hardcoding. T
 
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/bdd37143-42c9-4174-b10f-ac091a41725d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=643c116c7b2fae40de362774cdef289296d89dbe015f66e348fa9c0d9dad4e2c&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/bdd37143-42c9-4174-b10f-ac091a41725d/Untitled.png?id=aca8d121-de24-4932-9150-85ae9075da23&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=hqHzq6QkDjN9337zwPRSI880UffG7T6tzdgCKYRTueg&downloadName=Untitled.png)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4ecb8229-ed37-482c-803b-094f8cf618cd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=60c67a07a06b2b744ad527c3c04d4c6a82fce7fd2d2c31a34d926953c62dc580&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4ecb8229-ed37-482c-803b-094f8cf618cd/Untitled.png?id=b183173f-a4d3-47c2-bcb7-3a001ca868ae&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=YiO-jARWuFodqNk7Lzbu3tWYAoLowUEIUwrukPlNCN8&downloadName=Untitled.png)  
 
 
 
@@ -50,7 +50,8 @@ By now, you might have realized:
 
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/f776eb0e-3278-4375-964e-5bdc6a0d4b51/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=84a46933c1d20b5fa967ce87bf2597ee79f4f0898a90dd2ef603ef7f9873d917&X-Amz-SignedHeaders=host&x-id=GetObject)  
+
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/f776eb0e-3278-4375-964e-5bdc6a0d4b51/Untitled.png?id=0b411be4-aebc-411c-87be-89f3aeabcd47&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=yd7Fk0-K09smPZksiwAFxfBsjA2yaLf8IcKNrxGGi8o&downloadName=Untitled.png)  
 
 
 
@@ -69,11 +70,9 @@ After specifying it this way, if the user switches the language on the introduct
 Since we replace between different languages via `permalink`, this approach should be applied to the posts we upload. I chose to set `permalink` for every post as follows.
 
 
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/2d899b4d-42ce-4844-b1fa-19215ff20007/Untitled.png?id=8b974278-2bd6-43d0-9cf8-e01a702dc7ba&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=oc_xvmz315yXx4e0WEYSxohTq6g7RBHuQauyFumcrT4&downloadName=Untitled.png)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/2d899b4d-42ce-4844-b1fa-19215ff20007/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=bec4107461ee50efe2e03ebd212c3c5ab8fb8d5ba3adec7fa07a378f5d0a6da2&X-Amz-SignedHeaders=host&x-id=GetObject)  
-
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/935f8e65-b579-4fad-a44a-90198b705a94/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=20bb09a84265d33822de260f019c70a4ff0c805c0de88b6947e67d6d3f4700af&X-Amz-SignedHeaders=host&x-id=GetObject)  
-
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/935f8e65-b579-4fad-a44a-90198b705a94/Untitled.png?id=a5d73de3-f6f3-4d5b-a839-a941e8ca838f&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=LrAOEJet3HmsDSRY199IPcCiM_nUzH1BJoSXBYD-TlM&downloadName=Untitled.png)  
 
 
 
@@ -100,7 +99,8 @@ Of course, you may wonder:
 This is a valid point. Therefore, I create separate language folders within `_posts` to store the two files differently. I manage the posts by creating folders within `_posts` for each language and category.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0e182393-7e63-48ae-8abb-c5745169d85d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=38ae87166a735b4f753d0db8024c010abf0cd9050063dbf6601c0960c42adb4f&X-Amz-SignedHeaders=host&x-id=GetObject)  
+
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0e182393-7e63-48ae-8abb-c5745169d85d/Untitled.png?id=a6733bf3-37ea-48f7-b039-28394791fd86&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=1QA5pYbDBN0C8xOYFqR5g9J7d2ryW81sFmWUKVGh-To&downloadName=Untitled.png)  
 
 
 * The markdown files for posts are organized in the structure `_posts/{language}/{category}/{post}`. *
@@ -114,8 +114,9 @@ This is a valid point. Therefore, I create separate language folders within `_po
 Now that we have two corresponding pages for each language, it's time to create a means to switch to the other language page within the page. I created `header.html` in `root/_includes` and used this file as a header for all pages/posts, adding the following element to that header.
 
 
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/fcb52e39-320b-4e11-b3b7-8a4883e76acb/Untitled.png?id=a7e9386d-bede-404c-a7de-c0696947d688&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=-xeGifjx8uYSaKWgtI78A8K5Dw2Zvmf44SS0lSh1jcw&downloadName=Untitled.png)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/fcb52e39-320b-4e11-b3b7-8a4883e76acb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=2cf3f7ae805246a2e51d14d7d286689e0de0af8c8db2ebff5d0cfcadce495143&X-Amz-SignedHeaders=host&x-id=GetObject)  
+  
 
 
 The example above shows that the options are `kr` and `en`, but ambitiously, I also included Spanish.
@@ -126,7 +127,7 @@ The `div` element has an ID of `language-select` and functions as a dropdown. Wh
 
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4db530b8-8ec7-42d7-b420-5dd960e6fae7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=5c99036ea2bbd271e429d12a7cffc11143891b0e695a0204ba762023be4a0459&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4db530b8-8ec7-42d7-b420-5dd960e6fae7/Untitled.png?id=fbceae4c-a0d1-4951-b772-0f6d3f88fbc9&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=SsboxNqsiuJnnAiAWqDBIiQ8mkm1mHtCANoI3aXfb6w&downloadName=Untitled.png)  
 
 
 ## 3. Linking the Redirection Function to the Language Switch Button
@@ -136,72 +137,41 @@ The `div` element has an ID of `language-select` and functions as a dropdown. Wh
 Now it's time to add the function that redirects to the appropriate URL when a different language is selected in the dropdown. I added the following JavaScript inside the `<script>` tag in `header.html`.
 
 
+`<script>`  
 
-```html
-
-<script>
-
-javascript
-
-// Select the language-select element mentioned above.
-
+```javascript
+// 위에서 표기한 language-select 엘리먼트를 선택한다.
 const languageSelect = document.getElementById('language-select');
-
 languageSelect.addEventListener('change', function () {
-
-  // When the option of language-select changes, the current value is fed into the redirectPage function.
-
-  // So, options like "kr", "en", "es" will be fed.
-
+  // language-select의 option이 변화할 때, redirectPage 함수에 현재 value를 입력값으로 넣는다.
+  // 즉 option들의 value인 "kr", "en", "es" 등이 입력된다.
   redirectPage(this.value);
-
 });
-
-
-
-// redirectPage function.
-
+  
+// redirect Page 함수.
 function redirectPage(selectedLang) {
-
   let currentUrl = window.location.pathname;
 
-
-
-  // Remove the segment from the URL if it starts with /en/ or /es/.
-
+  // 현 URL에서, url이 /en/ 혹은 /es/로 시작할 시 해당 부분을 지운다.
   if (currentUrl.startsWith('/en/') || currentUrl.startsWith('/es/')) {
-
     currentUrl = currentUrl.replace(/^\/(en|es)\//, '/');
-
   }
 
-
-
-  // If the input value is not "kr", insert the selected language (in this example, es or en) at the front of the URL.
-
+  // 입력값이 "kr"이 아닐 때, 선택 된 언어 (현 예시에선 es 혹은 en)가 url 앞쪽에 삽입된다.
   if (selectedLang !== 'kr') {
-
     currentUrl = `/${selectedLang}${currentUrl}`;
-
   }
-
-
-
-  // Clean up any possible duplicate slashes.
-
+  
+  // 혹여 / 기호가 중복될 수 있으니 정리해준다.
   currentUrl = currentUrl.replace(/\/+/g, '/');
 
-
-
-  // Redirect to the new URL!
-
+  // 새로운 URL로 리다이렉트!
   window.location.href = `${window.location.origin}${currentUrl}`;
-
-}
-
+}  
 ```
 
-</script>
+
+`</script>`  
 
 
 
@@ -319,11 +289,10 @@ Now, I have modified the code in a way that eliminates hardcoding, and I will wr
 Below is the appearance of the dropdown menu inserted in the `header` (specifically the **navbar**), which allows switching between English and Korean pages.
 
 
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0ffb491e-2aff-400d-a562-4145ff373dc6/Untitled.png?id=069f8208-a67b-4ecb-b696-272773e06f64&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=4ztUHXQTYx3aDSHyiNP60CQMOXsQn9Cc34aLcND7p6k&downloadName=Untitled.png)  
 
+![](https://file.notion.so/f/f/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/852c921a-5351-4e21-81ed-3bc0e80c19b7/Untitled.png?id=9ac9f43d-ddfe-435b-87d9-51fc52b56222&table=block&spaceId=0401ca2c-0b04-4c4d-9f2f-d423516f4fae&expirationTimestamp=1720706400000&signature=_W-ULXSBkhRvj-t1bvfrG995hNHbrc8GVxVgZ_8x-Ik&downloadName=Untitled.png)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0ffb491e-2aff-400d-a562-4145ff373dc6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=de4ffa7fc73d795504eac7dda841f618cf2260b0c5f77d0271db49b76b9cf172&X-Amz-SignedHeaders=host&x-id=GetObject)  
-
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/852c921a-5351-4e21-81ed-3bc0e80c19b7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=45f43133114e7a9435bc8fd25508d01ada18f832505d89e2b1265c519f46db4a&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
 
 
