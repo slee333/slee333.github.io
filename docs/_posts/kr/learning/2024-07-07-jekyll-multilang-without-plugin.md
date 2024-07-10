@@ -1,11 +1,11 @@
 ---
 layout: post
-permalink: /:title/
+permalink: /learning/:title/
 title: "플러그인 없이 Jekyll 다중 언어 지원하기"
 date: 2024-07-07 00:00:00 -0400
 tags: life blog python openai ChatGPT
-categories: life
-categorydisplay: 일상기록
+categories: learning
+categorydisplay: 공부일기
 lang: kr
 thumbnail: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
 subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 기능을 구현 해 보았다. 보면 알겠지만 그렇게 어려운 기능이 아니다!
@@ -26,9 +26,9 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/bdd37143-42c9-4174-b10f-ac091a41725d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=c9ee9ae195fcc7753e577d64fc112570f38360425b806bf78c82208302224a9c&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/bdd37143-42c9-4174-b10f-ac091a41725d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=643c116c7b2fae40de362774cdef289296d89dbe015f66e348fa9c0d9dad4e2c&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4ecb8229-ed37-482c-803b-094f8cf618cd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=ef7c0a5aa08d0435f2ec25cd60b9b7bf17e798eba9e3f23f59b7a8d1e406ad54&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4ecb8229-ed37-482c-803b-094f8cf618cd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=60c67a07a06b2b744ad527c3c04d4c6a82fce7fd2d2c31a34d926953c62dc580&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
 한국어 소개 페이지 (상단)과 영문 소개 페이지 (하단) URL  
 
@@ -46,7 +46,7 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/f776eb0e-3278-4375-964e-5bdc6a0d4b51/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=962364f14d329fe037212874153b3f46e58cc991fc35163253f938d489fb45d7&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/f776eb0e-3278-4375-964e-5bdc6a0d4b51/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=84a46933c1d20b5fa967ce87bf2597ee79f4f0898a90dd2ef603ef7f9873d917&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
 한국어 페이지의 front matter (좌)와 영문 페이지의 front matter (우)  
 
@@ -62,9 +62,9 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
 `permalink`를 통해 서로 다른 언어 사이를 치환하는 만큼, 우리가 업로드하는 포스트에도 이러한 접근법 사용이 필요하다. 나는 다음과 같이 permalink를 모든 포스트마다 설정하는 방식을 선택하였다.   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/2d899b4d-42ce-4844-b1fa-19215ff20007/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=d3ea501a386393e0034edc7e9bdb28cacfb763c358bfa488fb269d11fcb969d8&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/2d899b4d-42ce-4844-b1fa-19215ff20007/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=bec4107461ee50efe2e03ebd212c3c5ab8fb8d5ba3adec7fa07a378f5d0a6da2&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/935f8e65-b579-4fad-a44a-90198b705a94/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=fe87a9207be2fc21e985835b39ac626e2745dbf086641390a8acf0eaae0807ee&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/935f8e65-b579-4fad-a44a-90198b705a94/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=20bb09a84265d33822de260f019c70a4ff0c805c0de88b6947e67d6d3f4700af&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
 위: 우리말 포스트의 front matter ; 아래: 영문 포스트의 front matter  
 
@@ -88,7 +88,7 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0e182393-7e63-48ae-8abb-c5745169d85d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=e301aca66510d077d8ee6bfe868ac3d57d5b67eada892d25473cbf0843366a9e&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0e182393-7e63-48ae-8abb-c5745169d85d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=38ae87166a735b4f753d0db8024c010abf0cd9050063dbf6601c0960c42adb4f&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
 `_post/{언어}/{카테고리}/{포스트}`순으로 포스트 마크다운 파일들이 정리되어 있는 모습이다.  
 
@@ -98,7 +98,7 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/fcb52e39-320b-4e11-b3b7-8a4883e76acb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=4087d62db64281108315678d4dbc90ff2ac6a929455484a4db244c549c6391d9&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/fcb52e39-320b-4e11-b3b7-8a4883e76acb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=2cf3f7ae805246a2e51d14d7d286689e0de0af8c8db2ebff5d0cfcadce495143&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
   
 
@@ -108,7 +108,7 @@ subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 
 
 이 div 엘리먼트는 `language-select`라는 id를 가지며, 드랍다운으로 기능한다. 현재 페이지가 한국어일 때(`page.lang == ‘kr’` )는 option 중 value가 ”kr”인 option이 selected, 반대로 영어일 때는 value가 ‘en’인 option이 selected라는 프로퍼티를 얻게 될 예정이다. 내 페이지에서는 다음과 같이 보인다.  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4db530b8-8ec7-42d7-b420-5dd960e6fae7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=7dd2c39c3fe40a3296aff3c7397dcf32cec67a08057f9221e4b21b79e578bfd4&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/4db530b8-8ec7-42d7-b420-5dd960e6fae7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=5c99036ea2bbd271e429d12a7cffc11143891b0e695a0204ba762023be4a0459&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
   
 
@@ -262,9 +262,9 @@ Liquid의 if 기능을 이용해 페이지 언어가 kr이면 한국어 메뉴�
 
   
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0ffb491e-2aff-400d-a562-4145ff373dc6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=2bd5fadb78ba310dd7f29435d36939e77f3f70b45ef55545978a7634013839d6&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/0ffb491e-2aff-400d-a562-4145ff373dc6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=de4ffa7fc73d795504eac7dda841f618cf2260b0c5f77d0271db49b76b9cf172&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/852c921a-5351-4e21-81ed-3bc0e80c19b7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240708%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240708T205734Z&X-Amz-Expires=3600&X-Amz-Signature=b860a8bb7cfcf3a9a0aea939f7d9c720ed2b12cda9181394cd6ea78f3a241e8b&X-Amz-SignedHeaders=host&x-id=GetObject)  
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0401ca2c-0b04-4c4d-9f2f-d423516f4fae/852c921a-5351-4e21-81ed-3bc0e80c19b7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240710T021000Z&X-Amz-Expires=3600&X-Amz-Signature=45f43133114e7a9435bc8fd25508d01ada18f832505d89e2b1265c519f46db4a&X-Amz-SignedHeaders=host&x-id=GetObject)  
 
   
 
