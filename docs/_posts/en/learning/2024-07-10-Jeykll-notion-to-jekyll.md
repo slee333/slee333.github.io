@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /en/learning/:title/
-title: "Automating Jekyll multilingual blog post deployment"
+title: Exporting Notion page to Jekyll just with URL
 date: 2024-07-10 00:00:00 -0400
 tags: ChatGPT openai blog
 categories: learning

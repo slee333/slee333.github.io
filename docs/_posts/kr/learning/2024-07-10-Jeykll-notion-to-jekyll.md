@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /learning/:title/
-title: "Jekyll 다중 언어 블로그 포스팅 자동화하기"
+title: "Jekyll 포스트 Notion으로 작성하기"
 date: 2024-07-10 00:00:00 -0400
 tags: ChatGPT openai blog
 categories: learning

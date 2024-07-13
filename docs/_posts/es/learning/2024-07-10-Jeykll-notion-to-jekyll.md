@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /es/learning/:title/
-title: "Automatización de publicaciones de blog multilingües en Jekyll."
+title: Escribir Publicaciones de Jekyll con Notion
 date: 2024-07-10 00:00:00 -0400
 tags: ChatGPT openai blog
 categories: learning
