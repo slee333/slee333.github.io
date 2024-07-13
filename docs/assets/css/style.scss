@@ -37,6 +37,8 @@
   --theme-color-opp: #ea9f36;
   /* Set the opposite color for contrast */
   --theme-color-light: #4195e047;
+
+  --theme-color-dark: #214c72;
 }
 
 body {
@@ -54,7 +56,7 @@ code {
   /* Monospaced font */
   font-size: 90%;
   /* Slightly smaller font size */
-  color: var(--theme-color);
+  color: var(--theme-color-dark);
   /* Code text color */
 }
 
