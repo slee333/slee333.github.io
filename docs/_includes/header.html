@@ -1,9 +1,5 @@
 <header class="site-header">
 
-  {% if page.layout == "post" %}
-  <!-- {%- include progress-bar.html -%} -->
-  {% endif %}
-
   <div class="wrapper header-wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
