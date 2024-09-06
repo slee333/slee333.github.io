@@ -74,22 +74,36 @@
 
     fetch('https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
     })
-      .then(response => response.json())
-      .then(data => {
-        // Show success message below the form
-        messageContainer.textContent = phrases.successMessage;;
+      .then(() => {
+        // You won't get a response here, so just assume success
+        messageContainer.textContent = phrases.successMessage;
         messageContainer.style.display = 'block';  // Make the message visible
         form.reset();  // Clear the form after submission
       })
-      .catch((error) => {
+      .catch(error => {
         console.error('Error:', error);
-        messageContainer.textContent = phrases.errorMessage;;
+        messageContainer.textContent = phrases.errorMessage;
         messageContainer.style.display = 'block';
       });
+
+
+    // .then(response => response.json())
+    // .then(data => {
+    //   // Show success message below the form
+    //   messageContainer.textContent = phrases.successMessage;
+    //   messageContainer.style.display = 'block';  // Make the message visible
+    //   form.reset();  // Clear the form after submission
+    // })
+    // .catch((error) => {
+    //   console.error('Error:', error);
+    //   messageContainer.textContent = phrases.errorMessage;;
+    //   messageContainer.style.display = 'block';
+    // });
   });
 </script>
