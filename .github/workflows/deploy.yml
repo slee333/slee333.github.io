@@ -1,0 +1,46 @@
+name: Build and Deploy Jekyll to /docs folder
+
+on:
+  push:
+    branches:
+      - gh-pages  # This is your source and deployment branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the gh-pages branch where your Jekyll source code is
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages  # Checkout the gh-pages branch
+
+      # Step 2: Set up Ruby environment
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'  # Use the Ruby version required by Jekyll
+
+      # Step 3: Install Jekyll and dependencies
+      - name: Install dependencies
+        run: bundle install
+
+      # Step 4: Replace the placeholder with the actual web app URL stored in GitHub Secrets
+      - name: Replace web app URL in config
+        run: |
+          sed -i "s|PLACEHOLDER_WEB_APP_URL|${{ secrets.WEB_APP_URL }}|" _config.yml
+        # This replaces "PLACEHOLDER_WEB_APP_URL" in _config.yml with the value stored in the secret WEB_APP_URL
+
+      # Step 5: Build the Jekyll site (output static files to ./build)
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination ./build
+
+      # Step 6: Deploy the built site to the /docs folder in the gh-pages branch
+      - name: Deploy to /docs folder
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token to authenticate
+          publish_branch: gh-pages  # Deploy to the gh-pages branch
+          publish_dir: ./build  # Deploy the built Jekyll site from the build directory
+          destination_dir: docs  # Deploy to the /docs folder in the gh-pages branch

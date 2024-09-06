@@ -55,6 +55,9 @@
   </div>
 </footer>
 <script>
+  // For secret key for web app to manage subscribers. Secret stored in github's repository secrets.
+  const webAppUrl = "{{ site.web_app_url }}";
+
   const phrases = {
     successMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['success'] }}",
     errorMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['error'] }}"
@@ -62,6 +65,8 @@
 
   const form = document.getElementById('subscription-form');
   const messageContainer = document.getElementById('subscription-message');
+  // Get the language from Jekyll templating (as a string)
+  const lang = "{{ page.lang }}";
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -69,42 +74,49 @@
     const data = {
       'first-name': document.getElementById('first-name').value,
       'last-name': document.getElementById('last-name').value,
-      'email': document.getElementById('email').value
+      'email': document.getElementById('email').value,
+      'language': lang,
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Show success message below the form
-      messageContainer.textContent = phrases.successMessage;
-      messageContainer.style.display = 'block';  // Make the message visible
-      form.reset();  // Clear the form after submission
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      messageContainer.textContent = phrases.errorMessage;;
+    console.log(data);
+
+    // Add basic validation before making the request
+    if (data['first-name'] && data['last-name'] && data['email']) {
+      // Basic email validation
+      if (!validateEmail(data['email'])) {
+        messageContainer.textContent = "Invalid email format.";
+        messageContainer.style.display = 'block';
+        return;
+      }
+      
+      // Submit the form data
+      fetch(webAppUrl, {
+        method: 'POST',
+        mode: 'no-cors',  // No CORS mode for request
+        body: JSON.stringify(data),
+      })
+        .then(() => {
+          // Display success message (optimistic UI update)
+          messageContainer.textContent = phrases.successMessage;
+          messageContainer.style.display = 'block';
+          form.reset();  // Clear the form after submission
+        })
+        .catch(error => {
+          // Log the error, although this won't handle server-side errors
+          console.error('Network Error:', error);
+          messageContainer.textContent = phrases.errorMessage;
+          messageContainer.style.display = 'block';
+        });
+    } else {
+      // If form validation fails
+      messageContainer.textContent = "Please fill in all fields.";
       messageContainer.style.display = 'block';
-    });
-      // .then(() => {
-      //   // You won't get a response here, so just assume success
-      //   messageContainer.textContent = phrases.successMessage;
-      //   messageContainer.style.display = 'block';  // Make the message visible
-      //   form.reset();  // Clear the form after submission
-      // })
-      // .catch(error => {
-      //   console.error('Error:', error);
-      //   messageContainer.textContent = phrases.errorMessage;
-      //   messageContainer.style.display = 'block';
-      // });
-
-
-    
+    }
   });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
 </script>
