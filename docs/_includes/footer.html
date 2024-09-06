@@ -1,4 +1,4 @@
-<footer class="site-footer h-card">
+<!-- <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
@@ -33,5 +33,101 @@
     </div>
 
   </div>
+</footer> -->
+<footer class="site-footer h-card">
+  <div class="wrapper">
 
+    <!-- Row for Logo (Takes 100% horizontal space) -->
+    <div class="footer-logo-row">
+      <a class="site-title footer-title" rel="author"
+        href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">{{
+        site.title }}</a>
+    </div>
+
+    <!-- Row with 2 Columns: Links on the Left and Subscription on the Right (Takes 100% horizontal space) -->
+    <div class="footer-row">
+      <!-- Left Column: Links to Pages -->
+      <div class="footer-col">
+        <ul class="footer-links">
+          <li><a href="{{ site.baseurl }}/about">{{
+              site.data.phrases[page.lang]["navbar"]["about"] }}</a></li>
+          <li><a href="{{ site.baseurl }}/life">{{
+              site.data.phrases[page.lang]["navbar"]["life"] }}</a></li>
+          <li><a href="{{ site.baseurl }}/cifellowship">{{
+              site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a></li>
+          <li><a href="{{ site.baseurl }}/learning">{{
+              site.data.phrases[page.lang]["navbar"]["learning"] }}</a></li>
+          <li><a href="{{ site.baseurl }}/research">{{
+              site.data.phrases[page.lang]["navbar"]["research"] }}</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Email Subscription Form -->
+      <div class="footer-col subscribe">
+        <h3>{{site.data.phrases[page.lang]["footer-subscription"]["subscription-request"] }}</h3>
+        <form id="subscription-form">
+          <input type="text" id="first-name" name="first-name" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['firstname'] }}" required>
+          <input type="text" id="last-name" name="last-name" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['lastname'] }}" required>
+          <input type="email" id="email" name="email" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['email'] }}" required>
+          <div id="submission-wrapper">
+            <button type="submit">{{ site.data.phrases[page.lang]["footer-subscription"]["signup"] }}</button>
+            <div id="subscription-message" style="display: none;"></div>
+          </div>
+          
+        </form>
+
+        <!-- Add a container to display success message -->
+        
+      </div>
+    </div>
+
+    <!-- https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec -->
+
+    <!-- Footer bottom (Terms, Privacy, etc.) -->
+    <div class="footer-bottom">
+      <p>© {{ site.time | date: "%Y" }} Seung Wook Lee</p>
+      <!-- <p><a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a> | <a
+          href="{{ site.baseurl }}/terms-of-use">Terms of Use</a> | <a href="{{ site.baseurl }}/contact">Contact</a></p> -->
+    </div>
+
+  </div>
 </footer>
+<script>
+  const phrases = {
+    successMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['success'] }}",
+    errorMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['error'] }}"
+  };
+
+  const form = document.getElementById('subscription-form');
+  const messageContainer = document.getElementById('subscription-message');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const data = {
+      'first-name': document.getElementById('first-name').value,
+      'last-name': document.getElementById('last-name').value,
+      'email': document.getElementById('email').value
+    };
+
+    fetch('https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then(response => response.json())
+      .then(data => {
+        // Show success message below the form
+        messageContainer.textContent = phrases.successMessage;;
+        messageContainer.style.display = 'block';  // Make the message visible
+        form.reset();  // Clear the form after submission
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        messageContainer.textContent = phrases.errorMessage;;
+        messageContainer.style.display = 'block';
+      });
+  });
+</script>

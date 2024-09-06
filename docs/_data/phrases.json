@@ -11,13 +11,23 @@
       "cifellowship":"Clinical Informatics",
       "learning": "Learning",
       "life": "Life",
-      "research": "Research"
+      "research": "Research",
+      "home": "Home"
     },
     "viewall": "View All",
     "postsinthiscategory": "Posts in this category:",
     "minutesread": "min read",
     "description": "A cozy place to share my journey and ideas.",
-    "otherpostsinsamecategory": "Other posts in the same category"
+    "otherpostsinsamecategory": "Other posts in the same category",
+    "footer-subscription": {
+      "subscription-request": "Subscribe to My Updates",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "email": "Email",
+      "signup": "Sign Up",
+      "success":"Thank you for subscribing!",
+      "error":"Error! Please try again."
+    }
   },
   "es": {
     "categories": {
@@ -31,13 +41,23 @@
       "cifellowship":"Informática Clínica",
       "learning": "Aprendizaje",
       "life": "Vida Diaria",
-      "research": "Investigación"
+      "research": "Investigación",
+      "home": "Inicio"
     },
     "viewall": "Ver Todo",
     "postsinthiscategory": "Entradas en esta categoría:",
     "minutesread": "min de lectura",
     "description": "A cozy place to share my journey and ideas.",
-    "otherpostsinsamecategory": "Otras entradas en la misma categoría"
+    "otherpostsinsamecategory": "Otras entradas en la misma categoría",
+    "footer-subscription": {
+      "subscription-request": "Suscríbete a mis actualizaciones",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "email": "Correo electrónico",
+      "signup": "Regístrate",
+      "success":"¡Gracias por suscribirte!",
+      "error":"¡Error! Inténtalo de nuevo."
+    }
   },
   "kr": {
     "categories": {
@@ -51,12 +71,22 @@
       "cifellowship":"의료정보학",
       "learning": "공부일기",
       "life": "일상기록",
-      "research": "연구일기"
+      "research": "연구일기",
+      "home": "홈페이지"
     },
     "viewall": "더보기",
     "postsinthiscategory": "해당 카테고리 글 모음:",
     "minutesread": "분 소요",
     "description": "A cozy place to share my journey and ideas.",
-    "otherpostsinsamecategory": "해당 카테고리 다른 글 보기"
+    "otherpostsinsamecategory": "해당 카테고리 다른 글 보기",
+    "footer-subscription": {
+      "subscription-request": "업데이트 구독하기",
+      "firstname": "이름",
+      "lastname": "성",
+      "email": "이메일",
+      "signup": "구독하기",
+      "success":"구독해주셔서 감사합니다!",
+      "error":"오류가 발생했습니다. 다시 시도해주세요."
+    }
   }
 }
