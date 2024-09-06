@@ -60,7 +60,7 @@ collections:
     output: true
     permalink: /:categories/:title/
   
-web_app_url: "PLACEHOLDER_WEB_APP_URL"
+web_app_url: "https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
