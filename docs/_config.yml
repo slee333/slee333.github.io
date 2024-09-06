@@ -60,7 +60,7 @@ collections:
     output: true
     permalink: /:categories/:title/
   
-  web_app_url: "PLACEHOLDER_WEB_APP_URL"
+web_app_url: "PLACEHOLDER_WEB_APP_URL"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
