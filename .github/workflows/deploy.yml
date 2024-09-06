@@ -12,37 +12,30 @@ jobs:
     steps:
       # Step 1: Check out the gh-pages branch where your Jekyll source code is
       - name: Checkout code
-        uses: actions/checkout@v3  # Upgraded to v3 to fix Node.js warning
+        uses: actions/checkout@v3
         with:
-          ref: gh-pages  # Check out the gh-pages branch as your source branch
+          ref: gh-pages
 
-      # Step 2: Set up Ruby environment for Jekyll
+      # Step 2: Set up Ruby environment for Jekyll (compatible with github-pages gem)
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'  # Set Ruby version explicitly
+          ruby-version: '2.7'
 
-      # Step 3: Install Bundler and Jekyll (to avoid version mismatch issues)
-      - name: Install Bundler
-        run: gem install bundler
-
-      - name: Install Jekyll
-        run: gem install jekyll
-
-      # Step 4: Install dependencies from Gemfile
+      # Step 3: Install Bundler and GitHub Pages gem (which includes Jekyll 3.9.5)
       - name: Install dependencies
         run: bundle install
 
-      # Step 5: Replace the placeholder with the actual web app URL stored in GitHub Secrets
+      # Step 4: Replace the placeholder with the actual web app URL stored in GitHub Secrets
       - name: Replace web app URL in config
         run: |
           sed -i "s|PLACEHOLDER_WEB_APP_URL|${{ secrets.WEB_APP_URL }}|" _config.yml
 
-      # Step 6: Build the Jekyll site (output static files to ./build)
+      # Step 5: Build the Jekyll site (output static files to ./build)
       - name: Build Jekyll site
-        run: bundle exec jekyll build --destination ./build
+        run: bundle exec jekyll build --trace --verbose --destination ./build
 
-      # Step 7: Deploy the built site to the /docs folder in the gh-pages branch
+      # Step 6: Deploy the built site to the /docs folder in the gh-pages branch
       - name: Deploy to /docs folder
         uses: peaceiris/actions-gh-pages@v3
         with:
