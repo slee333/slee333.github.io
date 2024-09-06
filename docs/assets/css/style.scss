@@ -1,7 +1,4 @@
---- 
-# Only the main Sass file needs front matter (the dashes are enough) 
---- 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
+--- # Only the main Sass file needs front matter (the dashes are enough) --- @import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
 
 @font-face {
   font-family: "NanumGothic";
@@ -81,9 +78,9 @@ strong {
 .site-title {
   font-family: Swagger;
   font-size: 2em;
-  color:black;
+  color: black;
   padding-top: 1%;
-  
+
 }
 
 .site-nav {
@@ -97,7 +94,8 @@ strong {
 
 .site-nav .navbar {
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
+  /* Center items vertically */
   gap: 1em;
 }
 
@@ -199,7 +197,8 @@ strong {
   font-weight: 400;
   margin-right: 0.3em;
   font-size: 0.9em;
-  line-height: 1em; /* Ensure consistent line height */
+  line-height: 1em;
+  /* Ensure consistent line height */
   min-height: 1em;
 }
 
@@ -782,7 +781,7 @@ h2 {
   padding: 1rem 0;
 
   .wrapper {
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -994,22 +993,34 @@ h2 {
   /* Make sure it does not overlap */
 }
 
-#scrollToTopBtn, #scrollToBottomBtn {
-  display: none; /* Hidden by default */
-  border: none; /* No border */
-  outline: none; /* No outline */
-  background-color: lightgray; /* Light gray background */
-  color: white; /* White text */
-  cursor: pointer; /* Pointer/hand icon */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  margin-bottom: 2px; /* Space between buttons */
+#scrollToTopBtn,
+#scrollToBottomBtn {
+  display: none;
+  /* Hidden by default */
+  border: none;
+  /* No border */
+  outline: none;
+  /* No outline */
+  background-color: lightgray;
+  /* Light gray background */
+  color: white;
+  /* White text */
+  cursor: pointer;
+  /* Pointer/hand icon */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  margin-bottom: 2px;
+  /* Space between buttons */
 }
 
 @media (min-width: 769px) {
   .menu-toggle {
-    display: none; /* Hide the toggle button on desktop */
+    display: none;
+    /* Hide the toggle button on desktop */
   }
 }
 
@@ -1022,20 +1033,22 @@ h2 {
     /* Reduce padding */
   }
 
-  .sticky-header .site-title{
+  .sticky-header .site-title {
     display: none;
   }
+
   .sticky-header .current-page-title {
     font-size: .9em;
     font-weight: bold;
     margin-bottom: 0.3em;
   }
-  
+
   .sticky-header .current-page-section {
     font-weight: 400;
     margin-right: 0.3em;
     font-size: 0.8em;
-    line-height: 1em; /* Ensure consistent line height */
+    line-height: 1em;
+    /* Ensure consistent line height */
     min-height: 1em;
   }
 
@@ -1048,23 +1061,30 @@ h2 {
   }
 
   .site-nav .navbar {
-    display: none; /* Hide the menu by default */
+    display: none;
+    /* Hide the menu by default */
     flex-direction: column;
-    width: fit-content; /* Set width to 30% */
-    padding-left:1.5em;
+    width: fit-content;
+    /* Set width to 30% */
+    padding-left: 1.5em;
     position: absolute;
     top: 100%;
-    right: 0; /* Align to the right side of the screen */
+    right: 0;
+    /* Align to the right side of the screen */
     background-color: white;
-    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
-    z-index: 999; /* Ensure it is above other content */
-    text-align: right; /* Align all contents to the right */
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for better visibility */
+    z-index: 999;
+    /* Ensure it is above other content */
+    text-align: right;
+    /* Align all contents to the right */
   }
 
   .site-nav.expanded .navbar {
     display: flex;
     width: fit-content;
   }
+
   .navbar .language-switcher {
     margin-left: auto;
     margin-right: 1em;
@@ -1117,6 +1137,7 @@ h2 {
     margin-top: .25em;
     margin-bottom: .25em;
   }
+
   .featured-content p {
     font-size: small;
     margin-bottom: .2em;
@@ -1190,7 +1211,7 @@ h2 {
   }
 
   .category-post-thumbnail img {
-    height:100%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -1200,7 +1221,7 @@ h2 {
     max-width: 60%;
     /* Ensure it doesn't exceed 60% */
   }
-  
+
   .category-post-content h2 {
     margin: 0;
     /* Remove default margin */
@@ -1211,7 +1232,7 @@ h2 {
   .post-details-container {
     font-size: smaller;
   }
-  
+
   .post-details-container .post-details-tags {
     display: none;
   }
@@ -1237,7 +1258,7 @@ h2 {
   /* Category Strip Styles for Mobile */
   .highlight {
     padding-top: 2%;
-  } 
+  }
 
   .category-strip-posts {
     display: grid;
@@ -1272,6 +1293,7 @@ h2 {
     height: 100%;
     object-fit: cover;
   }
+
   .category-strip-posts .grid-post .grid-post-thumbnail {
     width: 30%;
     padding-top: 30%;
@@ -1281,9 +1303,11 @@ h2 {
     flex-grow: 1;
     margin-top: 0;
   }
+
   .category-strip-posts .grid-post-content h2 {
     margin-top: 0.5em;
   }
+
   .category-strip-posts .grid-post-content p {
     font-size: small;
     margin-top: 0.5em;
@@ -1302,12 +1326,58 @@ h2 {
   }
 
   .post-content h3 {
-    font-size: 1.2em;;
+    font-size: 1.2em;
+    ;
   }
 
   .category-strip-header {
     font-size: small
   }
+
+  .site-footer .wrapper {
+    .footer-title {
+      margin-left: 1rem;
+      /* Adjust the margin to your preference */
+    }
+
+    .footer-row {
+      flex-direction: column;
+      /* Stack columns into rows */
+      align-items: center;
+      /* Center align the rows */
+      text-align: center;
+      /* Center the text */
+
+      /* Adjust the columns to take full width in mobile view */
+      .footer-col {
+        width: 100%;
+        padding: 1rem;
+        /* Adjust padding as necessary */
+
+        .footer-links {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* 2 columns */
+          gap: 1rem;
+          /* Adjust the gap between items */
+        }
+
+        /* Adjust each link block for better spacing */
+        .footer-links li {
+          text-align: center;
+          /* Center align the link text */
+        }
+      }
+
+      .subscribe {
+        border-top: 1px solid #ffffff;
+        /* Add a border above the form */
+      }
+
+    }
+
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -1333,5 +1403,3 @@ h2 {
     /* Allow the content to grow and fill the available space */
   }
 }
-
-
