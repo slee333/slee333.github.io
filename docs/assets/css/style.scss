@@ -45,6 +45,7 @@
 
 body {
   font-family: "Tahoma", "NanumBarunGothic", "나눔 고딕", "Malgun Gothic", "굴림", "Gulim", "sans-serif";
+  overflow-x: hidden;
 }
 
 code {
@@ -402,9 +403,12 @@ h2 {
 
 /* Category Strip Styles */
 .category-strip {
+  // width: 300%;
+  // left: -100%;
   width: 100vw;
   /* Full viewport width */
   position: relative;
+  
   /* Ensure it stays in the flow of the document */
   left: 50%;
   /* Move to the center of the viewport */
@@ -1354,7 +1358,7 @@ h2 {
       /* Adjust the columns to take full width in mobile view */
       .footer-col {
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 0;
         /* Adjust padding as necessary */
 
         .footer-links {
