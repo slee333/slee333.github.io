@@ -187,7 +187,7 @@ LLama 3.1 의 경우 세 가지 모델이 있다. 8B, 70B, 405B 모델인데 앞
   
   
 ![](https://i.imgur.com/6Nia1Lg.png)  
-***ollama ****공식 홈페이지의 다운로드 페이지*  
+*ollama 공식 홈페이지의 다운로드 페이지*  
   
 우선 Ollama [공식 홈페이지](https://ollama.com/download/windows)를 방문하여 소프트웨어를 설치해주어야 한다. 각자의 OS 환경에 맞추어 적절히 설치해주자.  
   
