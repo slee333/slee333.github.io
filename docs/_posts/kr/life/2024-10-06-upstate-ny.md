@@ -27,7 +27,7 @@ subtitle: 단풍이 본격적으로 들기 전 너무나 아름다운 풍경들
 전반적으로 내가 자주 다녔던 다른 뉴 잉글랜드 지역과 큰 차이는 없었다. 하지만 10월 초라 그랬을까? 풍경이 정말 정말 이뻤다.  
   
 <video controls>
-  <source src="https://imgur.com/cEoVhUh" type="video/mp4">
+  <source src="https://i.imgur.com/cEoVhUh.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
