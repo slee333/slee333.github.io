@@ -10,7 +10,7 @@ lang: es
 thumbnail: https://i.imgur.com/E5vEZQE.jpeg
 subtitle: Antes de que las hojas comiencen a cambiar de forma auténtica, los paisajes son tan hermosos.
 ---
-```markdown
+
 Viajé por la región suburbana del estado de Nueva York durante varios días. Cuando hablamos de Nueva York, a menudo nos referimos a la ciudad de Nueva York, pero como estado, Nueva York es una región mucho más amplia y diversa que la ciudad. En mi caso, debido a que vivo en Massachusetts, he visitado la ciudad de Nueva York varias veces, pero rara vez he tenido la oportunidad de recorrer el estado de Nueva York. La región suburbana del estado era, por lo tanto, un territorio desconocido para mí, y si no hubiera ido con mis amigos que viven en Nueva York, probablemente no habría viajado solo a un área tan desconocida.
 
 ## El destino es Saratoga Springs
@@ -88,4 +88,3 @@ Había áreas con rápidos y lugares donde crecían plantas que no había visto 
 ## El atractivo del senderismo
 
 A raíz de este viaje, decidí establecer el objetivo de dar paseos por diversas áreas suburbanas dentro de los Estados Unidos. A diferencia del montañismo, recorrer parques como parte de senderismo me parece un objetivo alcanzable que no es demasiado arduo físicamente. Planeo hacerlo con frecuencia en el futuro.
-```
