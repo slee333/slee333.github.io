@@ -56,8 +56,11 @@ subtitle: 단풍이 본격적으로 들기 전 너무나 아름다운 풍경들
 
 ## Saratoga Lake  
   
+<video controls>
+  <source src="https://i.imgur.com/H6FR7j1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-<iframe src=https://i.imgur.com/H6FR7j1.mp4></iframe>
 트레일을 즐기고 나서는 장을 보았고, 그 이후 충동적으로 근처 Saratoga Lake 란 곳을 들러 구경했다. 기대하지 않았는데 호숫가 풍경이 너무 이뻐 한 30분 정도는 구경하다 온 거 같다. 위 동영상으로 본 풍경도 아름답지만 실제 눈으로 본 풍경은 훨씬 더 아름다웠다. 내 기술이 부족한 탓인지는 모르겠으나 풍경과 자연의 아름다움은 카메라보단 눈으로 담는 편이 더 나은 것 같다.  
   
 
