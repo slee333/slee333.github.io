@@ -22,7 +22,10 @@ The area I traveled to for several days was **Saratoga Springs**, located north 
 
 Overall, there wasn't a huge difference compared to other New England areas I frequently visit. But perhaps because it was early October? The scenery was incredibly beautiful.
 
-<iframe src=https://imgur.com/cEoVhUh></iframe> 
+<video controls>
+  <source src="https://i.imgur.com/cEoVhUh.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 *Video taken when we stopped at a rest area while driving. This was the landscape of New England in early October.*
 
@@ -50,7 +53,10 @@ It seemed to be a popular spot as there were a lot of people. The parking lot wa
 
 ## Saratoga Lake
 
-<iframe src=https://i.imgur.com/H6FR7j1.mp4></iframe> 
+<video controls>
+  <source src="https://i.imgur.com/H6FR7j1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 After enjoying the trail, we went grocery shopping and impulsively visited a place called Saratoga Lake nearby. I wasn’t expecting much, but the lakeside view was so beautiful that we spent about 30 minutes looking around. The scenery, even as seen in the video above, was beautiful, but experiencing it with your own eyes was even more stunning. I don't know if it was because of my lack of skills, but capturing the beauty of the landscape and nature seems better done with the eyes than with a camera.
 

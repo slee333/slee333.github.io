@@ -22,7 +22,10 @@ El área en la que viajé durante varios días fue **Saratoga Springs**, al nort
 
 En general, no había mucha diferencia con otras áreas de Nueva Inglaterra que he visitado con frecuencia. Pero, ¿sería porque era principios de octubre? El paisaje era realmente hermoso.
 
-<iframe src=https://imgur.com/cEoVhUh></iframe> 
+<video controls>
+  <source src="https://i.imgur.com/cEoVhUh.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 *Video tomado en una parada de descanso mientras conducíamos. Este era el paisaje de Nueva Inglaterra a principios de octubre.*
 
 ## Parque Estatal Saratoga Spa
@@ -46,7 +49,10 @@ Parecía ser un lugar destacado ya que había bastante gente. El aparcamiento ta
 
 ## Lago Saratoga
 
-<iframe src=https://i.imgur.com/H6FR7j1.mp4></iframe> 
+<video controls>
+  <source src="https://i.imgur.com/H6FR7j1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 Después de disfrutar del sendero, fuimos de compras y, de forma impulsiva, decidimos visitar un lugar llamado Lago Saratoga, que estaba cerca. No esperaba mucho, pero el paisaje del lago era tan hermoso que creo que pasamos unos 30 minutos disfrutándolo. La vista en el video de arriba es hermosa, pero el paisaje en persona era aún más impresionante. No sé si es por mi falta de habilidad, pero parece que capturar la belleza del paisaje y la naturaleza es mejor con los ojos que con la cámara.
 
 Después de disfrutar del sendero, regresamos al Airbnb y asamos mucha carne y verduras compradas. Estaba tan deliciosa que nos la comimos al instante, así que lamentablemente no tomé fotos. ¡Fue tan buena!
