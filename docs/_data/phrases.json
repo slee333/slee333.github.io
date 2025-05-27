@@ -15,6 +15,8 @@
       "home": "Home"
     },
     "viewall": "View All",
+    "filterbytags": "Filter by Tags",
+    "resetfilters": "Reset Filters",
     "postsinthiscategory": "Posts in this category:",
     "minutesread": "min read",
     "description": "A cozy place to share my journey and ideas.",
@@ -45,7 +47,9 @@
       "home": "Inicio"
     },
     "viewall": "Ver Todo",
-    "postsinthiscategory": "Entradas en esta categoría:",
+    "filterbytags": "Filtrar por Etiquetas",
+    "resetfilters": "Restablecer Filtros",
+    "postsinthiscategory": "Artículos en esta categoría:",
     "minutesread": "min de lectura",
     "description": "A cozy place to share my journey and ideas.",
     "otherpostsinsamecategory": "Otras entradas en la misma categoría",
@@ -75,6 +79,8 @@
       "home": "홈페이지"
     },
     "viewall": "더보기",
+    "filterbytags": "태그로 필터링",
+    "resetfilters": "필터 초기화",
     "postsinthiscategory": "해당 카테고리 글 모음:",
     "minutesread": "분 소요",
     "description": "A cozy place to share my journey and ideas.",

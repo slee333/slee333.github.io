@@ -54,6 +54,22 @@
 
   </div>
 </footer>
+<style>
+  #submission-wrapper button {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    #subscription-form {
+      padding-left: 2em;
+    }
+
+    .subscribe {
+      padding-left: 2em;
+    }
+  }
+
+</style>
 <script>
   // For secret key for web app to manage subscribers. Secret stored in github's repository secrets.
   const webAppUrl = "{{ site.web_app_url }}";

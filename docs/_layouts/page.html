@@ -3,42 +3,307 @@ layout: base
 ---
 
 <article class="category-page">
+  <!-- ... (이전 HTML 내용과 동일) ... -->
   <header class="category-page-header">
     <h1 class="category-page-title">{{ page.title }}</h1>
   </header>
 
   <div class="category-page-content">{{ content }}</div>
-  <div class="category-page-posts">
-    <h2>{{site.data.phrases[page.lang]["postsinthiscategory"]}}</h2>
 
-    <!-- 10개 정도로 제한하고, 10개가 넘어가면 더 보기 버튼 표시. 그걸 누르면 더 보이도록  -->
-    {% assign filtered_posts = site.categories[page.categories] | where: 'lang', page.lang %}
-    {% for post in filtered_posts limit:10 %}
-    <div class="category-post" onclick="window.location.href='{{ post.url }}'">
-      <div class="category-post-thumbnail">
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
-      </div>
-      <div class="category-post-content">
-        <h2>{{ post.title }}</h2>
-        <div class="post-details-container">
-          <div><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%m/%d/%Y" }}</div>
-          {% assign content_length = post.content | size %}
-          {% assign reading_time = content_length | divided_by: 1200 %}
-          {% assign minread_text = site.data.phrases[page.lang]["minutesread"] %}
-          <!-- <p>The estimated reading time is {{ reading_time }} minutes.</p> -->
-          <div><i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}</div>
-          {% assign limited_tags = post.tags | slice: 0, 3 %}
-          <div class="post-details-tags"><i class="fas fa-tag"></i> {{ limited_tags | join: ", " }}</div>
-        </div>
-
-        <p>{{ post.subtitle }}</p>
-
+  <!-- Filter Controls -->
+  <div class="filter-controls-wrapper">
+    <div class="filter-section">
+      <label class="filter-label">🏷️ {{site.data.phrases[page.lang]["filterbytags"]}}:</label>
+      <div class="filter-tags" id="tag-filters">
+        <!-- Tags will be populated by JavaScript -->
       </div>
     </div>
-
-    {% endfor %}
+    <button type="button" class="filter-reset-btn" onclick="resetFilters()">{{site.data.phrases[page.lang]["resetfilters"]}}</button>
   </div>
 
-  <!-- 현 카테고리 글을 제외한 최신 글들 추천하기 grid 이용-->
 
+  <div class="category-page-posts">
+    <h2>
+      {{site.data.phrases[page.lang]["postsinthiscategory"]}} 
+      (<span id="posts-count-display"></span>)
+    </h2>
+
+    {% assign filtered_posts = site.categories[page.categories] | where: 'lang', page.lang %}
+    <div id="posts-container">
+      {% for post in filtered_posts %}
+      <div class="category-post" 
+           onclick="window.location.href='{{ post.url }}'"
+           data-tags="{{ post.tags | join: ',' }}" 
+           data-date="{{ post.date | date: '%Y-%m-%d' }}"
+           style="display: none;"> 
+        <div class="category-post-thumbnail">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+        </div>
+        <div class="category-post-content">
+          <h2>{{ post.title }}</h2>
+          <div class="post-details-container">
+            <div><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%m/%d/%Y" }}</div>
+            {% assign content_length = post.content | size %}
+            {% assign reading_time = content_length | divided_by: 1200 %}
+            {% assign minread_text = site.data.phrases[page.lang]["minutesread"] %}
+            <div><i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}</div>
+            {% assign limited_tags = post.tags | slice: 0, 3 %}
+            <div class="post-details-tags"><i class="fas fa-tag"></i> {{ limited_tags | join: ", " }}</div>
+          </div>
+          <p>{{ post.subtitle }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if filtered_posts.size > 10 %}
+    <div class="load-more-section">
+      <button id="load-more-btn" class="load-more-btn-original">더 보기</button>
+    </div>
+    {% endif %}
+  </div>
 </article>
+
+<style>
+/* --- 기존 category-page.html 스타일은 여기에 유지 --- */
+/* .category-page, .category-page-header, .category-page-title, etc. */
+/* ... (승욱님의 기존 스타일) ... */
+
+/* --- 필터 컨트롤 스타일 (이전과 동일) --- */
+.filter-controls-wrapper {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.filter-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-filter {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.tag-filter:hover {
+  background-color: #ced4da;
+}
+
+.tag-filter.active {
+  background-color: var(--theme-color, #007bff);
+  color: white;
+  border-color: var(--theme-color-dark, #0056b3);
+}
+
+.filter-reset-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.filter-reset-btn:hover {
+  background-color: #5a6268;
+}
+
+
+/* --- 포스트 카드 스타일 (기존 스타일 + 호버 애니메이션 추가) --- */
+.category-post {
+  /* --- 승욱님의 기존 .category-post 스타일 시작 --- */
+  /* 예시: 
+  display: flex; 
+  margin-bottom: 1.5rem; 
+  border: 1px solid #eee; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  background-color: white; 
+  */
+  /* 여기에 승욱님의 기존 .category-post 스타일을 넣어주세요. */
+  /* 아래는 호버 효과를 위한 기본 스타일입니다. 기존 스타일과 통합하거나 조정하세요. */
+  display: flex; /* 예시 - JavaScript에서 'flex'로 설정했으므로 맞춰줌 */
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 8px; /* 모던한 느낌을 위해 추가, 기존에 없다면 조절 */
+  border: 1px solid #f0f0f0; /* 약간의 테두리 */
+  /* --- 승욱님의 기존 .category-post 스타일 끝 --- */
+  
+  /* 호버 애니메이션을 위한 속성 추가 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 기본 그림자 (약하게) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 효과 */
+  cursor: pointer; /* 클릭 가능함을 표시 */
+}
+
+.category-post:hover {
+  transform: translateY(-5px); /* 위로 살짝 이동 */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* 그림자 강조 */
+}
+
+/* --- 더 보기 버튼 스타일 (이전과 동일) --- */
+.load-more-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+.load-more-btn-original { 
+  background-color: var(--theme-color, #007bff);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.load-more-btn-original:hover {
+  background-color: var(--theme-color-dark, #0056b3);
+}
+.hidden {
+  display: none !important; 
+}
+</style>
+
+<script>
+// --- JavaScript는 이전 답변과 동일 (날짜 필터 제거된 버전) ---
+let allPostsData = [];
+let filteredPostsData = [];
+let activeTags = new Set();
+let postsToShow = 10;
+const postsIncrement = 10;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const postElements = document.querySelectorAll('.category-post');
+  
+  postElements.forEach(card => {
+    allPostsData.push({
+      element: card,
+      title: card.querySelector('h2').textContent.trim(),
+      tags: card.dataset.tags ? card.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [],
+      date: card.dataset.date, 
+      subtitle: card.querySelector('p') ? card.querySelector('p').textContent.trim() : ""
+    });
+  });
+
+  filteredPostsData = [...allPostsData];
+  
+  const allUniqueTags = new Set();
+  allPostsData.forEach(post => {
+    post.tags.forEach(tag => {
+      if (tag) allUniqueTags.add(tag);
+    });
+  });
+  
+  const tagFiltersContainer = document.getElementById('tag-filters');
+  if (tagFiltersContainer) {
+    Array.from(allUniqueTags).sort().forEach(tag => {
+      const tagFilter = document.createElement('span');
+      tagFilter.className = 'tag-filter';
+      tagFilter.textContent = tag;
+      tagFilter.dataset.tag = tag.toLowerCase();
+      tagFilter.onclick = () => toggleTag(tag.toLowerCase(), tagFilter);
+      tagFiltersContainer.appendChild(tagFilter);
+    });
+  }
+  
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', loadMorePosts);
+  }
+
+  updatePostsDisplay();
+  updatePostsCount();
+});
+
+function toggleTag(tag, element) {
+  if (activeTags.has(tag)) {
+    activeTags.delete(tag);
+    element.classList.remove('active');
+  } else {
+    activeTags.add(tag);
+    element.classList.add('active');
+  }
+  applyAllFilters();
+}
+
+function applyAllFilters() {
+  filteredPostsData = allPostsData.filter(post => {
+    if (activeTags.size > 0) {
+      const postLowerTags = post.tags.map(t => t.toLowerCase());
+      const hasMatchingTag = Array.from(activeTags).every(activeTag => postLowerTags.includes(activeTag));
+      if (!hasMatchingTag) return false;
+    }
+    return true;
+  });
+  
+  postsToShow = 10;
+  updatePostsDisplay();
+  updatePostsCount();
+}
+
+function updatePostsDisplay() {
+  allPostsData.forEach(postData => {
+    if (postData.element) postData.element.style.display = 'none';
+  });
+  
+  filteredPostsData.slice(0, postsToShow).forEach(postData => {
+    if (postData.element) postData.element.style.display = 'flex'; // 또는 원래 display 속성
+  });
+
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  if (loadMoreBtn) {
+    if (filteredPostsData.length > postsToShow) {
+      loadMoreBtn.classList.remove('hidden');
+    } else {
+      loadMoreBtn.classList.add('hidden');
+    }
+  }
+}
+
+function updatePostsCount() {
+  const countDisplay = document.getElementById('posts-count-display');
+  if (countDisplay) {
+    countDisplay.textContent = filteredPostsData.length;
+  }
+}
+
+function resetFilters() {
+  activeTags.clear();
+  document.querySelectorAll('.tag-filter.active').forEach(filter => {
+    filter.classList.remove('active');
+  });
+  
+  filteredPostsData = [...allPostsData];
+  postsToShow = 10;
+  updatePostsDisplay();
+  updatePostsCount();
+}
+
+function loadMorePosts() {
+  postsToShow += postsIncrement;
+  updatePostsDisplay();
+}
+</script>

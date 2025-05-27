@@ -31,11 +31,13 @@
           site.data.phrases[page.lang]["navbar"]["research"] }}</a>
 
         <div class="language-switcher">
-          <select id="language-select">
-            <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
-            <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
-            <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
-          </select>
+          <div class="language-selector">
+            <select id="language-select">
+              <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
+              <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
+              <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -45,50 +47,86 @@
   </div>
 </header>
 
+<style>
+:root {
+  --theme-color: #4195e0;
+}
+.site-title {
+  position: relative;
+  z-index: 1002;
+  font-size: 2.5rem;
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.site-title:hover { opacity: 0.65; }
+
+
+
+/* Basic underline-on-hover for .page-link */
+
+
+.page-link {
+  position: relative;
+}
+
+.page-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;                    /* thickness of underline */
+  background: var(--theme-color);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.page-link:hover::after {
+  width: 100%;
+  color: var(--theme-color);
+}
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.getElementById('menu-toggle');
-    var siteNav = document.querySelector('.site-nav');
+    var siteNav    = document.querySelector('.site-nav');
 
-    menuToggle.addEventListener('click', function () {
+    // open / close + toggle icon
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       siteNav.classList.toggle('expanded');
+      menuToggle.innerHTML = siteNav.classList.contains('expanded') ? '&times;' : '&#9776;';
+    });
+
+    // click outside to close
+    document.addEventListener('click', function (e) {
+      if (siteNav.classList.contains('expanded') &&
+          !siteNav.contains(e.target) &&
+          e.target !== menuToggle
+      ) {
+        siteNav.classList.remove('expanded');
+        menuToggle.innerHTML = '&#9776;';
+      }
+    });
+
+    // scroll‐position and language‐switcher logic (unchanged)...
+    const scrollKey = 'scrollPosition';
+    function saveScroll() { sessionStorage.setItem(scrollKey, window.scrollY); }
+    function restoreScroll() {
+      let y = sessionStorage.getItem(scrollKey);
+      if (y) { window.scrollTo(0, +y); sessionStorage.removeItem(scrollKey); }
+    }
+    restoreScroll();
+
+    let langSel = document.getElementById('language-select');
+    langSel && langSel.addEventListener('change', function () {
+      saveScroll();
+      let url = window.location.pathname.replace(/^\/(en|es)\//,'/');
+      if (this.value !== 'kr') url = `/${this.value}${url}`;
+      window.location.href = window.location.origin + url.replace(/\/+/g,'/');
     });
   });
-  const scrollPositionKey = 'scrollPosition';
-
-  function saveScrollPosition() {
-    sessionStorage.setItem(scrollPositionKey, window.scrollY);
-  }
-
-  function restoreScrollPosition() {
-    const scrollY = sessionStorage.getItem(scrollPositionKey);
-    if (scrollY) {
-      window.scrollTo(0, parseFloat(scrollY));
-      sessionStorage.removeItem(scrollPositionKey);
-    }
-  }
-  const languageSelect = document.getElementById('language-select');
-  languageSelect.addEventListener('change', function () {
-    saveScrollPosition();
-    redirectPage(this.value);
-  });
-  function redirectPage(selectedLang) {
-    let currentUrl = window.location.pathname;
-
-    // Remove existing language prefix
-    if (currentUrl.startsWith('/en/') || currentUrl.startsWith('/es/')) {
-      currentUrl = currentUrl.replace(/^\/(en|es)\//, '/');
-    }
-
-    // Add new language prefix if necessary
-    if (selectedLang !== 'kr') {
-      currentUrl = `/${selectedLang}${currentUrl}`;
-    }
-
-    // Clean up duplicate slashes
-    currentUrl = currentUrl.replace(/\/+/g, '/');
-
-    // Redirect to the new URL
-    window.location.href = `${window.location.origin}${currentUrl}`;
-  }
 </script>
