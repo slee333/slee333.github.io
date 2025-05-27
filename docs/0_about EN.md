@@ -156,11 +156,7 @@ lang: en
 
 <style>
 
-.category-page-title {
-    display:none;
-}
-
-.category-page-posts {
+.category-page-title, .filter-controls-wrapper, .category-page-posts {
     display:none;
 }
 
