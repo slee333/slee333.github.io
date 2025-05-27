@@ -29,7 +29,8 @@
       "signup": "Sign Up",
       "success":"Thank you for subscribing!",
       "error":"Error! Please try again."
-    }
+    },
+    "comments": "Need Github login to comment"
   },
   "es": {
     "categories": {
@@ -61,7 +62,8 @@
       "signup": "Regístrate",
       "success":"¡Gracias por suscribirte!",
       "error":"¡Error! Inténtalo de nuevo."
-    }
+    },
+    "comments": "Necesitas iniciar sesión en Github para comentar"
   },
   "kr": {
     "categories": {
@@ -93,6 +95,7 @@
       "signup": "구독하기",
       "success":"구독해주셔서 감사합니다!",
       "error":"오류가 발생했습니다. 다시 시도해주세요."
-    }
+    },
+    "comments": "댓글을 달려면 Github 로그인이 필요합니다."
   }
 }
