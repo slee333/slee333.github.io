@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 thumbnail: https://i.imgur.com/OImzeTV.png
 subtitle: 1년차 인턴의 업무와 2년차 레지던트의 업무는 다르다. 나는 과연 잘 적응하고 있는가?
+translation_id: "pgy2firstfloor"
 ---
 어제부로 3주간의 내과 병동 로테이션을 마치고 외래 주간에 돌입했다.  
   

@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 thumbnail: https://i.imgur.com/OImzeTV.png
 subtitle: ¿Estoy realmente adaptándome bien a la diferencia entre las responsabilidades de un interno de primer año y un residente de segundo año?
+translation_id: "pgy2firstfloor"
 ---
 
 Ayer terminé la rotación de 3 semanas en la sala de medicina interna y comencé la semana de consultas externas.

@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 thumbnail: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
 subtitle: No me gustaba mucho el plugin común, así que decidí implementar la función directamente. ¡Como puedes ver, no es una función tan difícil!
+translation_id: "jekyllmultilangwoplugin"
 ---
 ### Un nuevo comienzo de blog
 

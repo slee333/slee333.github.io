@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 thumbnail: https://i.imgur.com/YObeuub.png
 subtitle: "또 다시 자소서를 쓸 시간이다!"
+translation_id: "CIFellowAppDiary1"
 ---
 
 6월 5일부터 ERAS 지원이 시작되었다.

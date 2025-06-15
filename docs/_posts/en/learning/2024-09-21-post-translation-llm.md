@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 thumbnail: https://i.imgur.com/nyv5CB7.png
 subtitle: The potential of large language models is limitless. This is no exception in blog post translations.
+translation_id: "jekyllblogllm"
 ---
 In previous posts, we covered **[Creating Jekyll posts with Multilingual Support](https://slee333.github.io/en/learning/jekyll-multilang-without-plugin/)** and **[Making Jekyll Blog Posting Easy Using Notion](https://slee333.github.io/en/learning/Jeykll-notion-to-jekyll/)**. 
 

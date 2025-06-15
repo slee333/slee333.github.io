@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: ¡Incluso usar la función para exportar la página de Notion como markdown fue tedioso para mí. ¡Solo quiero que al ingresar la URL, la publicación se suba automáticamente!
+translation_id: "jekyllnotion"
 ---
 
 En la publicación anterior, discutimos cómo admitir múltiples idiomas en Jekyll sin usar complementos. En esta publicación, nos centraremos en cómo subir una publicación escrita en Notion a Jekyll.

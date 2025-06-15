@@ -9,6 +9,7 @@ categorydisplay: Daily Life
 lang: en
 thumbnail: https://i.imgur.com/E5vEZQE.jpeg
 subtitle: The landscapes are so beautiful before the leaves start falling in earnest.
+translation_id: "nycoutdoor"
 ---
 Traveled through the suburbs of New York State over several days. When we often talk about New York, we refer to New York City, but as a state, New York is much larger and diverse than just the city. Since I reside in Massachusetts, I have visited New York City several times, but I haven't had many opportunities to explore New York State itself. The suburbs of New York State were an uncharted area for me, and had it not been for the friends residing in New York State, I probably wouldn't have ventured into such a foreign region alone.
 

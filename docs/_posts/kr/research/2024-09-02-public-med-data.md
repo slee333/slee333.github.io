@@ -9,6 +9,7 @@ categorydisplay: 연구일기
 lang: kr
 thumbnail: https://i.imgur.com/hxYmCyK.png
 subtitle: 무슨 연구든 가장 큰 관건은 양질의 데이터를 얻는 일이다. 공공 데이터는 이 문제를 어느 정도 해결해준다.
+translation_id: "publicData"
 ---
 최근 몇 몇 컨퍼런스에 낼 초록을 작업하고 있다. 몇 군데는 이미 제출했는데, 한 군데에서는 리비전이 들어왔고 나머지는 작업 중이거나 리비전을 기다리는 중이다.  
   

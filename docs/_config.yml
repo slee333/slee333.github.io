@@ -34,6 +34,13 @@ plugins:
   - jekyll-sitemap
 
 # multi language settings
+
+# hreflang 태그 생성을 위한 간단한 언어 목록
+languages_list: ["kr", "en", "es"]
+
+# 기본 언어 설정
+default_lang: "kr"
+
 languages: 
   kr: 
     permalink: /:title/
@@ -42,23 +49,17 @@ languages:
     permalink: /en/:title/
   es: 
     permalink: /es/:title/
+
 # collections:
 #   en_posts:
 #     output: true
-#     permalink: /en/:path/
+#     permalink: /en/:categories/:title/
+#   es_posts:
+#     output: true
+#     permalink: /es/:categories/:title/
 #   kr_posts:
 #     output: true
-    # permalink: /:path/
-collections:
-  en_posts:
-    output: true
-    permalink: /en/:categories/:title/
-  es_posts:
-    output: true
-    permalink: /es/:categories/:title/
-  kr_posts:
-    output: true
-    permalink: /:categories/:title/
+#     permalink: /:categories/:title/
   
 web_app_url: "https://script.google.com/macros/s/AKfycbyu_sqhnURxlLEyX_Ug3UxY-ZcL2yrUmxcyJoFkz3XxzYCQKsqfV97Cpw5jUzi07zSiNw/exec"
 

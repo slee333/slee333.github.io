@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 thumbnail: https://i.imgur.com/nyv5CB7.png
 subtitle: Las posibilidades de los modelos de lenguaje a gran escala son infinitas. No son una excepción en la traducción de publicaciones de blog.
+translation_id: "jekyllblogllm"
 ---
 En publicaciones anteriores, hemos tratado sobre **[Crear publicaciones de Jekyll con soporte multilingüe](https://slee333.github.io/es/learning/jekyll-multilang-without-plugin/)** y **[Cómo facilitar la publicación en un blog de Jekyll utilizando Notion](https://slee333.github.io/es/learning/Jeykll-notion-to-jekyll/)**. En esa publicación, la versión final de la función para traducir automáticamente la página de Notion a Markdown era la siguiente:
 

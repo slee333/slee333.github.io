@@ -1,6 +1,13 @@
-{% comment %}
-  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
+<!-- Hreflang Tags for Multilingual SEO (Single _posts folder structure) -->
+{%- comment -%}
+  현재 페이지에 translation_id가 있을 경우, 
+  _posts 폴더의 모든 글(site.posts) 중에서 동일한 ID를 가진 글을 찾아
+  hreflang 태그를 자동으로 생성합니다.
+{%- endcomment -%}
 
-  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
-  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
-{% endcomment %}
+{%- if page.translation_id -%}
+  {%- assign translations = site.posts | where:"translation_id", page.translation_id -%}
+  {%- for t in translations -%}
+    <link rel="alternate" hreflang="{{ t.lang }}" href="{{ t.url | absolute_url }}" />
+  {%- endfor -%}
+{%- endif -%}

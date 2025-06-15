@@ -10,6 +10,7 @@ ref: cif1
 thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: ¿Beca de informática clínica? ¿Qué es eso, algo que se come? ¡Nam, nam!
 categorydisplay: Informática Clínica
+translation_id: "cif1"
 ---
 
 Ya ha pasado un año desde que comencé mi residencia en los EE.UU. Hay muchos caminos después de completar la formación en medicina interna, pero en términos generales, se pueden clasificar en **1. Trabajar como Fellow** o **2. Trabajar como Hospitalista**. Discutiré la opción 2 con más detalle la próxima vez, pero por ahora, explicaré más sobre **la opción 1**.

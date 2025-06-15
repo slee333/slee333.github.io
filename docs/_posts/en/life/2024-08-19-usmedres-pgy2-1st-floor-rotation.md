@@ -9,6 +9,7 @@ categorydisplay: Daily Life
 lang: en
 thumbnail: https://i.imgur.com/OImzeTV.png
 subtitle: The duties of a first-year intern and a second-year resident are different. Am I doing well?
+translation_id: "pgy2firstfloor"
 ---
 Yesterday marked the end of my three-week internal medicine ward rotation, and I started my week in the outpatient clinic. As an intern on the ward, I was often so busy handling assigned tasks that I didn't have much time to understand the actual patient care process. The need to thoroughly document progress notes in the U.S. took up much of my attention, which might have prevented me from grasping the real treatment process. Some decision-making processes also bypassed interns, making it hard to follow along. However, as a second-year resident now, I became more deeply involved in the decision-making during patient care and could follow the process more easily. Although there were likely many shortcomings during my first ward rotation, I expect to improve in the future.
 

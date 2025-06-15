@@ -9,6 +9,7 @@ categorydisplay: Investigación
 lang: es
 thumbnail: https://i.imgur.com/hxYmCyK.png
 subtitle: Cualquiera que sea la investigación, el factor más importante es obtener datos de alta calidad. Los datos públicos en cierta medida ayudan a resolver este problema.
+translation_id: "publicData"
 ---
 
 Recientemente, he estado trabajando en los resúmenes para algunas conferencias. Ya he enviado a algunos lugares, y en uno he recibido una revisión, mientras que los demás están en proceso o esperando revisiones.

@@ -9,6 +9,7 @@ categorydisplay: 연구일기
 lang: kr
 thumbnail: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: 합성 데이터란 무엇이고, 임상 연구에는 어떤 식으로 사용될 수 있을까?
+translation_id: "SyntheticData"
 ---
 합성 데이터를 의료 연구 목적으로 사용하는 사례나 논문들이 종종 보이길래, 이 부분을 조금 더 깊이 알아보고자 이것저것 찾아보았습니다.  
   

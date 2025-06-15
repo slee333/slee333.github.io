@@ -10,6 +10,7 @@ ref: cif1
 thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
 categorydisplay: Clinical Informatics
+translation_id: "cif1"
 ---
 
 It’s already been a year since I started my residency training in the U.S. There are many paths after completing internal medicine training, but broadly, they can be classified into **1. Working as a Fellow** or **2. Working as a Hospitalist**. I will discuss option 2 in more detail next time, but for now, I’ll explain more about **option 1**.

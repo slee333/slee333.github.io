@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 thumbnail: https://i.imgur.com/nyv5CB7.png
 subtitle: 대형 언어 모델의 가능성은 무궁무진하다. 블로그 포스트 번역에서도 예외가 아니다
+translation_id: "jekyllblogllm"
 ---
 이전 포스트 들에서는 **[다중 언어 지원 Jekyll post 만들기](https://slee333.github.io/learning/jekyll-multilang-without-plugin/)**, 그리고 **[Notion을 이용해서 Jekyll 블로그 포스팅을 쉽게 하는 법](https://slee333.github.io/learning/Jeykll-notion-to-jekyll/)**을 다루어 보았다.  
   

@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: 나는 노션 페이지를 마크다운으로 export하는 기능을 사용하기조차 번거로웠다. 그냥 URL만 입력하면 포스트가 자동으로 올라가길 원한다!
+translation_id: "jekyllnotion"
 ---
 이전 글에서는 플러그인 없이 Jekyll에서 다중 언어를 지원하는 방법에 대해 이야기 해 보았다. 이번 글에서는 노션에 작성한 글을 어떻게 Jekyll에 업로드하는지를 중점적으로 이야기해보고자 한다.   
   

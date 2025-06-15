@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: Even using the feature to export Notion pages as Markdown felt cumbersome. I just want to be able to automatically upload posts by simply entering the URL!
+translation_id: "jekyllnotion"
 ---
 
 In the previous post, we discussed how to support multiple languages in Jekyll without using plugins. In this post, we will focus on how to upload a post written in Notion to Jekyll.

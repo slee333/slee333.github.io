@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 thumbnail: https://i.imgur.com/YObeuub.png
 subtitle: "De nuevo, ¡toca escribir la declaración personal! 😅"
+translation_id: "CIFellowAppDiary1"
 ---
 
 La temporada de solicitudes de ERAS comenzó el 5 de junio.

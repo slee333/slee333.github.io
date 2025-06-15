@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 thumbnail: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
 subtitle: I tried implementing the function myself because I didn't like the commonly used plugin. You can see that it's not such a difficult function!
+translation_id: "jekyllmultilangwoplugin"
 ---
 Starting a new blog sparked a small ambition. I wanted to support the blog in our language, English, and even Spanish (!).
 

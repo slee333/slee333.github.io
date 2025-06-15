@@ -9,6 +9,7 @@ categorydisplay: Research
 lang: en
 thumbnail: https://i.imgur.com/hxYmCyK.png
 subtitle: In any research, the most crucial aspect is obtaining high-quality data. Public data somewhat helps solve this issue.
+translation_id: "publicData"
 ---
 
 I am currently working on abstracts to submit to several conferences. I have already submitted to a few places, and one has sent back revisions, while the others are either still in progress or awaiting feedback.
