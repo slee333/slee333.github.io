@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /en/about/
 lang: en
+translation_id: about
 ---
 
 <div class="hero-section">

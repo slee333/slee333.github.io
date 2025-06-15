@@ -3,6 +3,7 @@ layout: page
 title: 소개
 permalink: /about/
 lang: kr
+translation_id: about
 ---
 
 <div class="hero-section">

@@ -5,4 +5,5 @@
 layout: home
 title: 홈페이지
 lang: kr
+translation_id: home
 ---

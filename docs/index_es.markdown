@@ -6,4 +6,5 @@ layout: home
 title: Página Principal
 lang: es
 permalink: /es/
+translation_id: home
 ---

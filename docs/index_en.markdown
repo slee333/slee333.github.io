@@ -6,4 +6,5 @@ layout: home
 title: Home
 lang: en
 permalink: /en/
+translation_id: home
 ---
