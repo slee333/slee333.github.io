@@ -5,7 +5,7 @@ date:   2024-04-29 18:00:00 -0400
 categories: cifellowship
 tags: fellowship informatics
 lang: en
-permalink: /en/:title/
+permalink: /en/cifellowship/:title/
 ref: cif1
 thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
