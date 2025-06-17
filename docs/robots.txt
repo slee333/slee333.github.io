@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://slee333.github.io/061725-sitemap.xml
+Sitemap: https://slee333.github.io/sitemap.xml
