@@ -1,12 +1,15 @@
 ---
 layout: post
+permalink: /es/learning/:title/
 title: "De Notion a Jekyll: Automatizando la Subida de Imágenes"
 subtitle: "Subir imágenes era la parte más engorrosa de mover artículos de Notion a Jekyll. Automaticemos este proceso."
 date: 2025-09-03 10:00:00 +0900
 lang: es
 categories: learning
+categorydisplay: Aprendizaje
 tags: [python, automation, cloudinary, jekyll]
 image: https://pix4free.org/assets/library/2021-08-01/originals/automation.jpg # TODO: Por favor, establece una imagen representativa para este post.
+translation_id: notion-automation-workflow
 ---
 
 

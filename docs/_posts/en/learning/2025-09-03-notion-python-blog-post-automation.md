@@ -1,12 +1,15 @@
 ---
 layout: post
+permalink: /en/learning/:title/
 title: "Notion to Jekyll - Automating Image Uploads"
 subtitle: "Uploading images was the most cumbersome part of moving posts from Notion to Jekyll. Let's automate this process."
 date: 2025-09-03 10:00:00 +0900
 lang: en
 categories: learning
+categorydisplay: Learning
 tags: [python, automation, cloudinary, jekyll]
 image: https://pix4free.org/assets/library/2021-08-01/originals/automation.jpg # TODO: Please set a representative image for this post.
+translation_id: notion-automation-workflow
 ---
 
 

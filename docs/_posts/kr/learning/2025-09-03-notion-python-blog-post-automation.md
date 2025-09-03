@@ -1,12 +1,15 @@
 ---
 layout: post
+permalink: /learning/:title/
 title: "노션 to 지킬 - 이미지 업로드 자동화하기"
 subtitle: "노션에서 지킬로 글을 옮길 때 가장 번거로웠던 과정인 이미지 업로드. 이 과정을 자동화해보자."
 date: 2025-09-03 10:00:00 +0900
 lang: kr
 categories: learning
+categorydisplay: 공부일기
 tags: [python, automation, cloudinary, jekyll]
 image: https://pix4free.org/assets/library/2021-08-01/originals/automation.jpg # TODO: 이 포스트에 맞는 대표 이미지를 설정해주세요.
+translation_id: notion-automation-workflow
 ---
 
 
