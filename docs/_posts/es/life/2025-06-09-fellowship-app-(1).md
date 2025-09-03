@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-thumbnail: https://i.imgur.com/YObeuub.png
+image: https://i.imgur.com/YObeuub.png
 subtitle: "De nuevo, ¡toca escribir la declaración personal! 😅"
 translation_id: "CIFellowAppDiary1"
 ---

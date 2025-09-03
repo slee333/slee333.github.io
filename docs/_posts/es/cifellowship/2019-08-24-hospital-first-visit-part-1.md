@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
 subtitle: Proyecto argo - ¿Qué pasa si ya no necesitas escuchar más de esto?
 ---
 layout: post
@@ -18,7 +18,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
 subtitle: "El Proyecto Argonauta: ¿Y si pudiéramos olvidarnos del papeleo?"
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
@@ -138,7 +138,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
 subtitle: "El Proyecto Argonauta: ¿Y si pudiéramos olvidarnos del papeleo?"
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
@@ -454,6 +454,7 @@ En el siguiente artículo, exploraremos cómo Apple con sus Mobile Health Record
 
 
 [Figura 6] [https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs](https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs)
+
 
 
 

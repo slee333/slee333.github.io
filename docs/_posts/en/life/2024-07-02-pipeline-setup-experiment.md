@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: Daily Life
 lang: en    
-thumbnail: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: https://i.imgflip.com/1w4qbl.jpg?a477096
 subtitle: Indeed, the performance of the pipeline is receiving attention on whether it will work well.
 translation_id: "pipelineexperiment"
 
@@ -165,4 +165,5 @@ Also, let's make a to-do list.
 
 
 I have utilized various basic markdown syntax here. Now, the task is to verify if all these elements are well converted through API work. What can we do? We've come this far, let's give it a shot!
+
 

@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Clinical Informatics
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
 subtitle: Argo Project - What if we don't have to listen to these words anymore?
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
@@ -203,4 +203,5 @@ In the next article, we will look into how IT companies, like Apple’s Mobile H
 [Figure 1]:[https://www.zdnet.co.kr/view/?no=20171030145055&re=R_2018102919185](https://www.zdnet.co.kr/view/?no=20171030145055&re=R_2018102919185)  
 
 [Figure 6]:[https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs](https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs)
+
 

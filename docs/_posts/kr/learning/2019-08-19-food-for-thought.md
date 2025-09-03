@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: 장내 미생물이 우리 두뇌에 끼치는 놀라운 영향
 translation_id: "foodforthought"
 
@@ -185,4 +185,5 @@ L. reuteri가 분비하는 물질이 우리 몸의 뇌신경들 중 하나인 �
 [12] Sampson, Timothy R., et al. “Gut Microbiota Regulate Motor Deficits and Neuroinflammation in a Model of Parkinson’s Disease.” Cell, vol. 167, no. 6, 2016, doi:10.1016/j.cell.2016.11.018.  
 
 [13] [https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general](https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general)  
+
 

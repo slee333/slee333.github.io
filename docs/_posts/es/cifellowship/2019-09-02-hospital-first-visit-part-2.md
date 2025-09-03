@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-thumbnail: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: "Health Records de Apple, Google Cloud y las soluciones de los gigantes tecnológicos."
 translation_id: "Paperworks2"
 
@@ -89,6 +89,7 @@ Un [caso de uso práctico](https://cloud.google.com/customers/athena-breast-heal
 Para solucionarlo, empezaron a usar **Mammosphere**, un servicio alojado en Google Cloud que permite a las pacientes acceder online a sus mamografías de forma segura. Las pacientes pueden ver sus imágenes y, si necesitan una segunda opinión, enviarlas a otro hospital con un par de clics. Esto no solo reduce el riesgo de pruebas innecesarias, sino que también mejora la satisfacción de las pacientes al darles el control sobre su información.
 
 ---
+
 
 
 

@@ -7,7 +7,7 @@ tags: [clinical-informatics, journal-review, 저널리뷰]
 categories: research
 categorydisplay: 연구일기
 lang: kr
-thumbnail: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
+image: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
 subtitle: 대규모 정신과 선별검사, 당뇨병성 망막병증, 그리고 의료 취약 지역에서의 설사 관리
 translation_id: "lancet2020may"
 
@@ -118,4 +118,5 @@ Ashraful Khan이 주도한 위 연구는 이런 문제를 해결하고자 했습
   
 
 총 6개의 코멘트가 있는데, 나머지 3개는 추후 여유가 되면 요약해보겠습니다.  
+
 

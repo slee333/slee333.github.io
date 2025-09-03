@@ -7,7 +7,7 @@ tags: [africa, 보건, 인구]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
 subtitle: "Factfulness: Una invitación a ver el mundo con otros ojos."
 translation_id: "africa1"
 
@@ -101,4 +101,5 @@ Por todas estas razones, en el próximo artículo vamos a explorar algunas de la
 [5] <ins>[https://en.wikipedia.org/wiki/List_of_continents_by_population](https://en.wikipedia.org/wiki/List_of_continents_by_population)</ins>
 [6] [https://www.gatesfoundation.org/goalkeepers/report](https://www.gatesfoundation.org/goalkeepers/report)
 [7] [https://www.gapminder.org/topics/four-income-levels/](https://www.gapminder.org/topics/four-income-levels/)
+
 

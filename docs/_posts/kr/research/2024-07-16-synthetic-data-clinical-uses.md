@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: 연구일기
 lang: kr
-thumbnail: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: 합성 데이터란 무엇이고, 임상 연구에는 어떤 식으로 사용될 수 있을까?
 translation_id: "SyntheticData"
 ---
@@ -111,3 +111,4 @@ PLoS One에서 올해 2월 나온 [논문](https://pubmed.ncbi.nlm.nih.gov/38324
 ---
   
 지금까지 합성 데이터가 무엇인지, 어떻게 만들고 어떻게 평가하는지, 임상적 사용 용례는 어떤 것들이 있는지 등을 알아보았습니다. 확실히 빅 데이터에 대한 접근을 용이하게 할 수 있고, (합성 데이터가 실 데이터를 잘 모방한다는 전제 하에) 개인정보 보호에 대한 걱정을 던 상태로 데이터를 공유 할 수 있으며 비교적 드문 케이스를 증폭시켜 학습에 이용할 수 있다는 등 다양한 가능성이 엿보입니다만 신중한 사용 및 평가가 필요해보입니다.   
+

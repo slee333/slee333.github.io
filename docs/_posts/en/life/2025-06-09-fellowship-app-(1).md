@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://i.imgur.com/YObeuub.png
+image: https://i.imgur.com/YObeuub.png
 subtitle: "Again, time to write my personal statement 😅"
 translation_id: "CIFellowAppDiary1"
 ---

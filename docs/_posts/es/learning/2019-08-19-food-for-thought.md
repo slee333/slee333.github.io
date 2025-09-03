@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-thumbnail: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: "El sorprendente impacto de nuestros microbios intestinales en el cerebro."
 translation_id: "foodforthought"
 
@@ -93,4 +93,5 @@ Quizás la famosa frase "mente sana en cuerpo sano" se quede corta. En el futuro
 [11] Sgritta, Martina, et al. “Mechanisms Underlying Microbial-Mediated Changes in Social Behavior in Mouse Models of Autism Spectrum Disorder.” Neuron, vol. 101, no. 2, 2019, doi:10.1016/j.neuron.2018.11.018.  
 [12] Sampson, Timothy R., et al. “Gut Microbiota Regulate Motor Deficits and Neuroinflammation in a Model of Parkinson’s Disease.” Cell, vol. 167, no. 6, 2016, doi:10.1016/j.cell.2016.11.018.  
 [13] [https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general](https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general)
+
 

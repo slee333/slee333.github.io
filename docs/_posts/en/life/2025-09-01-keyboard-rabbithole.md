@@ -7,7 +7,7 @@ tags:
 categories: life
 categorydisplay: Life
 lang: en
-thumbnail: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
+image: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
 subtitle: A journey to escape forward head posture. But it was deeper, darker, and more endless than I thought.
 translation_id: splitkeyboardq
 layout: post
@@ -393,3 +393,4 @@ For now, I'm satisfied with putting a few custom keycaps on the default keycaps.
 Anyway, I am very satisfied with my current Corne keyboard, and I plan to stay in this comfort for a while.
 
 But who knows. Maybe one day I'll be searching for a Totem keyboard or a 3x5 layout without even realizing it....
+

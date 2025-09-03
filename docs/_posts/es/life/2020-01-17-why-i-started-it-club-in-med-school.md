@@ -7,7 +7,7 @@ tags: [life, opinion]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-thumbnail: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: "Preparándonos para la era de la medicina digital y compartiendo nuevas ideas."
 translation_id: "medschoolitclub"
 
@@ -53,6 +53,7 @@ Al principio, tuve muchas dudas. Me preocupaba si a alguien le interesaría, y c
 Afortunadamente, la idea tuvo una gran acogida y recibí mucho apoyo. Ahora ya somos suficientes para considerarnos un grupo en toda regla. Estamos preparando todo para empezar en serio con el nuevo semestre, y aunque hay mucho por hacer y muchas preocupaciones, estoy emocionado.
 
 Como en casi todo en la vida, estoy seguro de que la mejor forma de avanzar es enfrentando los desafíos y aprendiendo sobre la marcha. Iré compartiendo por aquí mis experiencias y reflexiones a medida que el proyecto avance.
+
 
 
 

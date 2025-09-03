@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
 subtitle: 아프리카의 의료 혁신에 대한 다양한 사례 분석 (2019 기준)
 translation_id: "africa2"
 
@@ -159,4 +159,5 @@ KEA 메디컬은 베냉만이 아니라 코트디부아르, 가봉, 세네갈, �
 [9] “Postpartum hemorrhage: incidence, risk factors, and outcomes in a low-resource setting” International journal of women’s health vol. 8 647-650. 2 Nov. 2016, doi:10.2147/IJWH.S119232  
 
 [10] [https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b](https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b)  
+
 

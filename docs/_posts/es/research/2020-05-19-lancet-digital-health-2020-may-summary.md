@@ -7,7 +7,7 @@ tags: [clinical-informatics, journal-review, 저널리뷰]
 categories: research
 categorydisplay: Investigación
 lang: es
-thumbnail: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
+image: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
 subtitle: Gestión de grandes exámenes de salud mental, retinopatía diabética y manejo de diarrea en áreas médicamente desfavorecidas.
 translation_id: "lancet2020may"
 
@@ -135,4 +135,5 @@ Sin embargo, este estudio solo se llevó a cabo en 10 hospitales en Bangladesh c
 
 
 Hay un total de 6 comentarios, pero resumiré los otros 3 cuando tenga tiempo.
+
 

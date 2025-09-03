@@ -7,7 +7,7 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
 subtitle: 최윤섭 박사님의 최신 저서. 디지털 헬스케어의 바이블?
 translation_id: "bookreviewuntitled"
 ---
@@ -190,4 +190,5 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
   
 
 종합적으로, 디지털 헬스케어라는 주제에 관심있는 사람들에게 일독을 주저 없이, 또 강력히 권하고 싶은 책이다. 물론 이 분야에 관심 있는 분이라면 이런 권유 글 없이도 대부분 읽으시겠지만...?  
+
 

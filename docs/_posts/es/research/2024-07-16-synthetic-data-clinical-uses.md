@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: Investigación
 lang: es
-thumbnail: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: ¿Qué es un dato sintético y cómo puede ser utilizado en la investigación clínica?
 translation_id: "SyntheticData"
 ---
@@ -114,3 +114,4 @@ En este estudio, los investigadores sintetizaron datos de pacientes con síndrom
 ---
 
 Hasta ahora, hemos explorado qué son los datos sintéticos, cómo se generan, cómo se evalúan y algunos ejemplos de uso clínico. Claramente, pueden facilitar el acceso a grandes cantidades de datos, y (suponiendo que los datos sintéticos imiten bien los reales) se pueden compartir datos preocupándose menos por la privacidad y se pueden utilizar para potenciar casos relativamente raros en el entrenamiento. Sin embargo, su uso y evaluación requerirán cautela.
+

@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: Research
 lang: en
-thumbnail: https://i.imgur.com/hxYmCyK.png
+image: https://i.imgur.com/hxYmCyK.png
 subtitle: In any research, the most crucial aspect is obtaining high-quality data. Public data somewhat helps solve this issue.
 translation_id: "publicData"
 ---
@@ -53,3 +53,4 @@ To give a few more examples...
 Another example is the **UK Biobank**, which offers a vast biomedical database containing genetic, health, and lifestyle data collected from 500,000 UK residents. To access this data, researchers must go through an application process and pay a fee based on the scope of their research projects. The UK Biobank plays a very crucial role in enabling researchers globally to conduct various disease studies. If you're a student, you can access the data for $500, but as a financially-strapped resident… I might consider it if I have a clear research topic and need external validation for the progress made with other datasets. Using the UK Biobank sounds kind of cool, doesn’t it?
 
 Of course, aside from N3C and UK Biobank, there are many public datasets available where researchers need to obtain access rights or pay a fee. These datasets usually contain extensive clinical data, genetic information, or lifestyle data and are valuable resources for those of us in need of high-quality data. Public data represents a conduit for the democratization of research, and the door is open for more researchers to access it. I hope for the provision of more public datasets in the future, so we can have fun running all sorts of statistics!
+

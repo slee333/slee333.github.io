@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://i.imgur.com/YObeuub.png
+image: https://i.imgur.com/YObeuub.png
 subtitle: "또 다시 자소서를 쓸 시간이다!"
 translation_id: "CIFellowAppDiary1"
 ---

@@ -7,7 +7,7 @@ tags: [life, opinion]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: To share various stories in the digital healthcare era
 translation_id: "medschoolitclub"
 
@@ -93,4 +93,5 @@ Fortunately, thanks to the interest and empathy shown by those around me, we hav
 
 
 However, as most tasks proceed with trial and error rather than perfection, I hope we will somehow overcome this. I will occasionally share our learnings and points to share as we prepare and manage the group.
+
 

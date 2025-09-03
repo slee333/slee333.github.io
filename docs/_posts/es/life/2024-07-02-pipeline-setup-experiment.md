@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: Vida Diaria
 lang: es    
-thumbnail: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: https://i.imgflip.com/1w4qbl.jpg?a477096
 subtitle: De hecho, se están prestando mucha atención a si el oleoducto funcionará correctamente.
 translation_id: "pipelineexperiment"
 
@@ -166,4 +166,5 @@ Hagamos una lista de tareas también
 
 
 He utilizado muchas de las reglas simples de markdown. Ahora queda confirmar a través del trabajo API si todos estos elementos se convierten correctamente. ¿Qué más podemos hacer después de haber llegado hasta aquí? ¡Vamos a intentarlo!
+
 

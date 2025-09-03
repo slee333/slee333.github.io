@@ -7,7 +7,7 @@ tags:
 categories: life
 categorydisplay: Vida
 lang: es
-thumbnail: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
+image: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
 subtitle: Un viaje para escapar de la postura de la cabeza hacia adelante. Pero fue más profundo, más oscuro y más interminable de lo que pensaba.
 translation_id: splitkeyboardq
 layout: post
@@ -393,3 +393,4 @@ Por ahora, estoy satisfecho con poner algunas teclas personalizadas en las tecla
 De todos modos, estoy muy satisfecho con mi teclado Corne actual, y planeo permanecer en esta comodidad por un tiempo.
 
 Pero quién sabe. Tal vez algún día estaré buscando un teclado Totem o un diseño de 3x5 sin siquiera darme cuenta....
+

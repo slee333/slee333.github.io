@@ -7,7 +7,7 @@ tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
+image: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
 subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 기능을 구현 해 보았다. 보면 알겠지만 그렇게 어려운 기능이 아니다!
 translation_id: "jekyllmultilangwoplugin"
 ---
@@ -284,4 +284,5 @@ Liquid의 if 기능을 이용해 페이지 언어가 kr이면 한국어 메뉴�
 ---
 
   
+
 

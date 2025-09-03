@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: Research
 lang: en
-thumbnail: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: What is synthetic data and how can it be used in clinical research?
 translation_id: "SyntheticData"
 ---
@@ -130,3 +130,4 @@ The researchers synthesized data on patients with Myelodysplastic Syndrome (MDS)
 ---
 
 We have now covered what synthetic data is, how it's generated and evaluated, and some clinical use cases. It indeed shows promise in enhancing access to big data, ensuring data privacy, and leveraging rare cases for training. However, careful usage and evaluation are necessary.
+

@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, wearable]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-thumbnail: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: Analizando las posibilidades y límites de la tecnología médica en un smartwatch.
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
@@ -134,5 +134,6 @@ La gran pregunta es si Apple logrará demostrar que los beneficios de su funció
 [8] Jin, Jill. “Screening for Atrial Fibrillation With Electrocardiography.” Jama, vol. 320, no. 5, July 2018, p. 516., doi:10.1001/jama.2018.10598.
 [9] https://www.harding-center.mpg.de/en/fact-boxes/early-detection-of-cancer/prostate-cancer-early-detection  
 [10] https://www.uspreventiveservicestaskforce.org/Page/Document/RecommendationStatementFinal/prostate-cancer-screening1 
+
 
 

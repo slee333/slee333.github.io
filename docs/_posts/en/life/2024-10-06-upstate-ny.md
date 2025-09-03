@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://i.imgur.com/E5vEZQE.jpeg
+image: https://i.imgur.com/E5vEZQE.jpeg
 subtitle: The landscapes are so beautiful before the leaves start falling in earnest.
 translation_id: "nycoutdoor"
 ---
@@ -98,3 +98,4 @@ There were areas with rapids and places where I saw plants I hadn't seen before,
 ## The Charm of Trailing
 
 This trip led me to set a goal of walking around various suburban areas in the United States. Unlike hiking, Trailing in parks is not physically demanding and seems like a worthwhile objective. I plan to do this more often in the future.
+

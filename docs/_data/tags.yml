@@ -106,3 +106,23 @@ public-data:
   en: "Public Data"
   kr: "공공 데이터"
   es: "Datos Públicos"
+automation:
+  en: automation
+  kr: 자동화
+  es: Automatización
+notion:
+  en: notion
+  kr: 노션
+  es: Notion
+cloudinary:
+  en: cloudinary
+  kr: 클라우디너리
+  es: Cloudinary
+blogging:
+  en: blogging
+  kr: 블로깅
+  es: Blogging
+jekyll:
+  en: jekyll
+  kr: 지킬
+  es: Jekyll

@@ -7,7 +7,7 @@ tags:
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
+image: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
 subtitle: 거북목을 벗어나기 위한 여정. 허나 생각보다 깊고 어둡고 끝이 없었다.
 translation_id: splitkeyboardq
 layout: post

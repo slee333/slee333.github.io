@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: 연구일기
 lang: kr
-thumbnail: https://i.imgur.com/hxYmCyK.png
+image: https://i.imgur.com/hxYmCyK.png
 subtitle: 무슨 연구든 가장 큰 관건은 양질의 데이터를 얻는 일이다. 공공 데이터는 이 문제를 어느 정도 해결해준다.
 translation_id: "publicData"
 ---
@@ -54,3 +54,4 @@ MIMIC 데이터셋은 미국 베스 이스라엘 병원에서 2000년부터 2019
   
 물론 N3C와 UK Biobank 외에도 연구자들이 접근 권한을 얻거나 비용을 지불해야 하는 공공 데이터들이 많이 존재한다. 이러한 데이터셋들은 주로 방대한 양의 임상 데이터, 유전정보, 또는 생활 습관 데이터를 포함하고 있어 나와 같이 양질의 데이터가 고픈 사람들에 있어 중요한 자원이 된다. 공공 데이터는 연구의 민주화를 이루는 중요한 자원이며, 더 많은 연구자들이 접근할 수 있도록 문이열려 있는 셈이다. 앞으로 더 많은 공공 데이터가 제공되기를 빌어본다. 이런저런 통계 돌리고 놀기 쉽도록!  
   
+

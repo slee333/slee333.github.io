@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: 의료정보학
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
 subtitle: 아르고 프로젝트 - 이런 말을 더 듣지 않아도 된다면?
 translation_id: "Paperworks1"
 
@@ -197,4 +197,5 @@ FHIR의 이러한 장점은 모두 어우러져 쉽고 빠른 의료시스템 �
 [그림 1] ttps://www.zdnet.co.kr/view/?no=20171030145055&re=R_2018102919185  
 
 [그림 6] [https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs](https://www.healthcareitnews.com/news/look-inside-epic-cerner-and-allscripts-app-store-programs)  
+
 

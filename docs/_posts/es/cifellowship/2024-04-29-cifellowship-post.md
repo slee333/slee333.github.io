@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: es
 permalink: /es/cifellowship/:title/
 ref: cif1
-thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: ¿Beca de informática clínica? ¿Qué es eso, algo que se come? ¡Nam, nam!
 categorydisplay: Informática Clínica
 translation_id: "cif1"

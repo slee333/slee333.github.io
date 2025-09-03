@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: 나는 노션 페이지를 마크다운으로 export하는 기능을 사용하기조차 번거로웠다. 그냥 URL만 입력하면 포스트가 자동으로 올라가길 원한다!
 translation_id: "jekyllnotion"
 ---
@@ -360,7 +360,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""  
 ```
@@ -410,7 +410,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""
     
@@ -495,3 +495,4 @@ _,_ = write_jekyll_post_from_fm_md(pfm,pmd)
   
 이제 다음 글로는 이 과정에서 어떻게 ChatGPT를 이용하여 다양한 언어를 자동으로 지원하는지에 대해 다루어보겠다. 사실 이번 글에서 다루려 했는데, 이번 글의 분량이 너무 길어졌다… 쉴거야  
   
+

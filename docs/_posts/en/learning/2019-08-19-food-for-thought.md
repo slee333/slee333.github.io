@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: The amazing influence of gut microbes on our brains
 translation_id: "foodforthought"
 
@@ -202,4 +202,5 @@ The saying "a healthy mind in a healthy body" might become outdated. In the futu
     
 
 [13] [https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general](https://hms.harvard.edu/news/microbiome-malefactor?utm_source=twitter&utm_medium=social&utm_campaign=hms-twitter-general)
+
 

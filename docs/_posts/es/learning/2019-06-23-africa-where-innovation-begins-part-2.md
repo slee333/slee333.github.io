@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
 subtitle: "Startups que están revolucionando la salud en África (datos de 2019)"
 translation_id: "africa2"
 
@@ -98,4 +98,5 @@ Pero si, como decíamos en el artículo anterior, el crecimiento de África en l
 [8] [http://www.siliconbeat.com/2016/11/11/drone-start-up-zipline-raises-25-million-expand-on-demand-blood-deliveries/](http://www.siliconbeat.com/2016/11/11/drone-start-up-zipline-raises-25-million-expand-on-demand-blood-deliveries/)
 [9] “Postpartum hemorrhage: incidence, risk factors, and outcomes in a low-resource setting” International journal of women’s health vol. 8 647-650. 2 Nov. 2016, doi:10.2147/IJWH.S119232
 [10] [https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b](https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b)
+
 

@@ -7,7 +7,7 @@ tags: [africa, 보건, 인구]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
 subtitle: Factfulness- viewing the world based on facts
 translation_id: "africa1"
 
@@ -197,6 +197,7 @@ Based on this evidence, in the next article, we will examine some innovative hea
 [6] [https://www.gatesfoundation.org/goalkeepers/report](https://www.gatesfoundation.org/goalkeepers/report)
 
 [7] [https://www.gapminder.org/topics/four-income-levels/](https://www.gapminder.org/topics/four-income-levels/)
+
 
 
 

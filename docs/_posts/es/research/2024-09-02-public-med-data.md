@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: Investigación
 lang: es
-thumbnail: https://i.imgur.com/hxYmCyK.png
+image: https://i.imgur.com/hxYmCyK.png
 subtitle: Cualquiera que sea la investigación, el factor más importante es obtener datos de alta calidad. Los datos públicos en cierta medida ayudan a resolver este problema.
 translation_id: "publicData"
 ---
@@ -53,5 +53,6 @@ Algunos otros ejemplos incluyen...
 Otro ejemplo sería el **UK Biobank**, que ofrece una vasta base de datos biomédica recopilada de 500,000 personas en Reino Unido, incluyendo información genética, de salud y hábitos de vida. Los investigadores deben pasar por un proceso de solicitud para accesar los datos y pagar una tarifa según el alcance del proyecto. UK Biobank es crucial para investigadores de todo el mundo que llevan a cabo estudios de diversas enfermedades. Estudiantes pueden acceder a los datos por 500 dólares, pero como soy un residente pobre... Consideraría utilizarlo si tuviera un tema de investigación claro y necesitara validación externa para un estudio avanzado con otros conjuntos de datos. ¡Usar el UK Biobank suena bastante increíble, no?
 
 Claro, además de N3C y UK Biobank, hay muchos otros conjuntos de datos públicos a los que los investigadores pueden obtener acceso pagando. Estos conjuntos suelen incluir una gran cantidad de datos clínicos, genéticos o de hábitos de vida, convirtiéndose en importantes recursos para quienes necesitan datos de calidad. Los datos públicos son un recurso valioso que democratiza la investigación, permitiendo el acceso a más investigadores. Espero que en el futuro se disponga de más datos públicos. ¡Para que siempre sea fácil jugar con estadísticas!
+
 
 

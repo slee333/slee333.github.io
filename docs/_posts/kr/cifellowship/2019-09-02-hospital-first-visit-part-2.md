@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: 의료정보학
 lang: kr
-thumbnail: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: 애플 헬스 레코드. 구글 클라우드 서비스. 의무기록을 향한 거대 IT 기업들의 솔루션
 translation_id: "Paperworks2"
 
@@ -211,4 +211,5 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
   
 
 ---
+
 

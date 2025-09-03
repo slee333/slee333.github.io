@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: ¡Incluso usar la función para exportar la página de Notion como markdown fue tedioso para mí. ¡Solo quiero que al ingresar la URL, la publicación se suba automáticamente!
 translation_id: "jekyllnotion"
 ---
@@ -355,7 +355,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""
 ```
@@ -403,7 +403,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""
 

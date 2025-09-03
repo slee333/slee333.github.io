@@ -7,7 +7,7 @@ tags: [clinical-informatics, journal-review, 저널리뷰]
 categories: research
 categorydisplay: Research
 lang: en
-thumbnail: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
+image: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
 subtitle: Large-scale mental health screening, diabetic retinopathy, and diarrhea management in medically underserved areas
 translation_id: "lancet2020may"
 
@@ -136,4 +136,5 @@ However, the study was conducted only in 10 hospitals in Bangladesh, with a limi
 
 
 There are 6 comments in total, but I will summarize the remaining 3 if time allows.
+
 

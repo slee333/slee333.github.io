@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-thumbnail: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
 subtitle: "Pequeños cambios, resultados extraordinarios."
 translation_id: "atomichabits"
 

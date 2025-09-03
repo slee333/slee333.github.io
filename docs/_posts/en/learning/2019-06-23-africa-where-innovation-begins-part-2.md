@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
 subtitle: Analysis of various cases of medical innovation in Africa (as of 2019)
 translation_id: "africa2"
 
@@ -201,4 +201,5 @@ However, if Africa's growth involves the improvement of the healthcare system an
 
 
 [10] [https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b](https://www.forbes.com/sites/leifwalcutt/2017/08/24/zipline-is-launching-the-worlds-largest-drone-delivery-network-in-tanzania/#15662887293b)
+
 

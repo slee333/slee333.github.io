@@ -7,7 +7,7 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
 subtitle: Dr. Choi Yun-seob's latest book. The Bible of digital healthcare?
 translation_id: "bookreviewuntitled"
 
@@ -216,4 +216,5 @@ This book would be valuable not only for medical professionals or industry exper
 
 
 Overall، for those interested in the subject of digital healthcare, this book comes highly recommended without hesitation. Of course, if you are interested in this field, you likely won't need this recommendation to pick up the book...
+
 

@@ -7,7 +7,7 @@ tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://i.imgur.com/OImzeTV.png
+image: https://i.imgur.com/OImzeTV.png
 subtitle: The duties of a first-year intern and a second-year resident are different. Am I doing well?
 translation_id: "pgy2firstfloor"
 ---
@@ -28,3 +28,4 @@ Two tasks never get easier as an internal medicine resident. One is the "goals o
 Obviously, such discussions aren’t easy. Conveying poor prognosis is challenging. Although medical school teaches how to break bad news, real-life scenarios differ from practice drills. While adhering to basic principles, various approaches might be employed. For instance, outside of the ward, I had to tell a family that a patient, found unresponsive with suspected anoxic brain injury following cardiac arrest and showing no responses for over a week, might not recover and that hospice care should be considered. Miraculously, the patient began responding the next day, regained consciousness, and was eventually discharged. Meeting the patient and their family in the outpatient clinic weeks later was both joyful and deeply moving.
 
 Besides goals of care discussions, many other instances require delivering bad news, ranging from diagnosing chronic conditions like diabetes, hypertension, and hyperlipidemia needing lifelong medication, to life-threatening diseases like immunodeficiency disorders or cancers. Determining how to communicate these truths empathetically and effectively is an ongoing challenge. During this ward rotation, I repeatedly had to relay such news, often feeling that I could have communicated better. Will it ever become easier? I’m not sure. It’s an area demanding extensive practice.
+

@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: kr
 permalink: /cifellowship/:title/
 ref: cif1
-thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: 의료정보학 펠로우? 그게 뭐죠 먹는 건가요 냠냠
 categorydisplay: 의료정보학
 translation_id: "cif1"

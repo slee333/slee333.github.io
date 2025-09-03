@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, wearable]
 categories: cifellowship
 categorydisplay: Clinical Informatics
 lang: en
-thumbnail: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: The potential and limitations of medical devices and wearable technology embedded in a smartwatch
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma

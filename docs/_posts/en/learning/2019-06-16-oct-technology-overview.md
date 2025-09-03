@@ -7,7 +7,7 @@ tags: [Imaging, Medical, medicine]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
+image: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
 subtitle: Let's find out what seismic reflection imaging is and what it is used for.
 translation_id: "oct2019"
 
@@ -261,4 +261,5 @@ So far, we have briefly explored the principles, advantages, and applications of
 
 
 [8] Melissa Suter-Benjamin Vakoc-Patrick Yachimski-Milen Shishkov-Gregory Lauwers-Mari Mino-Kenudson-Brett Bouma-Norman Nishioka-Guillermo Tearney – Gastrointestinal Endoscopy – 2008
+
 

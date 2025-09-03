@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: en
 permalink: /en/cifellowship/:title/
 ref: cif1
-thumbnail: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
 categorydisplay: Clinical Informatics
 translation_id: "cif1"

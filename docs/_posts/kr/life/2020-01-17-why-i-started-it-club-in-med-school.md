@@ -7,7 +7,7 @@ tags: [life, opinion]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 subtitle: 디지털 의료 시대를 맞아 다양한 이야기를 나누기 위해
 translation_id: "medschoolitclub"
 
@@ -94,4 +94,5 @@ translation_id: "medschoolitclub"
   
 
 하지만 원래 일이 대부분 완벽하게 보다는 시행착오를 겪으며 진행되는 만큼 어떻게든 이겨낼 수 있길 기대합니다. 모임을 준비하고 진행하며 느낀 점이나 공유하고픈 점이 생기면 종종 이렇게 공유하도록 하겠습니다.  
+
 

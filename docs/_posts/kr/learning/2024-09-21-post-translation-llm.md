@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://i.imgur.com/nyv5CB7.png
+image: https://i.imgur.com/nyv5CB7.png
 subtitle: 대형 언어 모델의 가능성은 무궁무진하다. 블로그 포스트 번역에서도 예외가 아니다
 translation_id: "jekyllblogllm"
 ---

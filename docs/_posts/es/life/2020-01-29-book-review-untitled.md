@@ -7,7 +7,7 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-thumbnail: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
 subtitle: ¿La última obra del Dr. Choi Yoon-seop? ¿La biblia de la atención médica digital?
 translation_id: "bookreviewuntitled"
 
@@ -216,4 +216,5 @@ No solo es un buen libro para profesionales de la salud y personas en la industr
 
 
 En resumen, recomendaría encarecidamente este libro a cualquier persona interesada en el tema de la salud digital. Aunque, por supuesto, aquellos interesados en este campo probablemente ya lo leerán sin necesidad de esta recomendación...
+
 

@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: https://i.imgflip.com/1w4qbl.jpg?a477096
 subtitle: 과연 파이프라인은 잘 동작 할 것인지 그 귀추가 주목되고 있다
 translation_id: "pipelineexperiment"
 ---
@@ -122,4 +122,5 @@ function capitalizeFirstLetter(string) {
   
 
 간단한 마크다운 문법을 많이 활용해 보았습니다. 이제 이 모든 요소들이 잘 변환되는지 API 작업 등을 통해 확인하는 일이 남았습니다. 우짜겠노 여까지 왔는데. 마 한 번 해보입시다!  
+
 

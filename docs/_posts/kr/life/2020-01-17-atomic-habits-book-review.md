@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
 subtitle: 작은 성공이 모여 기나긴 습관이 된다
 translation_id: "atomichabits"
 
@@ -248,3 +248,4 @@ translation_id: "atomichabits"
 얼핏 보면 당연한 소리들 같지만, 습관의 기전과 방법에 대해 이렇게까지 체계적으로 정리한 책은 처음이었다. 나도 책 내용을 토대로 1일 1 글쓰기, 1 운동, 1 코딩 습관을 들이려 노력했는데 절반 정도만 성공한 느낌이었다.
 
 그래도 덕분에 내가 습관을 들이고 싶다면 어떻게 주변을 설게 해야 하는지, 어떤 마음가짐을 가져야 하는지를 알 수 있었다. 전반적으로 유익한 책이라 생각한다.
+

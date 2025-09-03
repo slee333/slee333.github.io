@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-thumbnail: https://i.imgur.com/E5vEZQE.jpeg
+image: https://i.imgur.com/E5vEZQE.jpeg
 subtitle: Antes de que las hojas comiencen a cambiar de forma auténtica, los paisajes son tan hermosos.
 translation_id: "nycoutdoor"
 ---
@@ -89,3 +89,4 @@ Había áreas con rápidos y lugares donde crecían plantas que no había visto 
 ## El atractivo del senderismo
 
 A raíz de este viaje, decidí establecer el objetivo de dar paseos por diversas áreas suburbanas dentro de los Estados Unidos. A diferencia del montañismo, recorrer parques como parte de senderismo me parece un objetivo alcanzable que no es demasiado arduo físicamente. Planeo hacerlo con frecuencia en el futuro.
+

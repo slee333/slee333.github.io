@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
 subtitle: Even using the feature to export Notion pages as Markdown felt cumbersome. I just want to be able to automatically upload posts by simply entering the URL!
 translation_id: "jekyllnotion"
 ---
@@ -351,7 +351,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""
 ```
@@ -399,7 +399,7 @@ tags: {page_fm['tags']}
 categories: {page_fm['categories']}
 categorydisplay: {page_fm['categorydisplay']}
 lang: {page_fm['lang']}
-thumbnail: {page_fm['thumbnail']}
+image: {page_fm['thumbnail']}
 subtitle: {page_fm['subtitle']}
 ---\n"""
 

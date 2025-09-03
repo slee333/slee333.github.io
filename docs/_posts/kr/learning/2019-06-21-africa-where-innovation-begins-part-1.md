@@ -7,7 +7,7 @@ tags: [africa, population-health]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
 subtitle: 팩트풀니스- 사실을 기반으로 세상을 바라보는 눈
 translation_id: "africa1"
 
@@ -173,4 +173,5 @@ translation_id: "africa1"
 [6] [https://www.gatesfoundation.org/goalkeepers/report](https://www.gatesfoundation.org/goalkeepers/report)  
 
 [7] [https://www.gapminder.org/topics/four-income-levels/](https://www.gapminder.org/topics/four-income-levels/)  
+
 

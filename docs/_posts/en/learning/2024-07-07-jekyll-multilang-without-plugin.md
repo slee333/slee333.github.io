@@ -7,7 +7,7 @@ tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: Learning
 lang: en
-thumbnail: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
+image: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
 subtitle: I tried implementing the function myself because I didn't like the commonly used plugin. You can see that it's not such a difficult function!
 translation_id: "jekyllmultilangwoplugin"
 ---
@@ -303,4 +303,5 @@ However, another challenge is how to translate and support different languages f
 
 
 ---
+
 

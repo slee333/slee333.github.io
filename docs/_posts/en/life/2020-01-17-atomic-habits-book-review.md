@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: Daily Life
 lang: en
-thumbnail: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
 subtitle: Gathered small successes become a long habit.
 translation_id: "atomichabits"
 
@@ -261,3 +261,4 @@ At first glance, it seemed like common sense, but it was the first time I had se
 Nevertheless, thanks to this book, I learned how to design my surroundings if I wanted to establish habits and what mindset I should have. Overall, I think it is a beneficial book.
 
 ---
+

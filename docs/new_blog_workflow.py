@@ -86,7 +86,7 @@ def extract_frontmatter(page_id):
         'categories': get_select_name(props.get('categories')),
         'categorydisplay': get_select_name(props.get('categorydisplay')),
         'lang': get_select_name(props.get('lang'), 'kr'),
-        'thumbnail': get_file_name(props.get('thumbnail')),
+        'image': get_file_name(props.get('image')),
         'subtitle': get_plain_text(props.get('subtitle')),
         'translation_id': get_plain_text(props.get('translation_id'))
     }

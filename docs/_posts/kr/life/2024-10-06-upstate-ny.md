@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-thumbnail: https://i.imgur.com/E5vEZQE.jpeg
+image: https://i.imgur.com/E5vEZQE.jpeg
 subtitle: 단풍이 본격적으로 들기 전 너무나 아름다운 풍경들
 translation_id: "nycoutdoor"
 ---
@@ -110,3 +110,4 @@ translation_id: "nycoutdoor"
   
 이번 여행을 계기로 미국 내 교외 지역 여기저기 산책을 다녀보자는 목표를 세우게 되었다. 등산과 달리 공원을 돌아다니는 Trailing은 체력적으로도 크게 부담 되지 않으면서도 할 만한 목표인 거 같다. 앞으로도 종종 다닐 예정이다.  
   
+

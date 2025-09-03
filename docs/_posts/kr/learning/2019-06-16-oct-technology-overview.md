@@ -7,7 +7,7 @@ tags: [Imaging, Medical, medicine]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-thumbnail: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
+image: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
 subtitle: 광간섭 단층촬영이 무엇인지, 그리고 그 용도는 무엇이 있는지 알아보자.
 translation_id: "oct2019"
 
@@ -205,4 +205,5 @@ OCT의 또 다른 응용분야는 소화기내과이다. 특히, 종양을 포�
 [7] Gora, Michalina J., et al. “Endoscopic Optical Coherence Tomography: Technologies and Clinical Applications [Invited].” Biomedical Optics Express, vol. 8, no. 5, July 2017, p. 2405., doi:10.1364/boe.8.002405.  
 
 [8] Melissa Suter-Benjamin Vakoc-Patrick Yachimski-Milen Shishkov-Gregory Lauwers-Mari Mino-Kenudson-Brett Bouma-Norman Nishioka-Guillermo Tearney – Gastrointestinal Endoscopy – 2008  
+
 
