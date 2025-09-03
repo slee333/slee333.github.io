@@ -145,7 +145,7 @@ def upload_image_to_cloudinary(image_url):
         return None
 ```
 
-### 3. Generating a Responsive <img> Tag
+### 3. Generating a Responsive img Tag
 
 When the image is successfully uploaded, Cloudinary returns a unique `public_id`.
 
