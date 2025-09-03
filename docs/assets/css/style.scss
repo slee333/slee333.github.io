@@ -812,7 +812,8 @@ h2 {
     align-items: flex-start;
     /* Aligning items to the left */
     width: 100%;
-    padding: 0;
+    padding: 0 1.5rem;
+    /* Add horizontal padding */
 
     .site-title {
       color: white;
