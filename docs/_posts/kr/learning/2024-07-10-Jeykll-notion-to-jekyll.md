@@ -3,7 +3,7 @@ layout: post
 permalink: /learning/:title/
 title: "Jekyll 포스트 Notion으로 작성하기"
 date: 2024-07-10 00:00:00 -0400
-tags: ChatGPT openai blog
+tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: 공부일기
 lang: kr

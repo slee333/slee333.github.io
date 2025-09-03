@@ -3,7 +3,7 @@ layout: post
 permalink: life/:title/
 title: "펠로우십 지원 시작 (1)"
 date: 2025-06-09 00:00:00 -0400
-tags: life, Fellowship, Clinical_informatics
+tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr

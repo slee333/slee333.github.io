@@ -1,0 +1,148 @@
+---
+layout: post
+permalink: /es/life/:title/
+title: "Reseña de Libro: Hábitos Atómicos"
+date: 2020-01-17 00:00:00 -0400
+tags: [books, self-development]
+categories: life
+categorydisplay: Vida Diaria
+lang: es
+thumbnail: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+subtitle: "Pequeños cambios, resultados extraordinarios."
+translation_id: "atomichabits"
+
+---
+Dejar de fumar, beber menos, empezar a hacer ejercicio... 
+
+Cada fin de año o comienzo de uno nuevo, todos nos hacemos promesas para ser una mejor versión de nosotros mismos. Pero, como bien sabemos, cambiar no es tan fácil. Muchos lo achacan a la falta de fuerza de voluntad, a que hay que "echarle más ganas".
+
+![Deportes](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sXYO7LjW1bRXWiVXPII0eAqIiwY.jpg)
+
+Pero el típico fracaso de los propósitos de Año Nuevo no es solo por falta de voluntad. Pienso en las veces que me he apuntado al gimnasio en enero, convencido de que iría cinco días a la semana durante seis meses. Pero luego el trabajo se acumula, duermes poco, te duele todo, y en ese momento en que dudas entre ir al gimnasio o dormir una hora más, tu plan se va al traste, por muy decidido que estuvieras al principio.
+
+Ahora, ¿qué habría pasado si, en lugar de eso, me hubiera propuesto hacer 10 minutos de ejercicio en casa cada día? ¿Y si hubiera creado el hábito de moverme al menos 10 minutos antes de la ducha, incluso los días más ocupados? Seguramente, la probabilidad de cumplirlo habría sido mucho mayor. Y quizás, ese pequeño hábito me habría llevado a hacer ejercicio de forma más constante.
+
+Muchas veces, no fallamos en crear hábitos por falta de ganas, sino porque el método que usamos no es el adecuado.
+
+James Clear es un experto en precisamente eso: los "métodos para crear hábitos". Empezó escribiendo en su blog sobre cómo cambiar nuestras vidas de forma efectiva, y de ahí salió un bestseller del desarrollo personal: **"Hábitos Atómicos" (Atomic Habits)**. Actualmente, envía un boletín semanal llamado 3-2-1, lleno de ideas para mantener buenos hábitos y llevar una vida más saludable.
+
+(El boletín 3-2-1 es genial: 3 ideas cortas del autor, 2 citas de otras personas y 1 pregunta para reflexionar. Muy recomendable).
+
+Entonces, ¿cuál es el secreto que James Clear nos cuenta en **"Hábitos Atómicos"**? Es difícil resumir todo el libro, pero aquí van 20 ideas clave, una por cada capítulo.
+
+### 1. Olvídate de las metas, enfócate en el sistema.
+
+Si quieres mejores resultados, no te obsesiones con la meta final. Mejor, concéntrate en mejorar el sistema que te llevará a ella. Suena complicado, pero es simple: ¡crea un entorno que te ponga fácil el tener buenos hábitos!
+
+### 2. Tu identidad es tu mayor motivación.
+
+Decide qué tipo de persona quieres ser. Por ejemplo, en lugar de decir "tengo que dejar de beber", piensa "soy una persona que no bebe". Cada vez que rechaces una copa, estarás reforzando esa nueva identidad y ganando confianza.
+
+### 3. El ciclo de los hábitos.
+
+Según el autor, todo hábito sigue este ciclo:
+
+Señal → Anhelo → Respuesta → Recompensa.
+
+Para que un buen hábito se consolide, tiene que cumplir estas cuatro leyes:
+
+> 1.  (Señal) **Hacerlo obvio.**
+> 2.  (Anhelo) **Hacerlo atractivo.**
+> 3.  (Respuesta) **Hacerlo sencillo.**
+> 4.  (Recompensa) **Hacerlo satisfactorio.**
+
+El resto del libro se dedica a explicar cómo aplicar estas cuatro leyes.
+
+---
+
+## **Primera Ley: Hacérlo obvio**
+
+### 4. Sé consciente de tus hábitos.
+
+El primer paso es darte cuenta de lo que haces. Identifica tus buenos y malos hábitos. A veces, simplemente decirlos en voz alta ayuda a tomar conciencia.
+
+### 5. Sé específico.
+
+No digas "voy a hacer más ejercicio". Di: "Voy a [ACCIÓN] durante [TIEMPO] en [LUGAR]". También puedes encadenar hábitos: "Después de [HÁBITO ACTUAL], haré [NUEVO HÁBITO]".
+
+### 6. El entorno es más poderoso que la fuerza de voluntad.
+
+Diseña tu entorno para el éxito. Las señales visuales son muy potentes. Si quieres adoptar un hábito, asegúrate de que las señales que lo activan estén a la vista.
+
+### 7. El secreto del autocontrol.
+
+La gente con mucho autocontrol no es que tenga una fuerza de voluntad sobrehumana; simplemente evitan las tentaciones. Si quieres eliminar un mal hábito, reduce la exposición a las señales que lo desencadenan. Es de sentido común, pero cuesta aplicarlo.
+
+---
+
+## **Segunda Ley: Hacérlo atractivo**
+
+### 8. Agrupa tentaciones.
+
+Los hábitos funcionan con dopamina. Cuanto más placentera es una experiencia, más queremos repetirla. Así que, une un hábito que *necesitas* hacer con uno que *quieres* hacer. El método clásico: "Después de terminar este informe, jugaré 30 minutos a la videoconsola".
+
+### 9. Únete a una cultura donde tu hábito sea la norma.
+
+Nos importa mucho lo que piensan los demás. Si el hábito que quieres adoptar te trae reconocimiento y respeto de tu círculo social, te resultará mucho más atractivo.
+
+### 10. Reprograma tu cerebro.
+
+Para romper un mal hábito, tienes que hacerlo menos atractivo. Piensa en los beneficios de *no* hacerlo. Muchos malos hábitos los mantenemos porque, aunque sabemos que son malos, nos dan placer inmediato. ¿Y si dejaras de disfrutarlo? 
+
+---
+
+## **Tercera Ley: Hacérlo sencillo**
+
+### 11. La clave es la repetición, no la perfección.
+
+Lo importante no es cuánto tiempo le dedicas, sino cuántas veces lo repites. Es más probable que cree el hábito de hacer ejercicio alguien que entrena 10 minutos cada día que alguien que se mata en el gimnasio 70 minutos una vez a la semana.
+
+### 12. La ley del mínimo esfuerzo.
+
+Los humanos somos vagos por naturaleza. Siempre buscamos la opción más fácil. Por eso, para que un hábito se mantenga, tienes que hacerlo lo más sencillo posible.
+
+### 13. La regla de los dos minutos.
+
+Cuando empieces un nuevo hábito, haz que dure menos de dos minutos. ¿Quieres leer más? Lee una página. ¿Quieres hacer ejercicio? Haz una flexión. Si el comienzo es fácil, es más probable que continúes.
+
+### 14. Ponle barreras a tus malos hábitos.
+
+Si quieres dejar un mal hábito, haz que sea difícil de realizar. ¿El problema es el alcohol? No lo tengas en casa. ¿Miras demasiado el móvil? Ponle una contraseña difícil. Aumenta la fricción para que te dé pereza hacerlo.
+
+---
+
+## **Cuarta Ley: Hacérlo satisfactorio**
+
+### 15. La recompensa debe ser inmediata.
+
+Los malos hábitos nos enganchan porque la recompensa es instantánea. Los buenos hábitos, en cambio, suelen tener recompensas a largo plazo. Por eso, tienes que encontrar una forma de sentir una gratificación inmediata cada vez que completas un buen hábito.
+
+### 16. ¡No rompas la cadena!
+
+Haz un seguimiento de tus hábitos. Puedes fallar un día, pero nunca dos seguidos. Ver tu progreso en un calendario es una recompensa en sí misma. Te da una sensación de logro y te motiva a seguir.
+
+### 17. Ten un compañero de hábitos.
+
+El autor habla del "contrato de hábitos". Pídele a alguien que te supervise. Saber que otra persona está pendiente de tu progreso puede ser una motivación muy poderosa.
+
+---
+
+### 18. Juega en el terreno que te favorece.
+
+No todos los hábitos son para todo el mundo. Elige hábitos que se alineen con tus talentos y tu personalidad. Si eres sociable, quizás te motive ir a un gimnasio concurrido. Si eres más introvertido, quizás prefieras entrenar en casa.
+
+### 19. El secreto para mantenerlo a largo plazo.
+
+Cualquier hábito, por muy emocionante que sea al principio, se vuelve aburrido con el tiempo. La diferencia entre los profesionales y los amateurs es que los profesionales siguen adelante incluso cuando no les apetece. La clave es la constancia, no la motivación.
+
+### 20. El peligro de los buenos hábitos.
+
+En el último capítulo, el autor nos advierte de que los hábitos pueden ser un arma de doble filo. Al ser automáticos, pueden hacer que dejemos de prestar atención y de buscar formas de mejorar. Por eso, recomienda hacer una "revisión anual" y un "informe de integridad" para reflexionar sobre nuestros valores y asegurarnos de que nuestros hábitos nos están llevando en la dirección correcta.
+
+---
+
+Descubrí este libro en la segunda mitad de 2019 y me pareció una lectura muy útil. Aunque muchas cosas parecen de sentido común, la forma en que el autor las organiza en un sistema claro y práctico me hizo reflexionar sobre por qué me costaba tanto mantener buenos hábitos y romper los malos.
+
+Gracias a este libro, he aprendido a diseñar mi entorno y a tener la mentalidad correcta para cambiar. En general, un libro muy recomendable.
+
+---

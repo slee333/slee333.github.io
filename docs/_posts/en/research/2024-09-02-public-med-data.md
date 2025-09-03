@@ -3,7 +3,7 @@ layout: post
 permalink: /en/research/:title/
 title: "Research life with open data"
 date: 2024-09-02 00:00:00 -0400
-tags: Clinical_Informatics Medicine Research Public_data
+tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: Research
 lang: en

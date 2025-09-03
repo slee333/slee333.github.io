@@ -3,7 +3,7 @@ layout: post
 permalink: /es/learning/:title/
 title: Escribir Publicaciones de Jekyll con Notion
 date: 2024-07-10 00:00:00 -0400
-tags: ChatGPT openai blog
+tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es

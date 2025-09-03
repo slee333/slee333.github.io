@@ -3,7 +3,7 @@ layout: post
 permalink: /research/:title/
 title: "합성 데이터의 임상적 사용"
 date: 2024-07-16 00:00:00 -0400
-tags: Informatics Medicine Clinical_Informatics
+tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: 연구일기
 lang: kr

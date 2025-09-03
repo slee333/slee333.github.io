@@ -3,7 +3,7 @@ layout: post
 permalink: /en/life/:title/
 title: "[Residency] First Ward Rotation as PGY-2"
 date: 2024-08-19 00:00:00 -0400
-tags: Medicine 미국수련 Residency
+tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: Daily Life
 lang: en

@@ -3,7 +3,7 @@ layout: post
 permalink: /en/learning/:title/
 title: Exporting Notion page to Jekyll just with URL
 date: 2024-07-10 00:00:00 -0400
-tags: ChatGPT openai blog
+tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Learning
 lang: en

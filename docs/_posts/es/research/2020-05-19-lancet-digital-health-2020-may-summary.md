@@ -1,0 +1,138 @@
+---
+layout: post
+permalink: /es/research/:title/
+title: "Resumen del comentario de la revista digital de salud Ranset de mayo de 2020 (1)"
+date: 2020-05-19 00:00:00 -0400
+tags: [clinical-informatics, journal-review, 저널리뷰]
+categories: research
+categorydisplay: Investigación
+lang: es
+thumbnail: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
+subtitle: Gestión de grandes exámenes de salud mental, retinopatía diabética y manejo de diarrea en áreas médicamente desfavorecidas.
+translation_id: "lancet2020may"
+
+---
+
+
+
+
+La revista Lancet Digital Health es una revista académica sobre salud digital que se lanzó en mayo de 2019. En la edición de mayo de esta revista, no hay artículos, sino comentarios de los cuales he resumido tres de ellos. Hay un total de seis comentarios.
+
+
+
+[https://www.thelancet.com/journals/landig/issue/vol2no5/PIIS2589-7500(20)X0005-7](https://www.thelancet.com/journals/landig/issue/vol2no5/PIIS2589-7500(20)X0005-7)
+
+
+
+---
+
+
+
+# 1. ¿Examen de cribado a gran escala en psiquiatría?
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30066-2/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30066-2/fulltext)
+
+
+
+DETECT (The Dynamic ElecTronic hEalth reCord deTection) es un algoritmo que predice quién puede desarrollar un trastorno mental basado en los registros médicos electrónicos. En experimentos con datos externos, el AUROC alcanzó 0.799. (De hecho, considerando que es un examen de cribado, no parece ser muy alto).
+
+
+
+Es muy difícil predecir si alguien podría tener un trastorno mental a menos que visite un hospital para un exámen. En este sentido, el propósito y el significado de DETECT radican en proporcionar un medio para predecir y prevenir trastornos mentales para aquellos que tienen registros médicos electrónicos.
+
+
+
+A las personas que podrían desarrollar un trastorno mental que no tenían anteriormente se les llama CHR-P, y anteriormente esta clasificación debía hacerse en una clínica psiquiátrica. En la mayoría de los casos, esto ocurre cuando la persona se da cuenta de que tiene algún síntoma. Naturalmente, el enfoque utilizando CHR-P tiene una baja tasa de predicción positiva del 5.74% cuando se aplica al público en general en lugar de a aquellos que visitan una clínica psiquiátrica. Además, el AUROC de 0.799 mencionado en el estudio no puede considerarse alto.
+
+
+
+En resumen, ejecutar el algoritmo DETECT en una gran cantidad de registros médicos electrónicos para identificar a las personas que pueden ser clasificadas como CHR-P tendría una precisión significativamente baja. Incluso si se identificara con precisión, la proporción de personas clasificadas como CHR-P que experimentan un trastorno mental temporalmente es del 20%, y alrededor de la mitad de estos casos verán una recurrencia de la enfermedad.
+
+
+
+También hay problemas éticos. ¿Cómo se sentiría al ser notificado con la frase "Tiene riesgo de desarrollar un trastorno mental"? Es un escenario algo diferente al de alguien que visita una clínica psiquiátrica por su propia preocupación y recibe un diagnóstico CHR-P. ¿Podría esto afectar emocionalmente de manera significativa al individuo?
+
+
+
+A pesar de estas limitaciones, DETECT parece tener importancia por intentar un método para el cribado de trastornos psiquiátricos en una gran escala. Estoy ansioso por ver qué desarrollos podría haber en el futuro.
+
+
+
+# 2. Coste-efectividad de la IA en el cribado de retinopatía diabética
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30076-5/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30076-5/fulltext)
+
+
+
+Es un estudio de Singapur que compara la coste-efectividad del cribado de retinopatía diabética en una gran población.
+
+
+
+Las comparaciones se hicieron entre tres opciones:
+
+
+
+1. Cribado realizado por humanos.
+
+2. Cribado realizado por humanos usando un algoritmo de deep learning.
+
+3. Cribado completamente automatizado.
+
+
+
+En última instancia, la segunda opción —donde humanos y deep learning se usan juntos— resultó ser la más coste-efectiva. Sin embargo, este resultado parte del supuesto de que la precisión de los tres métodos es igual. Esta es una limitación fundamental del estudio, ya que el cribado realizado por humanos podría ser más preciso, o el cribado totalmente automatizado podría ser más preciso, un hecho que no se consideró deliberadamente para simplificar la comparación.
+
+
+
+Además, aunque el método combinado resultó ser el más coste-efectivo, esto depende de cuánto valor se le dé al trabajo humano en la sociedad. Por ejemplo, en un país donde el valor del trabajo humano es bajo, podría ser más barato contratar humanos que usar máquinas.
+
+
+
+# 3. ¿Puede la tecnología ayudar a manejar la diarrea?
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30081-9/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30081-9/fulltext)
+
+
+
+Las enfermedades diarreicas son una causa principal de mortalidad infantil a nivel mundial. Existen guías sobre cuándo se necesita rehidratación oral para prevenir la diarrea, la deshidratación y las muertes asociadas, pero según este estudio, dichos estándares solo se cumplen en un 40% a nivel mundial.
+
+
+
+El estudio liderado por Ashraful Khan intentó abordar este problema. Existen criterios para determinar cuándo se necesita rehidratación.
+
+
+
+- Una calculadora de bolsillo para determinar cuándo se necesita rehidratación.
+
+- Una hoja de cálculo del tamaño de una tarjeta de bolsillo para determinar cuándo es necesaria la rehidratación.
+
+
+
+En el estudio, se proporcionaron estas herramientas —calculadora a un grupo y hoja de cálculo a otro— a médicos de urgencias en 10 hospitales en Bangladesh, para comparar los resultados de tratamiento en 2487 adultos y 2488 niños que llegaron con diarrea aguda.
+
+
+
+En última instancia, no hubo mucha diferencia en la frecuencia con la cual los médicos decidieron administrar tratamiento de hidratación entre los dos métodos. Sin embargo, al comparar la cantidad de líquidos administrados a los niños que sufrían deshidratación severa, el grupo que usó la calculadora administró más líquidos y redujo el uso innecesario de antibióticos.
+
+
+
+El estudio sugiere que este enfoque podría mejorar la calidad de la atención médica en países en desarrollo y de ingresos medianos. Sin duda, usar este tipo de calculadoras podría incentivar a los médicos en estos países a prestar más atención al manejo de la diarrea y la deshidratación en niños y adultos.
+
+
+
+Sin embargo, este estudio solo se llevó a cabo en 10 hospitales en Bangladesh con un número limitado de médicos participantes. Además, personalmente creo que el grupo de comparación debería haber sido médicos que realizan consultas de la manera habitual para demostrar mejor la utilidad de la calculadora, ya que normalmente no llevan una hoja de cálculo consigo.
+
+
+
+---
+
+
+
+Hay un total de 6 comentarios, pero resumiré los otros 3 cuando tenga tiempo.
+

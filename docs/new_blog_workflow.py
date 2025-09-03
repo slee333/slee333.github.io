@@ -1,11 +1,13 @@
 import os
 import sys
-import json
 import re
+import yaml
 import requests
-import base64
 from notion_client import Client
 from dotenv import load_dotenv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # --- SETUP ---
 # Load environment variables from .env file
@@ -18,12 +20,23 @@ if not notion_token:
     sys.exit(1)
 notion = Client(auth=notion_token)
 
-# Imgur API Setup
-# IMPORTANT: Replace with your actual Imgur Client ID
-# You can get one here: https://api.imgur.com/oauth2/addclient
-IMGUR_CLIENT_ID = "YOUR_IMGUR_CLIENT_ID_HERE"
+# Cloudinary API Setup
+cloudinary_cloud_name = os.getenv('CLOUDINARY_CLOUD_NAME')
+cloudinary_api_key = os.getenv('CLOUDINARY_API_KEY')
+cloudinary_api_secret = os.getenv('CLOUDINARY_API_SECRET')
 
-# --- HELPER FUNCTIONS (from your original notebook) ---
+if not all([cloudinary_cloud_name, cloudinary_api_key, cloudinary_api_secret]):
+    print("ERROR: Cloudinary credentials not found in .env file.")
+    sys.exit(1)
+
+cloudinary.config(
+    cloud_name=cloudinary_cloud_name,
+    api_key=cloudinary_api_key,
+    api_secret=cloudinary_api_secret
+)
+
+
+# --- HELPER FUNCTIONS ---
 
 def extract_notion_page_id(notion_url):
     """Extracts the Notion page ID from a Notion URL."""
@@ -54,16 +67,22 @@ def extract_frontmatter(page_id):
         return [tag['name'] for tag in field.get('multi_select', [])]
 
     def get_date_start(field, default=''):
-        return field.get('date', {}).get('start', default) if field.get('date') else default
-        
+        raw_date = field.get('date', {}).get('start', default) if field.get('date') else default
+        if raw_date and '.000' in raw_date:
+            return raw_date.replace('.000', ' ').replace('T', ' ')
+        return raw_date
+
     def get_file_name(field, default=''):
-        return field.get('files', [{}])[0].get('name', default) if field.get('files') else default
+        files = field.get('files', [])
+        if files:
+            return files[0].get('name', default)
+        return default
 
     return {
-        'filename': get_plain_text(props.get('filename')),
+        'filename_for_post': get_plain_text(props.get('filename')),
         'title': get_plain_text(props.get('title')),
         'date': get_date_start(props.get('date')),
-        'tags': ' '.join(get_multiselect_names(props.get('tags'))),
+        'tags': get_multiselect_names(props.get('tags')),
         'categories': get_select_name(props.get('categories')),
         'categorydisplay': get_select_name(props.get('categorydisplay')),
         'lang': get_select_name(props.get('lang'), 'kr'),
@@ -72,32 +91,21 @@ def extract_frontmatter(page_id):
         'translation_id': get_plain_text(props.get('translation_id'))
     }
 
-# --- NEW WORKFLOW FUNCTIONS ---
+# --- MARKDOWN & IMAGE FUNCTIONS ---
 
-def upload_image_to_imgur(image_url, client_id):
-    """Downloads an image from a URL and uploads it to Imgur."""
-    headers = {"Authorization": f"Client-ID {client_id}"}
-    
+def upload_image_to_cloudinary(image_url):
+    """Uploads an image from a URL to Cloudinary and returns the full result."""
     try:
-        print(f"Downloading image from: {image_url}")
-        response = requests.get(image_url)
-        response.raise_for_status()
-        image_data = response.content
-        
-        print("Uploading to Imgur...")
-        r = requests.post("https://api.imgur.com/3/image", headers=headers, data={'image': image_data})
-        r.raise_for_status()
-        data = r.json()
-        
-        new_link = data['data']['link']
-        print(f"Successfully uploaded image. New URL: {new_link}")
-        return new_link
-    except requests.exceptions.RequestException as e:
-        print(f"Error processing image {image_url}: {e}")
-        return image_url
+        print(f"Uploading image to Cloudinary from: {image_url}")
+        upload_result = cloudinary.uploader.upload(image_url)
+        print(f"Successfully uploaded image. Public ID: {upload_result['public_id']}")
+        return upload_result
+    except Exception as e:
+        print(f"Error processing image {image_url} with Cloudinary: {e}")
+        return None
 
-def extract_markdown_and_upload_images(all_blocks, client_id):
-    """Extracts markdown, handling pagination and uploading images to Imgur with captions."""
+def extract_markdown_and_upload_images(all_blocks):
+    """Extracts markdown and generates responsive Cloudinary HTML img tags."""
     markdown_lines = []
     for block in all_blocks:
         block_type = block['type']
@@ -105,29 +113,46 @@ def extract_markdown_and_upload_images(all_blocks, client_id):
         text = ''
 
         if block_type == 'image':
-            source_url = ""
-            if block_content.get('type') == 'external':
-                source_url = block_content['external']['url']
-            elif block_content.get('type') == 'file':
-                source_url = block_content['file']['url']
-            else:
+            source_url = block_content.get('file', {}).get('url') or block_content.get('external', {}).get('url')
+            if not source_url:
                 continue
             
-            new_imgur_url = upload_image_to_imgur(source_url, client_id)
-            
-            # Use image title as alt text for accessibility
-            alt_text = os.path.basename(new_imgur_url)
-            markdown_lines.append(f"![{alt_text}]({new_imgur_url})")
+            upload_result = upload_image_to_cloudinary(source_url)
+            if not upload_result:
+                markdown_lines.append(f"![Image failed to upload]({source_url})")
+                continue
 
-            # Handle caption
-            caption_text = ''
-            if 'caption' in block_content and block_content['caption']:
-                caption_text = ''.join([rt.get('plain_text', '') for rt in block_content['caption']])
+            public_id = upload_result['public_id']
+            alt_text = os.path.basename(public_id)
+            widths = [400, 800, 1200]
             
+            base_transformations = [
+                {'height': 1000, 'crop': 'limit'},
+                {'quality': 'auto', 'fetch_format': 'auto'}
+            ]
+
+            srcset_parts = []
+            for width in widths:
+                current_transformations = [{'width': width}] + base_transformations
+                transformed_url = cloudinary.CloudinaryImage(public_id).build_url(transformation=current_transformations, secure=True)
+                srcset_parts.append(f"{transformed_url} {width}w")
+            
+            srcset = ",\n".join(srcset_parts)
+            fallback_src = cloudinary.CloudinaryImage(public_id).build_url(transformation=[{'width': widths[1]}] + base_transformations, secure=True)
+            sizes = f"(max-width: {widths[-1]}px) 100vw, {widths[-1]}px"
+
+            html_img_tag = f'''<img 
+  srcset="{srcset}"
+  sizes="{sizes}"
+  src="{fallback_src}"
+  alt="{alt_text}">'''
+            markdown_lines.append(html_img_tag)
+
+            caption_text = ''.join([rt.get('plain_text', '') for rt in block_content.get('caption', [])])
             if caption_text:
                 markdown_lines.append(f'<p style="text-align:center; font-style:italic;">{caption_text}</p>')
             
-            markdown_lines.append("") # Add a newline for spacing
+            markdown_lines.append("")
             continue
 
         if 'rich_text' in block_content:
@@ -138,7 +163,7 @@ def extract_markdown_and_upload_images(all_blocks, client_id):
                     tmp = f"[{tmp}]({rt['href']})"
                 if annotations.get('bold'): tmp = f"**{tmp}**"
                 if annotations.get('italic'): tmp = f"*{tmp}*"
-                if annotations.get('strikethrough'): tmp = f"~~{tmp}~~"
+                if annotations.get('strikethrough'): tmp = f"~~{tmp}~~")
                 if annotations.get('code'): tmp = f"`{tmp}`"
                 text += tmp
         
@@ -155,32 +180,65 @@ def extract_markdown_and_upload_images(all_blocks, client_id):
             code_text = block_content['rich_text'][0]['plain_text']
             markdown_lines.append(f"```{lang}\n{code_text}\n```")
 
-    return "\n".join(markdown_lines)
+    return "\n\n".join(markdown_lines)
 
-def write_jekyll_post(front_matter, content, lang):
-    """Writes the final markdown file to the correct directory."""
-    fm = front_matter.copy()
+# --- FILE & TAGS FUNCTIONS ---
+
+def update_tags_yml(new_tags):
+    """Reads _data/tags.yml, adds new tags, and writes it back."""
+    tags_file_path = os.path.join('_data', 'tags.yml')
+    updated = False
     
-    if 'title' in fm and fm['title']:
-        slug = re.sub(r'[^a-z0-9\s-]', '', fm['title'].lower()).strip().replace(' ', '-')
-        fm['slug'] = re.sub(r'-+', '-', slug)
-    else:
-        fm['slug'] = 'untitled'
+    try:
+        with open(tags_file_path, 'r', encoding='utf-8') as f:
+            tags_data = yaml.safe_load(f) or {}
+    except FileNotFoundError:
+        tags_data = {}
 
-    fm_lines = ["---"]
-    for key, value in fm.items():
-        fm_lines.append(f"{key}: {json.dumps(value, ensure_ascii=False)}")
-    fm_lines.append("---")
-    fm_string = "\n".join(fm_lines)
+    existing_tags = list(tags_data.keys())
 
-    directory = os.path.join('_posts', lang, fm['categories'])
+    for tag in new_tags:
+        if tag not in existing_tags:
+            print(f"New tag found: '{tag}'. Adding to tags.yml with placeholder translations.")
+            tags_data[tag] = {'en': tag, 'kr': tag, 'es': tag}
+            updated = True
+
+    if updated:
+        try:
+            with open(tags_file_path, 'w', encoding='utf-8') as f:
+                yaml.dump(tags_data, f, allow_unicode=True, sort_keys=False)
+            print(f"Successfully updated {tags_file_path}")
+        except Exception as e:
+            print(f"Error writing to {tags_file_path}: {e}")
+
+def write_jekyll_post(front_matter, content):
+    """Writes the final markdown file with properly formatted YAML front matter."""
+    fm_to_dump = front_matter.copy()
+    fm_to_dump['layout'] = 'post'
+
+    if fm_to_dump.get('translation_id'):
+        permalink_slug = fm_to_dump['translation_id'].lower().strip().replace(' ', '-')
+        permalink_slug = re.sub(r'[^a-z0-9-]', '', permalink_slug)
+        fm_to_dump['permalink'] = f"/{fm_to_dump['categories']}/{permalink_slug}/"
+
+    post_filename = fm_to_dump.pop('filename_for_post', 'untitled')
+    lang = fm_to_dump.get('lang', 'kr')
+    date_str = str(fm_to_dump.get('date', '1970-01-01')).split(' ')[0]
+
+    try:
+        fm_string = yaml.dump(fm_to_dump, allow_unicode=True, sort_keys=False)
+    except Exception as e:
+        print(f"Error dumping YAML: {e}")
+        fm_string = "# YAML DUMP FAILED #\n"
+
+    directory = os.path.join('_posts', lang, fm_to_dump['categories'])
     os.makedirs(directory, exist_ok=True)
-    file_path = os.path.join(directory, f"{fm['date']}-{fm['filename']}.md")
+    file_path = os.path.join(directory, f"{date_str}-{post_filename}.md")
+
+    final_content = f"---\n{fm_string}---\n\n{content}"
 
     with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(fm_string)
-        f.write("\n\n")
-        f.write(content)
+        f.write(final_content)
     
     print(f"Successfully wrote post to: {file_path}")
 
@@ -200,20 +258,20 @@ def run_pipeline(notion_page_url):
     """Main function to run the full pipeline."""
     print("--- Starting New Automated Workflow ---")
     
-    if IMGUR_CLIENT_ID == "YOUR_IMGUR_CLIENT_ID_HERE" or not IMGUR_CLIENT_ID:
-        print("ERROR: Imgur Client ID is not set in the script.")
-        return
-
     page_id = extract_notion_page_id(notion_page_url)
     print(f"Processing Notion Page ID: {page_id}")
     
     front_matter = extract_frontmatter(page_id)
     print(f"Extracted Front Matter for: {front_matter['title']}")
 
-    all_blocks = get_all_blocks(page_id)
-    markdown_content = extract_markdown_and_upload_images(all_blocks, IMGUR_CLIENT_ID)
+    # Update tags.yml with any new tags
+    if front_matter.get('tags'):
+        update_tags_yml(front_matter['tags'])
 
-    write_jekyll_post(front_matter, markdown_content, 'kr')
+    all_blocks = get_all_blocks(page_id)
+    markdown_content = extract_markdown_and_upload_images(all_blocks)
+
+    write_jekyll_post(front_matter, markdown_content)
 
     print("--- Workflow Complete! ---")
 

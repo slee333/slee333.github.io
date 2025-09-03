@@ -1,0 +1,108 @@
+wearable:
+  en: "Wearable"
+  kr: "웨어러블"
+  es: "Tecnología Ponible"
+medicine:
+  en: "Medicine"
+  kr: "의학"
+  es: "Medicina"
+clinical-informatics:
+  en: "Clinical Informatics"
+  kr: "의료정보학"
+  es: "Informática Clínica"
+it:
+  en: "IT"
+  kr: "IT"
+  es: "TI"
+fellowship:
+  en: "Fellowship"
+  kr: "펠로우십"
+  es: "Beca"
+digital-health:
+  en: "Digital Health"
+  kr: "디지털 헬스"
+  es: "Salud Digital"
+research:
+  en: "Research"
+  kr: "연구"
+  es: "Investigación"
+conference:
+  en: "Conference"
+  kr: "학회"
+  es: "Conferencia"
+medical-imaging:
+  en: "Medical Imaging"
+  kr: "의료 영상"
+  es: "Imagen Médica"
+africa:
+  en: "Africa"
+  kr: "아프리카"
+  es: "África"
+population-health:
+  en: "Population Health"
+  kr: "인구 보건"
+  es: "Salud Poblacional"
+food:
+  en: "Food"
+  kr: "음식"
+  es: "Alimentación"
+microbiology:
+  en: "Microbiology"
+  kr: "미생물학"
+  es: "Microbiología"
+life:
+  en: "Life"
+  kr: "일상"
+  es: "Personal"
+blog:
+  en: "Blog"
+  kr: "블로그"
+  es: "Blog"
+python:
+  en: "Python"
+  kr: "파이썬"
+  es: "Python"
+openai:
+  en: "OpenAI"
+  kr: "OpenAI"
+  es: "OpenAI"
+chatgpt:
+  en: "ChatGPT"
+  kr: "ChatGPT"
+  es: "ChatGPT"
+llm:
+  en: "LLM"
+  kr: "LLM"
+  es: "LLM"
+llama-3-1:
+  en: "Llama 3.1"
+  kr: "Llama 3.1"
+  es: "Llama 3.1"
+books:
+  en: "Books"
+  kr: "독서록"
+  es: "Libros"
+self-development:
+  en: "Self-Development"
+  kr: "자기개발"
+  es: "Desarrollo Personal"
+opinion:
+  en: "Opinion"
+  kr: "의견"
+  es: "Opinión"
+test:
+  en: "Test"
+  kr: "테스트"
+  es: "Prueba"
+us-residency:
+  en: "US Residency"
+  kr: "미국 수련"
+  es: "Residencia en EE. UU."
+journal-review:
+  en: "Journal Review"
+  kr: "저널 리뷰"
+  es: "Revisión de Artículos"
+public-data:
+  en: "Public Data"
+  kr: "공공 데이터"
+  es: "Datos Públicos"

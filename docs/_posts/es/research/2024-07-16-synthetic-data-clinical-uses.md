@@ -3,7 +3,7 @@ layout: post
 permalink: /es/research/:title/
 title: "Uso clínico de datos sintéticos"
 date: 2024-07-16 00:00:00 -0400
-tags: Informatics Medicine Clinical_Informatics
+tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: Investigación
 lang: es

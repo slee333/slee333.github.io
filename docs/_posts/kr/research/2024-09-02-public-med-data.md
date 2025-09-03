@@ -3,7 +3,7 @@ layout: post
 permalink: /research/:title/
 title: "공공데이터와 함께하는 연구생활"
 date: 2024-09-02 00:00:00 -0400
-tags: Clinical_Informatics Medicine Research Public_data
+tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: 연구일기
 lang: kr

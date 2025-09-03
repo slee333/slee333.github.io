@@ -3,7 +3,7 @@ layout: post
 title:  "About Clinical Informatics fellowship"
 date:   2024-04-29 18:00:00 -0400
 categories: cifellowship
-tags: fellowship informatics
+tags: [clinical-informatics, fellowship]
 lang: en
 permalink: /en/cifellowship/:title/
 ref: cif1

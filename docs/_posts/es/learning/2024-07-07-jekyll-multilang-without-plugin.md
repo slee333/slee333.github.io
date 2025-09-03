@@ -3,7 +3,7 @@ layout: post
 permalink: /es/learning/:title/
 title: "Soportar múltiples idiomas en Jekyll sin utilizar plugins"
 date: 2024-07-07 00:00:00 -0400
-tags: life blog python openai ChatGPT
+tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es

@@ -3,7 +3,7 @@ layout: post
 permalink: /learning/:title/
 title: "블로그 포스트 번역 자동화하기 (feat. ChatGPT)"
 date: 2024-09-21 00:00:00 -0400
-tags: blog life ChatGPT LLM llama 3.1
+tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: 공부일기
 lang: kr

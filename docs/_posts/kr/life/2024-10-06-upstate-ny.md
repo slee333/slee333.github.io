@@ -3,7 +3,7 @@ layout: post
 permalink: /life/:title/
 title: "뉴욕 주 교외 지역 여행기"
 date: 2024-10-06 00:00:00 -0400
-tags: life blog
+tags: [blog, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr

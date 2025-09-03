@@ -3,7 +3,7 @@ layout: post
 permalink: /es/life/:title/
 title: "Residencia en EE.UU.: primer servicio de un residente de segundo año"
 date: 2024-08-19 00:00:00 -0400
-tags: Medicine 미국수련 Residency
+tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: Vida Diaria
 lang: es

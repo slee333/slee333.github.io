@@ -3,7 +3,7 @@ layout: post
 permalink: /life/:title/
 title: "[미국 수련 이야기] 2년차의 첫 내과 병동"
 date: 2024-08-19 00:00:00 -0400
-tags: Medicine 미국수련 Residency
+tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: 일상기록
 lang: kr

@@ -3,7 +3,7 @@ layout: post
 permalink: /en/life/:title/
 title: "Travel Guide to New York State Suburbs"
 date: 2024-10-06 00:00:00 -0400
-tags: life blog
+tags: [blog, life]
 categories: life
 categorydisplay: Daily Life
 lang: en

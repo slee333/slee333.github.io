@@ -1,0 +1,139 @@
+---
+layout: post
+permalink: /en/research/:title/
+title: "Summary of the May 2020 issue commentary from Lancet Digital Health (1)"
+date: 2020-05-19 00:00:00 -0400
+tags: [clinical-informatics, journal-review, 저널리뷰]
+categories: research
+categorydisplay: Research
+lang: en
+thumbnail: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
+subtitle: Large-scale mental health screening, diabetic retinopathy, and diarrhea management in medically underserved areas
+translation_id: "lancet2020may"
+
+---
+---
+# Lancet Digital Health
+
+
+
+**Lancet Digital Health** is an academic journal related to digital healthcare that was launched in May 2019. In this summary, I have briefly summarized 3 of the comments from the May issue of the journal. There are a total of 6 comments.
+
+
+
+[https://www.thelancet.com/journals/landig/issue/vol2no5/PIIS2589-7500(20)X0005-7](https://www.thelancet.com/journals/landig/issue/vol2no5/PIIS2589-7500(20)X0005-7)
+
+
+
+---
+
+
+
+## 1. Large-scale Screening in Psychiatry?
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30066-2/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30066-2/fulltext)
+
+
+
+DETECT (The Dynamic ElecTronic hEalth reCord deTection) is an algorithm that predicts those who might suffer from mental illnesses based on electronic medical records. In external data experiments, the AUROC was 0.799. (Considering it's a screening test, it doesn’t seem to be a high value.)
+
+
+
+Predicting whether someone has a mental illness without visiting a hospital for tests is very challenging. In this sense, DETECT's purpose and significance lie in providing a means to predict and prevent mental illnesses in those with electronic medical records.
+
+
+
+Those who might develop mental illnesses, previously undiscovered, are termed CHR-P. In the past, this categorization had to be done by visiting a psychiatrist, which often required the patient to be aware of their symptoms. Of course, the predictive value of the CHR-P approach for the general public is very low (5.74%). Additionally, the AUROC of 0.799 mentioned in the study can hardly be considered high.
+
+
+
+Simply put, even if the DETECT algorithm is used on large-scale electronic medical records to identify individuals classified as CHR-P, the accuracy is quite low. Even if correctly identified, only 20% of those classified as CHR-P experience temporary mental illnesses, and half of them have recurrent issues.
+
+
+
+There are also ethical issues involved. How would it feel to be told, "You are at risk of having a mental illness"? This scenario is different from someone feeling something is off and visiting a psychiatrist to get a CHR-P diagnosis. Would it not have a significant emotional impact on the individual?
+
+
+
+Despite several limitations, DETECT is significant because it attempts to screen psychiatric disorders on a large scale. I look forward to seeing how it develops in the future.
+
+
+
+## 2. Cost-effectiveness of AI in Diabetic Retinopathy Screening
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30076-5/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30076-5/fulltext)
+
+
+
+A study from Singapore. The cost-effectiveness of diabetic retinopathy screening on a large-scale population was compared.
+
+
+
+There are three comparison targets:
+
+
+
+1. Human-performed screening
+
+1. Screening where humans use a deep learning algorithm
+
+1. Fully automated screening
+
+
+
+In conclusion, the second case—where humans and deep learning were used together—had the highest cost-effectiveness. However, this result assumes that all three methods have equal accuracy. This fundamental limitation of the study suggests that the human-executed screening might be more accurate, or the fully automated screening might be more accurate. This was consciously overlooked to simplify the comparison.
+
+
+
+Moreover, while the combined human and deep learning approach showed the highest cost-effectiveness, this can vary depending on how society values labor. For example, in countries where labor is valued less, it might be cheaper to employ people than to use machines.
+
+
+
+## 3. Can Technology Help Manage Diarrhea?
+
+
+
+[https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30081-9/fulltext](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30081-9/fulltext)
+
+
+
+Diarrheal diseases are a leading cause of child mortality worldwide. Guidelines exist on when oral rehydration is necessary to prevent diarrhea and resulting dehydration and death, but according to the study, globally, only about 40% of these guidelines are followed.
+
+
+
+The study led by Ashraful Khan aimed to solve this problem. Guidelines already exist on when rehydration is needed:
+
+
+
+- A portable calculator that easily calculates whether the patient needs rehydration
+
+- A pocket-sized card that can calculate the necessity of rehydration
+
+
+
+In the study, doctors in emergency rooms of 10 hospitals in Bangladesh were given either the calculator or the card, and the treatment outcomes for 2487 adults and 2488 children admitted with acute diarrhea were compared.
+
+
+
+Results showed no significant difference in the frequency of doctors deciding on fluid therapy. However, for children with severe dehydration, the group using calculators administered more fluids and unnecessary antibiotic use decreased.
+
+
+
+The study suggests that this could help improve the quality of healthcare in developing and mid-income countries. Surely, if doctors in these countries pay more attention to correcting diarrhea and dehydration in children and adults through such calculators, it is indeed a good thing.
+
+
+
+However, the study was conducted only in 10 hospitals in Bangladesh, with a limited number of participating medical staff. Personally, I think the control group should have been doctors treating patients as usual rather than those with the card, to better demonstrate the usefulness of the calculator. Doctors typically do not carry such cards, do they?
+
+
+
+---
+
+
+
+There are 6 comments in total, but I will summarize the remaining 3 if time allows.
+

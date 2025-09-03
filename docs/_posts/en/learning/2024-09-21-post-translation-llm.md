@@ -3,7 +3,7 @@ layout: post
 permalink: /en/learning/:title/
 title: "Automate Blog Post Translations (feat. ChatGPT)"
 date: 2024-09-21 00:00:00 -0400
-tags: blog life ChatGPT LLM llama 3.1
+tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: Learning
 lang: en

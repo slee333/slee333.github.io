@@ -3,7 +3,7 @@ layout: post
 permalink: en/life/:title/
 title: "Fellowship app begins (1)"
 date: 2025-06-09 00:00:00 -0400
-tags: life, Fellowship, Clinical_informatics
+tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Daily Life
 lang: en

@@ -3,7 +3,7 @@ layout: post
 permalink: /learning/:title/
 title: "플러그인 없이 Jekyll 다중 언어 지원하기"
 date: 2024-07-07 00:00:00 -0400
-tags: life blog python openai ChatGPT
+tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: 공부일기
 lang: kr

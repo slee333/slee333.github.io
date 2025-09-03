@@ -1,0 +1,169 @@
+---
+layout: post
+permalink: /es/life/:title/
+title: "Configuración de tuberías experimentales"
+date: 2024-07-02 00:00:00 -0400
+tags: [life, test]
+categories: life
+categorydisplay: Vida Diaria
+lang: es    
+thumbnail: https://i.imgflip.com/1w4qbl.jpg?a477096
+subtitle: De hecho, se están prestando mucha atención a si el oleoducto funcionará correctamente.
+translation_id: "pipelineexperiment"
+
+---
+---
+Estoy planeando una canalización que, después de redactar un artículo en Notion, lo convierta automáticamente al coreano, inglés y español (!), para luego subirlo al blog. Para verificar que esta función funciona correctamente, he creado este texto con varios elementos de markdown y lo voy a probar. ¡Próximamente!
+
+
+
+# Esto es un encabezado1
+
+
+
+A continuación, planeo escribir cualquier contenido.
+
+
+
+Intenté traer un texto relacionado con la versión rip de StarCraft que fue popular en una era de publicaciones en blogs, pero temía que ChatGPT pudiera enfrentarse a un problema, así que traje parte de un [post de blog](https://m.blog.naver.com/dirncjs2/221931349048) que encontré rápidamente en Google. ¡Es una oportunidad para probar la función de citas de markdown!
+
+
+
+> Por eso, hoy quiero compartir cómo instalar fácilmente la versión 1.16.1 del juego nacional StarCraft.
+
+>
+
+> En el caso de StarCraft, es un juego que ha sido continuamente popular desde mi niñez hasta ahora, casi como un entretenimiento nacional.
+
+>
+
+> Especialmente en el laboratorio de computación de la escuela, era un juego que aceptábamos con entusiasmo y jugábamos con amigos.
+
+
+
+Agreguemos una imagen de StarCraft para verificar también si la función de imágenes de markdown se convierte correctamente.
+
+
+
+![Incluso agregamos una leyenda, ¡qué detallado! No puedo creer que ya han pasado más de 10 años desde que salió StarCraft 2. La fugacidad del tiempo me hace llorar.](https://bnetcmsus-a.akamaihd.net/cms/blog_header/2g/2G4VZH5TIWJF1602720144046.jpg)
+
+
+
+## Esto es un encabezado2
+
+
+
+Escribamos cualquier contenido
+
+
+
+### Y esto es un encabezado3
+
+
+
+Igualmente, cualquier contenido sigue a continuación.
+
+
+
+Ahora, debajo de esto, vamos a mostrar un código de muestra. Empecemos con código Python:
+
+
+
+```python
+
+def whatisthis():
+
+	return 1
+
+	
+
+print("hello world what up dog")  
+
+```
+
+
+
+Y debajo de esto... me gustaría escribir otro código, pero el único otro lenguaje de programación que conozco y uso ocasionalmente es JavaScript. Así que, escribamos una función:
+
+
+
+```javascript
+
+function capitalizeFirstLetter(string) {
+
+    return string.charAt(0).toUpperCase() + string.slice(1);
+
+}  
+
+```
+
+
+
+Dibujemos una línea aquí abajo
+
+
+
+---
+
+
+
+### Verifiquemos también el procesamiento de listas
+
+
+
+Mostramos listas numeradas y con viñetas
+
+
+
+1. Esto es
+
+1. una lista
+
+1. numerada
+
+
+
+Y
+
+
+
+- Esto es
+
+- una lista
+
+- con viñetas
+
+
+
+### Procesamiento de texto
+
+
+
+Algunos textos se pueden resaltar `de esta manera`, y espero que esto también se refleje bien. Verifiquemos si elementos como *itálicas* y **negritas** también funcionan correctamente. ¿Probamos también ~~tachar~~ texto? <ins>Subrayemos también.</ins> Y <span style='color:purple'>¿cambiamos el color</span> <span style='color:orange'>de fondo también?</span>? ¿Qué tal si ***lo hacemos todo junto*** `~~de una vez~~` <span style='color:orange'>~~probar todo junto~~</span>?
+
+
+
+¿Verificamos también el procesamiento de colores? Partes como `#ffffff` y `#000000`. ¿Esto funcionará?
+
+
+
+Hagamos una lista de tareas también
+
+
+
+- [x] Escribir este post
+
+- [ ] Usar la API de Notion para obtener el enlace de este artículo
+
+- [ ] Usar la API de ChatGPT para tomar ese enlace y traducir este artículo a otro idioma
+
+- [ ] Automatizar todo esto con código Python
+
+
+
+> 💡 Notion también tiene esta función, y tengo mucha curiosidad de cómo se convertirá esta parte
+
+
+
+He utilizado muchas de las reglas simples de markdown. Ahora queda confirmar a través del trabajo API si todos estos elementos se convierten correctamente. ¿Qué más podemos hacer después de haber llegado hasta aquí? ¡Vamos a intentarlo!
+

@@ -79,7 +79,7 @@ layout: base
       </div>
       <div class="post-meta">
         <i class="fas fa-tag"></i> {% for tag in page.tags limit:10 %}
-        <code>{{tag}}</code>{%endfor%}
+        <code>{{ site.data.tags[tag][page.lang] | default: tag }}</code>{%endfor%}
       </div>
     </div>
 
