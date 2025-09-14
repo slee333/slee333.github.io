@@ -63,7 +63,99 @@
       "success":"¡Gracias por suscribirte!",
       "error":"¡Error! Inténtalo de nuevo."
     },
-    "comments": "Necesitas iniciar sesión en Github para comentar"
+        "comments": "Need Github login to comment",
+    "comments_section": {
+      "comments_title": "Comments",
+      "login_prompt": "Login with Google to leave a comment.",
+      "login_button": "Login with Google",
+      "logout_button": "Logout",
+      "submit_button": "Submit",
+      "comment_placeholder": "Leave a comment..."
+    }
+  },
+  "es": {
+    "categories": {
+      "cifellowship": "Informática Clínica",
+      "learning": "Aprendizaje",
+      "life": "Vida Diaria",
+      "research": "Investigación"
+    },
+    "navbar":{
+      "about": "Acerca de",
+      "cifellowship":"Informática Clínica",
+      "learning": "Aprendizaje",
+      "life": "Vida Diaria",
+      "research": "Investigación",
+      "home": "Inicio"
+    },
+    "viewall": "Ver Todo",
+    "filterbytags": "Filtrar por Etiquetas",
+    "resetfilters": "Restablecer Filtros",
+    "postsinthiscategory": "Artículos en esta categoría:",
+    "minutesread": "min de lectura",
+    "description": "A cozy place to share my journey and ideas.",
+    "otherpostsinsamecategory": "Otras entradas en la misma categoría",
+    "footer-subscription": {
+      "subscription-request": "Suscríbete a mis actualizaciones",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "email": "Correo electrónico",
+      "signup": "Regístrate",
+      "success":"¡Gracias por suscribirte!",
+      "error":"¡Error! Inténtalo de nuevo."
+    },
+    "comments": "Necesitas iniciar sesión en Github para comentar",
+    "comments_section": {
+      "comments_title": "Comentarios",
+      "login_prompt": "Inicia sesión con Google para dejar un comentario.",
+      "login_button": "Iniciar sesión con Google",
+      "logout_button": "Cerrar sesión",
+      "submit_button": "Enviar",
+      "comment_placeholder": "Deja un comentario..."
+    }
+  },
+  "kr": {
+    "categories": {
+      "cifellowship": "의료정보학",
+      "learning": "공부일기",
+      "life": "일상기록",
+      "research": "연구일기"
+    },
+    "navbar":{
+      "about": "소개",
+      "cifellowship":"의료정보학",
+      "learning": "공부일기",
+      "life": "일상기록",
+      "research": "연구일기",
+      "home": "홈페이지"
+    },
+    "viewall": "더보기",
+    "filterbytags": "태그로 필터링",
+    "resetfilters": "필터 초기화",
+    "postsinthiscategory": "해당 카테고리 글 모음:",
+    "minutesread": "분 소요",
+    "description": "A cozy place to share my journey and ideas.",
+    "otherpostsinsamecategory": "해당 카테고리 다른 글 보기",
+    "footer-subscription": {
+      "subscription-request": "업데이트 구독하기",
+      "firstname": "이름",
+      "lastname": "성",
+      "email": "이메일",
+      "signup": "구독하기",
+      "success":"구독해주셔서 감사합니다!",
+      "error":"오류가 발생했습니다. 다시 시도해주세요."
+    },
+    "comments": "댓글을 달려면 Github 로그인이 필요합니다.",
+    "comments_section": {
+      "comments_title": "댓글",
+      "login_prompt": "댓글을 남기려면 구글로 로그인하세요.",
+      "login_button": "구글로 로그인",
+      "logout_button": "로그아웃",
+      "submit_button": "등록",
+      "comment_placeholder": "댓글을 남겨주세요..."
+    }
+  }
+}
   },
   "kr": {
     "categories": {
