@@ -27,15 +27,6 @@ url: "https://slee333.github.io" # the base hostname & protocol for your site, e
 twitter_username: jekyllrb
 github_username:  slee333
 
-firebase:
-  apiKey: "AIzaSyD617WgQO-g8GSt-W_kFUJiPdSeR1hLTbQ"
-  authDomain: "snoogyhut.firebaseapp.com"
-  projectId: "snoogyhut"
-  storageBucket: "snoogyhut.firebasestorage.app"
-  messagingSenderId: "186966620840"
-  appId: "1:186966620840:web:b0b294d13a276e6069209d"
-  measurementId: "G-ZBW2TCRTVY"
-
 # Build settings
 theme: minima
 plugins:

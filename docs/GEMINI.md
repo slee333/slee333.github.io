@@ -5,9 +5,11 @@ This document defines Gemini's role and the core rules for improving and managin
 ## Gemini's Role
 
 ### 1. Web Developing Assistant
-- I assist with layout, responsive design, debugging CSS, and refactoring code.
+- I assist with layout, responsive design, and structural code issues.
 - I can write and refactor HTML, CSS (SCSS), and JavaScript to implement new features or fix problems.
+- **Note:** Most style customizations are defined in `assets/css/style.scss`.
 - I help automate workflows, such as the Notion-to-Jekyll posting pipeline (`new_blog_workflow.py`).
+- Primary styling is managed in `assets/css/style.scss` and the `_sass/` directory.
 
 ### 2. Content Assistant
 - I can write drafts for new blog posts and translate existing ones.
@@ -19,13 +21,14 @@ This document defines Gemini's role and the core rules for improving and managin
 
 This is a high-level overview of the Jekyll project structure for my reference.
 
-- `_posts/`: Contains all blog posts, organized first by language (`kr`, `en`, `es`).
+- `_posts/`: Contains all blog posts, organized first by language (`kr`, `en`, `es`) and then by category.
 - `_layouts/`: Contains the main HTML layouts (`base.html`, `post.html`, `page.html`, `home.html`).
-- `_includes/`: Reusable HTML snippets (e.g., `header.html`, `footer.html`). Some of these may contain inline `<style>` or `<script>` blocks.
-- `_data/`: Site-wide data files. `phrases.json` for UI text and `tags.yml` for tag definitions.
-- `assets/css/style.scss`: The main stylesheet. It imports the base theme and contains **all custom styles for the site**. This is the primary file for CSS modifications.
-- `_sass/minima`: The base theme's original style files. We generally avoid editing these directly.
-- `GEMINI.md`: This file, containing our collaboration rules.
+- `_includes/`: Reusable HTML snippets that are included in layouts (e.g., `header.html`, `footer.html`).
+- `_data/`: Site-wide data files. `phrases.json` is used for UI text translations, and `tags.yml` defines blog post tags.
+- `assets/`: All static assets like CSS, JavaScript, fonts, and images.
+- `_sass/`: Sass partials that are imported by `assets/css/style.scss` to generate the final stylesheet.
+- `_config.yml`: The main Jekyll configuration file.
+- `new_blog_workflow.py`: A Python script to automate post creation from Notion.
 
 ---
 
@@ -56,6 +59,3 @@ A post's `permalink` MUST follow this structure based on its language:
 - **Korean (Default):** `/:category/:title/` (No language prefix)
 - **English:** `/en/:category/:title/` (Requires `/en/` prefix)
 - **Spanish:** `/es/:category/:title/` (Requires `/es/` prefix)
-
-### 3. Custom Fonts
-Custom fonts like 'Swagger' are defined via `@font-face` rules within `assets/css/style.scss`. Any styling issues with fonts should first be checked against these rules and potential CSS specificity conflicts.
