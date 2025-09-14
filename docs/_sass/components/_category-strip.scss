@@ -1,0 +1,122 @@
+/* Category Strip Styles */
+.category-strip {
+  // width: 300%;
+  // left: -100%;
+  width: 100vw;
+  /* Full viewport width */
+  position: relative;
+  
+  /* Ensure it stays in the flow of the document */
+  left: 50%;
+  /* Move to the center of the viewport */
+  right: 50%;
+  margin-left: -50vw;
+  /* Offset by half the viewport width */
+  margin-right: -50vw;
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
+}
+
+.category-strip.highlight {
+  background-color: var(--theme-color-light);
+}
+
+/* Inner container to align content */
+.category-strip-inner {
+  max-width: 1200px;
+  /* Set a max-width to align with the parent wrapper */
+  width: 80%;
+  margin: 0 auto;
+  /* Center the content */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+  /* Include padding in the total width */
+}
+
+.category-strip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.category-strip-header h2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: black;
+}
+
+.category-strip-header h2::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid black;
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}
+
+.post-header .category-strip-header h2::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}
+
+.category-strip-header a {
+  color: black;
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  transition: color 0.3s;
+  /* Add transition for smooth color change */
+}
+
+.highlight .category-strip-header a:hover {
+  color: white;
+  /* Change text color to white on hover */
+}
+
+.category-strip-header a:hover {
+  color: var(--theme-color);
+  /* Change text color to white on hover */
+}
+
+.category-strip-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 2.5%;
+}
+
+/* Add border to grid posts */
+.category-strip-posts .grid-post {
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
+  position: relative;
+  /* For absolute positioning of the image */
+  overflow: hidden;
+  /* Hide overflow to contain the image */
+}
+
+/* Thumbnail container */
+.category-strip-posts .grid-post .grid-post-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+  /* 60% of width for aspect ratio */
+  border-radius: 10px;
+}

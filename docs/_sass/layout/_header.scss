@@ -1,0 +1,165 @@
+.site-title {
+  font-family: Swagger;
+  font-size: 2em;
+  color: black;
+  padding-top: 1%;
+  position: relative;
+  z-index: 1002;
+  font-size: 2.5rem;
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.site-title:hover { opacity: 0.65; }
+
+.site-nav {
+  background-color: white;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav .navbar {
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+  gap: 1em;
+}
+
+.site-nav .page-link {
+  text-decoration: none;
+  color: #000;
+}
+
+// Language switcher in navbar
+.language-switcher {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+
+.language-switcher select {
+  width: 100px;
+  /* 드롭다운 메뉴의 너비를 넓힘 */
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  /* 기본 화살표 제거 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.language-switcher select:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.language-switcher::after {
+  content: "\25BC";
+  /* 화살표 기호 추가 */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* 고정 헤더 스타일 */
+.sticky-header {
+  position: fixed;
+  top: -100px;
+  /* 초기 상태는 화면 밖 */
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  transition: top 0.3s;
+  padding: 10px 0;
+}
+
+.sticky-header.visible {
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.sticky-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+.sticky-header .current-page-details {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.sticky-header .current-page-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sticky-header .current-page-headings {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.sticky-header .current-page-section {
+  font-weight: 400;
+  margin-right: 0.3em;
+  font-size: 0.9em;
+  line-height: 1em;
+  /* Ensure consistent line height */
+  min-height: 1em;
+}
+
+.sticky-header .language-switcher {
+  position: relative;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid black;
+  /* Add a border to separate the header */
+  padding: 0px 15px;
+}
+
+/* Basic underline-on-hover for .page-link */
+.page-link {
+  position: relative;
+}
+
+.page-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;                    /* thickness of underline */
+  background: var(--theme-color);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.page-link:hover::after {
+  width: 100%;
+  color: var(--theme-color);
+}

@@ -1,0 +1,79 @@
+.featured-post {
+  display: flex;
+  width: 100%;
+  height: 20em;
+  margin-bottom: 2.5%;
+  transition: opacity 0.3s ease;
+  /* Add transition for smooth effect */
+}
+
+.featured-post:hover {
+  opacity: 0.8;
+  /* Reduce opacity on hover */
+}
+
+.featured-thumbnail {
+  flex: 1;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+}
+
+.featured-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This will ensure the image covers the entire height */
+}
+
+.featured-content {
+  flex: 1;
+  width: 47.5%;
+  margin-left: 2.5%;
+  /* Add padding as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center the content vertically */
+}
+
+.featured-content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.featured-content p {
+  font-size: medium;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 2.5%;
+  margin-bottom: 5%;
+}
+
+.featured-grid-posts-categorydisplay {
+  font-weight: bold;
+  font-size: 1em;
+  width: fit-content;
+  color: var(--theme-color);
+  margin-bottom: 0.5em;
+}
+
+.featured-grid-posts-categorydisplay::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 1px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: "Tahoma", "NanumBarunGothic", "나눔 고딕", "Malgun Gothic", "굴림", "Gulim", "sans-serif";
+  overflow-x: hidden;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 3px;
+  /* Slightly rounded corners */
+  padding: 0 3px;
+  /* Some padding */
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  /* Monospaced font */
+  font-size: 90%;
+  /* Slightly smaller font size */
+  color: var(--theme-color-dark);
+  /* Code text color */
+}
+
+/* Apply theme color to bold text */
+b,
+strong {
+  color: var(--theme-color);
+  /* Apply the theme color to bold text */
+  font-weight: bolder;
+}

@@ -1,0 +1,106 @@
+.category-page-header {
+  text-align: center;
+  /*Not reallw working lol*/
+}
+
+.category-page-title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  width: fit-content;
+  color: var(--theme-color);
+}
+
+.category-page-title::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 3px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 5px;
+  /* Add some space between the text and the border */
+}
+
+.category-page-content p {
+  font-size: large;
+  line-height: 1.7;
+}
+
+.category-page-content p:lang(en) {
+  font-size: large;
+  /* Adjust the multiplier as needed */
+  line-height: 1.7;
+}
+
+.category-page-posts {
+  margin-top: 5%;
+}
+
+.category-post {
+  display: flex;
+  /* Use flexbox to align children horizontally */
+  align-items: center;
+  /* Center items vertically */
+  cursor: pointer;
+  /* Change cursor to pointer for clickability */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow */
+  background-color: #fff;
+  /* Optional: Add background color */
+  margin: 10px 0;
+  /* Optional: Add margin between posts */
+}
+
+.category-post-thumbnail {
+  flex: 0 0 25%;
+  /* Take 40% of the width */
+  max-width: 25%;
+  /* Ensure it doesn't exceed 40% */
+  height: 10em;
+  margin-right: 20px;
+  /* Optional: Add space between thumbnail and content */
+  max-height: 20%;
+  overflow: hidden;
+}
+
+.category-post-thumbnail img {
+  width: 100%;
+  /* Ensure the image fills the thumbnail container */
+  height: auto;
+  /* Maintain the aspect ratio */
+}
+
+.category-post-content {
+  flex: 1;
+  /* Take the remaining 60% of the width */
+  max-width: 60%;
+  /* Ensure it doesn't exceed 60% */
+}
+
+.category-post-content h2 {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 1.5em;
+  /* Adjust font size */
+}
+
+.category-post-content p {
+  margin: 5px 0 0;
+  /* Adjust margins */
+  color: #666;
+  /* Optional: Adjust text color */
+}
+
+.post-details-container {
+  display: flex;
+  justify-content: left;
+  margin: 0.5em 0;
+}
+
+.post-details-container div {
+  margin-right: 20px;
+}

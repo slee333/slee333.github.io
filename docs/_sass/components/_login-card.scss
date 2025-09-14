@@ -1,0 +1,147 @@
+/* --- Login Card Styles --- */
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.login-form-container p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.email-form {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 44px; /* Set a fixed height */
+}
+
+.email-input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+}
+
+.email-input-wrapper svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 20px;
+  height: 20px;
+}
+
+#email-input {
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 44px;
+  border: 1px solid #d1d5db;
+  border-right: 0;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.95rem;
+  background-color: #f9fafb;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+#email-input:focus {
+  outline: none;
+  border-color: var(--theme-color);
+  background-color: #ffffff;
+}
+
+.email-submit-button {
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 0 1.25rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.email-submit-button:hover {
+  background-color: var(--theme-color-dark);
+}
+
+.email-submit-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.separator .line {
+  flex-grow: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.separator .text {
+  padding: 0 0.75rem;
+}
+
+.social-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.social-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--theme-color);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-login-btn:hover:not(:disabled) {
+  background-color: var(--theme-color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.social-login-btn:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.social-login-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.naver-icon {
+  font-weight: bold;
+  color: white;
+}
