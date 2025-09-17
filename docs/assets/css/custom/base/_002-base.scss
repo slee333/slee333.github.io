@@ -1,0 +1,249 @@
+.featured-post {
+  display: flex;
+  width: 100%;
+  height: 20em;
+  margin-bottom: 2.5%;
+  transition: opacity 0.3s ease;
+  /* Add transition for smooth effect */
+}
+.featured-post:hover {
+  opacity: 0.8;
+  /* Reduce opacity on hover */
+}
+.featured-thumbnail {
+  flex: 1;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+}
+.featured-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This will ensure the image covers the entire height */
+}
+.featured-content {
+  flex: 1;
+  width: 47.5%;
+  margin-left: 2.5%;
+  /* Add padding as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center the content vertically */
+}
+.featured-content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: black;
+}
+.featured-content p {
+  font-size: medium;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 2.5%;
+  margin-bottom: 5%;
+}
+.featured-grid-posts-categorydisplay {
+  font-weight: bold;
+  font-size: 1em;
+  width: fit-content;
+  color: var(--theme-color);
+  margin-bottom: 0.5em;
+}
+.featured-grid-posts-categorydisplay::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 1px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}
+/* Category Strip Styles */
+.category-strip {
+  // width: 300%;
+  // left: -100%;
+  width: 100vw;
+  /* Full viewport width */
+  position: relative;
+  
+  /* Ensure it stays in the flow of the document */
+  left: 50%;
+  /* Move to the center of the viewport */
+  right: 50%;
+  margin-left: -50vw;
+  /* Offset by half the viewport width */
+  margin-right: -50vw;
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
+}
+.category-strip.highlight {
+  background-color: var(--theme-color-light);
+}
+/* Inner container to align content */
+.category-strip-inner {
+  max-width: 1200px;
+  /* Set a max-width to align with the parent wrapper */
+  width: 80%;
+  margin: 0 auto;
+  /* Center the content */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+  /* Include padding in the total width */
+}
+.category-strip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.category-strip-header h2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: black;
+}
+.category-strip-header h2::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid black;
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}
+.post-header .category-strip-header h2::after {
+  content: "";
+  /* Create a pseudo-element */
+  display: block;
+  /* Make the pseudo-element a block-level element */
+  width: 100%;
+  /* Set the width of the border */
+  margin: 0 auto;
+  /* Center the border */
+  border-bottom: 2px solid var(--theme-color);
+  /* Use the theme color and set the thickness */
+  margin-top: 0px;
+  /* Add some space between the text and the border */
+}
+.category-strip-header a {
+  color: black;
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  transition: color 0.3s;
+  /* Add transition for smooth color change */
+}
+.highlight .category-strip-header a:hover {
+  color: white;
+  /* Change text color to white on hover */
+}
+.category-strip-header a:hover {
+  color: var(--theme-color);
+  /* Change text color to white on hover */
+}
+.category-strip-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 2.5%;
+}
+/* Add border to grid posts */
+.category-strip-posts .grid-post {
+  box-sizing: border-box;
+  /* Include padding in the total width and height */
+  position: relative;
+  /* For absolute positioning of the image */
+  overflow: hidden;
+  /* Hide overflow to contain the image */
+}
+/* Thumbnail container */
+.category-strip-posts .grid-post .grid-post-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+  /* 60% of width for aspect ratio */
+  border-radius: 10px;
+}
+/* Thumbnail image */
+.grid-post-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the container */
+}
+.grid-post-content {
+  box-sizing: border-box;
+  /* Include padding in the total width */
+}
+.grid-post {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  transition: opacity 0.3s ease;
+  /* Add transition for smooth effect */
+}
+.grid-post:hover {
+  opacity: 0.8;
+  /* Reduce opacity on hover */
+}
+.grid-post-thumbnail {
+  width: 100%;
+  /* Ensure the width is 100% of the container */
+  padding-top: 100%;
+  /* Maintain a square aspect ratio */
+  position: relative;
+  /* Enable positioning of the image within the container */
+  overflow: hidden;
+  /* Hide any overflow */
+  border-radius: 10px;
+}
+.grid-post-thumbnail img {
+  position: absolute;
+  /* Position the image absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Ensure the image covers the container width */
+  height: 100%;
+  /* Ensure the image covers the container height */
+  object-fit: cover;
+  /* Crop the image to cover the container */
+}
+.grid-post-content {
+  margin-top: 0.5em;
+  text-align: left;
+  /* Center align the text */
+}
+.grid-post-content h2 {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin: 2.5% auto;
+}
+.grid-post-content p {
+  font-size: medium;
+}
+.post-title a,
+.featured-content h1 a,
+.grid-post-content h2 a {
+  color: black;
+  text-decoration: none;
+  /* Remove underline */
+}

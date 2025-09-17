@@ -8,7 +8,7 @@
     },
     "navbar": {
       "about": "About",
-      "cifellowship":"Clinical Informatics",
+      "cifellowship": "Clinical Informatics",
       "learning": "Learning",
       "life": "Life",
       "research": "Research",
@@ -27,10 +27,23 @@
       "lastname": "Last Name",
       "email": "Email",
       "signup": "Sign Up",
-      "success":"Thank you for subscribing!",
-      "error":"Error! Please try again."
+      "success": "Thank you for subscribing!",
+      "error": "Error! Please try again."
     },
-    "comments": "Need Github login to comment"
+    "comments": "Need Github login to comment",
+    "comments_section": {
+      "comments_title": "Comments",
+      "login_prompt": "Login to leave a comment.",
+      "email_placeholder": "Get a magic link with your email",
+      "separator_text": "Social Accounts",
+      "google_button": "Google",
+      "github_button": "GitHub",
+      "naver_button": "Naver",
+      "kakao_button": "Kakao",
+      "logout_button": "Logout",
+      "submit_button": "Submit",
+      "comment_placeholder": "Leave a comment..."
+    }
   },
   "es": {
     "categories": {
@@ -39,9 +52,9 @@
       "life": "Vida Diaria",
       "research": "Investigación"
     },
-    "navbar":{
+    "navbar": {
       "about": "Acerca de",
-      "cifellowship":"Informática Clínica",
+      "cifellowship": "Informática Clínica",
       "learning": "Aprendizaje",
       "life": "Vida Diaria",
       "research": "Investigación",
@@ -60,10 +73,23 @@
       "lastname": "Apellido",
       "email": "Correo electrónico",
       "signup": "Regístrate",
-      "success":"¡Gracias por suscribirte!",
-      "error":"¡Error! Inténtalo de nuevo."
+      "success": "¡Gracias por suscribirte!",
+      "error": "¡Error! Inténtalo de nuevo."
     },
-    "comments": "Necesitas iniciar sesión en Github para comentar"
+    "comments": "Necesitas iniciar sesión en Github para comentar",
+    "comments_section": {
+      "comments_title": "Comentarios",
+      "login_prompt": "Inicia sesión para dejar un comentario.",
+      "email_placeholder": "Obtén un enlace mágico con tu correo",
+      "separator_text": "Cuentas Sociales",
+      "google_button": "Google",
+      "github_button": "GitHub",
+      "naver_button": "Naver",
+      "kakao_button": "Kakao",
+      "logout_button": "Cerrar sesión",
+      "submit_button": "Enviar",
+      "comment_placeholder": "Deja un comentario..."
+    }
   },
   "kr": {
     "categories": {
@@ -72,9 +98,9 @@
       "life": "일상기록",
       "research": "연구일기"
     },
-    "navbar":{
+    "navbar": {
       "about": "소개",
-      "cifellowship":"의료정보학",
+      "cifellowship": "의료정보학",
       "learning": "공부일기",
       "life": "일상기록",
       "research": "연구일기",
@@ -93,9 +119,22 @@
       "lastname": "성",
       "email": "이메일",
       "signup": "구독하기",
-      "success":"구독해주셔서 감사합니다!",
-      "error":"오류가 발생했습니다. 다시 시도해주세요."
+      "success": "구독해주셔서 감사합니다!",
+      "error": "오류가 발생했습니다. 다시 시도해주세요."
     },
-    "comments": "댓글을 달려면 Github 로그인이 필요합니다."
+    "comments": "댓글을 달려면 Github 로그인이 필요합니다.",
+    "comments_section": {
+      "comments_title": "댓글",
+      "login_prompt": "댓글을 남기려면 로그인하세요.",
+      "email_placeholder": "이메일로 매직링크 받기",
+      "separator_text": "소셜 계정",
+      "google_button": "구글",
+      "github_button": "깃허브",
+      "naver_button": "네이버",
+      "kakao_button": "카카오",
+      "logout_button": "로그아웃",
+      "submit_button": "등록",
+      "comment_placeholder": "댓글을 남겨주세요..."
+    }
   }
 }

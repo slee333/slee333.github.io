@@ -1,27 +1,27 @@
 @font-face {
   font-family: "NanumGothic";
-  src: url('{{ "/assets/fonts/NanumGothic.ttf" | relative_url }}') format("truetype");
+  src: url(#{$asset-fonts-path}/NanumGothic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NanumBarunGothic";
-  src: url('{{ "/assets/fonts/NanumBarunGothic.ttf" | relative_url }}') format("truetype");
+  src: url(#{$asset-fonts-path}/NanumBarunGothic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url('{{ "/assets/fonts/Helvetica.ttf" | relative_url }}') format("truetype");
+  src: url(#{$asset-fonts-path}/Helvetica.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Swagger";
-  src: url('{{ "/assets/fonts/SDSwaggerTTF.ttf" | relative_url }}') format("truetype");
+  src: url(#{$asset-fonts-path}/SDSwaggerTTF.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }

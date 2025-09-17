@@ -51,7 +51,10 @@ layout: base
 
   <!-- Category Strip with highlight -->
   {% assign category = "learning" %}
-  {% assign highlight = category == "learning" %}
+  {% assign highlight = false %}
+  {% if category == "learning" %}
+    {% assign highlight = true %}
+  {% endif %}
   {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
   {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
 

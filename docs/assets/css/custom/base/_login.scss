@@ -1,0 +1,133 @@
+.social-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-login-btn {
+  flex: 1 1 0%;
+  height: 2rem;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: none;
+  background-color: var(--theme-color);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--light-hover-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+    stroke: #ffffff;
+  }
+}
+
+.login-card {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.login-prompt {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.email-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.email-input-wrapper {
+  position: relative;
+  flex: 1 1 0%;
+  z-index: 1;
+
+  svg {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #9ca3af;
+  }
+
+  input {
+    padding-left: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: var(--theme-color);
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+  }
+}
+
+.email-submit-button {
+  height: 2.5rem;
+  width: 4rem;
+  padding: 0 0.75rem;
+  background-color: var(--theme-color);
+  border: none;
+  border-radius: 0.375rem;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--light-hover-color);
+  }
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 1rem 0;
+
+  .line {
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 0 0.5rem;
+    color: #6b7280;
+    font-size: 0.75rem;
+  }
+}
+
+.naver-btn svg {
+  fill: white;
+  height: 0.8rem;
+  width: 0.8rem;
+}

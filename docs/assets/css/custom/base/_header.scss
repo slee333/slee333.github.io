@@ -1,0 +1,115 @@
+/* Progress Bar In Header */
+.progress-bar {
+  height: 4px;
+  background: var(--theme-color);
+  width: 0%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+  font-family: Swagger;
+  font-size: 2em;
+  color: black;
+  padding-top: 1%;
+
+}
+.site-nav {
+  background-color: white;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-nav .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.site-nav .page-link {
+  text-decoration: none;
+  color: #000;
+}
+.language-switcher {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+.language-switcher select {
+  width: 100px;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.language-switcher select:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.language-switcher::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8em;
+  color: #777;
+}
+.sticky-header {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  transition: top 0.3s;
+  padding: 10px 0;
+}
+.sticky-header.visible {
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.sticky-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+}
+.sticky-header .current-page-details {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.sticky-header .current-page-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.sticky-header .current-page-headings {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+.sticky-header .current-page-section {
+  font-weight: 400;
+  margin-right: 0.3em;
+  font-size: 0.9em;
+  line-height: 1em;
+  min-height: 1em;
+}
+.sticky-header .language-switcher {
+  position: relative;
+}

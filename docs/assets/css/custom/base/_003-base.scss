@@ -1,15 +1,57 @@
+.featured-post:hover .featured-content h1,
+.featured-post .featured-content h1:hover {
+  text-decoration: underline;
+}
+.grid-post:hover .grid-post-content h2,
+.grid-post .grid-post-content h2:hover {
+  text-decoration: underline;
+}
+.post-content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+.post-content p {
+  font-size: medium;
+  line-height: 1.7;
+  margin-bottom: 1.2em;
+}
+.post-content p:lang(en) {
+  font-size: medium;
+  /* Adjust the multiplier as needed */
+  line-height: 1.7;
+}
+// within posts
+.post-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .post-content img {
+    max-width: 60%;
+  }
+}
+.post-classifications {
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+.post-classifications .post-meta {
+  margin-top: 0.5em;
+}
 .category-page-header {
   text-align: center;
   /*Not reallw working lol*/
 }
-
 .category-page-title {
   font-size: 2.5em;
   margin-bottom: 0.5em;
   width: fit-content;
   color: var(--theme-color);
 }
-
 .category-page-title::after {
   content: "";
   /* Create a pseudo-element */
@@ -24,22 +66,18 @@
   margin-top: 5px;
   /* Add some space between the text and the border */
 }
-
 .category-page-content p {
   font-size: large;
   line-height: 1.7;
 }
-
 .category-page-content p:lang(en) {
   font-size: large;
   /* Adjust the multiplier as needed */
   line-height: 1.7;
 }
-
 .category-page-posts {
   margin-top: 5%;
 }
-
 .category-post {
   display: flex;
   /* Use flexbox to align children horizontally */
@@ -54,7 +92,6 @@
   margin: 10px 0;
   /* Optional: Add margin between posts */
 }
-
 .category-post-thumbnail {
   flex: 0 0 25%;
   /* Take 40% of the width */
@@ -66,41 +103,59 @@
   max-height: 20%;
   overflow: hidden;
 }
-
 .category-post-thumbnail img {
   width: 100%;
   /* Ensure the image fills the thumbnail container */
   height: auto;
   /* Maintain the aspect ratio */
 }
-
 .category-post-content {
   flex: 1;
   /* Take the remaining 60% of the width */
   max-width: 60%;
   /* Ensure it doesn't exceed 60% */
 }
-
 .category-post-content h2 {
   margin: 0;
   /* Remove default margin */
   font-size: 1.5em;
   /* Adjust font size */
 }
-
 .category-post-content p {
   margin: 5px 0 0;
   /* Adjust margins */
   color: #666;
   /* Optional: Adjust text color */
 }
-
 .post-details-container {
   display: flex;
   justify-content: left;
   margin: 0.5em 0;
 }
-
 .post-details-container div {
   margin-right: 20px;
+}
+// Social Icons
+.social-icons {
+  margin-top: 1em;
+  display: flex;
+  gap: 10px;
+  /* Adjust the gap between icons if you have multiple */
+  flex-direction: row;
+}
+.social-icons svg {
+  width: 1.5em;
+  /* Set the desired width */
+  height: 1.5em;
+  /* Set the desired height */
+  fill: rgb(51, 51, 51);
+  /* Facebook's brand color */
+  transition: fill 0.3s;
+}
+.social-icons svg:hover {
+  fill: var(--theme-color);
+  /* Lighter shade on hover */
+}
+.utterances {
+  max-width: 80%;
 }

@@ -1,0 +1,42 @@
+code {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 0 3px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 90%;
+  color: var(--theme-color-dark);
+}
+b,
+strong {
+  color: var(--theme-color);
+  font-weight: bolder;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.post-content p {
+  font-size: medium;
+  line-height: 1.7;
+  margin-bottom: 1.2em;
+}
+.post-content p:lang(en) {
+  font-size: medium;
+  line-height: 1.7;
+}
+.category-page-content p {
+  font-size: large;
+  line-height: 1.7;
+}
+.category-page-content p:lang(en) {
+  font-size: large;
+  line-height: 1.7;
+}

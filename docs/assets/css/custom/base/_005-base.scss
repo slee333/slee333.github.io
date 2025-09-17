@@ -1,11 +1,3 @@
-@media (min-width: 769px) {
-  .menu-toggle {
-    display: none;
-    /* Hide the toggle button on desktop */
-  }
-}
-
-/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .wrapper {
     width: 95%;
@@ -223,10 +215,7 @@
     animation: fadeIn 0.5s ease-in;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  
 
   // Enhanced category strip hover
   .category-strip:hover {
@@ -514,28 +503,4 @@
 
   }
 
-}
-
-@media (max-width: 480px) {
-  .featured-content h1 {
-    font-size: 1.5em;
-    /* Further adjust font size for very small screens */
-  }
-
-  .post-title {
-    font-size: 1.2em;
-    /* Further adjust font size */
-  }
-
-  .grid-post-thumbnail {
-    width: 35%;
-    /* Set a fixed width for the thumbnail */
-    padding-top: 35%;
-    /* Maintain aspect ratio to ensure it is square */
-  }
-
-  .grid-post-content {
-    flex-grow: 1;
-    /* Allow the content to grow and fill the available space */
-  }
 }

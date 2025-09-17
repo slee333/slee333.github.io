@@ -1,0 +1,20 @@
+/* _base.scss — split imports (relative) */
+// @import "base/001-base";
+// @import "base/002-base";
+// @import "base/003-base";
+// @import "base/004-base";
+// @import "base/005-base";
+// @import "base/006-base";
+// @import "base/007-base";
+// @import "base/008-base";
+
+@import "base/scaffolding";
+@import "base/typography";
+@import "base/header";
+@import "base/footer";
+@import "base/post";
+@import "base/post-listings";
+@import "base/components";
+@import "base/comments";
+@import "base/login";
+@import "base/responsive";

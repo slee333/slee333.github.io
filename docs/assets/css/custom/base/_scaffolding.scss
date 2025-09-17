@@ -1,0 +1,25 @@
+body {
+  font-family: "Tahoma", "NanumBarunGothic", "나눔 고딕", "Malgun Gothic", "굴림", "Gulim", "sans-serif";
+  overflow-x: hidden;
+}
+body, html {
+  overflow-x: hidden;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+.page-content {
+  padding-top: 10px;
+}
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.header-wrapper {
+  border-bottom: 1px solid black;
+  padding: 0px 15px;
+}
