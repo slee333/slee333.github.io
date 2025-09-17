@@ -89,10 +89,37 @@ layout: base
           <h2>{{ site.data.phrases[page.lang].comments_section.comments_title }}</h2>
           <span id="comment-count" class="comment-count-badge">0</span>
         </div>
-        <button id="logout" class="comment-header-logout-button" style="display:none;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg>
-          <span>{{ site.data.phrases[page.lang].comments_section.logout_button }}</span>
-        </button>
+        <div class="comment-header-buttons">
+          <button id="settings-button" class="comment-header-settings-button" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 0 2l-.15.08a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1 0-2l.15-.08a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+          <button id="logout" class="comment-header-logout-button" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg>
+            <span>{{ site.data.phrases[page.lang].comments_section.logout_button }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Settings Modal -->
+      <div id="settings-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3>Profile Settings</h3>
+          <form id="settings-form">
+            <div class="form-group">
+              <label for="display-name-input">Display Name</label>
+              <input type="text" id="display-name-input" required>
+            </div>
+            <div class="form-group">
+              <label for="photo-url-input">Photo URL</label>
+              <input type="text" id="photo-url-input">
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="comment-submit-button">Save</button>
+              <button type="button" id="cancel-settings" class="comment-action-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <div id="comment-input-area">

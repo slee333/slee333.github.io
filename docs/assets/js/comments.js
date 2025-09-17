@@ -9,7 +9,9 @@ import {
   sendSignInLinkToEmail,
   isSignInWithEmailLink,
   signInWithEmailLink,
-  updateProfile
+  updateProfile,
+  fetchSignInMethodsForEmail,
+  linkWithCredential
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 import { 
   getFirestore, 
@@ -21,6 +23,8 @@ import {
   serverTimestamp,
   doc,
   updateDoc,
+  getDoc,
+  setDoc,
   where
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
@@ -101,6 +105,7 @@ export function initComments(firebaseConfig, comment_phrases) {
   const loginButton = document.getElementById('login-with-google');
   const githubLoginButton = document.getElementById('login-with-github');
   const logoutButton = document.getElementById('logout');
+  const settingsButton = document.getElementById('settings-button');
   const userName = document.getElementById('user-name');
   const userProfilePic = document.getElementById('user-profile-pic');
   const loginArea = document.getElementById('comment-login');
@@ -110,44 +115,102 @@ export function initComments(firebaseConfig, comment_phrases) {
   const submitButton = document.getElementById('submit-comment');
   const emailLoginForm = document.getElementById('email-login-form');
   const emailInput = document.getElementById('email-input');
+  const settingsModal = document.getElementById('settings-modal');
+  const settingsForm = document.getElementById('settings-form');
+  const displayNameInput = document.getElementById('display-name-input');
+  const photoURLInput = document.getElementById('photo-url-input');
+  const closeButton = document.querySelector('.close-button');
+  const cancelSettingsButton = document.getElementById('cancel-settings');
 
   if (comment_phrases && comment_phrases.placeholder) {
     commentInput.placeholder = comment_phrases.placeholder;
   }
 
   let currentUser = null;
+  let userProfile = null;
+  let latestOAuthProvider = null;
 
+  // --- User Profile Management ---
+  async function handleUserProfile(user) {
+    const providerData = user.providerData || [];
+    const providerIdCandidate = latestOAuthProvider || (providerData.length ? providerData[providerData.length - 1].providerId : 'password');
+    const providerId = providerIdCandidate || 'password';
+    const buildAvatarUrl = (seed) => 'https://source.boringavatars.com/beam/120/' + seed + '?colors=264653,2a9d8f,e9c46a,f4a261,e76f51';
+
+    try {
+      const userRef = doc(db, "users", user.uid);
+      const userDoc = await getDoc(userRef);
+
+      if (userDoc.exists()) {
+        const existing = userDoc.data();
+        const normalizedProvider = providerId === 'password' && existing.provider ? existing.provider : providerId;
+        userProfile = { ...existing, provider: normalizedProvider };
+        if (providerId !== 'password' && existing.provider !== providerId) {
+          await updateDoc(userRef, { provider: providerId });
+        }
+      } else {
+        const newProfile = {
+          displayName: user.displayName || generateRandomName(),
+          photoURL: user.photoURL || buildAvatarUrl(user.uid),
+          provider: providerId,
+          createdAt: serverTimestamp(),
+          originalName: user.displayName || '',
+        };
+        await setDoc(userRef, newProfile);
+        userProfile = newProfile;
+      }
+    } catch (error) {
+      console.warn('Falling back to auth profile. Firestore user profile unavailable.', error);
+      const fallbackName = user.displayName || generateRandomName();
+      const fallbackPhoto = user.photoURL || buildAvatarUrl(user.uid);
+      userProfile = {
+        displayName: fallbackName,
+        photoURL: fallbackPhoto,
+        provider: providerId || 'password',
+      };
+
+      if (!user.displayName || !user.photoURL) {
+        try {
+          await updateProfile(user, {
+            displayName: fallbackName,
+            photoURL: fallbackPhoto,
+          });
+        } catch (profileError) {
+          console.error('Error updating Firebase auth profile', profileError);
+        }
+      }
+    } finally {
+      latestOAuthProvider = null;
+    }
+
+    if (userName) {
+      userName.textContent = userProfile.displayName + '로 댓글 작성';
+    }
+    if (userProfilePic) {
+      userProfilePic.src = userProfile.photoURL;
+    }
+    if (displayNameInput) {
+      displayNameInput.value = userProfile.displayName;
+    }
+    if (photoURLInput) {
+      photoURLInput.value = userProfile.photoURL;
+    }
+  }
   // --- Authentication ---
-  onAuthStateChanged(auth, user => {
+  onAuthStateChanged(auth, async user => {
     currentUser = user;
     if (user) {
-      if (user.displayName) {
-        loginArea.style.display = 'none';
-        commentFormWrapper.style.display = 'block';
-        logoutButton.style.display = 'inline-flex';
-        userName.textContent = `${user.displayName}로 댓글 작성`;
-        userProfilePic.src = user.photoURL || '/assets/images/default-avatar.svg';
-      } else {
-        const randomName = generateRandomName();
-        const avatarUrl = `https://source.boringavatars.com/beam/120/${randomName}?colors=264653,2a9d8f,e9c46a,f4a261,e76f51`;
-
-        loginArea.style.display = 'none';
-        commentFormWrapper.style.display = 'block';
-        logoutButton.style.display = 'inline-flex';
-        userName.textContent = `'${randomName}'(으)로 댓글 작성`;
-        userProfilePic.src = avatarUrl;
-
-        updateProfile(user, { 
-          displayName: randomName, 
-          photoURL: avatarUrl 
-        }).catch(error => {
-          console.error("Error auto-updating profile:", error);
-        });
-      }
+      await handleUserProfile(user);
+      loginArea.style.display = 'none';
+      commentFormWrapper.style.display = 'block';
+      logoutButton.style.display = 'inline-flex';
+      settingsButton.style.display = 'inline-flex';
     } else {
+      userProfile = null;
       loginArea.style.display = 'block';
       commentFormWrapper.style.display = 'none';
       logoutButton.style.display = 'none';
+      settingsButton.style.display = 'none';
     }
     renderComments();
   });
@@ -155,11 +218,134 @@ export function initComments(firebaseConfig, comment_phrases) {
   // --- Auth Event Listeners ---
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
+  googleProvider.setCustomParameters({ prompt: 'select_account' });
 
-  loginButton.addEventListener('click', () => signInWithPopup(auth, googleProvider).catch(err => console.error(err)));
-  githubLoginButton.addEventListener('click', () => signInWithPopup(auth, githubProvider).catch(err => console.error(err)));
+  const providerConfig = {
+    google: { instance: googleProvider, id: 'google.com' },
+    github: { instance: githubProvider, id: 'github.com' },
+  };
+
+  async function resolveAccountLinkingConflict(error, attemptedProviderKey) {
+    const email = error.customData?.email;
+    const pendingCredential =
+      attemptedProviderKey === 'github'
+        ? GithubAuthProvider.credentialFromError(error)
+        : GoogleAuthProvider.credentialFromError(error);
+
+    if (!email || !pendingCredential) {
+      alert('이미 다른 로그인 방법으로 가입된 이메일입니다. 기존 로그인 방법으로 먼저 로그인해주세요.');
+      return;
+    }
+
+    try {
+      const methods = await fetchSignInMethodsForEmail(auth, email);
+      if (methods.includes('google.com')) {
+        try {
+          googleProvider.setCustomParameters({ login_hint: email, prompt: 'select_account' });
+          latestOAuthProvider = 'google.com';
+          const googleResult = await signInWithPopup(auth, googleProvider);
+          try {
+            await linkWithCredential(googleResult.user, pendingCredential);
+            latestOAuthProvider = attemptedProviderKey === 'github' ? 'github.com' : 'google.com';
+            if (auth.currentUser) {
+              await handleUserProfile(auth.currentUser);
+            }
+            alert('GitHub 계정을 기존 로그인과 연결했습니다. 이제 GitHub로도 로그인할 수 있습니다.');
+          } catch (linkError) {
+            console.error('Failed to link OAuth credential', linkError);
+            alert('계정 연결에 실패했습니다. Google로 로그인한 후 GitHub 로그인을 다시 시도해주세요.');
+          }
+        } catch (googleError) {
+          if (googleError.code === 'auth/popup-closed-by-user') {
+            console.warn('Google sign-in popup closed before completing account linking.');
+          } else if (googleError.code !== 'auth/cancelled-popup-request') {
+            console.error('Google sign-in failed while resolving account linking', googleError);
+            alert('Google 로그인에 실패했습니다. 잠시 후 다시 시도해주세요.');
+          }
+        }
+      } else {
+        const existingMethod = methods[0] || '기존 로그인 방법';
+        const readableMethod = existingMethod === 'password'
+          ? '이메일/비밀번호'
+          : existingMethod === 'emailLink'
+            ? '이메일 링크'
+            : existingMethod;
+        alert('이미 ' + readableMethod + ' 방식으로 가입된 이메일입니다. 먼저 해당 방법으로 로그인한 뒤 GitHub를 연결해주세요.');
+      }
+    } catch (methodError) {
+      console.error('Error fetching sign-in methods for linking', methodError);
+      alert('계정 정보를 확인할 수 없습니다. 잠시 후 다시 시도해주세요.');
+    }
+  }
+
+  async function startOAuthSignIn(providerKey) {
+    const config = providerConfig[providerKey];
+    if (!config) {
+      return;
+    }
+
+    latestOAuthProvider = config.id;
+
+    try {
+      await signInWithPopup(auth, config.instance);
+    } catch (error) {
+      latestOAuthProvider = null;
+
+      if (error.code === 'auth/popup-closed-by-user' || error.code === 'auth/cancelled-popup-request') {
+        return;
+      }
+
+      if (error.code === 'auth/account-exists-with-different-credential') {
+        await resolveAccountLinkingConflict(error, providerKey);
+        return;
+      }
+
+      console.error('Error during ' + providerKey + ' sign-in', error);
+      alert('로그인에 실패했습니다. 잠시 후 다시 시도해주세요.');
+    }
+  }
+
+  loginButton.addEventListener('click', () => startOAuthSignIn('google'));
+  githubLoginButton.addEventListener('click', () => startOAuthSignIn('github'));
   logoutButton.addEventListener('click', () => signOut(auth));
-  
+  // --- Settings Modal Event Listeners ---
+  settingsButton.addEventListener('click', () => {
+    settingsModal.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', () => {
+    settingsModal.style.display = 'none';
+  });
+
+  cancelSettingsButton.addEventListener('click', () => {
+    settingsModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target == settingsModal) {
+      settingsModal.style.display = 'none';
+    }
+  });
+
+  settingsForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const newDisplayName = displayNameInput.value.trim();
+    const newPhotoURL = photoURLInput.value.trim();
+
+    if (newDisplayName) {
+      const userRef = doc(db, "users", currentUser.uid);
+      await updateDoc(userRef, {
+        displayName: newDisplayName,
+        photoURL: newPhotoURL
+      });
+      userProfile.displayName = newDisplayName;
+      userProfile.photoURL = newPhotoURL;
+      userName.textContent = `${newDisplayName}로 댓글 작성`;
+      userProfilePic.src = newPhotoURL;
+      settingsModal.style.display = 'none';
+    }
+  });
+
   // This is now only for the top-level form.
   cancelReplyButton.addEventListener('click', () => {
     commentInput.value = '';
@@ -195,16 +381,16 @@ export function initComments(firebaseConfig, comment_phrases) {
   commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const commentText = commentInput.value.trim();
-    if (!commentText || !currentUser || !currentUser.displayName) return;
+    if (!commentText || !currentUser || !userProfile) return;
 
     submitButton.disabled = true;
 
     const newComment = {
       text: commentText,
-      author: currentUser.displayName,
-      authorImg: currentUser.photoURL,
+      author: userProfile.displayName,
+      authorImg: userProfile.photoURL,
       authorId: currentUser.uid,
-      providerId: currentUser.providerData[0]?.providerId || 'password',
+      providerId: userProfile.provider,
       postSlug: postSlug,
       createdAt: serverTimestamp(),
       parentId: null, // Top-level comments have no parent
@@ -234,7 +420,7 @@ export function initComments(firebaseConfig, comment_phrases) {
     form.innerHTML = `
       <div class="comment-form-top-row">
         <span class="comment-form-avatar">
-          <img src="${currentUser.photoURL || '/assets/images/default-avatar.svg'}" alt="User Profile">
+          <img src="${userProfile.photoURL || '/assets/images/default-avatar.svg'}" alt="User Profile">
         </span>
         <div class="comment-form-main">
           <div style="display: block; font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">
@@ -242,7 +428,7 @@ export function initComments(firebaseConfig, comment_phrases) {
           </div>
           <textarea class="comment-textarea" required>${replyTarget.depth >= 2 ? `@${replyTarget.author} ` : ''}</textarea>
           <div class="comment-form-bottom-row">
-            <span class="comment-form-user-info">${currentUser.displayName}</span>
+            <span class="comment-form-user-info">${userProfile.displayName}</span>
             <div class="comment-form-actions">
               <button type="button" class="cancel-reply-btn">Cancel</button>
               <button type="submit" class="comment-submit-button">Submit</button>
@@ -274,10 +460,10 @@ export function initComments(firebaseConfig, comment_phrases) {
 
       const newComment = {
         text: commentText,
-        author: currentUser.displayName,
-        authorImg: currentUser.photoURL,
+        author: userProfile.displayName,
+        authorImg: userProfile.photoURL,
         authorId: currentUser.uid,
-        providerId: currentUser.providerData[0]?.providerId || 'password',
+        providerId: userProfile.provider,
         postSlug: postSlug,
         createdAt: serverTimestamp(),
         parentId: parentId,
