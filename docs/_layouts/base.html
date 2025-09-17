@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'kr' }}">
 
 {%- include head.html -%}
@@ -10,7 +10,7 @@
     {%- include sticky-header.html -%}
   {%- endif -%}
   <main class="page-content" aria-label="Content">
-    <div class="wrapper">
+    <div class="wrapper{% if page.layout == "home" %} wrapper--wide{% endif %}">
       {{ content }}
     </div>
   </main>

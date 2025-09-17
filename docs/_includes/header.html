@@ -1,132 +1,157 @@
-<header class="site-header">
+<header class="site-header" data-menu-open="false">
+  <div class="site-header__container">
+    <div class="site-header__surface">
+      <a class="site-header__logo" rel="author" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">
+        <span class="site-header__logo-primary">{{ site.title }}</span>
+        <span class="site-header__logo-glow" aria-hidden="true">{{ site.title }}</span>
+      </a>
 
-  <div class="wrapper header-wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+      <nav class="site-header__nav" aria-label="Primary navigation">
+        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
+        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
+        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
+        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
+        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
+      </nav>
 
-    <a class="site-title" rel="author"
-      href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">{{
-      site.title }}</a>
-
-
-    {%- if titles_size > 0 -%}
-    <nav class="site-nav">
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
-      <div class="trigger navbar">
-        <a class="page-link"
-          href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{
-          site.data.phrases[page.lang]["navbar"]["about"] }}</a>
-        <a class="page-link"
-          href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{
-          site.data.phrases[page.lang]["navbar"]["life"] }}</a>
-        <a class="page-link"
-          href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{
-          site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
-        <a class="page-link"
-          href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{
-          site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
-        <a class="page-link"
-          href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{
-          site.data.phrases[page.lang]["navbar"]["research"] }}</a>
-
+      <div class="site-header__actions">
         <div class="language-switcher">
-          <div class="language-selector">
-            <select id="language-select">
-              <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
-              <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
-              <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
-            </select>
-          </div>
+          <label class="sr-only" for="language-select">{{ site.data.phrases[page.lang]["navbar"]["language_label"] | default: 'Language' }}</label>
+          <select id="language-select">
+            <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
+            <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
+            <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
+          </select>
         </div>
+        <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer">
+          <span class="sr-only">{{ site.data.phrases[page.lang]["navbar"]["toggle_menu"] | default: 'Toggle navigation' }}</span>
+          <span class="site-header__toggle-icon" aria-hidden="true"></span>
+        </button>
       </div>
+    </div>
 
+    {% if site.description %}
+    <p class="site-header__subtitle">{{ site.description }}</p>
+    {% endif %}
+  </div>
+
+  <div class="site-header__drawer" id="site-header-drawer">
+    <nav class="site-header__drawer-nav" aria-label="Mobile navigation">
+      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
+      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
+      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
+      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
+      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
     </nav>
-    {%- endif -%}
-
+    <div class="site-header__drawer-language">
+      <label class="sr-only" for="language-select-mobile">{{ site.data.phrases[page.lang]["navbar"]["language_label"] | default: 'Language' }}</label>
+      <select id="language-select-mobile">
+        <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
+        <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
+        <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
+      </select>
+    </div>
   </div>
 </header>
 
-<style>
-:root {
-  --theme-color: #4195e0;
-}
-.site-title {
-  position: relative;
-  z-index: 1002;
-  font-size: 2.5rem;
-  color: #1f2937;
-  font-weight: 600;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-.site-title:hover { opacity: 0.65; }
-
-
-
-/* Basic underline-on-hover for .page-link */
-
-
-.page-link {
-  position: relative;
-}
-
-.page-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;                    /* thickness of underline */
-  background: var(--theme-color);
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-.page-link:hover::after {
-  width: 100%;
-  color: var(--theme-color);
-}
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var menuToggle = document.getElementById('menu-toggle');
-    var siteNav    = document.querySelector('.site-nav');
+    const headerEl = document.querySelector('.site-header');
+    if (!headerEl) { return; }
 
-    // open / close + toggle icon
-    menuToggle.addEventListener('click', function (e) {
-      e.stopPropagation();
-      siteNav.classList.toggle('expanded');
-      menuToggle.innerHTML = siteNav.classList.contains('expanded') ? '&times;' : '&#9776;';
-    });
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = headerEl.querySelectorAll('[data-nav-link]');
+    const languageSelect = document.getElementById('language-select');
+    const mobileLanguageSelect = document.getElementById('language-select-mobile');
+    const stickyLanguageSelect = document.getElementById('language-select-sticky');
+    const scrollKey = 'scrollPosition';
+    const menuBreakpoint = window.matchMedia('(min-width: 960px)');
 
-    // click outside to close
-    document.addEventListener('click', function (e) {
-      if (siteNav.classList.contains('expanded') &&
-          !siteNav.contains(e.target) &&
-          e.target !== menuToggle
-      ) {
-        siteNav.classList.remove('expanded');
-        menuToggle.innerHTML = '&#9776;';
+    function saveScroll() {
+      sessionStorage.setItem(scrollKey, window.scrollY);
+    }
+
+    function navigateToLanguage(value) {
+      saveScroll();
+      let path = window.location.pathname.replace(/^\/(en|es)\//, '/');
+      if (value !== 'kr') {
+        path = '/' + value + path;
+      }
+      path = path.replace(/\/+/g, '/');
+      const destination = window.location.origin + path;
+      window.location.href = destination;
+    }
+
+    function syncLanguageControls(value, source) {
+      [languageSelect, mobileLanguageSelect, stickyLanguageSelect].forEach(control => {
+        if (control && control !== source) {
+          control.value = value;
+        }
+      });
+    }
+
+    function handleLanguageChange(event) {
+      const value = event.target.value;
+      syncLanguageControls(value, event.target);
+      navigateToLanguage(value);
+    }
+
+    [languageSelect, mobileLanguageSelect, stickyLanguageSelect].forEach(control => {
+      if (control) {
+        control.addEventListener('change', handleLanguageChange);
       }
     });
 
-    // scroll‐position and language‐switcher logic (unchanged)...
-    const scrollKey = 'scrollPosition';
-    function saveScroll() { sessionStorage.setItem(scrollKey, window.scrollY); }
-    function restoreScroll() {
-      let y = sessionStorage.getItem(scrollKey);
-      if (y) { window.scrollTo(0, +y); sessionStorage.removeItem(scrollKey); }
-    }
-    restoreScroll();
+    const menuState = {
+      open: false,
+      set(value) {
+        this.open = value;
+        headerEl.setAttribute('data-menu-open', value ? 'true' : 'false');
+        if (menuToggle) {
+          menuToggle.setAttribute('aria-expanded', value ? 'true' : 'false');
+        }
+      }
+    };
 
-    let langSel = document.getElementById('language-select');
-    langSel && langSel.addEventListener('change', function () {
-      saveScroll();
-      let url = window.location.pathname.replace(/^\/(en|es)\//,'/');
-      if (this.value !== 'kr') url = `/${this.value}${url}`;
-      window.location.href = window.location.origin + url.replace(/\/+/g,'/');
+    function toggleMenu() {
+      menuState.set(!menuState.open);
+    }
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+        toggleMenu();
+      });
+    }
+
+    document.addEventListener('click', function (event) {
+      if (menuState.open && !headerEl.contains(event.target)) {
+        menuState.set(false);
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && menuState.open) {
+        menuState.set(false);
+      }
+    });
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (menuState.open) {
+          menuState.set(false);
+        }
+      });
+    });
+
+    if (menuBreakpoint.matches) {
+      menuState.set(false);
+    }
+
+    menuBreakpoint.addEventListener('change', function (event) {
+      if (event.matches) {
+        menuState.set(false);
+      }
     });
   });
 </script>

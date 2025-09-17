@@ -1,11 +1,30 @@
-:root {
+﻿:root {
   --theme-color: #4195e0;
-  /* Set your desired theme color here */
   --theme-color-opp: #ea9f36;
-  /* Set the opposite color for contrast */
   --theme-color-light: #4195e047;
-
   --theme-color-dark: #214c72;
-
   --light-hover-color: #79b4e8;
+
+  --gradient-primary: linear-gradient(135deg, #4195e0 0%, #7fd3ff 50%, #6aafe9 100%);
+  --gradient-progress: linear-gradient(90deg, #4195e0 0%, #7fd3ff 35%, #ea9f36 70%, #6aafe9 100%);
+  --gradient-navbar: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  --gradient-button: linear-gradient(135deg, transparent 0%, rgba(65, 149, 224, 0.08) 50%, transparent 100%);
+
+  --shadow-soft: 0 2px 8px rgba(33, 76, 114, 0.06);
+  --shadow-medium: 0 4px 20px rgba(33, 76, 114, 0.08);
+  --shadow-strong: 0 8px 40px rgba(33, 76, 114, 0.12);
+  --shadow-navbar: 0 8px 32px -8px rgba(33, 76, 114, 0.08), 0 0 0 1px rgba(221, 232, 241, 0.3);
+  --shadow-glow: 0 0 30px rgba(65, 149, 224, 0.25);
+
+  --navbar-backdrop: hsla(0, 0%, 100%, 0.88);
+  --navbar-backdrop-blur: 22px;
+  --navbar-border-color: rgba(221, 232, 241, 0.35);
+  --navbar-border-gradient: linear-gradient(135deg, rgba(221, 232, 241, 0.6) 0%, rgba(221, 232, 241, 0.2) 100%);
+  --navbar-radius: 18px;
+
+  --navbar-max-width: 1200px;
+  --navbar-padding: 0.75rem 1.25rem;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }

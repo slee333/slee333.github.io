@@ -12,7 +12,9 @@
       "learning": "Learning",
       "life": "Life",
       "research": "Research",
-      "home": "Home"
+      "home": "Home",
+      "language_label": "Language",
+      "toggle_menu": "Toggle navigation"
     },
     "viewall": "View All",
     "filterbytags": "Filter by Tags",
@@ -42,23 +44,36 @@
       "kakao_button": "Kakao",
       "logout_button": "Logout",
       "submit_button": "Submit",
-      "comment_placeholder": "Leave a comment..."
+      "comment_placeholder": "Leave a comment...",
+      "toc_label": "Table of Contents",
+      "toc_close": "Close table of contents"
+    },
+    "home_page": {
+      "eyebrow": "Welcome to the hut",
+      "hero_tagline": "Notes on building, learning, and everyday experiments.",
+      "featured": "Featured Story",
+      "recent_posts": "Recent Posts",
+      "categories_heading": "Browse by Category",
+      "load_more": "Load more posts",
+      "no_results": "No posts match the current filters."
     }
   },
   "es": {
     "categories": {
-      "cifellowship": "Informática Clínica",
-      "learning": "Aprendizaje",
-      "life": "Vida Diaria",
+      "cifellowship": "Informática",
+      "learning": "Estudio",
+      "life": "Vida",
       "research": "Investigación"
     },
     "navbar": {
       "about": "Acerca de",
-      "cifellowship": "Informática Clínica",
-      "learning": "Aprendizaje",
-      "life": "Vida Diaria",
+      "cifellowship": "Informática",
+      "learning": "Estudio",
+      "life": "Vida",
       "research": "Investigación",
-      "home": "Inicio"
+      "home": "Inicio",
+      "language_label": "Idioma",
+      "toggle_menu": "Abrir menú"
     },
     "viewall": "Ver Todo",
     "filterbytags": "Filtrar por Etiquetas",
@@ -88,7 +103,18 @@
       "kakao_button": "Kakao",
       "logout_button": "Cerrar sesión",
       "submit_button": "Enviar",
-      "comment_placeholder": "Deja un comentario..."
+      "comment_placeholder": "Deja un comentario...",
+      "toc_label": "Tabla de contenidos",
+      "toc_close": "Cerrar tabla"
+    },
+    "home_page": {
+      "eyebrow": "Bienvenido al refugio",
+      "hero_tagline": "Notas sobre desarrollo, aprendizaje y experimentos diarios.",
+      "featured": "Historia destacada",
+      "recent_posts": "Publicaciones recientes",
+      "categories_heading": "Explorar por categoría",
+      "load_more": "Ver más entradas",
+      "no_results": "No hay entradas que coincidan con los filtros."
     }
   },
   "kr": {
@@ -104,7 +130,9 @@
       "learning": "공부일기",
       "life": "일상기록",
       "research": "연구일기",
-      "home": "홈페이지"
+      "home": "홈페이지",
+      "language_label": "언어",
+      "toggle_menu": "메뉴 열기"
     },
     "viewall": "더보기",
     "filterbytags": "태그로 필터링",
@@ -134,7 +162,18 @@
       "kakao_button": "카카오",
       "logout_button": "로그아웃",
       "submit_button": "등록",
-      "comment_placeholder": "댓글을 남겨주세요..."
+      "comment_placeholder": "댓글을 남겨주세요...",
+      "toc_label": "목차",
+      "toc_close": "목차 닫기"
+    },
+    "home_page": {
+      "eyebrow": "어서 오세요",
+      "hero_tagline": "개발과 공부, 일상을 차곡차곡 담는 공간입니다.",
+      "featured": "추천 글",
+      "recent_posts": "최근 글",
+      "categories_heading": "카테고리 살펴보기",
+      "load_more": "더 많은 글 보기",
+      "no_results": "현재 필터와 일치하는 글이 없습니다."
     }
   }
 }

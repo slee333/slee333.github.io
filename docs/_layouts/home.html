@@ -2,183 +2,114 @@
 layout: base
 ---
 
-<div class="home">
-  <!-- {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} -->
+{% assign phrases = site.data.phrases[page.lang] %}
+{% assign home_text = phrases.home_page %}
+{% assign posts_by_lang = site.posts | where: "lang", page.lang %}
+{% assign featured_post = posts_by_lang | first %}
+{% if featured_post %}
+  {% assign rest_posts = posts_by_lang | where_exp: "post", "post.url != featured_post.url" %}
+{% else %}
+  {% assign rest_posts = posts_by_lang %}
+{% endif %}
 
-  {% assign posts_by_lang = site.posts | where: "lang", page.lang %}
-  {% assign first_post = posts_by_lang | first %}
-
-  <div class="featured-post">
-    <a href="{{ first_post.url }}" class="featured-thumbnail">
-      <img src="{{ first_post.image }}" alt="{{ first_post.title }}">
-    </a>
-    <div class="featured-content" onclick="window.location.href='{{ first_post.url }}'">
-      <span class="post-category">
-        <div>{{ first_post.categorydisplay }}</div>
-      </span>
-      <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-      <p>{{ first_post.subtitle }}</p>
-      <p class="post-meta">
-        By Seung Wook Lee |
-        <time datetime="{{ first_post.date | date_to_xmlschema }}">
-          {{ first_post.date | date: "%B %d, %Y" }}
-        </time>
-      </p>
+<div class="home home-layout">
+  <section class="home-hero">
+    <div class="home-hero__inner home-shell">
+      {% if home_text and home_text.eyebrow %}
+      <span class="home-hero__eyebrow">{{ home_text.eyebrow }}</span>
+      {% endif %}
+      <h1 class="home-hero__title">{{ site.title }}</h1>
+      <p class="home-hero__tagline">{{ home_text.hero_tagline | default: phrases.description }}</p>
     </div>
-  </div>
+  </section>
 
-  <div class="featured-grid">
-    {% assign remaining_posts = posts_by_lang | where_exp: "post", "post != first_post" %}
-    {% for post in remaining_posts limit:4 %}
-
-    <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-      <div class="grid-post-thumbnail">
-        <img src="{{ post.image }}" alt="{{ post.title }}" />
-      </div>
-      <div class="grid-post-content">
-        <div class="featured-grid-posts-categorydisplay">{{post.categorydisplay}}</div>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.subtitle }}</p>
-      </div>
+  {% if featured_post %}
+  <section class="home-featured home-shell">
+    <div class="home-section__header home-section__header--badge">
+      <span class="home-chip home-chip--badge">{{ home_text.featured }}</span>
     </div>
-
-    {% endfor %}
-
-  </div>
-
-
-  <!-- Category Strip with highlight -->
-  {% assign category = "learning" %}
-  {% assign highlight = false %}
-  {% if category == "learning" %}
-    {% assign highlight = true %}
+    <article class="home-featured__card">
+      {% assign featured_image = featured_post.image | default: '/assets/images/default-avatar.svg' %}
+      <a class="home-featured__media" href="{{ featured_post.url }}">
+        <img src="{{ featured_image }}" alt="{{ featured_post.title }}" loading="lazy">
+      </a>
+      <div class="home-featured__body">
+        {% if featured_post.categorydisplay %}
+        <span class="home-chip">{{ featured_post.categorydisplay }}</span>
+        {% endif %}
+        <h2 class="home-featured__title"><a href="{{ featured_post.url }}">{{ featured_post.title }}</a></h2>
+        {% if featured_post.subtitle %}
+        <p class="home-featured__excerpt">{{ featured_post.subtitle }}</p>
+        {% endif %}
+        <div class="home-card__meta">
+          <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
+        </div>
+      </div>
+    </article>
+  </section>
   {% endif %}
-  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
-  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
 
-  <div class="category-strip {% if highlight %}highlight{% endif %}">
-    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
-    {% assign category_posts = posts_by_lang | where: "categories", category %}
-    <div class="category-strip-inner">
-      <div class="category-strip-header">
-        <h2>{{categorydisplayheader}}</h2>
-        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
-      </div>
-
-      <div class="category-strip-posts">
-
-        {% for post in category_posts limit:3 %}
-
-        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-          <div class="grid-post-thumbnail">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
-          </div>
-          <div class="grid-post-content">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.subtitle }}</p>
+  {% if rest_posts and rest_posts.size > 0 %}
+  <section class="home-section home-shell">
+    <div class="home-section__header">
+      <h2 class="home-section__title">{{ home_text.recent_posts }}</h2>
+    </div>
+    <div class="home-grid">
+      {% for post in rest_posts limit:4 %}
+      {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
+      <article class="home-card">
+        <a class="home-card__media" href="{{ post.url }}">
+          <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+        </a>
+        <div class="home-card__body">
+          {% if post.categorydisplay %}
+          <span class="home-chip">{{ post.categorydisplay }}</span>
+          {% endif %}
+          <h3 class="home-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% if post.subtitle %}
+          <p class="home-card__excerpt">{{ post.subtitle }}</p>
+          {% endif %}
+          <div class="home-card__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
           </div>
         </div>
-
-        {% endfor %}
-      </div>
+      </article>
+      {% endfor %}
     </div>
-  </div>
+  </section>
+  {% endif %}
 
-  {% assign category = "cifellowship" %}
-  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
-  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
-  <div class="category-strip">
-    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
+  {% assign category_order = "learning,cifellowship,life,research" | split: "," %}
+  {% for category in category_order %}
     {% assign category_posts = posts_by_lang | where: "categories", category %}
-    <div class="category-strip-inner">
-      <div class="category-strip-header">
-        <h2>{{categorydisplayheader}}</h2>
-        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
+    {% if category_posts.size > 0 %}
+    <section class="home-section home-shell home-section--category">
+      <div class="home-section__header">
+        <h2 class="home-section__title">{{ phrases.categories[category] }}</h2>
+        <a class="home-section__link" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{{ category }}{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ category }}{% endif %}">{{ phrases.viewall }} →</a>
       </div>
-
-      <div class="category-strip-posts">
-
+      <div class="home-grid home-grid--compact">
         {% for post in category_posts limit:3 %}
-
-        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-          <div class="grid-post-thumbnail">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
+        {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
+        <article class="home-card home-card--compact">
+          <a class="home-card__media home-card__media--compact" href="{{ post.url }}">
+            <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+          </a>
+          <div class="home-card__body">
+            <h3 class="home-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% if post.subtitle %}
+            <p class="home-card__excerpt">{{ post.subtitle }}</p>
+            {% endif %}
+            <div class="home-card__meta home-card__meta--compact">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            </div>
           </div>
-          <div class="grid-post-content">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.subtitle }}</p>
-          </div>
-        </div>
-
+        </article>
         {% endfor %}
       </div>
-    </div>
-  </div>
-
-  {% assign category = "life" %}
-  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
-  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
-  <div class="category-strip">
-    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
-    {% assign category_posts = posts_by_lang | where: "categories", category %}
-    <div class="category-strip-inner">
-      <div class="category-strip-header">
-        <h2>{{categorydisplayheader}}</h2>
-        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
-      </div>
-
-      <div class="category-strip-posts">
-
-        {% for post in category_posts limit:3 %}
-
-        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-          <div class="grid-post-thumbnail">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
-          </div>
-          <div class="grid-post-content">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.subtitle }}</p>
-          </div>
-        </div>
-
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
-  {% assign category = "research" %}
-  {% assign categorydisplayheader = site.data.phrases[page.lang]["categories"][category] %}
-  {% assign viewall = site.data.phrases[page.lang]["viewall"] %}
-  <div class="category-strip">
-    {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
-    {% assign category_posts = posts_by_lang | where: "categories", category %}
-    <div class="category-strip-inner">
-      <div class="category-strip-header">
-        <h2>{{categorydisplayheader}}</h2>
-        <a href="{{ site.baseurl }}/{{ category }}" class="view-all">{{viewall}} →</a>
-      </div>
-
-      <div class="category-strip-posts">
-
-        {% for post in category_posts limit:3 %}
-
-        <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-          <div class="grid-post-thumbnail">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
-          </div>
-          <div class="grid-post-content">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.subtitle }}</p>
-          </div>
-        </div>
-
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+    </section>
+    {% endif %}
+  {% endfor %}
 
   {{ content }}
-
 </div>
