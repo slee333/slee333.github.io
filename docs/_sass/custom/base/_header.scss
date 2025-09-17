@@ -636,3 +636,12 @@
   opacity: 1;
   padding: 0 1.25rem;
 }
+
+.sticky-header--no-toc [data-toc-toggle] {
+  display: none !important;
+}
+
+.sticky-header--no-toc [data-toc-panel] {
+  display: none !important;
+}
+

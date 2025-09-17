@@ -6,7 +6,7 @@
 <body>
 
   {%- include header.html -%}
-  {%- if page.layout == "post" -%}
+  {%- if page.layout == "post" or page.layout == "home" -%}
     {%- include sticky-header.html -%}
   {%- endif -%}
   <main class="page-content" aria-label="Content">
