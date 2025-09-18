@@ -126,6 +126,7 @@
 .home-chip {
   display: inline-flex;
   align-items: center;
+  width: fit-content;
   justify-content: center;
   padding: 0.3rem 0.9rem;
   border-radius: 999px;
@@ -135,6 +136,7 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-chip--badge {
@@ -142,10 +144,98 @@
   color: var(--theme-color);
 }
 
+.home-chip--learning {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.22) 0%, rgba(255, 243, 199, 0.72) 100%);
+  color: #705b00;
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.3);
+}
+
+.home-chip--cifellowship {
+  background: linear-gradient(135deg, rgba(70, 130, 180, 0.22) 0%, rgba(214, 233, 247, 0.8) 100%);
+  color: #1f4a6c;
+  box-shadow: 0 0 0 1px rgba(70, 130, 180, 0.32);
+}
+
+.home-chip--life {
+  background: linear-gradient(135deg, rgba(50, 205, 50, 0.2) 0%, rgba(217, 247, 217, 0.82) 100%);
+  color: #126012;
+  box-shadow: 0 0 0 1px rgba(50, 205, 50, 0.3);
+}
+
+.home-chip--research {
+  background: linear-gradient(135deg, rgba(255, 99, 71, 0.22) 0%, rgba(255, 224, 217, 0.78) 100%);
+  color: #7a2014;
+  box-shadow: 0 0 0 1px rgba(255, 99, 71, 0.28);
+}
+
 .home-section {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+}
+
+.home-section__header--learning {
+  border-left-color: rgba(255, 215, 0, 0.6);
+}
+
+.home-section__header--cifellowship {
+  border-left-color: rgba(70, 130, 180, 0.55);
+}
+
+.home-section__header--life {
+  border-left-color: rgba(50, 205, 50, 0.55);
+}
+
+.home-section__header--research {
+  border-left-color: rgba(255, 99, 71, 0.55);
+}
+
+.home-section__title--learning {
+  color: #705b00;
+}
+
+.home-section__title--cifellowship {
+  color: #1f4a6c;
+}
+
+.home-section__title--life {
+  color: #126012;
+}
+
+.home-section__title--research {
+  color: #7a2014;
+}
+
+.home-section__link--learning {
+  color: rgba(112, 91, 0, 0.7);
+}
+.home-section__link--learning:hover,
+.home-section__link--learning:focus {
+  color: #705b00;
+}
+
+.home-section__link--cifellowship {
+  color: rgba(31, 74, 108, 0.72);
+}
+.home-section__link--cifellowship:hover,
+.home-section__link--cifellowship:focus {
+  color: #1f4a6c;
+}
+
+.home-section__link--life {
+  color: rgba(18, 96, 18, 0.7);
+}
+.home-section__link--life:hover,
+.home-section__link--life:focus {
+  color: #126012;
+}
+
+.home-section__link--research {
+  color: rgba(122, 32, 20, 0.72);
+}
+.home-section__link--research:hover,
+.home-section__link--research:focus {
+  color: #7a2014;
 }
 
 .home-section__header {

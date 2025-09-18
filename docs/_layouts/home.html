@@ -38,7 +38,8 @@ layout: base
       </div>
       <div class="home-featured__body">
         {% if featured_post.categorydisplay %}
-        <span class="home-chip">{{ featured_post.categorydisplay }}</span>
+        {% assign featured_category = featured_post.categories | first %}
+        <span class="home-chip{% if featured_category %} home-chip--{{ featured_category | slugify }}{% endif %}">{{ featured_post.categorydisplay }}</span>
         {% endif %}
         <h2 class="home-featured__title">{{ featured_post.title }}</h2>
         {% if featured_post.subtitle %}
@@ -69,7 +70,8 @@ layout: base
         </div>
         <div class="home-card__body">
           {% if post.categorydisplay %}
-          <span class="home-chip">{{ post.categorydisplay }}</span>
+          {% assign post_category = post.categories | first %}
+          <span class="home-chip{% if post_category %} home-chip--{{ post_category | slugify }}{% endif %}">{{ post.categorydisplay }}</span>
           {% endif %}
           <h3 class="home-card__title">{{ post.title }}</h3>
           {% if post.subtitle %}
@@ -89,10 +91,10 @@ layout: base
   {% for category in category_order %}
     {% assign category_posts = posts_by_lang | where: "categories", category %}
     {% if category_posts.size > 0 %}
-    <section class="home-section home-shell home-section--category">
-      <div class="home-section__header">
-        <h2 class="home-section__title">{{ phrases.categories[category] }}</h2>
-        <a class="home-section__link" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{{ category }}{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ category }}{% endif %}">{{ phrases.viewall }} →</a>
+    <section class="home-section home-shell home-section--category home-section--{{ category | slugify }}">
+      <div class="home-section__header home-section__header--{{ category | slugify }}">
+        <h2 class="home-section__title home-section__title--{{ category | slugify }}">{{ phrases.categories[category] }}</h2>
+        <a class="home-section__link home-section__link--{{ category | slugify }}" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{{ category }}{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ category }}{% endif %}">{{ phrases.viewall }} &rarr;</a>
       </div>
       <div class="home-grid home-grid--compact">
         {% for post in category_posts limit:3 %}
