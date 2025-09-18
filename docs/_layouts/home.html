@@ -29,15 +29,18 @@ layout: base
       <span class="home-chip home-chip--badge">{{ home_text.featured }}</span>
     </div>
     <article class="home-featured__card">
-      {% assign featured_image = featured_post.image | default: '/assets/images/default-avatar.svg' %}
-      <a class="home-featured__media" href="{{ featured_post.url }}">
-        <img src="{{ featured_image }}" alt="{{ featured_post.title }}" loading="lazy">
+      <a class="home-card__link" href="{{ featured_post.url }}" aria-label="{{ featured_post.title | escape }}">
+        <span class="sr-only">{{ featured_post.title }}</span>
       </a>
+      {% assign featured_image = featured_post.image | default: '/assets/images/default-avatar.svg' %}
+      <div class="home-featured__media">
+        <img src="{{ featured_image }}" alt="{{ featured_post.title }}" loading="lazy">
+      </div>
       <div class="home-featured__body">
         {% if featured_post.categorydisplay %}
         <span class="home-chip">{{ featured_post.categorydisplay }}</span>
         {% endif %}
-        <h2 class="home-featured__title"><a href="{{ featured_post.url }}">{{ featured_post.title }}</a></h2>
+        <h2 class="home-featured__title">{{ featured_post.title }}</h2>
         {% if featured_post.subtitle %}
         <p class="home-featured__excerpt">{{ featured_post.subtitle }}</p>
         {% endif %}
@@ -58,14 +61,17 @@ layout: base
       {% for post in rest_posts limit:4 %}
       {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
       <article class="home-card">
-        <a class="home-card__media" href="{{ post.url }}">
-          <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+        <a class="home-card__link" href="{{ post.url }}" aria-label="{{ post.title | escape }}">
+          <span class="sr-only">{{ post.title }}</span>
         </a>
+        <div class="home-card__media">
+          <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+        </div>
         <div class="home-card__body">
           {% if post.categorydisplay %}
           <span class="home-chip">{{ post.categorydisplay }}</span>
           {% endif %}
-          <h3 class="home-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <h3 class="home-card__title">{{ post.title }}</h3>
           {% if post.subtitle %}
           <p class="home-card__excerpt">{{ post.subtitle }}</p>
           {% endif %}
@@ -92,11 +98,14 @@ layout: base
         {% for post in category_posts limit:3 %}
         {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
         <article class="home-card home-card--compact">
-          <a class="home-card__media home-card__media--compact" href="{{ post.url }}">
-            <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+          <a class="home-card__link" href="{{ post.url }}" aria-label="{{ post.title | escape }}">
+            <span class="sr-only">{{ post.title }}</span>
           </a>
+          <div class="home-card__media home-card__media--compact">
+            <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
+          </div>
           <div class="home-card__body">
-            <h3 class="home-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="home-card__title">{{ post.title }}</h3>
             {% if post.subtitle %}
             <p class="home-card__excerpt">{{ post.subtitle }}</p>
             {% endif %}

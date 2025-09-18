@@ -86,7 +86,7 @@
 </div>
 
 <script>
-  (function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.sticky-header');
     if (!header) return;
 
@@ -102,14 +102,96 @@
     const navLinks = header.querySelectorAll('[data-nav-link]');
     const activeHeadingLabel = document.getElementById('sticky-active-heading');
     const mobileQuery = window.matchMedia('(max-width: 959px)');
-    const escapeIdentifier = (window.CSS && CSS.escape) ? CSS.escape : function (value) {
-      return String(value).replace(/[^a-zA-Z0-9_-]/g, '_');
-    };
+
+    const escapeIdentifier = (window.CSS && CSS.escape)
+      ? CSS.escape
+      : function (value) { return String(value).replace(/[^a-zA-Z0-9_-]/g, '_'); };
+
+    const languageSelect = document.getElementById('language-select');
+    const mobileLanguageSelect = document.getElementById('language-select-mobile');
+    const stickyLanguageSelect = document.getElementById('language-select-sticky');
+    const scrollKey = 'scrollPosition';
+
+    function navigateToLanguage(value) {
+      sessionStorage.setItem(scrollKey, window.scrollY);
+      let path = window.location.pathname.replace(/^\/(en|es)\//, '/');
+      if (value !== 'kr') path = '/' + value + path;
+      path = path.replace(/\/+/g, '/');
+      window.location.href = window.location.origin + path;
+    }
+
+    [languageSelect, mobileLanguageSelect, stickyLanguageSelect]
+      .filter(Boolean)
+      .forEach(select => {
+        select.addEventListener('change', event => {
+          const value = event.target.value;
+          [languageSelect, mobileLanguageSelect, stickyLanguageSelect]
+            .filter(Boolean)
+            .forEach(other => {
+              if (other !== event.target) other.value = value;
+            });
+          navigateToLanguage(value);
+        });
+      });
 
     let lastScrollY = window.scrollY;
     let scrollDirection = 'up';
     const showHeaderAt = 200;
     const headingOffset = 96;
+
+    const contentRoot = document.querySelector('.post-content')
+      || document.querySelector('.page-content article')
+      || document.querySelector('.page-content');
+
+    const headingNodes = contentRoot
+      ? Array.from(contentRoot.querySelectorAll('h2, h3')).filter(h => h.textContent.trim().length)
+      : [];
+
+    const tocEntries = headingNodes.map((heading, index) => {
+      if (!heading.id) {
+        const slug = heading.textContent.trim().toLowerCase()
+          .replace(/[^a-z0-9가-힣\s-]/g, '')
+          .replace(/\s+/g, '-');
+        heading.id = slug || `section-${index}`;
+      }
+      return {
+        id: heading.id,
+        title: heading.textContent.trim(),
+        level: heading.tagName === 'H3' ? 3 : 2
+      };
+    });
+
+    if (tocEntries.length && tocList) {
+      const fragment = document.createDocumentFragment();
+      tocEntries.forEach((entry, idx) => {
+        const li = document.createElement('li');
+        li.className = 'sticky-header__toc-item';
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'sticky-header__toc-link';
+        button.dataset.targetId = entry.id;
+        button.dataset.level = String(entry.level);
+        button.textContent = entry.title;
+        button.style.transitionDelay = `${idx * 40}ms`;
+        li.appendChild(button);
+        fragment.appendChild(li);
+      });
+      tocList.innerHTML = '';
+      tocList.appendChild(fragment);
+
+      tocList.addEventListener('click', event => {
+        const target = event.target.closest('.sticky-header__toc-link');
+        if (!target) return;
+        smoothScrollTo(`#${escapeIdentifier(target.dataset.targetId)}`);
+        setTocState(false);
+      });
+    } else {
+      tocToggleButtons.forEach(btn => {
+        btn.setAttribute('disabled', 'true');
+        btn.classList.add('is-disabled');
+      });
+      if (tocPanel) tocPanel.style.display = 'none';
+    }
 
     function setMenuState(open) {
       header.setAttribute('data-menu-open', open ? 'true' : 'false');
@@ -120,7 +202,8 @@
     function setTocState(open) {
       header.setAttribute('data-toc-open', open ? 'true' : 'false');
       tocToggleButtons.forEach(btn => btn.setAttribute('aria-expanded', open ? 'true' : 'false'));
-      if (open) header.classList.remove('is-hidden');
+      if (!open) return;
+      header.classList.remove('is-hidden');
     }
 
     function updateProgress() {
@@ -130,11 +213,6 @@
       progressBar.style.width = Math.min(Math.max(scrolled, 0), 100) + '%';
     }
 
-    function setStickyVisibility(active) {
-      header.classList.toggle('is-active', active);
-      if (!active) header.classList.remove('is-hidden');
-    }
-
     function handleScrollDirection() {
       const currentY = window.scrollY;
       const delta = currentY - lastScrollY;
@@ -142,81 +220,6 @@
         scrollDirection = delta > 0 ? 'down' : 'up';
       }
       lastScrollY = currentY;
-    }
-
-    function handleStickyOnScroll() {
-      updateProgress();
-      handleScrollDirection();
-
-      const shouldShow = window.scrollY > showHeaderAt;
-      setStickyVisibility(shouldShow);
-
-      if (shouldShow) {
-        const tocOpen = header.getAttribute('data-toc-open') === 'true';
-        const menuOpen = header.getAttribute('data-menu-open') === 'true';
-        const isMobile = mobileQuery.matches;
-
-        if (isMobile && scrollDirection === 'down' && !tocOpen && !menuOpen) {
-          header.classList.add('is-hidden');
-        } else {
-          header.classList.remove('is-hidden');
-        }
-      } else {
-        header.classList.remove('is-hidden');
-      }
-
-      updateActiveHeading();
-    }
-
-    const contentRoot = document.querySelector('main .post-content') || document.querySelector('main article') || document.querySelector('main');
-    const headings = contentRoot ? Array.from(contentRoot.querySelectorAll('h2, h3')).filter(h => h.textContent.trim().length) : [];
-    const tocEntries = [];
-
-    if (headings.length) {
-      headings.forEach((heading, index) => {
-        if (!heading.id) {
-          const slug = heading.textContent.trim().toLowerCase()
-            .replace(/[^a-z0-9가-힣\s-]/g, '')
-            .replace(/\s+/g, '-');
-          heading.id = slug || `section-${index}`;
-        }
-        tocEntries.push({
-          id: heading.id,
-          title: heading.textContent.trim(),
-          level: heading.tagName === 'H3' ? 3 : 2
-        });
-      });
-
-      if (tocList) {
-        const fragment = document.createDocumentFragment();
-        tocEntries.forEach((entry, idx) => {
-          const li = document.createElement('li');
-          li.className = 'sticky-header__toc-item';
-          const button = document.createElement('button');
-          button.type = 'button';
-          button.className = 'sticky-header__toc-link';
-          button.dataset.targetId = entry.id;
-          button.dataset.level = String(entry.level);
-          button.textContent = entry.title;
-          button.style.transitionDelay = `${idx * 40}ms`;
-          li.appendChild(button);
-          fragment.appendChild(li);
-        });
-        tocList.innerHTML = '';
-        tocList.appendChild(fragment);
-
-        tocList.addEventListener('click', function (event) {
-          const target = event.target.closest('.sticky-header__toc-link');
-          if (target && target.dataset.targetId) {
-            smoothScrollTo(`#${escapeIdentifier(target.dataset.targetId)}`);
-            setTocState(false);
-          }
-        });
-      }
-    } else {
-      tocToggleButtons.forEach(btn => btn.setAttribute('disabled', 'true'));
-      header.classList.add('sticky-header--no-toc');
-      if (tocPanel) tocPanel.style.display = 'none';
     }
 
     function smoothScrollTo(selector) {
@@ -249,17 +252,39 @@
       }
     }
 
+    function handleStickyOnScroll() {
+      updateProgress();
+      handleScrollDirection();
+
+      const shouldShow = window.scrollY > showHeaderAt;
+      header.classList.toggle('is-active', shouldShow);
+
+      if (shouldShow) {
+        const tocOpen = header.getAttribute('data-toc-open') === 'true';
+        const menuOpen = header.getAttribute('data-menu-open') === 'true';
+        const isMobile = mobileQuery.matches;
+
+        if (isMobile && scrollDirection === 'down' && !tocOpen && !menuOpen) {
+          header.classList.add('is-hidden');
+        } else {
+          header.classList.remove('is-hidden');
+        }
+      } else {
+        header.classList.remove('is-hidden');
+      }
+
+      updateActiveHeading();
+    }
+
     tocToggleButtons.forEach(button => {
-      button.addEventListener('click', function () {
+      button.addEventListener('click', () => {
         if (button.hasAttribute('disabled')) return;
         const isOpen = header.getAttribute('data-toc-open') === 'true';
         setTocState(!isOpen);
       });
     });
 
-    if (tocCloseButton) {
-      tocCloseButton.addEventListener('click', () => setTocState(false));
-    }
+    if (tocCloseButton) tocCloseButton.addEventListener('click', () => setTocState(false));
 
     if (menuToggle) {
       menuToggle.addEventListener('click', () => {
@@ -269,14 +294,14 @@
       });
     }
 
-    document.addEventListener('click', function (event) {
+    document.addEventListener('click', event => {
       if (!header.contains(event.target)) {
         setMenuState(false);
         setTocState(false);
       }
     });
 
-    document.addEventListener('keydown', function (event) {
+    document.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
         setMenuState(false);
         setTocState(false);
@@ -311,5 +336,5 @@
     window.addEventListener('resize', updateActiveHeading);
     handleStickyOnScroll();
     updateActiveHeading();
-  })();
+  });
 </script>

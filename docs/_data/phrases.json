@@ -45,8 +45,8 @@
       "logout_button": "Logout",
       "submit_button": "Submit",
       "comment_placeholder": "Leave a comment...",
-      "toc_label": "Table of Contents",
-      "toc_close": "Close table of contents"
+      "toc_label": "TOC",
+      "toc_close": "Close"
     },
     "home_page": {
       "eyebrow": "Welcome to the hut",
@@ -104,8 +104,8 @@
       "logout_button": "Cerrar sesión",
       "submit_button": "Enviar",
       "comment_placeholder": "Deja un comentario...",
-      "toc_label": "Tabla de contenidos",
-      "toc_close": "Cerrar tabla"
+      "toc_label": "Índice",
+      "toc_close": "Cerrar"
     },
     "home_page": {
       "eyebrow": "Bienvenido al refugio",
