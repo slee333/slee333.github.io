@@ -25,8 +25,6 @@
     "otherpostsinsamecategory": "Other posts in the same category",
     "footer-subscription": {
       "subscription-request": "Subscribe to My Updates",
-      "firstname": "First Name",
-      "lastname": "Last Name",
       "email": "Email",
       "signup": "Sign Up",
       "success": "Thank you for subscribing!",
@@ -55,7 +53,19 @@
       "recent_posts": "Recent Posts",
       "categories_heading": "Browse by Category",
       "load_more": "Load more posts",
-      "no_results": "No posts match the current filters."
+      "no_results": "No posts match the current filters.",
+      "topics_title": "Core Topics",
+      "topics": []
+    },
+    "footer": {
+      "tagline": "A personal blog by Seung Wook Lee.",
+      "topics_title": "",
+      "categories_title": "Links",
+      "subscribe_title": "Subscribe to the newsletter",
+      "subscribe_subtext": "Get email updates with my latest posts and thoughts.",
+      "subscribe_privacy": "No spam, unsubscribe at any time.",
+      "copyright": "© {year} Seung Wook Lee. All rights reserved.",
+      "made_with": ""
     }
   },
   "es": {
@@ -84,8 +94,6 @@
     "otherpostsinsamecategory": "Otras entradas en la misma categoría",
     "footer-subscription": {
       "subscription-request": "Suscríbete a mis actualizaciones",
-      "firstname": "Nombre",
-      "lastname": "Apellido",
       "email": "Correo electrónico",
       "signup": "Regístrate",
       "success": "¡Gracias por suscribirte!",
@@ -114,7 +122,19 @@
       "recent_posts": "Publicaciones recientes",
       "categories_heading": "Explorar por categoría",
       "load_more": "Ver más entradas",
-      "no_results": "No hay entradas que coincidan con los filtros."
+      "no_results": "No hay entradas que coincidan con los filtros.",
+      "topics_title": "",
+      "topics": []
+    },
+    "footer": {
+      "tagline": "Un blog personal de Seung Wook Lee.",
+      "topics_title": "",
+      "categories_title": "Enlaces",
+      "subscribe_title": "Suscríbete al boletín",
+      "subscribe_subtext": "Recibe actualizaciones por correo electrónico con mis últimas publicaciones y pensamientos.",
+      "subscribe_privacy": "Sin spam, cancela la suscripción en cualquier momento.",
+      "copyright": "© {year} Seung Wook Lee. Todos los derechos reservados.",
+      "made_with": ""
     }
   },
   "kr": {
@@ -143,8 +163,6 @@
     "otherpostsinsamecategory": "해당 카테고리 다른 글 보기",
     "footer-subscription": {
       "subscription-request": "업데이트 구독하기",
-      "firstname": "이름",
-      "lastname": "성",
       "email": "이메일",
       "signup": "구독하기",
       "success": "구독해주셔서 감사합니다!",
@@ -173,7 +191,19 @@
       "recent_posts": "최근 글",
       "categories_heading": "카테고리 살펴보기",
       "load_more": "더 많은 글 보기",
-      "no_results": "현재 필터와 일치하는 글이 없습니다."
+      "no_results": "현재 필터와 일치하는 글이 없습니다.",
+      "topics_title": "",
+      "topics": []
+    },
+    "footer": {
+      "tagline": "개인의 이야기 및 임상 현장과 기술을 연결하는 의료정보학 여정을 기록하는 공간.",
+      "topics_title": "",
+      "categories_title": "링크",
+      "subscribe_title": "뉴스레터 구독하기",
+      "subscribe_subtext": "의료정보학, 데이터 과학, 디지털 헬스케어 관련 최신 동향을 놓치지 마세요.",
+      "subscribe_privacy": "스팸은 보내지 않으며, 언제든지 구독을 취소할 수 있습니다.",
+      "copyright": "© {year} 이승욱. 모든 권리 보유.",
+      "made_with": ""
     }
   }
 }

@@ -1,138 +1,98 @@
-<footer class="site-footer h-card">
-  <div class="wrapper">
+<!-- this is a comment -->
+{% assign phrases = site.data.phrases[page.lang] %}
+{% assign home_text = phrases.home_page %}
+{% assign current_year = site.time | date: '%Y' %}
+<footer class="site-footer">
+  <div class="site-footer__backdrop"></div>
+  <div class="site-footer__inner">
+    <div class="site-footer__grid">
+      <div class="footer-block footer-block--brand">
+        <div class="footer-brand">{{ site.title }}</div>
+        <p class="footer-tagline">{{ phrases.footer.tagline }}</p>
+        
+      </div>
 
-    <!-- Row for Logo (Takes 100% horizontal space) -->
-    <div class="footer-logo-row">
-      <a class="site-title footer-title" rel="author"
-        href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">{{
-        site.title }}</a>
-    </div>
-
-    <!-- Row with 2 Columns: Links on the Left and Subscription on the Right (Takes 100% horizontal space) -->
-    <div class="footer-row">
-      <!-- Left Column: Links to Pages -->
-      <div class="footer-col">
-        <ul class="footer-links">
-          <li><a href="{{ site.baseurl }}/about">{{
-              site.data.phrases[page.lang]["navbar"]["about"] }}</a></li>
-          <li><a href="{{ site.baseurl }}/life">{{
-              site.data.phrases[page.lang]["navbar"]["life"] }}</a></li>
-          <li><a href="{{ site.baseurl }}/cifellowship">{{
-              site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a></li>
-          <li><a href="{{ site.baseurl }}/learning">{{
-              site.data.phrases[page.lang]["navbar"]["learning"] }}</a></li>
-          <li><a href="{{ site.baseurl }}/research">{{
-              site.data.phrases[page.lang]["navbar"]["research"] }}</a></li>
+      <div class="footer-block footer-block--links">
+        <div class="footer-section-title">{{ phrases.footer.categories_title }}</div>
+        <ul class="footer-link-list">
+          {% assign category_order = "learning,cifellowship,life,research" | split: "," %}
+          {% for category in category_order %}
+          <li>
+            <a href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{{ category }}{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ category }}{% endif %}">
+              {{ phrases.categories[category] }}
+            </a>
+          </li>
+          {% endfor %}
+          <li>
+            <a href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">
+              {{ phrases.navbar.about }}
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Right Column: Email Subscription Form -->
-      <div class="footer-col subscribe">
-        <h3>{{site.data.phrases[page.lang]["footer-subscription"]["subscription-request"] }}</h3>
-        <form id="subscription-form">
-          <input type="text" id="first-name" name="first-name" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['firstname'] }}" required>
-          <input type="text" id="last-name" name="last-name" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['lastname'] }}" required>
-          <input type="email" id="email" name="email" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['email'] }}" required>
-          <div id="submission-wrapper">
-            <button type="submit">{{ site.data.phrases[page.lang]["footer-subscription"]["signup"] }}</button>
-            <div id="subscription-message" style="display: none;"></div>
+      <div class="footer-block footer-block--subscribe">
+        <div class="footer-section-title">{{ phrases.footer.subscribe_title }}</div>
+        <p class="footer-subtext">{{ phrases.footer.subscribe_subtext }}</p>
+        <form id="subscription-form" class="footer-form">
+          <div class="footer-form__row">
+            <input type="email" id="email" name="email" placeholder="{{ site.data.phrases[page.lang]['footer-subscription']['email'] }}" required>
+            <button type="submit">{{ site.data.phrases[page.lang]['footer-subscription']['signup'] }}</button>
           </div>
-          
+          <div id="subscription-message" class="footer-form__message" style="display:none;"></div>
         </form>
-
-        <!-- Add a container to display success message -->
-        
+        <p class="footer-privacy">{{ phrases.footer.subscribe_privacy }}</p>
       </div>
     </div>
 
-    <!-- Footer bottom (Terms, Privacy, etc.) -->
     <div class="footer-bottom">
-      <p>© {{ site.time | date: "%Y" }} Seung Wook Lee</p>
-      <!-- <p><a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a> | <a
-          href="{{ site.baseurl }}/terms-of-use">Terms of Use</a> | <a href="{{ site.baseurl }}/contact">Contact</a></p> -->
+      <div class="footer-bottom__text">2025 Seung Wook Lee</div>
     </div>
-
   </div>
 </footer>
-<style>
-  #submission-wrapper button {
-    width: 100%;
-  }
 
-  @media (max-width: 768px) {
-    #subscription-form {
-      padding-left: 2em;
-    }
-
-    .subscribe {
-      padding-left: 2em;
-    }
-  }
-
-</style>
 <script>
-  // For secret key for web app to manage subscribers. Secret stored in github's repository secrets.
   const webAppUrl = "{{ site.web_app_url }}";
-
-  const phrases = {
+  const phrasesFooter = {
     successMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['success'] }}",
     errorMessage: "{{ site.data.phrases[page.lang]['footer-subscription']['error'] }}"
   };
-
   const form = document.getElementById('subscription-form');
   const messageContainer = document.getElementById('subscription-message');
-  // Get the language from Jekyll templating (as a string)
   const lang = "{{ page.lang }}";
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const data = {
-      'first-name': document.getElementById('first-name').value,
-      'last-name': document.getElementById('last-name').value,
-      'email': document.getElementById('email').value,
-      'language': lang,
-    };
-
-    console.log(data);
-
-    // Add basic validation before making the request
-    if (data['first-name'] && data['last-name'] && data['email']) {
-      // Basic email validation
-      if (!validateEmail(data['email'])) {
-        messageContainer.textContent = "Invalid email format.";
-        messageContainer.style.display = 'block';
-        return;
-      }
-      
-      // Submit the form data
-      fetch(webAppUrl, {
-        method: 'POST',
-        mode: 'no-cors',  // No CORS mode for request
-        body: JSON.stringify(data),
-      })
-        .then(() => {
-          // Display success message (optimistic UI update)
-          messageContainer.textContent = phrases.successMessage;
-          messageContainer.style.display = 'block';
-          form.reset();  // Clear the form after submission
-        })
-        .catch(error => {
-          // Log the error, although this won't handle server-side errors
-          console.error('Network Error:', error);
-          messageContainer.textContent = phrases.errorMessage;
-          messageContainer.style.display = 'block';
-        });
-    } else {
-      // If form validation fails
-      messageContainer.textContent = "Please fill in all fields.";
-      messageContainer.style.display = 'block';
-    }
-  });
-
-  // Simple email validation function
   function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const data = {
+        'email': document.getElementById('email').value,
+        'language': lang,
+      };
+
+      if (validateEmail(data['email'])) {
+        fetch(webAppUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: JSON.stringify(data),
+        })
+          .then(() => {
+            messageContainer.textContent = phrasesFooter.successMessage;
+            messageContainer.style.display = 'block';
+            form.reset();
+          })
+          .catch(() => {
+            messageContainer.textContent = phrasesFooter.errorMessage;
+            messageContainer.style.display = 'block';
+          });
+      } else {
+        messageContainer.textContent = phrasesFooter.errorMessage;
+        messageContainer.style.display = 'block';
+      }
+    });
   }
 </script>
