@@ -89,6 +89,7 @@
 
     function handleLanguageChange(event) {
       const value = event.target.value;
+      localStorage.setItem('swl_lang', value);
       syncLanguageControls(value, event.target);
       navigateToLanguage(value);
     }

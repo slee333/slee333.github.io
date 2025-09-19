@@ -19,3 +19,70 @@
   {%- endfor -%}
 
 {%- endif -%}
+
+<script>
+(function () {
+  var SUPPORTED = ['ko','en','es'];
+  var DEFAULT = 'ko';
+  var ua = (navigator.userAgent || '').toLowerCase();
+
+  // 1. Exit if bot or if redirection is manually disabled.
+  if (/bot|crawler|spider|crawling/.test(ua)) return;
+  var qs = new URLSearchParams(location.search);
+  if (qs.get('nolang') === '1') return;
+
+  // 2. Determine the language of the current page from its URL path.
+  var path = location.pathname;
+  var m = path.match(/^\/(en|es)(\/|$)/);
+  var pathLang = m ? m[1] : 'ko';
+
+  // 3. Handle returning visitors with a stored language preference.
+  var storedLang = localStorage.getItem('swl_lang');
+  if (storedLang && SUPPORTED.includes(storedLang)) {
+    if (storedLang !== pathLang) {
+      var rest = (pathLang === 'ko') ? path : path.replace(/^\/(en|es)/, '');
+      var targetPath = (storedLang === 'ko') ? rest : ('/' + storedLang + rest);
+      targetPath = targetPath.replace(/\/{2,}/g, '/');
+      
+      // Check if the target page exists, then redirect. Use HEAD for efficiency.
+      fetch(targetPath, { method: 'HEAD', credentials: 'same-origin' })
+        .then(function (res) {
+          if (res.ok) {
+            location.replace(targetPath + location.search + location.hash);
+          }
+        }).catch(function(){ /* Ignore network errors */ });
+    }
+    return; // Stop further execution for returning users.
+  }
+
+  // 4. Handle new visitors: Detect browser language.
+  function pickBrowserLang() {
+    var list = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language||'']).map(String);
+    for (var i=0; i<list.length; i++){
+      var t = list[i].toLowerCase();
+      if (t.startsWith('es')) return 'es';
+      if (t.startsWith('en')) return 'en';
+      if (t.startsWith('ko')) return 'ko';
+    }
+    return DEFAULT;
+  }
+  var preferredLang = pickBrowserLang();
+
+  // 5. If preferred language is different, check for the page and redirect.
+  if (preferredLang !== pathLang) {
+    var rest = (pathLang === 'ko') ? path : path.replace(/^\/(en|es)/, '');
+    var targetPath = (preferredLang === 'ko') ? rest : ('/' + preferredLang + rest);
+    targetPath = targetPath.replace(/\/{2,}/g, '/');
+
+    fetch(targetPath, { method: 'HEAD', credentials: 'same-origin' })
+      .then(function (res) {
+        if (res.ok) {
+          // Save the preference for future visits and then redirect.
+          localStorage.setItem('swl_lang', preferredLang);
+          location.replace(targetPath + location.search + location.hash);
+        }
+      })
+      .catch(function(){ /* Ignore network errors */ });
+  }
+})();
+</script>

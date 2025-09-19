@@ -19,12 +19,20 @@ This document defines Gemini's role and the core rules for improving and managin
 
 This is a high-level overview of the Jekyll project structure for my reference.
 
-- `_posts/`: Contains all blog posts, organized first by language (`kr`, `en`, `es`).
+- `_posts/`: Contains all blog posts. It's organized first by language (`kr`, `en`, `es`) and then by category (e.g., `cifellowship`, `learning`, `life`).
 - `_layouts/`: Contains the main HTML layouts (`base.html`, `post.html`, `page.html`, `home.html`).
-- `_includes/`: Reusable HTML snippets (e.g., `header.html`, `footer.html`). Some of these may contain inline `<style>` or `<script>` blocks.
-- `_data/`: Site-wide data files. `phrases.json` for UI text and `tags.yml` for tag definitions.
-- `assets/css/style.scss`: The main stylesheet. It imports the base theme and contains **all custom styles for the site**. This is the primary file for CSS modifications.
-- `_sass/minima`: The base theme's original style files. We generally avoid editing these directly.
+- `_includes/`: Reusable HTML snippets (e.g., `header.html`, `footer.html`, `social.html`). Some of these may contain inline `<style>` or `<script>` blocks.
+- `_data/`: Site-wide data files, such as `phrases.json` for UI text translations and `tags.yml` for tag definitions.
+- `assets/`: Contains all static assets.
+    - `css/style.scss`: The main stylesheet. It imports the base theme and all custom styles. **This is the primary file for CSS modifications.**
+    - `fonts/`: Holds custom font files used in the site's design.
+    - `images/`: Stores images used in posts and layouts.
+    - `js/`: Contains custom JavaScript files for interactive features.
+- `_sass/`: Contains the source SASS files.
+    - `minima/`: The base theme's original style files. We generally avoid editing these directly.
+    - `custom/`: Contains all custom SASS partials, organized by feature (e.g., `_animations.scss`, `_fonts.scss`). These are imported into `assets/css/style.scss`.
+- `*.md`: Markdown files in the root (e.g., `0_about.md`, `1_life.md`) define the site's main pages and their multilingual variations.
+- `*.py`: Various Python helper scripts used for automating workflows, such as `new_blog_workflow.py` for the Notion-to-Jekyll pipeline.
 - `GEMINI.md`: This file, containing our collaboration rules.
 
 ---

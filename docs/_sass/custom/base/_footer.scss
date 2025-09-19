@@ -216,6 +216,17 @@
   .site-footer__inner {
     padding: 0 1.5rem;
   }
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "links"
+      "subscribe";
+    gap: 2rem;
+  }
+  .footer-block--subscribe {
+    margin-left: 0;
+  }
   .footer-block {
     padding: 1.5rem;
   }
