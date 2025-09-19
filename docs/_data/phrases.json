@@ -41,10 +41,23 @@
       "naver_button": "Naver",
       "kakao_button": "Kakao",
       "logout_button": "Logout",
+      "edit_profile": "Edit profile",
       "submit_button": "Submit",
       "comment_placeholder": "Leave a comment...",
       "toc_label": "TOC",
-      "toc_close": "Close"
+      "toc_close": "Close",
+      "commenting_as": "Commenting as {name}",
+      "profile_menu_my_comments": "My comments",
+      "profile_modal_title": "Profile settings",
+      "profile_modal_name_label": "Display name",
+      "profile_modal_photo_label": "Photo URL",
+      "profile_modal_photo_helper": "Paste an image URL or upload a new picture.",
+      "profile_modal_upload": "Upload photo",
+      "profile_modal_uploading": "Uploading…",
+      "profile_modal_remove": "Remove photo",
+      "profile_modal_cancel": "Cancel",
+      "profile_modal_save": "Save changes",
+      "no_personal_comments": "You haven't written any comments yet."
     },
     "home_page": {
       "eyebrow": "Welcome to the hut",
@@ -66,6 +79,15 @@
       "subscribe_privacy": "No spam, unsubscribe at any time.",
       "copyright": "© {year} Seung Wook Lee. All rights reserved.",
       "made_with": ""
+    },
+    "category_page": {
+      "search_label": "Search this category",
+      "search_placeholder": "Search posts, tags, or keywords",
+      "search_clear": "Clear",
+      "stat_posts": "Posts",
+      "stat_updated": "Last updated",
+      "empty_title": "No posts match",
+      "empty_message": "Try adjusting the filters or search again."
     }
   },
   "es": {
@@ -110,10 +132,23 @@
       "naver_button": "Naver",
       "kakao_button": "Kakao",
       "logout_button": "Cerrar sesión",
+      "edit_profile": "Editar perfil",
       "submit_button": "Enviar",
       "comment_placeholder": "Deja un comentario...",
       "toc_label": "Índice",
-      "toc_close": "Cerrar"
+      "toc_close": "Cerrar",
+      "commenting_as": "Comentando como {name}",
+      "profile_menu_my_comments": "Ver mis comentarios",
+      "profile_modal_title": "Configuración del perfil",
+      "profile_modal_name_label": "Nombre visible",
+      "profile_modal_photo_label": "URL de la foto",
+      "profile_modal_photo_helper": "Pega una URL de imagen o sube una nueva foto.",
+      "profile_modal_upload": "Subir foto",
+      "profile_modal_uploading": "Subiendo…",
+      "profile_modal_remove": "Quitar foto",
+      "profile_modal_cancel": "Cancelar",
+      "profile_modal_save": "Guardar cambios",
+      "no_personal_comments": "Todavía no has escrito comentarios."
     },
     "home_page": {
       "eyebrow": "Bienvenido al refugio",
@@ -135,6 +170,15 @@
       "subscribe_privacy": "Sin spam, cancela la suscripción en cualquier momento.",
       "copyright": "© {year} Seung Wook Lee. Todos los derechos reservados.",
       "made_with": ""
+    },
+    "category_page": {
+      "search_label": "Buscar en esta categoría",
+      "search_placeholder": "Busca entradas, etiquetas o palabras clave",
+      "search_clear": "Limpiar",
+      "stat_posts": "Publicaciones",
+      "stat_updated": "Última actualización",
+      "empty_title": "Sin coincidencias",
+      "empty_message": "Ajusta los filtros o intenta otra búsqueda."
     }
   },
   "kr": {
@@ -179,10 +223,23 @@
       "naver_button": "네이버",
       "kakao_button": "카카오",
       "logout_button": "로그아웃",
+      "edit_profile": "프로필 수정",
       "submit_button": "등록",
       "comment_placeholder": "댓글을 남겨주세요...",
       "toc_label": "목차",
-      "toc_close": "목차 닫기"
+      "toc_close": "목차 닫기",
+      "commenting_as": "{name} 님으로 댓글 작성 중",
+      "profile_menu_my_comments": "내 댓글 보기",
+      "profile_modal_title": "프로필 설정",
+      "profile_modal_name_label": "표시 이름",
+      "profile_modal_photo_label": "프로필 사진 URL",
+      "profile_modal_photo_helper": "이미지 URL을 붙여넣거나 새로운 사진을 업로드할 수 있어요.",
+      "profile_modal_upload": "사진 업로드",
+      "profile_modal_uploading": "업로드 중…",
+      "profile_modal_remove": "사진 제거",
+      "profile_modal_cancel": "취소",
+      "profile_modal_save": "저장",
+      "no_personal_comments": "아직 작성한 댓글이 없습니다."
     },
     "home_page": {
       "eyebrow": "어서 오세요",
@@ -204,6 +261,15 @@
       "subscribe_privacy": "스팸은 보내지 않으며, 언제든지 구독을 취소할 수 있습니다.",
       "copyright": "© {year} 이승욱. 모든 권리 보유.",
       "made_with": ""
+    },
+    "category_page": {
+      "search_label": "카테고리에서 검색",
+      "search_placeholder": "글 제목, 태그, 키워드로 검색",
+      "search_clear": "지우기",
+      "stat_posts": "전체 글",
+      "stat_updated": "최근 업데이트",
+      "empty_title": "일치하는 글이 없습니다",
+      "empty_message": "필터를 조정하거나 다른 검색어를 입력해보세요."
     }
   }
 }

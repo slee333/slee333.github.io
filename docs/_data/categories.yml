@@ -1,8 +1,20 @@
 learning:
   color: "#FFD700"
+  icon: "📘"
+  gradient_from: "#fff7d6"
+  gradient_to: "#fff1bf"
 cifellowship:
   color: "#4682B4"
+  icon: "🩺"
+  gradient_from: "#e8f1fb"
+  gradient_to: "#eef5ff"
 life:
   color: "#32CD32"
+  icon: "🌱"
+  gradient_from: "#e8f7ee"
+  gradient_to: "#ecf8ff"
 research:
   color: "#FF6347"
+  icon: "🔬"
+  gradient_from: "#ffede7"
+  gradient_to: "#fff4ef"

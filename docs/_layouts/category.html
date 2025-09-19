@@ -1,0 +1,323 @@
+﻿---
+layout: base
+---
+
+{% assign phrases = site.data.phrases[page.lang] %}
+{% assign category_slug = page.category_slug | default: page.categories %}
+{% if category_slug %}
+  {% assign category_data = site.data.categories[category_slug] | default: {} %}
+  {% assign category_color = category_data.color | default: '#4195e0' %}
+  {% assign gradient_from = category_data.gradient_from | default: '#eef4ff' %}
+  {% assign gradient_to = category_data.gradient_to | default: '#f8fbff' %}
+  {% assign category_icon = page.hero_icon | default: category_data.icon | default: '✨' %}
+  {% assign localized_category = phrases.categories[category_slug] | default: page.title %}
+  {% assign category_posts = site.categories[category_slug] | where: 'lang', page.lang %}
+  {% unless category_posts %}
+    {% assign category_posts = '' | split: '' %}
+  {% endunless %}
+  {% assign category_posts = category_posts | sort: 'date' | reverse %}
+  {% assign latest_post = category_posts | first %}
+  {% assign tags_info = '' | split: '' %}
+  {% assign seen_tag_slugs = '' | split: '' %}
+  {% for post in category_posts %}
+    {% if post.tags %}
+      {% for tag in post.tags %}
+        {% assign tag_slug = tag | downcase %}
+        {% unless seen_tag_slugs contains tag_slug %}
+          {% assign tag_data = site.data.tags[tag] %}
+          {% if tag_data %}
+            {% assign tag_label = tag_data[page.lang] | default: tag %}
+          {% else %}
+            {% assign tag_label = tag %}
+          {% endif %}
+          {% assign tag_entry = tag_slug | append: '::' | append: tag_label %}
+          {% assign tags_info = tags_info | push: tag_entry %}
+          {% assign seen_tag_slugs = seen_tag_slugs | push: tag_slug %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% assign tags_info = tags_info | sort %}
+
+  <div class="category-page-modern" style="--category-accent: {{ category_color }}; --category-gradient-from: {{ gradient_from }}; --category-gradient-to: {{ gradient_to }};">
+    <section class="category-hero">
+      <div class="category-hero__glow" aria-hidden="true"></div>
+      <div class="category-hero__inner">
+        <div class="category-hero__eyebrow">
+          <span class="category-hero__icon" aria-hidden="true">{{ category_icon }}</span>
+          <span>{{ localized_category }}</span>
+        </div>
+        <h1 class="category-hero__title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="category-hero__subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        <div class="category-hero__description">{{ content }}</div>
+        <dl class="category-hero__stats">
+          <div class="category-hero__stat">
+            <dt>{{ phrases.category_page.stat_posts }}</dt>
+            <dd id="posts-count-hero">{{ category_posts.size }}</dd>
+          </div>
+          {% if latest_post %}
+          <div class="category-hero__stat">
+            <dt>{{ phrases.category_page.stat_updated }}</dt>
+            <dd>
+              <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: '%B %d, %Y' }}</time>
+            </dd>
+          </div>
+          {% endif %}
+        </dl>
+      </div>
+    </section>
+
+    <section class="category-filters">
+      <div class="category-filters__inner">
+        <div class="category-search">
+          <label class="sr-only" for="category-search">{{ phrases.category_page.search_label }}</label>
+          <span class="category-search__icon" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M9 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 9.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6.78 1.72-2.5-2.5a.75.75 0 1 1 1.06-1.06l2.5 2.5a.75.75 0 0 1-1.06 1.06Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <input id="category-search" type="search" name="category-search" autocomplete="off" placeholder="{{ phrases.category_page.search_placeholder }}">
+          <button type="button" class="category-search__clear" id="search-clear" hidden>{{ phrases.category_page.search_clear }}</button>
+        </div>
+
+        {% if tags_info.size > 0 %}
+        <div class="category-filters__group">
+          <span class="category-filters__label">{{ phrases.filterbytags }}</span>
+          <div class="category-filters__chips" id="tag-filters">
+            {% for tag_entry in tags_info %}
+              {% assign tag_parts = tag_entry | split: '::' %}
+              {% assign tag_slug = tag_parts[0] %}
+              {% assign tag_label = tag_parts[1] %}
+              <button type="button" class="category-chip" data-tag-filter="{{ tag_slug }}">{{ tag_label }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <button type="button" class="category-filters__reset" id="tag-reset" disabled>{{ phrases.resetfilters }}</button>
+      </div>
+    </section>
+
+    <section class="category-posts">
+      <div class="category-posts__header">
+        <h2 class="category-posts__title">{{ phrases.postsinthiscategory }}</h2>
+        <span class="category-posts__count" id="posts-count">{{ category_posts.size }}</span>
+      </div>
+      <div class="category-posts__grid" id="posts-container">
+        {% for post in category_posts %}
+          {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
+          {% assign content_length = post.content | size %}
+          {% assign reading_time = content_length | divided_by: 1200 %}
+          {% if reading_time == 0 %}{% assign reading_time = 1 %}{% endif %}
+          {% assign tag_slugs = '' %}
+          {% assign localized_tags = '' | split: '' %}
+          {% if post.tags %}
+            {% for tag in post.tags %}
+              {% assign tag_slug = tag | downcase %}
+              {% assign tag_data = site.data.tags[tag] %}
+              {% if tag_data %}
+                {% assign tag_label = tag_data[page.lang] | default: tag %}
+              {% else %}
+                {% assign tag_label = tag %}
+              {% endif %}
+              {% assign localized_tags = localized_tags | push: tag_label %}
+              {% if tag_slugs == '' %}
+                {% assign tag_slugs = tag_slug %}
+              {% else %}
+                {% assign tag_slugs = tag_slugs | append: '|' | append: tag_slug %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% assign excerpt_source = post.subtitle | default: post.excerpt | default: post.content %}
+          {% assign clean_excerpt = excerpt_source | strip_html | strip_newlines %}
+          {% if clean_excerpt == '' %}
+            {% assign clean_excerpt = post.content | strip_html | strip_newlines %}
+          {% endif %}
+          {% assign display_excerpt = clean_excerpt | truncate: 160 %}
+          <article class="category-card" data-tags="{{ tag_slugs }}" data-title="{{ post.title | strip_html | downcase | escape }}" data-excerpt="{{ clean_excerpt | downcase | escape }}">
+            <a class="category-card__link" href="{{ post.url }}" aria-label="{{ post.title | escape }}">
+              <span class="sr-only">{{ post.title }}</span>
+            </a>
+            <div class="category-card__media">
+              <img src="{{ post_image }}" alt="{{ post.title | escape }}" loading="lazy">
+              <div class="category-card__media-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="category-card__body">
+              {% if localized_tags.size > 0 %}
+              <div class="category-card__tags">
+                {% for tag_label in localized_tags limit:3 %}
+                <span class="category-card__tag">{{ tag_label }}</span>
+                {% endfor %}
+                {% if localized_tags.size > 3 %}
+                <span class="category-card__tag is-more">+{{ localized_tags.size | minus: 3 }}</span>
+                {% endif %}
+              </div>
+              {% endif %}
+              <h3 class="category-card__title">{{ post.title }}</h3>
+              {% if post.subtitle %}
+              <p class="category-card__excerpt">{{ post.subtitle }}</p>
+              {% elsif display_excerpt != '' %}
+              <p class="category-card__excerpt">{{ display_excerpt }}</p>
+              {% endif %}
+              <div class="category-card__meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                <span class="category-card__meta-dot" aria-hidden="true"></span>
+                <span>{{ reading_time }} {{ phrases.minutesread }}</span>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      <div class="category-posts__empty" id="empty-state" hidden>
+        <div class="category-posts__empty-icon" aria-hidden="true">🔍</div>
+        <h3 class="category-posts__empty-title">{{ phrases.category_page.empty_title }}</h3>
+        <p class="category-posts__empty-copy">{{ phrases.category_page.empty_message }}</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cards = Array.from(document.querySelectorAll('.category-card'));
+    const filterChips = Array.from(document.querySelectorAll('[data-tag-filter]'));
+    const resetButton = document.getElementById('tag-reset');
+    const countNode = document.getElementById('posts-count');
+    const countHero = document.getElementById('posts-count-hero');
+    const emptyState = document.getElementById('empty-state');
+    const postsContainer = document.getElementById('posts-container');
+    const searchInput = document.getElementById('category-search');
+    const clearSearch = document.getElementById('search-clear');
+    const activeTags = new Set();
+    let searchTerm = '';
+
+    function toggleSearchClear() {
+      if (!clearSearch) return;
+      if (searchTerm.length > 0) {
+        clearSearch.hidden = false;
+      } else {
+        clearSearch.hidden = true;
+      }
+    }
+
+    function updateResetState() {
+      if (!resetButton) return;
+      if (activeTags.size === 0 && searchTerm.length === 0) {
+        resetButton.setAttribute('disabled', 'disabled');
+      } else {
+        resetButton.removeAttribute('disabled');
+      }
+    }
+
+    function setEmptyState(visibleCount) {
+      if (!emptyState) return;
+      const isEmpty = visibleCount === 0;
+      emptyState.hidden = !isEmpty;
+      emptyState.classList.toggle('is-visible', isEmpty);
+      emptyState.setAttribute('aria-hidden', (!isEmpty).toString());
+      if (postsContainer) {
+        postsContainer.classList.toggle('is-empty', isEmpty);
+      }
+    }
+
+    function applyFilters() {
+      const normalizedTerm = searchTerm.toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const rawTags = card.dataset.tags || '';
+        const tagList = rawTags === '' ? [] : rawTags.split('|');
+        const title = (card.dataset.title || '').toLowerCase();
+        const excerpt = (card.dataset.excerpt || '').toLowerCase();
+
+        const matchesTags = activeTags.size === 0 || Array.from(activeTags).every(tag => tagList.includes(tag));
+        const matchesSearch = normalizedTerm.length === 0 || title.includes(normalizedTerm) || excerpt.includes(normalizedTerm);
+
+        if (matchesTags && matchesSearch) {
+          card.removeAttribute('hidden');
+          visibleCount += 1;
+        } else {
+          card.setAttribute('hidden', 'hidden');
+        }
+      });
+
+      if (countNode) {
+        countNode.textContent = visibleCount;
+      }
+      if (countHero) {
+        countHero.textContent = visibleCount;
+      }
+      setEmptyState(visibleCount);
+
+      updateResetState();
+    }
+
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const tag = chip.dataset.tagFilter;
+        if (!tag) return;
+        if (activeTags.has(tag)) {
+          activeTags.delete(tag);
+          chip.classList.remove('is-active');
+        } else {
+          activeTags.add(tag);
+          chip.classList.add('is-active');
+        }
+        applyFilters();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        searchTerm = searchInput.value.trim();
+        toggleSearchClear();
+        applyFilters();
+      });
+    }
+
+    if (clearSearch) {
+      clearSearch.addEventListener('click', () => {
+        searchTerm = '';
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+        }
+        toggleSearchClear();
+        applyFilters();
+      });
+    }
+
+    if (resetButton) {
+      resetButton.addEventListener('click', () => {
+        let changed = false;
+        if (activeTags.size > 0) {
+          activeTags.clear();
+          changed = true;
+        }
+        filterChips.forEach(chip => chip.classList.remove('is-active'));
+        if (searchTerm.length > 0) {
+          searchTerm = '';
+          changed = true;
+          if (searchInput) {
+            searchInput.value = '';
+          }
+          toggleSearchClear();
+        }
+        if (changed) {
+          applyFilters();
+        }
+      });
+    }
+
+    applyFilters();
+  });
+  </script>
+{% else %}
+  <article class="page-default">
+    <header class="page-default__header">
+      <h1>{{ page.title }}</h1>
+    </header>
+    <div class="page-default__content">{{ content }}</div>
+  </article>
+{% endif %}

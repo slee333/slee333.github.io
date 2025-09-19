@@ -104,10 +104,19 @@ export function initComments(firebaseConfig, comment_phrases) {
   const commentInput = document.getElementById('comment-input');
   const loginButton = document.getElementById('login-with-google');
   const githubLoginButton = document.getElementById('login-with-github');
-  const logoutButton = document.getElementById('logout');
-  const settingsButton = document.getElementById('settings-button');
+  const profileMenuWrapper = document.getElementById('comment-profile');
+  const profileMenuTrigger = document.getElementById('profile-menu-trigger');
+  const commentAvatarTrigger = document.getElementById('comment-avatar-trigger');
+  const profileMenu = document.getElementById('profile-menu');
+  const profileMenuEdit = document.getElementById('profile-menu-edit');
+  const profileMenuMyComments = document.getElementById('profile-menu-my-comments');
+  const logoutButton = document.getElementById('profile-menu-logout');
   const userName = document.getElementById('user-name');
-  const userProfilePic = document.getElementById('user-profile-pic');
+  const commentAvatarImg = document.getElementById('user-profile-pic');
+  const headerAvatarImg = document.getElementById('profile-menu-avatar');
+  const profileSummaryPic = document.getElementById('user-profile-pic-summary');
+  const profileSummaryName = document.getElementById('user-name-summary');
+  const profileSummaryEmail = document.getElementById('user-email-summary');
   const loginArea = document.getElementById('comment-login');
   const replyingToContainer = document.getElementById('replying-to-container');
   const replyingToUser = document.getElementById('replying-to-user');
@@ -119,16 +128,142 @@ export function initComments(firebaseConfig, comment_phrases) {
   const settingsForm = document.getElementById('settings-form');
   const displayNameInput = document.getElementById('display-name-input');
   const photoURLInput = document.getElementById('photo-url-input');
+  const photoUploadInput = document.getElementById('photo-upload-input');
+  const photoUploadButton = document.getElementById('photo-upload-button');
+  const photoRemoveButton = document.getElementById('photo-remove-button');
+  const photoUploadLabel = document.getElementById('photo-upload-label');
+  const photoPreviewImage = document.getElementById('photo-preview');
   const closeButton = document.querySelector('.close-button');
   const cancelSettingsButton = document.getElementById('cancel-settings');
+  const editProfileLabel = (comment_phrases && comment_phrases.edit_profile) ? comment_phrases.edit_profile : 'Edit profile';
+  const commentingAsTemplate = (comment_phrases && comment_phrases.commenting_as) ? comment_phrases.commenting_as : 'Commenting as {name}';
+  const uploadLabel = (comment_phrases && comment_phrases.profile_modal_upload) ? comment_phrases.profile_modal_upload : 'Upload photo';
+  const uploadingLabel = (comment_phrases && comment_phrases.profile_modal_uploading) ? comment_phrases.profile_modal_uploading : 'Uploading…';
+  const commentPlaceholder = (comment_phrases && comment_phrases.comment_placeholder) ? comment_phrases.comment_placeholder : '';
+  const noPersonalComments = (comment_phrases && comment_phrases.no_personal_comments) ? comment_phrases.no_personal_comments : 'No comments yet.';
+  const defaultAvatar = '/assets/images/default-avatar.svg';
 
-  if (comment_phrases && comment_phrases.placeholder) {
-    commentInput.placeholder = comment_phrases.placeholder;
+  if (commentInput && commentPlaceholder) {
+    commentInput.placeholder = commentPlaceholder;
   }
 
   let currentUser = null;
   let userProfile = null;
   let latestOAuthProvider = null;
+  let profileMenuOpen = false;
+
+  function formatCommentingAs(name) {
+    if (!name) return '';
+    if (commentingAsTemplate.includes('{name}')) {
+      return commentingAsTemplate.replace('{name}', name);
+    }
+    return `${commentingAsTemplate} ${name}`;
+  }
+
+  function setPhotoPreview(url) {
+    if (!photoPreviewImage) return;
+    const hasPhoto = !!url;
+    photoPreviewImage.src = hasPhoto ? url : defaultAvatar;
+    if (photoRemoveButton) {
+      photoRemoveButton.style.display = hasPhoto ? '' : 'none';
+    }
+  }
+
+  function setUploadState(isUploading) {
+    if (!photoUploadButton || !photoUploadLabel) return;
+    photoUploadButton.disabled = isUploading;
+    photoUploadLabel.textContent = isUploading ? uploadingLabel : uploadLabel;
+  }
+
+  function openProfileMenu() {
+    if (!profileMenu || !profileMenuTrigger) return;
+    profileMenu.hidden = false;
+    profileMenuTrigger.setAttribute('aria-expanded', 'true');
+    profileMenuTrigger.classList.add('is-active');
+    profileMenuOpen = true;
+  }
+
+  function closeProfileMenu() {
+    if (!profileMenu || !profileMenuTrigger) return;
+    profileMenu.hidden = true;
+    profileMenuTrigger.setAttribute('aria-expanded', 'false');
+    profileMenuTrigger.classList.remove('is-active');
+    profileMenuOpen = false;
+  }
+
+  function toggleProfileMenu() {
+    if (profileMenuOpen) {
+      closeProfileMenu();
+    } else {
+      openProfileMenu();
+    }
+  }
+
+  function focusUserComments() {
+    closeProfileMenu();
+    if (!currentUser || !commentList) {
+      return;
+    }
+    const target = commentList.querySelector(`[data-author-id="${currentUser.uid}"]`);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.classList.add('highlight');
+      window.setTimeout(() => target.classList.remove('highlight'), 2000);
+    } else if (noPersonalComments) {
+      alert(noPersonalComments);
+    } else {
+      alert('No comments yet.');
+    }
+  }
+
+  function readFileAsDataURL(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function openProfileSettings() {
+    if (!settingsModal || !currentUser || !userProfile) {
+      return;
+    }
+    closeProfileMenu();
+    if (displayNameInput) {
+      displayNameInput.value = userProfile.displayName || '';
+    }
+    if (photoURLInput) {
+      photoURLInput.value = userProfile.photoURL || '';
+    }
+    setPhotoPreview(userProfile.photoURL);
+    setUploadState(false);
+    if (photoUploadInput) {
+      photoUploadInput.value = '';
+    }
+    settingsModal.style.display = 'flex';
+    settingsModal.classList.add('is-open');
+    if (displayNameInput) {
+      window.requestAnimationFrame(() => displayNameInput.focus());
+    }
+  }
+
+  function closeProfileSettings() {
+    if (!settingsModal) {
+      return;
+    }
+    setUploadState(false);
+    settingsModal.classList.remove('is-open');
+    settingsModal.style.display = 'none';
+    if (photoUploadInput) {
+      photoUploadInput.value = '';
+    }
+    if (profileMenuTrigger && profileMenuWrapper && profileMenuWrapper.style.display !== 'none') {
+      profileMenuTrigger.focus();
+    } else if (commentAvatarTrigger && commentFormWrapper && commentFormWrapper.style.display !== 'none') {
+      commentAvatarTrigger.focus();
+    }
+  }
 
   // --- User Profile Management ---
   async function handleUserProfile(user) {
@@ -183,34 +318,114 @@ export function initComments(firebaseConfig, comment_phrases) {
       latestOAuthProvider = null;
     }
 
+    const resolvedPhoto = userProfile.photoURL || defaultAvatar;
+    const resolvedName = userProfile.displayName || user.email || 'Anonymous';
+
     if (userName) {
-      userName.textContent = userProfile.displayName + '로 댓글 작성';
+      userName.textContent = formatCommentingAs(resolvedName);
     }
-    if (userProfilePic) {
-      userProfilePic.src = userProfile.photoURL;
+    if (commentAvatarImg) {
+      commentAvatarImg.src = resolvedPhoto;
+      commentAvatarImg.alt = userProfile.displayName || editProfileLabel;
+    }
+    if (headerAvatarImg) {
+      headerAvatarImg.src = resolvedPhoto;
+      headerAvatarImg.alt = userProfile.displayName || editProfileLabel;
+    }
+    if (profileSummaryPic) {
+      profileSummaryPic.src = resolvedPhoto;
+      profileSummaryPic.alt = userProfile.displayName || editProfileLabel;
+    }
+    if (profileSummaryName) {
+      profileSummaryName.textContent = resolvedName;
+    }
+    if (profileSummaryEmail) {
+      if (user.email) {
+        profileSummaryEmail.textContent = user.email;
+        profileSummaryEmail.style.display = '';
+      } else {
+        profileSummaryEmail.textContent = '';
+        profileSummaryEmail.style.display = 'none';
+      }
+    }
+    setPhotoPreview(userProfile.photoURL);
+    setUploadState(false);
+    if (profileMenuTrigger) {
+      profileMenuTrigger.setAttribute('aria-label', editProfileLabel);
+      profileMenuTrigger.setAttribute('title', editProfileLabel);
+      profileMenuTrigger.disabled = false;
+    }
+    if (commentAvatarTrigger) {
+      commentAvatarTrigger.setAttribute('aria-label', editProfileLabel);
+      commentAvatarTrigger.setAttribute('title', editProfileLabel);
+      commentAvatarTrigger.disabled = false;
+    }
+    if (profileMenuWrapper) {
+      profileMenuWrapper.style.display = 'inline-flex';
     }
     if (displayNameInput) {
-      displayNameInput.value = userProfile.displayName;
+      displayNameInput.value = userProfile.displayName || '';
     }
     if (photoURLInput) {
-      photoURLInput.value = userProfile.photoURL;
+      photoURLInput.value = userProfile.photoURL || '';
     }
   }
+
   // --- Authentication ---
   onAuthStateChanged(auth, async user => {
     currentUser = user;
     if (user) {
       await handleUserProfile(user);
-      loginArea.style.display = 'none';
-      commentFormWrapper.style.display = 'block';
-      logoutButton.style.display = 'inline-flex';
-      settingsButton.style.display = 'inline-flex';
+      if (loginArea) loginArea.style.display = 'none';
+      if (commentFormWrapper) commentFormWrapper.style.display = 'block';
+      if (logoutButton) logoutButton.disabled = false;
     } else {
       userProfile = null;
-      loginArea.style.display = 'block';
-      commentFormWrapper.style.display = 'none';
-      logoutButton.style.display = 'none';
-      settingsButton.style.display = 'none';
+      closeProfileMenu();
+      if (loginArea) loginArea.style.display = 'block';
+      if (commentFormWrapper) commentFormWrapper.style.display = 'none';
+      if (profileMenuWrapper) profileMenuWrapper.style.display = 'none';
+      if (profileMenuTrigger) {
+        profileMenuTrigger.setAttribute('aria-expanded', 'false');
+        profileMenuTrigger.classList.remove('is-active');
+        profileMenuTrigger.disabled = true;
+      }
+      if (commentAvatarTrigger) {
+        commentAvatarTrigger.disabled = true;
+      }
+      if (userName) {
+        userName.textContent = '';
+      }
+      if (commentAvatarImg) {
+        commentAvatarImg.src = defaultAvatar;
+        commentAvatarImg.alt = editProfileLabel;
+      }
+      if (headerAvatarImg) {
+        headerAvatarImg.src = defaultAvatar;
+        headerAvatarImg.alt = editProfileLabel;
+      }
+      if (profileSummaryPic) {
+        profileSummaryPic.src = defaultAvatar;
+        profileSummaryPic.alt = editProfileLabel;
+      }
+      if (profileSummaryName) {
+        profileSummaryName.textContent = '';
+      }
+      if (profileSummaryEmail) {
+        profileSummaryEmail.textContent = '';
+        profileSummaryEmail.style.display = 'none';
+      }
+      if (photoURLInput) {
+        photoURLInput.value = '';
+      }
+      setPhotoPreview(null);
+      setUploadState(false);
+      if (photoUploadButton) {
+        photoUploadButton.disabled = false;
+      }
+      if (logoutButton) {
+        logoutButton.disabled = true;
+      }
     }
     renderComments();
   });
@@ -305,45 +520,209 @@ export function initComments(firebaseConfig, comment_phrases) {
     }
   }
 
-  loginButton.addEventListener('click', () => startOAuthSignIn('google'));
-  githubLoginButton.addEventListener('click', () => startOAuthSignIn('github'));
-  logoutButton.addEventListener('click', () => signOut(auth));
-  // --- Settings Modal Event Listeners ---
-  settingsButton.addEventListener('click', () => {
-    settingsModal.style.display = 'block';
+  loginButton.addEventListener('click', () => startOAuthSignIn('google'))
+  githubLoginButton.addEventListener('click', () => startOAuthSignIn('github'))
+
+  if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+      closeProfileMenu();
+      signOut(auth);
+    });
+  }
+
+  if (profileMenuTrigger) {
+    profileMenuTrigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (!currentUser) {
+        return;
+      }
+      toggleProfileMenu();
+    });
+    profileMenuTrigger.addEventListener('keydown', (event) => {
+      if (!currentUser) {
+        return;
+      }
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleProfileMenu();
+      } else if (event.key === 'Escape') {
+        closeProfileMenu();
+      }
+    });
+  }
+
+  if (commentAvatarTrigger) {
+    commentAvatarTrigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (!currentUser) {
+        return;
+      }
+      openProfileMenu();
+      if (profileMenuTrigger) {
+        window.requestAnimationFrame(() => profileMenuTrigger.focus());
+      }
+    });
+  }
+
+  if (profileMenuEdit) {
+    profileMenuEdit.addEventListener('click', () => {
+      openProfileSettings();
+    });
+  }
+
+  if (profileMenuMyComments) {
+    profileMenuMyComments.addEventListener('click', () => {
+      focusUserComments();
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!profileMenuOpen) {
+      return;
+    }
+    if (profileMenuWrapper && profileMenuWrapper.contains(event.target)) {
+      return;
+    }
+    closeProfileMenu();
   });
 
-  closeButton.addEventListener('click', () => {
-    settingsModal.style.display = 'none';
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && profileMenuOpen) {
+      closeProfileMenu();
+      if (profileMenuTrigger && profileMenuWrapper && profileMenuWrapper.style.display !== 'none') {
+        profileMenuTrigger.focus();
+      }
+    }
   });
 
-  cancelSettingsButton.addEventListener('click', () => {
-    settingsModal.style.display = 'none';
-  });
+  if (photoUploadButton && photoUploadInput) {
+    photoUploadButton.addEventListener('click', () => {
+      photoUploadInput.click();
+    });
+  }
+
+  if (photoUploadInput) {
+    photoUploadInput.addEventListener('change', async (event) => {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        alert('Please choose an image file.');
+        setUploadState(false);
+        photoUploadInput.value = '';
+        return;
+      }
+      if (file.size > 524288) {
+        alert('Selected image is too large. Please choose a file under 500KB.');
+        setUploadState(false);
+        photoUploadInput.value = '';
+        return;
+      }
+      try {
+        setUploadState(true);
+        const dataUrl = await readFileAsDataURL(file);
+        if (photoURLInput) {
+          photoURLInput.value = dataUrl;
+        }
+        setPhotoPreview(dataUrl);
+      } catch (error) {
+        console.error('Failed to load selected image', error);
+        alert('Unable to load the selected image. Please try a different file.');
+      } finally {
+        setUploadState(false);
+        photoUploadInput.value = '';
+      }
+    });
+  }
+
+  if (photoRemoveButton) {
+    photoRemoveButton.addEventListener('click', () => {
+      if (photoURLInput) {
+        photoURLInput.value = '';
+      }
+      setPhotoPreview(null);
+      setUploadState(false);
+    });
+  }
+
+  if (photoURLInput) {
+    photoURLInput.addEventListener('input', () => {
+      const value = photoURLInput.value.trim();
+      setPhotoPreview(value || null);
+    });
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      closeProfileSettings();
+    });
+  }
+
+  if (cancelSettingsButton) {
+    cancelSettingsButton.addEventListener('click', () => {
+      closeProfileSettings();
+    });
+  }
 
   window.addEventListener('click', (event) => {
-    if (event.target == settingsModal) {
-      settingsModal.style.display = 'none';
+    if (event.target === settingsModal) {
+      closeProfileSettings();
     }
   });
 
   settingsForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (!displayNameInput) return;
     const newDisplayName = displayNameInput.value.trim();
-    const newPhotoURL = photoURLInput.value.trim();
+    const newPhotoURL = photoURLInput ? photoURLInput.value.trim() : '';
 
-    if (newDisplayName) {
-      const userRef = doc(db, "users", currentUser.uid);
-      await updateDoc(userRef, {
-        displayName: newDisplayName,
-        photoURL: newPhotoURL
-      });
-      userProfile.displayName = newDisplayName;
-      userProfile.photoURL = newPhotoURL;
-      userName.textContent = `${newDisplayName}로 댓글 작성`;
-      userProfilePic.src = newPhotoURL;
-      settingsModal.style.display = 'none';
+    if (!newDisplayName) {
+      alert('Please provide a display name.');
+      return;
     }
+
+    const userRef = doc(db, "users", currentUser.uid);
+    await updateDoc(userRef, {
+      displayName: newDisplayName,
+      photoURL: newPhotoURL
+    });
+
+    userProfile.displayName = newDisplayName;
+    userProfile.photoURL = newPhotoURL;
+
+    const resolvedPhoto = newPhotoURL || defaultAvatar;
+    const resolvedName = newDisplayName || currentUser.email || 'Anonymous';
+
+    if (userName) {
+      userName.textContent = formatCommentingAs(resolvedName);
+    }
+    if (commentAvatarImg) {
+      commentAvatarImg.src = resolvedPhoto;
+      commentAvatarImg.alt = newDisplayName || editProfileLabel;
+    }
+    if (headerAvatarImg) {
+      headerAvatarImg.src = resolvedPhoto;
+      headerAvatarImg.alt = newDisplayName || editProfileLabel;
+    }
+    if (profileSummaryPic) {
+      profileSummaryPic.src = resolvedPhoto;
+      profileSummaryPic.alt = newDisplayName || editProfileLabel;
+    }
+    if (profileSummaryName) {
+      profileSummaryName.textContent = resolvedName;
+    }
+    if (profileSummaryEmail) {
+      if (currentUser.email) {
+        profileSummaryEmail.textContent = currentUser.email;
+        profileSummaryEmail.style.display = '';
+      } else {
+        profileSummaryEmail.textContent = '';
+        profileSummaryEmail.style.display = 'none';
+      }
+    }
+    setPhotoPreview(newPhotoURL);
+    closeProfileSettings();
   });
 
   // This is now only for the top-level form.
@@ -606,6 +985,9 @@ export function initComments(firebaseConfig, comment_phrases) {
     const commentItem = document.createElement('div');
     commentItem.className = 'comment-item';
     commentItem.id = `comment-${commentNode.id}`;
+    if (commentNode.authorId) {
+      commentItem.dataset.authorId = commentNode.authorId;
+    }
 
     if (depth === 1) {
         commentItem.classList.add('comment-reply-shadow');
@@ -625,6 +1007,22 @@ export function initComments(firebaseConfig, comment_phrases) {
         avatarImg.src = '/assets/images/default-avatar.svg';
     }
     avatar.appendChild(avatarImg);
+
+    if (currentUser && commentNode.authorId && currentUser.uid === commentNode.authorId && !commentNode.deleted) {
+        avatar.classList.add('comment-avatar--interactive');
+        avatar.setAttribute('role', 'button');
+        avatar.setAttribute('aria-label', editProfileLabel);
+        avatar.tabIndex = 0;
+        const handleAvatarActivate = (event) => {
+            if (event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') {
+                return;
+            }
+            event.preventDefault();
+            openProfileSettings();
+        };
+        avatar.addEventListener('click', handleAvatarActivate);
+        avatar.addEventListener('keydown', handleAvatarActivate);
+    }
 
     const mainContent = document.createElement('div');
     mainContent.className = 'comment-main';
