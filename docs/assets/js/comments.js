@@ -25,14 +25,23 @@ import {
   updateDoc,
   getDoc,
   setDoc,
-  where
+  where,
+  writeBatch,
+  getDocs
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+import { 
+  getStorage, 
+  ref, 
+  uploadBytesResumable, 
+  getDownloadURL 
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-storage.js";
 
 // Main function to initialize and run the comment system
 export function initComments(firebaseConfig, comment_phrases) {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
+  const storage = getStorage(app);
 
   // Handle Email Link Sign-in when the page loads
   if (isSignInWithEmailLink(auth, window.location.href)) {
@@ -133,6 +142,7 @@ export function initComments(firebaseConfig, comment_phrases) {
   const photoRemoveButton = document.getElementById('photo-remove-button');
   const photoUploadLabel = document.getElementById('photo-upload-label');
   const photoPreviewImage = document.getElementById('photo-preview');
+  const photoRevertButton = document.getElementById('photo-revert-button');
   const closeButton = document.querySelector('.close-button');
   const cancelSettingsButton = document.getElementById('cancel-settings');
   const editProfileLabel = (comment_phrases && comment_phrases.edit_profile) ? comment_phrases.edit_profile : 'Edit profile';
@@ -151,6 +161,7 @@ export function initComments(firebaseConfig, comment_phrases) {
   let userProfile = null;
   let latestOAuthProvider = null;
   let profileMenuOpen = false;
+  let selectedFile = null;
 
   function formatCommentingAs(name) {
     if (!name) return '';
@@ -169,11 +180,7 @@ export function initComments(firebaseConfig, comment_phrases) {
     }
   }
 
-  function setUploadState(isUploading) {
-    if (!photoUploadButton || !photoUploadLabel) return;
-    photoUploadButton.disabled = isUploading;
-    photoUploadLabel.textContent = isUploading ? uploadingLabel : uploadLabel;
-  }
+
 
   function openProfileMenu() {
     if (!profileMenu || !profileMenuTrigger) return;
@@ -216,14 +223,7 @@ export function initComments(firebaseConfig, comment_phrases) {
     }
   }
 
-  function readFileAsDataURL(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = (error) => reject(error);
-      reader.readAsDataURL(file);
-    });
-  }
+
 
   function openProfileSettings() {
     if (!settingsModal || !currentUser || !userProfile) {
@@ -237,7 +237,6 @@ export function initComments(firebaseConfig, comment_phrases) {
       photoURLInput.value = userProfile.photoURL || '';
     }
     setPhotoPreview(userProfile.photoURL);
-    setUploadState(false);
     if (photoUploadInput) {
       photoUploadInput.value = '';
     }
@@ -252,12 +251,19 @@ export function initComments(firebaseConfig, comment_phrases) {
     if (!settingsModal) {
       return;
     }
-    setUploadState(false);
+
+    // Revoke the local URL to prevent memory leaks
+    if (photoPreviewImage.src.startsWith('blob:')) {
+      URL.revokeObjectURL(photoPreviewImage.src);
+    }
+
     settingsModal.classList.remove('is-open');
     settingsModal.style.display = 'none';
     if (photoUploadInput) {
       photoUploadInput.value = '';
     }
+    selectedFile = null;
+
     if (profileMenuTrigger && profileMenuWrapper && profileMenuWrapper.style.display !== 'none') {
       profileMenuTrigger.focus();
     } else if (commentAvatarTrigger && commentFormWrapper && commentFormWrapper.style.display !== 'none') {
@@ -280,13 +286,25 @@ export function initComments(firebaseConfig, comment_phrases) {
         const existing = userDoc.data();
         const normalizedProvider = providerId === 'password' && existing.provider ? existing.provider : providerId;
         userProfile = { ...existing, provider: normalizedProvider };
+
+        let needsUpdate = {};
         if (providerId !== 'password' && existing.provider !== providerId) {
-          await updateDoc(userRef, { provider: providerId });
+          needsUpdate.provider = providerId;
         }
+        // Backfill originalPhotoURL for existing users if it's missing
+        if (!existing.originalPhotoURL && user.photoURL) {
+          needsUpdate.originalPhotoURL = user.photoURL;
+        }
+        if (Object.keys(needsUpdate).length > 0) {
+          await updateDoc(userRef, needsUpdate);
+          userProfile = { ...userProfile, ...needsUpdate };
+        }
+
       } else {
         const newProfile = {
           displayName: user.displayName || generateRandomName(),
           photoURL: user.photoURL || buildAvatarUrl(user.uid),
+          originalPhotoURL: user.photoURL || buildAvatarUrl(user.uid), // Save the original URL
           provider: providerId,
           createdAt: serverTimestamp(),
           originalName: user.displayName || '',
@@ -349,7 +367,6 @@ export function initComments(firebaseConfig, comment_phrases) {
       }
     }
     setPhotoPreview(userProfile.photoURL);
-    setUploadState(false);
     if (profileMenuTrigger) {
       profileMenuTrigger.setAttribute('aria-label', editProfileLabel);
       profileMenuTrigger.setAttribute('title', editProfileLabel);
@@ -419,7 +436,6 @@ export function initComments(firebaseConfig, comment_phrases) {
         photoURLInput.value = '';
       }
       setPhotoPreview(null);
-      setUploadState(false);
       if (photoUploadButton) {
         photoUploadButton.disabled = false;
       }
@@ -597,41 +613,28 @@ export function initComments(firebaseConfig, comment_phrases) {
     }
   });
 
-  if (photoUploadButton && photoUploadInput) {
-    photoUploadButton.addEventListener('click', () => {
-      photoUploadInput.click();
+
+
+  const photoRandomizeButton = document.getElementById('photo-randomize-button');
+
+  if (photoRandomizeButton) {
+    photoRandomizeButton.addEventListener('click', () => {
+      const randomSeed = Math.random().toString(36).substring(2, 12);
+      const newPhotoURL = `https://picsum.photos/seed/${randomSeed}/120/120?blur=2`;
+      if (photoURLInput) {
+        photoURLInput.value = newPhotoURL;
+      }
+      setPhotoPreview(newPhotoURL);
     });
   }
 
-  if (photoUploadInput) {
-    photoUploadInput.addEventListener('change', async (event) => {
-      const file = event.target.files && event.target.files[0];
-      if (!file) return;
-      if (!file.type.startsWith('image/')) {
-        alert('Please choose an image file.');
-        setUploadState(false);
-        photoUploadInput.value = '';
-        return;
-      }
-      if (file.size > 524288) {
-        alert('Selected image is too large. Please choose a file under 500KB.');
-        setUploadState(false);
-        photoUploadInput.value = '';
-        return;
-      }
-      try {
-        setUploadState(true);
-        const dataUrl = await readFileAsDataURL(file);
+  if (photoRevertButton) {
+    photoRevertButton.addEventListener('click', () => {
+      if (userProfile && userProfile.originalPhotoURL) {
         if (photoURLInput) {
-          photoURLInput.value = dataUrl;
+          photoURLInput.value = userProfile.originalPhotoURL;
         }
-        setPhotoPreview(dataUrl);
-      } catch (error) {
-        console.error('Failed to load selected image', error);
-        alert('Unable to load the selected image. Please try a different file.');
-      } finally {
-        setUploadState(false);
-        photoUploadInput.value = '';
+        setPhotoPreview(userProfile.originalPhotoURL);
       }
     });
   }
@@ -642,7 +645,6 @@ export function initComments(firebaseConfig, comment_phrases) {
         photoURLInput.value = '';
       }
       setPhotoPreview(null);
-      setUploadState(false);
     });
   }
 
@@ -671,58 +673,64 @@ export function initComments(firebaseConfig, comment_phrases) {
     }
   });
 
+  async function updateUserComments(userId, newName, newPhotoURL, newProviderId) {
+    const commentsQuery = query(commentsRef, where("authorId", "==", userId));
+    const querySnapshot = await getDocs(commentsQuery);
+    const batch = writeBatch(db);
+    querySnapshot.forEach((doc) => {
+      batch.update(doc.ref, { 
+        author: newName,
+        authorImg: newPhotoURL,
+        providerId: newProviderId
+      });
+    });
+    await batch.commit();
+  }
+
   settingsForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!displayNameInput) return;
-    const newDisplayName = displayNameInput.value.trim();
-    const newPhotoURL = photoURLInput ? photoURLInput.value.trim() : '';
+    if (!currentUser || !displayNameInput) return;
 
+    const newDisplayName = displayNameInput.value.trim();
     if (!newDisplayName) {
       alert('Please provide a display name.');
       return;
     }
 
-    const userRef = doc(db, "users", currentUser.uid);
-    await updateDoc(userRef, {
-      displayName: newDisplayName,
-      photoURL: newPhotoURL
-    });
+    const submitButton = settingsForm.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
 
-    userProfile.displayName = newDisplayName;
-    userProfile.photoURL = newPhotoURL;
+    try {
+      const newPhotoURL = photoURLInput ? photoURLInput.value.trim() : '';
 
-    const resolvedPhoto = newPhotoURL || defaultAvatar;
-    const resolvedName = newDisplayName || currentUser.email || 'Anonymous';
+      // Update Firebase Auth Profile
+      await updateProfile(currentUser, { 
+        displayName: newDisplayName, 
+        photoURL: newPhotoURL 
+      });
 
-    if (userName) {
-      userName.textContent = formatCommentingAs(resolvedName);
+      // Update Firestore User Profile
+      const userRef = doc(db, "users", currentUser.uid);
+      await updateDoc(userRef, {
+        displayName: newDisplayName,
+        photoURL: newPhotoURL,
+        provider: userProfile.provider
+      });
+
+      // Batch update all user's comments
+      await updateUserComments(currentUser.uid, newDisplayName, newPhotoURL, userProfile.provider);
+
+      // Update local state and UI
+      handleUserProfile(currentUser);
+
+      closeProfileSettings();
+
+    } catch (error) {
+      console.error("Error updating profile: ", error);
+      alert('Failed to update profile. Please try again.');
+    } finally {
+      submitButton.disabled = false;
     }
-    if (commentAvatarImg) {
-      commentAvatarImg.src = resolvedPhoto;
-      commentAvatarImg.alt = newDisplayName || editProfileLabel;
-    }
-    if (headerAvatarImg) {
-      headerAvatarImg.src = resolvedPhoto;
-      headerAvatarImg.alt = newDisplayName || editProfileLabel;
-    }
-    if (profileSummaryPic) {
-      profileSummaryPic.src = resolvedPhoto;
-      profileSummaryPic.alt = newDisplayName || editProfileLabel;
-    }
-    if (profileSummaryName) {
-      profileSummaryName.textContent = resolvedName;
-    }
-    if (profileSummaryEmail) {
-      if (currentUser.email) {
-        profileSummaryEmail.textContent = currentUser.email;
-        profileSummaryEmail.style.display = '';
-      } else {
-        profileSummaryEmail.textContent = '';
-        profileSummaryEmail.style.display = 'none';
-      }
-    }
-    setPhotoPreview(newPhotoURL);
-    closeProfileSettings();
   });
 
   // This is now only for the top-level form.

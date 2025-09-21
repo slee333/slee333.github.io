@@ -143,6 +143,13 @@
   border-bottom: 1px solid rgba(15, 34, 63, 0.08);
 }
 
+.comment-profile__summary img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
 .comment-profile__summary-body {
   display: flex;
   flex-direction: column;

@@ -1,54 +1,76 @@
 # Gemini Collaboration Guide
 
-This document defines Gemini's role and the core rules for improving and managing this blog.
+This document defines the project's identity, my role within it, and the core guidelines for managing and developing this blog.
 
-## Gemini's Role
+## 1. Project Identity
 
-### 1. Web Developing Assistant
+This project is a personal, multilingual (Korean, English, Spanish) blog built on the Jekyll static site generator. It serves as a platform for sharing insights on technology, medicine, research, and personal life. A key feature is the automated content pipeline from Notion to Jekyll, facilitated by a custom Python script.
+
+## 2. My Role
+
+### Web Developing Assistant
 - I assist with layout, responsive design, debugging CSS, and refactoring code.
 - I can write and refactor HTML, CSS (SCSS), and JavaScript to implement new features or fix problems.
-- I help automate workflows, such as the Notion-to-Jekyll posting pipeline (`new_blog_workflow.py`).
+- I help automate and maintain workflows, such as the Notion-to-Jekyll posting pipeline (`new_blog_workflow.py`).
 
-### 2. Content Assistant
+### Content Assistant
 - I can write drafts for new blog posts and translate existing ones.
-- When creating or translating posts, adhering to the **Front Matter Core Rules** is critically important.
+- When creating or translating posts, adhering to the **Content & Front Matter Rules** is critically important.
 
 ---
 
-## Project Structure Overview
+## 3. Project Structure Overview
 
-This is a high-level overview of the Jekyll project structure for my reference.
+The project is housed within the `docs/` directory to support GitHub Pages.
 
-- `_posts/`: Contains all blog posts. It's organized first by language (`kr`, `en`, `es`) and then by category (e.g., `cifellowship`, `learning`, `life`).
-- `_layouts/`: Contains the main HTML layouts (`base.html`, `post.html`, `page.html`, `home.html`).
-- `_includes/`: Reusable HTML snippets (e.g., `header.html`, `footer.html`, `social.html`). Some of these may contain inline `<style>` or `<script>` blocks.
-- `_data/`: Site-wide data files, such as `phrases.json` for UI text translations and `tags.yml` for tag definitions.
-- `assets/`: Contains all static assets.
-    - `css/style.scss`: The main stylesheet. It imports the base theme and all custom styles. **This is the primary file for CSS modifications.**
-    - `fonts/`: Holds custom font files used in the site's design.
-    - `images/`: Stores images used in posts and layouts.
-    - `js/`: Contains custom JavaScript files for interactive features.
-- `_sass/`: Contains the source SASS files.
-    - `minima/`: The base theme's original style files. We generally avoid editing these directly.
-    - `custom/`: Contains all custom SASS partials, organized by feature (e.g., `_animations.scss`, `_fonts.scss`). These are imported into `assets/css/style.scss`.
-- `*.md`: Markdown files in the root (e.g., `0_about.md`, `1_life.md`) define the site's main pages and their multilingual variations.
-- `*.py`: Various Python helper scripts used for automating workflows, such as `new_blog_workflow.py` for the Notion-to-Jekyll pipeline.
-- `GEMINI.md`: This file, containing our collaboration rules.
+- **`_posts/`**: Contains all blog posts, organized by language (`kr`, `en`, `es`) and then by category (e.g., `cifellowship`, `learning`, `life`). Post filenames must follow the `YYYY-MM-DD-title.md` format.
+- **`_layouts/`**: Main HTML layouts (`base.html`, `post.html`, `page.html`).
+- **`_includes/`**: Reusable HTML snippets (e.g., `header.html`, `footer.html`).
+- **`_data/`**: Site-wide data files, such as `phrases.json` for UI text translations and `tags.yml` for tag definitions.
+- **`assets/`**: All static assets.
+    - **`css/style.scss`**: The main stylesheet. **This is the primary file for CSS modifications.** It imports custom SASS partials.
+    - **`_sass/custom/`**: Contains all custom SASS partials. Style changes should be made here.
+    - **`js/`**: Custom JavaScript files. Helpers should be encapsulated in IIFEs to avoid global variables.
+    - **`images/`**: Images for posts and layouts.
+    - **`fonts/`**: Custom font files.
+- **`*.md` (root)**: Markdown files like `0_about.md` and `1_life.md` define the site's main pages and their multilingual variations. The numbered prefix dictates the order in the navigation.
+- **`*.py`**: Python helper scripts. `new_blog_workflow.py` is the key script for the Notion-to-Jekyll pipeline.
+- **`_site/`**: The generated static site. **Do not edit this directory directly.**
+- **`GEMINI.md`**: This file.
 
 ---
 
-## Core Rules
+## 4. Development & Workflow
 
-### 1. Front Matter Format
-All blog posts MUST adhere to the following Front Matter structure. All fields are required.
+### Local Development
+To preview the site locally, run the following command from the `docs/` directory:
+`bundle exec jekyll serve --livereload`
+The site will be available at `http://127.0.0.1:4000`.
+
+### Build & Verification
+- To build the site, run: `bundle exec jekyll build`. This generates the site into the `_site/` directory.
+- Before committing, this command should be run to ensure there are no build warnings.
+- Use `bundle exec jekyll doctor` to check for any configuration issues.
+
+### Content Automation
+The `new_blog_workflow.py` script automates creating posts from Notion.
+- Use `python new_blog_workflow.py --help` to see available options.
+- When modifying this script, test it against a staging Notion page.
+
+---
+
+## 5. Core Rules & Conventions
+
+### Content & Front Matter
+All blog posts MUST adhere to the following Front Matter structure.
 
 ```yaml
 ---
 layout: post
-permalink: /:category/:title/ # Modified by language rule (see below)
+permalink: /:category/:title/ # Will be prefixed by language code
 title: "Post Title"
 date: YYYY-MM-DD HH:MM:SS -0400
-tags: [tag1, tag2, ...]
+tags: [tag1, tag2]
 categories: category-name
 categorydisplay: "Display Name for Category"
 lang: kr # or en, es
@@ -58,12 +80,18 @@ translation_id: "a-unique-id-for-linking-translations"
 ---
 ```
 
-### 2. Multilingual Permalink Structure
-A post's `permalink` MUST follow this structure based on its language:
+### Multilingual Permalink Structure
+A post's `permalink` is automatically prefixed based on its language `lang`:
 
-- **Korean (Default):** `/:category/:title/` (No language prefix)
-- **English:** `/en/:category/:title/` (Requires `/en/` prefix)
-- **Spanish:** `/es/:category/:title/` (Requires `/es/` prefix)
+- **Korean (`kr`):** `/:category/:title/` (No prefix)
+- **English (`en`):** `/en/:category/:title/`
+- **Spanish (`es`):** `/es/:category/:title/`
 
-### 3. Custom Fonts
-Custom fonts like 'Swagger' are defined via `@font-face` rules within `assets/css/style.scss`. Any styling issues with fonts should first be checked against these rules and potential CSS specificity conflicts.
+### Coding Style
+- **SCSS:** Inherit Minima conventions. Use two-space indentation. Place new styles in `_sass/custom/`.
+- **JavaScript:** Use camelCase for functions. Avoid global variables.
+- **Python:** Follow PEP 8 with 4-space indentation.
+- **Commits:** Use short, imperative titles (e.g., `feat: add social media links`).
+
+### Environment
+The automation scripts may require credentials stored in a `.env` file. This file should never be committed.

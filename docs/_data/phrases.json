@@ -55,6 +55,8 @@
       "profile_modal_upload": "Upload photo",
       "profile_modal_uploading": "Uploading…",
       "profile_modal_remove": "Remove photo",
+      "profile_modal_randomize": "Randomize",
+      "profile_modal_revert": "Revert to Default",
       "profile_modal_cancel": "Cancel",
       "profile_modal_save": "Save changes",
       "no_personal_comments": "You haven't written any comments yet."
