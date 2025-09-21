@@ -144,10 +144,12 @@
       "profile_modal_title": "Configuración del perfil",
       "profile_modal_name_label": "Nombre visible",
       "profile_modal_photo_label": "URL de la foto",
-      "profile_modal_photo_helper": "Pega una URL de imagen o sube una nueva foto.",
+      "profile_modal_photo_helper": "Genera un avatar aleatorio, revierte al original, elimínalo o pega una URL de imagen personalizada.",
       "profile_modal_upload": "Subir foto",
       "profile_modal_uploading": "Subiendo…",
       "profile_modal_remove": "Quitar foto",
+      "profile_modal_randomize": "Aleatorizar",
+      "profile_modal_revert": "Revertir al Original",
       "profile_modal_cancel": "Cancelar",
       "profile_modal_save": "Guardar cambios",
       "no_personal_comments": "Todavía no has escrito comentarios."
@@ -239,6 +241,8 @@
       "profile_modal_upload": "사진 업로드",
       "profile_modal_uploading": "업로드 중…",
       "profile_modal_remove": "사진 제거",
+      "profile_modal_randomize": "무작위로 설정",
+      "profile_modal_revert": "기본값 복원",
       "profile_modal_cancel": "취소",
       "profile_modal_save": "저장",
       "no_personal_comments": "아직 작성한 댓글이 없습니다."
