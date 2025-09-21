@@ -46,7 +46,7 @@ layout: base
         <p class="home-featured__excerpt">{{ featured_post.subtitle }}</p>
         {% endif %}
         <div class="home-card__meta">
-          <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
+          <time datetime="{{ featured_post.date | date_to_xmlschema }}" data-localize-date="long">{{ featured_post.date | date_to_xmlschema }}</time>
         </div>
       </div>
     </article>
@@ -78,7 +78,7 @@ layout: base
           <p class="home-card__excerpt">{{ post.subtitle }}</p>
           {% endif %}
           <div class="home-card__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            <time datetime="{{ post.date | date_to_xmlschema }}" data-localize-date="long">{{ post.date | date_to_xmlschema }}</time>
           </div>
         </div>
       </article>
@@ -112,7 +112,7 @@ layout: base
             <p class="home-card__excerpt">{{ post.subtitle }}</p>
             {% endif %}
             <div class="home-card__meta home-card__meta--compact">
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              <time datetime="{{ post.date | date_to_xmlschema }}" data-localize-date="long">{{ post.date | date_to_xmlschema }}</time>
             </div>
           </div>
         </article>
@@ -124,3 +124,30 @@ layout: base
 
   {{ content }}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function localizeDates() {
+    const lang = '{{ page.lang }}';
+    const localeMap = { kr: 'ko-KR', en: 'en-US', es: 'es-ES' };
+    const locale = localeMap[lang] || 'en-US';
+
+    document.querySelectorAll('[data-localize-date]').forEach(el => {
+      const date = new Date(el.textContent.trim());
+      const formatStyle = el.dataset.localizeDate;
+
+      let options;
+      if (formatStyle === 'long') {
+        options = { year: 'numeric', month: 'long', day: 'numeric' };
+      } else {
+        options = { year: 'numeric', month: 'short', day: 'numeric' };
+      }
+
+      if (!isNaN(date.getTime())) {
+        el.textContent = date.toLocaleDateString(locale, options);
+      }
+    });
+  }
+  localizeDates();
+});
+</script>

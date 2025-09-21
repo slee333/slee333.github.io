@@ -61,7 +61,7 @@ layout: base
           <div class="category-hero__stat">
             <dt>{{ phrases.category_page.stat_updated }}</dt>
             <dd>
-              <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: '%B %d, %Y' }}</time>
+              <time datetime="{{ latest_post.date | date_to_xmlschema }}" data-localize-date="long">{{ latest_post.date | date_to_xmlschema }}</time>
             </dd>
           </div>
           {% endif %}
@@ -162,7 +162,7 @@ layout: base
               <p class="category-card__excerpt">{{ display_excerpt }}</p>
               {% endif %}
               <div class="category-card__meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                <time datetime="{{ post.date | date_to_xmlschema }}" data-localize-date="long">{{ post.date | date_to_xmlschema }}</time>
                 <span class="category-card__meta-dot" aria-hidden="true"></span>
                 <span>{{ reading_time }} {{ phrases.minutesread }}</span>
               </div>
@@ -311,6 +311,30 @@ layout: base
     }
 
     applyFilters();
+
+    function localizeDates() {
+      const lang = '{{ page.lang }}';
+      const localeMap = { kr: 'ko-KR', en: 'en-US', es: 'es-ES' };
+      const locale = localeMap[lang] || 'en-US';
+
+      document.querySelectorAll('[data-localize-date]').forEach(el => {
+        const date = new Date(el.textContent.trim());
+        const formatStyle = el.dataset.localizeDate;
+
+        let options;
+        if (formatStyle === 'long') {
+          options = { year: 'numeric', month: 'long', day: 'numeric' };
+        } else {
+          options = { year: 'numeric', month: 'short', day: 'numeric' };
+        }
+
+        if (!isNaN(date.getTime())) {
+          el.textContent = date.toLocaleDateString(locale, options);
+        }
+      });
+    }
+
+    localizeDates();
   });
   </script>
 {% else %}
