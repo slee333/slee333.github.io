@@ -1,5 +1,6 @@
+{%- assign cp = site.data.phrases[page.lang].comments_section -%}
 <div class="sticky-header" data-menu-open="false" data-toc-open="false">
-  <div class="sticky-header__progress">
+  <div class="sticky-header__progress" aria-hidden="true">
     <div class="sticky-header__progress-bar" data-progress></div>
   </div>
   <div class="sticky-header__container">
@@ -9,40 +10,23 @@
       </button>
 
       <nav class="sticky-header__nav sticky-header__nav--desktop" aria-label="Secondary navigation">
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
+        {% include nav-links.html class="nav-chip" %}
       </nav>
 
       <div class="sticky-header__actions">
-        <button class="nav-chip nav-chip--ghost" type="button" data-scroll-comments>
+        <button class="nav-chip nav-chip--ghost" type="button" data-scroll-comments title="{{ cp.comments_title | default: 'Comments' }}">
           <span class="nav-chip__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
           </span>
-          <span>{{ site.data.phrases[page.lang].comments_section.comments_title | default: 'Comments' }}</span>
+          <span>{{ cp.comments_title | default: 'Comments' }}</span>
         </button>
-        <button class="nav-chip nav-chip--ghost" type="button" data-toc-toggle aria-expanded="false" aria-controls="sticky-toc">
+        <button class="nav-chip nav-chip--ghost" type="button" data-toc-toggle aria-expanded="false" aria-controls="sticky-toc" title="{{ cp.toc_label | default: '목차' }}">
           <span class="nav-chip__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
           </span>
-          <span>{{ site.data.phrases[page.lang].comments_section.toc_label | default: '목차' }}</span>
+          <span>{{ cp.toc_label | default: '목차' }}</span>
         </button>
-        <div class="language-switcher language-switcher--compact">
-          <label class="sr-only" for="language-select-sticky">{{ site.data.phrases[page.lang]["navbar"]["language_label"] | default: 'Language' }}</label>
-          <select id="language-select-sticky">
-            <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
-            <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
-            <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
-          </select>
-        </div>
+        {% include language-select.html id="language-select-sticky" class="language-switcher language-switcher--compact" %}
         <button class="sticky-header__toggle" type="button" aria-expanded="false" aria-controls="sticky-nav-drawer" data-menu-toggle>
           <span class="sr-only">{{ site.data.phrases[page.lang]["navbar"]["toggle_menu"] | default: 'Toggle navigation' }}</span>
           <span class="sticky-header__toggle-icon" aria-hidden="true"></span>
@@ -51,36 +35,27 @@
     </div>
 
     <div class="sticky-header__titlebar">
-      <div class="sticky-header__title">{{ page.title }}</div>
+      <div class="sticky-header__title">{{ page.title | escape }}</div>
       <div class="sticky-header__active-heading" id="sticky-active-heading"></div>
+    </div>
+
+    <div class="sticky-header__drawer" id="sticky-nav-drawer" data-menu-drawer>
+      <nav class="sticky-header__drawer-nav" aria-label="Sticky mobile navigation">
+        {% include nav-links.html class="nav-chip nav-chip--drawer" %}
+      </nav>
     </div>
 
     <div class="sticky-header__toc" id="sticky-toc" data-toc-panel>
       <div class="sticky-header__toc-inner">
         <div class="sticky-header__toc-header">
-          <span class="sticky-header__toc-title">{{ site.data.phrases[page.lang].comments_section.toc_label | default: '목차' }}</span>
+          <span class="sticky-header__toc-title">{{ cp.toc_label | default: '목차' }}</span>
           <button class="sticky-header__toc-close" type="button" data-toc-close>
-            <span class="sr-only">{{ site.data.phrases[page.lang].comments_section.toc_close | default: 'Close table of contents' }}</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
+            <span class="sr-only">{{ cp.toc_close | default: 'Close table of contents' }}</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
           </button>
         </div>
         <ul class="sticky-header__toc-list" data-toc-list></ul>
       </div>
-    </div>
-
-    <div class="sticky-header__drawer" id="sticky-nav-drawer" data-menu-drawer>
-      <nav class="sticky-header__drawer-nav" aria-label="Sticky mobile navigation">
-        <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
-        <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
-        <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
-        <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
-        <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
-        <button class="nav-chip nav-chip--drawer" type="button" data-scroll-comments>{{ site.data.phrases[page.lang].comments_section.comments_title | default: 'Comments' }}</button>
-        <button class="nav-chip nav-chip--drawer" type="button" data-toc-toggle aria-expanded="false" aria-controls="sticky-toc">{{ site.data.phrases[page.lang].comments_section.toc_label | default: '목차' }}</button>
-      </nav>
     </div>
   </div>
 </div>
@@ -96,74 +71,40 @@
     const tocToggleButtons = header.querySelectorAll('[data-toc-toggle]');
     const tocCloseButton = header.querySelector('[data-toc-close]');
     const menuToggle = header.querySelector('[data-menu-toggle]');
-    const menuDrawer = header.querySelector('[data-menu-drawer]');
     const commentButtons = header.querySelectorAll('[data-scroll-comments]');
     const scrollTopButton = header.querySelector('[data-scroll-top]');
     const navLinks = header.querySelectorAll('[data-nav-link]');
     const activeHeadingLabel = document.getElementById('sticky-active-heading');
-    const mobileQuery = window.matchMedia('(max-width: 959px)');
-
-    const escapeIdentifier = (window.CSS && CSS.escape)
-      ? CSS.escape
-      : function (value) { return String(value).replace(/[^a-zA-Z0-9_-]/g, '_'); };
-
-    const languageSelect = document.getElementById('language-select');
-    const mobileLanguageSelect = document.getElementById('language-select-mobile');
-    const stickyLanguageSelect = document.getElementById('language-select-sticky');
-    const scrollKey = 'scrollPosition';
-
-    function navigateToLanguage(value) {
-      sessionStorage.setItem(scrollKey, window.scrollY);
-      let path = window.location.pathname.replace(/^\/(en|es)\//, '/');
-      if (value !== 'kr') path = '/' + value + path;
-      path = path.replace(/\/+/g, '/');
-      window.location.href = window.location.origin + path;
-    }
-
-    [languageSelect, mobileLanguageSelect, stickyLanguageSelect]
-      .filter(Boolean)
-      .forEach(select => {
-        select.addEventListener('change', event => {
-          const value = event.target.value;
-          [languageSelect, mobileLanguageSelect, stickyLanguageSelect]
-            .filter(Boolean)
-            .forEach(other => {
-              if (other !== event.target) other.value = value;
-            });
-          navigateToLanguage(value);
-        });
-      });
+    const mobileQuery = window.matchMedia('(max-width: 960px)');
+    const escapeIdentifier = (window.CSS && CSS.escape) ? CSS.escape : function (value) { return String(value).replace(/[^a-zA-Z0-9_-]/g, '_'); };
 
     let lastScrollY = window.scrollY;
     let scrollDirection = 'up';
     const showHeaderAt = 200;
     const headingOffset = 96;
 
-    const contentRoot = document.querySelector('.post-content')
-      || document.querySelector('.page-content article')
-      || document.querySelector('.page-content');
-
+    const contentRoot = document.querySelector('.post-content');
     const headingNodes = contentRoot
       ? Array.from(contentRoot.querySelectorAll('h2, h3')).filter(h => h.textContent.trim().length)
       : [];
-
+    const usedIds = new Set();
     const tocEntries = headingNodes.map((heading, index) => {
       if (!heading.id) {
-        const slug = heading.textContent.trim().toLowerCase()
+        let slug = heading.textContent.trim().toLowerCase()
           .replace(/[^a-z0-9가-힣\s-]/g, '')
-          .replace(/\s+/g, '-');
-        heading.id = slug || `section-${index}`;
+          .replace(/\s+/g, '-') || `section-${index}`;
+        while (usedIds.has(slug) || document.getElementById(slug)) slug = `${slug}-${index}`;
+        heading.id = slug;
       }
-      return {
-        id: heading.id,
-        title: heading.textContent.trim(),
-        level: heading.tagName === 'H3' ? 3 : 2
-      };
+      usedIds.add(heading.id);
+      return { id: heading.id, title: heading.textContent.trim(), level: heading.tagName === 'H3' ? 3 : 2 };
     });
+    // If a post only uses h3, show them as top level.
+    if (tocEntries.length && tocEntries.every(e => e.level === 3)) tocEntries.forEach(e => { e.level = 2; });
 
     if (tocEntries.length && tocList) {
       const fragment = document.createDocumentFragment();
-      tocEntries.forEach((entry, idx) => {
+      tocEntries.forEach(entry => {
         const li = document.createElement('li');
         li.className = 'sticky-header__toc-item';
         const button = document.createElement('button');
@@ -172,13 +113,11 @@
         button.dataset.targetId = entry.id;
         button.dataset.level = String(entry.level);
         button.textContent = entry.title;
-        button.style.transitionDelay = `${idx * 40}ms`;
         li.appendChild(button);
         fragment.appendChild(li);
       });
       tocList.innerHTML = '';
       tocList.appendChild(fragment);
-
       tocList.addEventListener('click', event => {
         const target = event.target.closest('.sticky-header__toc-link');
         if (!target) return;
@@ -186,62 +125,39 @@
         setTocState(false);
       });
     } else {
-      tocToggleButtons.forEach(btn => {
-        btn.setAttribute('disabled', 'true');
-        btn.classList.add('is-disabled');
-      });
-      if (tocPanel) tocPanel.style.display = 'none';
+      tocToggleButtons.forEach(btn => { btn.setAttribute('disabled', 'true'); btn.classList.add('is-disabled'); });
+      if (tocPanel) tocPanel.hidden = true;
     }
 
     function setMenuState(open) {
       header.setAttribute('data-menu-open', open ? 'true' : 'false');
       if (menuToggle) menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      if (!open) header.classList.remove('is-hidden');
+      if (open) header.classList.remove('is-hidden');
     }
-
     function setTocState(open) {
       header.setAttribute('data-toc-open', open ? 'true' : 'false');
       tocToggleButtons.forEach(btn => btn.setAttribute('aria-expanded', open ? 'true' : 'false'));
-      if (!open) return;
-      header.classList.remove('is-hidden');
+      if (open) header.classList.remove('is-hidden');
     }
-
     function updateProgress() {
       if (!progressBar) return;
       const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
       progressBar.style.width = Math.min(Math.max(scrolled, 0), 100) + '%';
     }
-
-    function handleScrollDirection() {
-      const currentY = window.scrollY;
-      const delta = currentY - lastScrollY;
-      if (Math.abs(delta) > 8) {
-        scrollDirection = delta > 0 ? 'down' : 'up';
-      }
-      lastScrollY = currentY;
-    }
-
     function smoothScrollTo(selector) {
       const target = document.querySelector(selector);
       if (!target) return;
-      const rect = target.getBoundingClientRect();
-      const destination = rect.top + window.pageYOffset - headingOffset;
+      const destination = target.getBoundingClientRect().top + window.pageYOffset - headingOffset;
       window.scrollTo({ top: destination, behavior: 'smooth' });
     }
-
     function updateActiveHeading() {
       if (!tocEntries.length || !activeHeadingLabel) return;
-      let activeId = tocEntries[0].id;
+      let activeId = null;
       for (const entry of tocEntries) {
         const el = document.getElementById(entry.id);
         if (!el) continue;
-        const offsetTop = el.getBoundingClientRect().top;
-        if (offsetTop - headingOffset <= 0) {
-          activeId = entry.id;
-        } else {
-          break;
-        }
+        if (el.getBoundingClientRect().top - headingOffset <= 0) activeId = entry.id; else break;
       }
       const activeEntry = tocEntries.find(entry => entry.id === activeId);
       activeHeadingLabel.textContent = activeEntry ? activeEntry.title : '';
@@ -251,28 +167,21 @@
         });
       }
     }
-
-    function handleStickyOnScroll() {
+    function onScroll() {
       updateProgress();
-      handleScrollDirection();
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY;
+      if (Math.abs(delta) > 8) scrollDirection = delta > 0 ? 'down' : 'up';
+      lastScrollY = currentY;
 
-      const shouldShow = window.scrollY > showHeaderAt;
+      const shouldShow = currentY > showHeaderAt;
       header.classList.toggle('is-active', shouldShow);
-
       if (shouldShow) {
-        const tocOpen = header.getAttribute('data-toc-open') === 'true';
-        const menuOpen = header.getAttribute('data-menu-open') === 'true';
-        const isMobile = mobileQuery.matches;
-
-        if (isMobile && scrollDirection === 'down' && !tocOpen && !menuOpen) {
-          header.classList.add('is-hidden');
-        } else {
-          header.classList.remove('is-hidden');
-        }
+        const panelOpen = header.getAttribute('data-toc-open') === 'true' || header.getAttribute('data-menu-open') === 'true';
+        header.classList.toggle('is-hidden', mobileQuery.matches && scrollDirection === 'down' && !panelOpen);
       } else {
         header.classList.remove('is-hidden');
       }
-
       updateActiveHeading();
     }
 
@@ -281,11 +190,10 @@
         if (button.hasAttribute('disabled')) return;
         const isOpen = header.getAttribute('data-toc-open') === 'true';
         setTocState(!isOpen);
+        if (!isOpen) setMenuState(false);
       });
     });
-
     if (tocCloseButton) tocCloseButton.addEventListener('click', () => setTocState(false));
-
     if (menuToggle) {
       menuToggle.addEventListener('click', () => {
         const isOpen = header.getAttribute('data-menu-open') === 'true';
@@ -293,48 +201,29 @@
         if (!isOpen) setTocState(false);
       });
     }
-
     document.addEventListener('click', event => {
-      if (!header.contains(event.target)) {
-        setMenuState(false);
-        setTocState(false);
-      }
+      if (!header.contains(event.target)) { setMenuState(false); setTocState(false); }
     });
-
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') {
-        setMenuState(false);
-        setTocState(false);
-      }
+      if (event.key === 'Escape') { setMenuState(false); setTocState(false); }
     });
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        setMenuState(false);
-        setTocState(false);
-      });
-    });
-
+    navLinks.forEach(link => link.addEventListener('click', () => { setMenuState(false); setTocState(false); }));
     if (scrollTopButton) {
       scrollTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        setMenuState(false);
-        setTocState(false);
+        setMenuState(false); setTocState(false);
       });
     }
-
     commentButtons.forEach(button => {
       button.addEventListener('click', () => {
-        const commentSection = document.getElementById('comment-list') || document.getElementById('comments-section-container');
-        if (commentSection) smoothScrollTo(`#${commentSection.id}`);
-        setMenuState(false);
-        setTocState(false);
+        const commentSection = document.getElementById('comments-section-container');
+        if (commentSection) smoothScrollTo('#comments-section-container');
+        setMenuState(false); setTocState(false);
       });
     });
 
-    window.addEventListener('scroll', handleStickyOnScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', updateActiveHeading);
-    handleStickyOnScroll();
-    updateActiveHeading();
+    onScroll();
   });
 </script>

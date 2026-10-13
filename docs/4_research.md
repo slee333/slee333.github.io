@@ -2,7 +2,7 @@
 
 layout: category
 title: 연구일기
-subtitle: "의료 현장과 데이터가 만나는 연구 이야기."
+subtitle: "연구와 데이터 분석에 관한 글."
 permalink: /research/
 categories: research
 category_slug: research

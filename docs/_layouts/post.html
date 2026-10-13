@@ -1,66 +1,44 @@
-﻿---
+---
 layout: base
 ---
 
 <div class="post-wrapper">
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    {%- assign category_key = page.categories | first -%}
+    {%- assign phrases = site.data.phrases[page.lang] -%}
+    {%- assign category_label = phrases.categories[category_key] -%}
+    {%- assign category_path = '/' | append: category_key | append: '/' -%}
+    {%- unless page.lang == 'kr' -%}{%- assign category_path = '/' | append: page.lang | append: category_path -%}{%- endunless -%}
+    {%- comment -%} Reading speed in characters per minute, by language. {%- endcomment -%}
+    {%- assign chars_per_minute = 1000 -%}
+    {%- if page.lang == 'kr' -%}{%- assign chars_per_minute = 550 -%}{%- endif -%}
+    {%- assign content_length = page.content | strip_html | size -%}
+    {%- assign reading_time = content_length | divided_by: chars_per_minute | ceil | at_least: 1 -%}
     <header class="post-header">
-      {% assign posts_by_lang = site.posts | where: "lang", page.lang %} {%
-      assign category_key = page.categories | first %}
-      <!-- Ensuring we get the first element if it's an array -->
-      {% assign categorydisplayheader =
-      site.data.phrases[page.lang]["categories"][category_key] %} {% assign
-      viewall = site.data.phrases[page.lang]["viewall"] %}
-
-      <div class="category-strip-header">
-        <h2><b>{{categorydisplayheader}}</b></h2>
+      <p class="post-kicker"><a href="{{ category_path | relative_url }}">{{ category_label }}</a></p>
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <div class="post-meta-row">
+        <span class="post-author"><b>Seung Wook Lee</b></span>
+        <time datetime="{{ page.date | date_to_xmlschema }}" data-calendar-date="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+        <span class="post-reading">{{ reading_time }} {{ phrases.minutesread }}</span>
       </div>
+      {% if page.image and page.image != '' %}<img class="post-cover" src="{{ page.image }}" alt="" onerror="this.hidden=true">{% endif %}
 
-      <h1 class="post-title p-name" itemprop="name headline">
-        {{ page.title | escape }}
-      </h1>
-      <p>{{page.subtitle}}</p>
-      <div class="post-details">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-        -%}
-        <p class="post-meta">By <b>Seung Wook Lee</b></p>
-        <p class="post-meta">|</p>
-        <div class="post-meta">
-          <i class="fas fa-calendar-alt"></i> {{ page.date | date: date_format
-          }}
-        </div>
-        {% assign content_length = page.content | size %} {% assign reading_time
-        = content_length | divided_by: 1200 %} {% assign minread_text =
-        site.data.phrases[page.lang]["minutesread"] %}
-        <!-- <p>The estimated reading time is {{ reading_time }} minutes.</p> -->
-        <div class="post-meta">
-          <i class="fas fa-clock"></i> {{ reading_time}} {{minread_text}}
-        </div>
-      </div>
-      <img src="{{ page.image }}" alt="{{ page.title }}" />
-
-      <div class="social-icons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-            {% include social-icons/facebook.svg %}
-          </svg>
+      <div class="post-share">
+        <a aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">{% include social-icons/facebook.svg %}</svg>
         </a>
-        <a href="https://twitter.com/intent/tweet?url={{ page.url }}" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-            {% include social-icons/twitter.svg %}
-          </svg>
+        <a aria-label="X" href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">{% include social-icons/twitter.svg %}</svg>
         </a>
-        <a href="https://www.linkedin.com/shareArticle?url={{ page.url }}" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-            {% include social-icons/linkedin.svg %}
-          </svg>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">{% include social-icons/linkedin.svg %}</svg>
         </a>
-        <a href="#" id="copy-link-icon" title="Copy link to clipboard">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-            {% include social-icons/link-icon.svg %}
-          </svg>
+        <a href="#" id="copy-link-icon" aria-label="Copy link" title="Copy link to clipboard">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">{% include social-icons/link-icon.svg %}</svg>
         </a>
-        <span id="copy-feedback" style="display: none">Copied!</span>
+        <span id="copy-feedback" hidden>Copied!</span>
       </div>
     </header>
 
@@ -71,15 +49,11 @@ layout: base
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
+    {% if page.tags and page.tags.size > 0 %}
     <div class="post-classifications">
-      <div class="post-meta">
-        <i class="fas fa-folder"></i> {{page.categorydisplay}}
-      </div>
-      <div class="post-meta">
-        <i class="fas fa-tag"></i> {% for tag in page.tags limit:10 %}
-        <code>{{ site.data.tags[tag][page.lang] | default: tag }}</code>{%endfor%}
-      </div>
+      {% for tag in page.tags limit:10 %}<a class="post-tag" href="{{ category_path | relative_url }}?tag={{ tag | downcase | url_encode }}">#{{ site.data.tags[tag][page.lang] | default: tag }}</a>{% endfor %}
     </div>
+    {% endif %}
 
     <!-- Firebase Comments Section -->
     {% assign cp = site.data.phrases[page.lang].comments_section %}
@@ -288,62 +262,25 @@ layout: base
       initComments(firebaseConfig, comment_phrases);
     </script>
 
-    <div class="category-strip highlight">
-      {% assign excluded_posts = posts_by_lang | slice: 0, 5 %}
-      {% assign category_posts = posts_by_lang | where: "categories", category_key %}
-      {% assign current_title = page.title %}
-      {%if page.lang != 'kr' %}
-        {% assign langurl = page.lang | append: "/" %}
-      {% else %}
-        {% assign langurl = "" %}
-      {% endif %}
-
-      <div class="category-strip-inner">
-        <div class="category-strip-header">
-          <h2>{{ site.data.phrases[page.lang]["otherpostsinsamecategory"] }}</h2>
-          <a href="{{ site.baseurl }}/{{langurl}}{{ category_key }}" class="view-all">{{ viewall }} →</a>
-        </div>
-    
-        <div class="category-strip-posts">
-          {% assign count = 0 %}
-          {% for post in category_posts %}
-            {% if post.title != current_title and count < 3 %} 
-          <div class="grid-post" onclick="window.location.href='{{ post.url }}'">
-            <div class="grid-post-thumbnail">
-              <img src="{{ post.image }}" alt="{{ post.title }}" />
-            </div>
-            <div class="grid-post-content">
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.subtitle }}</p>
-            </div>
-          </div>
-            {% assign count = count | plus: 1 %}
-            {% endif %}
-            {% endfor %}
-        </div>
+    {% assign category_posts = site.categories[category_key] | where: 'lang', page.lang | where_exp: 'post', 'post.url != page.url' %}
+    {% if category_posts.size > 0 %}
+    <section class="post-related" aria-labelledby="related-heading">
+      <div class="post-related__header">
+        <h2 id="related-heading">{{ phrases.otherpostsinsamecategory }}</h2>
+        <a href="{{ category_path | relative_url }}">{{ phrases.viewall }} <span aria-hidden="true">→</span></a>
       </div>
-    </div>
+      <ul class="post-related__list">
+        {% for post in category_posts limit:3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
   </article>
 
-  <!-- Giscus Comment System (Disabled) 
-  {% raw %}
-  <script src="https://giscus.app/client.js"
-        data-repo="slee333/slee333.github.io"
-        data-repo-id="R_kgDOMQqbCA"
-        data-category="General"
-        data-category-id="DIC_kwDOMQqbCM4Cqovr"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light_tritanopia"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-  </script>
-  {% endraw %}
-  -->
 
   
 
@@ -356,9 +293,9 @@ layout: base
         navigator.clipboard.writeText(url).then(
           function () {
             const feedback = document.getElementById("copy-feedback");
-            feedback.style.display = "inline";
+            feedback.hidden = false;
             setTimeout(() => {
-              feedback.style.display = "none";
+              feedback.hidden = true;
             }, 2000);
           },
           function (err) {

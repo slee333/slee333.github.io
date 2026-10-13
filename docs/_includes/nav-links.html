@@ -1,0 +1,15 @@
+{%- comment -%}
+  Primary navigation links. Usage: {% include nav-links.html class="nav-chip" %}
+  Marks the link for the current section with .is-active and aria-current.
+{%- endcomment -%}
+{%- assign nav_prefix = '' -%}
+{%- if page.lang != 'kr' -%}{%- assign nav_prefix = '/' | append: page.lang -%}{%- endif -%}
+{%- assign nav_items = 'about,life,cifellowship,learning,research' | split: ',' -%}
+{%- assign current_section = page.translation_id -%}
+{%- if page.layout == 'post' -%}{%- assign current_section = page.categories | first -%}{%- endif -%}
+{%- for item in nav_items -%}
+  {%- assign href = nav_prefix | append: '/' | append: item | append: '/' -%}
+  {%- assign is_active = false -%}
+  {%- if current_section == item -%}{%- assign is_active = true -%}{%- endif -%}
+  <a class="{{ include.class }}{% if is_active %} is-active{% endif %}" data-nav-link href="{{ href | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ site.data.phrases[page.lang]["navbar"][item] }}</a>
+{%- endfor -%}

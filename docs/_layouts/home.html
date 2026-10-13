@@ -1,153 +1,78 @@
 ---
 layout: base
 ---
-
 {% assign phrases = site.data.phrases[page.lang] %}
 {% assign home_text = phrases.home_page %}
-{% assign posts_by_lang = site.posts | where: "lang", page.lang %}
-{% assign featured_post = posts_by_lang | first %}
-{% if featured_post %}
-  {% assign rest_posts = posts_by_lang | where_exp: "post", "post.url != featured_post.url" %}
-{% else %}
-  {% assign rest_posts = posts_by_lang %}
-{% endif %}
-
-<div class="home home-layout">
-  <section class="home-hero">
-    <div class="home-hero__inner home-shell">
-      {% if home_text and home_text.eyebrow %}
-      <span class="home-hero__eyebrow">{{ home_text.eyebrow }}</span>
-      {% endif %}
-      <h1 class="home-hero__title">{{ site.title }}</h1>
-      <p class="home-hero__tagline">{{ home_text.hero_tagline | default: phrases.description }}</p>
+{% assign posts_by_lang = site.posts | where: 'lang', page.lang %}
+{% assign featured_posts = posts_by_lang | where: 'featured', true %}
+{% for id in site.data.home_featured %}
+  {% assign matches = posts_by_lang | where: 'translation_id', id %}
+  {% assign selected_ids = featured_posts | map: 'translation_id' %}
+  {% unless selected_ids contains id %}{% assign featured_posts = featured_posts | concat: matches %}{% endunless %}
+{% endfor %}
+{% assign featured_posts = featured_posts | slice: 0, 2 %}
+{% assign featured_urls = featured_posts | map: 'url' %}
+{% assign prefix = '' %}
+{% unless page.lang == 'kr' %}{% assign prefix = '/' | append: page.lang %}{% endunless %}
+<div class="journal">
+  <section class="journal-intro">
+    <div class="journal-intro-main">
+      <h1 lang="en">Jack of some trades<span class="journal-title-dot" aria-hidden="true">.</span></h1>
+      <p class="journal-description">{{ home_text.hero_tagline }}</p>
+    </div>
+    <div class="journal-intro-author">
+      <p class="journal-eyebrow">{{ home_text.eyebrow }}</p>
+      <a class="journal-about" href="{{ prefix | append: '/about/' | relative_url }}">{{ home_text.about_link }} <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 
-  {% if featured_post %}
-  <section class="home-featured home-shell home-featured--enthusiastic">
-    <div class="home-section__header home-section__header--badge">
-      <span class="home-chip home-chip--badge">{{ home_text.featured }}</span>
-    </div>
-    <article class="home-featured__card">
-      <a class="home-card__link" href="{{ featured_post.url }}" aria-label="{{ featured_post.title | escape }}">
-        <span class="sr-only">{{ featured_post.title }}</span>
-      </a>
-      {% assign featured_image = featured_post.image | default: '/assets/images/default-avatar.svg' %}
-      <div class="home-featured__media">
-        <img src="{{ featured_image }}" alt="{{ featured_post.title }}" loading="lazy">
-      </div>
-      <div class="home-featured__body">
-        {% if featured_post.categorydisplay %}
-        {% assign featured_category = featured_post.categories | first %}
-        <span class="home-chip{% if featured_category %} home-chip--{{ featured_category | slugify }}{% endif %}">{{ featured_post.categorydisplay }}</span>
+  {% if featured_posts.size > 0 %}
+  <section class="journal-section" aria-labelledby="selected-title">
+    <h2 id="selected-title" class="journal-section-title">{{ home_text.featured }}</h2>
+    <div class="journal-selected">
+      {% for post in featured_posts limit:2 %}
+      {% assign category = post.categories | first %}
+      <article>
+        {% if post.image and post.image != '' %}
+        <img class="journal-selected-image" src="{{ post.image }}" alt="" loading="lazy" width="432" height="243" onerror="this.hidden=true">
         {% endif %}
-        <h2 class="home-featured__title">{{ featured_post.title }}</h2>
-        {% if featured_post.subtitle %}
-        <p class="home-featured__excerpt">{{ featured_post.subtitle }}</p>
-        {% endif %}
-        <div class="home-card__meta">
-          <time datetime="{{ featured_post.date | date_to_xmlschema }}" data-localize-date="long">{{ featured_post.date | date_to_xmlschema }}</time>
-        </div>
-      </div>
-    </article>
-  </section>
-  {% endif %}
-
-  {% if rest_posts and rest_posts.size > 0 %}
-  <section class="home-section home-shell">
-    <div class="home-section__header">
-      <h2 class="home-section__title">{{ home_text.recent_posts }}</h2>
-    </div>
-    <div class="home-grid">
-      {% for post in rest_posts limit:4 %}
-      {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
-      <article class="home-card">
-        <a class="home-card__link" href="{{ post.url }}" aria-label="{{ post.title | escape }}">
-          <span class="sr-only">{{ post.title }}</span>
-        </a>
-        <div class="home-card__media">
-          <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
-        </div>
-        <div class="home-card__body">
-          {% if post.categorydisplay %}
-          {% assign post_category = post.categories | first %}
-          <span class="home-chip{% if post_category %} home-chip--{{ post_category | slugify }}{% endif %}">{{ post.categorydisplay }}</span>
-          {% endif %}
-          <h3 class="home-card__title">{{ post.title }}</h3>
-          {% if post.subtitle %}
-          <p class="home-card__excerpt">{{ post.subtitle }}</p>
-          {% endif %}
-          <div class="home-card__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}" data-localize-date="long">{{ post.date | date_to_xmlschema }}</time>
-          </div>
-        </div>
+        <p class="journal-category">{{ phrases.categories[category] }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.subtitle }}</p>
+        <time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
       </article>
       {% endfor %}
     </div>
   </section>
   {% endif %}
 
-  {% assign category_order = "learning,cifellowship,life,research" | split: "," %}
-  {% for category in category_order %}
-    {% assign category_posts = posts_by_lang | where: "categories", category %}
-    {% if category_posts.size > 0 %}
-    <section class="home-section home-shell home-section--category home-section--{{ category | slugify }}">
-      <div class="home-section__header home-section__header--{{ category | slugify }}">
-        <h2 class="home-section__title home-section__title--{{ category | slugify }}">{{ phrases.categories[category] }}</h2>
-        <a class="home-section__link home-section__link--{{ category | slugify }}" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{{ category }}{% else %}{{ site.baseurl }}/{{ page.lang }}/{{ category }}{% endif %}">{{ phrases.viewall }} &rarr;</a>
-      </div>
-      <div class="home-grid home-grid--compact">
-        {% for post in category_posts limit:3 %}
-        {% assign post_image = post.image | default: '/assets/images/default-avatar.svg' %}
-        <article class="home-card home-card--compact">
-          <a class="home-card__link" href="{{ post.url }}" aria-label="{{ post.title | escape }}">
-            <span class="sr-only">{{ post.title }}</span>
-          </a>
-          <div class="home-card__media home-card__media--compact">
-            <img src="{{ post_image }}" alt="{{ post.title }}" loading="lazy">
-          </div>
-          <div class="home-card__body">
-            <h3 class="home-card__title">{{ post.title }}</h3>
-            {% if post.subtitle %}
-            <p class="home-card__excerpt">{{ post.subtitle }}</p>
-            {% endif %}
-            <div class="home-card__meta home-card__meta--compact">
-              <time datetime="{{ post.date | date_to_xmlschema }}" data-localize-date="long">{{ post.date | date_to_xmlschema }}</time>
-            </div>
-          </div>
-        </article>
+  <section class="journal-section" aria-labelledby="recent-title">
+    <div class="journal-section-heading">
+      <h2 id="recent-title" class="journal-section-title">{{ home_text.recent_posts }}</h2>
+      <nav class="journal-topics" aria-label="{{ home_text.categories_heading }}">
+        {% assign categories = 'cifellowship,learning,research,life' | split: ',' %}
+        {% for category in categories %}
+        <a href="{{ prefix | append: '/' | append: category | append: '/' | relative_url }}">{{ phrases.categories[category] }}</a>
         {% endfor %}
-      </div>
-    </section>
-    {% endif %}
-  {% endfor %}
-
+      </nav>
+    </div>
+    {% assign count = 0 %}
+    {% for post in posts_by_lang %}
+      {% unless featured_urls contains post.url %}
+        {% if count < 8 %}
+        {% assign category = post.categories | first %}
+        <article class="journal-row">
+          <div>
+            <div class="journal-row-meta"><span>{{ phrases.categories[category] }}</span><time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time></div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.subtitle }}</p>
+          </div>
+          {% if post.image and post.image != '' %}<img src="{{ post.image }}" alt="" loading="lazy" width="112" height="84" onerror="this.hidden=true">{% endif %}
+        </article>
+        {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </section>
   {{ content }}
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  function localizeDates() {
-    const lang = '{{ page.lang }}';
-    const localeMap = { kr: 'ko-KR', en: 'en-US', es: 'es-ES' };
-    const locale = localeMap[lang] || 'en-US';
-
-    document.querySelectorAll('[data-localize-date]').forEach(el => {
-      const date = new Date(el.textContent.trim());
-      const formatStyle = el.dataset.localizeDate;
-
-      let options;
-      if (formatStyle === 'long') {
-        options = { year: 'numeric', month: 'long', day: 'numeric' };
-      } else {
-        options = { year: 'numeric', month: 'short', day: 'numeric' };
-      }
-
-      if (!isNaN(date.getTime())) {
-        el.textContent = date.toLocaleDateString(locale, options);
-      }
-    });
-  }
-  localizeDates();
-});
-</script>

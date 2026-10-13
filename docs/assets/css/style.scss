@@ -1,12 +1,17 @@
 ---
 ---
 
-$asset-fonts-path: '{{ "/assets/fonts" | relative_url }}';
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
+// Minima (gem) supplies element resets, tables and syntax highlighting.
+// Everything visual on top of that lives in _sass/custom/.
+@import "minima";
 
-@import "custom/variables";
-@import "custom/fonts";
-@import "custom/animations";
+@import "custom/tokens";
 @import "custom/base";
-
-
+@import "custom/header";
+@import "custom/footer";
+@import "custom/home";
+@import "custom/category";
+@import "custom/post";
+@import "custom/comments";
+@import "custom/about";
+@import "custom/error";

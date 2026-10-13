@@ -15,7 +15,7 @@
 
   {%- comment -%} 3. 찾은 항목들을 바탕으로 hreflang 태그를 생성합니다. {%- endcomment -%}
   {%- for t in translations -%}
-    <link rel="alternate" hreflang="{{ t.lang }}" href="{{ t.url | absolute_url }}" />
+    <link rel="alternate" hreflang="{{ t.lang | replace: 'kr', 'ko' }}" href="{{ t.url | absolute_url }}" />
   {%- endfor -%}
 
 {%- endif -%}
@@ -38,6 +38,7 @@
 
   // 3. Handle returning visitors with a stored language preference.
   var storedLang = localStorage.getItem('swl_lang');
+  if (storedLang === 'kr') storedLang = 'ko';
   if (storedLang && SUPPORTED.includes(storedLang)) {
     if (storedLang !== pathLang) {
       var rest = (pathLang === 'ko') ? path : path.replace(/^\/(en|es)/, '');

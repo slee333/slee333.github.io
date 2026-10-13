@@ -1,155 +1,83 @@
+{%- assign home_href = '/' -%}
+{%- if page.lang != 'kr' -%}{%- assign home_href = '/' | append: page.lang | append: '/' -%}{%- endif -%}
 <header class="site-header" data-menu-open="false">
   <div class="site-header__container">
     <div class="site-header__surface">
-      <a class="site-header__logo" rel="author" href="{% if page.lang == 'kr' %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/{{ page.lang }}/{% endif %}">
+      <a class="site-header__logo" rel="author" href="{{ home_href | relative_url }}">
         <span class="site-header__logo-primary">{{ site.title }}</span>
-        <span class="site-header__logo-glow" aria-hidden="true">{{ site.title }}</span>
       </a>
 
       <nav class="site-header__nav" aria-label="Primary navigation">
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
-        <a class="nav-chip" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
+        {% include nav-links.html class="nav-chip" %}
       </nav>
 
       <div class="site-header__actions">
-        <div class="language-switcher">
-          <label class="sr-only" for="language-select">{{ site.data.phrases[page.lang]["navbar"]["language_label"] | default: 'Language' }}</label>
-          <select id="language-select">
-            <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
-            <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
-            <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
-          </select>
-        </div>
+        {% include language-select.html id="language-select" %}
         <button class="site-header__toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer">
           <span class="sr-only">{{ site.data.phrases[page.lang]["navbar"]["toggle_menu"] | default: 'Toggle navigation' }}</span>
           <span class="site-header__toggle-icon" aria-hidden="true"></span>
         </button>
       </div>
     </div>
-
   </div>
 
   <div class="site-header__drawer" id="site-header-drawer">
     <nav class="site-header__drawer-nav" aria-label="Mobile navigation">
-      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/about{% else %}{{ site.baseurl }}/{{ page.lang }}/about{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["about"] }}</a>
-      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/life{% else %}{{ site.baseurl }}/{{ page.lang }}/life{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["life"] }}</a>
-      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/cifellowship{% else %}{{ site.baseurl }}/{{ page.lang }}/cifellowship{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["cifellowship"] }}</a>
-      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/learning{% else %}{{ site.baseurl }}/{{ page.lang }}/learning{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["learning"] }}</a>
-      <a class="nav-chip nav-chip--drawer" data-nav-link href="{% if page.lang == 'kr' %}{{ site.baseurl }}/research{% else %}{{ site.baseurl }}/{{ page.lang }}/research{% endif %}">{{ site.data.phrases[page.lang]["navbar"]["research"] }}</a>
+      {% include nav-links.html class="nav-chip nav-chip--drawer" %}
     </nav>
-    <div class="site-header__drawer-language">
-      <label class="sr-only" for="language-select-mobile">{{ site.data.phrases[page.lang]["navbar"]["language_label"] | default: 'Language' }}</label>
-      <select id="language-select-mobile">
-        <option value="kr" {% if page.lang=='kr' %}selected{% endif %}>한국어</option>
-        <option value="en" {% if page.lang=='en' %}selected{% endif %}>English</option>
-        <option value="es" {% if page.lang=='es' %}selected{% endif %}>Español</option>
-      </select>
-    </div>
   </div>
 </header>
 
 <script>
+  // Language switching (every [data-language-select] on the page) and the
+  // main-header drawer. The sticky header has its own script for its own
+  // drawer/TOC but relies on this one for language changes.
   document.addEventListener('DOMContentLoaded', function () {
-    const headerEl = document.querySelector('.site-header');
-    if (!headerEl) { return; }
-
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = headerEl.querySelectorAll('[data-nav-link]');
-    const languageSelect = document.getElementById('language-select');
-    const mobileLanguageSelect = document.getElementById('language-select-mobile');
-    const stickyLanguageSelect = document.getElementById('language-select-sticky');
-    const scrollKey = 'scrollPosition';
-    const menuBreakpoint = window.matchMedia('(min-width: 960px)');
-
-    function saveScroll() {
-      sessionStorage.setItem(scrollKey, window.scrollY);
-    }
+    var headerEl = document.querySelector('.site-header');
+    var selects = Array.prototype.slice.call(document.querySelectorAll('[data-language-select]'));
 
     function navigateToLanguage(value) {
-      saveScroll();
-      let path = window.location.pathname.replace(/^\/(en|es)\//, '/');
-      if (value !== 'kr') {
-        path = '/' + value + path;
-      }
-      path = path.replace(/\/+/g, '/');
-      const destination = window.location.origin + path;
-      window.location.href = destination;
+      sessionStorage.setItem('scrollPosition', String(window.scrollY));
+      var path = window.location.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
+      if (value !== 'kr') path = '/' + value + path;
+      path = path.replace(/\/{2,}/g, '/');
+      window.location.href = window.location.origin + path + window.location.search + window.location.hash;
     }
 
-    function syncLanguageControls(value, source) {
-      [languageSelect, mobileLanguageSelect, stickyLanguageSelect].forEach(control => {
-        if (control && control !== source) {
-          control.value = value;
-        }
+    selects.forEach(function (select) {
+      select.addEventListener('change', function (event) {
+        var value = event.target.value;
+        localStorage.setItem('swl_lang', value === 'kr' ? 'ko' : value);
+        selects.forEach(function (other) { if (other !== event.target) other.value = value; });
+        navigateToLanguage(value);
       });
-    }
-
-    function handleLanguageChange(event) {
-      const value = event.target.value;
-      localStorage.setItem('swl_lang', value);
-      syncLanguageControls(value, event.target);
-      navigateToLanguage(value);
-    }
-
-    [languageSelect, mobileLanguageSelect, stickyLanguageSelect].forEach(control => {
-      if (control) {
-        control.addEventListener('change', handleLanguageChange);
-      }
     });
 
-    const menuState = {
-      open: false,
-      set(value) {
-        this.open = value;
-        headerEl.setAttribute('data-menu-open', value ? 'true' : 'false');
-        if (menuToggle) {
-          menuToggle.setAttribute('aria-expanded', value ? 'true' : 'false');
-        }
-      }
-    };
+    if (!headerEl) return;
+    var menuToggle = document.getElementById('menu-toggle');
+    var menuBreakpoint = window.matchMedia('(min-width: 961px)');
 
-    function toggleMenu() {
-      menuState.set(!menuState.open);
+    function setMenu(open) {
+      headerEl.setAttribute('data-menu-open', open ? 'true' : 'false');
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     }
+    function isOpen() { return headerEl.getAttribute('data-menu-open') === 'true'; }
 
     if (menuToggle) {
       menuToggle.addEventListener('click', function (event) {
         event.stopPropagation();
-        toggleMenu();
+        setMenu(!isOpen());
       });
     }
-
     document.addEventListener('click', function (event) {
-      if (menuState.open && !headerEl.contains(event.target)) {
-        menuState.set(false);
-      }
+      if (isOpen() && !headerEl.contains(event.target)) setMenu(false);
     });
-
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && menuState.open) {
-        menuState.set(false);
-      }
+      if (event.key === 'Escape' && isOpen()) setMenu(false);
     });
-
-    navLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (menuState.open) {
-          menuState.set(false);
-        }
-      });
+    headerEl.querySelectorAll('[data-nav-link]').forEach(function (link) {
+      link.addEventListener('click', function () { if (isOpen()) setMenu(false); });
     });
-
-    if (menuBreakpoint.matches) {
-      menuState.set(false);
-    }
-
-    menuBreakpoint.addEventListener('change', function (event) {
-      if (event.matches) {
-        menuState.set(false);
-      }
-    });
+    menuBreakpoint.addEventListener('change', function (event) { if (event.matches) setMenu(false); });
   });
 </script>

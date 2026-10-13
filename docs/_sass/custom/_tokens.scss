@@ -1,0 +1,38 @@
+// Design tokens. Every other partial reads from these; change colors,
+// widths and type here rather than in individual components.
+:root {
+  // Brand (blue / orange). The comment widget reads these names too.
+  --theme-color: #4195e0;
+  --theme-color-opp: #ea9f36;
+  --theme-color-light: #4195e047;
+  --theme-color-dark: #214c72;
+  --light-hover-color: #79b4e8;
+  --theme-surface: #f0f7fd;
+
+  // Text and lines
+  --ink: #202b33;
+  --muted: #5b6871;
+  --faint: #8a949b;
+  --rule: #e1e6e9;
+  --rule-strong: #202b33;
+  --surface: #ffffff;
+  --surface-alt: #f7f9fb;
+
+  // Type
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: Menlo, Consolas, "Roboto Mono", "SFMono-Regular", "Courier New", monospace;
+
+  // Layout. One container for header/footer, one column for lists,
+  // one measure for reading.
+  --container: 1040px;
+  --column: 900px;
+  --measure: 720px;
+  --gutter: 24px;
+  --radius: 6px;
+
+  --transition: 0.2s ease;
+}
+
+$bp-phone: 640px;
+$bp-nav: 960px;

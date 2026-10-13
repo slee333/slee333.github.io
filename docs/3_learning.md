@@ -2,7 +2,7 @@
 
 layout: category
 title: 공부일기
-subtitle: "의학부터 데이터, 개발까지 배움의 흔적을 정리합니다."
+subtitle: "공부한 내용을 정리한 글."
 permalink: /learning/
 categories: learning
 category_slug: learning

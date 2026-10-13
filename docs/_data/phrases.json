@@ -21,7 +21,7 @@
     "resetfilters": "Reset Filters",
     "postsinthiscategory": "Posts in this category:",
     "minutesread": "min read",
-    "description": "A cozy place to share my journey and ideas.",
+    "description": "An internist and clinical informatics fellow writing at the intersection of medicine and technology.",
     "otherpostsinsamecategory": "Other posts in the same category",
     "footer-subscription": {
       "subscription-request": "Subscribe to My Updates",
@@ -62,18 +62,19 @@
       "no_personal_comments": "You haven't written any comments yet."
     },
     "home_page": {
-      "eyebrow": "Welcome to the hut",
-      "hero_tagline": "Notes on building, learning, and everyday experiments.",
-      "featured": "Featured Story",
+      "eyebrow": "Seung Wook Lee · Physician & clinical informatics fellow",
+      "hero_tagline": "Notes on clinical informatics, building things, research, and everyday life.",
+      "featured": "Start here",
       "recent_posts": "Recent Posts",
       "categories_heading": "Browse by Category",
       "load_more": "Load more posts",
       "no_results": "No posts match the current filters.",
       "topics_title": "Core Topics",
-      "topics": []
+      "topics": [],
+      "about_link": "About me"
     },
     "footer": {
-      "tagline": "A personal blog by Seung Wook Lee.",
+      "tagline": "Seung Wook Lee, MD — internal medicine and clinical informatics.",
       "topics_title": "",
       "categories_title": "Links",
       "subscribe_title": "Subscribe to the newsletter",
@@ -114,7 +115,7 @@
     "resetfilters": "Restablecer Filtros",
     "postsinthiscategory": "Artículos en esta categoría:",
     "minutesread": "min de lectura",
-    "description": "A cozy place to share my journey and ideas.",
+    "description": "Un internista y fellow de informática clínica escribiendo en la intersección de la medicina y la tecnología.",
     "otherpostsinsamecategory": "Otras entradas en la misma categoría",
     "footer-subscription": {
       "subscription-request": "Suscríbete a mis actualizaciones",
@@ -155,18 +156,19 @@
       "no_personal_comments": "Todavía no has escrito comentarios."
     },
     "home_page": {
-      "eyebrow": "Bienvenido al refugio",
-      "hero_tagline": "Notas sobre desarrollo, aprendizaje y experimentos diarios.",
-      "featured": "Historia destacada",
+      "eyebrow": "Seung Wook Lee · Médico y fellow de informática clínica",
+      "hero_tagline": "Notas sobre informática clínica, desarrollo, investigación y vida cotidiana.",
+      "featured": "Para empezar",
       "recent_posts": "Publicaciones recientes",
       "categories_heading": "Explorar por categoría",
       "load_more": "Ver más entradas",
       "no_results": "No hay entradas que coincidan con los filtros.",
       "topics_title": "",
-      "topics": []
+      "topics": [],
+      "about_link": "Sobre mí"
     },
     "footer": {
-      "tagline": "Un blog personal de Seung Wook Lee.",
+      "tagline": "Seung Wook Lee, MD — medicina interna e informática clínica.",
       "topics_title": "",
       "categories_title": "Enlaces",
       "subscribe_title": "Suscríbete al boletín",
@@ -207,7 +209,7 @@
     "resetfilters": "필터 초기화",
     "postsinthiscategory": "해당 카테고리 글 모음:",
     "minutesread": "분 소요",
-    "description": "A cozy place to share my journey and ideas.",
+    "description": "내과의사이자 의료정보학 펠로우가 임상 현장과 기술의 접점을 기록하는 블로그입니다.",
     "otherpostsinsamecategory": "해당 카테고리 다른 글 보기",
     "footer-subscription": {
       "subscription-request": "업데이트 구독하기",
@@ -248,18 +250,19 @@
       "no_personal_comments": "아직 작성한 댓글이 없습니다."
     },
     "home_page": {
-      "eyebrow": "어서 오세요",
-      "hero_tagline": "개발과 공부, 일상을 차곡차곡 담는 공간입니다.",
-      "featured": "추천 글",
+      "eyebrow": "이승욱 · 내과의사, 의료정보학 펠로우",
+      "hero_tagline": "의료정보학, 공부, 연구, 일상 기록.",
+      "featured": "처음 오셨다면",
       "recent_posts": "최근 글",
       "categories_heading": "카테고리 살펴보기",
       "load_more": "더 많은 글 보기",
       "no_results": "현재 필터와 일치하는 글이 없습니다.",
       "topics_title": "",
-      "topics": []
+      "topics": [],
+      "about_link": "저자 소개"
     },
     "footer": {
-      "tagline": "개인의 이야기 및 임상 현장과 기술을 연결하는 의료정보학 여정을 기록하는 공간.",
+      "tagline": "이승욱의 공부, 연구, 일상 기록.",
       "topics_title": "",
       "categories_title": "링크",
       "subscribe_title": "뉴스레터 구독하기",
