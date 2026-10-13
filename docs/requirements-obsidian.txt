@@ -1,0 +1,5 @@
+# Already available on Wook-Desktop; no installation is required there.
+Pillow>=9.5,<13
+pillow-avif-plugin>=1.5,<2
+markdown-it-py>=2.2,<5
+PyYAML>=6,<7
