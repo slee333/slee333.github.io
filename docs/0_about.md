@@ -21,10 +21,10 @@ show_title: false
   <section class="about-section">
     <h2>관심 분야</h2>
     <dl class="about-list">
-      <div><dt>임상 진료</dt><dd>내과 진료와 급성·만성 질환 관리</dd></div>
-      <div><dt>개발</dt><dd>웹과 모바일 앱</dd></div>
-      <div><dt>데이터 과학</dt><dd>전자의무기록·웨어러블 데이터 분석과 예측 모델</dd></div>
-      <div><dt>글쓰기</dt><dd>공부, 펠로우 생활, 취미와 일상</dd></div>
+      <div><dt>임상 진료</dt><dd>내과 전문의. 지금은 외래와 일차·이차 예방에 집중하고 있고, 요즘 관심사는 위험인자가 생기기 전부터 막는 primordial prevention.</dd></div>
+      <div><dt>의료정보학</dt><dd>결국 우리는 시스템 안에서 일한다. 편하게, 제대로 일할 환경이 없으면 개인의 똥꼬쇼로는 한계가 있으니, 시스템을 고쳐서 더 많은 사람을 돕고 싶다.</dd></div>
+      <div><dt>개발</dt><dd>취미로 백엔드·프론트엔드 다 하는 풀스택을 꿈꿨으나, 현재는 프로 바이브코딩 딸깍러.</dd></div>
+      <div><dt>글쓰기</dt><dd>블로그 글과 공부 이야기. 웹소설도 도전해 봤는데, 시간이 너무 많이 들어 가볍게 할 일이 아니더라.</dd></div>
     </dl>
   </section>
 

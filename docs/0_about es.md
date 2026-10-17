@@ -21,10 +21,10 @@ show_title: false
   <section class="about-section">
     <h2>Áreas de enfoque</h2>
     <dl class="about-list">
-      <div><dt>Práctica clínica</dt><dd>Medicina interna, manejo de enfermedades agudas y crónicas, medicina preventiva</dd></div>
-      <div><dt>Desarrollo</dt><dd>Plataformas web y móviles para mejorar entornos clínicos</dd></div>
-      <div><dt>Ciencia de datos</dt><dd>Modelos predictivos y apoyo a la decisión clínica con datos de HCE y wearables</dd></div>
-      <div><dt>Escritura</dt><dd>Experiencias clínicas, tendencias tecnológicas y ciencia de datos</dd></div>
+      <div><dt>Práctica clínica</dt><dd>Internista. Ahora me enfoco en la consulta externa y la prevención primaria y secundaria, y últimamente me interesa la prevención primordial: evitar que los factores de riesgo aparezcan.</dd></div>
+      <div><dt>Informática clínica</dt><dd>Todos trabajamos dentro de sistemas. Sin un entorno que permita trabajar con comodidad y bien, el esfuerzo heroico individual tiene un límite, así que quiero mejorar el sistema para ayudar a más personas.</dd></div>
+      <div><dt>Desarrollo</dt><dd>Soñaba con ser desarrollador full stack por afición, front end y back end. Hoy soy un vibe coder profesional que sobre todo hace clic.</dd></div>
+      <div><dt>Escritura</dt><dd>Entradas del blog y notas de estudio. También intenté escribir una novela web y aprendí que lleva demasiado tiempo para hacerlo de forma casual.</dd></div>
     </dl>
   </section>
 
