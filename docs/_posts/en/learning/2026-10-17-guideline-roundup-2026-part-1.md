@@ -30,6 +30,8 @@ If you want the big picture first, check the table of contents above.
 It got long fast... so cardiovascular and metabolic disease comes first.
 
 
+> These are personal study notes, not medical advice for any individual patient. For clinical decisions, refer to the original guidelines and your own clinician.
+
 ---
 
 ## Cardiovascular and Metabolic Disease
@@ -58,7 +60,7 @@ Here's a quick rundown of what changed.
 - People with HIV, diabetes at ages 40–75, or CKD stage 3 or higher should get LDL-lowering therapy regardless of their numbers.
 - More room to choose the second drug. Instead of always going to ezetimibe after a statin, it feels more like you pick among ezetimibe, bempedoic acid, PCSK9 mAb and so on depending on the situation.
 
-![Infographic of eight secondary-prevention changes in the 2026 ACC/AHA dyslipidemia guideline: earlier risk reduction, LDL-C and non-HDL-C goals, markers beyond LDL-C, Lp(a), non-statin therapy, CKM, hypertriglyceridemia, and follow-up](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
+![Infographic of eight secondary-prevention changes in the 2026 ACC/AHA dyslipidemia guideline: earlier risk reduction, LDL-C and non-HDL-C goals, markers beyond LDL-C, Lp(a), non-statin therapy, CKM, hypertriglyceridemia, and follow-up](/assets/images/posts/opt-88413687b04d972b3539ca03.webp)
 
 The part that hits closest for me is that the age range now starts at 30.
 
@@ -76,7 +78,7 @@ Simply put, it describes health worsening through the interplay between the hear
 
 It may sound unfamiliar because the American Heart Association (AHA) only defined it in 2023, in a Presidential Advisory. Until then, CKD, cardiovascular disease, obesity, and diabetes were all handled separately. The 2026 CKM guideline is the clinical guideline that ties them all together. As far as I know there's no ICD code for it yet. Metabolic syndrome is probably the closest.
 
-![Diagram of CKM syndrome: obesity and metabolic dysfunction leading to chronic kidney disease, cardiovascular disease, and late-stage complications](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
+![Diagram of CKM syndrome: obesity and metabolic dysfunction leading to chronic kidney disease, cardiovascular disease, and late-stage complications](/assets/images/posts/opt-d0aae534fa7a189f2c1ee00f.webp)
 
 
 2026 Nature Reviews Nephrology.
@@ -85,7 +87,7 @@ Roughly: metabolic dysfunction, CKD, and cardiovascular disease sit on one conne
 
 CKM has stages, from 0 to 4.
 
-![CKM stages 1–4 with rising cardiovascular risk, moving from primary to secondary prevention](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
+![CKM stages 1–4 with rising cardiovascular risk, moving from primary to secondary prevention](/assets/images/posts/opt-ab856e3f7f402d3be2e8e2e8.webp)
 
 
 CKD obviously has stages, and medically obesity can be staged too, class 1, class 2 and so on (I've never told a patient "you have class n obesity." They might start to hate me). In that sense it makes sense that CKM has stages.
@@ -128,7 +130,7 @@ An update to the 2023 document. Results for finerenone and GLP-1 drugs came out 
 
 What stands out on the definition side is that HFpEF is now seen as a multisystem syndrome driven by visceral fat, inflammation, and metabolic dysfunction together. Like CKM above, the trend lately seems to be seeing diseases as several axes acting together. Our bodies are all connected, so you could call it a more accurate definition.
 
-![Three HFpEF phenotypes: cardiorenal, autoimmune/inflammatory, and cardiometabolic](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
+![Three HFpEF phenotypes: cardiorenal, autoimmune/inflammatory, and cardiometabolic](/assets/images/posts/opt-615951cdf06448b1c1e4a736.webp)
 
 Roughly: HFpEF has different phenotypes, cardiorenal, autoimmune/inflammatory, and cardiometabolic.
 
@@ -153,7 +155,7 @@ HFpEF used to feel mostly about symptom control, but now, much like GDMT for HFr
 
 This is closer to a practical guide for putting the 2025 AHA/ACC hypertension guideline into practice.
 
-![Resistant hypertension flowchart: rule out white-coat effect, nonadherence, and secondary causes, then lifestyle changes, optimized triple therapy, spironolactone, and further drugs or specialist referral](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
+![Resistant hypertension flowchart: rule out white-coat effect, nonadherence, and secondary causes, then lifestyle changes, optimized triple therapy, spironolactone, and further drugs or specialist referral](/assets/images/posts/opt-7ed46b6b83bdec16b840f74f.webp)
 One image sums it up.
 
 

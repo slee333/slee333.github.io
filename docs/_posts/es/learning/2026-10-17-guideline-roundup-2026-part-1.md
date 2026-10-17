@@ -30,6 +30,8 @@ Si quieres ver primero el panorama general, revisa el índice de arriba.
 Se alargó rápido... así que primero va lo cardiovascular y metabólico.
 
 
+> Son apuntes personales de estudio, no consejo médico para ningún paciente en particular. Para decisiones clínicas, consulta las guías originales y a tu profesional de salud.
+
 ---
 
 ## Enfermedad cardiovascular y metabólica
@@ -58,7 +60,7 @@ Un resumen rápido de lo que cambió:
 - Las personas con VIH, diabetes entre los 40 y 75 años, o ERC estadio 3 o superior deben recibir tratamiento hipolipemiante independientemente de sus cifras.
 - Más margen para elegir el segundo fármaco. En lugar de pasar siempre a ezetimiba después de la estatina, se elige entre ezetimiba, ácido bempedoico, anticuerpos anti-PCSK9, etc., según la situación.
 
-![Infografía de ocho cambios en prevención secundaria de la guía de dislipidemia ACC/AHA 2026: reducción temprana del riesgo, objetivos de LDL-C y no-HDL-C, marcadores más allá del LDL-C, Lp(a), terapia no estatínica, CKM, hipertrigliceridemia y seguimiento](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
+![Infografía de ocho cambios en prevención secundaria de la guía de dislipidemia ACC/AHA 2026: reducción temprana del riesgo, objetivos de LDL-C y no-HDL-C, marcadores más allá del LDL-C, Lp(a), terapia no estatínica, CKM, hipertrigliceridemia y seguimiento](/assets/images/posts/opt-88413687b04d972b3539ca03.webp)
 
 Lo que más me llega es que el rango de edad ahora empieza a los 30.
 
@@ -76,7 +78,7 @@ En pocas palabras, describe cómo la salud empeora por la interacción entre el 
 
 Puede sonar poco familiar porque la American Heart Association (AHA) lo definió recién en 2023, en una Presidential Advisory. Hasta entonces, la ERC, la enfermedad cardiovascular, la obesidad y la diabetes se trataban por separado. La guía CKM 2026 es la guía clínica que lo une todo. Hasta donde sé, todavía no tiene código CIE. Lo más parecido sería el síndrome metabólico.
 
-![Diagrama del síndrome CKM: la obesidad y la disfunción metabólica que llevan a enfermedad renal crónica, enfermedad cardiovascular y complicaciones tardías](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
+![Diagrama del síndrome CKM: la obesidad y la disfunción metabólica que llevan a enfermedad renal crónica, enfermedad cardiovascular y complicaciones tardías](/assets/images/posts/opt-d0aae534fa7a189f2c1ee00f.webp)
 
 
 2026 Nature Reviews Nephrology.
@@ -85,7 +87,7 @@ A grandes rasgos: la disfunción metabólica, la ERC y la enfermedad cardiovascu
 
 El CKM tiene estadios, del 0 al 4.
 
-![Estadios CKM 1–4 con riesgo cardiovascular creciente, de la prevención primaria a la secundaria](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
+![Estadios CKM 1–4 con riesgo cardiovascular creciente, de la prevención primaria a la secundaria](/assets/images/posts/opt-ab856e3f7f402d3be2e8e2e8.webp)
 
 
 La ERC obviamente tiene estadios, y médicamente la obesidad también se puede clasificar, grado 1, grado 2, etc. (nunca le he dicho a un paciente "usted tiene obesidad grado n". Podría empezar a odiarme). En ese sentido tiene lógica que el CKM tenga estadios.
@@ -128,7 +130,7 @@ Una actualización del documento de 2023. Entre medio salieron resultados de fin
 
 Lo que llama la atención en la definición es que ahora la HFpEF se ve como un síndrome multisistémico impulsado por la grasa visceral, la inflamación y la disfunción metabólica en conjunto. Como el CKM de arriba, la tendencia últimamente parece ser ver las enfermedades como varios ejes actuando a la vez. Todo en el cuerpo está conectado, así que se podría decir que es una definición más precisa.
 
-![Tres fenotipos de HFpEF: cardiorrenal, autoinmune/inflamatorio y cardiometabólico](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
+![Tres fenotipos de HFpEF: cardiorrenal, autoinmune/inflamatorio y cardiometabólico](/assets/images/posts/opt-615951cdf06448b1c1e4a736.webp)
 
 A grandes rasgos: la HFpEF tiene distintos fenotipos, cardiorrenal, autoinmune/inflamatorio y cardiometabólico.
 
@@ -153,7 +155,7 @@ La HFpEF antes parecía centrarse sobre todo en controlar síntomas, pero ahora,
 
 Esto es más bien una guía práctica para aplicar la guía de hipertensión AHA/ACC 2025.
 
-![Diagrama de flujo de la hipertensión resistente: descartar efecto de bata blanca, falta de adherencia y causas secundarias; luego estilo de vida, triple terapia optimizada, espironolactona y más fármacos o derivación al especialista](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
+![Diagrama de flujo de la hipertensión resistente: descartar efecto de bata blanca, falta de adherencia y causas secundarias; luego estilo de vida, triple terapia optimizada, espironolactona y más fármacos o derivación al especialista](/assets/images/posts/opt-7ed46b6b83bdec16b840f74f.webp)
 Una sola imagen lo resume.
 
 
