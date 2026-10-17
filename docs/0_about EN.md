@@ -62,7 +62,7 @@ show_title: false
         </div>
       </li>
       <li class="about-entry">
-        <div class="about-entry__when">July 2023 – 2026</div>
+        <div class="about-entry__when">July 2023 – June 2026</div>
         <div>
           <h3>Internal Medicine Resident</h3>
           <p class="about-entry__org">MetroWest Medical Center</p>
@@ -124,8 +124,8 @@ show_title: false
     <h2>Publications &amp; Presentations</h2>
     <h3 class="about-subhead">Key publications (first author / co-first author)</h3>
     <ul class="about-pubs">
-      <li class="is-highlight"><strong>Lee, S.</strong> et al. "Multi-center validation of machine learning model for preoperative prediction of postoperative mortality." <em>npj Digital Medicine</em>, 2022.<span class="about-tag">First author</span></li>
-      <li class="is-highlight"><strong>Yoo, TK, Lee, S.</strong> et al. "Influence of MAFLD and NAFLD on Arterial Stiffness." <em>Nutrition, Metabolism and Cardiovascular Diseases</em>, 2024.<span class="about-tag">Co-first author</span></li>
+      <li class="is-highlight"><strong>Lee, S.</strong> et al. "Multi-center validation of machine learning model for preoperative prediction of postoperative mortality." <em>npj Digital Medicine</em>, 2022.<a class="about-doi" href="https://doi.org/10.1038/s41746-022-00625-6" target="_blank" rel="noopener noreferrer">DOI</a><span class="about-tag">First author</span></li>
+      <li class="is-highlight"><strong>Yoo, TK, Lee, S.</strong> et al. "Influence of MAFLD and NAFLD on Arterial Stiffness." <em>Nutrition, Metabolism and Cardiovascular Diseases</em>, 2024.<a class="about-doi" href="https://doi.org/10.1016/j.numecd.2024.03.008" target="_blank" rel="noopener noreferrer">DOI</a><span class="about-tag">Co-first author</span></li>
     </ul>
 
     <h3 class="about-subhead">Awards</h3>
@@ -137,11 +137,11 @@ show_title: false
       <summary>More publications and presentations</summary>
       <h4 class="about-subhead">Co-authored publications</h4>
       <ul class="about-pubs">
-        <li>Hua, J. et al. "Abnormal Grey Matter Arteriolar Cerebral Blood Volume in Schizophrenia…" <em>Schizophrenia Bulletin</em>, 2016.</li>
-        <li>Hua, J. et al. "Increased Cerebral Blood Volume in Small Arterial Vessels is a Correlate of Amyloid-β–Related Cognitive Decline." <em>Neurobiology of Aging</em>, 2019.</li>
-        <li>Ratnanather, JT. et al. "An MHealth App (Speech Banana) for Auditory Training…" <em>JMIR MHealth and UHealth</em>, 2021.</li>
-        <li>Ge, A. et al. "Seizure triggers identified postictally using a smart watch reporting system." <em>Epilepsy &amp; Behavior</em>, 2022.</li>
-        <li>Park, T. et al. "Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations." <em>Clinical and Experimental Pediatrics</em>, recent.</li>
+        <li>Hua, J. et al. "Abnormal Grey Matter Arteriolar Cerebral Blood Volume in Schizophrenia…" <em>Schizophrenia Bulletin</em>, 2016.<a class="about-doi" href="https://doi.org/10.1093/schbul/sbw109" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Hua, J. et al. "Increased Cerebral Blood Volume in Small Arterial Vessels is a Correlate of Amyloid-β–Related Cognitive Decline." <em>Neurobiology of Aging</em>, 2019.<a class="about-doi" href="https://doi.org/10.1016/j.neurobiolaging.2019.01.001" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Ratnanather, JT. et al. "An MHealth App (Speech Banana) for Auditory Training…" <em>JMIR MHealth and UHealth</em>, 2021.<a class="about-doi" href="https://doi.org/10.2196/20890" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Ge, A. et al. "Seizure triggers identified postictally using a smart watch reporting system." <em>Epilepsy &amp; Behavior</em>, 2022.<a class="about-doi" href="https://doi.org/10.1016/j.yebeh.2021.108472" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Park, T. et al. "Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations." <em>Clinical and Experimental Pediatrics</em>, 2025.<a class="about-doi" href="https://doi.org/10.3345/cep.2025.00962" target="_blank" rel="noopener noreferrer">DOI</a></li>
       </ul>
       <h4 class="about-subhead">Poster presentations (first author)</h4>
       <ul class="about-pubs">

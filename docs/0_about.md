@@ -60,9 +60,9 @@ show_title: false
         </div>
       </li>
       <li class="about-entry">
-        <div class="about-entry__when">2023년 7월 – 2026년</div>
+        <div class="about-entry__when">2023년 7월 – 2026년 6월</div>
         <div>
-          <h3>내과 전공의<span class="about-tag">Clinical</span></h3>
+          <h3>내과 전공의<span class="about-tag">진료</span></h3>
           <p class="about-entry__org">MetroWest Medical Center</p>
           <p class="about-entry__desc">병동·중환자실·외래에서 급성·만성 질환을 진료하며 내과 수련을 마쳤습니다.</p>
         </div>
@@ -70,7 +70,7 @@ show_title: false
       <li class="about-entry">
         <div class="about-entry__when">2022년 7월 – 2023년 5월</div>
         <div>
-          <h3>임상 연구원<span class="about-tag">Research</span></h3>
+          <h3>임상 연구원<span class="about-tag">연구</span></h3>
           <p class="about-entry__org">University of Virginia Hospital</p>
           <p class="about-entry__desc">중환자실 데이터를 활용한 환자 예후 예측과 임상 데이터 분석 연구에 참여했습니다.</p>
         </div>
@@ -78,7 +78,7 @@ show_title: false
       <li class="about-entry">
         <div class="about-entry__when">2016년 6월 – 2017년 5월</div>
         <div>
-          <h3>연구원<span class="about-tag">Tech</span></h3>
+          <h3>연구원<span class="about-tag">기술</span></h3>
           <p class="about-entry__org">Johns Hopkins Hospital</p>
           <p class="about-entry__desc">Apple Watch 기반 간질 관리 앱(EpiWatch)과 발작 감지 알고리즘 개발에 참여했습니다.</p>
         </div>
@@ -90,8 +90,8 @@ show_title: false
     <h2>논문 및 발표</h2>
     <h3 class="about-subhead">주요 논문 (제1저자 / 공동 제1저자)</h3>
     <ul class="about-pubs">
-      <li class="is-highlight"><strong>Lee, S.</strong> et al. "Multi-center validation of machine learning model for preoperative prediction of postoperative mortality." <em>npj Digital Medicine</em>, 2022.<span class="about-tag">제1저자</span></li>
-      <li class="is-highlight"><strong>Yoo, TK, Lee, S.</strong> et al. "Influence of MAFLD and NAFLD on Arterial Stiffness." <em>Nutrition, Metabolism and Cardiovascular Diseases</em>, 2024.<span class="about-tag">공동 제1저자</span></li>
+      <li class="is-highlight"><strong>Lee, S.</strong> et al. "Multi-center validation of machine learning model for preoperative prediction of postoperative mortality." <em>npj Digital Medicine</em>, 2022.<a class="about-doi" href="https://doi.org/10.1038/s41746-022-00625-6" target="_blank" rel="noopener noreferrer">DOI</a><span class="about-tag">제1저자</span></li>
+      <li class="is-highlight"><strong>Yoo, TK, Lee, S.</strong> et al. "Influence of MAFLD and NAFLD on Arterial Stiffness." <em>Nutrition, Metabolism and Cardiovascular Diseases</em>, 2024.<a class="about-doi" href="https://doi.org/10.1016/j.numecd.2024.03.008" target="_blank" rel="noopener noreferrer">DOI</a><span class="about-tag">공동 제1저자</span></li>
     </ul>
 
     <h3 class="about-subhead">수상</h3>
@@ -103,11 +103,11 @@ show_title: false
       <summary>추가 논문 및 발표</summary>
       <h4 class="about-subhead">공저자 논문</h4>
       <ul class="about-pubs">
-        <li>Hua, J. et al. "Abnormal Grey Matter Arteriolar Cerebral Blood Volume in Schizophrenia…" <em>Schizophrenia Bulletin</em>, 2016.</li>
-        <li>Hua, J. et al. "Increased Cerebral Blood Volume in Small Arterial Vessels is a Correlate of Amyloid-β–Related Cognitive Decline." <em>Neurobiology of Aging</em>, 2019.</li>
-        <li>Ratnanather, JT. et al. "An MHealth App (Speech Banana) for Auditory Training…" <em>JMIR MHealth and UHealth</em>, 2021.</li>
-        <li>Ge, A. et al. "Seizure triggers identified postictally using a smart watch reporting system." <em>Epilepsy &amp; Behavior</em>, 2022.</li>
-        <li>Park, T. et al. "Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations." <em>Clinical and Experimental Pediatrics</em>, 최근.</li>
+        <li>Hua, J. et al. "Abnormal Grey Matter Arteriolar Cerebral Blood Volume in Schizophrenia…" <em>Schizophrenia Bulletin</em>, 2016.<a class="about-doi" href="https://doi.org/10.1093/schbul/sbw109" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Hua, J. et al. "Increased Cerebral Blood Volume in Small Arterial Vessels is a Correlate of Amyloid-β–Related Cognitive Decline." <em>Neurobiology of Aging</em>, 2019.<a class="about-doi" href="https://doi.org/10.1016/j.neurobiolaging.2019.01.001" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Ratnanather, JT. et al. "An MHealth App (Speech Banana) for Auditory Training…" <em>JMIR MHealth and UHealth</em>, 2021.<a class="about-doi" href="https://doi.org/10.2196/20890" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Ge, A. et al. "Seizure triggers identified postictally using a smart watch reporting system." <em>Epilepsy &amp; Behavior</em>, 2022.<a class="about-doi" href="https://doi.org/10.1016/j.yebeh.2021.108472" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        <li>Park, T. et al. "Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations." <em>Clinical and Experimental Pediatrics</em>, 2025.<a class="about-doi" href="https://doi.org/10.3345/cep.2025.00962" target="_blank" rel="noopener noreferrer">DOI</a></li>
       </ul>
       <h4 class="about-subhead">학회 발표 및 포스터</h4>
       <ul class="about-pubs">
