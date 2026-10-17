@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /en/about/
 lang: en
+locale: en_US
 translation_id: about
 show_title: false
 ---

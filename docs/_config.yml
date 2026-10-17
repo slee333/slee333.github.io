@@ -116,3 +116,16 @@ exclude:
   - requirements-obsidian.txt
   - _media
   - _templates
+
+# Open Graph locale (jekyll-seo-tag). Korean is the default; English and
+# Spanish posts get theirs from their folder, pages set it in front matter.
+locale: ko_KR
+defaults:
+  - scope:
+      path: "_posts/en"
+    values:
+      locale: en_US
+  - scope:
+      path: "_posts/es"
+    values:
+      locale: es_ES

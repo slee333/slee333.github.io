@@ -3,8 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Página Principal
+title: Jack of some trades
+description: "Un internista y fellow de informática clínica escribiendo en la intersección de la medicina y la tecnología."
 lang: es
+locale: es_ES
 permalink: /es/
 translation_id: home
 ---

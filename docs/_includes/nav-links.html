@@ -4,7 +4,7 @@
 {%- endcomment -%}
 {%- assign nav_prefix = '' -%}
 {%- if page.lang != 'kr' -%}{%- assign nav_prefix = '/' | append: page.lang -%}{%- endif -%}
-{%- assign nav_items = 'about,life,cifellowship,learning,research' | split: ',' -%}
+{%- assign nav_items = 'about,cifellowship,learning,research,life' | split: ',' -%}
 {%- assign current_section = page.translation_id -%}
 {%- if page.layout == 'post' -%}{%- assign current_section = page.categories | first -%}{%- endif -%}
 {%- for item in nav_items -%}

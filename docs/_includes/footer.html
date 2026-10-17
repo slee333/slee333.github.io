@@ -13,7 +13,7 @@
       <div class="footer-block footer-block--links">
         <div class="footer-section-title">{{ phrases.footer.categories_title }}</div>
         <ul class="footer-link-list">
-          {%- assign category_order = "learning,cifellowship,life,research" | split: "," -%}
+          {%- assign category_order = "cifellowship,learning,research,life" | split: "," -%}
           {%- for category in category_order %}
           <li><a href="{{ footer_prefix | append: '/' | append: category | append: '/' | relative_url }}">{{ phrases.categories[category] }}</a></li>
           {%- endfor %}

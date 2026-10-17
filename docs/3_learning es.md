@@ -7,6 +7,7 @@ permalink: /es/learning/
 categories: learning
 category_slug: learning
 lang: es
+locale: es_ES
 translation_id: learning
 ---
 

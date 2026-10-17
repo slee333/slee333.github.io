@@ -74,8 +74,7 @@ layout: base
     </section>
 
     <section class="category-posts">
-      <h2 class="sr-only">{{ phrases.postsinthiscategory }}</h2>
-      <span class="sr-only" id="posts-count" aria-live="polite">{{ category_posts.size }}</span>
+      <h2 class="sr-only" id="posts-count" aria-live="polite" data-template="{{ phrases.post_count }}">{{ phrases.post_count | replace: '%n', category_posts.size }}</h2>
       <div class="category-posts__grid" id="posts-container">
         {% for post in category_posts %}
           {% assign tag_slugs = '' %}
@@ -185,7 +184,7 @@ layout: base
       });
 
       if (countNode) {
-        countNode.textContent = visibleCount;
+        countNode.textContent = countNode.dataset.template.replace('%n', visibleCount);
       }
       setEmptyState(visibleCount);
 

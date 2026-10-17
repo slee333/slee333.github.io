@@ -7,9 +7,6 @@
     - title: "소개"
       url: "/about/"
       icon: "fas fa-user-circle" # Font Awesome 아이콘 클래스
-    - title: "일상기록"
-      url: "/life/"
-      icon: "fas fa-pencil-alt"
     - title: "의료정보학"
       url: "/cifellowship/"
       icon: "fas fa-laptop-medical"
@@ -19,6 +16,9 @@
     - title: "독서와 연구"
       url: "/research/"
       icon: "fas fa-flask"
+    - title: "일상기록"
+      url: "/life/"
+      icon: "fas fa-pencil-alt"
 
 - lang: en
   title: "Are you lost?"
@@ -29,9 +29,6 @@
     - title: "About"
       url: "/en/about/"
       icon: "fas fa-user-circle"
-    - title: "Life"
-      url: "/en/life/"
-      icon: "fas fa-pencil-alt"
     - title: "Clinical Informatics"
       url: "/en/cifellowship/"
       icon: "fas fa-laptop-medical"
@@ -41,6 +38,9 @@
     - title: "Reading & Research"
       url: "/en/research/"
       icon: "fas fa-flask"
+    - title: "Life"
+      url: "/en/life/"
+      icon: "fas fa-pencil-alt"
 
 - lang: es
   title: "¿Estás perdido?"
@@ -51,9 +51,6 @@
     - title: "Sobre mí"
       url: "/es/about/"
       icon: "fas fa-user-circle"
-    - title: "Vida"
-      url: "/es/life/"
-      icon: "fas fa-pencil-alt"
     - title: "Informática Clínica"
       url: "/es/cifellowship/"
       icon: "fas fa-laptop-medical"
@@ -63,3 +60,6 @@
     - title: "Lectura e investigación"
       url: "/es/research/"
       icon: "fas fa-flask"
+    - title: "Vida"
+      url: "/es/life/"
+      icon: "fas fa-pencil-alt"

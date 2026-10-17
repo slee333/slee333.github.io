@@ -7,6 +7,7 @@ permalink: /en/cifellowship/
 categories: cifellowship
 category_slug: cifellowship
 lang: en
+locale: en_US
 translation_id: cifellowship
 ---
 

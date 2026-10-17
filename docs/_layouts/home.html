@@ -59,7 +59,6 @@ layout: base
     </div>
     {% assign count = 0 %}
     {% for post in posts_by_lang %}
-      {% unless featured_urls contains post.url %}
         {% if count < 8 %}
         {% assign category = post.categories | first %}
         <article class="journal-row">
@@ -72,7 +71,6 @@ layout: base
         </article>
         {% assign count = count | plus: 1 %}
         {% endif %}
-      {% endunless %}
     {% endfor %}
   </section>
   {{ content }}

@@ -7,6 +7,7 @@ permalink: /en/life/
 categories: life
 category_slug: life
 lang: en
+locale: en_US
 translation_id: life
 ---
 
