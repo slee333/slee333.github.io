@@ -21,10 +21,10 @@ show_title: false
   <section class="about-section">
     <h2>Areas of Focus</h2>
     <dl class="about-list">
-      <div><dt>Clinical practice</dt><dd>Internal medicine, acute and chronic disease management, preventive care</dd></div>
-      <div><dt>Development</dt><dd>Web and mobile platforms that improve clinical settings</dd></div>
-      <div><dt>Data science</dt><dd>Predictive modeling and clinical decision support using EMR and wearable data</dd></div>
-      <div><dt>Writing</dt><dd>Clinical experiences, technology trends, and data science</dd></div>
+      <div><dt>Clinical practice</dt><dd>Internist. Currently focused on outpatient care and primary and secondary prevention, and lately curious about primordial prevention: stopping risk factors before they start.</dd></div>
+      <div><dt>Clinical informatics</dt><dd>We all work inside systems. Without an environment that lets people work easily and well, individual heroics only go so far, so I want to fix the system and help more people.</dd></div>
+      <div><dt>Development</dt><dd>Once dreamed of being a hobbyist full-stack developer, front end and back end. These days, a professional vibe coder who mostly just clicks.</dd></div>
+      <div><dt>Writing</dt><dd>Blog posts and study notes. I also tried writing a web novel and learned it takes far too much time to do on the side.</dd></div>
     </dl>
   </section>
 
