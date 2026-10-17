@@ -39,7 +39,7 @@ permalink: /learning/guideline-roundup-2026-part-1/
 기존에는 고지혈증 환자의 10년 심혈관 위험을 예상해서 약처방을 했다.
 
 
-![](../../../assets/images/posts/opt-517089057cb4a9023df9782d.webp)
+![MDCalc 앱의 ASCVD 10년 위험 계산기 화면](../../../assets/images/posts/opt-517089057cb4a9023df9782d.webp)
 
 주로 이렇게 MDCalc 앱 등을 통해 위험확률을 계산했었지.
 
@@ -58,7 +58,7 @@ permalink: /learning/guideline-roundup-2026-part-1/
 - HIV, 40–75세 당뇨환자, CKD 3기 이상은 수치와 상관없이 LDL 낮추는 치료를 해야 함.
 - 2차 약제 선택 폭이 좀 더 넓어짐. 스타틴 다음에 꼭 ezetimibe를 거치기보다 ezetimibe, bempedoic acid, PCSK9 mAb 등 상황에 따라 고르면 된다는 느낌.
 
-![](../../../assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
+![2026 ACC/AHA 이상지질혈증 지침의 2차 예방 변화를 여덟 가지로 정리한 인포그래픽: 조기 위험 감소, 목표 수치, LDL-C 외 지표, Lp(a), 비스타틴 병용, CKM, 고중성지방혈증, 추적 관리](../../../assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
 
 개인적으로 제일 와닿는 부분은 나이 범위가 30세로 내려왔다는 점?
 
@@ -76,7 +76,7 @@ Cardiovascular-Kidney-Metabolic, 즉 심혈관-신장-대사 증후군이다.
 
 사실 조금 생소한 개념이기 쉬운 게, 이게 2023년에 미국심장협회(AHA)가 회장 자문(Presidential Advisory)으로 새로 정의한 개념이다. 이전까진 만성신질환/심혈관질환/비만/당뇨 등을 다 따로 다뤘는데, 이 모든 걸 한데 묶어 보는 임상지침으로서 만든 게 이번 2026 CKM 지침이라 보면 되겠다. 진료실에서 붙일 수 있는 ICD 코드는 아직 없는 듯? 그나마 대사증후군이 유사하려나.
 
-![](../../../assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
+![비만과 대사 이상에서 시작해 만성신질환, 심혈관질환, 말기 합병증으로 이어지는 CKM 증후군 개념도](../../../assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
 
 
 2026 Nature Reviews Nephrology.
@@ -85,7 +85,7 @@ Cardiovascular-Kidney-Metabolic, 즉 심혈관-신장-대사 증후군이다.
 
 CKM은 병기(stage)가 있다. 0기부터 4기까지.
 
-![](../../../assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
+![CKM 병기 1–4기에 따라 심혈관 위험이 커지고 1차 예방에서 2차 예방으로 넘어가는 흐름](../../../assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
 
 
 만성신질환은 당연히 병기가 있고, 비만도 의학적으론 1기 2기 뭐 이렇게 병기를 분류할 수 있다 (환자에게 당신은 n기 비만입니다 하는 말은 쓴 적 없다. 나를 싫어하게 될지도). 그런 의미에서 CKM에 병기가 있는건 당연하다고도 하겠다.
@@ -128,7 +128,7 @@ HFmrEF가 사라지긴 했는데 EMR에서 청구하거나 할 땐 여전히 남
 
 뭐 질환의 정의적인 측면에서는 HFpEF가 내장지방/염증/대사이상이 복합적으로 작용하여 발생하는 다계통 증후군으로 본다는 점이 특이할 만함. 위의 CKM도 그렇고 이렇게 기존의 질환들을 다양한 축들이 함께 작용하는 질환으로 보는게 요즘 트렌드인 듯? 뭐 우리 몸은 다 연결되어 있으니 더 정확한 정의라고도 할 수 있겠다.
 
-![](../../../assets/images/posts/opt-421dc8044225c366f87e3614.webp)
+![HFpEF의 세 가지 표현형: 심장-신장형, 자가면역·염증형, 심장-대사형](../../../assets/images/posts/opt-421dc8044225c366f87e3614.webp)
 
 대충 HFpEF는 심장-신장형, 자가면역/염증형, 심장-대사형의 다른 표현형이 있다는 그림.
 
@@ -141,7 +141,7 @@ HFmrEF가 사라지긴 했는데 EMR에서 청구하거나 할 땐 여전히 남
   뭐 BNP 낮다고 하면 심부전을 배제하는 관행이 좀 있으니 이렇게 재차 강조하는 듯 보인다.
 - 약물치료는 보통 SGLT2i + nsMRA를 먼저 깔고 (이 중에선 finerenone이 spironolactone보다 우선), 증상에 따라 추가적으로 쌓아 올리는 느낌임. 대충 아래 그림과 같다.
 
-![](../../../assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
+![HFpEF 약물치료 비교: 기존 권고와, SGLT2 억제제를 바탕으로 환자 특성에 따라 ARNI, MRA, GLP-1 RA를 더하는 맞춤 병용요법](../../../assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
 
 - 비만 HFpEF에서는 semaglutide, tirzepatide... 그러니까 위고비, 마운자로/젭바운드가 유의미한 증상개선/심혈관사망/심부전 입원 등을 줄였다는 듯하다. 그래서 여기서 권고도 BMI 30 이상이면 이 두 약 우선하기.
 - 실무적으로 주요한 부분은 베타차단제 습관적으로 쓰지 말라는 것. HFpEF에선 이득이 입증된 적이 없고, 심박수가 충분히 안 올라가게 만들어서(chronotropic incompetence) 운동 내성을 떨어뜨려 오히려 안 좋을 수 있다고 한다. 협심증이든 심방세동이든 별도 적응증이 있을 때 고려하라고 한다.
@@ -153,7 +153,7 @@ HFpEF는 증상조절에 치중하는 느낌이었는데 이젠 HFrEF처럼 마�
 
 2025년에 AHA/ACC에서 발표한 고혈압 지침이 있었는데 그걸 어떻게 실제적으로 반영할지 정리한 부분에 가까움.
 
-![](../../../assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
+![저항성 고혈압 흐름도: 백의 효과, 복약 순응도, 이차성 원인을 거른 뒤 생활습관 교정, 3제 최적화, spironolactone 추가, 추가 약제나 전문의 의뢰로 이어짐](../../../assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
 한 짤로 요약 가능.
 
 
@@ -175,3 +175,14 @@ HFpEF는 증상조절에 치중하는 느낌이었는데 이젠 HFrEF처럼 마�
 ---
 
 쓰다 보니 길어져서 심혈관계만 우선 정리하고 다른 지침들은 새 글을 파야 할 듯싶다.
+
+## 참고문헌
+
+1. Development and Validation of the American Heart Association's PREVENT Equations. *Circulation*. 2024. [doi:10.1161/CIRCULATIONAHA.123.067626](https://doi.org/10.1161/CIRCULATIONAHA.123.067626)
+2. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001423](https://doi.org/10.1161/CIR.0000000000001423) · [동시 게재 JACC](https://doi.org/10.1016/j.jacc.2025.11.016)
+3. Cardiovascular-Kidney-Metabolic Health: A Presidential Advisory From the American Heart Association. *Circulation*. 2023. [doi:10.1161/CIR.0000000000001184](https://doi.org/10.1161/CIR.0000000000001184)
+4. 2026 AHA/ACC/ADA/ASN Guideline for the Prevention, Detection, Evaluation, and Management of Cardiovascular-Kidney-Metabolic Syndrome. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001453](https://doi.org/10.1161/CIR.0000000000001453)
+5. AHA/ACC/ESC/WHF Expert Consensus Document: Second Universal Definition of Heart Failure (2026). *Circulation*. 2026. [doi:10.1161/CIR.0000000000001455](https://doi.org/10.1161/CIR.0000000000001455) · [Global Heart, 공개 전문](https://doi.org/10.5334/gh.1569)
+6. Management of Heart Failure With Preserved Ejection Fraction: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.06.018](https://doi.org/10.1016/j.jacc.2026.06.018)
+7. 2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults. *Circulation*. 2025. [doi:10.1161/CIR.0000000000001356](https://doi.org/10.1161/CIR.0000000000001356)
+8. Optimizing Blood Pressure Care in Patients With Resistant Hypertension: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.08.028](https://doi.org/10.1016/j.jacc.2026.08.028)

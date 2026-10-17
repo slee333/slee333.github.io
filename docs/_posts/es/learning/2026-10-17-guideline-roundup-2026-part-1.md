@@ -39,7 +39,7 @@ Se alargó rápido... así que primero va lo cardiovascular y metabólico.
 Hasta ahora, estimábamos el riesgo cardiovascular a 10 años del paciente y a partir de ahí decidíamos el tratamiento para el colesterol.
 
 
-![](/assets/images/posts/opt-517089057cb4a9023df9782d.webp)
+![Pantalla de la calculadora de riesgo ASCVD a 10 años de MDCalc](/assets/images/posts/opt-517089057cb4a9023df9782d.webp)
 
 Normalmente con algo como la app de MDCalc, así.
 
@@ -58,7 +58,7 @@ Un resumen rápido de lo que cambió:
 - Las personas con VIH, diabetes entre los 40 y 75 años, o ERC estadio 3 o superior deben recibir tratamiento hipolipemiante independientemente de sus cifras.
 - Más margen para elegir el segundo fármaco. En lugar de pasar siempre a ezetimiba después de la estatina, se elige entre ezetimiba, ácido bempedoico, anticuerpos anti-PCSK9, etc., según la situación.
 
-![](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
+![Infografía de ocho cambios en prevención secundaria de la guía de dislipidemia ACC/AHA 2026: reducción temprana del riesgo, objetivos de LDL-C y no-HDL-C, marcadores más allá del LDL-C, Lp(a), terapia no estatínica, CKM, hipertrigliceridemia y seguimiento](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
 
 Lo que más me llega es que el rango de edad ahora empieza a los 30.
 
@@ -76,7 +76,7 @@ En pocas palabras, describe cómo la salud empeora por la interacción entre el 
 
 Puede sonar poco familiar porque la American Heart Association (AHA) lo definió recién en 2023, en una Presidential Advisory. Hasta entonces, la ERC, la enfermedad cardiovascular, la obesidad y la diabetes se trataban por separado. La guía CKM 2026 es la guía clínica que lo une todo. Hasta donde sé, todavía no tiene código CIE. Lo más parecido sería el síndrome metabólico.
 
-![](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
+![Diagrama del síndrome CKM: la obesidad y la disfunción metabólica que llevan a enfermedad renal crónica, enfermedad cardiovascular y complicaciones tardías](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
 
 
 2026 Nature Reviews Nephrology.
@@ -85,7 +85,7 @@ A grandes rasgos: la disfunción metabólica, la ERC y la enfermedad cardiovascu
 
 El CKM tiene estadios, del 0 al 4.
 
-![](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
+![Estadios CKM 1–4 con riesgo cardiovascular creciente, de la prevención primaria a la secundaria](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
 
 
 La ERC obviamente tiene estadios, y médicamente la obesidad también se puede clasificar, grado 1, grado 2, etc. (nunca le he dicho a un paciente "usted tiene obesidad grado n". Podría empezar a odiarme). En ese sentido tiene lógica que el CKM tenga estadios.
@@ -128,7 +128,7 @@ Una actualización del documento de 2023. Entre medio salieron resultados de fin
 
 Lo que llama la atención en la definición es que ahora la HFpEF se ve como un síndrome multisistémico impulsado por la grasa visceral, la inflamación y la disfunción metabólica en conjunto. Como el CKM de arriba, la tendencia últimamente parece ser ver las enfermedades como varios ejes actuando a la vez. Todo en el cuerpo está conectado, así que se podría decir que es una definición más precisa.
 
-![](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
+![Tres fenotipos de HFpEF: cardiorrenal, autoinmune/inflamatorio y cardiometabólico](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
 
 A grandes rasgos: la HFpEF tiene distintos fenotipos, cardiorrenal, autoinmune/inflamatorio y cardiometabólico.
 
@@ -141,7 +141,7 @@ A grandes rasgos, lo que cambió:
   Supongo que todavía existe la costumbre de descartar la insuficiencia cardíaca con un BNP bajo, y por eso lo repiten.
 - El tratamiento farmacológico consiste en poner primero SGLT2i + ARM no esteroideo (finerenona preferida sobre espironolactona) e ir sumando según los síntomas. Más o menos como en la figura de abajo.
 
-![](/assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
+![Tratamiento de la HFpEF: recomendaciones actuales frente a una combinación dirigida basada en un inhibidor de SGLT2, sumando ARNI, ARM o GLP-1 RA según el perfil del paciente](/assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
 
 - En la HFpEF con obesidad, semaglutida y tirzepatida (Wegovy, Mounjaro/Zepbound) al parecer mejoraron de forma significativa los síntomas y redujeron la muerte cardiovascular y las hospitalizaciones por insuficiencia cardíaca. Por eso la recomendación es priorizar estos dos con un IMC de 30 o más.
 - Lo importante en la práctica: no añadir betabloqueantes por costumbre. Nunca han demostrado beneficio en la HFpEF y, al impedir que la frecuencia cardíaca suba lo suficiente (incompetencia cronotrópica), pueden reducir la tolerancia al ejercicio y empeorar las cosas. Solo se consideran con otra indicación, como angina o fibrilación auricular.
@@ -153,7 +153,7 @@ La HFpEF antes parecía centrarse sobre todo en controlar síntomas, pero ahora,
 
 Esto es más bien una guía práctica para aplicar la guía de hipertensión AHA/ACC 2025.
 
-![](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
+![Diagrama de flujo de la hipertensión resistente: descartar efecto de bata blanca, falta de adherencia y causas secundarias; luego estilo de vida, triple terapia optimizada, espironolactona y más fármacos o derivación al especialista](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
 Una sola imagen lo resume.
 
 
@@ -175,3 +175,14 @@ Desde el punto de vista de atención primaria, lo más útil probablemente sea R
 ---
 
 Se alargó, así que primero cubro lo cardiovascular y escribiré otro post para las demás guías.
+
+## Referencias
+
+1. Development and Validation of the American Heart Association's PREVENT Equations. *Circulation*. 2024. [doi:10.1161/CIRCULATIONAHA.123.067626](https://doi.org/10.1161/CIRCULATIONAHA.123.067626)
+2. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001423](https://doi.org/10.1161/CIR.0000000000001423) · [también en JACC](https://doi.org/10.1016/j.jacc.2025.11.016)
+3. Cardiovascular-Kidney-Metabolic Health: A Presidential Advisory From the American Heart Association. *Circulation*. 2023. [doi:10.1161/CIR.0000000000001184](https://doi.org/10.1161/CIR.0000000000001184)
+4. 2026 AHA/ACC/ADA/ASN Guideline for the Prevention, Detection, Evaluation, and Management of Cardiovascular-Kidney-Metabolic Syndrome. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001453](https://doi.org/10.1161/CIR.0000000000001453)
+5. AHA/ACC/ESC/WHF Expert Consensus Document: Second Universal Definition of Heart Failure (2026). *Circulation*. 2026. [doi:10.1161/CIR.0000000000001455](https://doi.org/10.1161/CIR.0000000000001455) · [Global Heart, acceso abierto](https://doi.org/10.5334/gh.1569)
+6. Management of Heart Failure With Preserved Ejection Fraction: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.06.018](https://doi.org/10.1016/j.jacc.2026.06.018)
+7. 2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults. *Circulation*. 2025. [doi:10.1161/CIR.0000000000001356](https://doi.org/10.1161/CIR.0000000000001356)
+8. Optimizing Blood Pressure Care in Patients With Resistant Hypertension: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.08.028](https://doi.org/10.1016/j.jacc.2026.08.028)

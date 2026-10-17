@@ -39,7 +39,7 @@ It got long fast... so cardiovascular and metabolic disease comes first.
 Until now, we estimated a patient's 10-year cardiovascular risk and decided on cholesterol medication from there.
 
 
-![](/assets/images/posts/opt-517089057cb4a9023df9782d.webp)
+![MDCalc ASCVD 10-year risk calculator screen](/assets/images/posts/opt-517089057cb4a9023df9782d.webp)
 
 Mostly with something like the MDCalc app, like this.
 
@@ -58,7 +58,7 @@ Here's a quick rundown of what changed.
 - People with HIV, diabetes at ages 40–75, or CKD stage 3 or higher should get LDL-lowering therapy regardless of their numbers.
 - More room to choose the second drug. Instead of always going to ezetimibe after a statin, it feels more like you pick among ezetimibe, bempedoic acid, PCSK9 mAb and so on depending on the situation.
 
-![](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
+![Infographic of eight secondary-prevention changes in the 2026 ACC/AHA dyslipidemia guideline: earlier risk reduction, LDL-C and non-HDL-C goals, markers beyond LDL-C, Lp(a), non-statin therapy, CKM, hypertriglyceridemia, and follow-up](/assets/images/posts/opt-a63cdd345d2e45e4389ed1a1.webp)
 
 The part that hits closest for me is that the age range now starts at 30.
 
@@ -76,7 +76,7 @@ Simply put, it describes health worsening through the interplay between the hear
 
 It may sound unfamiliar because the American Heart Association (AHA) only defined it in 2023, in a Presidential Advisory. Until then, CKD, cardiovascular disease, obesity, and diabetes were all handled separately. The 2026 CKM guideline is the clinical guideline that ties them all together. As far as I know there's no ICD code for it yet. Metabolic syndrome is probably the closest.
 
-![](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
+![Diagram of CKM syndrome: obesity and metabolic dysfunction leading to chronic kidney disease, cardiovascular disease, and late-stage complications](/assets/images/posts/opt-9dfb325a260211bffb9d25c2.webp)
 
 
 2026 Nature Reviews Nephrology.
@@ -85,7 +85,7 @@ Roughly: metabolic dysfunction, CKD, and cardiovascular disease sit on one conne
 
 CKM has stages, from 0 to 4.
 
-![](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
+![CKM stages 1–4 with rising cardiovascular risk, moving from primary to secondary prevention](/assets/images/posts/opt-64dc2ea82c5876413c7b7985.webp)
 
 
 CKD obviously has stages, and medically obesity can be staged too, class 1, class 2 and so on (I've never told a patient "you have class n obesity." They might start to hate me). In that sense it makes sense that CKM has stages.
@@ -128,7 +128,7 @@ An update to the 2023 document. Results for finerenone and GLP-1 drugs came out 
 
 What stands out on the definition side is that HFpEF is now seen as a multisystem syndrome driven by visceral fat, inflammation, and metabolic dysfunction together. Like CKM above, the trend lately seems to be seeing diseases as several axes acting together. Our bodies are all connected, so you could call it a more accurate definition.
 
-![](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
+![Three HFpEF phenotypes: cardiorenal, autoimmune/inflammatory, and cardiometabolic](/assets/images/posts/opt-421dc8044225c366f87e3614.webp)
 
 Roughly: HFpEF has different phenotypes, cardiorenal, autoimmune/inflammatory, and cardiometabolic.
 
@@ -141,7 +141,7 @@ Roughly, what changed:
   I guess there's enough of a habit of ruling out HF on a low BNP that they felt the need to repeat it.
 - Drug therapy feels like laying down SGLT2i + nsMRA first (finerenone preferred over spironolactone), then stacking more on depending on symptoms. Roughly like the figure below.
 
-![](/assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
+![HFpEF drug therapy: current recommendations versus a targeted combination built on an SGLT2 inhibitor, adding ARNI, MRA, or GLP-1 RA by patient profile](/assets/images/posts/opt-33c8b2f3df840a2f528d6187.webp)
 
 - In HFpEF with obesity, semaglutide and tirzepatide (Wegovy, Mounjaro/Zepbound) apparently meaningfully improved symptoms and reduced cardiovascular death and HF hospitalization. So the recommendation is to prefer these two at BMI 30 or above.
 - The practically important part: don't add beta-blockers out of habit. They've never shown benefit in HFpEF, and by keeping the heart rate from rising enough (chronotropic incompetence) they can lower exercise tolerance and actually make things worse. Consider them only for a separate indication like angina or atrial fibrillation.
@@ -153,7 +153,7 @@ HFpEF used to feel mostly about symptom control, but now, much like GDMT for HFr
 
 This is closer to a practical guide for putting the 2025 AHA/ACC hypertension guideline into practice.
 
-![](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
+![Resistant hypertension flowchart: rule out white-coat effect, nonadherence, and secondary causes, then lifestyle changes, optimized triple therapy, spironolactone, and further drugs or specialist referral](/assets/images/posts/opt-f655c561027efc27d66b0c3d.webp)
 One image sums it up.
 
 
@@ -175,3 +175,14 @@ From a primary care point of view, the most useful part is probably RESIST. Ther
 ---
 
 This got long, so I'm covering cardiovascular first and will write a separate post for the other guidelines.
+
+## References
+
+1. Development and Validation of the American Heart Association's PREVENT Equations. *Circulation*. 2024. [doi:10.1161/CIRCULATIONAHA.123.067626](https://doi.org/10.1161/CIRCULATIONAHA.123.067626)
+2. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001423](https://doi.org/10.1161/CIR.0000000000001423) · [also in JACC](https://doi.org/10.1016/j.jacc.2025.11.016)
+3. Cardiovascular-Kidney-Metabolic Health: A Presidential Advisory From the American Heart Association. *Circulation*. 2023. [doi:10.1161/CIR.0000000000001184](https://doi.org/10.1161/CIR.0000000000001184)
+4. 2026 AHA/ACC/ADA/ASN Guideline for the Prevention, Detection, Evaluation, and Management of Cardiovascular-Kidney-Metabolic Syndrome. *Circulation*. 2026. [doi:10.1161/CIR.0000000000001453](https://doi.org/10.1161/CIR.0000000000001453)
+5. AHA/ACC/ESC/WHF Expert Consensus Document: Second Universal Definition of Heart Failure (2026). *Circulation*. 2026. [doi:10.1161/CIR.0000000000001455](https://doi.org/10.1161/CIR.0000000000001455) · [Global Heart, open access](https://doi.org/10.5334/gh.1569)
+6. Management of Heart Failure With Preserved Ejection Fraction: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.06.018](https://doi.org/10.1016/j.jacc.2026.06.018)
+7. 2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults. *Circulation*. 2025. [doi:10.1161/CIR.0000000000001356](https://doi.org/10.1161/CIR.0000000000001356)
+8. Optimizing Blood Pressure Care in Patients With Resistant Hypertension: 2026 ACC Expert Consensus Decision Pathway. *JACC*. 2026. [doi:10.1016/j.jacc.2026.08.028](https://doi.org/10.1016/j.jacc.2026.08.028)
