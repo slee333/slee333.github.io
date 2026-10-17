@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: /assets/images/posts/opt-1b0ca8ad23ea79e7cee81e44.webp
+image: /assets/images/posts/opt-ffd16674da02ce76c91d1990.webp
 subtitle: Las posibilidades de los modelos de lenguaje a gran escala son infinitas. No son una excepción en la traducción de publicaciones de blog.
 translation_id: "jekyllblogllm"
 ---

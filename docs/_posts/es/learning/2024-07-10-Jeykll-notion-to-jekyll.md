@@ -105,7 +105,7 @@ Verás la siguiente pantalla una vez que se haya creado la integración.
 
 Usaremos el **internal integration secret** en la siguiente sección. Una vez creada la integración, regresa a la página de Notion donde escribirás publicaciones.
 
-![Captura de pantalla de la Página de Notion](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)
+![Captura de pantalla de la Página de Notion](/assets/images/posts/opt-e6cf95fbec3be282461b691c.webp)
 
 Haz clic en el botón "..." en la esquina superior derecha de la página y selecciona "Connect to". Verás la integración que creaste anteriormente. Haz clic en ella para vincular la integración a tu página. La captura de pantalla anterior es un ejemplo.
 

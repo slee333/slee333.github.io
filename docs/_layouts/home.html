@@ -35,7 +35,8 @@ layout: base
       {% assign category = post.categories | first %}
       <article>
         {% if post.image and post.image != '' %}
-        <img class="journal-selected-image" src="{{ post.image }}" alt="" loading="lazy" width="432" height="243" onerror="this.hidden=true">
+        {%- assign thumb = post.image -%}{%- if thumb contains '/assets/images/posts/' -%}{%- assign thumb = thumb | replace: '/assets/images/posts/', '/assets/images/posts/w800/' -%}{%- endif -%}
+        <img class="journal-selected-image" src="{{ thumb }}" alt="" loading="lazy" decoding="async" width="432" height="243" onerror="this.onerror=function(){this.hidden=true};this.src='{{ post.image }}'">
         {% endif %}
         <p class="journal-category">{{ phrases.categories[category] }}</p>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -67,7 +68,7 @@ layout: base
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             <p>{{ post.subtitle }}</p>
           </div>
-          {% if post.image and post.image != '' %}<img src="{{ post.image }}" alt="" loading="lazy" width="112" height="84" onerror="this.hidden=true">{% endif %}
+          {% if post.image and post.image != '' %}{%- assign thumb = post.image -%}{%- if thumb contains '/assets/images/posts/' -%}{%- assign thumb = thumb | replace: '/assets/images/posts/', '/assets/images/posts/w240/' -%}{%- endif -%}<img src="{{ thumb }}" alt="" loading="lazy" decoding="async" width="112" height="84" onerror="this.onerror=function(){this.hidden=true};this.src='{{ post.image }}'">{% endif %}
         </article>
         {% assign count = count | plus: 1 %}
         {% endif %}

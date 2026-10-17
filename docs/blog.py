@@ -29,7 +29,10 @@ import pillow_avif  # Register AVIF decoding as well as encoding before reading 
 ROOT = Path(__file__).resolve().parent
 CATEGORIES = {'life', 'learning', 'research', 'cifellowship'}
 LANGUAGES = {'kr', 'en', 'es'}
-POLICY = 'v1-jpeg-avif60-1600-png-lossless-webp'
+POLICY = 'v2-jpeg-avif60-1600-png-webp1600-lossy85-if-heavy'
+MAX_WIDTH = 1600            # body column is 720px; 1600 covers 2x screens with room
+HEAVY_BYTES = 300 * 1024    # above this, try lossy WebP for PNG-like images
+THUMB_WIDTHS = (240, 800)   # list rows (~100px) and featured cards (~430px), at 2x
 EXCLUDED = {'.git', '.obsidian', '.env', '.blog-workflow', '_site', '_media',
             '.jekyll-cache', '.sass-cache', 'vendor', 'slee-comment-joy-main', '__pycache__'}
 
@@ -148,6 +151,22 @@ def relative_image(target, post):
     return quote(os.path.relpath(target, post.parent).replace('\\', '/'), safe='/-._~')
 
 
+def encode_webp(image, icc=None):
+    """PNG-like image -> WebP bytes: cap the width, then prefer lossless unless
+    it is heavy and lossy quality 85 is at least 30% smaller."""
+    if image.width > MAX_WIDTH:
+        image = image.resize((MAX_WIDTH, round(image.height * MAX_WIDTH / image.width)), Image.Resampling.LANCZOS)
+    lossless = io.BytesIO()
+    image.save(lossless, format='WEBP', lossless=True, method=6, icc_profile=icc or b'')
+    best = lossless.getvalue()
+    if len(best) > HEAVY_BYTES:
+        lossy = io.BytesIO()
+        image.save(lossy, format='WEBP', quality=85, method=6, icc_profile=icc or b'')
+        if len(lossy.getvalue()) < 0.7 * len(best):
+            best = lossy.getvalue()
+    return best
+
+
 class Media:
     def __init__(self, root):
         self.root = root.resolve()
@@ -196,10 +215,9 @@ class Media:
                     image = ImageOps.exif_transpose(original).convert('RGBA' if 'A' in original.getbands() or 'transparency' in original.info else 'RGB')
                     icc = image.info.get('icc_profile')
                     image.info.clear()
-                    data = io.BytesIO()
-                    image.save(data, format='WEBP', lossless=True, method=6, icc_profile=icc or b'')
-                    if len(data.getvalue()) < len(raw):
-                        encoded, suffix = data.getvalue(), '.webp'
+                    data = encode_webp(image, icc)
+                    if len(data) < len(raw):
+                        encoded, suffix = data, '.webp'
                 else:
                     raise ValueError(f'지원하지 않는 이미지 형식입니다: {path.name}. PNG 또는 JPEG로 저장해 주세요.')
             with Image.open(io.BytesIO(encoded)) as check:
@@ -220,6 +238,49 @@ class Media:
                 atomic_write(path, data)
         if self.pending:
             atomic_write(self.cache_path, json.dumps(self.cache, indent=2).encode('utf-8'))
+
+
+def make_thumbnails(root=ROOT):
+    """Small copies of each post's cover image (front matter `image:` under
+    assets/images/posts) at assets/images/posts/w240/ and w800/, same file name
+    and format. Layouts use them for list rows and featured cards."""
+    root = root.resolve()
+    assets = (root / 'assets/images/posts').resolve()
+    made = []
+    for post in writing_files(root):
+        text = post.read_text(encoding='utf-8-sig').replace('\r\n', '\n')
+        if not text.startswith('---'):
+            continue
+        metadata = split_post(text)[0] or {}
+        image = str(metadata.get('image') or '').split('?')[0]
+        if not image.startswith('/assets/images/posts/'):
+            continue
+        source = (root / image.lstrip('/')).resolve()
+        if not source.is_file() or source.parent != assets:
+            continue
+        for width in THUMB_WIDTHS:
+            output = assets / f'w{width}' / source.name
+            if output.exists():
+                continue
+            with Image.open(source) as original:
+                original.seek(0)
+                frame = ImageOps.exif_transpose(original.convert('RGBA' if 'A' in original.getbands() else 'RGB'))
+            frame.thumbnail((width, width * 4), Image.Resampling.LANCZOS)
+            suffix = source.suffix.lower()
+            data = io.BytesIO()
+            if suffix == '.avif':
+                frame.convert('RGB').save(data, format='AVIF', quality=60, speed=6)
+            elif suffix == '.webp':
+                frame.save(data, format='WEBP', quality=80, method=6)
+            elif suffix in ('.jpg', '.jpeg'):
+                frame.convert('RGB').save(data, format='JPEG', quality=82, optimize=True)
+            elif suffix == '.gif':
+                frame.convert('RGB').save(data, format='GIF')
+            else:
+                frame.save(data, format='PNG', optimize=True)
+            atomic_write(output, data.getvalue())
+            made.append(output)
+    return made
 
 
 def writing_files(root):
@@ -323,6 +384,7 @@ def ready_post(path, root=ROOT):
     atomic_write(backup, before)
     atomic_write(target, changed)
     path.unlink()
+    make_thumbnails(root)
     return target
 
 
@@ -330,6 +392,7 @@ def build_site(root=ROOT, drafts=False):
     root = root.resolve()
     posts = writing_files(root)
     report = optimize_posts(posts, root)
+    make_thumbnails(root)
     if drafts:
         for path in root.glob('_drafts/**/*.md'):
             if path.read_text(encoding='utf-8-sig').strip():
@@ -435,9 +498,13 @@ def main():
     commands.add_parser('build', help='새 이미지를 최적화하고 발행 대상만 빌드')
     ready = commands.add_parser('ready', help='검토한 초안을 로컬 _posts로 이동. 커밋/공개하지 않음')
     ready.add_argument('file')
+    commands.add_parser('thumbs', help='대표 이미지 썸네일(w240, w800)이 없으면 만들기')
     args = parser.parse_args()
     if args.command == 'new':
         print(new_post(args.slug, args.title, args.category, args.lang))
+    elif args.command == 'thumbs':
+        made = make_thumbnails()
+        print(f'썸네일 {len(made)}개를 만들었습니다.')
     elif args.command == 'ready':
         path = Path(args.file)
         if not path.is_absolute():

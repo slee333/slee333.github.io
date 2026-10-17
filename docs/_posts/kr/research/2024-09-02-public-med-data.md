@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: 연구일기
 lang: kr
-image: /assets/images/posts/opt-a1745d0d7bc394b6dfbfa929.webp
+image: /assets/images/posts/opt-e5cbf07f97bb61d05bdcc821.webp
 subtitle: 무슨 연구든 가장 큰 관건은 양질의 데이터를 얻는 일이다. 공공 데이터는 이 문제를 어느 정도 해결해준다.
 translation_id: "publicData"
 ---
@@ -40,15 +40,15 @@ MIMIC 데이터셋은 미국 베스 이스라엘 병원에서 2000년부터 2019
   
 사실 내가 가장 활발하게 사용한 데이터가 MIMIC 데이터라 어쩌다 보니 MIMIC 데이터에 대한 소개만 왕창 하게 되었는데, MIMIC 데이터 외에도 활용할 수 있는 공공 데이터는 많다. MIMIC이 포함된 PhysioNet 같은 플랫폼만 봐도 다양한 공공 데이터를 제공하고 있어, 연구자들이 무궁무진한 가능성을 탐구할 수 있다.   
   
-![](/assets/images/posts/opt-61379cf17d64f2bffac4cd7d.webp)  
+![](/assets/images/posts/opt-0f9a1727ba42e30b7e2da8c8.webp)  
   
 이 외에도 몇 가지 다른 예를 들어보자면..  
   
   
-![](/assets/images/posts/opt-bac0ecfd9a5e0fd83b204ad1.webp)  
+![](/assets/images/posts/opt-c88b691be9db11585786e66b.webp)  
 **N3C (National COVID Cohort Collaborative)**는 미국 전역에서 수집된 COVID-19 관련 임상 데이터에 관한 데이터베이스이다. 연구자들은 특정 조건을 충족할 경우 무료로 접근할 수 있지만 개인정보 보호를 위해 데이터 사용 계약(Data Use Agreement, DUA)이 필요하며, 연구자는 소속 기관을 통해 접근 권한을 신청해야 한다. 이 데이터는 특히 COVID-19 연구에 있어 중요한 자원으로 활용되고 있긴 하다. 워낙 방대해 다른 용도로도 사용 될 수 있을 거 같기는 한데, 나도 컨퍼런스에서 쓰는 거만 보고 제대로 파 보지는 못해서 얼마나 가능할지는 잘 모르겠다.  
   
-![](/assets/images/posts/opt-6fa4fdc29a552cedeafb29bf.webp)  
+![](/assets/images/posts/opt-fc0a796cae31f925a5c4cc0f.webp)  
   
 또 다른 예로, **UK Biobank**는 50만 명의 영국 인구로부터 수집된 유전자, 건강, 생활 습관 데이터를 포함한 방대한 생물의학 데이터베이스를 제공한다. 이 데이터에 접근하려면 연구자는 신청 절차를 거쳐야 하며, 연구 프로젝트의 범위에 따라 일정한 비용을 지불해야 한다. UK Biobank는 전 세계 연구자들이 다양한 질병 연구를 수행하는 데 매우 중요한 역할을 하고 있다. 학생이라면 500불에 데이터 엑세스가 가능한데 난 가난한 레지던트라… 명확한 연구주제가 잡히고 다른 데이터셋으로 진행한 연구에 진척이 있어 external validation이 매우매우 필요한 상황이라면 고려 해 볼 거 같다. UK BioBank를 사용한다, 좀 멋있지 않나?  
   

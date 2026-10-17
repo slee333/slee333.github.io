@@ -55,7 +55,7 @@ It's no longer surprising that these microorganisms affect our gut health. In fa
 
     
 
-![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)
+![](/assets/images/posts/opt-ce4b4ed41cf522ac29767996.webp)
 
 Microorganisms that can cause gastrointestinal diseases
 
@@ -73,7 +73,7 @@ But what if these gut microorganisms also affect our brain? Intuitively, it migh
 
     
 
-![](/assets/images/posts/opt-1d2dca129bdba3393d7d4df0.webp)
+![](/assets/images/posts/opt-ae4f7448e5b134977cd7c6de.webp)
 
 The connection between brain activity and the digestive system, including gut microorganisms, is also described as the Gut-brain axis.
 

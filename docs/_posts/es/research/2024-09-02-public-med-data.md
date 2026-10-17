@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: Investigación
 lang: es
-image: /assets/images/posts/opt-a1745d0d7bc394b6dfbfa929.webp
+image: /assets/images/posts/opt-e5cbf07f97bb61d05bdcc821.webp
 subtitle: Cualquiera que sea la investigación, el factor más importante es obtener datos de alta calidad. Los datos públicos en cierta medida ayudan a resolver este problema.
 translation_id: "publicData"
 ---
@@ -41,14 +41,14 @@ Aquí, el detalle en los datos de MIMIC fue crucial. Como mencioné, captura el 
 
 Dado que es el conjunto de datos que más utilizo, he hablado extensamente sobre MIMIC, pero hay muchos otros datos públicos disponibles. Platformas como PhysioNet, que incluye MIMIC, ofrecen diversos conjuntos de datos públicos para explorar un infinito abanico de posibilidades de investigación.
 
-![](/assets/images/posts/opt-61379cf17d64f2bffac4cd7d.webp)
+![](/assets/images/posts/opt-0f9a1727ba42e30b7e2da8c8.webp)
 
 Algunos otros ejemplos incluyen...
 
-![](/assets/images/posts/opt-bac0ecfd9a5e0fd83b204ad1.webp)
+![](/assets/images/posts/opt-c88b691be9db11585786e66b.webp)
 **N3C (National COVID Cohort Collaborative)** es una base de datos clínicos relacionada con COVID-19 recopilados en todo Estados Unidos. Los investigadores pueden acceder gratuitamente si cumplen ciertos requisitos, pero deben firmar un Acuerdo de Uso de Datos (Data Use Agreement, DUA) para proteger la privacidad de los datos, solicitando el acceso a través de su institución. Este conjunto de datos es un recurso valioso especialmente para la investigación sobre COVID-19. Dado su vasto volumen, también podría ser útil para otros propósitos, aunque no he explorado su potencial completo.
 
-![](/assets/images/posts/opt-6fa4fdc29a552cedeafb29bf.webp)
+![](/assets/images/posts/opt-fc0a796cae31f925a5c4cc0f.webp)
 
 Otro ejemplo sería el **UK Biobank**, que ofrece una vasta base de datos biomédica recopilada de 500,000 personas en Reino Unido, incluyendo información genética, de salud y hábitos de vida. Los investigadores deben pasar por un proceso de solicitud para accesar los datos y pagar una tarifa según el alcance del proyecto. UK Biobank es crucial para investigadores de todo el mundo que llevan a cabo estudios de diversas enfermedades. Estudiantes pueden acceder a los datos por 500 dólares, pero como soy un residente pobre... Consideraría utilizarlo si tuviera un tema de investigación claro y necesitara validación externa para un estudio avanzado con otros conjuntos de datos. ¡Usar el UK Biobank suena bastante increíble, no?
 

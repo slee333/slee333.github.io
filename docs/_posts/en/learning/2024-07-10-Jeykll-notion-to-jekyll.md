@@ -105,7 +105,7 @@ You will see the following screen once the integration is created.
 
 We will use the **internal integration secret** in the next section. Once the integration is created, return to the Notion page where you will write posts.
 
-![Notion Page Screenshot](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)
+![Notion Page Screenshot](/assets/images/posts/opt-e6cf95fbec3be282461b691c.webp)
 
 Click the "..." button in the top right corner of the page and select "Connect to". You will see the integration you created earlier. Click it to link the integration to your page. The above screenshot is an example.
 

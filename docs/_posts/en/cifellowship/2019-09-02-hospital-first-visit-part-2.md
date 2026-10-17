@@ -188,7 +188,7 @@ Naturally, researchers in the institution felt the need for a more convenient an
 
 
 
-![Mammosphere, a site for female patients to access their breast-related medical information](/assets/images/posts/opt-17a78c84f6ecb9c158d3aa34.webp)
+![Mammosphere, a site for female patients to access their breast-related medical information](/assets/images/posts/opt-a3f0e53c5eacea720d1c9004.webp)
 
 Mammosphere, a site for female patients to access their breast-related medical information.
 

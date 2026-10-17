@@ -60,7 +60,7 @@ translation_id: "foodforthought"
 
   
 
-![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)  
+![](/assets/images/posts/opt-ce4b4ed41cf522ac29767996.webp)  
 
 위장관 질환을 유발할 수 있는 장내 미생물  
 
@@ -78,7 +78,7 @@ FMT가 이렇듯 장관 질환에 효과를 보이는 이유는 장내 미생물
 
   
 
-![](/assets/images/posts/opt-1d2dca129bdba3393d7d4df0.webp)  
+![](/assets/images/posts/opt-ae4f7448e5b134977cd7c6de.webp)  
 
 장 내 미생물을 포함한 소화기관과 두뇌활동 사이의 연관성을 Gut-brain axis라는 말로도 표현한다  
 

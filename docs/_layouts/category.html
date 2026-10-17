@@ -101,7 +101,8 @@ layout: base
               <time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
             </div>
             {% if post.image and post.image != '' %}
-            <img class="category-row-image" src="{{ post.image | relative_url }}" alt="" loading="lazy" width="96" height="72">
+            {%- assign thumb = post.image -%}{%- if thumb contains '/assets/images/posts/' -%}{%- assign thumb = thumb | replace: '/assets/images/posts/', '/assets/images/posts/w240/' -%}{%- endif %}
+            <img class="category-row-image" src="{{ thumb | relative_url }}" alt="" loading="lazy" decoding="async" width="96" height="72" onerror="this.onerror=null;this.src='{{ post.image | relative_url }}'">
             {% endif %}
           </article>
         {% endfor %}

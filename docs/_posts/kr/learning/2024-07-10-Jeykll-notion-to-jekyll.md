@@ -99,7 +99,7 @@ Integration 이름을 설정해주고, 내가 노션에서 글을 작성할 Work
   
 위에서 보이는 **internal integration secret** 부분은 다음 섹션에서 사용할 예정이다. Integration이 생성되었으면 이제 노션으로 돌아와 글을 작성할 페이지로 돌아오자.  
   
-![](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)  
+![](/assets/images/posts/opt-e6cf95fbec3be282461b691c.webp)  
 페이지 우측 상단의 더 보기 (…) 버튼을 클릭하면 `Connect to` 라는 부분이 있다. 이 부분에 마우스를 올리면 아까 생성한 integration이 보일 텐데, 이걸 클릭해서 integration과 내 페이지를 연결시켜주자. 위 스크린샷은 예시이다.  
   
 ### 2.2 Python에서 Notion API를 이용해서 마크다운에 접근하기  

@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: /assets/images/posts/opt-e96c18e936087342ab8f38c7.webp
+image: /assets/images/posts/opt-799bb0fcd56d2f9a6651c727.webp
 subtitle: "De nuevo, ¡toca escribir la declaración personal! 😅"
 translation_id: "CIFellowAppDiary1"
 ---
@@ -36,7 +36,7 @@ La solicitud del fellowship es estructuralmente similar a la de la residencia. S
 
 ### Declaración Personal
 
-![](/assets/images/posts/opt-c84917d262cfd0996bbd992b.webp)
+![](/assets/images/posts/opt-7b8daa2e7f594009c49f7c48.webp)
 
 *¿Yo, escribiendo una 'Declaración Personal'?*
 
@@ -58,13 +58,13 @@ En cierto modo, es un proceso directo de describir lo que he hecho con mi vida, 
 
 Sin embargo, ERAS te limita a escribir sobre las 10 experiencias más importantes en lugar de todas. Tiene sentido. Todo el mundo tiene una amplia gama de experiencias, y leerlas todas sería interminable.
 
-![](/assets/images/posts/opt-943ee7995f7c9ae0d57effee.webp)
+![](/assets/images/posts/opt-fa1105d6dafd0d1bdba10990.webp)
 
 *“¿Disculpe, espera que lea todo esto?” Un CV demasiado largo podría hacerle perder el tiempo al entrevistador.*
 
 Es difícil capturar por completo la vida vibrante y multifacética de una persona en una simple hoja de papel. Pero no puedes rendirte solo porque sea difícil. Solo puedo seguir contemplando la mejor manera de mostrar quién soy.
 
-![](/assets/images/posts/opt-17eff9dabdc65c16d5ab7222.webp)
+![](/assets/images/posts/opt-005bae9c7634b9c85d18947f.webp)
 
 *La vida existe en tres dimensiones, no en dos.* 
 
@@ -98,6 +98,6 @@ En fin, para averiguar dónde quiero pasar realmente los próximos dos años, ne
 
 Empezar algo nuevo es increíblemente angustiante y emocionante al mismo tiempo. Solo puedo dar lo mejor de mí y esperar un resultado del que no me arrepienta.
 
-![](/assets/images/posts/opt-4ddfa6edadc4e283b4ba346b.webp)
+![](/assets/images/posts/opt-f5cf6e91cb9245309208a9bb.webp)
 
 *¿Dónde terminaré? Tengo una dirección, pero no un destino. El lugar al que llegue después de caminar simplemente se convertirá en mi destino.*

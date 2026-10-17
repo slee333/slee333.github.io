@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: /assets/images/posts/opt-e96c18e936087342ab8f38c7.webp
+image: /assets/images/posts/opt-799bb0fcd56d2f9a6651c727.webp
 subtitle: "Again, time to write my personal statement 😅"
 translation_id: "CIFellowAppDiary1"
 ---
@@ -36,7 +36,7 @@ The fellowship application is structurally similar to the residency application.
 
 ### Personal Statement
 
-![](/assets/images/posts/opt-c84917d262cfd0996bbd992b.webp)
+![](/assets/images/posts/opt-7b8daa2e7f594009c49f7c48.webp)
 
 *Me, writing a 'Personal Statement'?*
 
@@ -58,13 +58,13 @@ In a way, it's a straightforward process of describing what I've done with my li
 
 However, ERAS limits you to writing about the 10 most important experiences rather than all of them. This makes sense. Everyone has a wide range of experiences, and reading through all of them would be endless.
 
-![](/assets/images/posts/opt-943ee7995f7c9ae0d57effee.webp)
+![](/assets/images/posts/opt-fa1105d6dafd0d1bdba10990.webp)
 
 *“Excuse me, you expect me to read all this?” A CV that’s too long might just waste the interviewer's time.*
 
 It's difficult to fully capture a person's vibrant, multifaceted life on a flat piece of paper. But you can't just give up because it's hard. I can only keep contemplating how to best show who I am.
 
-![](/assets/images/posts/opt-17eff9dabdc65c16d5ab7222.webp)
+![](/assets/images/posts/opt-005bae9c7634b9c85d18947f.webp)
 
 *Life exists in three dimensions, not two.* 
 
@@ -98,6 +98,6 @@ Anyway, to figure out where I truly want to spend the next two years, I need to 
 
 Starting something new is incredibly nerve-wracking and exciting at the same time. I can only do my best and hope for a result I won't regret.
 
-![](/assets/images/posts/opt-4ddfa6edadc4e283b4ba346b.webp)
+![](/assets/images/posts/opt-f5cf6e91cb9245309208a9bb.webp)
 
 *Where will I end up? I have a direction, but no destination. The place I reach after walking will simply become my destination.*

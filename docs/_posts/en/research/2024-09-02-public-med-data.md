@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, public-data, research]
 categories: research
 categorydisplay: Research
 lang: en
-image: /assets/images/posts/opt-a1745d0d7bc394b6dfbfa929.webp
+image: /assets/images/posts/opt-e5cbf07f97bb61d05bdcc821.webp
 subtitle: In any research, the most crucial aspect is obtaining high-quality data. Public data somewhat helps solve this issue.
 translation_id: "publicData"
 ---
@@ -41,14 +41,14 @@ The detail in the MIMIC data greatly aided this process. As previously mentioned
 
 In fact, since MIMIC data is what I actively used the most, I've ended up extensively introducing MIMIC data. However, there are many other public datasets available for use. Platforms like PhysioNet, which includes MIMIC, offer a variety of public datasets, allowing researchers to explore boundless possibilities.
 
-![](/assets/images/posts/opt-61379cf17d64f2bffac4cd7d.webp)
+![](/assets/images/posts/opt-0f9a1727ba42e30b7e2da8c8.webp)
 
 To give a few more examples...
 
-![](/assets/images/posts/opt-bac0ecfd9a5e0fd83b204ad1.webp)
+![](/assets/images/posts/opt-c88b691be9db11585786e66b.webp)
 **N3C (National COVID Cohort Collaborative)** is a database concerning COVID-19 related clinical data collected from across the United States. Although researchers can access it for free if they meet certain conditions, a Data Use Agreement (DUA) is required to protect personal information, and researchers must apply for access rights through their affiliated institution. This data is particularly valuable for COVID-19 research but seems vast enough to be used for other purposes as well. I haven't delved into it deeply, so I'm unsure how feasible it is.
 
-![](/assets/images/posts/opt-6fa4fdc29a552cedeafb29bf.webp)
+![](/assets/images/posts/opt-fc0a796cae31f925a5c4cc0f.webp)
 
 Another example is the **UK Biobank**, which offers a vast biomedical database containing genetic, health, and lifestyle data collected from 500,000 UK residents. To access this data, researchers must go through an application process and pay a fee based on the scope of their research projects. The UK Biobank plays a very crucial role in enabling researchers globally to conduct various disease studies. If you're a student, you can access the data for $500, but as a financially-strapped resident… I might consider it if I have a clear research topic and need external validation for the progress made with other datasets. Using the UK Biobank sounds kind of cool, doesn’t it?
 

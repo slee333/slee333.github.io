@@ -192,7 +192,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](/assets/images/posts/opt-17a78c84f6ecb9c158d3aa34.webp)  
+![](/assets/images/posts/opt-a3f0e53c5eacea720d1c9004.webp)  
 
 여성 환자가 자신의 유방 관련 의료정보를 열람할 수 있도록 만들어놓은 사이트 마모 스피어 Mammosphere.  
 

@@ -34,7 +34,7 @@ Las bacterias intestinales son, literalmente, los bichitos que viven en nuestros
 
 Que estos microorganismos afectan nuestra salud intestinal ya no es noticia. De hecho, se les culpa de muchas enfermedades gastrointestinales, y el trasplante de microbiota fecal (FMT) se está estudiando como una posible solución para varios trastornos intestinales, aunque su eficacia todavía está en debate.
 
-![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)
+![](/assets/images/posts/opt-ce4b4ed41cf522ac29767996.webp)
 
 *Microbios intestinales que pueden causar enfermedades gastrointestinales.*
 

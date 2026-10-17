@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: /assets/images/posts/opt-1b0ca8ad23ea79e7cee81e44.webp
+image: /assets/images/posts/opt-ffd16674da02ce76c91d1990.webp
 subtitle: The potential of large language models is limitless. This is no exception in blog post translations.
 translation_id: "jekyllblogllm"
 ---
