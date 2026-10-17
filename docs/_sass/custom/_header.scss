@@ -393,3 +393,45 @@
   .sticky-header__toc { right: 0; left: 0; width: auto; border-radius: 0; }
   .sticky-header__actions .language-switcher { display: none; }
 }
+
+// --- Language banner (custom-head.html) ----------------------------------
+.lang-banner {
+  background: var(--theme-surface);
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+}
+.lang-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 4px var(--gutter);
+  box-sizing: border-box;
+}
+.lang-banner__text { margin: 0; color: var(--ink); flex: 1 1 auto; min-width: 0; }
+.lang-banner__link {
+  flex: none;
+  font-weight: 600;
+  color: var(--theme-color-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  &:hover { color: var(--theme-color-dark); }
+}
+.lang-banner__close {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: none;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover { color: var(--ink); background: var(--surface); }
+}
+@media (max-width: $bp-phone) {
+  .lang-banner__inner { padding: 4px 16px; flex-wrap: wrap; row-gap: 0; }
+  .lang-banner__text { flex-basis: calc(100% - 52px); }
+}

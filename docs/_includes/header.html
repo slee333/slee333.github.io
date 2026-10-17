@@ -38,6 +38,9 @@
 
     function navigateToLanguage(value) {
       sessionStorage.setItem('scrollPosition', String(window.scrollY));
+      // Translations can live at different URLs; use the page's hreflang link when there is one.
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + (value === 'kr' ? 'ko' : value) + '"]');
+      if (alt) { window.location.href = new URL(alt.getAttribute('href'), window.location.href).pathname; return; }
       var path = window.location.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
       if (value !== 'kr') path = '/' + value + path;
       path = path.replace(/\/{2,}/g, '/');
