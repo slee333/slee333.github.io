@@ -10,8 +10,8 @@ show_title: false
 <div class="about">
   <header class="about-hero">
     <h1>이승욱</h1>
-    <p class="about-hero__tagline">내과의사 · 의료정보학 펠로우</p>
-    <p class="about-hero__lede">2026년 7월부터 뉴욕 Mount Sinai에서 의료정보학(Clinical Informatics) 펠로우로 일하고 있습니다. 이 블로그에는 공부, 연구, 취미와 일상을 기록합니다.</p>
+    <p class="about-hero__tagline">내과의사 · 임상정보학 펠로우</p>
+    <p class="about-hero__lede">2026년 7월부터 뉴욕 Mount Sinai에서 임상정보학(Clinical Informatics) 펠로우로 일하고 있습니다. 이 블로그에는 공부, 연구, 취미와 일상을 기록합니다.</p>
     <p class="about-hero__links">
       <a href="https://www.linkedin.com/in/seung-wook-lee-8433566b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       <a href="https://orcid.org/0000-0003-4371-5703" target="_blank" rel="noopener noreferrer">ORCID ↗</a>

@@ -15,10 +15,18 @@
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.2;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
   margin: 0 0 12px;
 }
 .journal-title-dot { color: var(--theme-color-opp); }
+// A quiet punchline under the title: small, italic, muted.
+.journal-title-aside {
+  margin: -8px 0 14px;
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
 .journal-description { margin: 0; font-size: 16px; line-height: 1.75; color: var(--muted); }
 .journal-intro-author { border-left: 1px solid var(--rule); padding-left: 24px; }
 .journal-eyebrow { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
@@ -44,7 +52,7 @@
   flex-wrap: wrap;
   gap: 6px 16px;
   margin-bottom: 16px;
-  a { font-size: 13px; color: var(--muted); text-decoration: none; padding: 4px 0; &:hover { color: var(--theme-color); } }
+  a { font-size: 13px; color: var(--muted); text-decoration: none; padding: 4px 0; &:hover { color: var(--theme-color-dark); } }
 }
 
 .journal h3 {
@@ -52,7 +60,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1.45;
-  a { color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color); text-decoration: underline; text-underline-offset: 4px; } }
+  a { color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color-dark); text-decoration: underline; text-underline-offset: 4px; } }
 }
 .journal time { font-size: 12px; color: var(--muted); }
 
@@ -79,7 +87,7 @@
   margin: 0 0 16px;
   &[hidden] { display: none; }
 }
-.journal-category { font-size: 12px; font-weight: 700; color: var(--theme-color-dark) !important; margin: 0 0 8px !important; }
+.journal-category { font-size: 12px; font-weight: 700; color: var(--theme-color-strong) !important; margin: 0 0 8px !important; }
 
 // Recent rows
 .journal-row {

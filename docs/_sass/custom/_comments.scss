@@ -10,16 +10,16 @@
   gap: 6px;
   height: 36px;
   padding: 0 14px;
-  border: 1px solid var(--theme-color-dark);
+  border: 1px solid var(--theme-color-strong);
   border-radius: var(--radius);
-  background: var(--theme-color-dark);
+  background: var(--theme-color-strong);
   color: #fff;
   font: inherit;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color var(--transition), border-color var(--transition), color var(--transition);
-  &:hover { background: var(--theme-color); border-color: var(--theme-color); }
+  &:hover { background: var(--theme-color-dark); border-color: var(--theme-color-dark); }
   &:disabled { opacity: 0.45; cursor: not-allowed; }
   svg { width: 16px; height: 16px; }
 }
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
   > svg { width: 20px; height: 20px; fill: none; }
   h2 { margin: 0; font-size: 17px; font-weight: 700; color: var(--ink); }
 }
@@ -221,7 +221,7 @@
 #replying-to-container {
   font-size: 13px;
   color: var(--muted);
-  button { font: inherit; font-size: 12px; color: var(--theme-color-dark); background: none; border: 0; padding: 0 0 0 6px; text-decoration: underline; cursor: pointer; }
+  button { font: inherit; font-size: 12px; color: var(--theme-color-strong); background: none; border: 0; padding: 0 0 0 6px; text-decoration: underline; cursor: pointer; }
 }
 .comment-textarea { @extend %c-input; display: block; min-height: 88px; padding: 10px 12px; line-height: 1.6; resize: vertical; }
 .comment-form-bottom-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -296,7 +296,7 @@
     span { line-height: 1; }
     &:hover { color: var(--ink); background: var(--surface-alt); }
   }
-  .like-button[data-liked="true"] { color: var(--theme-color-dark); svg { fill: var(--theme-color-opp); stroke: var(--theme-color-opp); } }
+  .like-button[data-liked="true"] { color: var(--theme-color-strong); svg { fill: var(--theme-color-opp); stroke: var(--theme-color-opp); } }
 }
 // Edit-in-place actions (script emits utility class names)
 .comment-body form .flex { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; .comment-action-btn { @extend %c-button-ghost; } }
@@ -309,10 +309,10 @@
 
 .comment-mention-link {
   font-weight: 600;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
   text-decoration: underline;
   text-underline-offset: 3px;
-  &:hover { color: var(--theme-color); }
+  &:hover { color: var(--theme-color-dark); }
 }
 
 .no-comments-box, .no-comments-box:hover {

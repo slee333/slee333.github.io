@@ -21,6 +21,7 @@
     "resetfilters": "Reset Filters",
     "postsinthiscategory": "Posts in this category:",
     "minutesread": "min read",
+    "toc": "Contents",
     "description": "An internist and clinical informatics fellow writing at the intersection of medicine and technology.",
     "otherpostsinsamecategory": "Other posts in the same category",
     "footer-subscription": {
@@ -115,6 +116,7 @@
     "resetfilters": "Restablecer Filtros",
     "postsinthiscategory": "Artículos en esta categoría:",
     "minutesread": "min de lectura",
+    "toc": "Índice",
     "description": "Un internista y fellow de informática clínica escribiendo en la intersección de la medicina y la tecnología.",
     "otherpostsinsamecategory": "Otras entradas en la misma categoría",
     "footer-subscription": {
@@ -209,7 +211,8 @@
     "resetfilters": "필터 초기화",
     "postsinthiscategory": "해당 카테고리 글 모음:",
     "minutesread": "분 소요",
-    "description": "내과의사이자 의료정보학 펠로우가 임상 현장과 기술의 접점을 기록하는 블로그입니다.",
+    "toc": "목차",
+    "description": "내과의사이자 임상정보학 펠로우가 임상 현장과 기술의 접점을 기록하는 블로그입니다.",
     "otherpostsinsamecategory": "해당 카테고리 다른 글 보기",
     "footer-subscription": {
       "subscription-request": "업데이트 구독하기",
@@ -250,7 +253,7 @@
       "no_personal_comments": "아직 작성한 댓글이 없습니다."
     },
     "home_page": {
-      "eyebrow": "이승욱 · 내과의사, 의료정보학 펠로우",
+      "eyebrow": "이승욱 · 내과의사, 임상정보학 펠로우",
       "hero_tagline": "의료정보학, 공부, 연구, 일상 기록.",
       "featured": "처음 오셨다면",
       "recent_posts": "최근 글",

@@ -7,6 +7,11 @@
     <div class="sticky-header__surface">
       <button class="sticky-header__brand" type="button" data-scroll-top>
         <span class="sticky-header__logo">{{ site.title }}</span>
+        {%- comment -%} Phones show the post title (and current section) here instead of the logo. {%- endcomment -%}
+        <span class="sticky-header__compact">
+          <span class="sticky-header__compact-title">{{ page.title | escape }}</span>
+          <span class="sticky-header__compact-section" data-compact-section></span>
+        </span>
       </button>
 
       <nav class="sticky-header__nav sticky-header__nav--desktop" aria-label="Secondary navigation">
@@ -75,13 +80,13 @@
     const scrollTopButton = header.querySelector('[data-scroll-top]');
     const navLinks = header.querySelectorAll('[data-nav-link]');
     const activeHeadingLabel = document.getElementById('sticky-active-heading');
-    const mobileQuery = window.matchMedia('(max-width: 960px)');
+    const compactSectionLabel = header.querySelector('[data-compact-section]');
     const escapeIdentifier = (window.CSS && CSS.escape) ? CSS.escape : function (value) { return String(value).replace(/[^a-zA-Z0-9_-]/g, '_'); };
 
-    let lastScrollY = window.scrollY;
-    let scrollDirection = 'up';
     const showHeaderAt = 200;
-    const headingOffset = 96;
+    // Distance from the top that counts as "reading this heading": the header's
+    // own height plus a little air, so it tracks the phone and desktop layouts.
+    const headingOffset = () => header.offsetHeight + 12;
 
     const contentRoot = document.querySelector('.post-content');
     const headingNodes = contentRoot
@@ -132,12 +137,10 @@
     function setMenuState(open) {
       header.setAttribute('data-menu-open', open ? 'true' : 'false');
       if (menuToggle) menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      if (open) header.classList.remove('is-hidden');
     }
     function setTocState(open) {
       header.setAttribute('data-toc-open', open ? 'true' : 'false');
       tocToggleButtons.forEach(btn => btn.setAttribute('aria-expanded', open ? 'true' : 'false'));
-      if (open) header.classList.remove('is-hidden');
     }
     function updateProgress() {
       if (!progressBar) return;
@@ -148,40 +151,33 @@
     function smoothScrollTo(selector) {
       const target = document.querySelector(selector);
       if (!target) return;
-      const destination = target.getBoundingClientRect().top + window.pageYOffset - headingOffset;
+      const destination = target.getBoundingClientRect().top + window.pageYOffset - headingOffset();
       window.scrollTo({ top: destination, behavior: 'smooth' });
     }
     function updateActiveHeading() {
       if (!tocEntries.length || !activeHeadingLabel) return;
       let activeId = null;
+      const offset = headingOffset();
       for (const entry of tocEntries) {
         const el = document.getElementById(entry.id);
         if (!el) continue;
-        if (el.getBoundingClientRect().top - headingOffset <= 0) activeId = entry.id; else break;
+        if (el.getBoundingClientRect().top - offset <= 0) activeId = entry.id; else break;
       }
       const activeEntry = tocEntries.find(entry => entry.id === activeId);
-      activeHeadingLabel.textContent = activeEntry ? activeEntry.title : '';
+      const activeTitle = activeEntry ? activeEntry.title : '';
+      activeHeadingLabel.textContent = activeTitle;
+      if (compactSectionLabel) compactSectionLabel.textContent = activeTitle;
       if (tocList) {
         tocList.querySelectorAll('.sticky-header__toc-link').forEach(button => {
           button.classList.toggle('is-active', button.dataset.targetId === activeId);
         });
       }
     }
+    // The reading header stays visible on every screen size once the reader
+    // is past the top of the post, whichever way they scroll.
     function onScroll() {
       updateProgress();
-      const currentY = window.scrollY;
-      const delta = currentY - lastScrollY;
-      if (Math.abs(delta) > 8) scrollDirection = delta > 0 ? 'down' : 'up';
-      lastScrollY = currentY;
-
-      const shouldShow = currentY > showHeaderAt;
-      header.classList.toggle('is-active', shouldShow);
-      if (shouldShow) {
-        const panelOpen = header.getAttribute('data-toc-open') === 'true' || header.getAttribute('data-menu-open') === 'true';
-        header.classList.toggle('is-hidden', mobileQuery.matches && scrollDirection === 'down' && !panelOpen);
-      } else {
-        header.classList.remove('is-hidden');
-      }
+      header.classList.toggle('is-active', window.scrollY > showHeaderAt);
       updateActiveHeading();
     }
 

@@ -10,12 +10,16 @@ body {
   overflow-x: hidden;
   word-break: keep-all;
   overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+p, li { text-wrap: pretty; }
 
 img, video { max-width: 100%; height: auto; }
 
-a, a:visited { color: var(--theme-color-dark); }
-a:hover { color: var(--theme-color); }
+a, a:visited { color: var(--theme-color-strong); }
+a:hover { color: var(--theme-color-dark); }
 
 b, strong { font-weight: 700; color: inherit; }
 
@@ -24,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--ink);
+  text-wrap: balance;
 }
 
 code {
@@ -32,7 +37,7 @@ code {
   border: 1px solid var(--rule);
   border-radius: 4px;
   background: var(--surface-alt);
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
   padding: 0.1em 0.35em;
 }
 pre {
@@ -59,7 +64,7 @@ table {
   font-size: 14px;
   color: var(--ink);
   border-color: var(--rule);
-  th { background: var(--surface-alt); border-color: var(--rule); }
+  th { background: var(--theme-surface); border-color: var(--rule); color: var(--ink); }
   td { border-color: var(--rule); }
 }
 

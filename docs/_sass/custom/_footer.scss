@@ -18,7 +18,7 @@
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
 }
 .footer-tagline { margin: 0; max-width: 360px; line-height: 1.6; }
 .footer-section-title {
@@ -35,7 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
-  a { color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color); text-decoration: underline; text-underline-offset: 3px; } }
+  a { color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color-dark); text-decoration: underline; text-underline-offset: 3px; } }
 }
 .footer-bottom {
   margin-top: 24px;

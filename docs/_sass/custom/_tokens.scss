@@ -2,21 +2,28 @@
 // widths and type here rather than in individual components.
 :root {
   // Brand (blue / orange). The comment widget reads these names too.
+  // Roles: --theme-color is the signature blue for fills, rules, bars and
+  // focus rings. White text on it is under 4.5:1, so text links, labels and
+  // solid buttons use --theme-color-strong (same hue, 5.1:1 on white).
+  // --theme-color-dark is only the hover/pressed step below strong.
+  // Orange is the second voice: dots, underlines, likes. Never body text.
   --theme-color: #4195e0;
-  --theme-color-opp: #ea9f36;
+  --theme-color-strong: #1b70bb;
+  --theme-color-dark: #14558f;
   --theme-color-light: #4195e047;
-  --theme-color-dark: #214c72;
   --light-hover-color: #79b4e8;
-  --theme-surface: #f0f7fd;
+  --theme-surface: #eef6fd;
+  --theme-color-opp: #ea9f36;
+  --theme-color-opp-surface: #fdf3e5;
 
   // Text and lines
-  --ink: #202b33;
-  --muted: #5b6871;
+  --ink: #1c2630;
+  --muted: #56636d;
   --faint: #8a949b;
-  --rule: #e1e6e9;
-  --rule-strong: #202b33;
+  --rule: #e1e8ee;
+  --rule-strong: #1c2630;
   --surface: #ffffff;
-  --surface-alt: #f7f9fb;
+  --surface-alt: #f5f8fb;
 
   // Type
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,

@@ -10,11 +10,11 @@
   font-size: 13px;
   font-weight: 700;
   a {
-    color: var(--theme-color-dark);
+    color: var(--theme-color-strong);
     text-decoration: none;
-    border-bottom: 2px solid var(--theme-color);
+    border-bottom: 2px solid var(--theme-color-opp);
     padding-bottom: 2px;
-    &:hover { color: var(--theme-color); }
+    &:hover { color: var(--theme-color-dark); }
   }
 }
 .post-title {
@@ -60,14 +60,65 @@
     border-radius: 50%;
     color: var(--muted);
     transition: color var(--transition), background-color var(--transition);
-    &:hover { color: var(--theme-color-dark); background: var(--surface-alt); }
+    &:hover { color: var(--theme-color-strong); background: var(--surface-alt); }
   }
   svg { width: 18px; height: 18px; fill: currentColor; }
 }
-#copy-feedback { font-size: 12px; color: var(--theme-color-dark); margin-left: 6px; }
+#copy-feedback { font-size: 12px; color: var(--theme-color-strong); margin-left: 6px; }
+
+// Table of contents (opt-in via `toc: true`). Collapsed by default so it
+// costs one line above the body; filled by assets/js/toc.js.
+.post-toc {
+  margin: 20px 0 4px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface-alt);
+  font-size: 14px;
+  &[hidden] { display: none; }
+
+  summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    font-weight: 700;
+    color: var(--ink);
+    list-style: none;
+    &::-webkit-details-marker { display: none; }
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid var(--theme-color);
+      border-bottom: 2px solid var(--theme-color);
+      transform: rotate(-45deg);
+      transition: transform var(--transition);
+    }
+    &:hover { color: var(--theme-color-strong); }
+  }
+  &[open] summary::before { transform: rotate(45deg); }
+
+  nav { padding: 0 16px 14px 30px; }
+  ol { margin: 0; padding: 0; list-style: none; }
+  li { margin: 0; line-height: 1.5; }
+  > nav > ol > li { margin-top: 8px; }
+  > nav > ol > li > a { font-weight: 600; }
+  li ol { margin: 4px 0 2px; padding-left: 14px; border-left: 2px solid var(--rule); }
+  li ol li { padding: 2px 0; font-size: 13px; }
+  li ol a { color: var(--muted); }
+  a {
+    color: var(--ink);
+    text-decoration: none;
+    &:hover { color: var(--theme-color-strong); text-decoration: underline; text-underline-offset: 3px; }
+  }
+}
 
 // Body
 .post-content {
+  // Keep anchored headings clear of the fixed sticky header.
+  h2, h3 { scroll-margin-top: 88px; }
+  @media (max-width: $bp-phone) { h2, h3 { scroll-margin-top: 64px; } }
   width: 100%;
   padding-top: 20px;
   font-size: 16px;
@@ -130,7 +181,7 @@
   color: var(--muted);
   background: var(--surface);
   text-decoration: none;
-  &:hover { color: var(--theme-color-dark); border-color: var(--theme-color); }
+  &:hover { color: var(--theme-color-strong); border-color: var(--theme-color); }
 }
 
 // Related posts
@@ -143,7 +194,7 @@
   gap: 8px 16px;
   margin-bottom: 8px;
   h2 { margin: 0; font-size: 15px; font-weight: 600; }
-  > a { font-size: 12px; color: var(--muted); white-space: nowrap; text-decoration: none; &:hover { color: var(--theme-color); } }
+  > a { font-size: 12px; color: var(--muted); white-space: nowrap; text-decoration: none; &:hover { color: var(--theme-color-dark); } }
 }
 .post-related__list {
   list-style: none;
@@ -157,7 +208,7 @@
     padding: 12px 0;
     border-bottom: 1px solid var(--rule);
   }
-  a { font-size: 14px; line-height: 1.6; color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color); text-decoration: underline; text-underline-offset: 3px; } }
+  a { font-size: 14px; line-height: 1.6; color: var(--ink); text-decoration: none; &:hover { color: var(--theme-color-dark); text-decoration: underline; text-underline-offset: 3px; } }
   time { flex-shrink: 0; font-size: 12px; color: var(--muted); }
 }
 

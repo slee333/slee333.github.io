@@ -11,7 +11,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.05em;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-strong);
   span { color: var(--theme-color-opp); }
 }
 .error-page__title { margin: 0 0 10px; font-size: 22px; }
@@ -29,7 +29,7 @@
     font-size: 14px;
     color: var(--ink);
     text-decoration: none;
-    &:hover { border-color: var(--theme-color); color: var(--theme-color-dark); }
+    &:hover { border-color: var(--theme-color); color: var(--theme-color-strong); }
   }
-  a:first-child { background: var(--theme-color-dark); border-color: var(--theme-color-dark); color: #fff; &:hover { background: var(--theme-color); border-color: var(--theme-color); color: #fff; } }
+  a:first-child { background: var(--theme-color-strong); border-color: var(--theme-color-strong); color: #fff; &:hover { background: var(--theme-color-dark); border-color: var(--theme-color-dark); color: #fff; } }
 }
