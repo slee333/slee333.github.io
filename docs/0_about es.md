@@ -21,10 +21,10 @@ show_title: false
   <section class="about-section">
     <h2>Áreas de enfoque</h2>
     <dl class="about-list">
-      <div><dt>Práctica clínica</dt><dd>Internista. Ahora me enfoco en la consulta externa y la prevención primaria y secundaria, y últimamente me interesa la prevención primordial: evitar que los factores de riesgo aparezcan.</dd></div>
-      <div><dt>Informática clínica</dt><dd>Todos trabajamos dentro de sistemas. Sin un entorno que permita trabajar con comodidad y bien, el esfuerzo heroico individual tiene un límite, así que quiero mejorar el sistema para ayudar a más personas.</dd></div>
-      <div><dt>Desarrollo</dt><dd>Soñaba con ser desarrollador full stack por afición, front end y back end. Hoy soy un vibe coder profesional que sobre todo hace clic.</dd></div>
-      <div><dt>Escritura</dt><dd>Entradas del blog y notas de estudio. También intenté escribir una novela web y aprendí que lleva demasiado tiempo para hacerlo de forma casual.</dd></div>
+      <div><dt>Práctica clínica</dt><dd>Internista centrado en la consulta externa y la prevención primaria y secundaria, con un interés creciente en la prevención primordial: evitar que los factores de riesgo lleguen a aparecer.</dd></div>
+      <div><dt>Informática clínica</dt><dd>Resolver con sistemas los problemas de la práctica clínica que el esfuerzo individual no alcanza a resolver. Creo que un entorno que permita a los profesionales trabajar con comodidad y precisión ayuda, al final, a más pacientes.</dd></div>
+      <div><dt>Desarrollo</dt><dd>Desarrollador web por afición desde hace años; ahora uso herramientas de programación con IA para convertir ideas en prototipos rápidamente.</dd></div>
+      <div><dt>Escritura</dt><dd>En este blog escribo sobre estudio, práctica clínica y la vida como fellow. También me he animado a escribir una novela web.</dd></div>
     </dl>
   </section>
 
