@@ -18,7 +18,7 @@
           <li><a href="{{ footer_prefix | append: '/' | append: category | append: '/' | relative_url }}">{{ phrases.categories[category] }}</a></li>
           {%- endfor %}
           <li><a href="{{ footer_prefix | append: '/about/' | relative_url }}">{{ phrases.navbar.about }}</a></li>
-          <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+          <li><a href="{{ footer_prefix | append: '/feed.xml' | relative_url }}">RSS</a></li>
         </ul>
       </div>
     </div>

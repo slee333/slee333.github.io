@@ -1,0 +1,6 @@
+---
+layout: none
+permalink: /es/feed.xml
+sitemap: false
+---
+{%- include rss.xml lang="es" -%}

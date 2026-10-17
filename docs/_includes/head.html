@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-  {%- feed_meta -%}
+  {%- assign feed_href = '/feed.xml' -%}
+  {%- if page.lang == 'en' or page.lang == 'es' -%}{%- assign feed_href = '/' | append: page.lang | append: '/feed.xml' -%}{%- endif %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ feed_href | absolute_url }}">
   {%- include custom-head.html -%}
 </head>
