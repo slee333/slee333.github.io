@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Acerca de la beca de Informática Clínica"
+title: "Mi solicitud al fellowship de Informática Clínica (1)"
 date:   2024-04-29 18:00:00 -0400
 categories: cifellowship
 tags: [clinical-informatics, fellowship]

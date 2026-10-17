@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /en/life/:title/
-title: "Travel Guide to New York State Suburbs"
+title: "A Trip to Upstate New York"
 date: 2024-10-06 00:00:00 -0400
 tags: [blog, life]
 categories: life

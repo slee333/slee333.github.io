@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "About Clinical Informatics fellowship"
+title: "Applying to a Clinical Informatics Fellowship (1)"
 date:   2024-04-29 18:00:00 -0400
 categories: cifellowship
 tags: [clinical-informatics, fellowship]

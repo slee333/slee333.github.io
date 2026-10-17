@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /es/life/:title/
-title: "Viaje al área suburbana del estado de Nueva York"
+title: "Viaje al norte del estado de Nueva York"
 date: 2024-10-06 00:00:00 -0400
 tags: [blog, life]
 categories: life

@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: es/life/:title/
-title: "Comienza la solicitud del fellowship (1)"
+title: "Empiezo mi solicitud de fellowship (1)"
 date: 2025-06-09 00:00:00 -0400
 tags: [clinical-informatics, fellowship, life]
 categories: life

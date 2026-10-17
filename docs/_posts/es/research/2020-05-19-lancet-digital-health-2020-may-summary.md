@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /es/research/:title/
-title: "Resumen del comentario de la revista digital de salud Ranset de mayo de 2020 (1)"
+title: "Resumen de comentarios: Lancet Digital Health, mayo de 2020 (1)"
 date: 2020-05-19 00:00:00 -0400
 tags: [clinical-informatics, journal-review, 저널리뷰]
 categories: research

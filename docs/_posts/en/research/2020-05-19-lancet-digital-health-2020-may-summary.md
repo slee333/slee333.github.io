@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /en/research/:title/
-title: "Summary of the May 2020 issue commentary from Lancet Digital Health (1)"
+title: "Commentary Summary: Lancet Digital Health, May 2020 (1)"
 date: 2020-05-19 00:00:00 -0400
 tags: [clinical-informatics, journal-review, 저널리뷰]
 categories: research
