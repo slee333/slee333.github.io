@@ -4,8 +4,8 @@ permalink: /en/life/:title/
 title: "[Book review] Digital Healthcare: The Future of Medicine"
 date: 2020-01-29 00:00:00 -0400
 tags: [DigitalHealth, books, digital-health]
-categories: life
-categorydisplay: Daily Life
+categories: research
+categorydisplay: Reading & Research
 lang: en
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: Dr. Choi Yun-seob's latest book. The Bible of digital healthcare?

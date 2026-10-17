@@ -4,14 +4,14 @@
       "cifellowship": "Clinical Informatics",
       "learning": "Learning",
       "life": "Life",
-      "research": "Research"
+      "research": "Reading & Research"
     },
     "navbar": {
       "about": "About",
       "cifellowship": "Clinical Informatics",
       "learning": "Learning",
       "life": "Life",
-      "research": "Research",
+      "research": "Reading & Research",
       "home": "Home",
       "language_label": "Language",
       "toggle_menu": "Toggle navigation"
@@ -96,14 +96,14 @@
       "cifellowship": "Informática",
       "learning": "Estudio",
       "life": "Vida",
-      "research": "Investigación"
+      "research": "Lectura e investigación"
     },
     "navbar": {
       "about": "Acerca de",
       "cifellowship": "Informática",
       "learning": "Estudio",
       "life": "Vida",
-      "research": "Investigación",
+      "research": "Lectura e investigación",
       "home": "Inicio",
       "language_label": "Idioma",
       "toggle_menu": "Abrir menú"
@@ -188,14 +188,14 @@
       "cifellowship": "의료정보학",
       "learning": "공부일기",
       "life": "일상기록",
-      "research": "연구일기"
+      "research": "독서와 연구"
     },
     "navbar": {
       "about": "소개",
       "cifellowship": "의료정보학",
       "learning": "공부일기",
       "life": "일상기록",
-      "research": "연구일기",
+      "research": "독서와 연구",
       "home": "홈페이지",
       "language_label": "언어",
       "toggle_menu": "메뉴 열기"

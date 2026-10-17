@@ -4,8 +4,8 @@ permalink: /life/:title/
 title: "[도서 리뷰] 아주 작은 습관의 힘"
 date: 2020-01-17 00:00:00 -0400
 tags: [books, self-development]
-categories: life
-categorydisplay: 일상기록
+categories: research
+categorydisplay: 독서와 연구
 lang: kr
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: 작은 성공이 모여 기나긴 습관이 된다

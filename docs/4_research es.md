@@ -1,8 +1,8 @@
 ---
 
 layout: category
-title: Investigación
-subtitle: "De la práctica clínica a la informática médica mediante datos."
+title: Lectura e investigación
+subtitle: "Notas sobre libros, artículos e investigación."
 permalink: /es/research/
 categories: research
 category_slug: research

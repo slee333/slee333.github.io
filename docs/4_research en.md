@@ -1,8 +1,8 @@
 ---
 
 layout: category
-title: Research
-subtitle: "Bridging bedside questions with data and informatics."
+title: Reading & Research
+subtitle: "Notes from books, papers, and research."
 permalink: /en/research/
 categories: research
 category_slug: research

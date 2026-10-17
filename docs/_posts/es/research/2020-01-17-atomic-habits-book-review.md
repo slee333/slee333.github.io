@@ -4,8 +4,8 @@ permalink: /es/life/:title/
 title: "Reseña de Libro: Hábitos Atómicos"
 date: 2020-01-17 00:00:00 -0400
 tags: [books, self-development]
-categories: life
-categorydisplay: Vida Diaria
+categories: research
+categorydisplay: Lectura e investigación
 lang: es
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: "Pequeños cambios, resultados extraordinarios."

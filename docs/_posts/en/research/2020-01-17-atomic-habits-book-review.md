@@ -4,8 +4,8 @@ permalink: /en/life/:title/
 title: "[Book Review] The Power of Small Habits."
 date: 2020-01-17 00:00:00 -0400
 tags: [books, self-development]
-categories: life
-categorydisplay: Daily Life
+categories: research
+categorydisplay: Reading & Research
 lang: en
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: Gathered small successes become a long habit.

@@ -16,7 +16,7 @@
     - title: "공부일기"
       url: "/learning/"
       icon: "fas fa-book-open"
-    - title: "연구일기"
+    - title: "독서와 연구"
       url: "/research/"
       icon: "fas fa-flask"
 
@@ -38,7 +38,7 @@
     - title: "Learning"
       url: "/en/learning/"
       icon: "fas fa-book-open"
-    - title: "Research"
+    - title: "Reading & Research"
       url: "/en/research/"
       icon: "fas fa-flask"
 
@@ -60,6 +60,6 @@
     - title: "Aprendizaje"
       url: "/es/learning/"
       icon: "fas fa-book-open"
-    - title: "Investigación"
+    - title: "Lectura e investigación"
       url: "/es/research/"
       icon: "fas fa-flask"

@@ -1,8 +1,8 @@
 ---
 
 layout: category
-title: 연구일기
-subtitle: "연구와 데이터 분석에 관한 글."
+title: 독서와 연구
+subtitle: "책과 논문을 읽고, 연구하며 정리한 글."
 permalink: /research/
 categories: research
 category_slug: research

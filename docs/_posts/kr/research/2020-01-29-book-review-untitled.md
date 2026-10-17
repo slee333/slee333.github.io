@@ -4,8 +4,8 @@ permalink: /life/:title/
 title: "[도서 리뷰] 디지털 헬스케어: 의료의 미래"
 date: 2020-01-29 00:00:00 -0400
 tags: [DigitalHealth, books, digital-health]
-categories: life
-categorydisplay: 일상기록
+categories: research
+categorydisplay: 독서와 연구
 lang: kr
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: 최윤섭 박사님의 최신 저서. 디지털 헬스케어의 바이블?

@@ -4,8 +4,8 @@ permalink: /es/life/:title/
 title: "[Reseña del libro] Atención Sanitaria Digital: El Futuro de la Medicina"
 date: 2020-01-29 00:00:00 -0400
 tags: [DigitalHealth, books, digital-health]
-categories: life
-categorydisplay: Vida Diaria
+categories: research
+categorydisplay: Lectura e investigación
 lang: es
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: ¿La última obra del Dr. Choi Yoon-seop? ¿La biblia de la atención médica digital?
