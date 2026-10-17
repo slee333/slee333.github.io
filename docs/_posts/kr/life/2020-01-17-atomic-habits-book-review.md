@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: 작은 성공이 모여 기나긴 습관이 된다
 translation_id: "atomichabits"
 
@@ -24,7 +24,7 @@ translation_id: "atomichabits"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sXYO7LjW1bRXWiVXPII0eAqIiwY.jpg)  
+![](/assets/images/posts/opt-67f0336fc966756589dbb057.webp)  
 
 이와 같이 많은 경우 우리가 습관을 들이는데 실패하는 이유는 의지가 아니라 방법이 허술하기 때문이다.  
 

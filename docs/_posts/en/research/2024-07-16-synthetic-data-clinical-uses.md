@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: Research
 lang: en
-image: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-191aed76397f27a483fe8810.avif
 subtitle: What is synthetic data and how can it be used in clinical research?
 translation_id: "SyntheticData"
 ---
@@ -25,19 +25,19 @@ There are several algorithms for synthetic data generation, but one of the most 
 
 ### Generative Adversarial Network (GAN)
 
-![GAN](https://www.labellerr.com/blog/content/images/2022/12/gan-banner-1.webp)
+![GAN](/assets/images/posts/opt-337aa34d230321c845a23d49.webp)
 
 GAN consists of two neural networks, a generator and a discriminator. These two networks are in a competitive relationship where the generator creates synthetic data, and the discriminator tries to distinguish it from real data. In this process, the generator produces more realistic data, and eventually, the discriminator cannot differentiate between real and synthetic data. Advanced concepts that evolved from GAN include DPGAN (Differentially Private GAN) and CTGAN (Conditional Tabular GAN). DPGAN is designed to protect personal information in the training dataset by incorporating the concept of differential privacy. CTGAN addresses GAN's limitation in handling categorical variables and uses conditional generation methods to model complex relationships between various data tables, thereby generating well-mixed and complex types of data.
 
 ### VAE (Variational Autoencoder)
 
-![VAE](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/VAE_Basic.png/425px-VAE_Basic.png)
+![VAE](/assets/images/posts/opt-f19eae7577a1ea140c5528e3.webp)
 
 VAE is a neural network model that learns the latent space of the data to generate new data. It comprises an encoder and a decoder. The encoder transforms input data into latent variables, and the decoder generates new data similar to the original data from these latent variables. Since VAE assumes a normalized distribution for the latent space, the generated data is continuous and smooth.
 
 ### SMOTE (Synthetic Minority Over-sampling Technique)**
 
-![SMOTE](https://miro.medium.com/v2/resize:fit:1200/0*DfTZFQO5nhdiYmiY.png)
+![SMOTE](/assets/images/posts/opt-382c745ef6ffeaf6e955d2c2.webp)
 
 In machine learning and deep learning, there are often minority classes within datasets, such as data on rare disease patients, which are significantly fewer compared to other data. This situation is called data imbalance. SMOTE (Synthetic Minority Over-sampling Technique) is a frequently used technique to address this issue. SMOTE generates new data points between existing minority data points using the k-nearest neighbor algorithm. While SMOTE is generally used for upscaling compared to the synthetic data generation using GANs or VAEs, it still falls under the realm of synthetic data generation.
 
@@ -77,13 +77,13 @@ A recent [paper](https://www.nature.com/articles/s41746-024-01076-x) published i
 
 Simply put, this measures whether the synthetic data has the same statistical characteristics as the original data. For instance, the mean age and standard deviation of the synthetic data cohort should not be significantly different from those of the original data. The aforementioned paper compares the statistical properties of the cohorts formed by synthetic and original data, as shown in the following table.
 
-![Statistical Comparison](https://i.imgur.com/gOB6Wl9.png)
+![Statistical Comparison](/assets/images/posts/opt-cdbe9574a0da14a81f129d8b.webp)
 
 *Comparison of the statistical properties between synthetic and original data*
 
 Although the details of the paper aren't covered here, you can see a comparison to check whether the synthetic data accurately replicates statistical characteristics such as age, gender distribution, white blood cell count, etc., of the original data. The paper also evaluates whether the synthetic data preserves the genetic characteristics of the original data.
 
-![Genetic Comparison](https://i.imgur.com/KAzvh5p.png)
+![Genetic Comparison](/assets/images/posts/opt-c27714c6ded7ef8143f11bc2.webp)
 
 *Comparison of the genetic characteristics between synthetic and original data*
 
@@ -91,7 +91,7 @@ Although the details of the paper aren't covered here, you can see a comparison 
 
 Additionally, it should maintain the same correlations as the original data. For example, if there is a correlation between age and a specific disease in the original data, the same should be observed in the synthetic data. The previously mentioned paper compares the similarity between synthetic and original data by analyzing the survival rates of acute myeloid leukemia patients.
 
-![Structural Similarity](https://i.imgur.com/kT9JW3p.png)
+![Structural Similarity](/assets/images/posts/opt-7fcd53c4073b2757f169f81d.webp)
 
 *Comparison of structural similarity through survival analysis between synthetic and original data*
 
@@ -111,7 +111,7 @@ We have discussed how to evaluate synthetic data. Now, let's explore some clinic
 
 ### 4.1 Study on Cerebrovascular Diseases
 
-![Cerebrovascular Research](https://i.imgur.com/I8jcnWS.png)
+![Cerebrovascular Research](/assets/images/posts/opt-b1fa40a02eb86ab592d97b07.webp)
 
 A [paper](https://pubmed.ncbi.nlm.nih.gov/38324588/) published in PLoS One this February measures how well synthetic data emulates real data in cerebrovascular disease research.
 
@@ -121,11 +121,11 @@ The paper generated synthetic data on cancer patients and non-cancer patients wh
 
 Apart from the previously mentioned evaluation paper, another paper exists.
 
-![Hematologic Research](https://i.imgur.com/T9LCMY4.png)
+![Hematologic Research](/assets/images/posts/opt-82d979149a28315cd78eb264.webp)
 
 The researchers synthesized data on patients with Myelodysplastic Syndrome (MDS). They demonstrated that synthetic data generated using a conditional GAN could accurately replicate clinical features, genomic information, treatment, and treatment outcomes of patient cohorts. Notably, they generated synthetic data based on information collected in 2014 and combined it with classifications from 2024, highlighting its potential to reflect real-world data accurately.
 
-![Patient Cohort](https://i.imgur.com/KA8uBqf.png)
+![Patient Cohort](/assets/images/posts/opt-f6049c7218e5221333e84c61.webp)
 
 ---
 

@@ -7,14 +7,14 @@ tags: [africa, 보건, 인구]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: "Factfulness: Una invitación a ver el mundo con otros ojos."
 translation_id: "africa1"
 
 ---
 ### **1. Factfulness: El mundo es mejor de lo que crees**
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/jSp8nabvz-0yb5hDeuL_6TD6V0w)
+![](/assets/images/posts/opt-d50568f7d639464681ff2624.webp)
 
 *Figura 1. El libro "Factfulness" del profesor sueco Hans Rosling, un genio de la salud global. [1]*
 
@@ -42,7 +42,7 @@ Antes de seguir, una pregunta rápida.
 
 Actualmente, somos unos 7 mil millones de personas en el mundo. Si cada figura humana en la imagen de abajo representa a mil millones de personas, ¿cuál de las opciones (A, B o C) crees que representa mejor cómo nos distribuimos entre América, África, Europa y Asia?
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/3sXLlfafxoGVtXVKUf9-V4cFfJc)
+![](/assets/images/posts/opt-e3b2b52fc10618531c16e070.webp)
 
 *Figura 2. Una pregunta sobre la distribución de la población mundial. ¿Cuál de estos tres diagramas es el más acertado? [3]*
 
@@ -50,7 +50,7 @@ Esta es una de las preguntas que Hans Rosling solía hacer en sus conferencias p
 
 La respuesta correcta es la A. Para los que vivimos en Asia, quizás sea más obvio. Siendo más precisos, hoy en día hay 4.400 millones de personas en Asia, 1.200 en África, 700 en Europa y 1.200 en América. En resumen, la contraseña de la población mundial actual es **1-1-1-4** (América, Europa, África, Asia).
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/g3m7-8OMc7vBFZ8N36GkGxYsxwA)
+![](/assets/images/posts/opt-957324d26db7862bb11c49ff.webp)
 
 *Tabla 1. Distribución de la población mundial. [5]*
 
@@ -62,7 +62,7 @@ El crecimiento de Asia es fácil de imaginar con gigantes como China e India. Pe
 
 África es, literalmente, el "continente más joven". Mientras que en el resto del mundo la natalidad baja y la población envejece, en África ocurre lo contrario. Más del 60% de su población tiene menos de 25 años [6]. Para que te hagas una idea, en Europa esa cifra es solo del 27%. Y lo más increíble es que se espera que esta población joven siga creciendo.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/03tEqVQTEh_uzAsYHPw11UuKZHA)
+![](/assets/images/posts/opt-ebcbd8948c15a83e78fe4b58.webp)
 
 *Figura 3. Gráfico de la Fundación Gates. Mientras que en otros continentes la población joven (0-24 años) disminuye, en África no para de crecer. [6]*
 
@@ -70,7 +70,7 @@ Esto es una gran noticia, porque hay una relación directa entre el crecimiento 
 
 Claro que este crecimiento también tiene su lado oscuro: está muy ligado a la pobreza. De los mil millones de personas que viven en la extrema pobreza (con menos de 2 dólares al día), 500 millones están en el África subsahariana. Y se espera que esta cifra aumente al 71% para 2050.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/E-LYhVAgDyPiGLE0AMY8T-Nm-vI)
+![](/assets/images/posts/opt-c35f904ef2ad991e70f957b5.webp)
 
 *Figura 4. El mundo dividido en cuatro niveles de ingresos diarios. [7]*
 

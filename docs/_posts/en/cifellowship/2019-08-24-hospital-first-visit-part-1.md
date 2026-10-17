@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Clinical Informatics
 lang: en
-image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: Argo Project - What if we don't have to listen to these words anymore?
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
@@ -24,7 +24,7 @@ The cancer spreads from the breast to various parts such as the bones and brain,
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/RUYYaG6Ufw7ThrKvN6BI6dfF94g.jpg)
+![](/assets/images/posts/opt-9ee9c4a59445bb8fc1f37a95.webp)
 
 Figure 1. Carrying tests from last year, the year before that, and even yesterday's... Oh, it's heavy!
 
@@ -46,7 +46,7 @@ Most of us remember the days before computers when hospitals used paper charts. 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/U2o8JFwwe3_2OjTL2bMscIj_xXg.jpg) 
+![](/assets/images/posts/opt-a8dee81c1945ee7aab9270e0.avif) 
 
 Figure 2. It’s like this. Like viewing player stats in a Football Manager game.
 
@@ -80,7 +80,7 @@ Around 2014, HL7 launched the **Argonaut Project**. Do you remember the story of
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/30zdwf6ZKlJqg5w-sduY8bKUUcg.jpg) 
+![](/assets/images/posts/opt-f1c51a89831d1b2e826f8479.avif) 
 
 Figure 3. Embarkation of the Argonauts. Lorenzo Costa. 16th century.
 
@@ -98,7 +98,7 @@ If the goal of the mythic Argonauts was the Golden Fleece, the purpose of HL7's 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/DHbYI3JlxY2mWpSFxpXtbsHhK9Y.jpg) 
+![](/assets/images/posts/opt-63cb8b8924d72281a9103846.avif) 
 
 Figure 4. John Halamka, the head of HL7's Argonaut Project. (https://twitter.com/jhalamka)
 
@@ -116,7 +116,7 @@ More specifically, the Argonaut Project aimed to replace the Clinical Document A
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6KRi7D2GnRnASUIR98stx5rdxt4.gif) 
+![](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif) 
 
 Figure 5. Hold on a second. What is CDA and what is FHIR?
 
@@ -146,7 +146,7 @@ These advantages of FHIR combine to enable quick and easy implementation of heal
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/VIPsF-n1k-dLXGGYjRlIIkBozvU.png) 
+![](/assets/images/posts/opt-99d97fc9cf66757acd9f5587.webp) 
 
 Figure 6. Major EMR companies in the United States. These companies create software for recording EMRs.
 

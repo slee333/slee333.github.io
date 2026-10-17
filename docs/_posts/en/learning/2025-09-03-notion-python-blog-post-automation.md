@@ -8,7 +8,7 @@ lang: en
 categories: learning
 categorydisplay: Learning
 tags: [python, automation, cloudinary, jekyll]
-image: https://pix4free.org/assets/library/2021-08-01/originals/automation.jpg # TODO: Please set a representative image for this post.
+image: /assets/images/posts/opt-41f9334cf876e77f25f1cc6b.avif # TODO: Please set a representative image for this post.
 translation_id: notion-automation-workflow
 ---
 

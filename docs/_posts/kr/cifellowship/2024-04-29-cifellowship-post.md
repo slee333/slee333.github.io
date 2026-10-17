@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: kr
 permalink: /cifellowship/:title/
 ref: cif1
-image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: 의료정보학 펠로우? 그게 뭐죠 먹는 건가요 냠냠
 categorydisplay: 의료정보학
 translation_id: "cif1"
@@ -17,7 +17,7 @@ translation_id: "cif1"
 
 ### 1. 펠로우십 지원 절차
 
-![미국의 레지던트 전산 신청 서비스 (ERAS) 사이트에 기재된 2025 펠로우십 지원 일정 타임라인](https://i.imgur.com/BeRj8Xo.png)
+![미국의 레지던트 전산 신청 서비스 (ERAS) 사이트에 기재된 2025 펠로우십 지원 일정 타임라인](/assets/images/posts/opt-d1e69fbb893aaf07ffb2c6e1.webp)
 
 펠로우십 지원은 ERAS라는 웹사이트를 통해 이루어지는데, 이는 레지던트 지원 시에도 사용했던 바로 그 사이트입니다. 화면을 보니 두통이 몰려오는 것 같아요..
 

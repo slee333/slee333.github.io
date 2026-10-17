@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: Daily Life
 lang: en    
-image: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: /assets/images/posts/opt-a0c079581bc87e67a1967a42.avif
 subtitle: Indeed, the performance of the pipeline is receiving attention on whether it will work well.
 translation_id: "pipelineexperiment"
 
@@ -44,7 +44,7 @@ Let's add a StarCraft image to check if the markdown image feature is also well 
 
 
 
-![Even captions are added meticulously like this. Can't believe it's been over 10 years since StarCraft 2 released. Time flies and brings tears.](https://bnetcmsus-a.akamaihd.net/cms/blog_header/2g/2G4VZH5TIWJF1602720144046.jpg)
+![Even captions are added meticulously like this. Can't believe it's been over 10 years since StarCraft 2 released. Time flies and brings tears.](/assets/images/posts/opt-649816bd4445bf3f63e2033a.avif)
 
 
 

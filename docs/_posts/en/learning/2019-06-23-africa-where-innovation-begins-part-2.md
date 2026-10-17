@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: Analysis of various cases of medical innovation in Africa (as of 2019)
 translation_id: "africa2"
 
@@ -32,7 +32,7 @@ Imagine a scenario where a mother, during childbirth, is in urgent need of a blo
 
 
 
-![KEA Medicals logo](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/kuK0_umX3a3Sp-dQqtFTMoj0PZw)
+![KEA Medicals logo](/assets/images/posts/opt-9516bd7ebd9b1fbefb357179.webp)
 
 
 
@@ -48,7 +48,7 @@ KEA Medicals aims to solve these medical realities by utilizing mobile phones to
 
 
 
-![Service provided by KEA Medicals](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/vkJhJrli0h9TtGPfakP2Je3HmWY)
+![Service provided by KEA Medicals](/assets/images/posts/opt-18bdfbb3f0e407cf49cb3ce9.avif)
 
 
 
@@ -68,7 +68,7 @@ Recomed is an internet-based hospital reservation platform designed by a South A
 
 
 
-![Recomed app interface](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/msSkfUPJSkwrHUIfoZRkFQRqFxg)
+![Recomed app interface](/assets/images/posts/opt-8ac0bbe33e19f3b2acda1bb4.webp)
 
 
 
@@ -84,7 +84,7 @@ For such a system to operate smoothly, the participation of doctors is necessary
 
 
 
-![Recomed's doctor schedule management](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Y3dBA2wKmnR97WXsHTxN3nIsPd0)
+![Recomed's doctor schedule management](/assets/images/posts/opt-664975e2077598b47f04c1f1.webp)
 
 
 
@@ -124,7 +124,7 @@ Zipline's drone-based delivery system for medical supplies has significantly red
 
 
 
-![Zipline drone dropping supplies](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/JJCTosn3e9vV_V-Lf0oVEWRku6g)
+![Zipline drone dropping supplies](/assets/images/posts/opt-0f4dcc02d27cf0b1ee7cda15.avif)
 
 
 

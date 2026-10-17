@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: 장내 미생물이 우리 두뇌에 끼치는 놀라운 영향
 translation_id: "foodforthought"
 
@@ -34,7 +34,7 @@ translation_id: "foodforthought"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/CS4_wyqyKtT-I-BKi8oZ48CnB-E)  
+![](/assets/images/posts/opt-d6f1690018f0e6fb9bd8f048.avif)  
 
 맛난 음식을 먹으면 기분이 좋죠. 심지어 보기만 해도 그렇습니다. 너무 당연하고도 행복한 이야기 아닙니까?  
 
@@ -60,7 +60,7 @@ translation_id: "foodforthought"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/wwhp8RCm1fJsabzjPK1gEFTiLxs)  
+![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)  
 
 위장관 질환을 유발할 수 있는 장내 미생물  
 
@@ -78,7 +78,7 @@ FMT가 이렇듯 장관 질환에 효과를 보이는 이유는 장내 미생물
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/KuIB-XcKy6r1HUlyiIN7XEObZWk)  
+![](/assets/images/posts/opt-1d2dca129bdba3393d7d4df0.webp)  
 
 장 내 미생물을 포함한 소화기관과 두뇌활동 사이의 연관성을 Gut-brain axis라는 말로도 표현한다  
 
@@ -110,7 +110,7 @@ FMT가 이렇듯 장관 질환에 효과를 보이는 이유는 장내 미생물
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/eRTMP1pvtQhBbZGgmGwF8IXf1wA)  
+![](/assets/images/posts/opt-04af41d22467c23d38d60ac7.avif)  
 
 결국 건전한 식습관을 통한 좋은 장내 세균 배양이 두뇌건강에 관여한다는 소리일까?  
 
@@ -136,7 +136,7 @@ L. reuteri가 분비하는 물질이 우리 몸의 뇌신경들 중 하나인 �
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/MYXowma1BiQMJTgZpWChSfUQJ3s)  
+![](/assets/images/posts/opt-cf8441f7e73127a1758aa9fb.avif)  
 
 '인싸 세균' L. reuteri. 얘를 이식받으면 사람들과 잘 어울리게 되는 걸까요?  
 

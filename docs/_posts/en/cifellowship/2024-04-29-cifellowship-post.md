@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: en
 permalink: /en/cifellowship/:title/
 ref: cif1
-image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
 categorydisplay: Clinical Informatics
 translation_id: "cif1"
@@ -17,7 +17,7 @@ It’s already been a year since I started my residency training in the U.S. The
 
 ### 1. The Fellowship Application Process
 
-![ERAS](https://i.imgur.com/BeRj8Xo.png)
+![ERAS](/assets/images/posts/opt-d1e69fbb893aaf07ffb2c6e1.webp)
 
 Fellowship applications are done through a website called ERAS, which is the same site used for residency applications. Just looking at the screen gives me a headache.
 

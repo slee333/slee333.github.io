@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: "El Proyecto Argonauta: ¿Y si pudiéramos olvidarnos del papeleo?"
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
@@ -18,7 +18,7 @@ Jean Patterson, una mujer que lleva mucho tiempo luchando contra el cáncer de m
 
 El cáncer se le había extendido de los senos a los huesos y al cerebro. Cada vez que pisaba un hospital nuevo, tenía que volver a llenar formularios y repetir pruebas. Una pérdida de tiempo y recursos tremenda. Por eso, decidió convertirse en su propia mensajera, cargando con decenas de carpetas y CDs. [1]
 
-![Jean Patterson](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/RUYYaG6Ufw7ThrKvN6BI6dfF94g.jpg)
+![Jean Patterson](/assets/images/posts/opt-9ee9c4a59445bb8fc1f37a95.webp)
 
 *Figura 1. Con los análisis del año pasado, los del anterior, los de ayer... ¡Qué pesadilla!* 
 
@@ -30,7 +30,7 @@ Aunque esta historia ocurrió en el extranjero, seguro que nos suena familiar. C
 
 La mayoría recordamos la época de las carpetas de papel en los hospitales (que, por cierto, no han desaparecido del todo). Pero todos estamos de acuerdo en que guardar la información en formato digital es mucho más práctico. Por eso, en los años 90, nació el Historial Clínico Electrónico (EMR, por sus siglas en inglés).
 
-![Registros Médicos Electrónicos](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/U2o8JFwwe3_2OjTL2bMscIj_xXg.jpg)
+![Registros Médicos Electrónicos](/assets/images/posts/opt-a8dee81c1945ee7aab9270e0.avif)
 
 *Figura 2. Algo así. Como ver las estadísticas de un jugador en el Football Manager.*
 
@@ -48,7 +48,7 @@ La necesidad de un estándar como HL7 surgió con la unión de la informática y
 
 Y en 2014, HL7 lanzó el **Proyecto Argonauta**. ¿Te suena la historia de los Argonautas de la mitología griega? Es la aventura del héroe Jasón, que se embarcó con un grupo de valientes para conseguir el Vellocino de Oro.
 
-![Expedición del Argonauta](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/30zdwf6ZKlJqg5w-sduY8bKUUcg.jpg)
+![Expedición del Argonauta](/assets/images/posts/opt-f1c51a89831d1b2e826f8479.avif)
 
 *Figura 3. El embarque de los Argonautas. Lorenzo Costa. Siglo XVI.*
 
@@ -58,7 +58,7 @@ Influenciado por este tirón de orejas, HL7, con JASON a la cabeza, se puso mano
 
 Si los Argonautas de la mitología buscaban el Vellocino de Oro, los Argonautas de HL7 buscan algo igual de valioso: un sistema de datos de salud que sea simple, compatible y que funcione en el entorno tecnológico actual. Con la nube, el Internet de las Cosas (IoT) y las apps móviles, los sistemas antiguos se quedaron obsoletos. Hacía falta una renovación total. [4]
 
-![John Halamka](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/DHbYI3JlxY2mWpSFxpXtbsHhK9Y.jpg)
+![John Halamka](/assets/images/posts/opt-63cb8b8924d72281a9103846.avif)
 
 *Figura 4. John Halamka, el líder del Proyecto Argonauta de HL7. (https://twitter.com/jhalamka)*
 
@@ -68,7 +68,7 @@ John Halamka, una figura con un currículum impresionante (profesor de Harvard, 
 
 Más en concreto, el plan era reemplazar el antiguo estándar CDA (Clinical Document Architecture) por uno nuevo llamado **FHIR** (Fast Healthcare Interoperability Resources), diseñado para funcionar bien con la tecnología moderna como las apps móviles y la nube. [6]
 
-![CDA vs FHIR](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6KRi7D2GnRnASUIR98stx5rdxt4.gif)
+![CDA vs FHIR](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif)
 
 *Figura 5. Un momento... ¿qué es eso de CDA y FHIR?*
 
@@ -84,7 +84,7 @@ Segundo, FHIR es mucho más fácil de entender para los desarrolladores. Usa tec
 
 Estas dos ventajas se traducen en la tercera: se pueden crear sistemas y aplicaciones de salud mucho más rápido. Con FHIR, los desarrolladores no pierden tanto tiempo descifrando sistemas antiguos y pueden centrarse en crear funcionalidades nuevas e innovadoras. John Halamka lo ve como un puente hacia la innovación en salud. Si se lo pones fácil a los desarrolladores, más gente talentosa querrá entrar en el sector, creando un círculo virtuoso de ideas. [9]
 
-![Empresas FHIR](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/VIPsF-n1k-dLXGGYjRlIIkBozvU.png)
+![Empresas FHIR](/assets/images/posts/opt-99d97fc9cf66757acd9f5587.webp)
 
 *Figura 6. Las grandes empresas de historiales clínicos en EE.UU., que desarrollan el software que usan los hospitales.*
 

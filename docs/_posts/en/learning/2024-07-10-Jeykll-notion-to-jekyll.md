@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: /assets/images/posts/opt-051842456a0410737e2d9526.avif
 subtitle: Even using the feature to export Notion pages as Markdown felt cumbersome. I just want to be able to automatically upload posts by simply entering the URL!
 translation_id: "jekyllnotion"
 ---
@@ -27,7 +27,7 @@ This post will cover steps 1, 2, and 4, excluding step 3.
 
 For testing, I created a post. [Here is the post](https://slee333.github.io/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EC%84%A4%EC%A0%95-%EC%8B%A4%ED%97%98/). As you can see, I included various elements like headers, bold, italic, and images in a single page.
 
-![Notion Screenshot](https://i.imgur.com/VZSpMW0.png)
+![Notion Screenshot](/assets/images/posts/opt-7191975c1a50966d78add09c.webp)
 
 There are a few things to be cautious about during this process.
 
@@ -37,11 +37,11 @@ When posting about blog development or journal reviews, you often include screen
 
 I solved this problem by using Imgur. Visit Imgur and click the "New Post" button. You will see the following screen.
 
-![Imgur Screenshot](https://i.imgur.com/HtGM05g.png)
+![Imgur Screenshot](/assets/images/posts/opt-9049042424061d78e53e41d6.webp)
 
 Copy and paste your screenshot content here. The screenshot will be uploaded to Imgur.
 
-![Imgur Screenshot](https://i.imgur.com/pIDJkJn.png)
+![Imgur Screenshot](/assets/images/posts/opt-01bab1d38b1f002b4f46e962.webp)
 
 Right-click on the uploaded screenshot and copy the image link. Then, use Notion's *image → embed Link* feature to attach the link, ensuring that the URL won't change.
 
@@ -83,7 +83,7 @@ My post's front matter includes the following:
 
 I set these up using Notion's property feature to match my page format, making it easier to retrieve. The current page's properties are as follows:
 
-![Notion Properties Screenshot](https://i.imgur.com/nuBKB0U.png)
+![Notion Properties Screenshot](/assets/images/posts/opt-53bf45148c664a3acb1d374d.webp)
 
 Now that we have linked the Notion page properties with the front matter, let's move on to extracting the Notion page as Markdown.
 
@@ -95,17 +95,17 @@ As mentioned earlier, Notion supports exporting pages as Markdown. However, want
 
 To use the Notion API, you need to create an Integration. Go to the [Integration page](https://www.notion.so/profile/integrations) and create a new integration. Click "New integration" to see the following screen.
 
-![Notion Integration Screenshot](https://i.imgur.com/cvzYZUy.png)
+![Notion Integration Screenshot](/assets/images/posts/opt-03bd99cf29d3420ed012ffff.webp)
 
 Set the integration name and link it to the workspace where you will write posts in Notion. The type should be internal for personal use.
 
 You will see the following screen once the integration is created.
 
-![Notion Integration Screenshot](https://i.imgur.com/Jb9HGQG.png)
+![Notion Integration Screenshot](/assets/images/posts/opt-52dcf73115e3fe8ae210c63c.webp)
 
 We will use the **internal integration secret** in the next section. Once the integration is created, return to the Notion page where you will write posts.
 
-![Notion Page Screenshot](https://i.imgur.com/E1QLdii.png)
+![Notion Page Screenshot](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)
 
 Click the "..." button in the top right corner of the page and select "Connect to". You will see the integration you created earlier. Click it to link the integration to your page. The above screenshot is an example.
 
@@ -167,7 +167,7 @@ Since I plan to upload my Python code to GitHub, I decided to manage the secret 
    `NOTION_TOKEN=your_secret_key` (no need to enclose it in quotes)
 3. If the `.env` file is uploaded to GitHub, all this work becomes pointless. Add `.env` to your `.gitignore` file. Here is an example of my `.gitignore` file:
 
-   ![Gitignore Screenshot](https://i.imgur.com/8FdfiS5.png)
+   ![Gitignore Screenshot](/assets/images/posts/opt-946bf1cd827743bf13415ab1.webp)
 
 Once this is done, load the secret in your Python code and create the Notion API client:
 

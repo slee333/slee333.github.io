@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://i.imgur.com/YObeuub.png
+image: /assets/images/posts/opt-e96c18e936087342ab8f38c7.webp
 subtitle: "또 다시 자소서를 쓸 시간이다!"
 translation_id: "CIFellowAppDiary1"
 ---
@@ -23,7 +23,7 @@ translation_id: "CIFellowAppDiary1"
 자기소개서를 쓰는 과정, 이제껏 쌓아온 이력을 정리하는 과정, 이 모든 것을 하나의 이야기로 엮어내는 과정. 이 모든 과정이 익숙하면서도 때로는 부담스럽고 성가시게 느껴지기도 한다.
 
 
-![](https://i.imgur.com/TpO0iCV.png)
+![](/assets/images/posts/opt-cc9cc75bfc5ab911f9ee5c35.webp)
 
 
 위 표에서 보이듯 **6월 5일부터 ERAS 토큰(Token)이라는 것이 발급된다.** 이 토큰을 발급받은 다음부터 지원 사이클에 참여할 수 있다.
@@ -38,7 +38,7 @@ translation_id: "CIFellowAppDiary1"
 
 ### 자기소개서
 
-![](https://i.imgur.com/l2m8VWJ.png)
+![](/assets/images/posts/opt-c84917d262cfd0996bbd992b.webp)
 
 *자기소개서?를 쓰는 모습*
 
@@ -63,7 +63,7 @@ translation_id: "CIFellowAppDiary1"
 다만 ERAS는 내 모든 경험을 다 쓰기보다 그중 특히 중요한 10가지를 적으라는 제한을 둔다. 어찌 보면 당연한 일이다. 지원자마다 다양한 경험이 많을 텐데, 그걸 다 읽다 보면 한도 끝도 없을 테니까.
 
 
-![](https://i.imgur.com/Hol28rL.png)
+![](/assets/images/posts/opt-943ee7995f7c9ae0d57effee.webp)
 
 *“저기요, 이걸 다 읽으라는 겁니까?” 너무 긴 이력서는 면접관의 시간을 뺏을지도 모른다*
 
@@ -71,7 +71,7 @@ translation_id: "CIFellowAppDiary1"
 개인의 다채로운 삶을 서류라는 평면 안에 오롯이 담기란 어렵다. 그런데 뭐 어렵다고 손 놓고 있을 수는 없지 않은가? 내가 어떤 사람인지 가장 잘 보여줄 방법을 계속해서 고민할 뿐이다.
 
 
-![](https://i.imgur.com/AxZNnNR.png)
+![](/assets/images/posts/opt-17eff9dabdc65c16d5ab7222.webp)
 
 *삶은 평면이 아닌 입체로 존재한다.* 
 
@@ -107,6 +107,6 @@ translation_id: "CIFellowAppDiary1"
 새로운 시작을 앞두니 몹시 긴장되고 떨리면서도, 한편으로는 즐겁다. 아무쪼록 최선을 다해 후회 없는 결과가 있을 수 있기를.
 
 
-![](https://i.imgur.com/ttVfGyd.png)
+![](/assets/images/posts/opt-4ddfa6edadc4e283b4ba346b.webp)
 
 *어디로 향하게 될까? 방향은 있지만 목적지는 모른다. 걷다 보면 닿는 거기가 내 목적지가 될 뿐이다.*

@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship]
 lang: es
 permalink: /es/cifellowship/:title/
 ref: cif1
-image: https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_1280.png
+image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: ¿Beca de informática clínica? ¿Qué es eso, algo que se come? ¡Nam, nam!
 categorydisplay: Informática Clínica
 translation_id: "cif1"
@@ -17,7 +17,7 @@ Ya ha pasado un año desde que comencé mi residencia en los EE.UU. Hay muchos c
 
 ### 1. El Proceso de Solicitud para Fellowship
 
-![ERAS](https://i.imgur.com/BeRj8Xo.png)
+![ERAS](/assets/images/posts/opt-d1e69fbb893aaf07ffb2c6e1.webp)
 
 Las solicitudes para fellowship se realizan a través de un sitio web llamado ERAS, que es el mismo sitio utilizado para las solicitudes de residencia. Solo mirar la pantalla me da dolor de cabeza.
 

@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://i.imgur.com/E5vEZQE.jpeg
+image: /assets/images/posts/opt-fe7abd875af80044b7e81e06.avif
 subtitle: 단풍이 본격적으로 들기 전 너무나 아름다운 풍경들
 translation_id: "nycoutdoor"
 ---
@@ -18,7 +18,7 @@ translation_id: "nycoutdoor"
   
 
 ## 목적지는 새러토가 스프링스  
-![](https://i.imgur.com/pTDVZmQ.jpeg)  
+![](/assets/images/posts/opt-67de401940e145bed3ddece8.avif)  
 *새러토가 스프링스 지도 사진*  
   
 
@@ -39,7 +39,7 @@ translation_id: "nycoutdoor"
 ---
 새러토가 스프링스에 도착한 이후로는 숙소에 짐을 풀었다. 에어비엔비였는데, 내부 시설이 깔끔하고 좋았다. 올리려고 보니 사진이 몇 장 없다..  
 
-![](https://i.imgur.com/CrGiHf9.jpeg)  
+![](/assets/images/posts/opt-d12ce1febce999f6a923ca15.avif)  
 *숙소 사진을 거의 찍지 않았는데, 이런 느낌으로 정갈하니 이쁜 숙소였다.*  
 
 
@@ -49,11 +49,11 @@ translation_id: "nycoutdoor"
 이후 근처 국립공원으로 향했다. Saratoga Spa State Park라는 곳이었는데, 전반적으로 루트의 높낮이가 심하지 않고 전반적으로 완만하여 걷기 편했다. 중간중간 사람들도 많고, 결혼식인지 뭔지 행사도 하고 있는 등 한적한 루트와는 거리가 멀었지만 전반적으로 매우 아름다웠다.  
   
 
-![](https://i.imgur.com/USLUcH5.jpeg)  
+![](/assets/images/posts/opt-f4cd229613cbba94f1e0af44.avif)  
 숲길은 아직 단풍이 들기 전 초목으로 가득 차 한적하였고  
   
 
-![](https://i.imgur.com/Qogq35y.jpeg)  
+![](/assets/images/posts/opt-ca7712e70d46785769152690.avif)  
 근방의 명소인 듯 유동 인구가 많은 듯 했다. 주차장도 엄청 컸으니까.  
   
 
@@ -80,7 +80,7 @@ translation_id: "nycoutdoor"
 사진은 미처 찍지 못했는데, 일단 섬에 들어가는 입구부터 개성있었다. 차 한 대가 겨우 통과할 정도로 좁은 다리였다. 나는 운전한다고 사진을 미처 찍지 못했으므로 인터넷에서 긁어온 사진으로 대체하겠다.  
 
 
-![](https://i.imgur.com/WFCUTyO.jpeg)  
+![](/assets/images/posts/opt-ef00a70870616c792ca0305e.avif)  
 
 
 차는 하나만 통과 할 수 있을 정도로 좁았지만 운치가 있었다.  
@@ -89,17 +89,17 @@ translation_id: "nycoutdoor"
 그리하야 입장한 공원 내부는 생각보다 너무 아름다웠다. 기본적으로 강물로 둘러쌓인 섬이라 그런지 물 소리도 자연 경관도 너무 이뻤다. 몇 개 이미지 및 동영상을 공유한다.  
 
 
-![](https://i.imgur.com/E5vEZQE.png)  
+![](/assets/images/posts/opt-fe7abd875af80044b7e81e06.avif)  
 *섬 부근을 걷다 찍은 이뻤던 건물 사진*  
 
 
-![](https://i.imgur.com/LLf5Qxv.jpeg)  
+![](/assets/images/posts/opt-d876a464d22d9deea784141a.avif)  
 *섬 트레일 아래쪽으로 보이던 댐 사진*  
 
 
 지나는 행인들도 친절했고, 무엇보다 강아지나 고양이와 함께 놀러오시는 분들이 많아 구경하는 재미가 있었다.  
   
-![](https://i.imgur.com/aFwwwGq.jpeg)  
+![](/assets/images/posts/opt-676561de7bcc000e70cf9d29.avif)  
 *급류가 흐르는 곳*  
   
 

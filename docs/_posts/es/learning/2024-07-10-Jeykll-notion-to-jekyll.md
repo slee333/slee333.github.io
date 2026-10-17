@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: /assets/images/posts/opt-051842456a0410737e2d9526.avif
 subtitle: ¡Incluso usar la función para exportar la página de Notion como markdown fue tedioso para mí. ¡Solo quiero que al ingresar la URL, la publicación se suba automáticamente!
 translation_id: "jekyllnotion"
 ---
@@ -27,7 +27,7 @@ Esta publicación cubrirá los pasos 1, 2 y 4, excluyendo el paso 3.
 
 Para la prueba, creé una publicación. [Aquí está la publicación](https://slee333.github.io/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EC%84%A4%EC%A0%95-%EC%8B%A4%ED%97%98/). Como puede ver, incluí varios elementos como encabezados, negritas, cursivas e imágenes en una sola página.
 
-![Captura de pantalla de Notion](https://i.imgur.com/VZSpMW0.png)
+![Captura de pantalla de Notion](/assets/images/posts/opt-7191975c1a50966d78add09c.webp)
 
 Hay algunas cosas a tener en cuenta durante este proceso.
 
@@ -37,11 +37,11 @@ Al publicar sobre el desarrollo de blogs o revisiones de revistas, a menudo incl
 
 Resolví este problema usando Imgur. Visita Imgur y haz clic en el botón "New Post". Verás la siguiente pantalla.
 
-![Captura de pantalla de Imgur](https://i.imgur.com/HtGM05g.png)
+![Captura de pantalla de Imgur](/assets/images/posts/opt-9049042424061d78e53e41d6.webp)
 
 Copia y pega tu contenido de captura de pantalla aquí. La captura de pantalla se subirá a Imgur.
 
-![Captura de pantalla de Imgur](https://i.imgur.com/pIDJkJn.png)
+![Captura de pantalla de Imgur](/assets/images/posts/opt-01bab1d38b1f002b4f46e962.webp)
 
 Haz clic derecho en la captura de pantalla subida y copia el enlace de la imagen. Luego, usa la función *image → embed Link* de Notion para adjuntar el enlace, asegurando que la URL no cambiará.
 
@@ -83,7 +83,7 @@ El front matter de mi publicación incluye lo siguiente:
 
 Configuré esto usando la función de propiedad de Notion para que coincida con el formato de mi página, facilitando su recuperación. Las propiedades de la página actual son las siguientes:
 
-![Captura de pantalla de las Propiedades de Notion](https://i.imgur.com/nuBKB0U.png)
+![Captura de pantalla de las Propiedades de Notion](/assets/images/posts/opt-53bf45148c664a3acb1d374d.webp)
 
 Ahora que hemos vinculado las propiedades de la página de Notion con el front matter, pasemos a extraer la página de Notion como Markdown.
 
@@ -95,17 +95,17 @@ Como se mencionó anteriormente, Notion admite la exportación de páginas como 
 
 Para usar la API de Notion, necesitas crear una Integración. Ve a la [página de Integración](https://www.notion.so/profile/integrations) y crea una nueva integración. Haz clic en "New integration" para ver la siguiente pantalla.
 
-![Captura de pantalla de la Integración de Notion](https://i.imgur.com/cvzYZUy.png)
+![Captura de pantalla de la Integración de Notion](/assets/images/posts/opt-03bd99cf29d3420ed012ffff.webp)
 
 Configura el nombre de la integración y vincúlala al espacio de trabajo donde escribirás publicaciones en Notion. El tipo debe ser interno para uso personal.
 
 Verás la siguiente pantalla una vez que se haya creado la integración.
 
-![Captura de pantalla de la Integración de Notion](https://i.imgur.com/Jb9HGQG.png)
+![Captura de pantalla de la Integración de Notion](/assets/images/posts/opt-52dcf73115e3fe8ae210c63c.webp)
 
 Usaremos el **internal integration secret** en la siguiente sección. Una vez creada la integración, regresa a la página de Notion donde escribirás publicaciones.
 
-![Captura de pantalla de la Página de Notion](https://i.imgur.com/E1QLdii.png)
+![Captura de pantalla de la Página de Notion](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)
 
 Haz clic en el botón "..." en la esquina superior derecha de la página y selecciona "Connect to". Verás la integración que creaste anteriormente. Haz clic en ella para vincular la integración a tu página. La captura de pantalla anterior es un ejemplo.
 
@@ -169,7 +169,7 @@ Dado que planeo subir mi código de Python a GitHub, decidí gestionar el secret
    `NOTION_TOKEN=tu_clave_secreta` (no es necesario incluirlo entre comillas)
 3. Si el archivo `.env` se sube a GitHub, todo este trabajo se vuelve inútil. Agrega `.env` a tu archivo `.gitignore`. Aquí hay un ejemplo de mi archivo `.gitignore`:
 
-   ![Captura de pantalla de Gitignore](https://i.imgur.com/8FdfiS5.png)
+   ![Captura de pantalla de Gitignore](/assets/images/posts/opt-946bf1cd827743bf13415ab1.webp)
 
 Una vez hecho esto, carga el secreto en tu código de Python y crea el cliente de la API de Notion:
 

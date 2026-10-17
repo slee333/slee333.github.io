@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: 의료정보학
 lang: kr
-image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: 애플 헬스 레코드. 구글 클라우드 서비스. 의무기록을 향한 거대 IT 기업들의 솔루션
 translation_id: "Paperworks2"
 
@@ -24,7 +24,7 @@ translation_id: "Paperworks2"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/NE7WVbac9C69yVg-0hc1fMQ9Ck8.png)  
+![](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)  
 
 애플 헬스 레코드의 유저 인터페이스. 깔끔하고 알기 쉽게 구성되어 있습니다.  
 
@@ -48,7 +48,7 @@ translation_id: "Paperworks2"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/d3AZ94jAW93uscH6ADQDLqu0OlE.png)  
+![](/assets/images/posts/opt-a37d8b3fc9572d9f74b0f389.webp)  
 
 UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.  
 
@@ -80,7 +80,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
 ###   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/KVLo0uPOph7Y2_y1qDpXZtGYA9c.png)  
+![](/assets/images/posts/opt-16f6b2fed9184ec1664f6f92.webp)  
 
 헬스 레코드를 이용한 의사 왕진 서비스, 힐 Heal  
 
@@ -108,7 +108,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/_0NK5fMsoWrlurKUrZVwa4RPSMs.jpg)  
+![](/assets/images/posts/opt-5091f5168712edc84b00b091.avif)  
 
 클라우드 플랫폼 서비스는 데이터 저장 공간과 더불어 데이터를 분석하는 클라우드 컴퓨팅 서비스 역시 제공합니다.  
 
@@ -126,7 +126,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/9daVSlIqZh1TxQZpvcOKA9SIZFg.jpg)  
+![](/assets/images/posts/opt-29f6754ee3f5d928a55d0264.avif)  
 
 이 글에선 언급하진 않겠지만 아마존 웹 서비스 (AWS)도 이와 유사한 역할을 수행합니다.  
 
@@ -140,7 +140,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
 이렇듯 구글 클라우드 플랫폼은 연구기관, 의료기관 입장에서 매우 유용한 플랫폼인데요. 이 기술이 우리가 이때까지 다룬 전자의무기록 문제와는 어떤 관련이 있을까요? 업체 입장에서 유용한 플랫폼인 건 알겠는데, 환자 입장에서 자기 의무기록에 접근하는 데에도 마찬가지로 구글 클라우드 플랫폼이 유용한 수단이 될 수 있을까요? [구글은 그렇다고 대답합니다](https://cloud.google.com/solutions/healthcare/?tab=tab2).  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/N2Ac9kTaPgvXl7IzRfF-GwrFnzk.png)  
+![](/assets/images/posts/opt-d6ac61de32b2337adeb0515c.webp)  
 
 구글은 구글 클라우드 플랫폼을 통해 더 나은 의료를 제공할 수 있다 주장합니다.  
 
@@ -162,7 +162,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/SUHhm1a0qTVlyLPnzm1fh61D30A.jpg)  
+![](/assets/images/posts/opt-4e7546142ccd2e4fa097be5a.avif)  
 
 미 연방 의료보험 통상 책임법, HIPAA(Health Insurance Portability and Accountability Act)  
 
@@ -172,7 +172,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/iSyHxa5BEH8Imfd3iLfZBi5XbSI.jpg)  
+![](/assets/images/posts/opt-a33deefa4721335f8f063882.webp)  
 
 모든 개인정보는 비식별 처리되어야 합니다. 내 데이터는 맞지만 나인지 유추할 수 없도록...  
 
@@ -192,7 +192,7 @@ UC 샌디에이고 측에서 올 1월 JAMA에 기고한 아티클.
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/LGGMmMYZp_TM54Ymfok8E-4q96U.png)  
+![](/assets/images/posts/opt-17a78c84f6ecb9c158d3aa34.webp)  
 
 여성 환자가 자신의 유방 관련 의료정보를 열람할 수 있도록 만들어놓은 사이트 마모 스피어 Mammosphere.  
 

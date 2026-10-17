@@ -7,7 +7,7 @@ tags:
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
+image: /assets/images/posts/opt-efb0fb1296c13da22f632821.avif
 subtitle: 거북목을 벗어나기 위한 여정. 허나 생각보다 깊고 어둡고 끝이 없었다.
 translation_id: splitkeyboardq
 layout: post
@@ -17,11 +17,11 @@ permalink: /life/splitkeyboardq/
 
 ### 올바른 자세란 무엇인가
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 1200w"
+  srcset="/assets/images/posts/opt-a0acf8629eb781c51e3c0609.webp 400w,
+/assets/images/posts/opt-0868f7a2ac5c42fcf07a2747.webp 800w,
+/assets/images/posts/opt-e95fdbfeb863470f62a90578.webp 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf"
+  src="/assets/images/posts/opt-0868f7a2ac5c42fcf07a2747.webp"
   alt="lfbrvb3o6qazkka3ebzf">
 <p style="text-align:center; font-style:italic;">출처: https://corporateenvironments.com/blog/four-benefit-of-ergonomic-chairs</p>
 
@@ -53,11 +53,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 그러던 중 우연히 한 인터넷 게시글을 통해 **스플릿 키보드**를 접하게 되었다. 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 1200w"
+  srcset="/assets/images/posts/opt-cb99bb6d4b38ba2b600fca9a.avif 400w,
+/assets/images/posts/opt-631bc00b2aceec7babe6fb19.avif 800w,
+/assets/images/posts/opt-a440d6b84548406f6e452e4d.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll"
+  src="/assets/images/posts/opt-631bc00b2aceec7babe6fb19.avif"
   alt="tnb4lgthktmkbqonzzll">
 <p style="text-align:center; font-style:italic;">원래 검도 이도류가 멋있지 않던가? 
 출처: https://easy-peasy.ai/ai-image-generator/images/elegant-double-swords-half-orc-warrior-dnd-5e-scene</p>
@@ -71,11 +71,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 1200w"
+  srcset="/assets/images/posts/opt-844ae654ade297088f15a501.avif 400w,
+/assets/images/posts/opt-a4cdfa822c960a21fa59e863.avif 800w,
+/assets/images/posts/opt-d64af1d7903c6cc79867a6dd.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa"
+  src="/assets/images/posts/opt-a4cdfa822c960a21fa59e863.avif"
   alt="jo9tt9r2zbualoutzkxa">
 <p style="text-align:center; font-style:italic;">일반적인 키보드. 출처: http://bit.ly/47pY3X1</p>
 
@@ -89,11 +89,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 1200w"
+  srcset="/assets/images/posts/opt-a497f4ae875238ba5612c1da.avif 400w,
+/assets/images/posts/opt-1f4390d89c1767b5ee83c70a.avif 800w,
+/assets/images/posts/opt-8c78ab46f1fcfd73b2f0aa13.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy"
+  src="/assets/images/posts/opt-1f4390d89c1767b5ee83c70a.avif"
   alt="ov06kzkuql2ppae5bduy">
 <p style="text-align:center; font-style:italic;">텐키리스 키보드. 출처: http://bit.ly/41wpZF4</p>
 
@@ -106,11 +106,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 1200w"
+  srcset="/assets/images/posts/opt-985c335e0092f71ab0f466b4.avif 400w,
+/assets/images/posts/opt-3ee4b16ca52f64a6cb94ea60.avif 800w,
+/assets/images/posts/opt-21b66f20242ae1a6b3d4ba2d.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t"
+  src="/assets/images/posts/opt-3ee4b16ca52f64a6cb94ea60.avif"
   alt="orzygodfjbofchdrx42t">
 <p style="text-align:center; font-style:italic;">해피해킹 키보드. 출처: http://bit.ly/4gaGs7Y</p>
 
@@ -131,11 +131,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 1200w"
+  srcset="/assets/images/posts/opt-30972e81681f0593e7ba100d.avif 400w,
+/assets/images/posts/opt-d209f00505e3cc9a46107a3a.avif 800w,
+/assets/images/posts/opt-2e2efd9c020169a2d127b17b.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco"
+  src="/assets/images/posts/opt-d209f00505e3cc9a46107a3a.avif"
   alt="gijlxsqoyuffv734wsco">
 <p style="text-align:center; font-style:italic;">40% 키보드. https://keyboardsimulator.xyz/ 키보드 시뮬레이터에서 캡쳐해봤다.</p>
 
@@ -165,11 +165,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 아마 구불구불한 곡선 형태의 마이크로소프트나 로지텍 키보드를 다들 본 적 있을거다.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 1200w"
+  srcset="/assets/images/posts/opt-10528fd89cd98d82b5974a4d.avif 400w,
+/assets/images/posts/opt-3fdcae100d58a30483634a28.avif 800w,
+/assets/images/posts/opt-39f01d5e228e604cc7364fb5.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz"
+  src="/assets/images/posts/opt-3fdcae100d58a30483634a28.avif"
   alt="bxkb6lpsti3jvkfc4pjz">
 <p style="text-align:center; font-style:italic;">마이크로소프트 사의 어고노믹 키보드. 출처 http://bit.ly/4g2KFdA</p>
 
@@ -185,11 +185,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 **스플릿 키보드**는 이 분리라는 개념을 극대화한 키보드이다.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 1200w"
+  srcset="/assets/images/posts/opt-e6acbbefea064b3182576d9a.avif 400w,
+/assets/images/posts/opt-52f4eb1b90305dacecda2a13.avif 800w,
+/assets/images/posts/opt-71d0440a9ab726d69f94f409.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa"
+  src="/assets/images/posts/opt-52f4eb1b90305dacecda2a13.avif"
   alt="txrzze9xoqbwy7ho1csa">
 <p style="text-align:center; font-style:italic;">스플릿 키보드 예시: http://bit.ly/46pMUn9</p>
 
@@ -210,11 +210,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 내가 선택한 모델은 알리익스프레스에서 구매한 **코르네 v4.1 (3x6 배열)** 모델이다.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 1200w"
+  srcset="/assets/images/posts/opt-c6e866e75dcd63fbfd523828.avif 400w,
+/assets/images/posts/opt-efb0fb1296c13da22f632821.avif 800w,
+/assets/images/posts/opt-38ccd4a3e0cc408eac6eb417.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm"
+  src="/assets/images/posts/opt-efb0fb1296c13da22f632821.avif"
   alt="b3laqsivqqrlrip05fmm">
 <p style="text-align:center; font-style:italic;">내 코르네 키보드. 살면서 처음으로 키캡도 바꿔봤다.</p>
 
@@ -244,11 +244,11 @@ Fn을 누르고 키를 누르면 원래 있는 키가 아닌 다른 키가 입�
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 1200w"
+  srcset="/assets/images/posts/opt-d1699ee06dd0a651dc3e9de0.webp 400w,
+/assets/images/posts/opt-a6d44afc2e6ce624c08737ff.webp 800w,
+/assets/images/posts/opt-c6c9e0c59508f7c7fcff552a.webp 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy"
+  src="/assets/images/posts/opt-a6d44afc2e6ce624c08737ff.webp"
   alt="rcandtefuosdwnww7gpy">
 <p style="text-align:center; font-style:italic;">홈 로우 모드 (Home Row Mod)
 출처: https://sunaku.github.io/home-row-mods.html</p>
@@ -263,11 +263,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 ### 2. 가운데 추가 키: 타건 습관을 바꿀 필요가 없었다
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 1200w"
+  srcset="/assets/images/posts/opt-c6e866e75dcd63fbfd523828.avif 400w,
+/assets/images/posts/opt-efb0fb1296c13da22f632821.avif 800w,
+/assets/images/posts/opt-38ccd4a3e0cc408eac6eb417.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh"
+  src="/assets/images/posts/opt-efb0fb1296c13da22f632821.avif"
   alt="xusehxvvwkmjcssgzrlh">
 <p style="text-align:center; font-style:italic;">다시 첨부하는 내 코르네 사진</p>
 
@@ -358,11 +358,11 @@ https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q
 키보드 토끼굴의 더 깊은 심연엔 이런 물건도 있었다.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 1200w"
+  srcset="/assets/images/posts/opt-7a2a5802533566c19e541cf6.avif 400w,
+/assets/images/posts/opt-0d3d9b799f081b1467959174.avif 800w,
+/assets/images/posts/opt-ef161ead260302ec42f21c05.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas"
+  src="/assets/images/posts/opt-0d3d9b799f081b1467959174.avif"
   alt="slbib0h9r5pwemdefqas">
 <p style="text-align:center; font-style:italic;">스플릿 키보드(?)의 끝판왕 스발보드 (svalboard)
 출처: 스발보드 웹사이트: https://svalboard.com/products/lightly</p>

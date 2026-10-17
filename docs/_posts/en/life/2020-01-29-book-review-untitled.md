@@ -7,13 +7,13 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: Dr. Choi Yun-seob's latest book. The Bible of digital healthcare?
 translation_id: "bookreviewuntitled"
 
 ---
 ---
-![Digital Healthcare Book](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg)  
+![Digital Healthcare Book](/assets/images/posts/opt-371597706560c7865d8e8d21.avif)  
 
 Source: Young Physician
 
@@ -59,7 +59,7 @@ The book is divided into four main parts. In the first part, **"Digital Healthca
 
 
 
-![P4 Medicine Components](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/J2PuNcpx9bkGU1paLS4WzbfrSO4.jpg)  
+![P4 Medicine Components](/assets/images/posts/opt-ef035b8078ffafac8653416c.webp)  
 
 P4 Medicine Components. Source: The Ohio State University Wexner Medical Center
 
@@ -85,7 +85,7 @@ In the first stage, **data measurement**, the author examines **what** data is c
 
 
 
-![Apple Health Record Interface](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Zx0GbSFLB2sTsm2a04MWxDzoWqU.png)  
+![Apple Health Record Interface](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)  
 
 Apple Health Record Interface. Source: Apple Healthcare Website
 
@@ -107,7 +107,7 @@ The author provides examples of the benefits we can gain from vast data, such as
 
 
 
-![Telemedicine](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/hfqiUPhFvqe53rWG-x5cc3HkA6Y.jfif)  
+![Telemedicine](/assets/images/posts/opt-94ff506a6a351f1f284ea102.avif)  
 
 Telemedicine is a highly controversial topic in our country. Source: Getty Images Bank
 
@@ -149,7 +149,7 @@ Although somewhat exaggerated, one can think of digital therapeutics as apps tha
 
 
 
-![Woebot for Depression](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6dOGGjRHSPUmoQOBNX4425OPiUA.jpg)  
+![Woebot for Depression](/assets/images/posts/opt-196a5f3cc777dc9899f69024.avif)  
 
 Woebot, a counseling app for depression. I tried it and found it very cute and healing. Source: thephuketnews.com
 
@@ -175,7 +175,7 @@ However, the EpiWatch project was halted for various complex reasons, and the Fi
 
 
 
-![Wearables](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sPl75n-1QpW0WZ-t26Lgzfppv_U.jpg)  
+![Wearables](/assets/images/posts/opt-1bc47a206b188412f76efd02.avif)  
 
 "I’ll be back when the mood gets down again!" Wearables will return, no doubt about it—they are a core part of digital healthcare...
 
@@ -205,7 +205,7 @@ The book is well-supplemented to ensure that even readers without prior knowledg
 
 
 
-![The Book and My Driver’s License](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/TA9HnlA-taPjhULQSzXxESkmxCg.jpg)  
+![The Book and My Driver’s License](/assets/images/posts/opt-66ac1b5b2d5f9529c75c638f.webp)  
 
 The book (left) and my driver's license (right). The book is quite thick, but there's no need to be intimidated.
 

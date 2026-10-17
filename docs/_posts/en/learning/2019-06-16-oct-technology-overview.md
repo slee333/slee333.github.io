@@ -7,7 +7,7 @@ tags: [Imaging, Medical, medicine]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
+image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: Let's find out what seismic reflection imaging is and what it is used for.
 translation_id: "oct2019"
 
@@ -28,7 +28,7 @@ CT, MRI, ultrasound, etc. are already commonplace imaging devices we frequently 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/27utJo-FDpSjiz1Q6fGCehBX5_E.jpg)
+![](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif)
 
 
 
@@ -60,7 +60,7 @@ Before explaining the principle of OCT, let’s go back to 2016. On February 11,
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/1T1SpFdqiXi-DSAC_O3_TLOjbuA.webp)
+![](/assets/images/posts/opt-b846af682ab05b38ee882f37.webp)
 
 
 
@@ -116,7 +116,7 @@ The wavelength of the light used in OCT ranges from 900 nm to 1300 nm, higher th
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/WhOvZYbHfgQ1OC3e6OuHSwmDrbA.webp)
+![](/assets/images/posts/opt-f77e6120d397eefa74f7a845.webp)
 
 
 
@@ -128,7 +128,7 @@ The wavelength of the light used in OCT ranges from 900 nm to 1300 nm, higher th
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/O4ClMc_wUuS_eVqSJ7ElvELr-AI.png)
+![](/assets/images/posts/opt-8b4a6f4cea21259bd02812c3.webp)
 
 
 
@@ -172,7 +172,7 @@ Ophthalmology is already a domain where OCT is widely used. The ability to obser
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/c6Dl1FkdlVCHjFCUa4QzrXBqQ08.webp)
+![](/assets/images/posts/opt-1f1cce1ee39ef5ed5045cd0f.webp)
 
 
 
@@ -208,7 +208,7 @@ Another application area for OCT is gastroenterology, particularly notable for d
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/qj8xyAXitc79TpogkamzCtGUovY.webp)
+![](/assets/images/posts/opt-2358e3838b681724f10a122e.webp)
 
 
 

@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: /assets/images/posts/opt-a0c079581bc87e67a1967a42.avif
 subtitle: 과연 파이프라인은 잘 동작 할 것인지 그 귀추가 주목되고 있다
 translation_id: "pipelineexperiment"
 ---
@@ -30,7 +30,7 @@ translation_id: "pipelineexperiment"
 
 스타크래프트 이미지를 넣어 마크다운의 이미지 기능 역시 잘 변환되는지 확인합시다.  
 
-![캡션도 이렇게 달아줍니다 세심하다 세심해. 스타크래프트 2도 이제 나온지 10년이 넘다니 세월의 무상함에 눈물이 흘러요](https://bnetcmsus-a.akamaihd.net/cms/blog_header/2g/2G4VZH5TIWJF1602720144046.jpg)  
+![캡션도 이렇게 달아줍니다 세심하다 세심해. 스타크래프트 2도 이제 나온지 10년이 넘다니 세월의 무상함에 눈물이 흘러요](/assets/images/posts/opt-649816bd4445bf3f63e2033a.avif)  
 
   
 

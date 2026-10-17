@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, wearable]
 categories: cifellowship
 categorydisplay: Clinical Informatics
 lang: en
-image: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: The potential and limitations of medical devices and wearable technology embedded in a smartwatch
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
@@ -28,8 +28,6 @@ The most notable product in the smartwatch market is undoubtedly the Apple Watch
 
 
 
-![Apple Watch ECG](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/YtqyJiAg4QoYTC1OPMi5xbfrIL0)
-
 
 
 Figure 1. Yes, it's the same electrocardiogram often seen in medical dramas.
@@ -43,8 +41,6 @@ Apple is effectively claiming that wearable devices and applications can functio
 After the measurement, based on the electrocardiogram, the Apple Watch informs you if your heart is beating normally, whether it's too fast or too slow, or if there's atrial fibrillation. Although it doesn't provide as comprehensive data as the 12-lead electrocardiograms used in hospitals, the single-lead ECG from the Apple Watch is still expected to deliver useful information. The results from the Apple Watch can be stored as PDF files, making it easy for users to share with others.
 
 
-
-![Apple Watch ECG Measurement](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/tbURmKcuBgCaPSSCBHMrrvW8JVc)
 
 
 
@@ -67,8 +63,6 @@ In fact, Apple's process for obtaining FDA approval has been controversial in ma
 (Apple Watch received “clearance” instead of “approval” like AliveCor, meaning it was permitted to include the ECG tracking and atrial fibrillation detection features but didn't receive complete approval as a medical device.)
 
 
-
-![FDA Approval Document](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/NcrBHrzGi1CU2yMzouSOnPgk-mk)
 
 
 
@@ -95,8 +89,6 @@ Cases exist where severe bradycardia or tachycardia were detected through smart 
 The first criticism is regarding the medical device approval itself. In the case of smartwatches like Fitbit, they primarily collect user activity or sleep data. In most cases, they simply display this data in an appealing way rather than offering direct recommendations based on it.
 
 
-
-![Fitbit Data Display](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/aLgXG98omm0yM2SsI8GH5zprKH4)
 
 
 
@@ -132,8 +124,6 @@ There’s currently no clear answer to these questions. Liability is a significa
 
 
 
-![MIT Moral Machine Project](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/Z4KMzpP7prWteiAF7JQmEaUdgxQ)
-
 
 
 Figure 5. MIT Moral Machine project survey asking participants about value judgments in self-driving car accidents.
@@ -156,8 +146,6 @@ Errors in analysis can also arise from user mistakes. All sensors require specif
 
 
 
-![Doctor's Tweet](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/gh9QPLSv6S_fMD3qdCgNkUJ_iH8)
-
 
 
 Figure 6. A doctor’s tweet about a patient who visited due to abnormal ECG signals recorded by their Apple Watch.
@@ -167,8 +155,6 @@ Figure 6. A doctor’s tweet about a patient who visited due to abnormal ECG sig
 In this tweet, a patient reports abnormal ECG signals measured by an Apple Watch. While it’s possible there’s a genuine ECG abnormality, it’s more likely that incorrect measurements were taken since the patient was able to walk to the doctor. The high chances of user error reveal that the Apple Watch’s ECG feature could potentially cause unnecessary worries for users. These incorrect measurements may outnumber genuine heart issues detected, possibly making the Apple Watch ECG screening more trouble than it's worth.
 
 
-
-![User Error Leading to Major Issues](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/mbZtv9DnEC87yjzO2b2tn9jONM0)
 
 
 
@@ -195,8 +181,6 @@ The United States Preventive Services Task Force (USPSTF) recently published a p
 Consider the example of the prostate-specific antigen (PSA) test, commonly used. Although PSA is normally produced in the prostate, it’s also a marker for prostate cancer.
 
 
-
-![Prostate Cancer Early Detection](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/9Mgz93m0ROiSiLHUo_vpmQ9_N5k)
 
 
 

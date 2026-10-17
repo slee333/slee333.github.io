@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: 의료정보학
 lang: kr
-image: https://cdn.pixabay.com/photo/2018/11/16/14/29/papers-3819540_960_720.jpg
+image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: 아르고 프로젝트 - 이런 말을 더 듣지 않아도 된다면?
 translation_id: "Paperworks1"
 
@@ -24,7 +24,7 @@ translation_id: "Paperworks1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/RUYYaG6Ufw7ThrKvN6BI6dfF94g.jpg)  
+![](/assets/images/posts/opt-9ee9c4a59445bb8fc1f37a95.webp)  
 
 그림 1. 작년 검사지도 가져가고 재작년 것도 가져가고 어제 했던 것도... 아이고 무거워라!  
 
@@ -44,7 +44,7 @@ translation_id: "Paperworks1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/U2o8JFwwe3_2OjTL2bMscIj_xXg.jpg)  
+![](/assets/images/posts/opt-a8dee81c1945ee7aab9270e0.avif)  
 
 그림 2. 그러니까 이런 느낌입니다. 풋볼 매니저 게임에서 선수 능력치 보듯 하네요.  
 
@@ -76,7 +76,7 @@ translation_id: "Paperworks1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/30zdwf6ZKlJqg5w-sduY8bKUUcg.jpg)  
+![](/assets/images/posts/opt-f1c51a89831d1b2e826f8479.avif)  
 
 그림 3. 아르고 호 탐험대의 승선. 로렌조 코스타. 16세기.  
 
@@ -94,7 +94,7 @@ HL7이 해당 리포트의 영향으로 보다 나은 상호운용성을 지닌
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/DHbYI3JlxY2mWpSFxpXtbsHhK9Y.jpg)  
+![](/assets/images/posts/opt-63cb8b8924d72281a9103846.avif)  
 
 그림 4. HL7의 아르고 프로젝트의 책임자 존 하말카. (https://twitter.com/jhalamka)  
 
@@ -112,7 +112,7 @@ HL7이 해당 리포트의 영향으로 보다 나은 상호운용성을 지닌
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6KRi7D2GnRnASUIR98stx5rdxt4.gif)  
+![](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif)  
 
 그림 5. 잠깐. CDA는 뭐고 FHIR은 뭐고... 대체 무슨 소리죠?  
 
@@ -142,7 +142,7 @@ FHIR의 이러한 장점은 모두 어우러져 쉽고 빠른 의료시스템 �
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/VIPsF-n1k-dLXGGYjRlIIkBozvU.png)  
+![](/assets/images/posts/opt-99d97fc9cf66757acd9f5587.webp)  
 
 그림 6. 미국의 대표적인 전자의무기록 업체들. 이 업체들이 EMR을 기록하는 소프트웨어를 만든다.  
 

@@ -7,7 +7,7 @@ tags: [africa, 보건, 인구]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: Factfulness- viewing the world based on facts
 translation_id: "africa1"
 
@@ -16,7 +16,7 @@ translation_id: "africa1"
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/jSp8nabvz-0yb5hDeuL_6TD6V0w)
+![](/assets/images/posts/opt-d50568f7d639464681ff2624.webp)
 
 
 
@@ -76,7 +76,7 @@ Currently, the world population is approximately 7 billion. Given that one figur
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/3sXLlfafxoGVtXVKUf9-V4cFfJc)
+![](/assets/images/posts/opt-e3b2b52fc10618531c16e070.webp)
 
 
 
@@ -92,7 +92,7 @@ The answer is A. This might be relatively easier for those of us living in Asia.
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/g3m7-8OMc7vBFZ8N36GkGxYsxwA)
+![](/assets/images/posts/opt-957324d26db7862bb11c49ff.webp)
 
 
 
@@ -116,7 +116,7 @@ Africa is the "youngest continent." While low birth rates and aging populations 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/03tEqVQTEh_uzAsYHPw11UuKZHA)
+![](/assets/images/posts/opt-ebcbd8948c15a83e78fe4b58.webp)
 
 
 
@@ -132,7 +132,7 @@ Of course, an increase in the young population in a particular region is unfortu
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/E-LYhVAgDyPiGLE0AMY8T-Nm-vI)
+![](/assets/images/posts/opt-c35f904ef2ad991e70f957b5.webp)
 
 
 

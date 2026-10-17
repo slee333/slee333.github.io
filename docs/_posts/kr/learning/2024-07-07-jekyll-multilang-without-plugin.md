@@ -7,7 +7,7 @@ tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
+image: /assets/images/posts/opt-e4eda8dd028530ab1b653b5f.avif
 subtitle: 통용되는 플러그인이 그렇게 마음에 들지 않아 직접 기능을 구현 해 보았다. 보면 알겠지만 그렇게 어려운 기능이 아니다!
 translation_id: "jekyllmultilangwoplugin"
 ---
@@ -27,9 +27,9 @@ translation_id: "jekyllmultilangwoplugin"
 
   
 
-![](https://i.imgur.com/WTkZdgV.png)  
+![](/assets/images/posts/opt-322275c4e081219ff254aed9.webp)  
 
-![](https://i.imgur.com/JAEJZSd.png)  
+![](/assets/images/posts/opt-479f2623713f6a1f7f97fb8d.webp)  
 
 
 한국어 소개 페이지 (상단)과 영문 소개 페이지 (하단) URL  
@@ -48,7 +48,7 @@ translation_id: "jekyllmultilangwoplugin"
 
   
 
-![](https://i.imgur.com/S82sYnM.png)  
+![](/assets/images/posts/opt-5704bfea5dd5b919af83ebbb.webp)  
 
 한국어 페이지의 front matter (좌)와 영문 페이지의 front matter (우)  
 
@@ -64,9 +64,9 @@ translation_id: "jekyllmultilangwoplugin"
 
 `permalink`를 통해 서로 다른 언어 사이를 치환하는 만큼, 우리가 업로드하는 포스트에도 이러한 접근법 사용이 필요하다. 나는 다음과 같이 permalink를 모든 포스트마다 설정하는 방식을 선택하였다.   
 
-![](https://i.imgur.com/uFsQyJt.png)  
+![](/assets/images/posts/opt-820346da5baab96596841a82.webp)  
 
-![](https://i.imgur.com/NHW5Gkt.png)  
+![](/assets/images/posts/opt-ff99c1a8ac646e5bb3d5fe40.webp)  
 
 위: 우리말 포스트의 front matter ; 아래: 영문 포스트의 front matter  
 
@@ -90,7 +90,7 @@ translation_id: "jekyllmultilangwoplugin"
 
   
 
-![](https://i.imgur.com/qJvMBRb.png)  
+![](/assets/images/posts/opt-2a41049b17705b65a368026b.webp)  
 
 `_post/{언어}/{카테고리}/{포스트}`순으로 포스트 마크다운 파일들이 정리되어 있는 모습이다.  
 
@@ -100,7 +100,7 @@ translation_id: "jekyllmultilangwoplugin"
 
   
 
-![](https://i.imgur.com/oPBcBU0.png)  
+![](/assets/images/posts/opt-6ed5db63232348317757e2e3.webp)  
 
   
 
@@ -111,7 +111,7 @@ translation_id: "jekyllmultilangwoplugin"
 이 div 엘리먼트는 `language-select`라는 id를 가지며, 드랍다운으로 기능한다. 현재 페이지가 한국어일 때(`page.lang == ‘kr’` )는 option 중 value가 ”kr”인 option이 selected, 반대로 영어일 때는 value가 ‘en’인 option이 selected라는 프로퍼티를 얻게 될 예정이다. 내 페이지에서는 다음과 같이 보인다.  
 
 
-![](https://i.imgur.com/RmEermk.png)  
+![](/assets/images/posts/opt-de93122f526a2deb5841240a.webp)  
 
   
 
@@ -265,9 +265,9 @@ Liquid의 if 기능을 이용해 페이지 언어가 kr이면 한국어 메뉴�
 
   
 
-![](https://i.imgur.com/nTDXYal.png)  
+![](/assets/images/posts/opt-774362a5e21db25004c0b4ea.webp)  
 
-![](https://i.imgur.com/nzsXVJL.png)  
+![](/assets/images/posts/opt-5723a68b7c90e470d5ae2b73.webp)  
 
   
 

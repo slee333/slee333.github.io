@@ -7,13 +7,13 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: ¿La última obra del Dr. Choi Yoon-seop? ¿La biblia de la atención médica digital?
 translation_id: "bookreviewuntitled"
 
 ---
 ---
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg)  
+![](/assets/images/posts/opt-371597706560c7865d8e8d21.avif)  
 
 Fuente: 청년의사
 
@@ -59,7 +59,7 @@ El libro se divide principalmente en cuatro partes. En la **Parte 1, 'Llega la s
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/J2PuNcpx9bkGU1paLS4WzbfrSO4.jpg)  
+![](/assets/images/posts/opt-ef035b8078ffafac8653416c.webp)  
 
 Componentes de la medicina P4. Fuente: The Ohio State University Wexner Medical Center
 
@@ -85,7 +85,7 @@ En la primera etapa, **medición de datos**, el autor examina **qué** datos se 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Zx0GbSFLB2sTsm2a04MWxDzoWqU.png)  
+![](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)  
 
 Interfaz de Apple Health Record. Fuente: Página web de Apple Healthcare
 
@@ -107,7 +107,7 @@ El autor presenta ejemplos de la utilidad que podemos obtener de grandes cantida
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/hfqiUPhFvqe53rWG-x5cc3HkA6Y.jfif)  
+![](/assets/images/posts/opt-94ff506a6a351f1f284ea102.avif)  
 
 La telemedicina es un tema controvertido en Corea. Fuente: gettyimagebank
 
@@ -149,7 +149,7 @@ Aunque suena como una exageración, es fácil entender las terapias digitales co
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6dOGGjRHSPUmoQOBNX4425OPiUA.jpg)  
+![](/assets/images/posts/opt-196a5f3cc777dc9899f69024.avif)  
 
 Aplicación de consejería para pacientes con depresión Woebot. También la usé y es muy adorable y sanadora. Fuente: thephuketnews.com
 
@@ -175,7 +175,7 @@ Sin embargo, el proyecto EpiWatch fue cancelado por varias razones complejas, y 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sPl75n-1QpW0WZ-t26Lgzfppv_U.jpg)  
+![](/assets/images/posts/opt-1bc47a206b188412f76efd02.avif)  
 
 "¡Volveré cuando el ambiente se calme!" Los wearables volverán. Después de todo, siguen siendo uno de los pilares de la salud digital.
 
@@ -205,7 +205,7 @@ El libro proporciona una explicación completa para lectores sin conocimientos p
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/TA9HnlA-taPjhULQSzXxESkmxCg.jpg)  
+![](/assets/images/posts/opt-66ac1b5b2d5f9529c75c638f.webp)  
 
 El libro (izquierda) y la licencia de conducir del autor (derecha). El libro es bastante grueso, pero no se asusten.
 

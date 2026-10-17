@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, wearable]
 categories: cifellowship
 categorydisplay: 의료정보학
 lang: kr
-image: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: 스마트워치 하나에 담긴 의료기기와 웨어러블 기술의 가능성과 한계
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
@@ -28,8 +28,6 @@ slug: apple-watch-4-wearable-dilemma
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/YtqyJiAg4QoYTC1OPMi5xbfrIL0)  
-
 그림 1. 네, 의학 드라마 보면 흔히 등장하는 그 심전도 맞습니다. [1]  
 
   
@@ -41,8 +39,6 @@ slug: apple-watch-4-wearable-dilemma
 측정 후, 심전도를 기반으로 애플워치는 착용자의 심장이 정상적으로 뛰고 있는지, 빠르거나 느리지는 않은지, 혹은 심방세동이 있지는 않은지 알려줍니다. 애플워치가 측정하는 단일 전극 심전도는 병원에서 사용하는 12 전극 심전도보다는 간략하지만 그래도 유용한 정보를 전달 해 줄 수 있으리라 예상됩니다. 애플워치의 이러한 측정 결과는 pdf 파일 형태로 저장되어 사용자가 결과를 다른 사람에게 보여주기에도 용이합니다.  
 
   
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/tbURmKcuBgCaPSSCBHMrrvW8JVc)  
 
 그림 2. 이런 식으로 손을 용두에 갖다댐으로서 단일 전극 심전도를 측정할 수 있습니다. [2]  
 
@@ -61,8 +57,6 @@ slug: apple-watch-4-wearable-dilemma
 (다만 애플워치가 받은 FDA 인허가는 AliveCor와 같은 'approval'이 아닌 'clearance'로, 심전도 추적 기능과 심방세동 감지 기능을 넣어도 된다 허가를 준 것이지 의료기기로서 완전한 승인을 받은 것이 아니긴 합니다.)  
 
   
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/NcrBHrzGi1CU2yMzouSOnPgk-mk)  
 
 그림 3. 애플워치 심전도 앱의 FDA 인허가 문서 중 일부.  
 
@@ -87,8 +81,6 @@ slug: apple-watch-4-wearable-dilemma
 첫번째는 애플워치의 의료기기 허가 사실 그 자체입니다. 핏빗(Fitbit)과 같은 스마트워치의 경우 착용자의 활동이나 수면 데이터를 수집합니다만 대부분의 경우 이런 데이터를 이용하기보단 보기 좋게 보여주는 선에서 그치고, 데이터를 기반으로 사용자에게 직접적인 권유를 하지는 잘 않습니다.  
 
   
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/aLgXG98omm0yM2SsI8GH5zprKH4)  
 
 그림 4. 스마트워치 핏빗(Fitbit)이 데이터를 보여주는 방식. 핏빗은 잠이 줄었으니 잠 좀 더 자라는 정도의 충고밖에 하지 않습니다.  
 
@@ -120,8 +112,6 @@ A씨는 최근에 손목밴드를 하나 구입했습니다. 이 밴드는 착�
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/Z4KMzpP7prWteiAF7JQmEaUdgxQ)  
-
 그림 5. MIT 모럴 머신 프로젝트. 무인자동차가 사고를 내는 상황에서 어떻게 해야하는지 참여자의 가치판단을 묻는 설문조사입니다.  
 
   
@@ -138,8 +128,6 @@ A씨는 최근에 손목밴드를 하나 구입했습니다. 이 밴드는 착�
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/gh9QPLSv6S_fMD3qdCgNkUJ_iH8)  
-
 그림 6. 한 의사의 트윗. 환자가 애플워치로 측정한 자신의 심전도가 이상하다며 의사를 찾았습니다. [7]  
 
   
@@ -147,8 +135,6 @@ A씨는 최근에 손목밴드를 하나 구입했습니다. 이 밴드는 착�
 위 트위터는 한 환자가 애플워치로 측정한 심전도 시그널이 이상하다며 의사를 찾은 상황입니다. 정말로 심전도상의 이상일 가능성도 미약하게나마 있겠습니다만, 심전도가 정말로 저런 상황이면 환자가 의사를 두 발로 찾아가지 못할 가능성이 더 큽니다. 사용자가 측정을 잘못 하였을 가능성이 매우 높은 샘인데요. 어떻게 보면 애플의 심전도 기능이 사용자에게 불필요한 걱정거리를 안겨준 샘입니다. 문제는 정말로 심장에 문제가 있는 경우보다 이렇게 측정 과정 상의 오류로 비정상적인 결과가 나올 경우가 더 많을거라는데에 있습니다. 자칫하면 애플워치를 통한 심전도 스크리닝이 걱정거리만 만들어내게 되지는 않을까요?  
 
   
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/mbZtv9DnEC87yjzO2b2tn9jONM0)  
 
 그림 7. 사용자로 인한 측정 오류는 자칫하면 대형 참사를 일으키기도 합니다.  
 
@@ -175,8 +161,6 @@ A씨는 최근에 손목밴드를 하나 구입했습니다. 이 밴드는 착�
 흔히 행해지는 검사들 중 하나인 전립선 특이항원 (Prostate-specific antigen, PSA) 검사를 또 예로 들어보겠습니다. 전립선 특이항원은 정상적으로 전립선에서 생성되는 물질이지만 전립선암의 지표로도 쓰이는 물질입니다.  
 
   
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/9Mgz93m0ROiSiLHUo_vpmQ9_N5k)  
 
 그림 8. 전립선암 조기검진은 좋은 결과만을 낳지는 않는다. [9]  
 

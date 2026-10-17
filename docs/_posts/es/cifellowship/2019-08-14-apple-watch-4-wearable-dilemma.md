@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine, wearable]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-image: https://images.unsplash.com/photo-1598516802414-50a01bee818d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: Analizando las posibilidades y límites de la tecnología médica en un smartwatch.
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
@@ -20,15 +20,11 @@ Dentro de este mercado, los smartwatches son, sin duda, los reyes. Sus funciones
 
 El protagonista indiscutible de este sector es el Apple Watch. Incluso si no te interesan mucho los smartwatches, seguro has oído hablar de él. El 12 de septiembre pasado, Apple sacudió el tablero al anunciar que su app para medir la fibrilación auricular y la de electrocardiograma (ECG) del Apple Watch Series 4 habían recibido luz verde de la FDA de Estados Unidos como dispositivos médicos. Una noticia que generó un montón de ruido (aunque esta función todavía no ha llegado a muchos de nuestros países).
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/YtqyJiAg4QoYTC1OPMi5xbfrIL0)
-
 *Figura 1. Sí, es el mismo electrocardiograma que seguro has visto en las series de médicos. [1]*
 
 Con este paso, Apple básicamente está diciendo que sus wearables y apps ya no son solo gadgets, sino que pueden funcionar como verdaderos dispositivos médicos. Medirse el electrocardiograma con el Apple Watch es de lo más sencillo: instalas la app, la abres, pones el brazo en una posición cómoda y tocas la corona digital con un dedo de la otra mano. Mantienes esa pose 30 segundos y listo, tienes un registro de tu ECG.
 
 Al terminar, la app te dice si tu corazón parece latir con normalidad, si va muy rápido, muy lento o si detecta una posible fibrilación auricular. Aunque es un ECG más simple que el de 12 derivaciones de un hospital, la información que da puede ser muy útil. Además, los resultados se guardan en PDF, súper fácil para compartirlos.
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/tbURmKcuBgCaPSSCBHMrrvW8JVc)
 
 *Figura 2. Así de fácil, con solo poner el dedo en la corona digital, puedes medir tu ECG. [2]*
 
@@ -39,8 +35,6 @@ Pero, como era de esperarse, no todo fue color de rosa. Tras el anuncio de Apple
 De hecho, el mismísimo proceso de aprobación de la FDA para Apple ya dio mucho de qué hablar. Las apps del Apple Watch recibieron una autorización "De Novo", un término que suena elegante y que básicamente significa que es algo "nuevo", sin precedentes. Pero, ¿realmente es algo nuevo cuando ya existían productos como AliveCor, que también medían el ECG con el Apple Watch? La FDA dice que sí, que la app de Apple es diferente porque es 100% software.
 
 (Un dato curioso: la autorización fue una 'clearance' y no un 'approval' total, lo que en la práctica significa que tienen permiso para incluir la función, pero no es una validación completa como dispositivo médico).
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/NcrBHrzGi1CU2yMzouSOnPgk-mk)
 
 *Figura 3. Un pedacito del documento de aprobación de la FDA para la app de ECG del Apple Watch.*
 
@@ -53,8 +47,6 @@ Y aunque todo este papeleo y burocracia tiene su chisme, la pregunta del millón
 Ya hay historias de personas que, gracias a un smartwatch, detectaron ritmos cardíacos peligrosamente lentos o rápidos y recibieron tratamiento a tiempo. Otros descubrieron que tenían fibrilación auricular por primera vez con su Apple Watch. Viendo esto, está claro que el reloj ofrece una oportunidad valiosa para que mucha gente vigile su corazón. Pero a pesar de esto, las críticas no paran de llover. Veamos cuáles son.
 
 La primera tiene que ver con la idea misma de una "autorización médica". Dispositivos como Fitbit se dedican a recolectar datos de tu actividad o sueño, pero casi siempre se limitan a mostrártelos de forma bonita, sin darte recomendaciones directas.
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/aLgXG98omm0yM2SsI8GH5zprKH4)
 
 *Figura 4. Así es como Fitbit te muestra los datos. Si dormiste poco, te dirá que duermas más, y poco más.*
 
@@ -72,8 +64,6 @@ Ahora pensemos en el Sr. B, que también compró la pulsera. Un día se siente m
 
 Al día de hoy, nadie tiene una respuesta clara para este dilema de responsabilidades. Es el mismo problema que frena a los coches autónomos. La tecnología está casi lista, pero la pregunta de quién es el responsable en un accidente sigue en el aire. Proyectos como la "Moral Machine" del MIT exploran precisamente esto: qué decisiones éticas esperamos de una IA en situaciones límite.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/Z4KMzpP7prWteiAF7JQmEaUdgxQ)
-
 *Figura 5. El proyecto "Moral Machine" del MIT, donde la gente opina sobre los dilemas éticos de los coches autónomos.*
 
 Este tema de la responsabilidad es el gran obstáculo que todos los wearables deben superar si quieren dejar de ser un simple accesorio de moda y convertirse en herramientas que de verdad nos ayuden en el día a día. No basta con mostrar datos; hay que interpretarlos y comunicarlos bien. Y aunque es genial que Apple se atreva a dar ese paso, lanzar un producto así sin tener bien atado el tema legal puede parecer, como mínimo, arriesgado.
@@ -82,13 +72,9 @@ Este tema de la responsabilidad es el gran obstáculo que todos los wearables de
 
 Los fallos también pueden venir de nuestro lado. Todos los sensores necesitan condiciones específicas para funcionar bien. Para analizar el sueño, tienes que estar en una cama, no en un sillón de masajes que no para de moverse. Es decir, hay que usarlo como se debe, pero es poco realista pensar que todo el mundo lo hará siempre.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/gh9QPLSv6S_fMD3qdCgNkUJ_iH8)
-
 *Figura 6. El tuit de un doctor sobre un paciente que llegó asustado por un ECG "anormal" de su Apple Watch. [7]*
 
 Este tuit es un ejemplo perfecto. Un paciente llega preocupado por una señal rara en su Apple Watch. Podría ser un problema real, pero lo más probable es que, si pudo llegar caminando al consultorio, el ECG no era tan grave. Seguramente fue un error al tomar la medida, lo que generó una preocupación innecesaria. Y este es el riesgo: que haya más falsas alarmas que detecciones reales, convirtiendo una herramienta útil en una fuente de ansiedad.
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/mbZtv9DnEC87yjzO2b2tn9jONM0)
 
 *Figura 7. Un simple error del usuario podría causar un gran susto.*
 
@@ -101,8 +87,6 @@ Para alguien que ya sufre de arritmias, el reloj puede ser un gran aliado. Si te
 La USPSTF (un grupo de expertos en prevención de EE. UU.) publicó un artículo en la prestigiosa revista JAMA donde concluía que no hay pruebas suficientes de que hacerle electrocardiogramas a personas sin síntomas cardíacos les aporte algún beneficio. De hecho, podría ser contraproducente, llevando a diagnósticos erróneos, más pruebas y tratamientos innecesarios que pueden acabar siendo perjudiciales. [8]
 
 Pensemos en el test de PSA para el cáncer de próstata. Es una prueba muy común, pero controvertida.
-
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2HeB/image/9Mgz93m0ROiSiLHUo_vpmQ9_N5k)
 
 *Figura 8. Detectar el cáncer de próstata de forma temprana no siempre es la mejor solución. [9]*
 

@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: https://i.imgur.com/E5vEZQE.jpeg
+image: /assets/images/posts/opt-fe7abd875af80044b7e81e06.avif
 subtitle: The landscapes are so beautiful before the leaves start falling in earnest.
 translation_id: "nycoutdoor"
 ---
@@ -15,7 +15,7 @@ Traveled through the suburbs of New York State over several days. When we often 
 
 ## Destination: Saratoga Springs
 
-![](https://i.imgur.com/pTDVZmQ.jpeg)
+![](/assets/images/posts/opt-67de401940e145bed3ddece8.avif)
 
 *Photo of the Saratoga Springs map*
 
@@ -36,7 +36,7 @@ Overall, there wasn't a huge difference compared to other New England areas I fr
 
 After arriving in Saratoga Springs, we unpacked at our accommodation. It was an Airbnb with neat and nice facilities. Looking back, I realized I didn't take many photos...
 
-![](https://i.imgur.com/CrGiHf9.jpeg)
+![](/assets/images/posts/opt-d12ce1febce999f6a923ca15.avif)
 
 *I didn't take many pictures of the accommodation, but it was neat and beautiful like this.*
 
@@ -44,11 +44,11 @@ Three of us traveled together, and coincidentally, there were three rooms, so we
 
 Then we headed to a nearby national park called Saratoga Spa State Park. The trail had gentle inclines and was overall easy to walk. There were a lot of people here and there, and they were holding some sort of event, possibly a wedding, so it wasn't a secluded trail, but overall it was very beautiful.
 
-![](https://i.imgur.com/USLUcH5.jpeg)
+![](/assets/images/posts/opt-f4cd229613cbba94f1e0af44.avif)
 
 The forest path was still full of foliage before the fall colors set in, making it quite peaceful.
 
-![](https://i.imgur.com/Qogq35y.jpeg)
+![](/assets/images/posts/opt-ca7712e70d46785769152690.avif)
 
 It seemed to be a popular spot as there were a lot of people. The parking lot was also huge.
 
@@ -71,23 +71,23 @@ The next day, we packed our things and each headed home. On our way back, we sto
 
 I didn't manage to take pictures, but even the entrance to the island was unique. It was a narrow bridge, barely wide enough for one car to pass. Since I was driving, I couldn’t take a photo, so I'll substitute with an image I found online.
 
-![](https://i.imgur.com/WFCUTyO.jpeg)
+![](/assets/images/posts/opt-ef00a70870616c792ca0305e.avif)
 
 The bridge was narrow enough only for one car, but it had an allure.
 
 Once inside the park, it was more beautiful than I had anticipated. As it’s an island surrounded by the river, the sound of water and the natural scenery were stunning. I'll share a few images and videos.
 
-![](https://i.imgur.com/E5vEZQE.png)
+![](/assets/images/posts/opt-fe7abd875af80044b7e81e06.avif)
 
 A beautiful building photo taken while walking around the island vicinity.
 
-![](https://i.imgur.com/LLf5Qxv.jpeg)
+![](/assets/images/posts/opt-d876a464d22d9deea784141a.avif)
 
 *Photo of the dam seen below the island trail*
 
 The passersby were kind, and most notably, many visitors came with dogs or cats, making it enjoyable to watch.
 
-![](https://i.imgur.com/aFwwwGq.jpeg)
+![](/assets/images/posts/opt-676561de7bcc000e70cf9d29.avif)
 
 *Place where rapids flowed*
 

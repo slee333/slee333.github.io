@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: https://i.imgur.com/YObeuub.png
+image: /assets/images/posts/opt-e96c18e936087342ab8f38c7.webp
 subtitle: "Again, time to write my personal statement 😅"
 translation_id: "CIFellowAppDiary1"
 ---
@@ -22,7 +22,7 @@ I've written applications for high school, undergrad, medical school, and reside
 
 The process of writing a personal statement, organizing my career history, and weaving it all into a single narrative. It's all familiar, yet at times, it feels burdensome and even tedious.
 
-![](https://i.imgur.com/TpO0iCV.png)
+![](/assets/images/posts/opt-cc9cc75bfc5ab911f9ee5c35.webp)
 
 As the chart shows, ERAS tokens are issued starting June 5th. Only after receiving this token can you participate in the application cycle.
 
@@ -36,7 +36,7 @@ The fellowship application is structurally similar to the residency application.
 
 ### Personal Statement
 
-![](https://i.imgur.com/l2m8VWJ.png)
+![](/assets/images/posts/opt-c84917d262cfd0996bbd992b.webp)
 
 *Me, writing a 'Personal Statement'?*
 
@@ -58,13 +58,13 @@ In a way, it's a straightforward process of describing what I've done with my li
 
 However, ERAS limits you to writing about the 10 most important experiences rather than all of them. This makes sense. Everyone has a wide range of experiences, and reading through all of them would be endless.
 
-![](https://i.imgur.com/Hol28rL.png)
+![](/assets/images/posts/opt-943ee7995f7c9ae0d57effee.webp)
 
 *“Excuse me, you expect me to read all this?” A CV that’s too long might just waste the interviewer's time.*
 
 It's difficult to fully capture a person's vibrant, multifaceted life on a flat piece of paper. But you can't just give up because it's hard. I can only keep contemplating how to best show who I am.
 
-![](https://i.imgur.com/AxZNnNR.png)
+![](/assets/images/posts/opt-17eff9dabdc65c16d5ab7222.webp)
 
 *Life exists in three dimensions, not two.* 
 
@@ -98,6 +98,6 @@ Anyway, to figure out where I truly want to spend the next two years, I need to 
 
 Starting something new is incredibly nerve-wracking and exciting at the same time. I can only do my best and hope for a result I won't regret.
 
-![](https://i.imgur.com/ttVfGyd.png)
+![](/assets/images/posts/opt-4ddfa6edadc4e283b4ba346b.webp)
 
 *Where will I end up? I have a direction, but no destination. The place I reach after walking will simply become my destination.*

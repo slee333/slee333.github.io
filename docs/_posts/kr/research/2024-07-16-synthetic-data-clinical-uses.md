@@ -7,7 +7,7 @@ tags: [clinical-informatics, medicine]
 categories: research
 categorydisplay: 연구일기
 lang: kr
-image: https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-191aed76397f27a483fe8810.avif
 subtitle: 합성 데이터란 무엇이고, 임상 연구에는 어떤 식으로 사용될 수 있을까?
 translation_id: "SyntheticData"
 ---
@@ -23,17 +23,17 @@ translation_id: "SyntheticData"
 ---
 합성 데이터 생성에 사용되는 알고리즘은 여러 가지가 있지만, 가장 잘 알려진 방법은 생산적 적대 신경망(Generative Adversarial Network, GAN)입니다.  
 ### 생산적 적대 신경망 (GAN)  
-![](https://www.labellerr.com/blog/content/images/2022/12/gan-banner-1.webp)  
+![](/assets/images/posts/opt-337aa34d230321c845a23d49.webp)  
 GAN은 두 개의 신경망, 생성자(Generator)와 판별자(Discriminator)로 이루어져 있습니다. 두 신경망은 서로 경쟁하는 관계로, 생성자는 진짜 같은 합성 데이터를 만들고, 판별자는 이를 진짜 데이터와 구분하려 시도합니다. 이 과정에서 생성자는 더 실제 데이터와 근접한 데이터를 만들게 되며, 판별자가 생성된 데이터가 실제인지 아닌지 구분할 수 없을 정도로 실제와 유사한 데이터를 최종적으로 생성하게 됩니다.  
 GAN에서 발전된 개념으로 DPGAN(Differentially Private GAN)이나 CTGAN(Conditional Tabular GAN)도 있습니다. DPGAN은 Differential Privacy라는 개념을 도입하여 훈련 데이터에 포함된 개인 정보를 보호하도록 설계되었습니다. CTGAN은 범주형 변수를 처리하기 어렵다는 GAN의 한계를 극복하기 위해 설계되었습니다. 조건부 생성(conditional generation) 기법을 도입하여 다양한 데이터 테이블 간의 복잡한 관계를 모델링하여 복잡한 혼합된 형식의 데이터도 잘 생성한다 하네요?  
   
 ### VAE (Variational Autoencoder)  
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/VAE_Basic.png/425px-VAE_Basic.png)  
+![](/assets/images/posts/opt-f19eae7577a1ea140c5528e3.webp)  
 VAE는 데이터의 잠재 공간(latent space)을 학습하여 새로운 데이터를 생성하는 신경망 모델입니다. VAE는 인코더(Encoder)와 디코더(Decoder)로 구성되는데요. 인코더는 입력 데이터를 잠재 변수로 변환하고, 디코더는 이 잠재 변수로부터 원래 데이터와 유사한 새로운 데이터를 생성합니다.   
 VAE는 잠재 공간을 정규화된 분포로 가정하기에, 생성된 데이터가 연속적이고 부드럽다는 특징을 가지고 있습니다.  
   
 ### SMOTE (Synthetic Minority Over-sampling Technique)
-![](https://miro.medium.com/v2/resize:fit:1200/0*DfTZFQO5nhdiYmiY.png)  
+![](/assets/images/posts/opt-382c745ef6ffeaf6e955d2c2.webp)  
 머신러닝, 딥러닝을 이용하다 보면 데이터셋 내에 비교적 적은 수가 존재하는 소수 클래스가 존재합니다. 예를 들면 희귀병 환자의 데이터 숫자는 그렇지 않은 데이터에 비해 압도적으로 드물겠지요. 이런 상황을 데이터 불균형 (data imbalance)라 하는데요. SMOTE (Synthetic Minority Over-sampling Technique)은 이 상황을 해결하기 위해 자주 사용되는 기법입니다.  
 SMOTE는 k-최근접 이웃 알고리즘 (K-nearest neighbor)을 통해 소수 데이터들 사이에 새로운 데이터를 생성합니다. (위 그림에서 빨간 원들) 일반적으로 생성 데이터라 표현하면 SMOTE로 행하는 upscaling보다는 위에 언급한 GAN, VAE 등을 이용한 데이터 생성을 이야기하지만 엄밀히 말해 SMOTE 역시 합성 데이터 생성의 영역에 들어가기에 포함시켜보았습니다.  
   
@@ -68,18 +68,18 @@ SMOTE는 k-최근접 이웃 알고리즘 (K-nearest neighbor)을 통해 소수 �
 간단히 말해, 합성 데이터가 원본과 동일한 통계적인 특성을 가지고 있느냐 입니다. 이를테면, 합성 데이터 코호트의 평균 나이 및 나이의 표준 편차가 원본 데이터와 통계적으로 유의한 차이가 없어야 하겠죠. 앞서 언급한 논문에서는 다음 표와 같이 합성 데이터로 형성된 코호트의 통계적 특성을 원본 코호트와 비교합니다.  
   
   
-![](https://i.imgur.com/gOB6Wl9.png)  
+![](/assets/images/posts/opt-cdbe9574a0da14a81f129d8b.webp)  
 *생성 데이터와 원본 데이터의 통계적 특성을 비교한 모습*  
   
 논문의 자세한 내용은 다루지는 않겠지만, 합성 데이터가 원본 데이터의 나이, 성별 분포, 백혈구 수치 등과 같은 통계적 특성을 잘 구현했는지 비교한 모습을 알 수 있습니다. 해당 논문에서는 다음과 같이 생성 데이터가 원본 데이터의 유전적 특성을 잘 구현했는지 역시 평가 척도 중 하나로 삼았습니다.  
   
-![](https://i.imgur.com/KAzvh5p.png)  
+![](/assets/images/posts/opt-c27714c6ded7ef8143f11bc2.webp)  
 *생성 데이터와 원본 데이터의 유전적 특성을 비교한 모습*  
   
 ### 3.2. 구조적 유사성 (Structural Similarity)  
 이 외에도, 원본 데이터와 동일한 상관관계를 가져야 합니다. 예를 들어, 원본 데이터에서 나이와 특정 질환 간의 상관관계 있다면, 이는 합성 데이터에서도 동일하게 나타나야 하죠. 예를 들어, 앞서 언급한 논문에서는 합성 데이터와 원본 데이터에서 나타난 급성 골수성 백혈병 환자의 생존 분석을 통해 두 데이터의 유사성을 비교했습니다.  
   
-![](https://i.imgur.com/kT9JW3p.png)  
+![](/assets/images/posts/opt-7fcd53c4073b2757f169f81d.webp)  
 *생성 데이터와 원본 데이터의 구조적 유사성을 생존분석을 통해 비교한 모습*  
   
 ### 3.3 적용 가능성 (Utility)  
@@ -95,18 +95,18 @@ SMOTE는 k-최근접 이웃 알고리즘 (K-nearest neighbor)을 통해 소수 �
 ## 4. 생성 데이터의 임상적 실사용례  
   
 ### 4.1 뇌혈관질환 관련 연구  
-![](https://i.imgur.com/I8jcnWS.png)  
+![](/assets/images/posts/opt-b1fa40a02eb86ab592d97b07.webp)  
 PLoS One에서 올해 2월 나온 [논문](https://pubmed.ncbi.nlm.nih.gov/38324588/)입니다. 뇌혈관질환에서 합성 데이터가 실제 데이터를 얼마나 잘 모방하는지를 측정하였는데요.   
 해당 논문은 허혈성 뇌졸중을 겪은 암 환자 및 비 암환자의 데이터를 합성하였는데요. 합성 데이터가 앞서 말한 원본 데이터의 인구학적 특성이나, 기저질환, 입원 기간 등 중요한 평가 척도를 유사하게 모방한다는 점을 보고했습니다. 결론에서 연구진은 합성 데이터가 가설을 생성하거나, 데이터를 공유하거나, 빅데이터에 대한 접근을 신속하고 안전하게 할 수 있는 강력한 도구임 역시 강조하였구요.   
   
 ### 4.2. 혈액종양 관련 연구  
 앞서 생성 데이터의 평가 척도를 이야기 할 때 언급한 논문도 있지만 또 다른 논문도 있습니다  
   
-![](https://i.imgur.com/T9LCMY4.png)  
+![](/assets/images/posts/opt-82d979149a28315cd78eb264.webp)  
   
 해당 연구진은 골수이형성 증후군 (Myelodysplastic Syndrome, MDS) 환자 데이터를 합성하여 평가하였는데요. 연구진은 조건부 생성적 적대 신경망(GAN)을 사용해 생성된 합성 데이터가 임상적 특징, 유전체 정보, 환자군에 대한 치료 및 치료 결과를 높은 정확도로 재현 할 수 있음을 시연했습니다. 특히 인상적이었던 부분은 2014년에 수집한 데이터를 기반으로 데이터 합성을 진행하여 이를 바탕으로 진행한 환자군 분류가 2024년 현재 실제 수집한 데이터를 기반해 진행한 분류와 유사했다는 부분 (아래 그림 참고)이었습니다.   
   
-![](https://i.imgur.com/KA8uBqf.png)  
+![](/assets/images/posts/opt-f6049c7218e5221333e84c61.webp)  
   
 ---
   

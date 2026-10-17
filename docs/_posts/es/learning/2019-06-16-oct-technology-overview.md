@@ -7,7 +7,7 @@ tags: [Imaging, Medical, medicine]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
+image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: Descubramos qué es la sísmica de refracción y cuáles son sus aplicaciones.
 translation_id: "oct2019"
 
@@ -28,7 +28,7 @@ El CT, MRI y el ultrasonido son dispositivos de imágenes comunes que todos hemo
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/27utJo-FDpSjiz1Q6fGCehBX5_E.jpg)
+![](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif)
 
 
 
@@ -60,7 +60,7 @@ Para explicar el principio de la OCT, volvamos por un momento a 2016. El 11 de f
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/1T1SpFdqiXi-DSAC_O3_TLOjbuA.webp)
+![](/assets/images/posts/opt-b846af682ab05b38ee882f37.webp)
 
 
 
@@ -116,7 +116,7 @@ La longitud de onda de la luz utilizada en la OCT está entre 900 nm y 1300 nm, 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/WhOvZYbHfgQ1OC3e6OuHSwmDrbA.webp)
+![](/assets/images/posts/opt-f77e6120d397eefa74f7a845.webp)
 
 
 
@@ -128,7 +128,7 @@ La longitud de onda de la luz utilizada en la OCT está entre 900 nm y 1300 nm, 
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/O4ClMc_wUuS_eVqSJ7ElvELr-AI.png)
+![](/assets/images/posts/opt-8b4a6f4cea21259bd02812c3.webp)
 
 
 
@@ -172,7 +172,7 @@ La oftalmología ya utiliza ampliamente la OCT. Las ventajas de observar en tiem
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/c6Dl1FkdlVCHjFCUa4QzrXBqQ08.webp)
+![](/assets/images/posts/opt-1f1cce1ee39ef5ed5045cd0f.webp)
 
 
 
@@ -208,7 +208,7 @@ Otra aplicación de la OCT es en gastroenterología, particularmente en áreas r
 
 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/qj8xyAXitc79TpogkamzCtGUovY.webp)
+![](/assets/images/posts/opt-2358e3838b681724f10a122e.webp)
 
 
 

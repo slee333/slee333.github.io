@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: The amazing influence of gut microbes on our brains
 translation_id: "foodforthought"
 
@@ -33,7 +33,7 @@ Here, I want to add one more reason why our mind doesn't go as we wish. It's the
 
     
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/CS4_wyqyKtT-I-BKi8oZ48CnB-E)
+![](/assets/images/posts/opt-d6f1690018f0e6fb9bd8f048.avif)
 
 Eating delicious food makes you feel good. Even just looking at it too. Isn't it such an obvious and happy story?
 
@@ -55,7 +55,7 @@ It's no longer surprising that these microorganisms affect our gut health. In fa
 
     
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/wwhp8RCm1fJsabzjPK1gEFTiLxs)
+![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)
 
 Microorganisms that can cause gastrointestinal diseases
 
@@ -73,7 +73,7 @@ But what if these gut microorganisms also affect our brain? Intuitively, it migh
 
     
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/KuIB-XcKy6r1HUlyiIN7XEObZWk)
+![](/assets/images/posts/opt-1d2dca129bdba3393d7d4df0.webp)
 
 The connection between brain activity and the digestive system, including gut microorganisms, is also described as the Gut-brain axis.
 
@@ -103,7 +103,7 @@ To clarify this, some researchers conducted studies using fecal transplantation.
 
     
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/eRTMP1pvtQhBbZGgmGwF8IXf1wA)
+![](/assets/images/posts/opt-04af41d22467c23d38d60ac7.avif)
 
     Does it mean that cultivating good gut bacteria through a healthy diet is involved in brain health?
 
@@ -129,7 +129,7 @@ L. reuteri secretes substances that stimulate the vagus nerve, one of our brain 
 
     
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/MYXowma1BiQMJTgZpWChSfUQJ3s)
+![](/assets/images/posts/opt-cf8441f7e73127a1758aa9fb.avif)
 
 Is it possible that being inoculated with 'popular bacteria' like L. reuteri makes one more sociable?
 

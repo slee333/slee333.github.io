@@ -7,7 +7,7 @@ tags: [clinical-informatics, fellowship, life]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://i.imgur.com/YObeuub.png
+image: /assets/images/posts/opt-e96c18e936087342ab8f38c7.webp
 subtitle: "De nuevo, ¡toca escribir la declaración personal! 😅"
 translation_id: "CIFellowAppDiary1"
 ---
@@ -22,7 +22,7 @@ He escrito solicitudes para el instituto, la universidad, la facultad de medicin
 
 El proceso de escribir una declaración personal, organizar mi historial profesional y tejerlo todo en una sola narrativa. Todo es familiar, pero a veces se siente pesado e incluso tedioso.
 
-![](https://i.imgur.com/TpO0iCV.png)
+![](/assets/images/posts/opt-cc9cc75bfc5ab911f9ee5c35.webp)
 
 Como muestra el gráfico, los "tokens" de ERAS se emiten a partir del 5 de junio. Solo después de recibir este token se puede participar en el ciclo de solicitud.
 
@@ -36,7 +36,7 @@ La solicitud del fellowship es estructuralmente similar a la de la residencia. S
 
 ### Declaración Personal
 
-![](https://i.imgur.com/l2m8VWJ.png)
+![](/assets/images/posts/opt-c84917d262cfd0996bbd992b.webp)
 
 *¿Yo, escribiendo una 'Declaración Personal'?*
 
@@ -58,13 +58,13 @@ En cierto modo, es un proceso directo de describir lo que he hecho con mi vida, 
 
 Sin embargo, ERAS te limita a escribir sobre las 10 experiencias más importantes en lugar de todas. Tiene sentido. Todo el mundo tiene una amplia gama de experiencias, y leerlas todas sería interminable.
 
-![](https://i.imgur.com/Hol28rL.png)
+![](/assets/images/posts/opt-943ee7995f7c9ae0d57effee.webp)
 
 *“¿Disculpe, espera que lea todo esto?” Un CV demasiado largo podría hacerle perder el tiempo al entrevistador.*
 
 Es difícil capturar por completo la vida vibrante y multifacética de una persona en una simple hoja de papel. Pero no puedes rendirte solo porque sea difícil. Solo puedo seguir contemplando la mejor manera de mostrar quién soy.
 
-![](https://i.imgur.com/AxZNnNR.png)
+![](/assets/images/posts/opt-17eff9dabdc65c16d5ab7222.webp)
 
 *La vida existe en tres dimensiones, no en dos.* 
 
@@ -98,6 +98,6 @@ En fin, para averiguar dónde quiero pasar realmente los próximos dos años, ne
 
 Empezar algo nuevo es increíblemente angustiante y emocionante al mismo tiempo. Solo puedo dar lo mejor de mí y esperar un resultado del que no me arrepienta.
 
-![](https://i.imgur.com/ttVfGyd.png)
+![](/assets/images/posts/opt-4ddfa6edadc4e283b4ba346b.webp)
 
 *¿Dónde terminaré? Tengo una dirección, pero no un destino. El lugar al que llegue después de caminar simplemente se convertirá en mi destino.*

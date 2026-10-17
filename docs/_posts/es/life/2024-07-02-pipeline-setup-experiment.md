@@ -7,7 +7,7 @@ tags: [life, test]
 categories: life
 categorydisplay: Vida Diaria
 lang: es    
-image: https://i.imgflip.com/1w4qbl.jpg?a477096
+image: /assets/images/posts/opt-a0c079581bc87e67a1967a42.avif
 subtitle: De hecho, se están prestando mucha atención a si el oleoducto funcionará correctamente.
 translation_id: "pipelineexperiment"
 
@@ -45,7 +45,7 @@ Agreguemos una imagen de StarCraft para verificar también si la función de im�
 
 
 
-![Incluso agregamos una leyenda, ¡qué detallado! No puedo creer que ya han pasado más de 10 años desde que salió StarCraft 2. La fugacidad del tiempo me hace llorar.](https://bnetcmsus-a.akamaihd.net/cms/blog_header/2g/2G4VZH5TIWJF1602720144046.jpg)
+![Incluso agregamos una leyenda, ¡qué detallado! No puedo creer que ya han pasado más de 10 años desde que salió StarCraft 2. La fugacidad del tiempo me hace llorar.](/assets/images/posts/opt-649816bd4445bf3f63e2033a.avif)
 
 
 

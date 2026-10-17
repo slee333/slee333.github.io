@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Informática Clínica
 lang: es
-image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: "Health Records de Apple, Google Cloud y las soluciones de los gigantes tecnológicos."
 translation_id: "Paperworks2"
 
@@ -18,7 +18,7 @@ En la [publicación anterior](https://brunch.co.kr/@gazezaet/10), hablamos sobre
 
 Cuando se habla de las iniciativas de Apple en salud, es imposible no mencionar Health Records. En pocas palabras, es una función que permite a los pacientes recibir y almacenar sus propios historiales médicos de diferentes hospitales directamente en su iPhone. La app organiza toda esa información de forma clara y fácil de entender, para que cualquiera pueda consultar sus datos. Este tipo de sistema, donde el paciente tiene el control, se conoce como un Registro Personal de Salud (PHR, por sus siglas en inglés).
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/NE7WVbac9C69yVg-0hc1fMQ9Ck8.png)
+![](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)
 
 *La interfaz de Apple Health Records. Limpia y fácil de entender, como es costumbre en Apple.*
 
@@ -30,7 +30,7 @@ El Dr. Sambul Desai, uno de los directivos de la división de salud de Apple, co
 
 Cuando Apple Health Records se lanzó en enero de 2018, empezó colaborando con 12 hospitales de renombre, como el Johns Hopkins o el de la Universidad de California en San Diego ([Fuente](https://www.mobihealthnews.com/content/apple-will-launch-health-records-feature-12-hospitals-ios-113)). Para agosto de 2019, la cifra ya había explotado, llegando a 223 centros médicos asociados ([Fuente](https://support.apple.com/en-us/HT208647)).
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/d3AZ94jAW93uscH6ADQDLqu0OlE.png)
+![](/assets/images/posts/opt-a37d8b3fc9572d9f74b0f389.webp)
 
 *Artículo de la UC San Diego publicado en la prestigiosa revista JAMA.*
 
@@ -44,7 +44,7 @@ Ya había habido otros intentos de crear sistemas para que los pacientes gestion
 
 Aunque todavía está por ver si una plataforma así puede realmente mejorar la calidad de la atención o reducir costes, está claro que una gran parte de sus usuarios la consideran muy útil.
 
-### ![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/KVLo0uPOph7Y2_y1qDpXZtGYA9c.png)
+### ![](/assets/images/posts/opt-16f6b2fed9184ec1664f6f92.webp)
 
 *Heal, un servicio de visitas médicas a domicilio que se integra con Health Records.*
 
@@ -60,7 +60,7 @@ El famoso cardiólogo Eric Topol, muy activo en Twitter, siempre ha defendido qu
 
 Para quien no esté familiarizado, una plataforma en la nube, a grandes rasgos, te permite almacenar cantidades masivas de datos y te da las herramientas para manejarlos de forma fácil y eficiente. Antes, las empresas tenían que mantener sus propios servidores, extraer los datos, limpiarlos, analizarlos... un proceso complejo y costoso.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/_0NK5fMsoWrlurKUrZVwa4RPSMs.jpg)
+![](/assets/images/posts/opt-5091f5168712edc84b00b091.avif)
 
 *Los servicios en la nube te dan el almacén (espacio) y las herramientas (computación) para analizar tus datos.*
 
@@ -70,7 +70,7 @@ Por esta comodidad, empresas de todos los sectores (finanzas, retail, biotecnolo
 
 Pero, ¿cómo ayuda esto al paciente de a pie? [Google afirma que mucho](https://cloud.google.com/solutions/healthcare/?tab=tab2).
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/N2Ac9kTaPgvXl7IzRfF-GwrFnzk.png)
+![](/assets/images/posts/opt-d6ac61de32b2337adeb0515c.webp)
 
 *Google asegura que sus servicios en la nube pueden mejorar la atención médica.*
 
@@ -80,7 +80,7 @@ Google defiende que la nube puede agilizar todo: desde el registro en un hospita
 
 Por supuesto, todo esto debe cumplir con estrictas regulaciones de privacidad como la **HIPAA** en Estados Unidos. Esta ley protege la información de salud y garantiza que solo el paciente o las personas autorizadas puedan acceder a ella. Cualquier dato usado para investigación debe ser anonimizado, un proceso llamado desidentificación. Los servicios de Google Cloud cumplen con esta normativa, algo fundamental para manejar datos tan sensibles.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/iSyHxa5BEH8Imfd3iLfZBi5XbSI.jpg)
+![](/assets/images/posts/opt-a33deefa4721335f8f063882.webp)
 
 *Toda la información personal debe ser anonimizada para que no se pueda rastrear al individuo.*
 

@@ -7,7 +7,7 @@ tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
+image: /assets/images/posts/opt-e4eda8dd028530ab1b653b5f.avif
 subtitle: I tried implementing the function myself because I didn't like the commonly used plugin. You can see that it's not such a difficult function!
 translation_id: "jekyllmultilangwoplugin"
 ---
@@ -27,9 +27,9 @@ As a result, I implemented a multi-language support blog with some hardcoding. T
 
 
 
-![](https://i.imgur.com/WTkZdgV.png)  
+![](/assets/images/posts/opt-322275c4e081219ff254aed9.webp)  
 
-![](https://i.imgur.com/JAEJZSd.png)  
+![](/assets/images/posts/opt-479f2623713f6a1f7f97fb8d.webp)  
 
 
 
@@ -52,7 +52,7 @@ By now, you might have realized:
 
 
 
-![](https://i.imgur.com/S82sYnM.png)   
+![](/assets/images/posts/opt-5704bfea5dd5b919af83ebbb.webp)   
 
 
 
@@ -71,9 +71,9 @@ After specifying it this way, if the user switches the language on the introduct
 Since we replace between different languages via `permalink`, this approach should be applied to the posts we upload. I chose to set `permalink` for every post as follows.
 
 
-![](https://i.imgur.com/uFsQyJt.png)  
+![](/assets/images/posts/opt-820346da5baab96596841a82.webp)  
 
-![](https://i.imgur.com/NHW5Gkt.png)  
+![](/assets/images/posts/opt-ff99c1a8ac646e5bb3d5fe40.webp)  
 
 
 
@@ -101,7 +101,7 @@ This is a valid point. Therefore, I create separate language folders within `_po
 
 
 
-![](https://i.imgur.com/qJvMBRb.png)  
+![](/assets/images/posts/opt-2a41049b17705b65a368026b.webp)  
 
 
 * The markdown files for posts are organized in the structure `_posts/{language}/{category}/{post}`. *
@@ -115,7 +115,7 @@ This is a valid point. Therefore, I create separate language folders within `_po
 Now that we have two corresponding pages for each language, it's time to create a means to switch to the other language page within the page. I created `header.html` in `root/_includes` and used this file as a header for all pages/posts, adding the following element to that header.
 
 
-![](https://i.imgur.com/oPBcBU0.png)  
+![](/assets/images/posts/opt-6ed5db63232348317757e2e3.webp)  
 
 
 The example above shows that the options are `kr` and `en`, but ambitiously, I also included Spanish.
@@ -125,7 +125,7 @@ The example above shows that the options are `kr` and `en`, but ambitiously, I a
 The `div` element has an ID of `language-select` and functions as a dropdown. When the current page is in Korean (`page.lang == 'kr'`), the option with the value "kr" is selected, and conversely, when it's in English, the option with the value "en" is selected. My page looks like this:
 
 
-![](https://i.imgur.com/RmEermk.png)  
+![](/assets/images/posts/opt-de93122f526a2deb5841240a.webp)  
 
 
 ## 3. Linking the Redirection Function to the Language Switch Button
@@ -287,9 +287,9 @@ Now, I have modified the code in a way that eliminates hardcoding, and I will wr
 Below is the appearance of the dropdown menu inserted in the `header` (specifically the **navbar**), which allows switching between English and Korean pages.
 
 
-![](https://i.imgur.com/nTDXYal.png)  
+![](/assets/images/posts/opt-774362a5e21db25004c0b4ea.webp)  
 
-![](https://i.imgur.com/nzsXVJL.png)  
+![](/assets/images/posts/opt-5723a68b7c90e470d5ae2b73.webp)  
 
 
 

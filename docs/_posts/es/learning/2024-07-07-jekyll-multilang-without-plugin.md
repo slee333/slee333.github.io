@@ -7,7 +7,7 @@ tags: [blog, chatgpt, life, openai, python]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://cdn.pixabay.com/photo/2015/04/03/18/56/font-705667_1280.jpg
+image: /assets/images/posts/opt-e4eda8dd028530ab1b653b5f.avif
 subtitle: No me gustaba mucho el plugin común, así que decidí implementar la función directamente. ¡Como puedes ver, no es una función tan difícil!
 translation_id: "jekyllmultilangwoplugin"
 ---
@@ -31,9 +31,9 @@ Finalmente, implementé un blog multilingüe con algunos códigos fijos. El proc
 
 
 
-![](https://i.imgur.com/WTkZdgV.png)  
+![](/assets/images/posts/opt-322275c4e081219ff254aed9.webp)  
 
-![](https://i.imgur.com/JAEJZSd.png)  
+![](/assets/images/posts/opt-479f2623713f6a1f7f97fb8d.webp)  
 
 URL de la página de introducción en coreano (arriba) y en inglés (abajo)
 
@@ -55,7 +55,7 @@ Sí, exacto. Así que configuremos el front matter de la siguiente manera.
 
 
 
-![](https://i.imgur.com/S82sYnM.png)  
+![](/assets/images/posts/opt-5704bfea5dd5b919af83ebbb.webp)  
 
 Front matter de la página en coreano (izquierda) y de la página en inglés (derecha)
 
@@ -77,9 +77,9 @@ Dado que estamos utilizando `permalink` para intercambiar entre diferentes idiom
 
 
 
-![](https://i.imgur.com/uFsQyJt.png)  
+![](/assets/images/posts/opt-820346da5baab96596841a82.webp)  
 
-![](https://i.imgur.com/NHW5Gkt.png)  
+![](/assets/images/posts/opt-ff99c1a8ac646e5bb3d5fe40.webp)  
 
 
 Arriba: front matter de la publicación en coreano; Abajo: front matter de la publicación en inglés
@@ -99,7 +99,7 @@ Surge la pregunta:
 Una observación válida. Por lo tanto, crea carpetas de idiomas dentro de `_posts` y almacena los archivos respectivamente. Yo los clasifico por idioma y categoría.
 
 
-![](https://i.imgur.com/qJvMBRb.png)  
+![](/assets/images/posts/opt-2a41049b17705b65a368026b.webp)  
 
 
 Así se ven los archivos markdown de las publicaciones organizados por `{idioma}/{categoría}/{post}` en `_posts`.
@@ -114,7 +114,7 @@ Ahora que tenemos dos páginas para dos idiomas, debemos crear una manera de cam
 
 
 
-![](https://i.imgur.com/oPBcBU0.png)  
+![](/assets/images/posts/opt-6ed5db63232348317757e2e3.webp)  
 
 
 
@@ -125,7 +125,7 @@ Como se muestra en el ejemplo, los idiomas option en el dropdown son `kr` y `en`
 Este elemento div tiene el id `language-select` y funciona como dropdown. Cuando la página está en coreano (`page.lang == ‘kr’`), la opción cuyo value es "kr" está seleccionada. Lo contrario ocurre si está en inglés ("en"). En mi página se ve así:
 
 
-![](https://i.imgur.com/RmEermk.png)  
+![](/assets/images/posts/opt-de93122f526a2deb5841240a.webp)  
 
 
 ## 3. Añadir función de redirección al botón de intercambio de idiomas
@@ -275,9 +275,9 @@ Usando la función if de Liquid, se muestran los menús en coreano si la página
 Ahora puedes ver cómo se puede cambiar la página entre inglés y coreano a través de un menú desplegable insertado en la sección `header`, específicamente en la **barra de navegación**.
 
 
-![](https://i.imgur.com/nTDXYal.png)  
+![](/assets/images/posts/opt-774362a5e21db25004c0b4ea.webp)  
 
-![](https://i.imgur.com/nzsXVJL.png)  
+![](/assets/images/posts/opt-5723a68b7c90e470d5ae2b73.webp)  
 
 
 Ahora esta función de soporte multilingüe está implementada.

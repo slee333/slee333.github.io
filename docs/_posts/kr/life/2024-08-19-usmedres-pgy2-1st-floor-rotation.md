@@ -7,7 +7,7 @@ tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://i.imgur.com/OImzeTV.png
+image: /assets/images/posts/opt-6c09f59c8800daa0b3df171e.webp
 subtitle: 1년차 인턴의 업무와 2년차 레지던트의 업무는 다르다. 나는 과연 잘 적응하고 있는가?
 translation_id: "pgy2firstfloor"
 ---

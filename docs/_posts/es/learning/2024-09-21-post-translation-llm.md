@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://i.imgur.com/nyv5CB7.png
+image: /assets/images/posts/opt-1b0ca8ad23ea79e7cee81e44.webp
 subtitle: Las posibilidades de los modelos de lenguaje a gran escala son infinitas. No son una excepción en la traducción de publicaciones de blog.
 translation_id: "jekyllblogllm"
 ---
@@ -41,13 +41,13 @@ Entre los modelos de lenguaje grande, el más famoso probablemente sea ChatGPT. 
 
 Primero, entraremos en el [sitio web de la API de ChatGPT](https://platform.openai.com/) y crearemos un proyecto. Aunque ya tengo algunos proyectos creados, para aquellos que crean un proyecto nuevo, presionen el botón <span style='color:red'>+ Create Project</span>.
 
-![](https://i.imgur.com/za6DJNp.png)
+![](/assets/images/posts/opt-18c73fae93cce073ba321818.webp)
 
 *Creemos un nuevo proyecto.*
 
 En la página de la API, ingresa al Dashboard, en la pestaña de API Keys encontrarás la opción para crear una nueva llave secreta (Secret Key). Usa el botón <span style='color:green'>Create New Secret Key</span>.
 
-![](https://i.imgur.com/Di6i5Od.png)
+![](/assets/images/posts/opt-92ede7b8fcbdb13eb98bcc3f.webp)
 
 **2. Llamadas a la API desde Python**
 
@@ -172,7 +172,7 @@ Sin embargo, recientemente **Meta** lanzó Llama 3.1, un modelo de lenguaje gran
 
 Llama 3.1 tiene tres modelos: 8B, 70B y 405B, donde un número mayor indica mejor rendimiento. Se dice que Llama 3.1 405B supera el rendimiento de GPT-4. Consulta la siguiente tabla para más detalles.
 
-![](https://i.imgur.com/FTJNtnp.png)
+![](/assets/images/posts/opt-1f08bd331ac1b326c7d9416b.webp)
 
 Generalmente, el modelo 8B se usa para tareas simples de resumen de texto y clasificación, 70B para la creación de contenido, y 405B es adecuado para usos industriales, generación de datos sintéticos e investigación. Dado que mi computadora no es muy poderosa, elegí Llama 3.1 8B sin dudarlo.
 
@@ -180,7 +180,7 @@ Entonces, ¿cómo lo instalamos? Hay dos métodos: uno a través del sitio ofici
 
 **1. Instalación de Llama 3.1 con Ollama**
 
-![](https://i.imgur.com/6Nia1Lg.png)
+![](/assets/images/posts/opt-6ef46dd9173a736f87936eb7.webp)
 
 ***Página de descarga del sitio oficial de ollama***
 
@@ -188,11 +188,11 @@ Primero, visita el [sitio oficial de Ollama](https://ollama.com/download/windows
 
 Una vez completa la instalación, crea una cuenta en el sitio de Ollama e inicia sesión. Luego, ve a la sección `Models` en la esquina superior derecha.
 
-![](https://i.imgur.com/27vjcnG.png)
+![](/assets/images/posts/opt-f985ee332afadd7113f63ac0.webp)
 
 Selecciona llama 3.1 y copia el comando de instalación.
 
-![](https://i.imgur.com/7PqqsAD.png)
+![](/assets/images/posts/opt-c8ea9e107bec00a113579087.webp)
 
 Pega el comando en tu terminal. Si estás usando Llama 3.1 8B, el comando se verá así:
 

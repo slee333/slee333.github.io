@@ -7,7 +7,7 @@ tags: [food, medicine, microbiology, 미생물]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: "El sorprendente impacto de nuestros microbios intestinales en el cerebro."
 translation_id: "foodforthought"
 
@@ -22,7 +22,7 @@ Pero esta frase parte de una premisa: que nuestra mente hace lo que nosotros le 
 
 Hoy quiero añadir una razón más por la que nuestra mente no siempre nos hace caso: la comida que nos metemos en el cuerpo todos los días.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/CS4_wyqyKtT-I-BKi8oZ48CnB-E)
+![](/assets/images/posts/opt-d6f1690018f0e6fb9bd8f048.avif)
 
 *Comer algo rico nos pone de buen humor. ¡Incluso solo verlo! Una verdad tan simple como feliz, ¿no?*
 
@@ -34,7 +34,7 @@ Las bacterias intestinales son, literalmente, los bichitos que viven en nuestros
 
 Que estos microorganismos afectan nuestra salud intestinal ya no es noticia. De hecho, se les culpa de muchas enfermedades gastrointestinales, y el trasplante de microbiota fecal (FMT) se está estudiando como una posible solución para varios trastornos intestinales, aunque su eficacia todavía está en debate.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/wwhp8RCm1fJsabzjPK1gEFTiLxs)
+![](/assets/images/posts/opt-9a2dc85b2669621b78bc1ada.webp)
 
 *Microbios intestinales que pueden causar enfermedades gastrointestinales.*
 
@@ -52,7 +52,7 @@ Pero todos estos estudios no eran suficientes para probar una relación de causa
 
 Para aclararlo, los científicos recurrieron a los trasplantes fecales. Por ejemplo, trasplantaron heces de ratones obesos a ratones sanos, y estos últimos empezaron a engordar [8]. En otro estudio, trasplantaron heces de personas con depresión a ratones, y los ratones empezaron a mostrar síntomas de depresión. Y más recientemente, se ha reportado que un trasplante fecal puede mejorar la depresión en humanos [9].
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/eRTMP1pvtQhBbZGgmGwF8IXf1wA)
+![](/assets/images/posts/opt-04af41d22467c23d38d60ac7.avif)
 
 *¿Será que cuidar nuestras bacterias intestinales con una buena dieta también cuida nuestro cerebro?*
 
@@ -66,7 +66,7 @@ Sin embargo, ya hay avances. El equipo del Dr. Costa-Mattioli en la Universidad 
 
 Resulta que *L. reuteri* estimula el nervio vago, que a su vez activa la liberación de oxitocina, la famosa "hormona del amor" que fomenta la interacción social [11]. Cada vez hay más pruebas de esta conexión entre intestino y cerebro. Se ha sugerido que ciertos microbios pueden agravar los síntomas del Parkinson [12], y otros, como *Ruminococcus gnavus*, se han relacionado con el síndrome del intestino irritable [13].
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/MYXowma1BiQMJTgZpWChSfUQJ3s)
+![](/assets/images/posts/opt-cf8441f7e73127a1758aa9fb.avif)
 
 *¿Nos volveremos más sociables si nos dan un trasplante de L. reuteri?*
 

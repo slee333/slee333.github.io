@@ -7,7 +7,7 @@ tags: [blog, life]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://i.imgur.com/E5vEZQE.jpeg
+image: /assets/images/posts/opt-fe7abd875af80044b7e81e06.avif
 subtitle: Antes de que las hojas comiencen a cambiar de forma auténtica, los paisajes son tan hermosos.
 translation_id: "nycoutdoor"
 ---
@@ -16,7 +16,7 @@ Viajé por la región suburbana del estado de Nueva York durante varios días. C
 
 ## El destino es Saratoga Springs
 
-![](https://i.imgur.com/pTDVZmQ.jpeg)
+![](/assets/images/posts/opt-67de401940e145bed3ddece8.avif)
 *Foto del mapa de Saratoga Springs*
 
 El área en la que viajé durante varios días fue **Saratoga Springs**, al norte de Albany, Nueva York. Un amigo vino a visitarnos a casa y pasamos un día juntos, y al día siguiente partimos hacia nuestro destino tras un viaje de 3 horas.
@@ -35,17 +35,17 @@ En general, no había mucha diferencia con otras áreas de Nueva Inglaterra que 
 
 Después de llegar a Saratoga Springs, nos instalamos en nuestro alojamiento. Era un Airbnb y las instalaciones internas estaban limpias y bien mantenidas. No tengo muchas fotos para mostrar...
 
-![](https://i.imgur.com/CrGiHf9.jpeg) 
+![](/assets/images/posts/opt-d12ce1febce999f6a923ca15.avif) 
 *No tomé muchas fotos del lugar, pero era un alojamiento limpio y bonito como este.*
 
 Viajamos tres personas, y casualmente había tres habitaciones, así que pudimos usar una habitación por persona y acomodarnos cómodamente.
 
 Después, nos dirigimos a un parque nacional cercano. Era un lugar llamado Saratoga Spa State Park, y el camino no tenía grandes altibajos, siendo en general bastante llano y fácil de caminar. Había bastante gente aquí y allá, e incluso había un evento, tal vez una boda, por lo que no era exactamente una ruta tranquila, pero en general era muy hermoso.
 
-![](https://i.imgur.com/USLUcH5.jpeg) 
+![](/assets/images/posts/opt-f4cd229613cbba94f1e0af44.avif) 
 El camino del bosque aún estaba lleno de vegetación antes de que las hojas cambiaran de color, y era tranquilo.
 
-![](https://i.imgur.com/Qogq35y.jpeg) 
+![](/assets/images/posts/opt-ca7712e70d46785769152690.avif) 
 Parecía ser un lugar destacado ya que había bastante gente. El aparcamiento también era enorme.
 
 ## Lago Saratoga
@@ -66,20 +66,20 @@ Al día siguiente, recogimos nuestras cosas y regresamos a casa. De camino, hici
 
 No tomé fotos, pero la entrada a la isla ya era única. Había un puente tan estrecho que apenas cabía un coche. Como estaba conduciendo, no pude tomar fotos, así que las reemplazaré con imágenes que encontré en internet.
 
-![](https://i.imgur.com/WFCUTyO.jpeg) 
+![](/assets/images/posts/opt-ef00a70870616c792ca0305e.avif) 
 Era tan estrecho que solo cabía un coche, pero tenía encanto.
 
 El interior del parque, que parecía por encima de mis expectativas, era realmente hermoso. Debido a que era una isla rodeada de ríos, los sonidos del agua y el paisaje natural eran muy hermosos. Comparto algunas imágenes y videos.
 
-![](https://i.imgur.com/E5vEZQE.png) 
+![](/assets/images/posts/opt-fe7abd875af80044b7e81e06.avif) 
 Foto de un bonito edificio cerca de la isla.
 
-![](https://i.imgur.com/LLf5Qxv.jpeg) 
+![](/assets/images/posts/opt-d876a464d22d9deea784141a.avif) 
 *Foto de una presa vista debajo del sendero de la isla*
 
 Las personas que pasaban por allí eran amables, y había muchas personas visitando con perros y gatos, lo que hacía que observarlos fuera divertido.
 
-![](https://i.imgur.com/aFwwwGq.jpeg) 
+![](/assets/images/posts/opt-676561de7bcc000e70cf9d29.avif) 
 *Lugares con rápidos*
 
 Había áreas con rápidos y lugares donde crecían plantas que no había visto antes, así que fue una visita divertida.

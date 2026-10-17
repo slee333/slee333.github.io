@@ -8,7 +8,7 @@ lang: kr
 categories: learning
 categorydisplay: 공부일기
 tags: [python, automation, cloudinary, jekyll]
-image: https://pix4free.org/assets/library/2021-08-01/originals/automation.jpg # TODO: 이 포스트에 맞는 대표 이미지를 설정해주세요.
+image: /assets/images/posts/opt-41f9334cf876e77f25f1cc6b.avif # TODO: 이 포스트에 맞는 대표 이미지를 설정해주세요.
 translation_id: notion-automation-workflow
 ---
 

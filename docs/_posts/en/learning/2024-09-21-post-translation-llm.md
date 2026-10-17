@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: Learning
 lang: en
-image: https://i.imgur.com/nyv5CB7.png
+image: /assets/images/posts/opt-1b0ca8ad23ea79e7cee81e44.webp
 subtitle: The potential of large language models is limitless. This is no exception in blog post translations.
 translation_id: "jekyllblogllm"
 ---
@@ -43,11 +43,11 @@ Among the large language models, ChatGPT is probably the most well-known. If you
 
 First, go to the [ChatGPT API website](https://platform.openai.com/) and create a project. If you are new to creating projects, click the <span style='color:red'>+ Create Project</span> button to create a new project.
 
-![Create a new project.](https://i.imgur.com/za6DJNp.png)
+![Create a new project.](/assets/images/posts/opt-18c73fae93cce073ba321818.webp)
 
 In the API page, go to the dashboard, where you will find a tab to create API keys on the left. Enter the API Keys section and create a secret key using the <span style='color:green'>Create New Secret Key</span> button on the right.
 
-![Create an API key.](https://i.imgur.com/Di6i5Od.png)
+![Create an API key.](/assets/images/posts/opt-92ede7b8fcbdb13eb98bcc3f.webp)
 
 **2. Calling the API in Python**
 
@@ -167,7 +167,7 @@ The above method requires subscribing to the OpenAI API's paid service, which ch
 
 Llama 3.1 comes in three models: 8B, 70B, and 405B. The larger the number, the better the performance. Among these, the Llama 3.1 405B model is known to outperform GPT-4. Refer to the table below.
 
-![Llama models comparison](https://i.imgur.com/FTJNtnp.png)
+![Llama models comparison](/assets/images/posts/opt-1f08bd331ac1b326c7d9416b.webp)
 
 Typically, the 8B model is suitable for simple text summarization and classification tasks, the 70B model for content creation, and the 405B model for industrial use, synthetic data generation, and research. However, since my computer's performance is not extraordinarily high, I chose the 8B model without hesitation.
 
@@ -177,17 +177,17 @@ There are two ways to install it: via the official website or using Ollama. The 
 
 **1. Installing Llama 3.1 Using Ollama**
 
-![Ollama download page](https://i.imgur.com/6Nia1Lg.png)
+![Ollama download page](/assets/images/posts/opt-6ef46dd9173a736f87936eb7.webp)
 
 First, visit the [official Ollama download page](https://ollama.com/download/windows) and install the software according to your OS environment.
 
 Once the installation is complete, create an account on the Ollama website, log in, and find the `Models` section in the top right corner. You will see a screen like this.
 
-![Ollama models](https://i.imgur.com/27vjcnG.png)
+![Ollama models](/assets/images/posts/opt-f985ee332afadd7113f63ac0.webp)
 
 Select llama 3.1 and enter to copy the installation command.
 
-![Copy the installation command](https://i.imgur.com/7PqqsAD.png)
+![Copy the installation command](/assets/images/posts/opt-c8ea9e107bec00a113579087.webp)
 
 After copying, paste the command into the terminal. If you're using the Llama 3.1 8B model, the command is:
 

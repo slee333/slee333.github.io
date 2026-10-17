@@ -7,7 +7,7 @@ tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: https://i.imgur.com/OImzeTV.png
+image: /assets/images/posts/opt-6c09f59c8800daa0b3df171e.webp
 subtitle: The duties of a first-year intern and a second-year resident are different. Am I doing well?
 translation_id: "pgy2firstfloor"
 ---

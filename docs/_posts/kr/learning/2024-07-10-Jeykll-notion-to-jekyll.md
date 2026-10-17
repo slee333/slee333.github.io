@@ -7,7 +7,7 @@ tags: [blog, chatgpt, openai]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg
+image: /assets/images/posts/opt-051842456a0410737e2d9526.avif
 subtitle: 나는 노션 페이지를 마크다운으로 export하는 기능을 사용하기조차 번거로웠다. 그냥 URL만 입력하면 포스트가 자동으로 올라가길 원한다!
 translation_id: "jekyllnotion"
 ---
@@ -24,7 +24,7 @@ translation_id: "jekyllnotion"
 ## 1. 노션으로 글쓰기  
 테스트를 위해 나는 글을 하나 만들었다. [다음 글](https://slee333.github.io/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EC%84%A4%EC%A0%95-%EC%8B%A4%ED%97%98/)이 바로 그것이다. 보면 알겠지만 한 페이지 내에 헤더, 볼드, 이탤릭, 이미지 등 다양한 내용을 포함 한 상태로 글을 작성하였다.  
   
-![](https://i.imgur.com/VZSpMW0.png)  
+![](/assets/images/posts/opt-7191975c1a50966d78add09c.webp)  
   
   
 다만 이 과정에서 몇 가지 주의 할 점이 있다.   
@@ -34,11 +34,11 @@ translation_id: "jekyllnotion"
   
 이 문제를 나는 imgur을 사용해서 해결했다. 다음 스크린샷과 같이 imgur에 접속 한 다음, Create Post 버튼을 누른다. 그럼 다음과 같은 화면이 뜬다.  
   
-![](https://i.imgur.com/HtGM05g.png)  
+![](/assets/images/posts/opt-9049042424061d78e53e41d6.webp)  
   
 이 상태에서 내가 스크린샷 했던 컨탠츠를 복사+붙여넣기 해 준다. 그럼 다음과 같이 스크린샷이 imgur에 복사된다.  
   
-![](https://i.imgur.com/pIDJkJn.png)  
+![](/assets/images/posts/opt-01bab1d38b1f002b4f46e962.webp)  
   
 이 상태에서 내가 업로드 한 스크린샷을 우클릭 - 이미지 링크를 복사한다. 이후 노션의 *image → embed Link *기능을 이용하여 해당 링크를 첨부하면 URL이 변경 될 걱정 없이 이미지를 노션에 업로드 할 수 있다.  
   
@@ -79,7 +79,7 @@ translation_id: "jekyllnotion"
   
 이런 부분들을 노션의 property 기능을 이용해 내 페이지 양식에 맞춰 구현해두었다. 이래야 불러오는게 편하지 않겠는가? 지금 작성하고 있는 이 페이지의 경우 노션 페이지의 property가 다음과 같다.  
   
-![](https://i.imgur.com/nuBKB0U.png)  
+![](/assets/images/posts/opt-53bf45148c664a3acb1d374d.webp)  
   
 노션 페이지의 property들을 front matter와 연동되도록 설정했다면 이제 노션 페이지를 마크다운으로 추출하는 과정으로 넘어가자.  
   
@@ -89,17 +89,17 @@ translation_id: "jekyllnotion"
 ### 2.1. 노션 API 이용하기  
 노션 API를 이용하기 위해서는 Integration 기능을 이용해야 한다. [Integration 페이지](https://www.notion.so/profile/integrations)로 가서 Integration을 만들어준다. 새로운 integration 만들기 버튼을 클릭하면, 다음과 같은 창이 뜬다.  
   
-![](https://i.imgur.com/cvzYZUy.png)  
+![](/assets/images/posts/opt-03bd99cf29d3420ed012ffff.webp)  
   
 Integration 이름을 설정해주고, 내가 노션에서 글을 작성할 Workspace를 골라 연동시켜주자. Type은 개인 사용 용도이니 지금처럼 internal이면 족하다.  
   
 그러면 다음과 같이 내 integration이 생성된 모습을 볼 수 있다.  
   
-![](https://i.imgur.com/Jb9HGQG.png)  
+![](/assets/images/posts/opt-52dcf73115e3fe8ae210c63c.webp)  
   
 위에서 보이는 **internal integration secret** 부분은 다음 섹션에서 사용할 예정이다. Integration이 생성되었으면 이제 노션으로 돌아와 글을 작성할 페이지로 돌아오자.  
   
-![](https://i.imgur.com/E1QLdii.png)  
+![](/assets/images/posts/opt-29dc45eab181a035439c1c5e.webp)  
 페이지 우측 상단의 더 보기 (…) 버튼을 클릭하면 `Connect to` 라는 부분이 있다. 이 부분에 마우스를 올리면 아까 생성한 integration이 보일 텐데, 이걸 클릭해서 integration과 내 페이지를 연결시켜주자. 위 스크린샷은 예시이다.  
   
 ### 2.2 Python에서 Notion API를 이용해서 마크다운에 접근하기  
@@ -158,7 +158,7 @@ def extract_notion_page_id(notion_url):
 1. `.env` 파일의 내부는 다음과 같이 작성한다.
 `NOTION_TOKEN = 내_시크릿_키` (String처럼 “”를 붙일 필요 없이 그냥 그대로 붙여넣어주면 된다)  
 1. `.env` 파일이 Github에 올라가버리면 이 모든 작업이 의미가 없어진다. `.gitignore` 파일에 .env를 추가하자. 내 `.gitignore` 파일은 예시로 다음과 같다.  
-![](https://i.imgur.com/8FdfiS5.png)  
+![](/assets/images/posts/opt-946bf1cd827743bf13415ab1.webp)  
   
   
   

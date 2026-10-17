@@ -7,14 +7,14 @@ tags: [africa, population-health]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_1280.jpg
+image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: 팩트풀니스- 사실을 기반으로 세상을 바라보는 눈
 translation_id: "africa1"
 
 ---
 ### **1. 팩트풀니스 Factfulness**  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/jSp8nabvz-0yb5hDeuL_6TD6V0w)  
+![](/assets/images/posts/opt-d50568f7d639464681ff2624.webp)  
 
 그림 1. 스웨덴 출신 국제 보건학 교수 한스 로슬링의 저서 팩트풀니스Factfulness [1]  
 
@@ -68,7 +68,7 @@ translation_id: "africa1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/3sXLlfafxoGVtXVKUf9-V4cFfJc)  
+![](/assets/images/posts/opt-e3b2b52fc10618531c16e070.webp)  
 
 그림 2.세계 인구 분포에 관한 문제. 이 세 도표 중 세계 인구 분포를 제일 정확하게 나타낸 그림은 어느 쪽일까? [3]  
 
@@ -82,7 +82,7 @@ translation_id: "africa1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/g3m7-8OMc7vBFZ8N36GkGxYsxwA)  
+![](/assets/images/posts/opt-957324d26db7862bb11c49ff.webp)  
 
 표 1. 세계 인구 분포표 [5]  
 
@@ -102,7 +102,7 @@ translation_id: "africa1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/03tEqVQTEh_uzAsYHPw11UuKZHA)  
+![](/assets/images/posts/opt-ebcbd8948c15a83e78fe4b58.webp)  
 
 그림 3. 게이츠 재단에서 발행한 젊은층 인구 도표. 타 대륙의 0-24세 인구가 감소하는데에 비해, 아프리카의 젊은 층 인구는 증가하리라 예상됨을 확인 할 수 있다.[6]  
 
@@ -116,7 +116,7 @@ translation_id: "africa1"
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/E-LYhVAgDyPiGLE0AMY8T-Nm-vI)  
+![](/assets/images/posts/opt-c35f904ef2ad991e70f957b5.webp)  
 
 그림 4. 세계 인구를 하루 수익에 기반해 네 단계로 구분한 도표 [7]  
 

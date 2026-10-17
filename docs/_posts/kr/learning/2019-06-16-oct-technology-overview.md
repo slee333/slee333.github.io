@@ -7,7 +7,7 @@ tags: [Imaging, Medical, medicine]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://cdn.pixabay.com/photo/2017/04/11/22/53/lightshow-2223124_1280.jpg
+image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: 광간섭 단층촬영이 무엇인지, 그리고 그 용도는 무엇이 있는지 알아보자.
 translation_id: "oct2019"
 
@@ -24,7 +24,7 @@ translation_id: "oct2019"
 
 ## **1. OCT가 뭔가요?**  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/27utJo-FDpSjiz1Q6fGCehBX5_E.jpg)  
+![](/assets/images/posts/opt-0f77382787db06583ebd87ab.gif)  
 
   
 
@@ -54,7 +54,7 @@ OCT의 원리를 설명하기 앞서 잠시 2016년으로 돌아가보자. 2016�
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/1T1SpFdqiXi-DSAC_O3_TLOjbuA.webp)  
+![](/assets/images/posts/opt-b846af682ab05b38ee882f37.webp)  
 
 <그림 1. LIGO의 모습. 길게 늘어진 두 팔이 LIGO가 방출한 레이저가 주행하는 경로이다. 팔 안에 놓인 거울 등을 통해 레이저는 각각 1,600 KM를 주행한다>  
 
@@ -106,7 +106,7 @@ OCT에서 사용되는 빛의 파장은 가시광선보다 높은 900 nm에서 1
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/WhOvZYbHfgQ1OC3e6OuHSwmDrbA.webp)  
+![](/assets/images/posts/opt-f77e6120d397eefa74f7a845.webp)  
 
 <그림 2. 카테터 절제술CARDIAC ABLATION 시술 중 의사들이 실시간 X선 영상을 이용하여 카테터 위치를 파악하고 있다. 실시간 촬영은 OCT만의 장점은 아니다.[3]>  
 
@@ -114,7 +114,7 @@ OCT에서 사용되는 빛의 파장은 가시광선보다 높은 900 nm에서 1
 
 ### 3.3. 높은 해상도 
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/O4ClMc_wUuS_eVqSJ7ElvELr-AI.png)  
+![](/assets/images/posts/opt-8b4a6f4cea21259bd02812c3.webp)  
 
 <그림 3. 혈관내 초음파INTRAVASCULAR ULTRASOUND (IVUS, 좌)와 OCT (우)로 촬영한 관상동맥 단면.[4]>  
 
@@ -148,7 +148,7 @@ OCT에도 단점이 없지는 않다. 가장 두드러지는 단점은 축방향
 
 안과는 이미 OCT가 폭넓게 쓰이고 있는 분야이다. 망막과 같이 얇은 구조물들의 단면을 실시간, 고화질로 관찰 할 수 있다는 장점이 가장 잘 발휘되는 분야이기 때문이다. OCT를 이용한 망막 단층 촬영은 이미 녹내장이나 라식 수술 이후의 예후를 검진하는데 폭넓게 쓰이고 있다. 이미 시중엔 안과의들을 위한 OCT 장비들이 다양하게 출시되어 있을 정도로 안과는 OCT가 임상적으로 활발히 일상적으로 사용되고 있는 분야이다.  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/c6Dl1FkdlVCHjFCUa4QzrXBqQ08.webp)  
+![](/assets/images/posts/opt-1f1cce1ee39ef5ed5045cd0f.webp)  
 
 <그림 4. OCT를 이용한 황반변성 (이 경우 MACULAR MICROCYST) 촬영.그림 A의 검은 부분: 병변부. 그림 B의 화살표: MICROCYST.> [5]  
 
@@ -172,7 +172,7 @@ OCT를 이용한 피부과 검사 역시 널리 연구되고 있는 실정이다
 
 OCT의 또 다른 응용분야는 소화기내과이다. 특히, 종양을 포함한 위장관 질병 분야에서의 가능성이 눈에 띈다.[7] 심혈관조영술에서와 마찬가지로, 내시경을 이용한 촬영이 가능하다는 OCT의 특성이 내시경 촬영 시 조직 표면을 육안으로 검사하는 것만이 아닌 조직 내부를 보고 검사 할 수 있도록 해 준다. OCT를 통한 실시간 단층 촬영을 통해 육안으로는 잡아 낼 수 없는 작은 병변들을 찾아내고 제거하여 더 큰 질병으로 발전할 가능성을 차단 할 수 있다는 점에 OCT의 소화기내과적 가능성이 엿보인다.  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/qj8xyAXitc79TpogkamzCtGUovY.webp)  
+![](/assets/images/posts/opt-2358e3838b681724f10a122e.webp)  
 
 <그림 5. 부식성 식도염. A: 내시경을 통한 육안 사진. B: 조직학 검체, C: OCT 사진. 사라진 상피층(화살표)이 보인다.>[8]  
 

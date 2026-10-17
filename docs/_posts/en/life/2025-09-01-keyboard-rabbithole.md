@@ -7,7 +7,7 @@ tags:
 categories: life
 categorydisplay: Life
 lang: en
-image: https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm
+image: /assets/images/posts/opt-efb0fb1296c13da22f632821.avif
 subtitle: A journey to escape forward head posture. But it was deeper, darker, and more endless than I thought.
 translation_id: splitkeyboardq
 layout: post
@@ -17,11 +17,11 @@ permalink: /en/life/splitkeyboardq/
 
 ### What is good posture?
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf 1200w"
+  srcset="/assets/images/posts/opt-a0acf8629eb781c51e3c0609.webp 400w,
+/assets/images/posts/opt-0868f7a2ac5c42fcf07a2747.webp 800w,
+/assets/images/posts/opt-e95fdbfeb863470f62a90578.webp 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/lfbrvb3o6qazkka3ebzf"
+  src="/assets/images/posts/opt-0868f7a2ac5c42fcf07a2747.webp"
   alt="lfbrvb3o6qazkka3ebzf">
 <p style="text-align:center; font-style:italic;">Source: https://corporateenvironments.com/blog/four-benefit-of-ergonomic-chairs</p>
 
@@ -53,11 +53,11 @@ In search of a more ergonomic environment, I changed my monitor and started usin
 Then, by chance, I came across a **split keyboard** through an internet post.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll 1200w"
+  srcset="/assets/images/posts/opt-cb99bb6d4b38ba2b600fca9a.avif 400w,
+/assets/images/posts/opt-631bc00b2aceec7babe6fb19.avif 800w,
+/assets/images/posts/opt-a440d6b84548406f6e452e4d.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/tnb4lgthktmkbqonzzll"
+  src="/assets/images/posts/opt-631bc00b2aceec7babe6fb19.avif"
   alt="tnb4lgthktmkbqonzzll">
 <p style="text-align:center; font-style:italic;">Isn't the two-sword style in Kendo cool?
 Source: https://easy-peasy.ai/ai-image-generator/images/elegant-double-swords-half-orc-warrior-dnd-5e-scene</p>
@@ -71,11 +71,11 @@ Before we jump right into the Corne keyboard, let's briefly go over a few types 
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa 1200w"
+  srcset="/assets/images/posts/opt-844ae654ade297088f15a501.avif 400w,
+/assets/images/posts/opt-a4cdfa822c960a21fa59e863.avif 800w,
+/assets/images/posts/opt-d64af1d7903c6cc79867a6dd.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/jo9tt9r2zbualoutzkxa"
+  src="/assets/images/posts/opt-a4cdfa822c960a21fa59e863.avif"
   alt="jo9tt9r2zbualoutzkxa">
 <p style="text-align:center; font-style:italic;">A typical keyboard. Source: http://bit.ly/47pY3X1</p>
 
@@ -89,11 +89,11 @@ This is probably the keyboard layout we are most familiar with, right?
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy 1200w"
+  srcset="/assets/images/posts/opt-a497f4ae875238ba5612c1da.avif 400w,
+/assets/images/posts/opt-1f4390d89c1767b5ee83c70a.avif 800w,
+/assets/images/posts/opt-8c78ab46f1fcfd73b2f0aa13.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/ov06kzkuql2ppae5bduy"
+  src="/assets/images/posts/opt-1f4390d89c1767b5ee83c70a.avif"
   alt="ov06kzkuql2ppae5bduy">
 <p style="text-align:center; font-style:italic;">Tenkeyless keyboard. Source: http://bit.ly/41wpZF4</p>
 
@@ -106,11 +106,11 @@ In fact, people like me who have used laptops frequently since they were young a
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t 1200w"
+  srcset="/assets/images/posts/opt-985c335e0092f71ab0f466b4.avif 400w,
+/assets/images/posts/opt-3ee4b16ca52f64a6cb94ea60.avif 800w,
+/assets/images/posts/opt-21b66f20242ae1a6b3d4ba2d.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/orzygodfjbofchdrx42t"
+  src="/assets/images/posts/opt-3ee4b16ca52f64a6cb94ea60.avif"
   alt="orzygodfjbofchdrx42t">
 <p style="text-align:center; font-style:italic;">Happy Hacking Keyboard. Source: http://bit.ly/4gaGs7Y</p>
 
@@ -131,11 +131,11 @@ However, even back then, the simplicity of the Happy Hacking Keyboard remained i
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco 1200w"
+  srcset="/assets/images/posts/opt-30972e81681f0593e7ba100d.avif 400w,
+/assets/images/posts/opt-d209f00505e3cc9a46107a3a.avif 800w,
+/assets/images/posts/opt-2e2efd9c020169a2d127b17b.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/gijlxsqoyuffv734wsco"
+  src="/assets/images/posts/opt-d209f00505e3cc9a46107a3a.avif"
   alt="gijlxsqoyuffv734wsco">
 <p style="text-align:center; font-style:italic;">40% keyboard. I captured this from the keyboard simulator at https://keyboardsimulator.xyz/.</p>
 
@@ -165,11 +165,11 @@ That is the **Ergonomic keyboard**.
 You've probably all seen the curvy Microsoft or Logitech keyboards.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz 1200w"
+  srcset="/assets/images/posts/opt-10528fd89cd98d82b5974a4d.avif 400w,
+/assets/images/posts/opt-3fdcae100d58a30483634a28.avif 800w,
+/assets/images/posts/opt-39f01d5e228e604cc7364fb5.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/bxkb6lpsti3jvkfc4pjz"
+  src="/assets/images/posts/opt-3fdcae100d58a30483634a28.avif"
   alt="bxkb6lpsti3jvkfc4pjz">
 <p style="text-align:center; font-style:italic;">Microsoft's ergonomic keyboard. Source http://bit.ly/4g2KFdA</p>
 
@@ -185,11 +185,11 @@ In this process, the ergonomic keyboard naturally divides the key layout into le
 The **split keyboard** is a keyboard that maximizes this concept of separation.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa 1200w"
+  srcset="/assets/images/posts/opt-e6acbbefea064b3182576d9a.avif 400w,
+/assets/images/posts/opt-52f4eb1b90305dacecda2a13.avif 800w,
+/assets/images/posts/opt-71d0440a9ab726d69f94f409.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/txrzze9xoqbwy7ho1csa"
+  src="/assets/images/posts/opt-52f4eb1b90305dacecda2a13.avif"
   alt="txrzze9xoqbwy7ho1csa">
 <p style="text-align:center; font-style:italic;">Split keyboard example: http://bit.ly/46pMUn9</p>
 
@@ -210,11 +210,11 @@ Anyway, it is clear that it is more ergonomic than a conventional keyboard in th
 The model I chose is the **Corne v4.1 (3x6 layout)** purchased from AliExpress.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm 1200w"
+  srcset="/assets/images/posts/opt-c6e866e75dcd63fbfd523828.avif 400w,
+/assets/images/posts/opt-efb0fb1296c13da22f632821.avif 800w,
+/assets/images/posts/opt-38ccd4a3e0cc408eac6eb417.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/b3laqsivqqrlrip05fmm"
+  src="/assets/images/posts/opt-efb0fb1296c13da22f632821.avif"
   alt="b3laqsivqqrlrip05fmm">
 <p style="text-align:center; font-style:italic;">My Corne keyboard. I also changed the keycaps for the first time in my life.</p>
 
@@ -244,11 +244,11 @@ If it were a 3x5 layout, there would have been no proper space to place essentia
 
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy 1200w"
+  srcset="/assets/images/posts/opt-d1699ee06dd0a651dc3e9de0.webp 400w,
+/assets/images/posts/opt-a6d44afc2e6ce624c08737ff.webp 800w,
+/assets/images/posts/opt-c6c9e0c59508f7c7fcff552a.webp 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/rcandtefuosdwnww7gpy"
+  src="/assets/images/posts/opt-a6d44afc2e6ce624c08737ff.webp"
   alt="rcandtefuosdwnww7gpy">
 <p style="text-align:center; font-style:italic;">Home Row Mod
 Source: https://sunaku.github.io/home-row-mods.html</p>
@@ -263,11 +263,11 @@ Anyway, the 3x6 layout has an extra row on the outermost side, which gave me tim
 ### 2. Additional keys in the middle: No need to change my typing habits
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh 1200w"
+  srcset="/assets/images/posts/opt-c6e866e75dcd63fbfd523828.avif 400w,
+/assets/images/posts/opt-efb0fb1296c13da22f632821.avif 800w,
+/assets/images/posts/opt-38ccd4a3e0cc408eac6eb417.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/xusehxvvwkmjcssgzrlh"
+  src="/assets/images/posts/opt-efb0fb1296c13da22f632821.avif"
   alt="xusehxvvwkmjcssgzrlh">
 <p style="text-align:center; font-style:italic;">My Corne photo again</p>
 
@@ -358,11 +358,11 @@ It's definitely a good method, but Home Row Mods seems to be a technology that i
 In the deeper abyss of the keyboard rabbit hole, there was also this kind of thing.
 
 <img 
-  srcset="https://res.cloudinary.com/ddrosvdo9/image/upload/w_400/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 400w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 800w,
-https://res.cloudinary.com/ddrosvdo9/image/upload/w_1200/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas 1200w"
+  srcset="/assets/images/posts/opt-7a2a5802533566c19e541cf6.avif 400w,
+/assets/images/posts/opt-0d3d9b799f081b1467959174.avif 800w,
+/assets/images/posts/opt-ef161ead260302ec42f21c05.avif 1200w"
   sizes="(max-width: 1200px) 100vw, 1200px"
-  src="https://res.cloudinary.com/ddrosvdo9/image/upload/w_800/c_limit,h_1000/f_auto,q_auto/slbib0h9r5pwemdefqas"
+  src="/assets/images/posts/opt-0d3d9b799f081b1467959174.avif"
   alt="slbib0h9r5pwemdefqas">
 <p style="text-align:center; font-style:italic;">The ultimate split keyboard(?), the Svalboard
 Source: Svalboard website: https://svalboard.com/products/lightly</p>

@@ -7,11 +7,11 @@ tags: [DigitalHealth, books, digital-health]
 categories: life
 categorydisplay: 일상기록
 lang: kr
-image: https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg
+image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: 최윤섭 박사님의 최신 저서. 디지털 헬스케어의 바이블?
 translation_id: "bookreviewuntitled"
 ---
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/0PsDDSRbbPcpy2j3YwZEcIlD6IM.jpg)  
+![](/assets/images/posts/opt-371597706560c7865d8e8d21.avif)  
 
 출처: 청년의사  
 
@@ -47,7 +47,7 @@ translation_id: "bookreviewuntitled"
 
 책은 크게 네 부로 나뉜다. 책의 **1부, '디지털 헬스케어가 온다'**에서 저자는 디지털 헬스케어라는 피할 수 없는 변화가 이미 도래했음을 이야기한다. 구글과 같은 IT 기업이 보험사를 인수하며 의료 분야에 발을 뻗치고, 혁신적인 헬스케어 스타트업과 이들과 함께하는 벤처 투자자들은 날이 갈수록 증가하고 있다.  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/J2PuNcpx9bkGU1paLS4WzbfrSO4.jpg)  
+![](/assets/images/posts/opt-ef035b8078ffafac8653416c.webp)  
 
 P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Center  
 
@@ -67,7 +67,7 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Zx0GbSFLB2sTsm2a04MWxDzoWqU.png)  
+![](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)  
 
 애플 헬스 레코드 인터페이스. 출처: 애플 헬스케어 홈페이지  
 
@@ -89,7 +89,7 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/hfqiUPhFvqe53rWG-x5cc3HkA6Y.jfif)  
+![](/assets/images/posts/opt-94ff506a6a351f1f284ea102.avif)  
 
 원격의료는 이래저래 우리나라에서는 논란이 많은 주제이다. 출처: 게티이미지뱅크  
 
@@ -127,7 +127,7 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
 
 다소 비약이 있지만, 디지털 치료제는 약을 대신하는 앱이라 생각하면 이해가 쉽다. 물론 앱 형태에 국한되진 않는다. 의료기기 취급 소프트웨어 (SaMD)의 일종인데, SaMD에 대한 설명은 [신수용 박사님의 글](https://sooyongshin.wordpress.com/2019/12/27/digital-health-4-%ea%b7%9c%ec%a0%9c/)에도 잘 소개되어 있다. 디지털 기술을 이용해 질병의 진단과 예방에 그치지 않고, 약처럼 작용하여 질병을 치료하는 디지털 기술이 바로 디지털 치료제이다.  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/6dOGGjRHSPUmoQOBNX4425OPiUA.jpg)  
+![](/assets/images/posts/opt-196a5f3cc777dc9899f69024.avif)  
 
 우울증 환자를 위한 상담 앱 Woebot. 필자도 써 봤는데 너무 귀엽고 힐링된다. 출처: thephuketnews.com  
 
@@ -153,7 +153,7 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sPl75n-1QpW0WZ-t26Lgzfppv_U.jpg)  
+![](/assets/images/posts/opt-1bc47a206b188412f76efd02.avif)  
 
 "분위기 다운되면 다시 돌아온다!" 웨어러블은 다시 돌아올 것이다. 누가 뭐래도 디지털 헬스케어 분야의 핵심 중 하나니까..  
 
@@ -179,7 +179,7 @@ P4 의료의 구성요소. 출처: The Ohio State University Wexner Medical Cent
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/TA9HnlA-taPjhULQSzXxESkmxCg.jpg)  
+![](/assets/images/posts/opt-66ac1b5b2d5f9529c75c638f.webp)  
 
 책(왼쪽)과 필자의 운전면허증 (오른쪽). 책은 꽤 두껍지만, 겁먹을 필요는 없다.  
 

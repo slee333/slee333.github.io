@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: Aprendizaje
 lang: es
-image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: "Startups que están revolucionando la salud en África (datos de 2019)"
 translation_id: "africa2"
 
@@ -22,7 +22,7 @@ Además, la infraestructura sanitaria es precaria. No solo faltan médicos, sino
 
 Imagina esta situación: una madre está dando a luz y necesita una transfusión de sangre urgente por una hemorragia. Pero no recuerda su grupo sanguíneo. Aunque le han hecho análisis dos veces antes, nadie encuentra los resultados. Repetir la prueba cuesta 4 dólares, un dinero que ella no tiene [2]. En un caso así, ¿no sería vital tener una forma de guardar su información médica, su historial y sus contactos de emergencia de forma segura y accesible?
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/kuK0_umX3a3Sp-dQqtFTMoj0PZw)
+![](/assets/images/posts/opt-9516bd7ebd9b1fbefb357179.webp)
 
 *Figura 1. El logo de KEA Medicals.*
 
@@ -30,7 +30,7 @@ KEA Medicals es una startup de Benín que nació para solucionar problemas como 
 
 La solución de KEA Medicals es usar los teléfonos móviles, que tienen una penetración del 80% en África, para guardar la información de salud. Los usuarios meten sus datos en la app de KEA Medicals y reciben un código QR en una pulsera o una pegatina de bajo coste. En una emergencia, cualquiera puede escanear el código para acceder a la información vital del paciente y permitir una atención rápida y precisa.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/vkJhJrli0h9TtGPfakP2Je3HmWY)
+![](/assets/images/posts/opt-18bdfbb3f0e407cf49cb3ce9.avif)
 
 *Figura 2. Una pulsera con código QR, uno de los servicios de KEA Medicals para consultar fácilmente el historial médico. [3]*
 
@@ -40,7 +40,7 @@ KEA Medicals ya se está expandiendo más allá de Benín, a países como Costa 
 
 Recomed es una plataforma online para reservar citas médicas, creada por una startup de Sudáfrica. ¿Alguna vez has buscado un restaurante en internet? Plataformas como OpenTable te permiten buscar y reservar en un solo lugar. Recomed hace exactamente lo mismo, pero con médicos y hospitales [5].
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/msSkfUPJSkwrHUIfoZRkFQRqFxg)
+![](/assets/images/posts/opt-8ac0bbe33e19f3b2acda1bb4.webp)
 
 *Figura 3. Con Recomed, los usuarios pueden buscar y reservar una cita con el especialista que quieran, de forma fácil y rápida.*
 
@@ -48,7 +48,7 @@ Los usuarios de Recomed pueden reservar una cita en unos 30 segundos desde su m�
 
 Para que esto funcione, claro, los médicos tienen que participar, registrando su información y sincronizando sus agendas. Para convencerlos, Recomed les ofrece varias ventajas.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Y3dBA2wKmnR97WXsHTxN3nIsPd0)
+![](/assets/images/posts/opt-664975e2077598b47f04c1f1.webp)
 
 *Figura 4. En Recomed, los usuarios pueden ver los horarios y perfiles de los médicos para reservar su cita.*
 
@@ -68,7 +68,7 @@ La empresa que está solucionando esto de la forma más innovadora es Zipline. S
 
 El sistema de Zipline ha reducido los tiempos de entrega de varias horas a una media de 30 minutos. Los pedidos se pueden hacer por un simple mensaje de texto o por WhatsApp. Sus drones pueden volar hasta 80 km, incluso con mal tiempo, y gracias a su colaboración con la empresa de logística UPS, pueden dejar caer los paquetes con una precisión increíble.
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/JJCTosn3e9vV_V-Lf0oVEWRku6g)
+![](/assets/images/posts/opt-0f4dcc02d27cf0b1ee7cda15.avif)
 
 *Figura 5. Un dron de Zipline entregando un paquete de suministros médicos. [8]*
 

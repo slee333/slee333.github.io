@@ -7,7 +7,7 @@ tags: [life, opinion]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-8e0dded69b5720141ea6ad9d.avif
 subtitle: "Preparándonos para la era de la medicina digital y compartiendo nuevas ideas."
 translation_id: "medschoolitclub"
 

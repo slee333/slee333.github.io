@@ -7,7 +7,7 @@ tags: [3.1, blog, chatgpt, life, llama, llm]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://i.imgur.com/nyv5CB7.png
+image: /assets/images/posts/opt-1b0ca8ad23ea79e7cee81e44.webp
 subtitle: 대형 언어 모델의 가능성은 무궁무진하다. 블로그 포스트 번역에서도 예외가 아니다
 translation_id: "jekyllblogllm"
 ---
@@ -42,12 +42,12 @@ _,_ = write_jekyll_post_from_fm_md(pfm,pmd)
   
 우선 [ChatGPT API 웹사이트](https://platform.openai.com/)에 들어가서 프로젝트를 만들어준다. 내 경우에는 이미 만들어준 프로젝트들이 몇 개 보이지만, 새로 프로젝트를 만드는 사람이라면 <span style='color:red'>+ Create Project</span> 버튼을 눌러 새 프로젝트를 만들어주자.  
   
-![](https://i.imgur.com/za6DJNp.png)  
+![](/assets/images/posts/opt-18c73fae93cce073ba321818.webp)  
 *새 프로젝트를 만들어주자.*  
   
 API 페이지에서 대쉬보드(Dashboard)로 들어가면, API 키 (API Keys)를 만드는 탭이 왼쪽에 있다. API Keys 에 들어간 다음, 오른쪽의 <span style='color:green'>Create New Secret Key</span>를 사용해서 API를 호출 할 때 사용되는 시크릿 키를 만들어주자.  
   
-![](https://i.imgur.com/Di6i5Od.png)  
+![](/assets/images/posts/opt-92ede7b8fcbdb13eb98bcc3f.webp)  
   
 **2. 파이썬에서 API 호출하기**  
 이제 이렇게 API 키가 만들어졌으면, 파이썬 코드 내에서 API를 호출해야 한다.  
@@ -178,7 +178,7 @@ _,_ = write_jekyll_post_from_fm_md(pfm,en_md_list, language='en', multilang_titl
   
 LLama 3.1 의 경우 세 가지 모델이 있다. 8B, 70B, 405B 모델인데 앞의 숫자가 클 수록 성능이 좋아진다. 그리고 이 중 Llama 3.1 405B의 경우 GPT 4보다 성능이 뛰어나다 알려져 있다. 아래 표를 참조하자.  
   
-![](https://i.imgur.com/FTJNtnp.png)  
+![](/assets/images/posts/opt-1f08bd331ac1b326c7d9416b.webp)  
   
 흔히 8B의 경우 간단한 텍스트 요약 및 분류 등에, 70B의 경우 콘텐트를 작성하거나 하는 작업에, 405B의 경우 산업용도, 합성 데이터 생성, 연구 등에 적절하다 알려져 있지만 집 컴퓨터 성능이 그리 뛰어나지 않은 나는 망설임 없이 Llama 3.1 8B를 선택하였다.  
   
@@ -187,7 +187,7 @@ LLama 3.1 의 경우 세 가지 모델이 있다. 8B, 70B, 405B 모델인데 앞
 **1. Ollama 이용해서 Llama 3.1 설치하기**  
   
   
-![](https://i.imgur.com/6Nia1Lg.png)  
+![](/assets/images/posts/opt-6ef46dd9173a736f87936eb7.webp)  
 
 ***ollama 공식 홈페이지의 다운로드 페이지***
   
@@ -195,11 +195,11 @@ LLama 3.1 의 경우 세 가지 모델이 있다. 8B, 70B, 405B 모델인데 앞
   
 설치가 완료되었다면, Ollama 홈페이지에 아이디를 만들고 로그인 한 후, 오른쪽 위 `Models` 섹션을 찾아 들어가주자. 그러면 다음과 같은 화면이 나온다.  
   
-![](https://i.imgur.com/27vjcnG.png)  
+![](/assets/images/posts/opt-f985ee332afadd7113f63ac0.webp)  
   
 여기서 llama 3.1를 선택 한 후 들어가보면 설치 명령어를 복사 할 수 있다.   
   
-![](https://i.imgur.com/7PqqsAD.png)  
+![](/assets/images/posts/opt-c8ea9e107bec00a113579087.webp)  
   
 복사 한 후 터미널에 붙여넣어주자. llama3.1 8B를 사용하는 경우 명령어는 다음과 같다.  
   

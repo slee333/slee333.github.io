@@ -7,7 +7,7 @@ tags: [clinical-informatics, it, medicine]
 categories: cifellowship
 categorydisplay: Clinical Informatics
 lang: en
-image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: Apple Health Records. Google Cloud Services. Solutions from giant IT companies for medical records.
 translation_id: "Paperworks2"
 
@@ -24,7 +24,7 @@ When discussing Apple's moves in healthcare, aside from HealthKit, another indis
 
 
 
-![Apple Health Records User Interface](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/NE7WVbac9C69yVg-0hc1fMQ9Ck8.png)
+![Apple Health Records User Interface](/assets/images/posts/opt-d98d2be1b74e39f7f0b8bc2f.webp)
 
 Apple Health Records user interface. Clean and easy to understand.
 
@@ -46,7 +46,7 @@ Apple Health Records, when launched in January 2018, initially interfaced with 1
 
 
 
-![Article by UC San Diego in January](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/d3AZ94jAW93uscH6ADQDLqu0OlE.png)
+![Article by UC San Diego in January](/assets/images/posts/opt-a37d8b3fc9572d9f74b0f389.webp)
 
 An article contributed by UC San Diego to JAMA in January.
 
@@ -76,7 +76,7 @@ While it remains uncertain if this convenient platform can ultimately deliver be
 
 
 
-![Heal home visit service using Health Records](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/KVLo0uPOph7Y2_y1qDpXZtGYA9c.png)
+![Heal home visit service using Health Records](/assets/images/posts/opt-16f6b2fed9184ec1664f6f92.webp)
 
 Heal home visit service using Health Records
 
@@ -106,7 +106,7 @@ But before we delve deeper, what is a cloud platform? Simply put, a cloud platfo
 
 
 
-![Cloud platform services also provide cloud computing services for data analysis](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/_0NK5fMsoWrlurKUrZVwa4RPSMs.jpg)
+![Cloud platform services also provide cloud computing services for data analysis](/assets/images/posts/opt-5091f5168712edc84b00b091.avif)
 
 Cloud platform services also provide cloud computing services to analyze data.
 
@@ -124,7 +124,7 @@ Because of this convenience, many companies use cloud platforms. Examples includ
 
 
 
-![Although not mentioned in this article, Amazon Web Services (AWS) also performs similar roles.](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/9daVSlIqZh1TxQZpvcOKA9SIZFg.jpg)
+![Although not mentioned in this article, Amazon Web Services (AWS) also performs similar roles.](/assets/images/posts/opt-29f6754ee3f5d928a55d0264.avif)
 
 Although not mentioned in this article, Amazon Web Services (AWS) also performs similar roles.
 
@@ -138,7 +138,7 @@ So why is Google Cloud Platform a valuable tool in addressing the issues we've c
 
 
 
-![Google claims to provide better healthcare through Google Cloud Platform](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/N2Ac9kTaPgvXl7IzRfF-GwrFnzk.png)
+![Google claims to provide better healthcare through Google Cloud Platform](/assets/images/posts/opt-d6ac61de32b2337adeb0515c.webp)
 
 Google claims to provide better healthcare through Google Cloud Platform.
 
@@ -160,7 +160,7 @@ There are regulations, of course. I previously mentioned the term 'HIPAA-complia
 
 
 
-![Health Insurance Portability and Accountability Act (HIPAA)](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/SUHhm1a0qTVlyLPnzm1fh61D30A.jpg)
+![Health Insurance Portability and Accountability Act (HIPAA)](/assets/images/posts/opt-4e7546142ccd2e4fa097be5a.avif)
 
 HIPAA (Health Insurance Portability and Accountability Act)
 
@@ -170,7 +170,7 @@ Simply put, without the patient's consent, access to their health information is
 
 
 
-![All personal information must be de-identified. The data is mine but not traceable to me...](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/iSyHxa5BEH8Imfd3iLfZBi5XbSI.jpg)
+![All personal information must be de-identified. The data is mine but not traceable to me...](/assets/images/posts/opt-a33deefa4721335f8f063882.webp)
 
 All personal information must be de-identified. My data but not traceable to me...
 
@@ -188,7 +188,7 @@ Naturally, researchers in the institution felt the need for a more convenient an
 
 
 
-![Mammosphere, a site for female patients to access their breast-related medical information](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/LGGMmMYZp_TM54Ymfok8E-4q96U.png)
+![Mammosphere, a site for female patients to access their breast-related medical information](/assets/images/posts/opt-17a78c84f6ecb9c158d3aa34.webp)
 
 Mammosphere, a site for female patients to access their breast-related medical information.
 

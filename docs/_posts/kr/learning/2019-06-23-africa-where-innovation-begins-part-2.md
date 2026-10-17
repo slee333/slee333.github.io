@@ -7,7 +7,7 @@ tags: [africa, it, 보건, 인구]
 categories: learning
 categorydisplay: 공부일기
 lang: kr
-image: https://cdn.pixabay.com/photo/2022/09/11/14/52/maasai-mara-7446939_1280.jpg
+image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: 아프리카의 의료 혁신에 대한 다양한 사례 분석 (2019 기준)
 translation_id: "africa2"
 
@@ -28,7 +28,7 @@ translation_id: "africa2"
 
 한 가지 상황을 가정해보자. 한 산모가 출산 과정 도중 과다출혈로 급히 수혈이 필요한 상황이다. 하지만 산모는 자기 혈액형을 기억하지 못하는 상황이며, 과거 해당 산모의 혈액검사가 두 차례나 이루어졌음에도 해당 산모의 혈액형을 어디에서도 찾을 수 없는 상황이다. 혈액검사를 다시 실행하기 위해서는 $4에 해당하는 비용이 들지만 산모는 해당 비용을 지불 할 능력이 없는 상황이다.[2] 이런 상황에서, 해당 산모의 건강 정보, 과거 병력, 보호자 연락처 등을 확실하게 저장하고 추후에 조회 할 수 있는 방법이 절실하지 않을까?  
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/kuK0_umX3a3Sp-dQqtFTMoj0PZw)  
+![](/assets/images/posts/opt-9516bd7ebd9b1fbefb357179.webp)  
 
 그림 1. KEA 메디컬의 로고.  
 
@@ -42,7 +42,7 @@ KEA 메디컬은 이러한 의료 현실을 핸드폰을 이용해 개인의 건
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/vkJhJrli0h9TtGPfakP2Je3HmWY)  
+![](/assets/images/posts/opt-18bdfbb3f0e407cf49cb3ce9.avif)  
 
 그림 2. KEA 메디컬이 제공하는 서비스 중 하나. 팔찌에 부착하는 QR 코드를 통해 착용자의 건강정보를 쉽게 조회 할 수 있다.[3]  
 
@@ -58,7 +58,7 @@ KEA 메디컬은 베냉만이 아니라 코트디부아르, 가봉, 세네갈, �
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/msSkfUPJSkwrHUIfoZRkFQRqFxg)  
+![](/assets/images/posts/opt-8ac0bbe33e19f3b2acda1bb4.webp)  
 
 그림 3. 위 사진과 같이, 레코메드 사용자들은 모바일 앱이나 웹을 통해 자기가 원하는 전문분야의 병원을 쉽게 검색하고 또 예약 할 수 있다.  
 
@@ -72,7 +72,7 @@ KEA 메디컬은 베냉만이 아니라 코트디부아르, 가봉, 세네갈, �
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/Y3dBA2wKmnR97WXsHTxN3nIsPd0)  
+![](/assets/images/posts/opt-664975e2077598b47f04c1f1.webp)  
 
 그림 4. 레코메드를 통해 이용자들은 의사들의 일정과 프로필을 보며 병원을 예약 할 수 있다.  
 
@@ -106,7 +106,7 @@ KEA 메디컬은 베냉만이 아니라 코트디부아르, 가봉, 세네갈, �
 
   
 
-![](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/JJCTosn3e9vV_V-Lf0oVEWRku6g)  
+![](/assets/images/posts/opt-0f4dcc02d27cf0b1ee7cda15.avif)  
 
 그림 5. 집라인이 이용하는 드론이 목표 장소에 물품을 낙하시키는 모습[8]  
 

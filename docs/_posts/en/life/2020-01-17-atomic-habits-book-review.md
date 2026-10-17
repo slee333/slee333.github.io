@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: Daily Life
 lang: en
-image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: Gathered small successes become a long habit.
 translation_id: "atomichabits"
 
@@ -25,7 +25,7 @@ On the other hand, what if I had decided to do just 10 minutes of home training 
 
 
 
-![Image](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sXYO7LjW1bRXWiVXPII0eAqIiwY.jpg)
+![Image](/assets/images/posts/opt-67f0336fc966756589dbb057.webp)
 
 
 

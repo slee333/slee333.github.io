@@ -7,7 +7,7 @@ tags: [medicine, us-residency, 미국수련]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://i.imgur.com/OImzeTV.png
+image: /assets/images/posts/opt-6c09f59c8800daa0b3df171e.webp
 subtitle: ¿Estoy realmente adaptándome bien a la diferencia entre las responsabilidades de un interno de primer año y un residente de segundo año?
 translation_id: "pgy2firstfloor"
 ---

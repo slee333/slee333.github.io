@@ -7,7 +7,7 @@ tags: [books, self-development]
 categories: life
 categorydisplay: Vida Diaria
 lang: es
-image: https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg
+image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: "Pequeños cambios, resultados extraordinarios."
 translation_id: "atomichabits"
 
@@ -16,7 +16,7 @@ Dejar de fumar, beber menos, empezar a hacer ejercicio...
 
 Cada fin de año o comienzo de uno nuevo, todos nos hacemos promesas para ser una mejor versión de nosotros mismos. Pero, como bien sabemos, cambiar no es tan fácil. Muchos lo achacan a la falta de fuerza de voluntad, a que hay que "echarle más ganas".
 
-![Deportes](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/798p/image/sXYO7LjW1bRXWiVXPII0eAqIiwY.jpg)
+![Deportes](/assets/images/posts/opt-67f0336fc966756589dbb057.webp)
 
 Pero el típico fracaso de los propósitos de Año Nuevo no es solo por falta de voluntad. Pienso en las veces que me he apuntado al gimnasio en enero, convencido de que iría cinco días a la semana durante seis meses. Pero luego el trabajo se acumula, duermes poco, te duele todo, y en ese momento en que dudas entre ir al gimnasio o dormir una hora más, tu plan se va al traste, por muy decidido que estuvieras al principio.
 
