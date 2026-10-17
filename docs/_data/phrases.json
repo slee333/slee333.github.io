@@ -31,7 +31,6 @@
       "success": "Thank you for subscribing!",
       "error": "Error! Please try again."
     },
-    "comments": "Need Github login to comment",
     "comments_section": {
       "comments_title": "Comments",
       "login_prompt": "Login to leave a comment.",
@@ -39,8 +38,6 @@
       "separator_text": "Social Accounts",
       "google_button": "Google",
       "github_button": "GitHub",
-      "naver_button": "Naver",
-      "kakao_button": "Kakao",
       "logout_button": "Logout",
       "edit_profile": "Edit profile",
       "submit_button": "Submit",
@@ -126,7 +123,6 @@
       "success": "¡Gracias por suscribirte!",
       "error": "¡Error! Inténtalo de nuevo."
     },
-    "comments": "Necesitas iniciar sesión en Github para comentar",
     "comments_section": {
       "comments_title": "Comentarios",
       "login_prompt": "Inicia sesión para dejar un comentario.",
@@ -134,8 +130,6 @@
       "separator_text": "Cuentas Sociales",
       "google_button": "Google",
       "github_button": "GitHub",
-      "naver_button": "Naver",
-      "kakao_button": "Kakao",
       "logout_button": "Cerrar sesión",
       "edit_profile": "Editar perfil",
       "submit_button": "Enviar",
@@ -221,7 +215,6 @@
       "success": "구독해주셔서 감사합니다!",
       "error": "오류가 발생했습니다. 다시 시도해주세요."
     },
-    "comments": "댓글을 달려면 Github 로그인이 필요합니다.",
     "comments_section": {
       "comments_title": "댓글",
       "login_prompt": "댓글을 남기려면 로그인하세요.",
@@ -229,8 +222,6 @@
       "separator_text": "소셜 계정",
       "google_button": "구글",
       "github_button": "깃허브",
-      "naver_button": "네이버",
-      "kakao_button": "카카오",
       "logout_button": "로그아웃",
       "edit_profile": "프로필 수정",
       "submit_button": "등록",

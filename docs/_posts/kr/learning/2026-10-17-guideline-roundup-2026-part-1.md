@@ -1,20 +1,22 @@
 ---
 layout: post
-title: '2026년 내과 가이드라인 업데이트 (1): 심혈관·대사'
-date: '2026-10-17'
+title: "2026년 내과 가이드라인 업데이트 (1): 심혈관질환"
+date: 2026-10-17
 categories: learning
 lang: kr
-subtitle: 지질·CKM·심부전·HFpEF·저항성 고혈압, 올해 심혈관 쪽에서 달라진 것들
+subtitle: 심혈관질환 관련 올해 업데이트된 내용들
 tags:
-- guideline-roundup
-- lipids
-- ckm
-- heart-failure
-- hypertension
+  - guideline-roundup
+  - lipids
+  - ckm
+  - heart-failure
+  - hypertension
 translation_id: guideline-roundup-2026-part-1
 first_written: 2026-10-16
 last_checked: 2026-10-17
 toc: true
+image: /assets/images/posts/opt-3a73c62ffdc960ae7d72494b.webp
+featured: true
 published: true
 permalink: /learning/guideline-roundup-2026-part-1/
 ---
