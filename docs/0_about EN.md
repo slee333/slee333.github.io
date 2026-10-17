@@ -21,10 +21,10 @@ show_title: false
   <section class="about-section">
     <h2>Areas of Focus</h2>
     <dl class="about-list">
-      <div><dt>Clinical practice</dt><dd>Internist focused on outpatient care and primary and secondary prevention, with a growing interest in primordial prevention: keeping risk factors from developing in the first place.</dd></div>
-      <div><dt>Clinical informatics</dt><dd>Solving problems in clinical care that individual effort alone cannot fix. I believe systems that let clinicians work easily and accurately ultimately help more patients.</dd></div>
-      <div><dt>Development</dt><dd>Longtime hobbyist web developer, now using AI coding tools to turn ideas into working prototypes quickly.</dd></div>
-      <div><dt>Writing</dt><dd>This blog covers study notes, clinical practice, and fellowship life. I have also tried my hand at writing a web novel.</dd></div>
+      <div><dt>Clinical practice</dt><dd>Internist focused on outpatient care and primary, secondary, and primordial prevention.</dd></div>
+      <div><dt>Clinical informatics</dt><dd>Building systems that let clinicians work easily and accurately.</dd></div>
+      <div><dt>Development</dt><dd>Hobbyist web developer who prototypes ideas quickly with AI coding tools.</dd></div>
+      <div><dt>Writing</dt><dd>Notes on study, clinical practice, and fellowship life.</dd></div>
     </dl>
   </section>
 
