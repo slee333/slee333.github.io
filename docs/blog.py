@@ -335,7 +335,7 @@ def new_post(slug, title, category='life', lang='kr', root=ROOT):
         raise ValueError('같은 이름의 초안이 이미 있습니다.')
     metadata = {'layout': 'post', 'title': title, 'date': date.today().isoformat(),
                 'categories': category, 'lang': lang, 'subtitle': '', 'tags': [],
-                'translation_id': slug}
+                'translation_id': slug, 'image': '', 'featured': False, 'toc': False}
     atomic_write(path, serialize(metadata, '').encode('utf-8'))
     return path
 
@@ -350,7 +350,10 @@ def ready_post(path, root=ROOT):
     validate_metadata(metadata)
     lang, category = metadata.get('lang', 'kr'), metadata['categories']
     slug = str(metadata.get('translation_id') or path.stem).strip().lower()
-    slug = re.sub(r'[^a-z0-9-]', '', slug.replace(' ', '-')).strip('-') or 'note-' + uuid4().hex[:10]
+    slug = re.sub(r'[^a-z0-9-]', '', slug.replace(' ', '-')).strip('-')
+    if not slug:
+        # Obsidian file names are often Korean; never fall back to a random URL.
+        raise ValueError('front matter의 translation_id에 영문 주소 이름(예: guideline-roundup-2027)을 적어 주세요.')
     metadata['translation_id'] = str(metadata.get('translation_id') or slug)
     day = str(metadata.get('date') or date.today().isoformat())[:10]
     date.fromisoformat(day)
