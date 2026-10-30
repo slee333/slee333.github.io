@@ -11,7 +11,7 @@ tags:
 - clinical-ai
 - conference
 translation_id: tecd-immersion-2026-part-1
-image: ''
+image: /assets/images/posts/opt-1d9e0f380850ddc437f0e017.avif
 featured: false
 toc: true
 published: true
