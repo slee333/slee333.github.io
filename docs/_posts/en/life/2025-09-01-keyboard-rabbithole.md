@@ -9,6 +9,7 @@ categorydisplay: Life
 lang: en
 image: /assets/images/posts/opt-efb0fb1296c13da22f632821.avif
 subtitle: A journey to escape forward head posture. But it was deeper, darker, and more endless than I thought.
+description: "A journey to escape forward head posture. But it was deeper, darker, and more endless than I thought."
 translation_id: splitkeyboardq
 layout: post
 permalink: /en/life/splitkeyboardq/

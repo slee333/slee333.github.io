@@ -9,6 +9,7 @@ categorydisplay: Clinical Informatics
 lang: en
 image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: Argo Project - What if we don't have to listen to these words anymore?
+description: "Argo Project - What if we don't have to listen to these words anymore?"
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
 ---

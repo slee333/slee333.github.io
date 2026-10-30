@@ -9,6 +9,7 @@ categorydisplay: Informática Clínica
 lang: es
 image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: "El Proyecto Argonauta: ¿Y si pudiéramos olvidarnos del papeleo?"
+description: "El Proyecto Argonauta: ¿Y si pudiéramos olvidarnos del papeleo?"
 translation_id: "Paperworks1"
 slug: hospital-first-visit-part-1
 ---

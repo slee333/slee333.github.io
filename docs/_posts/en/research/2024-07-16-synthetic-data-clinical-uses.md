@@ -9,6 +9,7 @@ categorydisplay: Research
 lang: en
 image: /assets/images/posts/opt-191aed76397f27a483fe8810.avif
 subtitle: What is synthetic data and how can it be used in clinical research?
+description: "What is synthetic data and how can it be used in clinical research?"
 translation_id: "SyntheticData"
 ---
 I've seen cases and papers where synthetic data is used for medical research purposes. To better understand this area, I did some research. 

@@ -9,6 +9,7 @@ categorydisplay: Lectura e investigación
 lang: es
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: "Pequeños cambios, resultados extraordinarios."
+description: "Pequeños cambios, resultados extraordinarios."
 translation_id: "atomichabits"
 
 ---

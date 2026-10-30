@@ -9,6 +9,7 @@ categorydisplay: Clinical Informatics
 lang: en
 image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: The potential and limitations of medical devices and wearable technology embedded in a smartwatch
+description: "The potential and limitations of medical devices and wearable technology embedded in a smartwatch"
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
 ---

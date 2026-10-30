@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 image: /assets/images/posts/opt-799bb0fcd56d2f9a6651c727.webp
 subtitle: "De nuevo, ¡toca escribir la declaración personal! 😅"
+description: "De nuevo, ¡toca escribir la declaración personal! 😅"
 translation_id: "CIFellowAppDiary1"
 ---
 

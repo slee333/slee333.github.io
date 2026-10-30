@@ -9,6 +9,7 @@ categorydisplay: 의료정보학
 lang: kr
 image: /assets/images/posts/opt-0e7760b6e11b6a5d09f7b5d8.avif
 subtitle: 아르고 프로젝트 - 이런 말을 더 듣지 않아도 된다면?
+description: "아르고 프로젝트 - 이런 말을 더 듣지 않아도 된다면?"
 translation_id: "Paperworks1"
 
 ---

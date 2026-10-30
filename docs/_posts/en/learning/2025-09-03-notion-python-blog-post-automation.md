@@ -3,6 +3,7 @@ layout: post
 permalink: /en/learning/:title/
 title: "Notion to Jekyll - Automating Image Uploads"
 subtitle: "Uploading images was the most cumbersome part of moving posts from Notion to Jekyll. Let's automate this process."
+description: "Uploading images was the most cumbersome part of moving posts from Notion to Jekyll. Let's automate this process."
 date: 2025-09-03 10:00:00 +0900
 lang: en
 categories: learning

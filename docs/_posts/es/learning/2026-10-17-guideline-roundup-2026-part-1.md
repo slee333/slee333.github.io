@@ -5,6 +5,7 @@ date: 2026-10-17
 categories: learning
 lang: es
 subtitle: "Lo que cambió este año en las guías cardiovasculares"
+description: "Lo que cambió este año en las guías cardiovasculares"
 tags:
   - guideline-roundup
   - lipids

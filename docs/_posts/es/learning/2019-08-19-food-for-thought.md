@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: "El sorprendente impacto de nuestros microbios intestinales en el cerebro."
+description: "El sorprendente impacto de nuestros microbios intestinales en el cerebro."
 translation_id: "foodforthought"
 
 ---

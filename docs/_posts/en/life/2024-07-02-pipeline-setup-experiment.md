@@ -9,6 +9,7 @@ categorydisplay: Daily Life
 lang: en    
 image: /assets/images/posts/opt-a0c079581bc87e67a1967a42.avif
 subtitle: Indeed, the performance of the pipeline is receiving attention on whether it will work well.
+description: "Indeed, the performance of the pipeline is receiving attention on whether it will work well."
 translation_id: "pipelineexperiment"
 
 ---

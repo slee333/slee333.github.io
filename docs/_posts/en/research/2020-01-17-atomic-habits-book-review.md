@@ -9,6 +9,7 @@ categorydisplay: Reading & Research
 lang: en
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: Gathered small successes become a long habit.
+description: "Gathered small successes become a long habit."
 translation_id: "atomichabits"
 
 ---

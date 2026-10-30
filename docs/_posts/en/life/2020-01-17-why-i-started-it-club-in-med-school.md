@@ -9,6 +9,7 @@ categorydisplay: Daily Life
 lang: en
 image: /assets/images/posts/opt-8e0dded69b5720141ea6ad9d.avif
 subtitle: To share various stories in the digital healthcare era
+description: "To share various stories in the digital healthcare era"
 translation_id: "medschoolitclub"
 
 ---

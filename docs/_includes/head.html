@@ -13,7 +13,24 @@
     gtag("config", "G-11L87DLV8T");
   </script>
 
-  {%- seo -%}
+  {%- comment -%}
+    Link-preview crawlers (KakaoTalk, Facebook, LinkedIn) cannot read AVIF, so
+    og:image / twitter:image point to the JPEG copy `blog.py thumbs` makes at
+    assets/images/posts/og/ when it exists.
+  {%- endcomment -%}
+  {%- capture seo_tags -%}{%- seo -%}{%- endcapture -%}
+  {%- assign cover = page.image | default: '' | split: '?' | first -%}
+  {%- assign cover_ext = cover | split: '.' | last | downcase -%}
+  {%- if cover_ext == 'avif' or cover_ext == 'webp' -%}
+    {%- assign cover_name = cover | split: '/' | last -%}
+    {%- assign cover_stem = cover_name | remove: '.avif' | remove: '.webp' -%}
+    {%- assign og_path = '/assets/images/posts/og/' | append: cover_stem | append: '.jpg' -%}
+    {%- assign og_file = site.static_files | where: 'path', og_path | first -%}
+    {%- if og_file -%}
+      {%- assign seo_tags = seo_tags | replace: cover, og_path -%}
+    {%- endif -%}
+  {%- endif -%}
+  {{ seo_tags }}
 
   <!-- Pretendard: one family for Korean and Latin, served as dynamic subsets (only the glyph ranges a page uses are downloaded). -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>

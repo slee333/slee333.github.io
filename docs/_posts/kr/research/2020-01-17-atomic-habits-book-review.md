@@ -9,6 +9,7 @@ categorydisplay: 독서와 연구
 lang: kr
 image: /assets/images/posts/opt-9be06c9dce3bfe0dad19c121.avif
 subtitle: 작은 성공이 모여 기나긴 습관이 된다
+description: "작은 성공이 모여 기나긴 습관이 된다"
 translation_id: "atomichabits"
 
 ---

@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: 광간섭 단층촬영이 무엇인지, 그리고 그 용도는 무엇이 있는지 알아보자.
+description: "광간섭 단층촬영이 무엇인지, 그리고 그 용도는 무엇이 있는지 알아보자."
 translation_id: "oct2019"
 
 ---

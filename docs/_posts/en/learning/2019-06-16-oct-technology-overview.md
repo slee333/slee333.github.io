@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: Let's find out what seismic reflection imaging is and what it is used for.
+description: "Let's find out what seismic reflection imaging is and what it is used for."
 translation_id: "oct2019"
 
 ---

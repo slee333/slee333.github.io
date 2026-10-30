@@ -9,6 +9,7 @@ categorydisplay: 연구일기
 lang: kr
 image: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
 subtitle: 대규모 정신과 선별검사, 당뇨병성 망막병증, 그리고 의료 취약 지역에서의 설사 관리
+description: "대규모 정신과 선별검사, 당뇨병성 망막병증, 그리고 의료 취약 지역에서의 설사 관리"
 translation_id: "lancet2020may"
 
 ---

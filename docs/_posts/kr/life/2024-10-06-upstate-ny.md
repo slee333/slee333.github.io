@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 image: /assets/images/posts/opt-fe7abd875af80044b7e81e06.avif
 subtitle: 단풍이 본격적으로 들기 전 너무나 아름다운 풍경들
+description: "단풍이 본격적으로 들기 전 너무나 아름다운 풍경들"
 translation_id: "nycoutdoor"
 ---
 며칠에 걸쳐 뉴욕 주 교외 지역을 여행 다녀왔다.   

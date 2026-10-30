@@ -9,6 +9,7 @@ categorydisplay: Informática Clínica
 lang: es
 image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: "Health Records de Apple, Google Cloud y las soluciones de los gigantes tecnológicos."
+description: "Health Records de Apple, Google Cloud y las soluciones de los gigantes tecnológicos."
 translation_id: "Paperworks2"
 
 ---

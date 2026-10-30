@@ -9,6 +9,7 @@ categorydisplay: Investigación
 lang: es
 image: /assets/images/posts/opt-191aed76397f27a483fe8810.avif
 subtitle: ¿Qué es un dato sintético y cómo puede ser utilizado en la investigación clínica?
+description: "¿Qué es un dato sintético y cómo puede ser utilizado en la investigación clínica?"
 translation_id: "SyntheticData"
 ---
 He estado viendo algunos casos y artículos que utilizan datos sintéticos con fines de investigación médica, así que decidí investigar un poco más sobre este tema.

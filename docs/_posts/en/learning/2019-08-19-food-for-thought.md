@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: The amazing influence of gut microbes on our brains
+description: "The amazing influence of gut microbes on our brains"
 translation_id: "foodforthought"
 
 ---

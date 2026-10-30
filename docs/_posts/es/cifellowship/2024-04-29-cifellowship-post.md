@@ -9,6 +9,7 @@ permalink: /es/cifellowship/:title/
 ref: cif1
 image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: ¿Beca de informática clínica? ¿Qué es eso, algo que se come? ¡Nam, nam!
+description: "¿Beca de informática clínica? ¿Qué es eso, algo que se come? ¡Nam, nam!"
 categorydisplay: Informática Clínica
 translation_id: "cif1"
 ---

@@ -9,6 +9,7 @@ permalink: /en/cifellowship/:title/
 ref: cif1
 image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: Clinical informatics fellowship? What is that, something you eat? Nom-Nom!
+description: "Clinical informatics fellowship? What is that, something you eat? Nom-Nom!"
 categorydisplay: Clinical Informatics
 translation_id: "cif1"
 ---

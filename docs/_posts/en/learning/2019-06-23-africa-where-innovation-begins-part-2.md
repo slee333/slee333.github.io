@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: Analysis of various cases of medical innovation in Africa (as of 2019)
+description: "Analysis of various cases of medical innovation in Africa (as of 2019)"
 translation_id: "africa2"
 
 ---

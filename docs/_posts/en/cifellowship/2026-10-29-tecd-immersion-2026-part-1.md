@@ -5,6 +5,7 @@ date: '2026-10-29'
 categories: cifellowship
 lang: en
 subtitle: What it takes to bring technology into medicine
+description: "What it takes to bring technology into medicine"
 tags:
 - tecd
 - digital-health

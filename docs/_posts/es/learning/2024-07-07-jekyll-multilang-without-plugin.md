@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-e4eda8dd028530ab1b653b5f.avif
 subtitle: No me gustaba mucho el plugin común, así que decidí implementar la función directamente. ¡Como puedes ver, no es una función tan difícil!
+description: "No me gustaba mucho el plugin común, así que decidí implementar la función directamente. ¡Como puedes ver, no es una función tan difícil!"
 translation_id: "jekyllmultilangwoplugin"
 ---
 ### Un nuevo comienzo de blog

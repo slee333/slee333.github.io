@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 image: /assets/images/posts/opt-051842456a0410737e2d9526.avif
 subtitle: Even using the feature to export Notion pages as Markdown felt cumbersome. I just want to be able to automatically upload posts by simply entering the URL!
+description: "Even using the feature to export Notion pages as Markdown felt cumbersome. I just want to be able to automatically upload posts by simply entering the URL!"
 translation_id: "jekyllnotion"
 ---
 

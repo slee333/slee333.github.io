@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es    
 image: /assets/images/posts/opt-a0c079581bc87e67a1967a42.avif
 subtitle: De hecho, se están prestando mucha atención a si el oleoducto funcionará correctamente.
+description: "De hecho, se están prestando mucha atención a si el oleoducto funcionará correctamente."
 translation_id: "pipelineexperiment"
 
 ---

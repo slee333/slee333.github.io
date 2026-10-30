@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 image: /assets/images/posts/opt-799bb0fcd56d2f9a6651c727.webp
 subtitle: "또 다시 자소서를 쓸 시간이다!"
+description: "또 다시 자소서를 쓸 시간이다!"
 translation_id: "CIFellowAppDiary1"
 ---
 

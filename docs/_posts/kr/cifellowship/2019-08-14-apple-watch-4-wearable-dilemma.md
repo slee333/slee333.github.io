@@ -9,6 +9,7 @@ categorydisplay: 의료정보학
 lang: kr
 image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: 스마트워치 하나에 담긴 의료기기와 웨어러블 기술의 가능성과 한계
+description: "스마트워치 하나에 담긴 의료기기와 웨어러블 기술의 가능성과 한계"
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
 ---

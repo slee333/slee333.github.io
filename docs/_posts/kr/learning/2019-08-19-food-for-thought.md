@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 image: /assets/images/posts/opt-2b8a754415e204a8da7f1442.avif
 subtitle: 장내 미생물이 우리 두뇌에 끼치는 놀라운 영향
+description: "장내 미생물이 우리 두뇌에 끼치는 놀라운 영향"
 translation_id: "foodforthought"
 
 ---

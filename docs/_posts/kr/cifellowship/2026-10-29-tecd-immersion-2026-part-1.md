@@ -5,6 +5,7 @@ date: '2026-10-29'
 categories: cifellowship
 lang: kr
 subtitle: 의료에 기술을 적용하려면 고려해야 할 것들
+description: "의료에 기술을 적용하려면 고려해야 할 것들"
 tags:
 - tecd
 - digital-health

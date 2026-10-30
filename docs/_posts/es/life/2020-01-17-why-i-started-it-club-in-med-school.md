@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 image: /assets/images/posts/opt-8e0dded69b5720141ea6ad9d.avif
 subtitle: "Preparándonos para la era de la medicina digital y compartiendo nuevas ideas."
+description: "Preparándonos para la era de la medicina digital y compartiendo nuevas ideas."
 translation_id: "medschoolitclub"
 
 ---

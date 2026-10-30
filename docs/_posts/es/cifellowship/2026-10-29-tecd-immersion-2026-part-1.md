@@ -5,6 +5,7 @@ date: '2026-10-29'
 categories: cifellowship
 lang: es
 subtitle: Lo que hay que tener en cuenta para llevar la tecnología a la medicina
+description: "Lo que hay que tener en cuenta para llevar la tecnología a la medicina"
 tags:
 - tecd
 - digital-health

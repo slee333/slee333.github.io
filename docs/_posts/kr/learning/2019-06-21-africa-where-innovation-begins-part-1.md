@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: 팩트풀니스- 사실을 기반으로 세상을 바라보는 눈
+description: "팩트풀니스- 사실을 기반으로 세상을 바라보는 눈"
 translation_id: "africa1"
 
 ---

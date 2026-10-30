@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-051842456a0410737e2d9526.avif
 subtitle: ¡Incluso usar la función para exportar la página de Notion como markdown fue tedioso para mí. ¡Solo quiero que al ingresar la URL, la publicación se suba automáticamente!
+description: "¡Incluso usar la función para exportar la página de Notion como markdown fue tedioso para mí. ¡Solo quiero que al ingresar la URL, la publicación se suba automáticamente!"
 translation_id: "jekyllnotion"
 ---
 

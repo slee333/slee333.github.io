@@ -9,6 +9,7 @@ permalink: /cifellowship/:title/
 ref: cif1
 image: /assets/images/posts/opt-fec2e5897719aa12dc0829da.webp
 subtitle: 의료정보학 펠로우? 그게 뭐죠 먹는 건가요 냠냠
+description: "의료정보학 펠로우? 그게 뭐죠 먹는 건가요 냠냠"
 categorydisplay: 의료정보학
 translation_id: "cif1"
 ---

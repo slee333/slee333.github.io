@@ -9,6 +9,7 @@ categorydisplay: Informática Clínica
 lang: es
 image: /assets/images/posts/opt-f6832a74968f45e36d1de678.avif
 subtitle: Analizando las posibilidades y límites de la tecnología médica en un smartwatch.
+description: "Analizando las posibilidades y límites de la tecnología médica en un smartwatch."
 translation_id: "applewatchDilemma"
 slug: apple-watch-4-wearable-dilemma
 ---

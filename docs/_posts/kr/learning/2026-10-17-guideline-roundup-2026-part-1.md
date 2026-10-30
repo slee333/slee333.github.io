@@ -5,6 +5,7 @@ date: 2026-10-17
 categories: learning
 lang: kr
 subtitle: 심혈관질환 관련 올해 업데이트된 내용들
+description: "심혈관질환 관련 올해 업데이트된 내용들"
 tags:
   - guideline-roundup
   - lipids

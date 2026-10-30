@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: "Factfulness: Una invitación a ver el mundo con otros ojos."
+description: "Factfulness: Una invitación a ver el mundo con otros ojos."
 translation_id: "africa1"
 
 ---

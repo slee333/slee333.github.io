@@ -9,6 +9,7 @@ categorydisplay: Research
 lang: en
 image: https://www.thelancet.com/cms/asset/atypon:cms:attachment:img:d19e6:rev:1588095730203-3718:pii:S2589750020X00057/cover.tif.jpg
 subtitle: Large-scale mental health screening, diabetic retinopathy, and diarrhea management in medically underserved areas
+description: "Large-scale mental health screening, diabetic retinopathy, and diarrhea management in medically underserved areas"
 translation_id: "lancet2020may"
 
 ---

@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 image: /assets/images/posts/opt-277930cbc50bfa349c540f44.webp
 subtitle: ¿Estoy realmente adaptándome bien a la diferencia entre las responsabilidades de un interno de primer año y un residente de segundo año?
+description: "¿Estoy realmente adaptándome bien a la diferencia entre las responsabilidades de un interno de primer año y un residente de segundo año?"
 translation_id: "pgy2firstfloor"
 ---
 

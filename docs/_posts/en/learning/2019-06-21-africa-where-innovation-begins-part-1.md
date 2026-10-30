@@ -9,6 +9,7 @@ categorydisplay: Learning
 lang: en
 image: /assets/images/posts/opt-8b2280aaa13c3df9b14e8446.avif
 subtitle: Factfulness- viewing the world based on facts
+description: "Factfulness- viewing the world based on facts"
 translation_id: "africa1"
 
 ---

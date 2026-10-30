@@ -9,6 +9,7 @@ categorydisplay: Research
 lang: en
 image: /assets/images/posts/opt-e5cbf07f97bb61d05bdcc821.webp
 subtitle: In any research, the most crucial aspect is obtaining high-quality data. Public data somewhat helps solve this issue.
+description: "In any research, the most crucial aspect is obtaining high-quality data. Public data somewhat helps solve this issue."
 translation_id: "publicData"
 ---
 

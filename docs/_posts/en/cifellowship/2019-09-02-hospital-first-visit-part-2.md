@@ -9,6 +9,7 @@ categorydisplay: Clinical Informatics
 lang: en
 image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: Apple Health Records. Google Cloud Services. Solutions from giant IT companies for medical records.
+description: "Apple Health Records. Google Cloud Services. Solutions from giant IT companies for medical records."
 translation_id: "Paperworks2"
 
 ---

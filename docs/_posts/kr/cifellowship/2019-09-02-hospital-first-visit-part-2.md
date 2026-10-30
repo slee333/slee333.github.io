@@ -9,6 +9,7 @@ categorydisplay: 의료정보학
 lang: kr
 image: /assets/images/posts/opt-bda28ee9983b6047ca00e694.avif
 subtitle: 애플 헬스 레코드. 구글 클라우드 서비스. 의무기록을 향한 거대 IT 기업들의 솔루션
+description: "애플 헬스 레코드. 구글 클라우드 서비스. 의무기록을 향한 거대 IT 기업들의 솔루션"
 translation_id: "Paperworks2"
 
 ---

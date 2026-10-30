@@ -9,6 +9,7 @@ categorydisplay: 공부일기
 lang: kr
 image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: 아프리카의 의료 혁신에 대한 다양한 사례 분석 (2019 기준)
+description: "아프리카의 의료 혁신에 대한 다양한 사례 분석 (2019 기준)"
 translation_id: "africa2"
 
 ---

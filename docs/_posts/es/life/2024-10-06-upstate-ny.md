@@ -9,6 +9,7 @@ categorydisplay: Vida Diaria
 lang: es
 image: /assets/images/posts/opt-fe7abd875af80044b7e81e06.avif
 subtitle: Antes de que las hojas comiencen a cambiar de forma auténtica, los paisajes son tan hermosos.
+description: "Antes de que las hojas comiencen a cambiar de forma auténtica, los paisajes son tan hermosos."
 translation_id: "nycoutdoor"
 ---
 

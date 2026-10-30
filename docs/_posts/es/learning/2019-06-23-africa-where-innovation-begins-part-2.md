@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-cfdba5bec798c4b2ba0db10c.avif
 subtitle: "Startups que están revolucionando la salud en África (datos de 2019)"
+description: "Startups que están revolucionando la salud en África (datos de 2019)"
 translation_id: "africa2"
 
 ---

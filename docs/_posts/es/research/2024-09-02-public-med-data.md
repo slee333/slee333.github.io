@@ -9,6 +9,7 @@ categorydisplay: Investigación
 lang: es
 image: /assets/images/posts/opt-e5cbf07f97bb61d05bdcc821.webp
 subtitle: Cualquiera que sea la investigación, el factor más importante es obtener datos de alta calidad. Los datos públicos en cierta medida ayudan a resolver este problema.
+description: "Cualquiera que sea la investigación, el factor más importante es obtener datos de alta calidad. Los datos públicos en cierta medida ayudan a resolver este problema."
 translation_id: "publicData"
 ---
 

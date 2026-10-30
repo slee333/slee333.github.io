@@ -9,6 +9,7 @@ categorydisplay: Vida
 lang: es
 image: /assets/images/posts/opt-efb0fb1296c13da22f632821.avif
 subtitle: Un viaje para escapar de la postura de la cabeza hacia adelante. Pero fue más profundo, más oscuro y más interminable de lo que pensaba.
+description: "Un viaje para escapar de la postura de la cabeza hacia adelante. Pero fue más profundo, más oscuro y más interminable de lo que pensaba."
 translation_id: splitkeyboardq
 layout: post
 permalink: /es/life/splitkeyboardq/

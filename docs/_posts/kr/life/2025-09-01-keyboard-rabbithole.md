@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 image: /assets/images/posts/opt-efb0fb1296c13da22f632821.avif
 subtitle: 거북목을 벗어나기 위한 여정. 허나 생각보다 깊고 어둡고 끝이 없었다.
+description: "거북목을 벗어나기 위한 여정. 허나 생각보다 깊고 어둡고 끝이 없었다."
 translation_id: splitkeyboardq
 layout: post
 permalink: /life/splitkeyboardq/

@@ -33,6 +33,7 @@ POLICY = 'v2-jpeg-avif60-1600-png-webp1600-lossy85-if-heavy'
 MAX_WIDTH = 1600            # body column is 720px; 1600 covers 2x screens with room
 HEAVY_BYTES = 300 * 1024    # above this, try lossy WebP for PNG-like images
 THUMB_WIDTHS = (240, 800)   # list rows (~100px) and featured cards (~430px), at 2x
+OG_WIDTH = 1200             # link previews; KakaoTalk, Facebook and LinkedIn cannot show AVIF
 EXCLUDED = {'.git', '.obsidian', '.env', '.blog-workflow', '_site', '_media',
             '.jekyll-cache', '.sass-cache', 'vendor', 'slee-comment-joy-main', '__pycache__'}
 
@@ -243,7 +244,9 @@ class Media:
 def make_thumbnails(root=ROOT):
     """Small copies of each post's cover image (front matter `image:` under
     assets/images/posts) at assets/images/posts/w240/ and w800/, same file name
-    and format. Layouts use them for list rows and featured cards."""
+    and format. Layouts use them for list rows and featured cards. AVIF and WebP
+    covers also get a JPEG copy at assets/images/posts/og/ that head.html puts
+    in og:image, since most link-preview crawlers only read JPEG/PNG."""
     root = root.resolve()
     assets = (root / 'assets/images/posts').resolve()
     made = []
@@ -278,6 +281,19 @@ def make_thumbnails(root=ROOT):
                 frame.convert('RGB').save(data, format='GIF')
             else:
                 frame.save(data, format='PNG', optimize=True)
+            atomic_write(output, data.getvalue())
+            made.append(output)
+        output = assets / 'og' / (source.stem + '.jpg')
+        if source.suffix.lower() in ('.avif', '.webp') and not output.exists():
+            with Image.open(source) as original:
+                original.seek(0)
+                frame = ImageOps.exif_transpose(original.convert('RGBA'))
+            # Flatten transparency onto white; JPEG has no alpha.
+            flat = Image.new('RGB', frame.size, 'white')
+            flat.paste(frame, mask=frame.getchannel('A'))
+            flat.thumbnail((OG_WIDTH, OG_WIDTH * 4), Image.Resampling.LANCZOS)
+            data = io.BytesIO()
+            flat.save(data, format='JPEG', quality=82, optimize=True, progressive=True)
             atomic_write(output, data.getvalue())
             made.append(output)
     return made
@@ -358,6 +374,9 @@ def ready_post(path, root=ROOT):
     day = str(metadata.get('date') or date.today().isoformat())[:10]
     date.fromisoformat(day)
     metadata['date'] = day
+    if not str(metadata.get('description') or '').strip() and str(metadata.get('subtitle') or '').strip():
+        # Search snippets otherwise fall back to the body's first sentence.
+        metadata['description'] = str(metadata['subtitle']).strip()
     metadata['layout'] = 'post'
     metadata['published'] = True
     metadata['permalink'] = ('' if lang == 'kr' else '/' + lang) + '/' + category + '/' + slug + '/'
@@ -501,7 +520,7 @@ def main():
     commands.add_parser('build', help='새 이미지를 최적화하고 발행 대상만 빌드')
     ready = commands.add_parser('ready', help='검토한 초안을 로컬 _posts로 이동. 커밋/공개하지 않음')
     ready.add_argument('file')
-    commands.add_parser('thumbs', help='대표 이미지 썸네일(w240, w800)이 없으면 만들기')
+    commands.add_parser('thumbs', help='대표 이미지 썸네일(w240, w800)과 공유용 JPEG(og)가 없으면 만들기')
     args = parser.parse_args()
     if args.command == 'new':
         print(new_post(args.slug, args.title, args.category, args.lang))

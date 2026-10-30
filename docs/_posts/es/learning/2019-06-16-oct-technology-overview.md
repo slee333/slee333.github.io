@@ -9,6 +9,7 @@ categorydisplay: Aprendizaje
 lang: es
 image: /assets/images/posts/opt-44b716fb128957d6c4fa10b3.avif
 subtitle: Descubramos qué es la sísmica de refracción y cuáles son sus aplicaciones.
+description: "Descubramos qué es la sísmica de refracción y cuáles son sus aplicaciones."
 translation_id: "oct2019"
 
 ---

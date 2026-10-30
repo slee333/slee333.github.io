@@ -9,6 +9,7 @@ categorydisplay: Daily Life
 lang: en
 image: /assets/images/posts/opt-799bb0fcd56d2f9a6651c727.webp
 subtitle: "Again, time to write my personal statement 😅"
+description: "Again, time to write my personal statement 😅"
 translation_id: "CIFellowAppDiary1"
 ---
 
