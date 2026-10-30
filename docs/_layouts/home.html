@@ -23,7 +23,10 @@ layout: base
     </div>
     <div class="journal-intro-author">
       <p class="journal-eyebrow">{{ home_text.eyebrow }}</p>
-      <a class="journal-about" href="{{ prefix | append: '/about/' | relative_url }}">{{ home_text.about_link }} <span aria-hidden="true">↗</span></a>
+      <p class="journal-links">
+        <a class="journal-about" href="{{ prefix | append: '/about/' | relative_url }}">{{ home_text.about_link }} <span aria-hidden="true">↗</span></a>
+        <a class="journal-about" href="https://www.linkedin.com/in/seung-wook-lee-8433566b/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </p>
     </div>
   </section>
 
@@ -54,7 +57,8 @@ layout: base
       <nav class="journal-topics" aria-label="{{ home_text.categories_heading }}">
         {% assign categories = 'cifellowship,learning,research,life' | split: ',' %}
         {% for category in categories %}
-        <a href="{{ prefix | append: '/' | append: category | append: '/' | relative_url }}">{{ phrases.categories[category] }}</a>
+        {% assign topic_posts = posts_by_lang | where_exp: 'p', 'p.categories contains category' %}
+        <a href="{{ prefix | append: '/' | append: category | append: '/' | relative_url }}">{{ phrases.categories[category] }} <span class="journal-topics__count">{{ topic_posts.size }}</span></a>
         {% endfor %}
       </nav>
     </div>
@@ -64,7 +68,7 @@ layout: base
         {% assign category = post.categories | first %}
         <article class="journal-row">
           <div>
-            <div class="journal-row-meta"><span>{{ phrases.categories[category] }}</span><time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time></div>
+            <div class="journal-row-meta"><span class="journal-row-category">{{ phrases.categories[category] }}</span><time datetime="{{ post.date | date_to_xmlschema }}" data-calendar-date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time></div>
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             <p>{{ post.subtitle }}</p>
           </div>

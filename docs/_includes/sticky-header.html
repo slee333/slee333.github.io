@@ -6,7 +6,7 @@
   <div class="sticky-header__container">
     <div class="sticky-header__surface">
       <button class="sticky-header__brand" type="button" data-scroll-top>
-        <span class="sticky-header__logo">{{ site.title }}</span>
+        <span class="sticky-header__logo">{{ site.title | replace: '.md', '<span class="logo-ext">.md</span>' }}</span>
         {%- comment -%} Phones show the post title (and current section) here instead of the logo. {%- endcomment -%}
         <span class="sticky-header__compact">
           <span class="sticky-header__compact-title">{{ page.title | escape }}</span>

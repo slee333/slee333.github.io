@@ -4,7 +4,7 @@
   <div class="site-header__container">
     <div class="site-header__surface">
       <a class="site-header__logo" rel="author" href="{{ home_href | relative_url }}">
-        <span class="site-header__logo-primary">{{ site.title }}</span>
+        <span class="site-header__logo-primary">{{ site.title | replace: '.md', '<span class="logo-ext">.md</span>' }}</span>
       </a>
 
       <nav class="site-header__nav" aria-label="Primary navigation">

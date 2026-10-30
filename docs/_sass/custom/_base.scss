@@ -73,7 +73,9 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
 summary { cursor: pointer; }
 
 // Shared layout primitives
-.page-content { padding: 0; }
+// clip (not hidden): decorative elements never add a horizontal scrollbar,
+// and no scroll container is created.
+.page-content { padding: 0; overflow-x: clip; }
 
 .wrapper {
   width: 100%;
@@ -96,6 +98,8 @@ summary { cursor: pointer; }
 }
 
 :focus-visible { outline: 2px solid var(--theme-color); outline-offset: 3px; }
+
+::selection { background: var(--theme-color-light); }
 
 @media (max-width: $bp-phone) {
   .wrapper { padding: 12px 20px 0; }

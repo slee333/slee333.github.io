@@ -20,11 +20,15 @@
   transition: color var(--transition), background-color var(--transition);
   white-space: nowrap;
 
+  // `a:visited` in _base.scss outranks a single class, so restate the colour
+  // for visited menu links (main, sticky and drawer menus all use .nav-chip).
+  &:visited { color: var(--muted); }
   &:hover, &:focus-visible { color: var(--ink); background: var(--surface-alt); }
-  &.is-active { color: var(--theme-color-strong); font-weight: 600; }
+  // The pill background is reserved for the current menu item.
+  &.is-active { color: var(--theme-color-strong); font-weight: 600; background: var(--theme-surface); }
   &:disabled, &.is-disabled { opacity: 0.4; cursor: default; }
 }
-.nav-chip--ghost { border: 1px solid var(--rule); color: var(--ink); padding: 5px 12px; font-size: 14px; }
+.nav-chip--ghost, .nav-chip--ghost:visited { border: 1px solid var(--rule); color: var(--ink); padding: 5px 12px; font-size: 14px; }
 .nav-chip__icon { display: inline-flex; width: 16px; height: 16px; svg { width: 100%; height: 100%; } }
 .nav-chip--drawer { width: 100%; justify-content: flex-start; border-radius: var(--radius); padding: 10px 12px; font-size: 16px; }
 
@@ -128,10 +132,12 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--theme-color-strong);
-  &:hover { color: var(--theme-color-strong); }
+  color: var(--ink);
+  &:visited, &:hover { color: var(--ink); }
 }
 .site-header__logo-primary { color: inherit; }
+// "swlee" in ink, ".md" in the brand blue (header and sticky header).
+.logo-ext { color: var(--theme-color); }
 .site-header__nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 2px; }
 .site-header__actions { display: flex; align-items: center; gap: 10px; }
 
@@ -245,11 +251,11 @@
   color: var(--muted);
   &:empty { display: none; }
 }
-.sticky-header__logo {
+.sticky-header__logo, .sticky-header__logo:visited {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--theme-color-strong);
+  color: var(--ink);
 }
 .sticky-header__nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 2px; }
 .sticky-header__actions { display: flex; align-items: center; gap: 8px; }
