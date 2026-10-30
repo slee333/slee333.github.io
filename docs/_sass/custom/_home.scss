@@ -40,6 +40,8 @@
 
 .journal-section { margin-bottom: 44px; }
 .journal-section-title { margin: 0 0 16px; font-size: 15px; font-weight: 700; }
+// "처음 오셨다면" sits right on the blue rule of the cards below it.
+.journal-section > .journal-section-title { margin-bottom: 8px; }
 .journal-section-heading {
   display: flex;
   align-items: baseline;
