@@ -3,6 +3,7 @@
 layout: category
 title: Vida Diaria
 subtitle: "Vida en Nueva York, medicina y proyectos que me entusiasman."
+description: "Vida en Nueva York, medicina y proyectos que me entusiasman."
 permalink: /es/life/
 categories: life
 category_slug: life

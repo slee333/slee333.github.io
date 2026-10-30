@@ -3,6 +3,7 @@
 layout: category
 title: Clinical Informatics
 subtitle: "Field notes from an internist working in clinical informatics."
+description: "Field notes from an internist working in clinical informatics."
 permalink: /en/cifellowship/
 categories: cifellowship
 category_slug: cifellowship

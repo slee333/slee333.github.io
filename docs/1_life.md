@@ -3,6 +3,7 @@
 layout: category
 title: 일상기록
 subtitle: "일상과 취미에 관한 글."
+description: "일상과 취미에 관한 글."
 permalink: /life/
 categories: life
 category_slug: life

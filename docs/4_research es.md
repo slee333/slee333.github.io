@@ -3,6 +3,7 @@
 layout: category
 title: Lectura e investigación
 subtitle: "Notas sobre libros, artículos e investigación."
+description: "Notas sobre libros, artículos e investigación."
 permalink: /es/research/
 categories: research
 category_slug: research

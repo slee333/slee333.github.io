@@ -3,6 +3,7 @@
 layout: category
 title: 독서와 연구
 subtitle: "책과 논문을 읽고, 연구하며 정리한 글."
+description: "책과 논문을 읽고, 연구하며 정리한 글."
 permalink: /research/
 categories: research
 category_slug: research

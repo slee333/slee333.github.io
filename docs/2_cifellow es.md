@@ -3,6 +3,7 @@
 layout: category
 title: Informática Clínica
 subtitle: "Notas de campo de un internista trabajando en informática clínica."
+description: "Notas de campo de un internista trabajando en informática clínica."
 permalink: /es/cifellowship/
 categories: cifellowship
 category_slug: cifellowship

@@ -3,6 +3,7 @@
 layout: category
 title: Reading & Research
 subtitle: "Notes from books, papers, and research."
+description: "Notes from books, papers, and research."
 permalink: /en/research/
 categories: research
 category_slug: research

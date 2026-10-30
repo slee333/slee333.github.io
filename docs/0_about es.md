@@ -3,6 +3,7 @@ layout: page
 title: Acerca de
 permalink: /es/about/
 lang: es
+description: "Un internista y fellow de informática clínica escribiendo en la intersección de la medicina y la tecnología."
 locale: es_ES
 translation_id: about
 show_title: false

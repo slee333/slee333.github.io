@@ -9,6 +9,7 @@ categorydisplay: Lectura e investigación
 lang: es
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: ¿La última obra del Dr. Choi Yoon-seop? ¿La biblia de la atención médica digital?
+description: "¿La última obra del Dr. Choi Yoon-seop? ¿La biblia de la atención médica digital?"
 translation_id: "bookreviewuntitled"
 
 ---

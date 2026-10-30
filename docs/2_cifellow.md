@@ -3,6 +3,7 @@
 layout: category
 title: 의료정보학
 subtitle: "의료정보학과 펠로우 생활에 관한 글."
+description: "의료정보학과 펠로우 생활에 관한 글."
 permalink: /cifellowship/
 categories: cifellowship
 category_slug: cifellowship

@@ -9,6 +9,7 @@ categorydisplay: 일상기록
 lang: kr
 image: /assets/images/posts/opt-8e0dded69b5720141ea6ad9d.avif
 subtitle: 디지털 의료 시대를 맞아 다양한 이야기를 나누기 위해
+description: "디지털 의료 시대를 맞아 다양한 이야기를 나누기 위해"
 translation_id: "medschoolitclub"
 
 ---

@@ -3,6 +3,7 @@
 layout: category
 title: Learnings
 subtitle: "From medicine to data science—notes on every learning sprint."
+description: "From medicine to data science—notes on every learning sprint."
 permalink: /en/learning/
 categories: learning
 category_slug: learning

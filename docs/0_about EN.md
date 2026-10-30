@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /en/about/
 lang: en
+description: "An internist and clinical informatics fellow writing at the intersection of medicine and technology."
 locale: en_US
 translation_id: about
 show_title: false

@@ -3,6 +3,7 @@
 layout: category
 title: Life
 subtitle: "Life in New York, medicine, and side projects that spark joy."
+description: "Life in New York, medicine, and side projects that spark joy."
 permalink: /en/life/
 categories: life
 category_slug: life

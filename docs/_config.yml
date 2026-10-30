@@ -129,3 +129,8 @@ defaults:
       path: "_posts/es"
     values:
       locale: es_ES
+  # Naver's site-verification file is not content; keep it out of sitemap.xml.
+  - scope:
+      path: "navered7fe17b5e233a7911e1ab696c909ef2.html"
+    values:
+      sitemap: false

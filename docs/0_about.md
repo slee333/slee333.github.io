@@ -3,6 +3,7 @@ layout: page
 title: 소개
 permalink: /about/
 lang: kr
+description: "내과의사이자 임상정보학 펠로우가 임상 현장과 기술의 접점을 기록하는 블로그입니다."
 translation_id: about
 show_title: false
 ---

@@ -3,6 +3,7 @@
 layout: category
 title: Aprendizaje
 subtitle: "De la medicina a la ciencia de datos, con cada lección aprendida."
+description: "De la medicina a la ciencia de datos, con cada lección aprendida."
 permalink: /es/learning/
 categories: learning
 category_slug: learning

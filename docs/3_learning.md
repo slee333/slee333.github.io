@@ -3,6 +3,7 @@
 layout: category
 title: 공부일기
 subtitle: "공부한 내용을 정리한 글."
+description: "공부한 내용을 정리한 글."
 permalink: /learning/
 categories: learning
 category_slug: learning

@@ -9,6 +9,7 @@ categorydisplay: Reading & Research
 lang: en
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: Dr. Choi Yun-seob's latest book. The Bible of digital healthcare?
+description: "Dr. Choi Yun-seob's latest book. The Bible of digital healthcare?"
 translation_id: "bookreviewuntitled"
 
 ---

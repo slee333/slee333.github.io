@@ -9,6 +9,7 @@ categorydisplay: 독서와 연구
 lang: kr
 image: /assets/images/posts/opt-371597706560c7865d8e8d21.avif
 subtitle: 최윤섭 박사님의 최신 저서. 디지털 헬스케어의 바이블?
+description: "최윤섭 박사님의 최신 저서. 디지털 헬스케어의 바이블?"
 translation_id: "bookreviewuntitled"
 ---
 ![](/assets/images/posts/opt-371597706560c7865d8e8d21.avif)  
