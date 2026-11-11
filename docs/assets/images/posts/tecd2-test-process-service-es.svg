@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-labelledby="t d" font-family="Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Test, Process, Service</title>
+  <desc id="d">Tres etapas de una tecnología diagnóstica. Test pregunta si la prueba da el resultado correcto, Process si el resultado llega y se revisa, y Service si el paciente recibe realmente la siguiente prueba o el tratamiento.</desc>
+  <rect width="600" height="380" fill="#ffffff"/>
+
+  <!-- Test -->
+  <rect x="8" y="8" width="584" height="100" rx="8" fill="#eef6fd" stroke="#e1e8ee"/>
+  <rect x="8" y="8" width="150" height="100" rx="8" fill="#4195e0"/>
+  <rect x="150" y="8" width="8" height="100" fill="#4195e0"/>
+  <text x="83" y="56" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">Test</text>
+  <text x="83" y="82" text-anchor="middle" font-size="14" fill="#ffffff">la prueba</text>
+  <text x="180" y="50" font-size="15" font-weight="600" fill="#1c2630">¿La prueba da el resultado correcto?</text>
+  <circle cx="185" cy="76" r="4" fill="#ea9f36"/>
+  <text x="197" y="81" font-size="14" fill="#56636d">Se rompe en: resultados inexactos o no reproducibles</text>
+
+  <path d="M83 112 v14 m-7 -7 l7 8 l7 -8" fill="none" stroke="#1b70bb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Process -->
+  <rect x="8" y="140" width="584" height="100" rx="8" fill="#eef6fd" stroke="#e1e8ee"/>
+  <rect x="8" y="140" width="150" height="100" rx="8" fill="#1b70bb"/>
+  <rect x="150" y="140" width="8" height="100" fill="#1b70bb"/>
+  <text x="83" y="188" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">Process</text>
+  <text x="83" y="214" text-anchor="middle" font-size="14" fill="#ffffff">el proceso</text>
+  <text x="180" y="182" font-size="15" font-weight="600" fill="#1c2630">¿El resultado llega y alguien lo revisa?</text>
+  <circle cx="185" cy="208" r="4" fill="#ea9f36"/>
+  <text x="197" y="213" font-size="14" fill="#56636d">Se rompe en: informes tardíos, nadie los revisa</text>
+
+  <path d="M83 244 v14 m-7 -7 l7 8 l7 -8" fill="none" stroke="#14558f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Service -->
+  <rect x="8" y="272" width="584" height="100" rx="8" fill="#eef6fd" stroke="#e1e8ee"/>
+  <rect x="8" y="272" width="150" height="100" rx="8" fill="#14558f"/>
+  <rect x="150" y="272" width="8" height="100" fill="#14558f"/>
+  <text x="83" y="320" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">Service</text>
+  <text x="83" y="346" text-anchor="middle" font-size="14" fill="#ffffff">la atención</text>
+  <text x="180" y="314" font-size="15" font-weight="600" fill="#1c2630">¿El paciente recibe la atención que sigue?</text>
+  <circle cx="185" cy="340" r="4" fill="#ea9f36"/>
+  <text x="197" y="345" font-size="14" fill="#56636d">Se rompe en: citas perdidas, autorización previa</text>
+</svg>
